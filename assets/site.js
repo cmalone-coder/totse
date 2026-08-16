@@ -1,9 +1,9 @@
 // Randomizes the ad slots and Hot Topics box on every page load.
 // Ads are real images recovered from the archive, shown for nostalgia only -
 // no tracking, no live network calls, nothing server-side.
-// Hot Topics links point at the raw archived thread pages for now (not yet
-// rebuilt through the new template) - a temporary convenience link until the
-// full BBS rebuild pipeline replaces these with permanent in-site pages.
+// Hot Topics links point at the actual rebuilt thread pages in this site
+// (community/threads/) - the manifest itself is generated from the real
+// build output, so every entry here genuinely exists.
 
 function pickRandom(arr, n) {
     const pool = arr.slice();
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (hotList && typeof HOT_TOPICS !== "undefined" && HOT_TOPICS.length) {
         const picks = pickRandom(HOT_TOPICS, 10);
         picks.forEach(function (t) {
-            const href = prefix + "../www.totse.com/community/" + t.file;
+            const href = prefix + "community/threads/" + t.file;
             const row = document.createElement("tr");
             row.setAttribute("valign", "top");
             row.innerHTML =

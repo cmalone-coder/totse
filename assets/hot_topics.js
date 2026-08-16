@@ -1,18699 +1,18339 @@
-// Real BBS thread titles pulled from the archive, used to populate the Hot Topics box.
+// Real BBS thread titles, sourced from the actual built site output - every entry here is a page that genuinely exists.
 const HOT_TOPICS = [
   {
-    "title": "What if jesus...",
-    "file": "showthread.php@t=1809668&goto=nextnewest.htm"
+    "title": "t1809668.html",
+    "file": "t1809668.html"
   },
   {
-    "title": "Abraxis  (I read about it and want to know more)",
-    "file": "showthread.php@t=1809668&goto=nextoldest.htm"
+    "title": "t1809669.html",
+    "file": "t1809669.html"
   },
   {
-    "title": "Why try?",
-    "file": "showthread.php@t=1809668&nojs=1.htm"
+    "title": "t1809670.html",
+    "file": "t1809670.html"
   },
   {
-    "title": "Why try?",
-    "file": "showthread.php@t=1809668.htm"
+    "title": "t1809671.html",
+    "file": "t1809671.html"
   },
   {
-    "title": "meaning of life again",
-    "file": "showthread.php@t=1809669&goto=nextnewest.htm"
+    "title": "t1809672.html",
+    "file": "t1809672.html"
   },
   {
-    "title": "Mathematics",
-    "file": "showthread.php@t=1809669&goto=nextoldest.htm"
+    "title": "t1809673.html",
+    "file": "t1809673.html"
   },
   {
-    "title": "Reading the Qur'an",
-    "file": "showthread.php@t=1809669&nojs=1.htm"
+    "title": "t1809674.html",
+    "file": "t1809674.html"
   },
   {
-    "title": "Reading the Qur'an - Page 2",
-    "file": "showthread.php@t=1809669&page=2.htm"
+    "title": "t1809675.html",
+    "file": "t1809675.html"
   },
   {
-    "title": "Reading the Qur'an - Page 3",
-    "file": "showthread.php@t=1809669&page=3.htm"
+    "title": "t1809676.html",
+    "file": "t1809676.html"
   },
   {
-    "title": "Reading the Qur'an - Page 4",
-    "file": "showthread.php@t=1809669&page=4.htm"
+    "title": "t1809677.html",
+    "file": "t1809677.html"
   },
   {
-    "title": "Reading the Qur'an - Page 5",
-    "file": "showthread.php@t=1809669&page=5.htm"
+    "title": "t1809678.html",
+    "file": "t1809678.html"
   },
   {
-    "title": "Reading the Qur'an - Page 6",
-    "file": "showthread.php@t=1809669&page=6.htm"
+    "title": "t1809679.html",
+    "file": "t1809679.html"
   },
   {
-    "title": "Reading the Qur'an",
-    "file": "showthread.php@t=1809669.htm"
+    "title": "t1809680.html",
+    "file": "t1809680.html"
   },
   {
-    "title": "Satanist Bashing",
-    "file": "showthread.php@t=1809670&goto=nextnewest.htm"
+    "title": "t1809681.html",
+    "file": "t1809681.html"
   },
   {
-    "title": "Your god makes no sense...Someone plz answer these q's",
-    "file": "showthread.php@t=1809670&goto=nextoldest.htm"
+    "title": "t1809682.html",
+    "file": "t1809682.html"
   },
   {
-    "title": "Necronomicon question",
-    "file": "showthread.php@t=1809670&nojs=1.htm"
+    "title": "t1809683.html",
+    "file": "t1809683.html"
   },
   {
-    "title": "Necronomicon question - Page 2",
-    "file": "showthread.php@t=1809670&page=2.htm"
+    "title": "t1809684.html",
+    "file": "t1809684.html"
   },
   {
-    "title": "Necronomicon question",
-    "file": "showthread.php@t=1809670.htm"
+    "title": "t1809685.html",
+    "file": "t1809685.html"
   },
   {
-    "title": "god",
-    "file": "showthread.php@t=1809671.htm"
+    "title": "t1809686.html",
+    "file": "t1809686.html"
   },
   {
-    "title": "I quit.",
-    "file": "showthread.php@t=1809672&goto=nextnewest.htm"
+    "title": "t1809687.html",
+    "file": "t1809687.html"
   },
   {
-    "title": "Tradition:  does it bring corruption or improvement?",
-    "file": "showthread.php@t=1809672&goto=nextoldest.htm"
+    "title": "t1809688.html",
+    "file": "t1809688.html"
   },
   {
-    "title": "No one knows for sure whats up.So be AGNOSTIC !!!!!!!!!!!!!!!!!",
-    "file": "showthread.php@t=1809672&nojs=1.htm"
+    "title": "t1809689.html",
+    "file": "t1809689.html"
   },
   {
-    "title": "No one knows for sure whats up.So be AGNOSTIC !!!!!!!!!!!!!!!!! - Page 11",
-    "file": "showthread.php@t=1809672&page=11.htm"
+    "title": "t1809690.html",
+    "file": "t1809690.html"
   },
   {
-    "title": "No one knows for sure whats up.So be AGNOSTIC !!!!!!!!!!!!!!!!! - Page 12",
-    "file": "showthread.php@t=1809672&page=12.htm"
+    "title": "t1809691.html",
+    "file": "t1809691.html"
   },
   {
-    "title": "No one knows for sure whats up.So be AGNOSTIC !!!!!!!!!!!!!!!!! - Page 2",
-    "file": "showthread.php@t=1809672&page=2.htm"
+    "title": "t1809692.html",
+    "file": "t1809692.html"
   },
   {
-    "title": "No one knows for sure whats up.So be AGNOSTIC !!!!!!!!!!!!!!!!! - Page 3",
-    "file": "showthread.php@t=1809672&page=3.htm"
+    "title": "t1809693.html",
+    "file": "t1809693.html"
   },
   {
-    "title": "No one knows for sure whats up.So be AGNOSTIC !!!!!!!!!!!!!!!!! - Page 4",
-    "file": "showthread.php@t=1809672&page=4.htm"
+    "title": "t1809694.html",
+    "file": "t1809694.html"
   },
   {
-    "title": "No one knows for sure whats up.So be AGNOSTIC !!!!!!!!!!!!!!!!! - Page 5",
-    "file": "showthread.php@t=1809672&page=5.htm"
+    "title": "t1809695.html",
+    "file": "t1809695.html"
   },
   {
-    "title": "No one knows for sure whats up.So be AGNOSTIC !!!!!!!!!!!!!!!!! - Page 6",
-    "file": "showthread.php@t=1809672&page=6.htm"
+    "title": "t1809697.html",
+    "file": "t1809697.html"
   },
   {
-    "title": "No one knows for sure whats up.So be AGNOSTIC !!!!!!!!!!!!!!!!!",
-    "file": "showthread.php@t=1809672.htm"
+    "title": "t1809698.html",
+    "file": "t1809698.html"
   },
   {
-    "title": "Is there such a thing as a soul and if so what is it?",
-    "file": "showthread.php@t=1809673&goto=nextnewest.htm"
+    "title": "t1809699.html",
+    "file": "t1809699.html"
   },
   {
-    "title": "Traditional Indian Music",
-    "file": "showthread.php@t=1809673&goto=nextoldest.htm"
+    "title": "t1809700.html",
+    "file": "t1809700.html"
   },
   {
-    "title": "&Antisemitism",
-    "file": "showthread.php@t=1809673&nojs=1.htm"
+    "title": "t1809701.html",
+    "file": "t1809701.html"
   },
   {
-    "title": "&Antisemitism",
-    "file": "showthread.php@t=1809673.htm"
+    "title": "t1809702.html",
+    "file": "t1809702.html"
   },
   {
-    "title": "why christianity?",
-    "file": "showthread.php@t=1809674&goto=nextnewest.htm"
+    "title": "t1809703.html",
+    "file": "t1809703.html"
   },
   {
-    "title": "Community",
-    "file": "showthread.php@t=1809674&goto=nextoldest.htm"
+    "title": "t1809704.html",
+    "file": "t1809704.html"
   },
   {
-    "title": "Immorality is..",
-    "file": "showthread.php@t=1809674&nojs=1.htm"
+    "title": "t1809705.html",
+    "file": "t1809705.html"
   },
   {
-    "title": "Immorality is.. - Page 2",
-    "file": "showthread.php@t=1809674&page=2.htm"
+    "title": "t1809706.html",
+    "file": "t1809706.html"
   },
   {
-    "title": "Immorality is.. - Page 3",
-    "file": "showthread.php@t=1809674&page=3.htm"
+    "title": "t1809707.html",
+    "file": "t1809707.html"
   },
   {
-    "title": "Immorality is.. - Page 4",
-    "file": "showthread.php@t=1809674&page=4.htm"
+    "title": "t1809708.html",
+    "file": "t1809708.html"
   },
   {
-    "title": "Immorality is.. - Page 5",
-    "file": "showthread.php@t=1809674&page=5.htm"
+    "title": "t1809709.html",
+    "file": "t1809709.html"
   },
   {
-    "title": "Immorality is..",
-    "file": "showthread.php@t=1809674.htm"
+    "title": "t1809710.html",
+    "file": "t1809710.html"
   },
   {
-    "title": "Liberal assholes and their trendy cliches about Buddhism",
-    "file": "showthread.php@t=1809675&goto=nextnewest.htm"
+    "title": "t1809711.html",
+    "file": "t1809711.html"
   },
   {
-    "title": "Immorality is..",
-    "file": "showthread.php@t=1809675&goto=nextoldest.htm"
+    "title": "t1809712.html",
+    "file": "t1809712.html"
   },
   {
-    "title": "why christianity?",
-    "file": "showthread.php@t=1809675&nojs=1.htm"
+    "title": "t1809713.html",
+    "file": "t1809713.html"
   },
   {
-    "title": "why christianity? - Page 2",
-    "file": "showthread.php@t=1809675&page=2.htm"
+    "title": "t1809714.html",
+    "file": "t1809714.html"
   },
   {
-    "title": "why christianity? - Page 3",
-    "file": "showthread.php@t=1809675&page=3.htm"
+    "title": "t1809715.html",
+    "file": "t1809715.html"
   },
   {
-    "title": "why christianity? - Page 4",
-    "file": "showthread.php@t=1809675&page=4.htm"
+    "title": "t1809716.html",
+    "file": "t1809716.html"
   },
   {
-    "title": "why christianity?",
-    "file": "showthread.php@t=1809675.htm"
+    "title": "t1809717.html",
+    "file": "t1809717.html"
   },
   {
-    "title": "purpose and choice?",
-    "file": "showthread.php@t=1809676&goto=nextnewest.htm"
+    "title": "t1809718.html",
+    "file": "t1809718.html"
   },
   {
-    "title": "I challenge you",
-    "file": "showthread.php@t=1809676&goto=nextoldest.htm"
+    "title": "t1809719.html",
+    "file": "t1809719.html"
   },
   {
-    "title": "Morality",
-    "file": "showthread.php@t=1809676&nojs=1.htm"
+    "title": "t1809720.html",
+    "file": "t1809720.html"
   },
   {
-    "title": "Morality",
-    "file": "showthread.php@t=1809676.htm"
+    "title": "t1809721.html",
+    "file": "t1809721.html"
   },
   {
-    "title": "All true?",
-    "file": "showthread.php@t=1809677&goto=nextnewest.htm"
+    "title": "t1809722.html",
+    "file": "t1809722.html"
   },
   {
-    "title": "What do Catholics believe?",
-    "file": "showthread.php@t=1809677&goto=nextoldest.htm"
+    "title": "t1809723.html",
+    "file": "t1809723.html"
   },
   {
-    "title": "Celestine prophecy",
-    "file": "showthread.php@t=1809677&nojs=1.htm"
+    "title": "t1809724.html",
+    "file": "t1809724.html"
   },
   {
-    "title": "Celestine prophecy - Page 2",
-    "file": "showthread.php@t=1809677&page=2.htm"
+    "title": "t1809725.html",
+    "file": "t1809725.html"
   },
   {
-    "title": "Celestine prophecy",
-    "file": "showthread.php@t=1809677.htm"
+    "title": "t1809726.html",
+    "file": "t1809726.html"
   },
   {
-    "title": "fate",
-    "file": "showthread.php@t=1809678&goto=nextnewest.htm"
+    "title": "t1809727.html",
+    "file": "t1809727.html"
   },
   {
-    "title": "god",
-    "file": "showthread.php@t=1809678&goto=nextoldest.htm"
+    "title": "t1809728.html",
+    "file": "t1809728.html"
   },
   {
-    "title": "The perfect reason to become athiest, christians, please consider.",
-    "file": "showthread.php@t=1809678&nojs=1.htm"
+    "title": "t1809729.html",
+    "file": "t1809729.html"
   },
   {
-    "title": "The perfect reason to become athiest, christians, please consider. - Page 2",
-    "file": "showthread.php@t=1809678&page=2.htm"
+    "title": "t1809731.html",
+    "file": "t1809731.html"
   },
   {
-    "title": "The perfect reason to become athiest, christians, please consider. - Page 3",
-    "file": "showthread.php@t=1809678&page=3.htm"
+    "title": "t1809732.html",
+    "file": "t1809732.html"
   },
   {
-    "title": "The perfect reason to become athiest, christians, please consider.",
-    "file": "showthread.php@t=1809678.htm"
+    "title": "t1809733.html",
+    "file": "t1809733.html"
   },
   {
-    "title": "New Rule - Everyone must follow",
-    "file": "showthread.php@t=1809679&goto=nextnewest.htm"
+    "title": "t1809734.html",
+    "file": "t1809734.html"
   },
   {
-    "title": "why christianity?",
-    "file": "showthread.php@t=1809679&goto=nextoldest.htm"
+    "title": "t1809735.html",
+    "file": "t1809735.html"
   },
   {
-    "title": "Liberal assholes and their trendy cliches about Buddhism",
-    "file": "showthread.php@t=1809679&nojs=1.htm"
+    "title": "t1809736.html",
+    "file": "t1809736.html"
   },
   {
-    "title": "Liberal assholes and their trendy cliches about Buddhism - Page 2",
-    "file": "showthread.php@t=1809679&page=2.htm"
+    "title": "t1809737.html",
+    "file": "t1809737.html"
   },
   {
-    "title": "Liberal assholes and their trendy cliches about Buddhism - Page 3",
-    "file": "showthread.php@t=1809679&page=3.htm"
+    "title": "t1809738.html",
+    "file": "t1809738.html"
   },
   {
-    "title": "Liberal assholes and their trendy cliches about Buddhism",
-    "file": "showthread.php@t=1809679.htm"
+    "title": "t1809739.html",
+    "file": "t1809739.html"
   },
   {
-    "title": "Satanist Bashing",
-    "file": "showthread.php@t=1809680.htm"
+    "title": "t1809740.html",
+    "file": "t1809740.html"
   },
   {
-    "title": "The mistake all atheists make, except me.",
-    "file": "showthread.php@t=1809681.htm"
+    "title": "t1809741.html",
+    "file": "t1809741.html"
   },
   {
-    "title": "SCIENTOLOGY?",
-    "file": "showthread.php@t=1809682.htm"
+    "title": "t1809742.html",
+    "file": "t1809742.html"
   },
   {
-    "title": "What i think aabout religion.",
-    "file": "showthread.php@t=1809683.htm"
+    "title": "t1809743.html",
+    "file": "t1809743.html"
   },
   {
-    "title": "Hey, assholes.",
-    "file": "showthread.php@t=1809684.htm"
+    "title": "t1809744.html",
+    "file": "t1809744.html"
   },
   {
-    "title": "fate",
-    "file": "showthread.php@t=1809685.htm"
+    "title": "t1809745.html",
+    "file": "t1809745.html"
   },
   {
-    "title": "An Objective Reality and Moral Relativity",
-    "file": "showthread.php@t=1809686.htm"
+    "title": "t1809746.html",
+    "file": "t1809746.html"
   },
   {
-    "title": "Death Spells",
-    "file": "showthread.php@t=1809687.htm"
+    "title": "t1809748.html",
+    "file": "t1809748.html"
   },
   {
-    "title": "Confusion of sentimentality as spirituality",
-    "file": "showthread.php@t=1809688.htm"
+    "title": "t1809749.html",
+    "file": "t1809749.html"
   },
   {
-    "title": "these lil hexagonal things in my house",
-    "file": "showthread.php@t=1809689&goto=nextnewest.htm"
+    "title": "t1809750.html",
+    "file": "t1809750.html"
   },
   {
-    "title": "fate",
-    "file": "showthread.php@t=1809689&goto=nextoldest.htm"
+    "title": "t1809751.html",
+    "file": "t1809751.html"
   },
   {
-    "title": "Its real effin SIMPLE!!!",
-    "file": "showthread.php@t=1809689&nojs=1.htm"
+    "title": "t1809752.html",
+    "file": "t1809752.html"
   },
   {
-    "title": "Its real effin SIMPLE!!! - Page 2",
-    "file": "showthread.php@t=1809689&page=2.htm"
+    "title": "t1809753.html",
+    "file": "t1809753.html"
   },
   {
-    "title": "Its real effin SIMPLE!!!",
-    "file": "showthread.php@t=1809689.htm"
+    "title": "t1809754.html",
+    "file": "t1809754.html"
   },
   {
-    "title": "What is wrong?",
-    "file": "showthread.php@t=1809690&goto=nextnewest.htm"
+    "title": "t1809755.html",
+    "file": "t1809755.html"
   },
   {
-    "title": "Confusion of sentimentality as spirituality",
-    "file": "showthread.php@t=1809690&goto=nextoldest.htm"
+    "title": "t1809756.html",
+    "file": "t1809756.html"
   },
   {
-    "title": "If God fogives and forgets then...",
-    "file": "showthread.php@t=1809690&nojs=1.htm"
+    "title": "t1809757.html",
+    "file": "t1809757.html"
   },
   {
-    "title": "If God fogives and forgets then... - Page 2",
-    "file": "showthread.php@t=1809690&page=2.htm"
+    "title": "t1809758.html",
+    "file": "t1809758.html"
   },
   {
-    "title": "If God fogives and forgets then...",
-    "file": "showthread.php@t=1809690.htm"
+    "title": "t1809760.html",
+    "file": "t1809760.html"
   },
   {
-    "title": "Your god makes no sense...Someone plz answer these q's",
-    "file": "showthread.php@t=1809691.htm"
+    "title": "t1809761.html",
+    "file": "t1809761.html"
   },
   {
-    "title": "What i think aabout religion.",
-    "file": "showthread.php@t=1809692&goto=nextnewest.htm"
+    "title": "t1809762.html",
+    "file": "t1809762.html"
   },
   {
-    "title": "Liberal assholes and their trendy cliches about Buddhism",
-    "file": "showthread.php@t=1809692&goto=nextoldest.htm"
+    "title": "t1809763.html",
+    "file": "t1809763.html"
   },
   {
-    "title": "New Rule - Everyone must follow",
-    "file": "showthread.php@t=1809692&nojs=1.htm"
+    "title": "t1809764.html",
+    "file": "t1809764.html"
   },
   {
-    "title": "New Rule - Everyone must follow",
-    "file": "showthread.php@t=1809692.htm"
+    "title": "t1809766.html",
+    "file": "t1809766.html"
   },
   {
-    "title": "anti-christian",
-    "file": "showthread.php@t=1809693&goto=nextnewest.htm"
+    "title": "t1809767.html",
+    "file": "t1809767.html"
   },
   {
-    "title": "why i don't believe in god",
-    "file": "showthread.php@t=1809693&goto=nextoldest.htm"
+    "title": "t1809768.html",
+    "file": "t1809768.html"
   },
   {
-    "title": "What does god look like? (to you)",
-    "file": "showthread.php@t=1809693&nojs=1.htm"
+    "title": "t1809770.html",
+    "file": "t1809770.html"
   },
   {
-    "title": "What does god look like? (to you) - Page 2",
-    "file": "showthread.php@t=1809693&page=2.htm"
+    "title": "t1809772.html",
+    "file": "t1809772.html"
   },
   {
-    "title": "What does god look like? (to you) - Page 3",
-    "file": "showthread.php@t=1809693&page=3.htm"
+    "title": "t1809774.html",
+    "file": "t1809774.html"
   },
   {
-    "title": "What does god look like? (to you) - Page 4",
-    "file": "showthread.php@t=1809693&page=4.htm"
+    "title": "t1809775.html",
+    "file": "t1809775.html"
   },
   {
-    "title": "What does god look like? (to you)",
-    "file": "showthread.php@t=1809693.htm"
+    "title": "t1809776.html",
+    "file": "t1809776.html"
   },
   {
-    "title": "How I leave my Body",
-    "file": "showthread.php@t=1809694.htm"
+    "title": "t1809777.html",
+    "file": "t1809777.html"
   },
   {
-    "title": "gods debris",
-    "file": "showthread.php@t=1809695.htm"
+    "title": "t1809779.html",
+    "file": "t1809779.html"
   },
   {
-    "title": "? to Athiests",
-    "file": "showthread.php@t=1809697&goto=nextnewest.htm"
+    "title": "t1809780.html",
+    "file": "t1809780.html"
   },
   {
-    "title": "these lil hexagonal things in my house",
-    "file": "showthread.php@t=1809697&goto=nextoldest.htm"
+    "title": "t1809781.html",
+    "file": "t1809781.html"
   },
   {
-    "title": "adam and eve",
-    "file": "showthread.php@t=1809697&nojs=1.htm"
+    "title": "t1809782.html",
+    "file": "t1809782.html"
   },
   {
-    "title": "adam and eve - Page 2",
-    "file": "showthread.php@t=1809697&page=2.htm"
+    "title": "t1809783.html",
+    "file": "t1809783.html"
   },
   {
-    "title": "adam and eve",
-    "file": "showthread.php@t=1809697.htm"
+    "title": "t1809784.html",
+    "file": "t1809784.html"
   },
   {
-    "title": "Your god makes no sense...Someone plz answer these q's",
-    "file": "showthread.php@t=1809698&goto=nextnewest.htm"
+    "title": "t1809785.html",
+    "file": "t1809785.html"
   },
   {
-    "title": "adam and eve",
-    "file": "showthread.php@t=1809698&goto=nextoldest.htm"
+    "title": "t1809788.html",
+    "file": "t1809788.html"
   },
   {
-    "title": "? to Athiests",
-    "file": "showthread.php@t=1809698&nojs=1.htm"
+    "title": "t1809789.html",
+    "file": "t1809789.html"
   },
   {
-    "title": "? to Athiests - Page 2",
-    "file": "showthread.php@t=1809698&page=2.htm"
+    "title": "t1809791.html",
+    "file": "t1809791.html"
   },
   {
-    "title": "? to Athiests - Page 3",
-    "file": "showthread.php@t=1809698&page=3.htm"
+    "title": "t1809795.html",
+    "file": "t1809795.html"
   },
   {
-    "title": "? to Athiests - Page 4",
-    "file": "showthread.php@t=1809698&page=4.htm"
+    "title": "t1809796.html",
+    "file": "t1809796.html"
   },
   {
-    "title": "? to Athiests",
-    "file": "showthread.php@t=1809698.htm"
+    "title": "t1809797.html",
+    "file": "t1809797.html"
   },
   {
-    "title": "Hey, assholes.",
-    "file": "showthread.php@t=1809699&goto=nextnewest.htm"
+    "title": "t1809798.html",
+    "file": "t1809798.html"
   },
   {
-    "title": "The big God scam",
-    "file": "showthread.php@t=1809699&goto=nextoldest.htm"
+    "title": "t1809799.html",
+    "file": "t1809799.html"
   },
   {
-    "title": "Spirit of '22",
-    "file": "showthread.php@t=1809699&nojs=1.htm"
+    "title": "t1809800.html",
+    "file": "t1809800.html"
   },
   {
-    "title": "Spirit of '22",
-    "file": "showthread.php@t=1809699.htm"
+    "title": "t1809802.html",
+    "file": "t1809802.html"
   },
   {
-    "title": "these lil hexagonal things in my house",
-    "file": "showthread.php@t=1809700.htm"
+    "title": "t1809803.html",
+    "file": "t1809803.html"
   },
   {
-    "title": "Spirit of '22",
-    "file": "showthread.php@t=1809701&goto=nextnewest.htm"
+    "title": "t1809804.html",
+    "file": "t1809804.html"
   },
   {
-    "title": "How I leave my Body",
-    "file": "showthread.php@t=1809701&goto=nextoldest.htm"
+    "title": "t1809805.html",
+    "file": "t1809805.html"
   },
   {
-    "title": "The big God scam",
-    "file": "showthread.php@t=1809701&nojs=1.htm"
+    "title": "t1809806.html",
+    "file": "t1809806.html"
   },
   {
-    "title": "The big God scam - Page 2",
-    "file": "showthread.php@t=1809701&page=2.htm"
+    "title": "t1809807.html",
+    "file": "t1809807.html"
   },
   {
-    "title": "The big God scam - Page 3",
-    "file": "showthread.php@t=1809701&page=3.htm"
+    "title": "t1809808.html",
+    "file": "t1809808.html"
   },
   {
-    "title": "The big God scam",
-    "file": "showthread.php@t=1809701.htm"
+    "title": "t1809809.html",
+    "file": "t1809809.html"
   },
   {
-    "title": "Pistol packin' pastor update",
-    "file": "showthread.php@t=1809702.htm"
+    "title": "t1809810.html",
+    "file": "t1809810.html"
   },
   {
-    "title": "Wilson's idea of \"God\"",
-    "file": "showthread.php@t=1809703&goto=nextnewest.htm"
+    "title": "t1809812.html",
+    "file": "t1809812.html"
   },
   {
-    "title": "If God fogives and forgets then...",
-    "file": "showthread.php@t=1809703&goto=nextoldest.htm"
+    "title": "t1809813.html",
+    "file": "t1809813.html"
   },
   {
-    "title": "What is wrong?",
-    "file": "showthread.php@t=1809703&nojs=1.htm"
+    "title": "t1809814.html",
+    "file": "t1809814.html"
   },
   {
-    "title": "What is wrong? - Page 2",
-    "file": "showthread.php@t=1809703&page=2.htm"
+    "title": "t1809815.html",
+    "file": "t1809815.html"
   },
   {
-    "title": "What is wrong?",
-    "file": "showthread.php@t=1809703.htm"
+    "title": "t1809816.html",
+    "file": "t1809816.html"
   },
   {
-    "title": "ATM machines",
-    "file": "showthread.php@t=1809704.htm"
+    "title": "t1809817.html",
+    "file": "t1809817.html"
   },
   {
-    "title": "Omnipotent God and Inalterable Morals Mutually Exclusive",
-    "file": "showthread.php@t=1809705.htm"
+    "title": "t1809818.html",
+    "file": "t1809818.html"
   },
   {
-    "title": "Freemasonry",
-    "file": "showthread.php@t=1809706.htm"
+    "title": "t1809819.html",
+    "file": "t1809819.html"
   },
   {
-    "title": "Wilson's idea of \"God\"",
-    "file": "showthread.php@t=1809707.htm"
+    "title": "t1809820.html",
+    "file": "t1809820.html"
   },
   {
-    "title": "quick question",
-    "file": "showthread.php@t=1809708.htm"
+    "title": "t1809823.html",
+    "file": "t1809823.html"
   },
   {
-    "title": "substance abuse and christianity",
-    "file": "showthread.php@t=1809709.htm"
+    "title": "t1809824.html",
+    "file": "t1809824.html"
   },
   {
-    "title": "Don't be quick to dismiss",
-    "file": "showthread.php@t=1809710.htm"
+    "title": "t1809825.html",
+    "file": "t1809825.html"
   },
   {
-    "title": "No one knows for sure whats up.So be AGNOSTIC !!!!!!!!!!!!!!!!!",
-    "file": "showthread.php@t=1809711&goto=nextnewest.htm"
+    "title": "t1809826.html",
+    "file": "t1809826.html"
   },
   {
-    "title": "'Islamic Iran' VS  'The UN'",
-    "file": "showthread.php@t=1809711&goto=nextoldest.htm"
+    "title": "t1809827.html",
+    "file": "t1809827.html"
   },
   {
-    "title": "Tradition:  does it bring corruption or improvement?",
-    "file": "showthread.php@t=1809711&nojs=1.htm"
+    "title": "t1809828.html",
+    "file": "t1809828.html"
   },
   {
-    "title": "Tradition:  does it bring corruption or improvement?",
-    "file": "showthread.php@t=1809711.htm"
+    "title": "t1809829.html",
+    "file": "t1809829.html"
   },
   {
-    "title": "yaaay the guy who wrote that article on the true islam!  bonny job!",
-    "file": "showthread.php@t=1809712&goto=nextnewest.htm"
+    "title": "t1809830.html",
+    "file": "t1809830.html"
   },
   {
-    "title": "Why try?",
-    "file": "showthread.php@t=1809712&goto=nextoldest.htm"
+    "title": "t1809831.html",
+    "file": "t1809831.html"
   },
   {
-    "title": "What if jesus...",
-    "file": "showthread.php@t=1809712&nojs=1.htm"
+    "title": "t1809832.html",
+    "file": "t1809832.html"
   },
   {
-    "title": "What if jesus... - Page 2",
-    "file": "showthread.php@t=1809712&page=2.htm"
+    "title": "t1809833.html",
+    "file": "t1809833.html"
   },
   {
-    "title": "What if jesus...",
-    "file": "showthread.php@t=1809712.htm"
+    "title": "t1809835.html",
+    "file": "t1809835.html"
   },
   {
-    "title": "quick question",
-    "file": "showthread.php@t=1809713&goto=nextnewest.htm"
+    "title": "t1809836.html",
+    "file": "t1809836.html"
   },
   {
-    "title": "gods debris",
-    "file": "showthread.php@t=1809713&goto=nextoldest.htm"
+    "title": "t1809837.html",
+    "file": "t1809837.html"
   },
   {
-    "title": "I quit.",
-    "file": "showthread.php@t=1809713&nojs=1.htm"
+    "title": "t1809838.html",
+    "file": "t1809838.html"
   },
   {
-    "title": "I quit. - Page 2",
-    "file": "showthread.php@t=1809713&page=2.htm"
+    "title": "t1809839.html",
+    "file": "t1809839.html"
   },
   {
-    "title": "I quit.",
-    "file": "showthread.php@t=1809713.htm"
+    "title": "t1809840.html",
+    "file": "t1809840.html"
   },
   {
-    "title": "Satanism (Serious Topic)",
-    "file": "showthread.php@t=1809714.htm"
+    "title": "t1809841.html",
+    "file": "t1809841.html"
   },
   {
-    "title": "Regarding the Bloodline Aspects of the Holy Grail",
-    "file": "showthread.php@t=1809715.htm"
+    "title": "t1809842.html",
+    "file": "t1809842.html"
   },
   {
-    "title": "What does god look like? (to you)",
-    "file": "showthread.php@t=1809716&goto=nextnewest.htm"
+    "title": "t1809843.html",
+    "file": "t1809843.html"
   },
   {
-    "title": "Pistol packin' pastor update",
-    "file": "showthread.php@t=1809716&goto=nextoldest.htm"
+    "title": "t1809844.html",
+    "file": "t1809844.html"
   },
   {
-    "title": "why i don't believe in god",
-    "file": "showthread.php@t=1809716&nojs=1.htm"
+    "title": "t1809845.html",
+    "file": "t1809845.html"
   },
   {
-    "title": "why i don't believe in god - Page 2",
-    "file": "showthread.php@t=1809716&page=2.htm"
+    "title": "t1809846.html",
+    "file": "t1809846.html"
   },
   {
-    "title": "why i don't believe in god - Page 3",
-    "file": "showthread.php@t=1809716&page=3.htm"
+    "title": "t1809848.html",
+    "file": "t1809848.html"
   },
   {
-    "title": "why i don't believe in god - Page 4",
-    "file": "showthread.php@t=1809716&page=4.htm"
+    "title": "t1809849.html",
+    "file": "t1809849.html"
   },
   {
-    "title": "why i don't believe in god - Page 5",
-    "file": "showthread.php@t=1809716&page=5.htm"
+    "title": "t1809850.html",
+    "file": "t1809850.html"
   },
   {
-    "title": "why i don't believe in god - Page 6",
-    "file": "showthread.php@t=1809716&page=6.htm"
+    "title": "t1809851.html",
+    "file": "t1809851.html"
   },
   {
-    "title": "why i don't believe in god",
-    "file": "showthread.php@t=1809716.htm"
+    "title": "t1809852.html",
+    "file": "t1809852.html"
   },
   {
-    "title": "Why God is the way it is....",
-    "file": "showthread.php@t=1809717.htm"
+    "title": "t1809853.html",
+    "file": "t1809853.html"
   },
   {
-    "title": "Why try?",
-    "file": "showthread.php@t=1809718&goto=nextnewest.htm"
+    "title": "t1809854.html",
+    "file": "t1809854.html"
   },
   {
-    "title": "substance abuse and christianity",
-    "file": "showthread.php@t=1809718&goto=nextoldest.htm"
+    "title": "t1809857.html",
+    "file": "t1809857.html"
   },
   {
-    "title": "Abraxis  (I read about it and want to know more)",
-    "file": "showthread.php@t=1809718&nojs=1.htm"
+    "title": "t1809858.html",
+    "file": "t1809858.html"
   },
   {
-    "title": "Abraxis  (I read about it and want to know more)",
-    "file": "showthread.php@t=1809718.htm"
+    "title": "t1809859.html",
+    "file": "t1809859.html"
   },
   {
-    "title": "ATHEIST",
-    "file": "showthread.php@t=1809719&goto=nextnewest.htm"
+    "title": "t1809860.html",
+    "file": "t1809860.html"
   },
   {
-    "title": "Exorcism, and Stigmata",
-    "file": "showthread.php@t=1809719&goto=nextoldest.htm"
+    "title": "t1809861.html",
+    "file": "t1809861.html"
   },
   {
-    "title": "Pistol packin pastor, part 3",
-    "file": "showthread.php@t=1809719&nojs=1.htm"
+    "title": "t1809862.html",
+    "file": "t1809862.html"
   },
   {
-    "title": "Pistol packin pastor, part 3",
-    "file": "showthread.php@t=1809719.htm"
+    "title": "t1809863.html",
+    "file": "t1809863.html"
   },
   {
-    "title": "This stupid christian girl I know...",
-    "file": "showthread.php@t=1809720.htm"
+    "title": "t1809864.html",
+    "file": "t1809864.html"
   },
   {
-    "title": "yaaay the guy who wrote that article on the true islam!  bonny job!",
-    "file": "showthread.php@t=1809721.htm"
+    "title": "t1809865.html",
+    "file": "t1809865.html"
   },
   {
-    "title": "question",
-    "file": "showthread.php@t=1809722.htm"
+    "title": "t1809866.html",
+    "file": "t1809866.html"
   },
   {
-    "title": "Pistol packin pastor, part 3",
-    "file": "showthread.php@t=1809723&goto=nextnewest.htm"
+    "title": "t1809867.html",
+    "file": "t1809867.html"
   },
   {
-    "title": "question",
-    "file": "showthread.php@t=1809723&goto=nextoldest.htm"
+    "title": "t1809868.html",
+    "file": "t1809868.html"
   },
   {
-    "title": "Exorcism, and Stigmata",
-    "file": "showthread.php@t=1809723&nojs=1.htm"
+    "title": "t1809869.html",
+    "file": "t1809869.html"
   },
   {
-    "title": "Exorcism, and Stigmata - Page 2",
-    "file": "showthread.php@t=1809723&page=2.htm"
+    "title": "t1809870.html",
+    "file": "t1809870.html"
   },
   {
-    "title": "Exorcism, and Stigmata",
-    "file": "showthread.php@t=1809723.htm"
+    "title": "t1809871.html",
+    "file": "t1809871.html"
   },
   {
-    "title": "Freemasonry",
-    "file": "showthread.php@t=1809724&goto=nextnewest.htm"
+    "title": "t1809872.html",
+    "file": "t1809872.html"
   },
   {
-    "title": "Necromancer",
-    "file": "showthread.php@t=1809724&goto=nextoldest.htm"
+    "title": "t1809873.html",
+    "file": "t1809873.html"
   },
   {
-    "title": "they're all the same anyway...",
-    "file": "showthread.php@t=1809724&nojs=1.htm"
+    "title": "t1809874.html",
+    "file": "t1809874.html"
   },
   {
-    "title": "they're all the same anyway...",
-    "file": "showthread.php@t=1809724.htm"
+    "title": "t1809875.html",
+    "file": "t1809875.html"
   },
   {
-    "title": "Crowley/Thelema",
-    "file": "showthread.php@t=1809725.htm"
+    "title": "t1809876.html",
+    "file": "t1809876.html"
   },
   {
-    "title": "The End of the American Catholic Church?",
-    "file": "showthread.php@t=1809726.htm"
+    "title": "t1809878.html",
+    "file": "t1809878.html"
   },
   {
-    "title": "i thought god loved me...",
-    "file": "showthread.php@t=1809727.htm"
+    "title": "t1809879.html",
+    "file": "t1809879.html"
   },
   {
-    "title": "'Islamic Iran' VS  'The UN'",
-    "file": "showthread.php@t=1809728.htm"
+    "title": "t1809880.html",
+    "file": "t1809880.html"
   },
   {
-    "title": "Christianism - Islamism",
-    "file": "showthread.php@t=1809729&goto=nextnewest.htm"
+    "title": "t1809881.html",
+    "file": "t1809881.html"
   },
   {
-    "title": "Islamic esoterism",
-    "file": "showthread.php@t=1809729&goto=nextoldest.htm"
+    "title": "t1809882.html",
+    "file": "t1809882.html"
   },
   {
-    "title": "Religion is evil, stupid, bad, and annoying.",
-    "file": "showthread.php@t=1809729&nojs=1.htm"
+    "title": "t1809883.html",
+    "file": "t1809883.html"
   },
   {
-    "title": "Religion is evil, stupid, bad, and annoying. - Page 10",
-    "file": "showthread.php@t=1809729&page=10.htm"
+    "title": "t1809884.html",
+    "file": "t1809884.html"
   },
   {
-    "title": "Religion is evil, stupid, bad, and annoying. - Page 2",
-    "file": "showthread.php@t=1809729&page=2.htm"
+    "title": "t1809885.html",
+    "file": "t1809885.html"
   },
   {
-    "title": "Religion is evil, stupid, bad, and annoying. - Page 3",
-    "file": "showthread.php@t=1809729&page=3.htm"
+    "title": "t1809886.html",
+    "file": "t1809886.html"
   },
   {
-    "title": "Religion is evil, stupid, bad, and annoying. - Page 4",
-    "file": "showthread.php@t=1809729&page=4.htm"
+    "title": "t1809887.html",
+    "file": "t1809887.html"
   },
   {
-    "title": "Religion is evil, stupid, bad, and annoying. - Page 5",
-    "file": "showthread.php@t=1809729&page=5.htm"
+    "title": "t1809888.html",
+    "file": "t1809888.html"
   },
   {
-    "title": "Religion is evil, stupid, bad, and annoying. - Page 6",
-    "file": "showthread.php@t=1809729&page=6.htm"
+    "title": "t1809889.html",
+    "file": "t1809889.html"
   },
   {
-    "title": "Religion is evil, stupid, bad, and annoying.",
-    "file": "showthread.php@t=1809729.htm"
+    "title": "t1809890.html",
+    "file": "t1809890.html"
   },
   {
-    "title": "This stupid christian girl I know...",
-    "file": "showthread.php@t=1809731&goto=nextnewest.htm"
+    "title": "t1809891.html",
+    "file": "t1809891.html"
   },
   {
-    "title": "The igno-rant religion",
-    "file": "showthread.php@t=1809731&goto=nextoldest.htm"
+    "title": "t1809892.html",
+    "file": "t1809892.html"
   },
   {
-    "title": "religion and spirituality",
-    "file": "showthread.php@t=1809731&nojs=1.htm"
+    "title": "t1809893.html",
+    "file": "t1809893.html"
   },
   {
-    "title": "religion and spirituality - Page 2",
-    "file": "showthread.php@t=1809731&page=2.htm"
+    "title": "t1809894.html",
+    "file": "t1809894.html"
   },
   {
-    "title": "religion and spirituality",
-    "file": "showthread.php@t=1809731.htm"
+    "title": "t1809896.html",
+    "file": "t1809896.html"
   },
   {
-    "title": "I challenge you",
-    "file": "showthread.php@t=1809732&goto=nextnewest.htm"
+    "title": "t1809897.html",
+    "file": "t1809897.html"
   },
   {
-    "title": "god definitely not real.. i mean come on",
-    "file": "showthread.php@t=1809732&goto=nextoldest.htm"
+    "title": "t1809898.html",
+    "file": "t1809898.html"
   },
   {
-    "title": "After Afterlife?",
-    "file": "showthread.php@t=1809732&nojs=1.htm"
+    "title": "t1809899.html",
+    "file": "t1809899.html"
   },
   {
-    "title": "After Afterlife? - Page 2",
-    "file": "showthread.php@t=1809732&page=2.htm"
+    "title": "t1809900.html",
+    "file": "t1809900.html"
   },
   {
-    "title": "After Afterlife? - Page 3",
-    "file": "showthread.php@t=1809732&page=3.htm"
+    "title": "t1809901.html",
+    "file": "t1809901.html"
   },
   {
-    "title": "After Afterlife?",
-    "file": "showthread.php@t=1809732.htm"
+    "title": "t1809902.html",
+    "file": "t1809902.html"
   },
   {
-    "title": "Why ?(you finish)",
-    "file": "showthread.php@t=1809733&goto=nextnewest.htm"
+    "title": "t1809903.html",
+    "file": "t1809903.html"
   },
   {
-    "title": "ATHEIST",
-    "file": "showthread.php@t=1809733&goto=nextoldest.htm"
+    "title": "t1809904.html",
+    "file": "t1809904.html"
   },
   {
-    "title": "Devil worship",
-    "file": "showthread.php@t=1809733&nojs=1.htm"
+    "title": "t1809907.html",
+    "file": "t1809907.html"
   },
   {
-    "title": "Devil worship",
-    "file": "showthread.php@t=1809733.htm"
+    "title": "t1809908.html",
+    "file": "t1809908.html"
   },
   {
-    "title": "The igno-rant religion",
-    "file": "showthread.php@t=1809734&goto=nextnewest.htm"
+    "title": "t1809909.html",
+    "file": "t1809909.html"
   },
   {
-    "title": "Crowley/Thelema",
-    "file": "showthread.php@t=1809734&goto=nextoldest.htm"
+    "title": "t1809910.html",
+    "file": "t1809910.html"
   },
   {
-    "title": "Happy Solstice 2003!",
-    "file": "showthread.php@t=1809734&nojs=1.htm"
+    "title": "t1809911.html",
+    "file": "t1809911.html"
   },
   {
-    "title": "Happy Solstice 2003!",
-    "file": "showthread.php@t=1809734.htm"
+    "title": "t1809912.html",
+    "file": "t1809912.html"
   },
   {
-    "title": "Crowley/Thelema",
-    "file": "showthread.php@t=1809735&goto=nextnewest.htm"
+    "title": "t1809913.html",
+    "file": "t1809913.html"
   },
   {
-    "title": "Devil worship",
-    "file": "showthread.php@t=1809735&goto=nextoldest.htm"
+    "title": "t1809914.html",
+    "file": "t1809914.html"
   },
   {
-    "title": "Why ?(you finish)",
-    "file": "showthread.php@t=1809735&nojs=1.htm"
+    "title": "t1809915.html",
+    "file": "t1809915.html"
   },
   {
-    "title": "Why ?(you finish) - Page 2",
-    "file": "showthread.php@t=1809735&page=2.htm"
+    "title": "t1809916.html",
+    "file": "t1809916.html"
   },
   {
-    "title": "Why ?(you finish)",
-    "file": "showthread.php@t=1809735.htm"
+    "title": "t1809917.html",
+    "file": "t1809917.html"
   },
   {
-    "title": "Devil worship",
-    "file": "showthread.php@t=1809736&goto=nextnewest.htm"
+    "title": "t1809918.html",
+    "file": "t1809918.html"
   },
   {
-    "title": "Pistol packin pastor, part 3",
-    "file": "showthread.php@t=1809736&goto=nextoldest.htm"
+    "title": "t1809919.html",
+    "file": "t1809919.html"
   },
   {
-    "title": "ATHEIST",
-    "file": "showthread.php@t=1809736&nojs=1.htm"
+    "title": "t1809920.html",
+    "file": "t1809920.html"
   },
   {
-    "title": "ATHEIST",
-    "file": "showthread.php@t=1809736.htm"
+    "title": "t1809921.html",
+    "file": "t1809921.html"
   },
   {
-    "title": "Necronomicon (SP)",
-    "file": "showthread.php@t=1809737.htm"
+    "title": "t1809922.html",
+    "file": "t1809922.html"
   },
   {
-    "title": "Hypocrisy",
-    "file": "showthread.php@t=1809738&goto=nextnewest.htm"
+    "title": "t1809923.html",
+    "file": "t1809923.html"
   },
   {
-    "title": "\"how do u define real?\"",
-    "file": "showthread.php@t=1809738&goto=nextoldest.htm"
+    "title": "t1809924.html",
+    "file": "t1809924.html"
   },
   {
-    "title": "Belief",
-    "file": "showthread.php@t=1809738&nojs=1.htm"
+    "title": "t1809925.html",
+    "file": "t1809925.html"
   },
   {
-    "title": "Belief - Page 2",
-    "file": "showthread.php@t=1809738&page=2.htm"
+    "title": "t1809926.html",
+    "file": "t1809926.html"
   },
   {
-    "title": "Belief",
-    "file": "showthread.php@t=1809738.htm"
+    "title": "t1809927.html",
+    "file": "t1809927.html"
   },
   {
-    "title": "\"The Matrix\" & Religion",
-    "file": "showthread.php@t=1809739.htm"
+    "title": "t1809928.html",
+    "file": "t1809928.html"
   },
   {
-    "title": "Necromancer",
-    "file": "showthread.php@t=1809740.htm"
+    "title": "t1809929.html",
+    "file": "t1809929.html"
   },
   {
-    "title": "The igno-rant religion",
-    "file": "showthread.php@t=1809741.htm"
+    "title": "t1809930.html",
+    "file": "t1809930.html"
   },
   {
-    "title": "Reincarnation",
-    "file": "showthread.php@t=1809742.htm"
+    "title": "t1809931.html",
+    "file": "t1809931.html"
   },
   {
-    "title": "purpose and choice?",
-    "file": "showthread.php@t=1809743.htm"
+    "title": "t1809932.html",
+    "file": "t1809932.html"
   },
   {
-    "title": "excorcism",
-    "file": "showthread.php@t=1809744&goto=nextnewest.htm"
+    "title": "t1809933.html",
+    "file": "t1809933.html"
   },
   {
-    "title": "college students revise bible!",
-    "file": "showthread.php@t=1809744&goto=nextoldest.htm"
+    "title": "t1809934.html",
+    "file": "t1809934.html"
   },
   {
-    "title": "Satan, ethymologically.  Who are they?",
-    "file": "showthread.php@t=1809744&nojs=1.htm"
+    "title": "t1809935.html",
+    "file": "t1809935.html"
   },
   {
-    "title": "Satan, ethymologically.  Who are they? - Page 2",
-    "file": "showthread.php@t=1809744&page=2.htm"
+    "title": "t1809936.html",
+    "file": "t1809936.html"
   },
   {
-    "title": "Satan, ethymologically.  Who are they?",
-    "file": "showthread.php@t=1809744.htm"
+    "title": "t1809937.html",
+    "file": "t1809937.html"
   },
   {
-    "title": "Islamic esoterism",
-    "file": "showthread.php@t=1809745&goto=nextnewest.htm"
+    "title": "t1809938.html",
+    "file": "t1809938.html"
   },
   {
-    "title": "Freemasonry",
-    "file": "showthread.php@t=1809745&goto=nextoldest.htm"
+    "title": "t1809939.html",
+    "file": "t1809939.html"
   },
   {
-    "title": "Jews are pedophiles",
-    "file": "showthread.php@t=1809745&nojs=1.htm"
+    "title": "t1809940.html",
+    "file": "t1809940.html"
   },
   {
-    "title": "Jews are pedophiles",
-    "file": "showthread.php@t=1809745.htm"
+    "title": "t1809941.html",
+    "file": "t1809941.html"
   },
   {
-    "title": "Belief",
-    "file": "showthread.php@t=1809746&goto=nextnewest.htm"
+    "title": "t1809942.html",
+    "file": "t1809942.html"
   },
   {
-    "title": "purpose and choice?",
-    "file": "showthread.php@t=1809746&goto=nextoldest.htm"
+    "title": "t1809943.html",
+    "file": "t1809943.html"
   },
   {
-    "title": "\"how do u define real?\"",
-    "file": "showthread.php@t=1809746&nojs=1.htm"
+    "title": "t1809944.html",
+    "file": "t1809944.html"
   },
   {
-    "title": "\"how do u define real?\" - Page 2",
-    "file": "showthread.php@t=1809746&page=2.htm"
+    "title": "t1809945.html",
+    "file": "t1809945.html"
   },
   {
-    "title": "\"how do u define real?\"",
-    "file": "showthread.php@t=1809746.htm"
+    "title": "t1809946.html",
+    "file": "t1809946.html"
   },
   {
-    "title": "Christianism - Islamism",
-    "file": "showthread.php@t=1809748.htm"
+    "title": "t1809947.html",
+    "file": "t1809947.html"
   },
   {
-    "title": "Islamic esoterism",
-    "file": "showthread.php@t=1809749.htm"
+    "title": "t1809948.html",
+    "file": "t1809948.html"
   },
   {
-    "title": "For Rust and people who are of higher intelligence than this plague of ignorance.",
-    "file": "showthread.php@t=1809750.htm"
+    "title": "t1809949.html",
+    "file": "t1809949.html"
   },
   {
-    "title": "Necronomicon (SP)",
-    "file": "showthread.php@t=1809751&goto=nextnewest.htm"
+    "title": "t1809950.html",
+    "file": "t1809950.html"
   },
   {
-    "title": "Christianism - Islamism",
-    "file": "showthread.php@t=1809751&goto=nextoldest.htm"
+    "title": "t1809951.html",
+    "file": "t1809951.html"
   },
   {
-    "title": "Sufis",
-    "file": "showthread.php@t=1809751&nojs=1.htm"
+    "title": "t1809952.html",
+    "file": "t1809952.html"
   },
   {
-    "title": "Sufis",
-    "file": "showthread.php@t=1809751.htm"
+    "title": "t1809953.html",
+    "file": "t1809953.html"
   },
   {
-    "title": "christianity comercialized",
-    "file": "showthread.php@t=1809752&goto=nextnewest.htm"
+    "title": "t1809954.html",
+    "file": "t1809954.html"
   },
   {
-    "title": "the teachings.....well worth looking at",
-    "file": "showthread.php@t=1809752&goto=nextoldest.htm"
+    "title": "t1809955.html",
+    "file": "t1809955.html"
   },
   {
-    "title": "The myth of the jewish \"national God\"",
-    "file": "showthread.php@t=1809752&nojs=1.htm"
+    "title": "t1809956.html",
+    "file": "t1809956.html"
   },
   {
-    "title": "The myth of the jewish \"national God\" - Page 2",
-    "file": "showthread.php@t=1809752&page=2.htm"
+    "title": "t1809957.html",
+    "file": "t1809957.html"
   },
   {
-    "title": "The myth of the jewish \"national God\" - Page 3",
-    "file": "showthread.php@t=1809752&page=3.htm"
+    "title": "t1809958.html",
+    "file": "t1809958.html"
   },
   {
-    "title": "The myth of the jewish \"national God\" - Page 4",
-    "file": "showthread.php@t=1809752&page=4.htm"
+    "title": "t1809959.html",
+    "file": "t1809959.html"
   },
   {
-    "title": "The myth of the jewish \"national God\" - Page 5",
-    "file": "showthread.php@t=1809752&page=5.htm"
+    "title": "t1809960.html",
+    "file": "t1809960.html"
   },
   {
-    "title": "The myth of the jewish \"national God\"",
-    "file": "showthread.php@t=1809752.htm"
+    "title": "t1809961.html",
+    "file": "t1809961.html"
   },
   {
-    "title": "Guys that walk around telling you to join their religion",
-    "file": "showthread.php@t=1809753.htm"
+    "title": "t1809962.html",
+    "file": "t1809962.html"
   },
   {
-    "title": "A weird question for the Christians.",
-    "file": "showthread.php@t=1809754&goto=nextnewest.htm"
+    "title": "t1809963.html",
+    "file": "t1809963.html"
   },
   {
-    "title": "Wouldn't it be better if there was no God, no afterlife?",
-    "file": "showthread.php@t=1809754&goto=nextoldest.htm"
+    "title": "t1809964.html",
+    "file": "t1809964.html"
   },
   {
-    "title": "god is cool",
-    "file": "showthread.php@t=1809754&nojs=1.htm"
+    "title": "t1809965.html",
+    "file": "t1809965.html"
   },
   {
-    "title": "god is cool - Page 2",
-    "file": "showthread.php@t=1809754&page=2.htm"
+    "title": "t1809966.html",
+    "file": "t1809966.html"
   },
   {
-    "title": "god is cool",
-    "file": "showthread.php@t=1809754.htm"
+    "title": "t1809967.html",
+    "file": "t1809967.html"
   },
   {
-    "title": "IS GOD EVIL",
-    "file": "showthread.php@t=1809755.htm"
+    "title": "t1809968.html",
+    "file": "t1809968.html"
   },
   {
-    "title": "the prupose of religion",
-    "file": "showthread.php@t=1809756.htm"
+    "title": "t1809969.html",
+    "file": "t1809969.html"
   },
   {
-    "title": "What if....serious topic only intelligent posts no rants or flames.",
-    "file": "showthread.php@t=1809757.htm"
+    "title": "t1809970.html",
+    "file": "t1809970.html"
   },
   {
-    "title": "The Gospel Written By Jesus",
-    "file": "showthread.php@t=1809758.htm"
+    "title": "t1809971.html",
+    "file": "t1809971.html"
   },
   {
-    "title": "Hypocrisy",
-    "file": "showthread.php@t=1809760.htm"
+    "title": "t1809972.html",
+    "file": "t1809972.html"
   },
   {
-    "title": "Old Testament",
-    "file": "showthread.php@t=1809761.htm"
+    "title": "t1809973.html",
+    "file": "t1809973.html"
   },
   {
-    "title": "What do Catholics believe?",
-    "file": "showthread.php@t=1809762.htm"
+    "title": "t1809974.html",
+    "file": "t1809974.html"
   },
   {
-    "title": "Saw something. Any ideas?",
-    "file": "showthread.php@t=1809763&goto=nextnewest.htm"
+    "title": "t1809975.html",
+    "file": "t1809975.html"
   },
   {
-    "title": "i thought god loved me...",
-    "file": "showthread.php@t=1809763&goto=nextoldest.htm"
+    "title": "t1809976.html",
+    "file": "t1809976.html"
   },
   {
-    "title": "religion",
-    "file": "showthread.php@t=1809763&nojs=1.htm"
+    "title": "t1809977.html",
+    "file": "t1809977.html"
   },
   {
-    "title": "religion",
-    "file": "showthread.php@t=1809763.htm"
+    "title": "t1809978.html",
+    "file": "t1809978.html"
   },
   {
-    "title": "Pistol packin' pastor update",
-    "file": "showthread.php@t=1809764&goto=nextnewest.htm"
+    "title": "t1809979.html",
+    "file": "t1809979.html"
   },
   {
-    "title": "The Gospel Written By Jesus",
-    "file": "showthread.php@t=1809764&goto=nextoldest.htm"
+    "title": "t1809980.html",
+    "file": "t1809980.html"
   },
   {
-    "title": "Satan, Hell, and Christianity.",
-    "file": "showthread.php@t=1809764&nojs=1.htm"
+    "title": "t1809981.html",
+    "file": "t1809981.html"
   },
   {
-    "title": "Satan, Hell, and Christianity.",
-    "file": "showthread.php@t=1809764.htm"
+    "title": "t1809982.html",
+    "file": "t1809982.html"
   },
   {
-    "title": "Saw something. Any ideas?",
-    "file": "showthread.php@t=1809766.htm"
+    "title": "t1809983.html",
+    "file": "t1809983.html"
   },
   {
-    "title": "Humor",
-    "file": "showthread.php@t=1809767.htm"
+    "title": "t1809984.html",
+    "file": "t1809984.html"
   },
   {
-    "title": "Is there such a thing as a soul and if so what is it?",
-    "file": "showthread.php@t=1809768.htm"
+    "title": "t1809985.html",
+    "file": "t1809985.html"
   },
   {
-    "title": "Seriously people theres no god",
-    "file": "showthread.php@t=1809770.htm"
+    "title": "t1809986.html",
+    "file": "t1809986.html"
   },
   {
-    "title": "anti-christian",
-    "file": "showthread.php@t=1809772.htm"
+    "title": "t1809987.html",
+    "file": "t1809987.html"
   },
   {
-    "title": "Wouldn't it be better if there was no God, no afterlife?",
-    "file": "showthread.php@t=1809774.htm"
+    "title": "t1809988.html",
+    "file": "t1809988.html"
   },
   {
-    "title": "death",
-    "file": "showthread.php@t=1809775.htm"
+    "title": "t1809989.html",
+    "file": "t1809989.html"
   },
   {
-    "title": "belief and opinion",
-    "file": "showthread.php@t=1809776&goto=nextnewest.htm"
+    "title": "t1809990.html",
+    "file": "t1809990.html"
   },
   {
-    "title": "god is cool",
-    "file": "showthread.php@t=1809776&goto=nextoldest.htm"
+    "title": "t1809991.html",
+    "file": "t1809991.html"
   },
   {
-    "title": "A weird question for the Christians.",
-    "file": "showthread.php@t=1809776&nojs=1.htm"
+    "title": "t1809992.html",
+    "file": "t1809992.html"
   },
   {
-    "title": "A weird question for the Christians. - Page 2",
-    "file": "showthread.php@t=1809776&page=2.htm"
+    "title": "t1809993.html",
+    "file": "t1809993.html"
   },
   {
-    "title": "A weird question for the Christians. - Page 3",
-    "file": "showthread.php@t=1809776&page=3.htm"
+    "title": "t1809994.html",
+    "file": "t1809994.html"
   },
   {
-    "title": "A weird question for the Christians.",
-    "file": "showthread.php@t=1809776.htm"
+    "title": "t1809995.html",
+    "file": "t1809995.html"
   },
   {
-    "title": "The Existence of Satan...",
-    "file": "showthread.php@t=1809777.htm"
+    "title": "t1809996.html",
+    "file": "t1809996.html"
   },
   {
-    "title": "Another question for Christians",
-    "file": "showthread.php@t=1809779.htm"
+    "title": "t1809997.html",
+    "file": "t1809997.html"
   },
   {
-    "title": "there is no god",
-    "file": "showthread.php@t=1809780.htm"
+    "title": "t1809998.html",
+    "file": "t1809998.html"
   },
   {
-    "title": "Which is better???",
-    "file": "showthread.php@t=1809781.htm"
+    "title": "t1809999.html",
+    "file": "t1809999.html"
   },
   {
-    "title": "Have you ever?",
-    "file": "showthread.php@t=1809782&goto=nextnewest.htm"
+    "title": "t1810000.html",
+    "file": "t1810000.html"
   },
   {
-    "title": "there is no god",
-    "file": "showthread.php@t=1809782&goto=nextoldest.htm"
+    "title": "t1810001.html",
+    "file": "t1810001.html"
   },
   {
-    "title": "have you ever felt like you've been abandoned?",
-    "file": "showthread.php@t=1809782&nojs=1.htm"
+    "title": "t1810002.html",
+    "file": "t1810002.html"
   },
   {
-    "title": "have you ever felt like you've been abandoned? - Page 2",
-    "file": "showthread.php@t=1809782&page=2.htm"
+    "title": "t1810003.html",
+    "file": "t1810003.html"
   },
   {
-    "title": "have you ever felt like you've been abandoned?",
-    "file": "showthread.php@t=1809782.htm"
+    "title": "t1810004.html",
+    "file": "t1810004.html"
   },
   {
-    "title": "Off the wall",
-    "file": "showthread.php@t=1809783&goto=nextnewest.htm"
+    "title": "t1810005.html",
+    "file": "t1810005.html"
   },
   {
-    "title": "PAGANS",
-    "file": "showthread.php@t=1809783&goto=nextoldest.htm"
+    "title": "t1810006.html",
+    "file": "t1810006.html"
   },
   {
-    "title": "It's all just guessing really....",
-    "file": "showthread.php@t=1809783&nojs=1.htm"
+    "title": "t1810007.html",
+    "file": "t1810007.html"
   },
   {
-    "title": "It's all just guessing really.... - Page 2",
-    "file": "showthread.php@t=1809783&page=2.htm"
+    "title": "t1810008.html",
+    "file": "t1810008.html"
   },
   {
-    "title": "It's all just guessing really....",
-    "file": "showthread.php@t=1809783.htm"
+    "title": "t1810009.html",
+    "file": "t1810009.html"
   },
   {
-    "title": "The Satanic Bible",
-    "file": "showthread.php@t=1809784.htm"
+    "title": "t1810010.html",
+    "file": "t1810010.html"
   },
   {
-    "title": "Situational ethics",
-    "file": "showthread.php@t=1809785.htm"
+    "title": "t1810011.html",
+    "file": "t1810011.html"
   },
   {
-    "title": "the meaning/purpose of life",
-    "file": "showthread.php@t=1809788.htm"
+    "title": "t1810012.html",
+    "file": "t1810012.html"
   },
   {
-    "title": "Sects",
-    "file": "showthread.php@t=1809789&goto=nextnewest.htm"
+    "title": "t1810013.html",
+    "file": "t1810013.html"
   },
   {
-    "title": "how far do you believe??",
-    "file": "showthread.php@t=1809789&goto=nextoldest.htm"
+    "title": "t1810014.html",
+    "file": "t1810014.html"
   },
   {
-    "title": "god?",
-    "file": "showthread.php@t=1809789&nojs=1.htm"
+    "title": "t1810015.html",
+    "file": "t1810015.html"
   },
   {
-    "title": "god? - Page 2",
-    "file": "showthread.php@t=1809789&page=2.htm"
+    "title": "t1810016.html",
+    "file": "t1810016.html"
   },
   {
-    "title": "god? - Page 3",
-    "file": "showthread.php@t=1809789&page=3.htm"
+    "title": "t1810017.html",
+    "file": "t1810017.html"
   },
   {
-    "title": "god?",
-    "file": "showthread.php@t=1809789.htm"
+    "title": "t1810018.html",
+    "file": "t1810018.html"
   },
   {
-    "title": "Return",
-    "file": "showthread.php@t=1809791.htm"
+    "title": "t1810019.html",
+    "file": "t1810019.html"
   },
   {
-    "title": "My problem with 70% of 'witches'",
-    "file": "showthread.php@t=1809795.htm"
+    "title": "t1810020.html",
+    "file": "t1810020.html"
   },
   {
-    "title": "It's all just guessing really....",
-    "file": "showthread.php@t=1809796&goto=nextnewest.htm"
+    "title": "t1810021.html",
+    "file": "t1810021.html"
   },
   {
-    "title": "Christian heaven",
-    "file": "showthread.php@t=1809796&goto=nextoldest.htm"
+    "title": "t1810022.html",
+    "file": "t1810022.html"
   },
   {
-    "title": "PAGANS",
-    "file": "showthread.php@t=1809796&nojs=1.htm"
+    "title": "t1810023.html",
+    "file": "t1810023.html"
   },
   {
-    "title": "PAGANS",
-    "file": "showthread.php@t=1809796.htm"
+    "title": "t1810024.html",
+    "file": "t1810024.html"
   },
   {
-    "title": "excorcism",
-    "file": "showthread.php@t=1809797.htm"
+    "title": "t1810025.html",
+    "file": "t1810025.html"
   },
   {
-    "title": "Off the wall",
-    "file": "showthread.php@t=1809798.htm"
+    "title": "t1810026.html",
+    "file": "t1810026.html"
   },
   {
-    "title": "My Religon",
-    "file": "showthread.php@t=1809799&goto=nextnewest.htm"
+    "title": "t1810027.html",
+    "file": "t1810027.html"
   },
   {
-    "title": "Heaven and hell",
-    "file": "showthread.php@t=1809799&goto=nextoldest.htm"
+    "title": "t1810028.html",
+    "file": "t1810028.html"
   },
   {
-    "title": "Wealth in the name of Christ...",
-    "file": "showthread.php@t=1809799&nojs=1.htm"
+    "title": "t1810029.html",
+    "file": "t1810029.html"
   },
   {
-    "title": "Wealth in the name of Christ... - Page 2",
-    "file": "showthread.php@t=1809799&page=2.htm"
+    "title": "t1810030.html",
+    "file": "t1810030.html"
   },
   {
-    "title": "Wealth in the name of Christ... - Page 3",
-    "file": "showthread.php@t=1809799&page=3.htm"
+    "title": "t1810031.html",
+    "file": "t1810031.html"
   },
   {
-    "title": "Wealth in the name of Christ... - Page 4",
-    "file": "showthread.php@t=1809799&page=4.htm"
+    "title": "t1810032.html",
+    "file": "t1810032.html"
   },
   {
-    "title": "Wealth in the name of Christ... - Page 5",
-    "file": "showthread.php@t=1809799&page=5.htm"
+    "title": "t1810033.html",
+    "file": "t1810033.html"
   },
   {
-    "title": "Wealth in the name of Christ... - Page 6",
-    "file": "showthread.php@t=1809799&page=6.htm"
+    "title": "t1810034.html",
+    "file": "t1810034.html"
   },
   {
-    "title": "Wealth in the name of Christ...",
-    "file": "showthread.php@t=1809799.htm"
+    "title": "t1810035.html",
+    "file": "t1810035.html"
   },
   {
-    "title": "Why do so many people believe in religion.",
-    "file": "showthread.php@t=1809800.htm"
+    "title": "t1810036.html",
+    "file": "t1810036.html"
   },
   {
-    "title": "What if christianity or Islam never happened?",
-    "file": "showthread.php@t=1809802.htm"
+    "title": "t1810037.html",
+    "file": "t1810037.html"
   },
   {
-    "title": "jesus is a funny  guy",
-    "file": "showthread.php@t=1809803&goto=nextnewest.htm"
+    "title": "t1810038.html",
+    "file": "t1810038.html"
   },
   {
-    "title": "A weird question for the Christians.",
-    "file": "showthread.php@t=1809803&goto=nextoldest.htm"
+    "title": "t1810039.html",
+    "file": "t1810039.html"
   },
   {
-    "title": "belief and opinion",
-    "file": "showthread.php@t=1809803&nojs=1.htm"
+    "title": "t1810040.html",
+    "file": "t1810040.html"
   },
   {
-    "title": "belief and opinion",
-    "file": "showthread.php@t=1809803.htm"
+    "title": "t1810041.html",
+    "file": "t1810041.html"
   },
   {
-    "title": "jesus is a funny  guy",
-    "file": "showthread.php@t=1809804.htm"
+    "title": "t1810042.html",
+    "file": "t1810042.html"
   },
   {
-    "title": "Look past the reason",
-    "file": "showthread.php@t=1809805&goto=nextnewest.htm"
+    "title": "t1810043.html",
+    "file": "t1810043.html"
   },
   {
-    "title": "To the believers",
-    "file": "showthread.php@t=1809805&goto=nextoldest.htm"
+    "title": "t1810044.html",
+    "file": "t1810044.html"
   },
   {
-    "title": "What created God?",
-    "file": "showthread.php@t=1809805&nojs=1.htm"
+    "title": "t1810045.html",
+    "file": "t1810045.html"
   },
   {
-    "title": "What created God? - Page 2",
-    "file": "showthread.php@t=1809805&page=2.htm"
+    "title": "t1810046.html",
+    "file": "t1810046.html"
   },
   {
-    "title": "What created God? - Page 3",
-    "file": "showthread.php@t=1809805&page=3.htm"
+    "title": "t1810047.html",
+    "file": "t1810047.html"
   },
   {
-    "title": "What created God?",
-    "file": "showthread.php@t=1809805.htm"
+    "title": "t1810048.html",
+    "file": "t1810048.html"
   },
   {
-    "title": "Mathematics",
-    "file": "showthread.php@t=1809806&goto=nextnewest.htm"
+    "title": "t1810049.html",
+    "file": "t1810049.html"
   },
   {
-    "title": "The other gospel.",
-    "file": "showthread.php@t=1809806&goto=nextoldest.htm"
+    "title": "t1810050.html",
+    "file": "t1810050.html"
   },
   {
-    "title": "you believe in god cause your scarred of dying",
-    "file": "showthread.php@t=1809806&nojs=1.htm"
+    "title": "t1810051.html",
+    "file": "t1810051.html"
   },
   {
-    "title": "you believe in god cause your scarred of dying - Page 2",
-    "file": "showthread.php@t=1809806&page=2.htm"
+    "title": "t1810052.html",
+    "file": "t1810052.html"
   },
   {
-    "title": "you believe in god cause your scarred of dying - Page 3",
-    "file": "showthread.php@t=1809806&page=3.htm"
+    "title": "t1810053.html",
+    "file": "t1810053.html"
   },
   {
-    "title": "you believe in god cause your scarred of dying - Page 4",
-    "file": "showthread.php@t=1809806&page=4.htm"
+    "title": "t1810054.html",
+    "file": "t1810054.html"
   },
   {
-    "title": "you believe in god cause your scarred of dying",
-    "file": "showthread.php@t=1809806.htm"
+    "title": "t1810055.html",
+    "file": "t1810055.html"
   },
   {
-    "title": "college students revise bible!",
-    "file": "showthread.php@t=1809807.htm"
+    "title": "t1810056.html",
+    "file": "t1810056.html"
   },
   {
-    "title": "early religion",
-    "file": "showthread.php@t=1809808&goto=nextnewest.htm"
+    "title": "t1810057.html",
+    "file": "t1810057.html"
   },
   {
-    "title": "Which is better???",
-    "file": "showthread.php@t=1809808&goto=nextoldest.htm"
+    "title": "t1810058.html",
+    "file": "t1810058.html"
   },
   {
-    "title": "Tibetan Buddhism in the United States!!",
-    "file": "showthread.php@t=1809808&nojs=1.htm"
+    "title": "t1810059.html",
+    "file": "t1810059.html"
   },
   {
-    "title": "Tibetan Buddhism in the United States!!",
-    "file": "showthread.php@t=1809808.htm"
+    "title": "t1810060.html",
+    "file": "t1810060.html"
   },
   {
-    "title": "Chi",
-    "file": "showthread.php@t=1809809.htm"
+    "title": "t1810061.html",
+    "file": "t1810061.html"
   },
   {
-    "title": "WHY do we DO good things.",
-    "file": "showthread.php@t=1809810.htm"
+    "title": "t1810062.html",
+    "file": "t1810062.html"
   },
   {
-    "title": "Ten commandments in the courthouse",
-    "file": "showthread.php@t=1809812&goto=nextnewest.htm"
+    "title": "t1810063.html",
+    "file": "t1810063.html"
   },
   {
-    "title": "DARKFIRE47",
-    "file": "showthread.php@t=1809812&goto=nextoldest.htm"
+    "title": "t1810064.html",
+    "file": "t1810064.html"
   },
   {
-    "title": "A story of the souls developement",
-    "file": "showthread.php@t=1809812&nojs=1.htm"
+    "title": "t1810065.html",
+    "file": "t1810065.html"
   },
   {
-    "title": "A story of the souls developement - Page 2",
-    "file": "showthread.php@t=1809812&page=2.htm"
+    "title": "t1810066.html",
+    "file": "t1810066.html"
   },
   {
-    "title": "A story of the souls developement",
-    "file": "showthread.php@t=1809812.htm"
+    "title": "t1810067.html",
+    "file": "t1810067.html"
   },
   {
-    "title": "The Rock Theory",
-    "file": "showthread.php@t=1809813.htm"
+    "title": "t1810068.html",
+    "file": "t1810068.html"
   },
   {
-    "title": "Christianity...Hypocritical?",
-    "file": "showthread.php@t=1809814.htm"
+    "title": "t1810069.html",
+    "file": "t1810069.html"
   },
   {
-    "title": "the nature of the universe",
-    "file": "showthread.php@t=1809815.htm"
+    "title": "t1810070.html",
+    "file": "t1810070.html"
   },
   {
-    "title": "weird thought.",
-    "file": "showthread.php@t=1809816.htm"
+    "title": "t1810071.html",
+    "file": "t1810071.html"
   },
   {
-    "title": "why religion exists",
-    "file": "showthread.php@t=1809817&goto=nextnewest.htm"
+    "title": "t1810072.html",
+    "file": "t1810072.html"
   },
   {
-    "title": "weird thought.",
-    "file": "showthread.php@t=1809817&goto=nextoldest.htm"
+    "title": "t1810073.html",
+    "file": "t1810073.html"
   },
   {
-    "title": "I'm not a bearded Jew, just...",
-    "file": "showthread.php@t=1809817&nojs=1.htm"
+    "title": "t1810074.html",
+    "file": "t1810074.html"
   },
   {
-    "title": "I'm not a bearded Jew, just...",
-    "file": "showthread.php@t=1809817.htm"
+    "title": "t1810075.html",
+    "file": "t1810075.html"
   },
   {
-    "title": "does god matter?",
-    "file": "showthread.php@t=1809818&goto=nextnewest.htm"
+    "title": "t1810076.html",
+    "file": "t1810076.html"
   },
   {
-    "title": "How are we alike God?",
-    "file": "showthread.php@t=1809818&goto=nextoldest.htm"
+    "title": "t1810077.html",
+    "file": "t1810077.html"
   },
   {
-    "title": "Sex.",
-    "file": "showthread.php@t=1809818&nojs=1.htm"
+    "title": "t1810078.html",
+    "file": "t1810078.html"
   },
   {
-    "title": "Sex.",
-    "file": "showthread.php@t=1809818.htm"
+    "title": "t1810079.html",
+    "file": "t1810079.html"
   },
   {
-    "title": "catholics and capital punishment",
-    "file": "showthread.php@t=1809819&goto=nextnewest.htm"
+    "title": "t1810080.html",
+    "file": "t1810080.html"
   },
   {
-    "title": "Wealth in the name of Christ...",
-    "file": "showthread.php@t=1809819&goto=nextoldest.htm"
+    "title": "t1810081.html",
+    "file": "t1810081.html"
   },
   {
-    "title": "My Religon",
-    "file": "showthread.php@t=1809819&nojs=1.htm"
+    "title": "t1810082.html",
+    "file": "t1810082.html"
   },
   {
-    "title": "My Religon - Page 2",
-    "file": "showthread.php@t=1809819&page=2.htm"
+    "title": "t1810083.html",
+    "file": "t1810083.html"
   },
   {
-    "title": "My Religon",
-    "file": "showthread.php@t=1809819.htm"
+    "title": "t1810084.html",
+    "file": "t1810084.html"
   },
   {
-    "title": "The other gospel.",
-    "file": "showthread.php@t=1809820&goto=nextnewest.htm"
+    "title": "t1810085.html",
+    "file": "t1810085.html"
   },
   {
-    "title": "The path to enlightenment",
-    "file": "showthread.php@t=1809820&goto=nextoldest.htm"
+    "title": "t1810086.html",
+    "file": "t1810086.html"
   },
   {
-    "title": "CLear Perception",
-    "file": "showthread.php@t=1809820&nojs=1.htm"
+    "title": "t1810087.html",
+    "file": "t1810087.html"
   },
   {
-    "title": "CLear Perception",
-    "file": "showthread.php@t=1809820.htm"
+    "title": "t1810088.html",
+    "file": "t1810088.html"
   },
   {
-    "title": "the teachings.....well worth looking at",
-    "file": "showthread.php@t=1809823.htm"
+    "title": "t1810089.html",
+    "file": "t1810089.html"
   },
   {
-    "title": "did the hollocaust really happen.",
-    "file": "showthread.php@t=1809824.htm"
+    "title": "t1810090.html",
+    "file": "t1810090.html"
   },
   {
-    "title": "Is God Lonely?",
-    "file": "showthread.php@t=1809825&goto=nextnewest.htm"
+    "title": "t1810091.html",
+    "file": "t1810091.html"
   },
   {
-    "title": "Most people are sheep",
-    "file": "showthread.php@t=1809825&goto=nextoldest.htm"
+    "title": "t1810092.html",
+    "file": "t1810092.html"
   },
   {
-    "title": "Enlightenment comes when...",
-    "file": "showthread.php@t=1809825&nojs=1.htm"
+    "title": "t1810093.html",
+    "file": "t1810093.html"
   },
   {
-    "title": "Enlightenment comes when... - Page 2",
-    "file": "showthread.php@t=1809825&page=2.htm"
+    "title": "t1810094.html",
+    "file": "t1810094.html"
   },
   {
-    "title": "Enlightenment comes when... - Page 3",
-    "file": "showthread.php@t=1809825&page=3.htm"
+    "title": "t1810095.html",
+    "file": "t1810095.html"
   },
   {
-    "title": "Enlightenment comes when... - Page 4",
-    "file": "showthread.php@t=1809825&page=4.htm"
+    "title": "t1810096.html",
+    "file": "t1810096.html"
   },
   {
-    "title": "Enlightenment comes when... - Page 5",
-    "file": "showthread.php@t=1809825&page=5.htm"
+    "title": "t1810097.html",
+    "file": "t1810097.html"
   },
   {
-    "title": "Enlightenment comes when...",
-    "file": "showthread.php@t=1809825.htm"
+    "title": "t1810098.html",
+    "file": "t1810098.html"
   },
   {
-    "title": "Mathematics",
-    "file": "showthread.php@t=1809826.htm"
+    "title": "t1810099.html",
+    "file": "t1810099.html"
   },
   {
-    "title": "Bible Predictions-coinscidence? i dont think so",
-    "file": "showthread.php@t=1809827.htm"
+    "title": "t1810100.html",
+    "file": "t1810100.html"
   },
   {
-    "title": "meaning of life again",
-    "file": "showthread.php@t=1809828.htm"
+    "title": "t1810101.html",
+    "file": "t1810101.html"
   },
   {
-    "title": "Satan.",
-    "file": "showthread.php@t=1809829.htm"
+    "title": "t1810102.html",
+    "file": "t1810102.html"
   },
   {
-    "title": "christianity comercialized",
-    "file": "showthread.php@t=1809830.htm"
+    "title": "t1810103.html",
+    "file": "t1810103.html"
   },
   {
-    "title": "A theory that need Dark Magneto's incite",
-    "file": "showthread.php@t=1809831.htm"
+    "title": "t1810104.html",
+    "file": "t1810104.html"
   },
   {
-    "title": "Have you heard about this guy?",
-    "file": "showthread.php@t=1809832.htm"
+    "title": "t1810105.html",
+    "file": "t1810105.html"
   },
   {
-    "title": "Human  Coalition Against the End of the World",
-    "file": "showthread.php@t=1809833.htm"
+    "title": "t1810106.html",
+    "file": "t1810106.html"
   },
   {
-    "title": "another funny religious joke",
-    "file": "showthread.php@t=1809835&goto=nextnewest.htm"
+    "title": "t1810107.html",
+    "file": "t1810107.html"
   },
   {
-    "title": "\"I understand\"",
-    "file": "showthread.php@t=1809835&goto=nextoldest.htm"
+    "title": "t1810108.html",
+    "file": "t1810108.html"
   },
   {
-    "title": "Personal Beliefs",
-    "file": "showthread.php@t=1809835&nojs=1.htm"
+    "title": "t1810109.html",
+    "file": "t1810109.html"
   },
   {
-    "title": "Personal Beliefs - Page 2",
-    "file": "showthread.php@t=1809835&page=2.htm"
+    "title": "t1810110.html",
+    "file": "t1810110.html"
   },
   {
-    "title": "Personal Beliefs - Page 3",
-    "file": "showthread.php@t=1809835&page=3.htm"
+    "title": "t1810111.html",
+    "file": "t1810111.html"
   },
   {
-    "title": "Personal Beliefs - Page 4",
-    "file": "showthread.php@t=1809835&page=4.htm"
+    "title": "t1810112.html",
+    "file": "t1810112.html"
   },
   {
-    "title": "Personal Beliefs",
-    "file": "showthread.php@t=1809835.htm"
+    "title": "t1810113.html",
+    "file": "t1810113.html"
   },
   {
-    "title": "My beliefs about the bible.... what are yours",
-    "file": "showthread.php@t=1809836.htm"
+    "title": "t1810114.html",
+    "file": "t1810114.html"
   },
   {
-    "title": "chirstianity is a scare tatic",
-    "file": "showthread.php@t=1809837&goto=nextnewest.htm"
+    "title": "t1810115.html",
+    "file": "t1810115.html"
   },
   {
-    "title": "Human  Coalition Against the End of the World",
-    "file": "showthread.php@t=1809837&goto=nextoldest.htm"
+    "title": "t1810116.html",
+    "file": "t1810116.html"
   },
   {
-    "title": "Christianity is boring.",
-    "file": "showthread.php@t=1809837&nojs=1.htm"
+    "title": "t1810117.html",
+    "file": "t1810117.html"
   },
   {
-    "title": "Christianity is boring. - Page 2",
-    "file": "showthread.php@t=1809837&page=2.htm"
+    "title": "t1810118.html",
+    "file": "t1810118.html"
   },
   {
-    "title": "Christianity is boring.",
-    "file": "showthread.php@t=1809837.htm"
+    "title": "t1810119.html",
+    "file": "t1810119.html"
   },
   {
-    "title": "death",
-    "file": "showthread.php@t=1809838&goto=nextnewest.htm"
+    "title": "t1810120.html",
+    "file": "t1810120.html"
   },
   {
-    "title": "A theory that need Dark Magneto's incite",
-    "file": "showthread.php@t=1809838&goto=nextoldest.htm"
+    "title": "t1810121.html",
+    "file": "t1810121.html"
   },
   {
-    "title": "jesus aroused?",
-    "file": "showthread.php@t=1809838&nojs=1.htm"
+    "title": "t1810122.html",
+    "file": "t1810122.html"
   },
   {
-    "title": "jesus aroused?",
-    "file": "showthread.php@t=1809838.htm"
+    "title": "t1810123.html",
+    "file": "t1810123.html"
   },
   {
-    "title": "if you get raped or stabbed of tortured......PRAISE THE LORD AND THANK HIM...",
-    "file": "showthread.php@t=1809839&goto=nextnewest.htm"
+    "title": "t1810124.html",
+    "file": "t1810124.html"
   },
   {
-    "title": "Satan.",
-    "file": "showthread.php@t=1809839&goto=nextoldest.htm"
+    "title": "t1810125.html",
+    "file": "t1810125.html"
   },
   {
-    "title": "Free will=Role Playing??",
-    "file": "showthread.php@t=1809839&nojs=1.htm"
+    "title": "t1810126.html",
+    "file": "t1810126.html"
   },
   {
-    "title": "Free will=Role Playing??",
-    "file": "showthread.php@t=1809839.htm"
+    "title": "t1810127.html",
+    "file": "t1810127.html"
   },
   {
-    "title": "The Book of Job",
-    "file": "showthread.php@t=1809840&goto=nextnewest.htm"
+    "title": "t1810128.html",
+    "file": "t1810128.html"
   },
   {
-    "title": "Free will=Role Playing??",
-    "file": "showthread.php@t=1809840&goto=nextoldest.htm"
+    "title": "t1810129.html",
+    "file": "t1810129.html"
   },
   {
-    "title": "if you get raped or stabbed of tortured......PRAISE THE LORD AND THANK HIM...",
-    "file": "showthread.php@t=1809840&nojs=1.htm"
+    "title": "t1810130.html",
+    "file": "t1810130.html"
   },
   {
-    "title": "if you get raped or stabbed of tortured......PRAISE THE LORD AND THANK HIM...",
-    "file": "showthread.php@t=1809840.htm"
+    "title": "t1810131.html",
+    "file": "t1810131.html"
   },
   {
-    "title": "The biggest religious paradox",
-    "file": "showthread.php@t=1809841.htm"
+    "title": "t1810132.html",
+    "file": "t1810132.html"
   },
   {
-    "title": "Proper use of religion",
-    "file": "showthread.php@t=1809842.htm"
+    "title": "t1810133.html",
+    "file": "t1810133.html"
   },
   {
-    "title": "A Problem that has been troubling me...",
-    "file": "showthread.php@t=1809843.htm"
+    "title": "t1810134.html",
+    "file": "t1810134.html"
   },
   {
-    "title": "To the believers",
-    "file": "showthread.php@t=1809844&goto=nextnewest.htm"
+    "title": "t1810135.html",
+    "file": "t1810135.html"
   },
   {
-    "title": "corruption of church",
-    "file": "showthread.php@t=1809844&goto=nextoldest.htm"
+    "title": "t1810136.html",
+    "file": "t1810136.html"
   },
   {
-    "title": "What do you guys think of the \"screams from hell?\"",
-    "file": "showthread.php@t=1809844&nojs=1.htm"
+    "title": "t1810137.html",
+    "file": "t1810137.html"
   },
   {
-    "title": "What do you guys think of the \"screams from hell?\" - Page 2",
-    "file": "showthread.php@t=1809844&page=2.htm"
+    "title": "t1810138.html",
+    "file": "t1810138.html"
   },
   {
-    "title": "What do you guys think of the \"screams from hell?\"",
-    "file": "showthread.php@t=1809844.htm"
+    "title": "t1810139.html",
+    "file": "t1810139.html"
   },
   {
-    "title": "other beliefs",
-    "file": "showthread.php@t=1809845&goto=nextnewest.htm"
+    "title": "t1810140.html",
+    "file": "t1810140.html"
   },
   {
-    "title": "Christianity is boring.",
-    "file": "showthread.php@t=1809845&goto=nextoldest.htm"
+    "title": "t1810141.html",
+    "file": "t1810141.html"
   },
   {
-    "title": "chirstianity is a scare tatic",
-    "file": "showthread.php@t=1809845&nojs=1.htm"
+    "title": "t1810142.html",
+    "file": "t1810142.html"
   },
   {
-    "title": "chirstianity is a scare tatic - Page 2",
-    "file": "showthread.php@t=1809845&page=2.htm"
+    "title": "t1810143.html",
+    "file": "t1810143.html"
   },
   {
-    "title": "chirstianity is a scare tatic",
-    "file": "showthread.php@t=1809845.htm"
+    "title": "t1810144.html",
+    "file": "t1810144.html"
   },
   {
-    "title": "Need Help",
-    "file": "showthread.php@t=1809846&goto=nextnewest.htm"
+    "title": "t1810145.html",
+    "file": "t1810145.html"
   },
   {
-    "title": "death",
-    "file": "showthread.php@t=1809846&goto=nextoldest.htm"
+    "title": "t1810146.html",
+    "file": "t1810146.html"
   },
   {
-    "title": "Do U Luv Jesus ???",
-    "file": "showthread.php@t=1809846&nojs=1.htm"
+    "title": "t1810147.html",
+    "file": "t1810147.html"
   },
   {
-    "title": "Do U Luv Jesus ??? - Page 2",
-    "file": "showthread.php@t=1809846&page=2.htm"
+    "title": "t1810148.html",
+    "file": "t1810148.html"
   },
   {
-    "title": "Do U Luv Jesus ???",
-    "file": "showthread.php@t=1809846.htm"
+    "title": "t1810149.html",
+    "file": "t1810149.html"
   },
   {
-    "title": "The Nature of Omnipotence.",
-    "file": "showthread.php@t=1809848&goto=nextnewest.htm"
+    "title": "t1810150.html",
+    "file": "t1810150.html"
   },
   {
-    "title": "Proper use of religion",
-    "file": "showthread.php@t=1809848&goto=nextoldest.htm"
+    "title": "t1810151.html",
+    "file": "t1810151.html"
   },
   {
-    "title": "What if you where wrong?",
-    "file": "showthread.php@t=1809848&nojs=1.htm"
+    "title": "t1810152.html",
+    "file": "t1810152.html"
   },
   {
-    "title": "What if you where wrong? - Page 2",
-    "file": "showthread.php@t=1809848&page=2.htm"
+    "title": "t1810153.html",
+    "file": "t1810153.html"
   },
   {
-    "title": "What if you where wrong? - Page 3",
-    "file": "showthread.php@t=1809848&page=3.htm"
+    "title": "t1810154.html",
+    "file": "t1810154.html"
   },
   {
-    "title": "What if you where wrong? - Page 4",
-    "file": "showthread.php@t=1809848&page=4.htm"
+    "title": "t1810155.html",
+    "file": "t1810155.html"
   },
   {
-    "title": "What if you where wrong?",
-    "file": "showthread.php@t=1809848.htm"
+    "title": "t1810156.html",
+    "file": "t1810156.html"
   },
   {
-    "title": "God and Goddess",
-    "file": "showthread.php@t=1809849&goto=nextnewest.htm"
+    "title": "t1810157.html",
+    "file": "t1810157.html"
   },
   {
-    "title": "whats it called",
-    "file": "showthread.php@t=1809849&goto=nextoldest.htm"
+    "title": "t1810158.html",
+    "file": "t1810158.html"
   },
   {
-    "title": "Round 1: Christianity versus Science",
-    "file": "showthread.php@t=1809849&nojs=1.htm"
+    "title": "t1810159.html",
+    "file": "t1810159.html"
   },
   {
-    "title": "Round 1: Christianity versus Science - Page 2",
-    "file": "showthread.php@t=1809849&page=2.htm"
+    "title": "t1810160.html",
+    "file": "t1810160.html"
   },
   {
-    "title": "Round 1: Christianity versus Science - Page 3",
-    "file": "showthread.php@t=1809849&page=3.htm"
+    "title": "t1810161.html",
+    "file": "t1810161.html"
   },
   {
-    "title": "Round 1: Christianity versus Science - Page 4",
-    "file": "showthread.php@t=1809849&page=4.htm"
+    "title": "t1810162.html",
+    "file": "t1810162.html"
   },
   {
-    "title": "Round 1: Christianity versus Science",
-    "file": "showthread.php@t=1809849.htm"
+    "title": "t1810163.html",
+    "file": "t1810163.html"
   },
   {
-    "title": "What do you guys think of the \"screams from hell?\"",
-    "file": "showthread.php@t=1809850&goto=nextnewest.htm"
+    "title": "t1810164.html",
+    "file": "t1810164.html"
   },
   {
-    "title": "Sex and the Catholiscism",
-    "file": "showthread.php@t=1809850&goto=nextoldest.htm"
+    "title": "t1810165.html",
+    "file": "t1810165.html"
   },
   {
-    "title": "corruption of church",
-    "file": "showthread.php@t=1809850&nojs=1.htm"
+    "title": "t1810166.html",
+    "file": "t1810166.html"
   },
   {
-    "title": "corruption of church",
-    "file": "showthread.php@t=1809850.htm"
+    "title": "t1810167.html",
+    "file": "t1810167.html"
   },
   {
-    "title": "Why cant we all just get along?",
-    "file": "showthread.php@t=1809851&goto=nextnewest.htm"
+    "title": "t1810168.html",
+    "file": "t1810168.html"
   },
   {
-    "title": "chirstianity is a scare tatic",
-    "file": "showthread.php@t=1809851&goto=nextoldest.htm"
+    "title": "t1810169.html",
+    "file": "t1810169.html"
   },
   {
-    "title": "other beliefs",
-    "file": "showthread.php@t=1809851&nojs=1.htm"
+    "title": "t1810170.html",
+    "file": "t1810170.html"
   },
   {
-    "title": "other beliefs",
-    "file": "showthread.php@t=1809851.htm"
+    "title": "t1810171.html",
+    "file": "t1810171.html"
   },
   {
-    "title": "Why cant we all just get along?",
-    "file": "showthread.php@t=1809852.htm"
+    "title": "t1810172.html",
+    "file": "t1810172.html"
   },
   {
-    "title": "whats the point of life?",
-    "file": "showthread.php@t=1809853.htm"
+    "title": "t1810173.html",
+    "file": "t1810173.html"
   },
   {
-    "title": "To the believers",
-    "file": "showthread.php@t=1809854.htm"
+    "title": "t1810174.html",
+    "file": "t1810174.html"
   },
   {
-    "title": "THERE ARE MANY GODS",
-    "file": "showthread.php@t=1809857&goto=nextnewest.htm"
+    "title": "t1810175.html",
+    "file": "t1810175.html"
   },
   {
-    "title": "Is God Lonely?",
-    "file": "showthread.php@t=1809857&goto=nextoldest.htm"
+    "title": "t1810176.html",
+    "file": "t1810176.html"
   },
   {
-    "title": "just a question of gods ability to do everything",
-    "file": "showthread.php@t=1809857&nojs=1.htm"
+    "title": "t1810177.html",
+    "file": "t1810177.html"
   },
   {
-    "title": "just a question of gods ability to do everything",
-    "file": "showthread.php@t=1809857.htm"
+    "title": "t1810178.html",
+    "file": "t1810178.html"
   },
   {
-    "title": "Humans Dream to be God, A Theory",
-    "file": "showthread.php@t=1809858&goto=nextnewest.htm"
+    "title": "t1810179.html",
+    "file": "t1810179.html"
   },
   {
-    "title": "Look past the reason",
-    "file": "showthread.php@t=1809858&goto=nextoldest.htm"
+    "title": "t1810180.html",
+    "file": "t1810180.html"
   },
   {
-    "title": "M: God is not running the world.",
-    "file": "showthread.php@t=1809858&nojs=1.htm"
+    "title": "t1810181.html",
+    "file": "t1810181.html"
   },
   {
-    "title": "M: God is not running the world.",
-    "file": "showthread.php@t=1809858.htm"
+    "title": "t1810182.html",
+    "file": "t1810182.html"
   },
   {
-    "title": "THERE IS HALF A GOD",
-    "file": "showthread.php@t=1809859&goto=nextnewest.htm"
+    "title": "t1810183.html",
+    "file": "t1810183.html"
   },
   {
-    "title": "What happens when you die?",
-    "file": "showthread.php@t=1809859&goto=nextoldest.htm"
+    "title": "t1810184.html",
+    "file": "t1810184.html"
   },
   {
-    "title": "Does existence exist?",
-    "file": "showthread.php@t=1809859&nojs=1.htm"
+    "title": "t1810185.html",
+    "file": "t1810185.html"
   },
   {
-    "title": "Does existence exist? - Page 2",
-    "file": "showthread.php@t=1809859&page=2.htm"
+    "title": "t1810186.html",
+    "file": "t1810186.html"
   },
   {
-    "title": "Does existence exist?",
-    "file": "showthread.php@t=1809859.htm"
+    "title": "t1810187.html",
+    "file": "t1810187.html"
   },
   {
-    "title": "this forum is dead",
-    "file": "showthread.php@t=1809860&goto=nextnewest.htm"
+    "title": "t1810188.html",
+    "file": "t1810188.html"
   },
   {
-    "title": "religion might be the most serious thing there is",
-    "file": "showthread.php@t=1809860&goto=nextoldest.htm"
+    "title": "t1810189.html",
+    "file": "t1810189.html"
   },
   {
-    "title": "Gay bishops",
-    "file": "showthread.php@t=1809860&nojs=1.htm"
+    "title": "t1810190.html",
+    "file": "t1810190.html"
   },
   {
-    "title": "Gay bishops",
-    "file": "showthread.php@t=1809860.htm"
+    "title": "t1810191.html",
+    "file": "t1810191.html"
   },
   {
-    "title": "Does existence exist?",
-    "file": "showthread.php@t=1809861&goto=nextnewest.htm"
+    "title": "t1810192.html",
+    "file": "t1810192.html"
   },
   {
-    "title": "A thought",
-    "file": "showthread.php@t=1809861&goto=nextoldest.htm"
+    "title": "t1810193.html",
+    "file": "t1810193.html"
   },
   {
-    "title": "What happens when you die?",
-    "file": "showthread.php@t=1809861&nojs=1.htm"
+    "title": "t1810194.html",
+    "file": "t1810194.html"
   },
   {
-    "title": "What happens when you die? - Page 2",
-    "file": "showthread.php@t=1809861&page=2.htm"
+    "title": "t1810195.html",
+    "file": "t1810195.html"
   },
   {
-    "title": "What happens when you die? - Page 3",
-    "file": "showthread.php@t=1809861&page=3.htm"
+    "title": "t1810196.html",
+    "file": "t1810196.html"
   },
   {
-    "title": "What happens when you die?",
-    "file": "showthread.php@t=1809861.htm"
+    "title": "t1810197.html",
+    "file": "t1810197.html"
   },
   {
-    "title": "Something Einstein said, i suggest you read.",
-    "file": "showthread.php@t=1809862&goto=nextnewest.htm"
+    "title": "t1810198.html",
+    "file": "t1810198.html"
   },
   {
-    "title": "Science shakier than faith",
-    "file": "showthread.php@t=1809862&goto=nextoldest.htm"
+    "title": "t1810199.html",
+    "file": "t1810199.html"
   },
   {
-    "title": "Proof that God exists",
-    "file": "showthread.php@t=1809862&nojs=1.htm"
+    "title": "t1810200.html",
+    "file": "t1810200.html"
   },
   {
-    "title": "Proof that God exists - Page 11",
-    "file": "showthread.php@t=1809862&page=11.htm"
+    "title": "t1810201.html",
+    "file": "t1810201.html"
   },
   {
-    "title": "Proof that God exists - Page 2",
-    "file": "showthread.php@t=1809862&page=2.htm"
+    "title": "t1810202.html",
+    "file": "t1810202.html"
   },
   {
-    "title": "Proof that God exists - Page 3",
-    "file": "showthread.php@t=1809862&page=3.htm"
+    "title": "t1810203.html",
+    "file": "t1810203.html"
   },
   {
-    "title": "Proof that God exists - Page 4",
-    "file": "showthread.php@t=1809862&page=4.htm"
+    "title": "t1810204.html",
+    "file": "t1810204.html"
   },
   {
-    "title": "Proof that God exists - Page 5",
-    "file": "showthread.php@t=1809862&page=5.htm"
+    "title": "t1810205.html",
+    "file": "t1810205.html"
   },
   {
-    "title": "Proof that God exists - Page 6",
-    "file": "showthread.php@t=1809862&page=6.htm"
+    "title": "t1810206.html",
+    "file": "t1810206.html"
   },
   {
-    "title": "Proof that God exists",
-    "file": "showthread.php@t=1809862.htm"
+    "title": "t1810207.html",
+    "file": "t1810207.html"
   },
   {
-    "title": "Q: Are you afraid of DEATH?",
-    "file": "showthread.php@t=1809863.htm"
+    "title": "t1810208.html",
+    "file": "t1810208.html"
   },
   {
-    "title": "Enlightenment comes when...",
-    "file": "showthread.php@t=1809864&goto=nextnewest.htm"
+    "title": "t1810209.html",
+    "file": "t1810209.html"
   },
   {
-    "title": "Why cant we all just get along?",
-    "file": "showthread.php@t=1809864&goto=nextoldest.htm"
+    "title": "t1810210.html",
+    "file": "t1810210.html"
   },
   {
-    "title": "Most people are sheep",
-    "file": "showthread.php@t=1809864&nojs=1.htm"
+    "title": "t1810211.html",
+    "file": "t1810211.html"
   },
   {
-    "title": "Most people are sheep",
-    "file": "showthread.php@t=1809864.htm"
+    "title": "t1810212.html",
+    "file": "t1810212.html"
   },
   {
-    "title": "just a question of gods ability to do everything",
-    "file": "showthread.php@t=1809865&goto=nextnewest.htm"
+    "title": "t1810213.html",
+    "file": "t1810213.html"
   },
   {
-    "title": "Enlightenment comes when...",
-    "file": "showthread.php@t=1809865&goto=nextoldest.htm"
+    "title": "t1810214.html",
+    "file": "t1810214.html"
   },
   {
-    "title": "Is God Lonely?",
-    "file": "showthread.php@t=1809865&nojs=1.htm"
+    "title": "t1810215.html",
+    "file": "t1810215.html"
   },
   {
-    "title": "Is God Lonely?",
-    "file": "showthread.php@t=1809865.htm"
+    "title": "t1810216.html",
+    "file": "t1810216.html"
   },
   {
-    "title": "A thought",
-    "file": "showthread.php@t=1809866&goto=nextnewest.htm"
+    "title": "t1810217.html",
+    "file": "t1810217.html"
   },
   {
-    "title": "My beliefs about the bible.... what are yours",
-    "file": "showthread.php@t=1809866&goto=nextoldest.htm"
+    "title": "t1810218.html",
+    "file": "t1810218.html"
   },
   {
-    "title": "THERE IS A GOD",
-    "file": "showthread.php@t=1809866&nojs=1.htm"
+    "title": "t1810219.html",
+    "file": "t1810219.html"
   },
   {
-    "title": "THERE IS A GOD - Page 2",
-    "file": "showthread.php@t=1809866&page=2.htm"
+    "title": "t1810220.html",
+    "file": "t1810220.html"
   },
   {
-    "title": "THERE IS A GOD",
-    "file": "showthread.php@t=1809866.htm"
+    "title": "t1810221.html",
+    "file": "t1810221.html"
   },
   {
-    "title": "THERE IS NO GOD",
-    "file": "showthread.php@t=1809867.htm"
+    "title": "t1810222.html",
+    "file": "t1810222.html"
   },
   {
-    "title": "THERE ARE MANY GODS",
-    "file": "showthread.php@t=1809868.htm"
+    "title": "t1810223.html",
+    "file": "t1810223.html"
   },
   {
-    "title": "IS GOD EVIL",
-    "file": "showthread.php@t=1809869&goto=nextnewest.htm"
+    "title": "t1810224.html",
+    "file": "t1810224.html"
   },
   {
-    "title": "THERE IS NO GOD",
-    "file": "showthread.php@t=1809869&goto=nextoldest.htm"
+    "title": "t1810225.html",
+    "file": "t1810225.html"
   },
   {
-    "title": "religious viewpoints",
-    "file": "showthread.php@t=1809869&nojs=1.htm"
+    "title": "t1810226.html",
+    "file": "t1810226.html"
   },
   {
-    "title": "religious viewpoints",
-    "file": "showthread.php@t=1809869.htm"
+    "title": "t1810227.html",
+    "file": "t1810227.html"
   },
   {
-    "title": "A little help",
-    "file": "showthread.php@t=1809870&goto=nextnewest.htm"
+    "title": "t1810228.html",
+    "file": "t1810228.html"
   },
   {
-    "title": "What if you where wrong?",
-    "file": "showthread.php@t=1809870&goto=nextoldest.htm"
+    "title": "t1810229.html",
+    "file": "t1810229.html"
   },
   {
-    "title": "The Nature of Omnipotence.",
-    "file": "showthread.php@t=1809870&nojs=1.htm"
+    "title": "t1810230.html",
+    "file": "t1810230.html"
   },
   {
-    "title": "The Nature of Omnipotence. - Page 2",
-    "file": "showthread.php@t=1809870&page=2.htm"
+    "title": "t1810231.html",
+    "file": "t1810231.html"
   },
   {
-    "title": "The Nature of Omnipotence.",
-    "file": "showthread.php@t=1809870.htm"
+    "title": "t1810232.html",
+    "file": "t1810232.html"
   },
   {
-    "title": "\"I understand\"",
-    "file": "showthread.php@t=1809871.htm"
+    "title": "t1810233.html",
+    "file": "t1810233.html"
   },
   {
-    "title": "Proper use of religion",
-    "file": "showthread.php@t=1809872&goto=nextnewest.htm"
+    "title": "t1810234.html",
+    "file": "t1810234.html"
   },
   {
-    "title": "Personal Beliefs",
-    "file": "showthread.php@t=1809872&goto=nextoldest.htm"
+    "title": "t1810235.html",
+    "file": "t1810235.html"
   },
   {
-    "title": "another funny religious joke",
-    "file": "showthread.php@t=1809872&nojs=1.htm"
+    "title": "t1810236.html",
+    "file": "t1810236.html"
   },
   {
-    "title": "another funny religious joke",
-    "file": "showthread.php@t=1809872.htm"
+    "title": "t1810237.html",
+    "file": "t1810237.html"
   },
   {
-    "title": "this forum is dead",
-    "file": "showthread.php@t=1809873.htm"
+    "title": "t1810238.html",
+    "file": "t1810238.html"
   },
   {
-    "title": "religion might be the most serious thing there is",
-    "file": "showthread.php@t=1809874&goto=nextnewest.htm"
+    "title": "t1810239.html",
+    "file": "t1810239.html"
   },
   {
-    "title": "The Nature of Omnipotence.",
-    "file": "showthread.php@t=1809874&goto=nextoldest.htm"
+    "title": "t1810240.html",
+    "file": "t1810240.html"
   },
   {
-    "title": "A little help",
-    "file": "showthread.php@t=1809874&nojs=1.htm"
+    "title": "t1810241.html",
+    "file": "t1810241.html"
   },
   {
-    "title": "A little help",
-    "file": "showthread.php@t=1809874.htm"
+    "title": "t1810242.html",
+    "file": "t1810242.html"
   },
   {
-    "title": "religion might be the most serious thing there is",
-    "file": "showthread.php@t=1809875.htm"
+    "title": "t1810243.html",
+    "file": "t1810243.html"
   },
   {
-    "title": "Heaven and hell",
-    "file": "showthread.php@t=1809876.htm"
+    "title": "t1810244.html",
+    "file": "t1810244.html"
   },
   {
-    "title": "THERE IS HALF A GOD",
-    "file": "showthread.php@t=1809878.htm"
+    "title": "t1810245.html",
+    "file": "t1810245.html"
   },
   {
-    "title": "Drugs and the Bible",
-    "file": "showthread.php@t=1809879&goto=nextnewest.htm"
+    "title": "t1810246.html",
+    "file": "t1810246.html"
   },
   {
-    "title": "Jehovah's witnesses!  A question for you!",
-    "file": "showthread.php@t=1809879&goto=nextoldest.htm"
+    "title": "t1810247.html",
+    "file": "t1810247.html"
   },
   {
-    "title": "My God shows that Your God doesn't exist.",
-    "file": "showthread.php@t=1809879&nojs=1.htm"
+    "title": "t1810248.html",
+    "file": "t1810248.html"
   },
   {
-    "title": "My God shows that Your God doesn't exist. - Page 11",
-    "file": "showthread.php@t=1809879&page=11.htm"
+    "title": "t1810249.html",
+    "file": "t1810249.html"
   },
   {
-    "title": "My God shows that Your God doesn't exist. - Page 2",
-    "file": "showthread.php@t=1809879&page=2.htm"
+    "title": "t1810250.html",
+    "file": "t1810250.html"
   },
   {
-    "title": "My God shows that Your God doesn't exist. - Page 3",
-    "file": "showthread.php@t=1809879&page=3.htm"
+    "title": "t1810251.html",
+    "file": "t1810251.html"
   },
   {
-    "title": "My God shows that Your God doesn't exist. - Page 4",
-    "file": "showthread.php@t=1809879&page=4.htm"
+    "title": "t1810252.html",
+    "file": "t1810252.html"
   },
   {
-    "title": "My God shows that Your God doesn't exist. - Page 5",
-    "file": "showthread.php@t=1809879&page=5.htm"
+    "title": "t1810253.html",
+    "file": "t1810253.html"
   },
   {
-    "title": "My God shows that Your God doesn't exist. - Page 6",
-    "file": "showthread.php@t=1809879&page=6.htm"
+    "title": "t1810254.html",
+    "file": "t1810254.html"
   },
   {
-    "title": "My God shows that Your God doesn't exist.",
-    "file": "showthread.php@t=1809879.htm"
+    "title": "t1810255.html",
+    "file": "t1810255.html"
   },
   {
-    "title": "A thought",
-    "file": "showthread.php@t=1809880.htm"
+    "title": "t1810256.html",
+    "file": "t1810256.html"
   },
   {
-    "title": "ichthus",
-    "file": "showthread.php@t=1809881.htm"
+    "title": "t1810257.html",
+    "file": "t1810257.html"
   },
   {
-    "title": "THE answer",
-    "file": "showthread.php@t=1809882.htm"
+    "title": "t1810258.html",
+    "file": "t1810258.html"
   },
   {
-    "title": "It's Story Time With Kikey!",
-    "file": "showthread.php@t=1809883&goto=nextnewest.htm"
+    "title": "t1810259.html",
+    "file": "t1810259.html"
   },
   {
-    "title": "My Religon",
-    "file": "showthread.php@t=1809883&goto=nextoldest.htm"
+    "title": "t1810260.html",
+    "file": "t1810260.html"
   },
   {
-    "title": "catholics and capital punishment",
-    "file": "showthread.php@t=1809883&nojs=1.htm"
+    "title": "t1810261.html",
+    "file": "t1810261.html"
   },
   {
-    "title": "catholics and capital punishment",
-    "file": "showthread.php@t=1809883.htm"
+    "title": "t1810262.html",
+    "file": "t1810262.html"
   },
   {
-    "title": "My recent Atheist take on philosophy",
-    "file": "showthread.php@t=1809884.htm"
+    "title": "t1810263.html",
+    "file": "t1810263.html"
   },
   {
-    "title": "The beginning of the beginning?",
-    "file": "showthread.php@t=1809885.htm"
+    "title": "t1810264.html",
+    "file": "t1810264.html"
   },
   {
-    "title": "satanism",
-    "file": "showthread.php@t=1809886.htm"
+    "title": "t1810265.html",
+    "file": "t1810265.html"
   },
   {
-    "title": "WATCH OUT FOR THE MARK (666) its true!",
-    "file": "showthread.php@t=1809887.htm"
+    "title": "t1810266.html",
+    "file": "t1810266.html"
   },
   {
-    "title": "My God shows that Your God doesn't exist.",
-    "file": "showthread.php@t=1809888&goto=nextnewest.htm"
+    "title": "t1810267.html",
+    "file": "t1810267.html"
   },
   {
-    "title": "I AM The Second Coming of The Christ",
-    "file": "showthread.php@t=1809888&goto=nextoldest.htm"
+    "title": "t1810268.html",
+    "file": "t1810268.html"
   },
   {
-    "title": "Jehovah's witnesses!  A question for you!",
-    "file": "showthread.php@t=1809888&nojs=1.htm"
+    "title": "t1810269.html",
+    "file": "t1810269.html"
   },
   {
-    "title": "Jehovah's witnesses!  A question for you! - Page 2",
-    "file": "showthread.php@t=1809888&page=2.htm"
+    "title": "t1810270.html",
+    "file": "t1810270.html"
   },
   {
-    "title": "Jehovah's witnesses!  A question for you!",
-    "file": "showthread.php@t=1809888.htm"
+    "title": "t1810271.html",
+    "file": "t1810271.html"
   },
   {
-    "title": "Tired of Christian Blather",
-    "file": "showthread.php@t=1809889.htm"
+    "title": "t1810272.html",
+    "file": "t1810272.html"
   },
   {
-    "title": "It's Story Time With Kikey!",
-    "file": "showthread.php@t=1809890.htm"
+    "title": "t1810273.html",
+    "file": "t1810273.html"
   },
   {
-    "title": "My recent Atheist take on philosophy",
-    "file": "showthread.php@t=1809891&goto=nextnewest.htm"
+    "title": "t1810274.html",
+    "file": "t1810274.html"
   },
   {
-    "title": "The Rock Theory",
-    "file": "showthread.php@t=1809891&goto=nextoldest.htm"
+    "title": "t1810275.html",
+    "file": "t1810275.html"
   },
   {
-    "title": "the best religious contributors of the thread.",
-    "file": "showthread.php@t=1809891&nojs=1.htm"
+    "title": "t1810276.html",
+    "file": "t1810276.html"
   },
   {
-    "title": "the best religious contributors of the thread. - Page 2",
-    "file": "showthread.php@t=1809891&page=2.htm"
+    "title": "t1810277.html",
+    "file": "t1810277.html"
   },
   {
-    "title": "the best religious contributors of the thread.",
-    "file": "showthread.php@t=1809891.htm"
+    "title": "t1810278.html",
+    "file": "t1810278.html"
   },
   {
-    "title": "Atheisism",
-    "file": "showthread.php@t=1809892&goto=nextnewest.htm"
+    "title": "t1810279.html",
+    "file": "t1810279.html"
   },
   {
-    "title": "It's Story Time With Kikey!",
-    "file": "showthread.php@t=1809892&goto=nextoldest.htm"
+    "title": "t1810280.html",
+    "file": "t1810280.html"
   },
   {
-    "title": "The Christians Of This Forum Have My Apologies",
-    "file": "showthread.php@t=1809892&nojs=1.htm"
+    "title": "t1810281.html",
+    "file": "t1810281.html"
   },
   {
-    "title": "The Christians Of This Forum Have My Apologies",
-    "file": "showthread.php@t=1809892.htm"
+    "title": "t1810282.html",
+    "file": "t1810282.html"
   },
   {
-    "title": "which god if any?",
-    "file": "showthread.php@t=1809893.htm"
+    "title": "t1810283.html",
+    "file": "t1810283.html"
   },
   {
-    "title": "The Meaning of Life (Feedback)",
-    "file": "showthread.php@t=1809894.htm"
+    "title": "t1810284.html",
+    "file": "t1810284.html"
   },
   {
-    "title": "whats it called",
-    "file": "showthread.php@t=1809896.htm"
+    "title": "t1810285.html",
+    "file": "t1810285.html"
   },
   {
-    "title": "religions",
-    "file": "showthread.php@t=1809897.htm"
+    "title": "t1810286.html",
+    "file": "t1810286.html"
   },
   {
-    "title": "it can't be this simple.",
-    "file": "showthread.php@t=1809898.htm"
+    "title": "t1810287.html",
+    "file": "t1810287.html"
   },
   {
-    "title": "God and Goddess",
-    "file": "showthread.php@t=1809899.htm"
+    "title": "t1810288.html",
+    "file": "t1810288.html"
   },
   {
-    "title": "The Jewish thread revival",
-    "file": "showthread.php@t=1809900.htm"
+    "title": "t1810289.html",
+    "file": "t1810289.html"
   },
   {
-    "title": "HAte church",
-    "file": "showthread.php@t=1809901&goto=nextnewest.htm"
+    "title": "t1810290.html",
+    "file": "t1810290.html"
   },
   {
-    "title": "If the christian god is a fair god",
-    "file": "showthread.php@t=1809901&goto=nextoldest.htm"
+    "title": "t1810291.html",
+    "file": "t1810291.html"
   },
   {
-    "title": "Who is/was Jesus?",
-    "file": "showthread.php@t=1809901&nojs=1.htm"
+    "title": "t1810292.html",
+    "file": "t1810292.html"
   },
   {
-    "title": "Who is/was Jesus? - Page 10",
-    "file": "showthread.php@t=1809901&page=10.htm"
+    "title": "t1810293.html",
+    "file": "t1810293.html"
   },
   {
-    "title": "Who is/was Jesus? - Page 2",
-    "file": "showthread.php@t=1809901&page=2.htm"
+    "title": "t1810294.html",
+    "file": "t1810294.html"
   },
   {
-    "title": "Who is/was Jesus? - Page 3",
-    "file": "showthread.php@t=1809901&page=3.htm"
+    "title": "t1810295.html",
+    "file": "t1810295.html"
   },
   {
-    "title": "Who is/was Jesus? - Page 4",
-    "file": "showthread.php@t=1809901&page=4.htm"
+    "title": "t1810296.html",
+    "file": "t1810296.html"
   },
   {
-    "title": "Who is/was Jesus? - Page 5",
-    "file": "showthread.php@t=1809901&page=5.htm"
+    "title": "t1810297.html",
+    "file": "t1810297.html"
   },
   {
-    "title": "Who is/was Jesus? - Page 6",
-    "file": "showthread.php@t=1809901&page=6.htm"
+    "title": "t1810298.html",
+    "file": "t1810298.html"
   },
   {
-    "title": "Who is/was Jesus?",
-    "file": "showthread.php@t=1809901.htm"
+    "title": "t1810299.html",
+    "file": "t1810299.html"
   },
   {
-    "title": "revelations/apacolypse",
-    "file": "showthread.php@t=1809902.htm"
+    "title": "t1810300.html",
+    "file": "t1810300.html"
   },
   {
-    "title": "Christianity and the rise of the west",
-    "file": "showthread.php@t=1809903&goto=nextnewest.htm"
+    "title": "t1810301.html",
+    "file": "t1810301.html"
   },
   {
-    "title": "revelations/apacolypse",
-    "file": "showthread.php@t=1809903&goto=nextoldest.htm"
+    "title": "t1810302.html",
+    "file": "t1810302.html"
   },
   {
-    "title": "Some magic/wicca/satanism books",
-    "file": "showthread.php@t=1809903&nojs=1.htm"
+    "title": "t1810303.html",
+    "file": "t1810303.html"
   },
   {
-    "title": "Some magic/wicca/satanism books",
-    "file": "showthread.php@t=1809903.htm"
+    "title": "t1810304.html",
+    "file": "t1810304.html"
   },
   {
-    "title": "I just had a convo with my friend about religion...",
-    "file": "showthread.php@t=1809904&goto=nextnewest.htm"
+    "title": "t1810305.html",
+    "file": "t1810305.html"
   },
   {
-    "title": "40 virgins.",
-    "file": "showthread.php@t=1809904&goto=nextoldest.htm"
+    "title": "t1810306.html",
+    "file": "t1810306.html"
   },
   {
-    "title": "Cool religeous/spiritual quotes",
-    "file": "showthread.php@t=1809904&nojs=1.htm"
+    "title": "t1810307.html",
+    "file": "t1810307.html"
   },
   {
-    "title": "Cool religeous/spiritual quotes - Page 2",
-    "file": "showthread.php@t=1809904&page=2.htm"
+    "title": "t1810308.html",
+    "file": "t1810308.html"
   },
   {
-    "title": "Cool religeous/spiritual quotes - Page 3",
-    "file": "showthread.php@t=1809904&page=3.htm"
+    "title": "t1810309.html",
+    "file": "t1810309.html"
   },
   {
-    "title": "Cool religeous/spiritual quotes - Page 4",
-    "file": "showthread.php@t=1809904&page=4.htm"
+    "title": "t1810310.html",
+    "file": "t1810310.html"
   },
   {
-    "title": "Cool religeous/spiritual quotes - Page 5",
-    "file": "showthread.php@t=1809904&page=5.htm"
+    "title": "t1810311.html",
+    "file": "t1810311.html"
   },
   {
-    "title": "Cool religeous/spiritual quotes",
-    "file": "showthread.php@t=1809904.htm"
+    "title": "t1810312.html",
+    "file": "t1810312.html"
   },
   {
-    "title": "Believers in Fate (Destiny) and Heaven/Hell...",
-    "file": "showthread.php@t=1809907.htm"
+    "title": "t1810313.html",
+    "file": "t1810313.html"
   },
   {
-    "title": "start your own money-making cult!",
-    "file": "showthread.php@t=1809908.htm"
+    "title": "t1810314.html",
+    "file": "t1810314.html"
   },
   {
-    "title": "So I tried to get myself brainwashed...",
-    "file": "showthread.php@t=1809909.htm"
+    "title": "t1810315.html",
+    "file": "t1810315.html"
   },
   {
-    "title": "DARKFIRE47",
-    "file": "showthread.php@t=1809910.htm"
+    "title": "t1810316.html",
+    "file": "t1810316.html"
   },
   {
-    "title": "The Mystical properties of such items as amanita muscaria, Yage(ayahuasca),and acid",
-    "file": "showthread.php@t=1809911&goto=nextnewest.htm"
+    "title": "t1810317.html",
+    "file": "t1810317.html"
   },
   {
-    "title": "Sects",
-    "file": "showthread.php@t=1809911&goto=nextoldest.htm"
+    "title": "t1810318.html",
+    "file": "t1810318.html"
   },
   {
-    "title": "Whats your Gods full name?",
-    "file": "showthread.php@t=1809911&nojs=1.htm"
+    "title": "t1810319.html",
+    "file": "t1810319.html"
   },
   {
-    "title": "Whats your Gods full name? - Page 2",
-    "file": "showthread.php@t=1809911&page=2.htm"
+    "title": "t1810320.html",
+    "file": "t1810320.html"
   },
   {
-    "title": "Whats your Gods full name? - Page 3",
-    "file": "showthread.php@t=1809911&page=3.htm"
+    "title": "t1810321.html",
+    "file": "t1810321.html"
   },
   {
-    "title": "Whats your Gods full name? - Page 4",
-    "file": "showthread.php@t=1809911&page=4.htm"
+    "title": "t1810322.html",
+    "file": "t1810322.html"
   },
   {
-    "title": "Whats your Gods full name? - Page 5",
-    "file": "showthread.php@t=1809911&page=5.htm"
+    "title": "t1810323.html",
+    "file": "t1810323.html"
   },
   {
-    "title": "Whats your Gods full name?",
-    "file": "showthread.php@t=1809911.htm"
+    "title": "t1810324.html",
+    "file": "t1810324.html"
   },
   {
-    "title": "What if they were right?",
-    "file": "showthread.php@t=1809912.htm"
+    "title": "t1810325.html",
+    "file": "t1810325.html"
   },
   {
-    "title": "God as Stability",
-    "file": "showthread.php@t=1809913&goto=nextnewest.htm"
+    "title": "t1810326.html",
+    "file": "t1810326.html"
   },
   {
-    "title": "A story of the souls developement",
-    "file": "showthread.php@t=1809913&goto=nextoldest.htm"
+    "title": "t1810327.html",
+    "file": "t1810327.html"
   },
   {
-    "title": "Ten commandments in the courthouse",
-    "file": "showthread.php@t=1809913&nojs=1.htm"
+    "title": "t1810328.html",
+    "file": "t1810328.html"
   },
   {
-    "title": "Ten commandments in the courthouse",
-    "file": "showthread.php@t=1809913.htm"
+    "title": "t1810329.html",
+    "file": "t1810329.html"
   },
   {
-    "title": "The End of the World",
-    "file": "showthread.php@t=1809914&goto=nextnewest.htm"
+    "title": "t1810330.html",
+    "file": "t1810330.html"
   },
   {
-    "title": "Is there anything more pointless...",
-    "file": "showthread.php@t=1809914&goto=nextoldest.htm"
+    "title": "t1810331.html",
+    "file": "t1810331.html"
   },
   {
-    "title": "THINK",
-    "file": "showthread.php@t=1809914&nojs=1.htm"
+    "title": "t1810332.html",
+    "file": "t1810332.html"
   },
   {
-    "title": "THINK - Page 2",
-    "file": "showthread.php@t=1809914&page=2.htm"
+    "title": "t1810333.html",
+    "file": "t1810333.html"
   },
   {
-    "title": "THINK",
-    "file": "showthread.php@t=1809914.htm"
+    "title": "t1810334.html",
+    "file": "t1810334.html"
   },
   {
-    "title": "God as Stability",
-    "file": "showthread.php@t=1809915.htm"
+    "title": "t1810335.html",
+    "file": "t1810335.html"
   },
   {
-    "title": "How are we alike God?",
-    "file": "showthread.php@t=1809916&goto=nextnewest.htm"
+    "title": "t1810336.html",
+    "file": "t1810336.html"
   },
   {
-    "title": "Atheists",
-    "file": "showthread.php@t=1809916&goto=nextoldest.htm"
+    "title": "t1810337.html",
+    "file": "t1810337.html"
   },
   {
-    "title": "How do i become a Mason?",
-    "file": "showthread.php@t=1809916&nojs=1.htm"
+    "title": "t1810338.html",
+    "file": "t1810338.html"
   },
   {
-    "title": "How do i become a Mason? - Page 2",
-    "file": "showthread.php@t=1809916&page=2.htm"
+    "title": "t1810339.html",
+    "file": "t1810339.html"
   },
   {
-    "title": "How do i become a Mason?",
-    "file": "showthread.php@t=1809916.htm"
+    "title": "t1810340.html",
+    "file": "t1810340.html"
   },
   {
-    "title": "Dead Pedophile Priest",
-    "file": "showthread.php@t=1809917.htm"
+    "title": "t1810341.html",
+    "file": "t1810341.html"
   },
   {
-    "title": "does god matter?",
-    "file": "showthread.php@t=1809918.htm"
+    "title": "t1810342.html",
+    "file": "t1810342.html"
   },
   {
-    "title": "god and logic...",
-    "file": "showthread.php@t=1809919.htm"
+    "title": "t1810343.html",
+    "file": "t1810343.html"
   },
   {
-    "title": "bullshit, it really is bullshit",
-    "file": "showthread.php@t=1809920.htm"
+    "title": "t1810344.html",
+    "file": "t1810344.html"
   },
   {
-    "title": "The End of the World",
-    "file": "showthread.php@t=1809921.htm"
+    "title": "t1810345.html",
+    "file": "t1810345.html"
   },
   {
-    "title": "Atheists",
-    "file": "showthread.php@t=1809922.htm"
+    "title": "t1810346.html",
+    "file": "t1810346.html"
   },
   {
-    "title": "how far do you believe??",
-    "file": "showthread.php@t=1809923.htm"
+    "title": "t1810347.html",
+    "file": "t1810347.html"
   },
   {
-    "title": "Religious restrictions..",
-    "file": "showthread.php@t=1809924.htm"
+    "title": "t1810348.html",
+    "file": "t1810348.html"
   },
   {
-    "title": "Drugs and the Bible",
-    "file": "showthread.php@t=1809925.htm"
+    "title": "t1810349.html",
+    "file": "t1810349.html"
   },
   {
-    "title": "Is there anything more pointless...",
-    "file": "showthread.php@t=1809926.htm"
+    "title": "t1810350.html",
+    "file": "t1810350.html"
   },
   {
-    "title": "qabala",
-    "file": "showthread.php@t=1809927.htm"
+    "title": "t1810351.html",
+    "file": "t1810351.html"
   },
   {
-    "title": "Sects",
-    "file": "showthread.php@t=1809928.htm"
+    "title": "t1810352.html",
+    "file": "t1810352.html"
   },
   {
-    "title": "Religion and psionics",
-    "file": "showthread.php@t=1809929.htm"
+    "title": "t1810353.html",
+    "file": "t1810353.html"
   },
   {
-    "title": "I AM The Second Coming of The Christ",
-    "file": "showthread.php@t=1809930.htm"
+    "title": "t1810354.html",
+    "file": "t1810354.html"
   },
   {
-    "title": "The Mystical properties of such items as amanita muscaria, Yage(ayahuasca),and acid",
-    "file": "showthread.php@t=1809931.htm"
+    "title": "t1810355.html",
+    "file": "t1810355.html"
   },
   {
-    "title": "Christians plz enlighten me",
-    "file": "showthread.php@t=1809932.htm"
+    "title": "t1810356.html",
+    "file": "t1810356.html"
   },
   {
-    "title": "How are we alike God?",
-    "file": "showthread.php@t=1809933.htm"
+    "title": "t1810357.html",
+    "file": "t1810357.html"
   },
   {
-    "title": "Rapid change in posters at religion site",
-    "file": "showthread.php@t=1809934.htm"
+    "title": "t1810358.html",
+    "file": "t1810358.html"
   },
   {
-    "title": "DEVIL POSESSION??",
-    "file": "showthread.php@t=1809935.htm"
+    "title": "t1810359.html",
+    "file": "t1810359.html"
   },
   {
-    "title": "Who were the three wise men that visited Christ(pbuh)?",
-    "file": "showthread.php@t=1809936.htm"
+    "title": "t1810360.html",
+    "file": "t1810360.html"
   },
   {
-    "title": "Does God Acknowledge existance of other gods?",
-    "file": "showthread.php@t=1809937.htm"
+    "title": "t1810361.html",
+    "file": "t1810361.html"
   },
   {
-    "title": "Online Holy Books",
-    "file": "showthread.php@t=1809938.htm"
+    "title": "t1810362.html",
+    "file": "t1810362.html"
   },
   {
-    "title": "If the christian god is a fair god",
-    "file": "showthread.php@t=1809939.htm"
+    "title": "t1810363.html",
+    "file": "t1810363.html"
   },
   {
-    "title": "a compliment to christians ...'please die'.......",
-    "file": "showthread.php@t=1809940.htm"
+    "title": "t1810364.html",
+    "file": "t1810364.html"
   },
   {
-    "title": "moses chizzeled out the ten commandments himself...FACT",
-    "file": "showthread.php@t=1809941.htm"
+    "title": "t1810365.html",
+    "file": "t1810365.html"
   },
   {
-    "title": "Bring That Shit In",
-    "file": "showthread.php@t=1809942.htm"
+    "title": "t1810366.html",
+    "file": "t1810366.html"
   },
   {
-    "title": "Why I Think Hell Probably Does Not Exist...",
-    "file": "showthread.php@t=1809943.htm"
+    "title": "t1810367.html",
+    "file": "t1810367.html"
   },
   {
-    "title": "Something Einstein said, i suggest you read.",
-    "file": "showthread.php@t=1809944.htm"
+    "title": "t1810368.html",
+    "file": "t1810368.html"
   },
   {
-    "title": "40 virgins.",
-    "file": "showthread.php@t=1809945.htm"
+    "title": "t1810369.html",
+    "file": "t1810369.html"
   },
   {
-    "title": "How do you stand, are you Inclusivist or Exclusivist?",
-    "file": "showthread.php@t=1809946.htm"
+    "title": "t1810370.html",
+    "file": "t1810370.html"
   },
   {
-    "title": "{(o)}",
-    "file": "showthread.php@t=1809947.htm"
+    "title": "t1810371.html",
+    "file": "t1810371.html"
   },
   {
-    "title": "what the !!!!???!?!?!?!?!?",
-    "file": "showthread.php@t=1809948.htm"
+    "title": "t1810372.html",
+    "file": "t1810372.html"
   },
   {
-    "title": "I just had a convo with my friend about religion...",
-    "file": "showthread.php@t=1809949.htm"
+    "title": "t1810373.html",
+    "file": "t1810373.html"
   },
   {
-    "title": "A theological paradox",
-    "file": "showthread.php@t=1809950.htm"
+    "title": "t1810374.html",
+    "file": "t1810374.html"
   },
   {
-    "title": "Science shakier than faith",
-    "file": "showthread.php@t=1809951.htm"
+    "title": "t1810375.html",
+    "file": "t1810375.html"
   },
   {
-    "title": "Order of creation",
-    "file": "showthread.php@t=1809952.htm"
+    "title": "t1810376.html",
+    "file": "t1810376.html"
   },
   {
-    "title": "Hmm, a theological paradox.",
-    "file": "showthread.php@t=1809953.htm"
+    "title": "t1810377.html",
+    "file": "t1810377.html"
   },
   {
-    "title": "Heaven = no attachment",
-    "file": "showthread.php@t=1809954.htm"
+    "title": "t1810378.html",
+    "file": "t1810378.html"
   },
   {
-    "title": "SAUDIS SENTENCED ME TO CRUCIFIXION",
-    "file": "showthread.php@t=1809955.htm"
+    "title": "t1810379.html",
+    "file": "t1810379.html"
   },
   {
-    "title": "Hypocritcal Vatican + Bible",
-    "file": "showthread.php@t=1809956.htm"
+    "title": "t1810380.html",
+    "file": "t1810380.html"
   },
   {
-    "title": "Abortion...  It cannot be murder because:",
-    "file": "showthread.php@t=1809957.htm"
+    "title": "t1810381.html",
+    "file": "t1810381.html"
   },
   {
-    "title": "HAte church",
-    "file": "showthread.php@t=1809958.htm"
+    "title": "t1810382.html",
+    "file": "t1810382.html"
   },
   {
-    "title": "Can't you guys stay on topic?",
-    "file": "showthread.php@t=1809959.htm"
+    "title": "t1810383.html",
+    "file": "t1810383.html"
   },
   {
-    "title": "Totse Believers...",
-    "file": "showthread.php@t=1809960.htm"
+    "title": "t1810384.html",
+    "file": "t1810384.html"
   },
   {
-    "title": "What do you have to lose?",
-    "file": "showthread.php@t=1809961.htm"
+    "title": "t1810385.html",
+    "file": "t1810385.html"
   },
   {
-    "title": "So, if God is real...",
-    "file": "showthread.php@t=1809962.htm"
+    "title": "t1810386.html",
+    "file": "t1810386.html"
   },
   {
-    "title": "hypocrits fuckers",
-    "file": "showthread.php@t=1809963.htm"
+    "title": "t1810387.html",
+    "file": "t1810387.html"
   },
   {
-    "title": "Definition of Faith",
-    "file": "showthread.php@t=1809964.htm"
+    "title": "t1810388.html",
+    "file": "t1810388.html"
   },
   {
-    "title": "What's the big deal?",
-    "file": "showthread.php@t=1809965.htm"
+    "title": "t1810389.html",
+    "file": "t1810389.html"
   },
   {
-    "title": "My God",
-    "file": "showthread.php@t=1809966.htm"
+    "title": "t1810390.html",
+    "file": "t1810390.html"
   },
   {
-    "title": "you will never find god looking for it the way you do",
-    "file": "showthread.php@t=1809967.htm"
+    "title": "t1810391.html",
+    "file": "t1810391.html"
   },
   {
-    "title": "Blood type",
-    "file": "showthread.php@t=1809968.htm"
+    "title": "t1810392.html",
+    "file": "t1810392.html"
   },
   {
-    "title": "Genesis",
-    "file": "showthread.php@t=1809969.htm"
+    "title": "t1810393.html",
+    "file": "t1810393.html"
   },
   {
-    "title": "Adam And Eve, Doom To Women?",
-    "file": "showthread.php@t=1809970.htm"
+    "title": "t1810394.html",
+    "file": "t1810394.html"
   },
   {
-    "title": "A God Called Progress",
-    "file": "showthread.php@t=1809971.htm"
+    "title": "t1810395.html",
+    "file": "t1810395.html"
   },
   {
-    "title": "did jesus die a virgin?",
-    "file": "showthread.php@t=1809972.htm"
+    "title": "t1810396.html",
+    "file": "t1810396.html"
   },
   {
-    "title": "I have never heard a convincing argument that god exists.",
-    "file": "showthread.php@t=1809973.htm"
+    "title": "t1810397.html",
+    "file": "t1810397.html"
   },
   {
-    "title": "wise words from a  buddhist man",
-    "file": "showthread.php@t=1809974.htm"
+    "title": "t1810398.html",
+    "file": "t1810398.html"
   },
   {
-    "title": "Endogenous Retroviral Insertions Demonstrate Evolution Beyond a Reasonable Doubt",
-    "file": "showthread.php@t=1809975.htm"
+    "title": "t1810399.html",
+    "file": "t1810399.html"
   },
   {
-    "title": "YAMA (TRUE self restraint).....do you know the meaning ?",
-    "file": "showthread.php@t=1809976.htm"
+    "title": "t1810400.html",
+    "file": "t1810400.html"
   },
   {
-    "title": "QUIT THE GOD BASHIN ALREADY!!!0",
-    "file": "showthread.php@t=1809977.htm"
+    "title": "t1810401.html",
+    "file": "t1810401.html"
   },
   {
-    "title": "The Lowdown on Ernst Haeckel's Embryonic Pics",
-    "file": "showthread.php@t=1809978.htm"
+    "title": "t1810402.html",
+    "file": "t1810402.html"
   },
   {
-    "title": "A god theory based on parts of the dead sea scrolls that makes sense",
-    "file": "showthread.php@t=1809979.htm"
+    "title": "t1810403.html",
+    "file": "t1810403.html"
   },
   {
-    "title": "Protestant bible vs. Catholic bible.",
-    "file": "showthread.php@t=1809980.htm"
+    "title": "t1810404.html",
+    "file": "t1810404.html"
   },
   {
-    "title": "If your not surely sure, then SHUT THE HELL UP!!",
-    "file": "showthread.php@t=1809981.htm"
+    "title": "t1810405.html",
+    "file": "t1810405.html"
   },
   {
-    "title": "Mel Gibson's Movie",
-    "file": "showthread.php@t=1809982.htm"
+    "title": "t1810406.html",
+    "file": "t1810406.html"
   },
   {
-    "title": "Christianity: The Scourge of the TOTSE",
-    "file": "showthread.php@t=1809983.htm"
+    "title": "t1810407.html",
+    "file": "t1810407.html"
   },
   {
-    "title": "The burden of proof...",
-    "file": "showthread.php@t=1809984.htm"
+    "title": "t1810408.html",
+    "file": "t1810408.html"
   },
   {
-    "title": "Everything on the gospel according to Matthew",
-    "file": "showthread.php@t=1809985.htm"
+    "title": "t1810409.html",
+    "file": "t1810409.html"
   },
   {
-    "title": "Read a Goddamn Book!",
-    "file": "showthread.php@t=1809986.htm"
+    "title": "t1810410.html",
+    "file": "t1810410.html"
   },
   {
-    "title": "The Book of Job",
-    "file": "showthread.php@t=1809987.htm"
+    "title": "t1810411.html",
+    "file": "t1810411.html"
   },
   {
-    "title": "you dont realy believe",
-    "file": "showthread.php@t=1809988.htm"
+    "title": "t1810412.html",
+    "file": "t1810412.html"
   },
   {
-    "title": "Consider this religion",
-    "file": "showthread.php@t=1809989.htm"
+    "title": "t1810413.html",
+    "file": "t1810413.html"
   },
   {
-    "title": "How did you lose/maintain your faith?",
-    "file": "showthread.php@t=1809990.htm"
+    "title": "t1810414.html",
+    "file": "t1810414.html"
   },
   {
-    "title": "Loving and compassionate god?",
-    "file": "showthread.php@t=1809991.htm"
+    "title": "t1810415.html",
+    "file": "t1810415.html"
   },
   {
-    "title": "God and Drugs",
-    "file": "showthread.php@t=1809992.htm"
+    "title": "t1810416.html",
+    "file": "t1810416.html"
   },
   {
-    "title": "secret of the spiral",
-    "file": "showthread.php@t=1809993.htm"
+    "title": "t1810417.html",
+    "file": "t1810417.html"
   },
   {
-    "title": "comte and spencer",
-    "file": "showthread.php@t=1809994.htm"
+    "title": "t1810418.html",
+    "file": "t1810418.html"
   },
   {
-    "title": "Eritis sicut Deus, scientes Bonum et Mallum.",
-    "file": "showthread.php@t=1809995.htm"
+    "title": "t1810419.html",
+    "file": "t1810419.html"
   },
   {
-    "title": "good, clean information about cults",
-    "file": "showthread.php@t=1809996.htm"
+    "title": "t1810420.html",
+    "file": "t1810420.html"
   },
   {
-    "title": "Random Theological Rambilngs Based on Personal Experiences with the \"Blood of Christ\"",
-    "file": "showthread.php@t=1809997.htm"
+    "title": "t1810421.html",
+    "file": "t1810421.html"
   },
   {
-    "title": "the saints go marching in",
-    "file": "showthread.php@t=1809998.htm"
+    "title": "t1810422.html",
+    "file": "t1810422.html"
   },
   {
-    "title": "The only arguament for after death with Proof I've heard of",
-    "file": "showthread.php@t=1809999.htm"
+    "title": "t1810424.html",
+    "file": "t1810424.html"
   },
   {
-    "title": "Create a God.",
-    "file": "showthread.php@t=1810000.htm"
+    "title": "t1810425.html",
+    "file": "t1810425.html"
   },
   {
-    "title": "heaven is a lonely place.",
-    "file": "showthread.php@t=1810001.htm"
+    "title": "t1810426.html",
+    "file": "t1810426.html"
   },
   {
-    "title": "Question for Xians",
-    "file": "showthread.php@t=1810002.htm"
+    "title": "t1810428.html",
+    "file": "t1810428.html"
   },
   {
-    "title": "GOD IS NOT REAL!!!! TRY AND DO YOUR BEST TO ARGUE THIS!!!!!!!",
-    "file": "showthread.php@t=1810003.htm"
+    "title": "t1810429.html",
+    "file": "t1810429.html"
   },
   {
-    "title": "spiritual cyborg",
-    "file": "showthread.php@t=1810004.htm"
+    "title": "t1810432.html",
+    "file": "t1810432.html"
   },
   {
-    "title": "Other Peoples Religion",
-    "file": "showthread.php@t=1810005.htm"
+    "title": "t1810433.html",
+    "file": "t1810433.html"
   },
   {
-    "title": "Pistol-packing Pastor Update",
-    "file": "showthread.php@t=1810006.htm"
+    "title": "t1810434.html",
+    "file": "t1810434.html"
   },
   {
-    "title": "A.I.",
-    "file": "showthread.php@t=1810007.htm"
+    "title": "t1810435.html",
+    "file": "t1810435.html"
   },
   {
-    "title": "maggog and gog",
-    "file": "showthread.php@t=1810008.htm"
+    "title": "t1810436.html",
+    "file": "t1810436.html"
   },
   {
-    "title": "(pbuh)? (wtf)?",
-    "file": "showthread.php@t=1810009.htm"
+    "title": "t1810437.html",
+    "file": "t1810437.html"
   },
   {
-    "title": "Reincarnation",
-    "file": "showthread.php@t=1810010.htm"
+    "title": "t1810441.html",
+    "file": "t1810441.html"
   },
   {
-    "title": "For d4v3: My Argument for Perfection's Existence",
-    "file": "showthread.php@t=1810011.htm"
+    "title": "t1810443.html",
+    "file": "t1810443.html"
   },
   {
-    "title": "So is it all a LIE??",
-    "file": "showthread.php@t=1810012.htm"
+    "title": "t1810445.html",
+    "file": "t1810445.html"
   },
   {
-    "title": "Jesus was a cheap alcholic.",
-    "file": "showthread.php@t=1810013.htm"
+    "title": "t1810446.html",
+    "file": "t1810446.html"
   },
   {
-    "title": "Why God is not Santa Claus",
-    "file": "showthread.php@t=1810014.htm"
+    "title": "t1810447.html",
+    "file": "t1810447.html"
   },
   {
-    "title": "Why?",
-    "file": "showthread.php@t=1810015.htm"
+    "title": "t1810449.html",
+    "file": "t1810449.html"
   },
   {
-    "title": "Jesus untold past",
-    "file": "showthread.php@t=1810016.htm"
+    "title": "t1810450.html",
+    "file": "t1810450.html"
   },
   {
-    "title": "help me out here.",
-    "file": "showthread.php@t=1810017.htm"
+    "title": "t1810451.html",
+    "file": "t1810451.html"
   },
   {
-    "title": "For all you Atheists",
-    "file": "showthread.php@t=1810018.htm"
+    "title": "t1810454.html",
+    "file": "t1810454.html"
   },
   {
-    "title": "Why i think hell dosnt exist. Follow up Metal_Demon",
-    "file": "showthread.php@t=1810019.htm"
+    "title": "t1810455.html",
+    "file": "t1810455.html"
   },
   {
-    "title": "Time=Illusion, Phillip K. Dick and the Book of Acts",
-    "file": "showthread.php@t=1810020.htm"
+    "title": "t1810457.html",
+    "file": "t1810457.html"
   },
   {
-    "title": "Picture This",
-    "file": "showthread.php@t=1810021.htm"
+    "title": "t1810458.html",
+    "file": "t1810458.html"
   },
   {
-    "title": "ARMAGEDDON?",
-    "file": "showthread.php@t=1810022.htm"
+    "title": "t1810460.html",
+    "file": "t1810460.html"
   },
   {
-    "title": "SATAN!!!",
-    "file": "showthread.php@t=1810023.htm"
+    "title": "t1810461.html",
+    "file": "t1810461.html"
   },
   {
-    "title": "God? Real?",
-    "file": "showthread.php@t=1810024.htm"
+    "title": "t1810462.html",
+    "file": "t1810462.html"
   },
   {
-    "title": "Transcend the dualistic fallacy",
-    "file": "showthread.php@t=1810025.htm"
+    "title": "t1810463.html",
+    "file": "t1810463.html"
   },
   {
-    "title": "So where do humans fit into the picture?",
-    "file": "showthread.php@t=1810026.htm"
+    "title": "t1810464.html",
+    "file": "t1810464.html"
   },
   {
-    "title": "ok heres a controversial question",
-    "file": "showthread.php@t=1810027.htm"
+    "title": "t1810466.html",
+    "file": "t1810466.html"
   },
   {
-    "title": "Does God's Actual Existence Even Matter?",
-    "file": "showthread.php@t=1810028.htm"
+    "title": "t1810467.html",
+    "file": "t1810467.html"
   },
   {
-    "title": "God won't do shit for you",
-    "file": "showthread.php@t=1810029.htm"
+    "title": "t1810468.html",
+    "file": "t1810468.html"
   },
   {
-    "title": "to kikey",
-    "file": "showthread.php@t=1810030.htm"
+    "title": "t1810469.html",
+    "file": "t1810469.html"
   },
   {
-    "title": "Evolution VS. Creationism",
-    "file": "showthread.php@t=1810031.htm"
+    "title": "t1810470.html",
+    "file": "t1810470.html"
   },
   {
-    "title": "MindworX",
-    "file": "showthread.php@t=1810032.htm"
+    "title": "t1810473.html",
+    "file": "t1810473.html"
   },
   {
-    "title": "I imagine Jesus would look like this.",
-    "file": "showthread.php@t=1810033.htm"
+    "title": "t1810474.html",
+    "file": "t1810474.html"
   },
   {
-    "title": "Pat Robertson",
-    "file": "showthread.php@t=1810034.htm"
+    "title": "t1810476.html",
+    "file": "t1810476.html"
   },
   {
-    "title": "JK Rowling + the prior de Sion?",
-    "file": "showthread.php@t=1810035.htm"
+    "title": "t1810478.html",
+    "file": "t1810478.html"
   },
   {
-    "title": "im jesus. ill be here during armageddon.",
-    "file": "showthread.php@t=1810036.htm"
+    "title": "t1810479.html",
+    "file": "t1810479.html"
   },
   {
-    "title": "I feel sorry for Jews",
-    "file": "showthread.php@t=1810037.htm"
+    "title": "t1810480.html",
+    "file": "t1810480.html"
   },
   {
-    "title": "Jews! Where's This Messiah Guy?",
-    "file": "showthread.php@t=1810038.htm"
+    "title": "t1810481.html",
+    "file": "t1810481.html"
   },
   {
-    "title": "To atheists (Guess God is giving you guys some help on this)",
-    "file": "showthread.php@t=1810039.htm"
+    "title": "t1810482.html",
+    "file": "t1810482.html"
   },
   {
-    "title": "My Fish Can Beat The Shit Out Of Your God",
-    "file": "showthread.php@t=1810040.htm"
+    "title": "t1810483.html",
+    "file": "t1810483.html"
   },
   {
-    "title": "KKK + Adolf Hitler + Christianity + Judaism",
-    "file": "showthread.php@t=1810041.htm"
+    "title": "t1810484.html",
+    "file": "t1810484.html"
   },
   {
-    "title": "Jewish Afterlife?",
-    "file": "showthread.php@t=1810042.htm"
+    "title": "t1810485.html",
+    "file": "t1810485.html"
   },
   {
-    "title": "Christian Atheist?!?",
-    "file": "showthread.php@t=1810043.htm"
+    "title": "t1810487.html",
+    "file": "t1810487.html"
   },
   {
-    "title": "The power of prayer",
-    "file": "showthread.php@t=1810044.htm"
+    "title": "t1810488.html",
+    "file": "t1810488.html"
   },
   {
-    "title": "Questions on how God cant exist.",
-    "file": "showthread.php@t=1810045.htm"
+    "title": "t1810490.html",
+    "file": "t1810490.html"
   },
   {
-    "title": "God? Good? Evil? Almighty? Powerless?",
-    "file": "showthread.php@t=1810046.htm"
+    "title": "t1810491.html",
+    "file": "t1810491.html"
   },
   {
-    "title": "Is there anything that we can do?",
-    "file": "showthread.php@t=1810047.htm"
+    "title": "t1810492.html",
+    "file": "t1810492.html"
   },
   {
-    "title": "It's very simple you see",
-    "file": "showthread.php@t=1810048.htm"
+    "title": "t1810493.html",
+    "file": "t1810493.html"
   },
   {
-    "title": "I liked it when it wasn't corrupt",
-    "file": "showthread.php@t=1810049.htm"
+    "title": "t1810494.html",
+    "file": "t1810494.html"
   },
   {
-    "title": "wicca",
-    "file": "showthread.php@t=1810050.htm"
+    "title": "t1810501.html",
+    "file": "t1810501.html"
   },
   {
-    "title": "Theory on god..",
-    "file": "showthread.php@t=1810051.htm"
+    "title": "t1810502.html",
+    "file": "t1810502.html"
   },
   {
-    "title": "Did God want us to have knowledge?",
-    "file": "showthread.php@t=1810052.htm"
+    "title": "t1810503.html",
+    "file": "t1810503.html"
   },
   {
-    "title": "Question for religious people",
-    "file": "showthread.php@t=1810053.htm"
+    "title": "t1810504.html",
+    "file": "t1810504.html"
   },
   {
-    "title": "Gay debate",
-    "file": "showthread.php@t=1810054.htm"
+    "title": "t1810505.html",
+    "file": "t1810505.html"
   },
   {
-    "title": "these are my theories on hell. what do you think?",
-    "file": "showthread.php@t=1810055.htm"
+    "title": "t1810507.html",
+    "file": "t1810507.html"
   },
   {
-    "title": "LDS is so totally bunk it shocks even me",
-    "file": "showthread.php@t=1810056.htm"
+    "title": "t1810508.html",
+    "file": "t1810508.html"
   },
   {
-    "title": "How do you deal with...",
-    "file": "showthread.php@t=1810057.htm"
+    "title": "t1810509.html",
+    "file": "t1810509.html"
   },
   {
-    "title": "The church mindset",
-    "file": "showthread.php@t=1810058.htm"
+    "title": "t1810513.html",
+    "file": "t1810513.html"
   },
   {
-    "title": "Is 'God' the ultimate causer, of which there is no cause??",
-    "file": "showthread.php@t=1810059.htm"
+    "title": "t1810514.html",
+    "file": "t1810514.html"
   },
   {
-    "title": "Cast into the fiery pits...",
-    "file": "showthread.php@t=1810060.htm"
+    "title": "t1810515.html",
+    "file": "t1810515.html"
   },
   {
-    "title": "anyone read the Judaeo-Christian Tradition?",
-    "file": "showthread.php@t=1810061.htm"
+    "title": "t1810516.html",
+    "file": "t1810516.html"
   },
   {
-    "title": "Is Religion just a mean for Man to deal with hardships (primarily death) ?",
-    "file": "showthread.php@t=1810062.htm"
+    "title": "t1810517.html",
+    "file": "t1810517.html"
   },
   {
-    "title": "Jesus' gospel",
-    "file": "showthread.php@t=1810063.htm"
+    "title": "t1810518.html",
+    "file": "t1810518.html"
   },
   {
-    "title": "God Cannot Logically Exist",
-    "file": "showthread.php@t=1810064.htm"
+    "title": "t1810521.html",
+    "file": "t1810521.html"
   },
   {
-    "title": "I am god",
-    "file": "showthread.php@t=1810065.htm"
+    "title": "t1810524.html",
+    "file": "t1810524.html"
   },
   {
-    "title": "\"Anti-christ\"...right....",
-    "file": "showthread.php@t=1810066.htm"
+    "title": "t1810527.html",
+    "file": "t1810527.html"
   },
   {
-    "title": "What the fuck is up with religion?",
-    "file": "showthread.php@t=1810067.htm"
+    "title": "t1810528.html",
+    "file": "t1810528.html"
   },
   {
-    "title": "Drawn to 'Holy land'?",
-    "file": "showthread.php@t=1810068.htm"
+    "title": "t1810529.html",
+    "file": "t1810529.html"
   },
   {
-    "title": "The Bible Code",
-    "file": "showthread.php@t=1810069.htm"
+    "title": "t1810530.html",
+    "file": "t1810530.html"
   },
   {
-    "title": "Is there time, or is there just movement?",
-    "file": "showthread.php@t=1810070.htm"
+    "title": "t1810531.html",
+    "file": "t1810531.html"
   },
   {
-    "title": "Punks, no religion, and bush -coOL Topic-",
-    "file": "showthread.php@t=1810071.htm"
+    "title": "t1810532.html",
+    "file": "t1810532.html"
   },
   {
-    "title": "PAGANISM",
-    "file": "showthread.php@t=1810072.htm"
+    "title": "t1810533.html",
+    "file": "t1810533.html"
   },
   {
-    "title": "The Problem With Hell.",
-    "file": "showthread.php@t=1810073.htm"
+    "title": "t1810534.html",
+    "file": "t1810534.html"
   },
   {
-    "title": "I went to church today. WOW",
-    "file": "showthread.php@t=1810074.htm"
+    "title": "t1810535.html",
+    "file": "t1810535.html"
   },
   {
-    "title": "Tired of christianity?",
-    "file": "showthread.php@t=1810075.htm"
+    "title": "t1810536.html",
+    "file": "t1810536.html"
   },
   {
-    "title": "Did Jesus die on the cross? Was he resurrected?",
-    "file": "showthread.php@t=1810076.htm"
+    "title": "t1810537.html",
+    "file": "t1810537.html"
   },
   {
-    "title": "Fear Of God",
-    "file": "showthread.php@t=1810077.htm"
+    "title": "t1810538.html",
+    "file": "t1810538.html"
   },
   {
-    "title": "Art to God",
-    "file": "showthread.php@t=1810078.htm"
+    "title": "t1810539.html",
+    "file": "t1810539.html"
   },
   {
-    "title": "Rejecting Hell",
-    "file": "showthread.php@t=1810079.htm"
+    "title": "t1810541.html",
+    "file": "t1810541.html"
   },
   {
-    "title": "Prove that God does not exist.",
-    "file": "showthread.php@t=1810080.htm"
+    "title": "t1810542.html",
+    "file": "t1810542.html"
   },
   {
-    "title": "Your one question to god, himself",
-    "file": "showthread.php@t=1810081.htm"
+    "title": "t1810543.html",
+    "file": "t1810543.html"
   },
   {
-    "title": "Christian Paradox",
-    "file": "showthread.php@t=1810082.htm"
+    "title": "t1810544.html",
+    "file": "t1810544.html"
   },
   {
-    "title": "GOD DOZ ECKSIST STFU FAG",
-    "file": "showthread.php@t=1810083.htm"
+    "title": "t1810545.html",
+    "file": "t1810545.html"
   },
   {
-    "title": "Born agains.",
-    "file": "showthread.php@t=1810084.htm"
+    "title": "t1810546.html",
+    "file": "t1810546.html"
   },
   {
-    "title": "The Bible say:  \"God\" created the heaven and earth in seven days.. but..",
-    "file": "showthread.php@t=1810085.htm"
+    "title": "t1810550.html",
+    "file": "t1810550.html"
   },
   {
-    "title": "Deism",
-    "file": "showthread.php@t=1810086.htm"
+    "title": "t1810551.html",
+    "file": "t1810551.html"
   },
   {
-    "title": "Theory on why god can't exist...",
-    "file": "showthread.php@t=1810087.htm"
+    "title": "t1810555.html",
+    "file": "t1810555.html"
   },
   {
-    "title": "Why atheism is true for the atheist",
-    "file": "showthread.php@t=1810088.htm"
+    "title": "t1810557.html",
+    "file": "t1810557.html"
   },
   {
-    "title": "Athiests/Believers",
-    "file": "showthread.php@t=1810089.htm"
+    "title": "t1810558.html",
+    "file": "t1810558.html"
   },
   {
-    "title": "Logic",
-    "file": "showthread.php@t=1810090.htm"
+    "title": "t1810559.html",
+    "file": "t1810559.html"
   },
   {
-    "title": "Christian hardliners denying Darwin existed",
-    "file": "showthread.php@t=1810091.htm"
+    "title": "t1810560.html",
+    "file": "t1810560.html"
   },
   {
-    "title": "Ever talk to a psychic Medium?",
-    "file": "showthread.php@t=1810092.htm"
+    "title": "t1810561.html",
+    "file": "t1810561.html"
   },
   {
-    "title": "deabte evolution",
-    "file": "showthread.php@t=1810093.htm"
+    "title": "t1810562.html",
+    "file": "t1810562.html"
   },
   {
-    "title": "Do you agree?",
-    "file": "showthread.php@t=1810094.htm"
+    "title": "t1810565.html",
+    "file": "t1810565.html"
   },
   {
-    "title": "random pointless message..sort of",
-    "file": "showthread.php@t=1810095.htm"
+    "title": "t1810566.html",
+    "file": "t1810566.html"
   },
   {
-    "title": "What's the meaning of your life?",
-    "file": "showthread.php@t=1810096.htm"
+    "title": "t1810567.html",
+    "file": "t1810567.html"
   },
   {
-    "title": "fuck who ever wrote the article about \"intellectual laziness of aethiests\"",
-    "file": "showthread.php@t=1810097.htm"
+    "title": "t1810569.html",
+    "file": "t1810569.html"
   },
   {
-    "title": "satanic religion",
-    "file": "showthread.php@t=1810098.htm"
+    "title": "t1810570.html",
+    "file": "t1810570.html"
   },
   {
-    "title": "Re:Intellectual laziness of athiests.",
-    "file": "showthread.php@t=1810099.htm"
+    "title": "t1810571.html",
+    "file": "t1810571.html"
   },
   {
-    "title": "Sin",
-    "file": "showthread.php@t=1810100.htm"
+    "title": "t1810572.html",
+    "file": "t1810572.html"
   },
   {
-    "title": "Satan essential to Christianity",
-    "file": "showthread.php@t=1810101.htm"
+    "title": "t1810573.html",
+    "file": "t1810573.html"
   },
   {
-    "title": "What is the meaning of life?  It doesn't have one.",
-    "file": "showthread.php@t=1810102.htm"
+    "title": "t1810574.html",
+    "file": "t1810574.html"
   },
   {
-    "title": "Systematic Beliefs",
-    "file": "showthread.php@t=1810103.htm"
+    "title": "t1810575.html",
+    "file": "t1810575.html"
   },
   {
-    "title": "Atheism",
-    "file": "showthread.php@t=1810104.htm"
+    "title": "t1810576.html",
+    "file": "t1810576.html"
   },
   {
-    "title": "Noah's Ark",
-    "file": "showthread.php@t=1810105.htm"
+    "title": "t1810577.html",
+    "file": "t1810577.html"
   },
   {
-    "title": "Why fear death?",
-    "file": "showthread.php@t=1810106.htm"
+    "title": "t1810578.html",
+    "file": "t1810578.html"
   },
   {
-    "title": "Atheism is not a religion",
-    "file": "showthread.php@t=1810107.htm"
+    "title": "t1810579.html",
+    "file": "t1810579.html"
   },
   {
-    "title": "Why did God create us?",
-    "file": "showthread.php@t=1810108.htm"
+    "title": "t1810580.html",
+    "file": "t1810580.html"
   },
   {
-    "title": "Why do you believe in god?",
-    "file": "showthread.php@t=1810109.htm"
+    "title": "t1810581.html",
+    "file": "t1810581.html"
   },
   {
-    "title": "Apocolypse.",
-    "file": "showthread.php@t=1810110.htm"
+    "title": "t1810582.html",
+    "file": "t1810582.html"
   },
   {
-    "title": "Wicca is NOT a religion!",
-    "file": "showthread.php@t=1810111.htm"
+    "title": "t1810583.html",
+    "file": "t1810583.html"
   },
   {
-    "title": "Is Heaven Worth It?",
-    "file": "showthread.php@t=1810112.htm"
+    "title": "t1810584.html",
+    "file": "t1810584.html"
   },
   {
-    "title": "So, how bout those dinosaurs?",
-    "file": "showthread.php@t=1810113.htm"
+    "title": "t1810585.html",
+    "file": "t1810585.html"
   },
   {
-    "title": "What if god was evil?",
-    "file": "showthread.php@t=1810114.htm"
+    "title": "t1810586.html",
+    "file": "t1810586.html"
   },
   {
-    "title": "What the Hell is a Soul?",
-    "file": "showthread.php@t=1810115.htm"
+    "title": "t1810587.html",
+    "file": "t1810587.html"
   },
   {
-    "title": "Hell",
-    "file": "showthread.php@t=1810116.htm"
+    "title": "t1810589.html",
+    "file": "t1810589.html"
   },
   {
-    "title": "To be Confirmed or not to be?",
-    "file": "showthread.php@t=1810117.htm"
+    "title": "t1810590.html",
+    "file": "t1810590.html"
   },
   {
-    "title": "Has god ever answered anything?",
-    "file": "showthread.php@t=1810118.htm"
+    "title": "t1810591.html",
+    "file": "t1810591.html"
   },
   {
-    "title": "Why do Christians think us Atheists are intelectually lazy?",
-    "file": "showthread.php@t=1810119.htm"
+    "title": "t1810592.html",
+    "file": "t1810592.html"
   },
   {
-    "title": "Jesus...what a fuckin stoner...",
-    "file": "showthread.php@t=1810120.htm"
+    "title": "t1810593.html",
+    "file": "t1810593.html"
   },
   {
-    "title": "how can god be perfect?",
-    "file": "showthread.php@t=1810121.htm"
+    "title": "t1810594.html",
+    "file": "t1810594.html"
   },
   {
-    "title": "Christians VS. Aetheists",
-    "file": "showthread.php@t=1810122.htm"
+    "title": "t1810597.html",
+    "file": "t1810597.html"
   },
   {
-    "title": "Lucifer's fall from grace",
-    "file": "showthread.php@t=1810123.htm"
+    "title": "t1810598.html",
+    "file": "t1810598.html"
   },
   {
-    "title": "Here's a thought",
-    "file": "showthread.php@t=1810124.htm"
+    "title": "t1810599.html",
+    "file": "t1810599.html"
   },
   {
-    "title": "Whats YOUR religion?",
-    "file": "showthread.php@t=1810125.htm"
+    "title": "t1810600.html",
+    "file": "t1810600.html"
   },
   {
-    "title": "Anyone feel something similar?",
-    "file": "showthread.php@t=1810126.htm"
+    "title": "t1810601.html",
+    "file": "t1810601.html"
   },
   {
-    "title": "Animalism?",
-    "file": "showthread.php@t=1810127.htm"
+    "title": "t1810602.html",
+    "file": "t1810602.html"
   },
   {
-    "title": "The secret to life..A message from the creator.",
-    "file": "showthread.php@t=1810128.htm"
+    "title": "t1810603.html",
+    "file": "t1810603.html"
   },
   {
-    "title": "Prove to me God exists",
-    "file": "showthread.php@t=1810129.htm"
+    "title": "t1810604.html",
+    "file": "t1810604.html"
   },
   {
-    "title": "Most Obnoxious Religion",
-    "file": "showthread.php@t=1810130.htm"
+    "title": "t1810605.html",
+    "file": "t1810605.html"
   },
   {
-    "title": "Anything My Ass!!!!!",
-    "file": "showthread.php@t=1810131.htm"
+    "title": "t1810606.html",
+    "file": "t1810606.html"
   },
   {
-    "title": "Interesting thing about Roman Catholic Church",
-    "file": "showthread.php@t=1810132.htm"
+    "title": "t1810607.html",
+    "file": "t1810607.html"
   },
   {
-    "title": "Religion is not religion...?",
-    "file": "showthread.php@t=1810133.htm"
+    "title": "t1810609.html",
+    "file": "t1810609.html"
   },
   {
-    "title": "Take that you Christian Motherfuckers",
-    "file": "showthread.php@t=1810134.htm"
+    "title": "t1810610.html",
+    "file": "t1810610.html"
   },
   {
-    "title": "Original thoughts?",
-    "file": "showthread.php@t=1810135.htm"
+    "title": "t1810611.html",
+    "file": "t1810611.html"
   },
   {
-    "title": "hmmm, no grudge.",
-    "file": "showthread.php@t=1810136.htm"
+    "title": "t1810612.html",
+    "file": "t1810612.html"
   },
   {
-    "title": "Ala' Carte Spirituality VS. Prefab Religion",
-    "file": "showthread.php@t=1810137.htm"
+    "title": "t1810613.html",
+    "file": "t1810613.html"
   },
   {
-    "title": "TO ALL JAHOVAH'S WITNESSES, and christians, BUT MAINLY JAHOVAH'S WITNESSES!!!!",
-    "file": "showthread.php@t=1810138.htm"
+    "title": "t1810614.html",
+    "file": "t1810614.html"
   },
   {
-    "title": "there has to be a god...right?",
-    "file": "showthread.php@t=1810139.htm"
+    "title": "t1810616.html",
+    "file": "t1810616.html"
   },
   {
-    "title": "if angels have wings,how can I be having good sex?",
-    "file": "showthread.php@t=1810140.htm"
+    "title": "t1810617.html",
+    "file": "t1810617.html"
   },
   {
-    "title": "Prove to me you exist.",
-    "file": "showthread.php@t=1810141.htm"
+    "title": "t1810619.html",
+    "file": "t1810619.html"
   },
   {
-    "title": "Problems with Noah and his Ark",
-    "file": "showthread.php@t=1810142.htm"
+    "title": "t1810620.html",
+    "file": "t1810620.html"
   },
   {
-    "title": "Sorry If Someone Forced Christianity On You",
-    "file": "showthread.php@t=1810143.htm"
+    "title": "t1810621.html",
+    "file": "t1810621.html"
   },
   {
-    "title": "ugh",
-    "file": "showthread.php@t=1810144.htm"
+    "title": "t1810622.html",
+    "file": "t1810622.html"
   },
   {
-    "title": "Men should rule over women.",
-    "file": "showthread.php@t=1810145.htm"
+    "title": "t1810623.html",
+    "file": "t1810623.html"
   },
   {
-    "title": "Prove to me that The Ugly Fish doesn't exist",
-    "file": "showthread.php@t=1810146.htm"
+    "title": "t1810624.html",
+    "file": "t1810624.html"
   },
   {
-    "title": "prove this",
-    "file": "showthread.php@t=1810147.htm"
+    "title": "t1810625.html",
+    "file": "t1810625.html"
   },
   {
-    "title": "Mestruration is a sin .",
-    "file": "showthread.php@t=1810148.htm"
+    "title": "t1810626.html",
+    "file": "t1810626.html"
   },
   {
-    "title": "Are u agnostically inclined?",
-    "file": "showthread.php@t=1810149.htm"
+    "title": "t1810627.html",
+    "file": "t1810627.html"
   },
   {
-    "title": "Proof Something Like God Exsists",
-    "file": "showthread.php@t=1810150.htm"
+    "title": "t1810628.html",
+    "file": "t1810628.html"
   },
   {
-    "title": "\"Respect my beliefs,\" you say? I say, \"Earn my respect.\"",
-    "file": "showthread.php@t=1810151.htm"
+    "title": "t1810629.html",
+    "file": "t1810629.html"
   },
   {
-    "title": "Not a higher power, but rather a lower?",
-    "file": "showthread.php@t=1810152.htm"
+    "title": "t1810630.html",
+    "file": "t1810630.html"
   },
   {
-    "title": "If I'm right, Christianity can't be true",
-    "file": "showthread.php@t=1810153.htm"
+    "title": "t1810631.html",
+    "file": "t1810631.html"
   },
   {
-    "title": "prophecy",
-    "file": "showthread.php@t=1810154.htm"
+    "title": "t1810634.html",
+    "file": "t1810634.html"
   },
   {
-    "title": "burned alive",
-    "file": "showthread.php@t=1810155.htm"
+    "title": "t1810635.html",
+    "file": "t1810635.html"
   },
   {
-    "title": "just nothing.",
-    "file": "showthread.php@t=1810156.htm"
+    "title": "t1810637.html",
+    "file": "t1810637.html"
   },
   {
-    "title": "Somthing I found on Suprnova.org... a bit topical.",
-    "file": "showthread.php@t=1810157.htm"
+    "title": "t1810639.html",
+    "file": "t1810639.html"
   },
   {
-    "title": "Religion(s) u respect",
-    "file": "showthread.php@t=1810158.htm"
+    "title": "t1810640.html",
+    "file": "t1810640.html"
   },
   {
-    "title": "Biased Christian - read if you have time",
-    "file": "showthread.php@t=1810159.htm"
+    "title": "t1810641.html",
+    "file": "t1810641.html"
   },
   {
-    "title": "Superiority",
-    "file": "showthread.php@t=1810160.htm"
+    "title": "t1810642.html",
+    "file": "t1810642.html"
   },
   {
-    "title": "You are never responsible for anything you do...EVER! And here's why....",
-    "file": "showthread.php@t=1810161.htm"
+    "title": "t1810643.html",
+    "file": "t1810643.html"
   },
   {
-    "title": "Scary is it not",
-    "file": "showthread.php@t=1810162.htm"
+    "title": "t1810644.html",
+    "file": "t1810644.html"
   },
   {
-    "title": "Christianity- the biggest cult of all?",
-    "file": "showthread.php@t=1810163.htm"
+    "title": "t1810645.html",
+    "file": "t1810645.html"
   },
   {
-    "title": "Fuck all this",
-    "file": "showthread.php@t=1810164.htm"
+    "title": "t1810646.html",
+    "file": "t1810646.html"
   },
   {
-    "title": "Religion is old science.",
-    "file": "showthread.php@t=1810165.htm"
+    "title": "t1810647.html",
+    "file": "t1810647.html"
   },
   {
-    "title": "Philosophical Religions - Rubbish?",
-    "file": "showthread.php@t=1810166.htm"
+    "title": "t1810648.html",
+    "file": "t1810648.html"
   },
   {
-    "title": "Your god My god Our god",
-    "file": "showthread.php@t=1810167.htm"
+    "title": "t1810649.html",
+    "file": "t1810649.html"
   },
   {
-    "title": "Atheists Creed....",
-    "file": "showthread.php@t=1810168.htm"
+    "title": "t1810650.html",
+    "file": "t1810650.html"
   },
   {
-    "title": "Jesus",
-    "file": "showthread.php@t=1810169.htm"
+    "title": "t1810652.html",
+    "file": "t1810652.html"
   },
   {
-    "title": "Mormonism: False.  Should we tell them",
-    "file": "showthread.php@t=1810170.htm"
+    "title": "t1810653.html",
+    "file": "t1810653.html"
   },
   {
-    "title": "no fun being a god.",
-    "file": "showthread.php@t=1810171.htm"
+    "title": "t1810654.html",
+    "file": "t1810654.html"
   },
   {
-    "title": "Jesus as Christ...",
-    "file": "showthread.php@t=1810172.htm"
+    "title": "t1810655.html",
+    "file": "t1810655.html"
   },
   {
-    "title": "THE1+1=2RELIGION",
-    "file": "showthread.php@t=1810173.htm"
+    "title": "t1810656.html",
+    "file": "t1810656.html"
   },
   {
-    "title": "Amoral?",
-    "file": "showthread.php@t=1810174.htm"
+    "title": "t1810657.html",
+    "file": "t1810657.html"
   },
   {
-    "title": "Jesus was a woman.",
-    "file": "showthread.php@t=1810175.htm"
+    "title": "t1810658.html",
+    "file": "t1810658.html"
   },
   {
-    "title": "Science: Rubbish?",
-    "file": "showthread.php@t=1810176.htm"
+    "title": "t1810659.html",
+    "file": "t1810659.html"
   },
   {
-    "title": "The Passion, what do YOU think?",
-    "file": "showthread.php@t=1810177.htm"
+    "title": "t1810660.html",
+    "file": "t1810660.html"
   },
   {
-    "title": "how many people believe in the bible",
-    "file": "showthread.php@t=1810178.htm"
+    "title": "t1810661.html",
+    "file": "t1810661.html"
   },
   {
-    "title": "Is god...",
-    "file": "showthread.php@t=1810179.htm"
+    "title": "t1810663.html",
+    "file": "t1810663.html"
   },
   {
-    "title": "need advice on what to do to not be killed by a priestess",
-    "file": "showthread.php@t=1810180.htm"
+    "title": "t1810664.html",
+    "file": "t1810664.html"
   },
   {
-    "title": "wrong bible",
-    "file": "showthread.php@t=1810181.htm"
+    "title": "t1810665.html",
+    "file": "t1810665.html"
   },
   {
-    "title": "A question for atheists...",
-    "file": "showthread.php@t=1810182.htm"
+    "title": "t1810666.html",
+    "file": "t1810666.html"
   },
   {
-    "title": "god takin a nap?",
-    "file": "showthread.php@t=1810183.htm"
+    "title": "t1810667.html",
+    "file": "t1810667.html"
   },
   {
-    "title": "why is Jesus black?",
-    "file": "showthread.php@t=1810184.htm"
+    "title": "t1810668.html",
+    "file": "t1810668.html"
   },
   {
-    "title": "Science is religion",
-    "file": "showthread.php@t=1810185.htm"
+    "title": "t1810670.html",
+    "file": "t1810670.html"
   },
   {
-    "title": "But what I do I do because I like to do....",
-    "file": "showthread.php@t=1810186.htm"
+    "title": "t1810671.html",
+    "file": "t1810671.html"
   },
   {
-    "title": "The So-Called Bible Code",
-    "file": "showthread.php@t=1810187.htm"
+    "title": "t1810672.html",
+    "file": "t1810672.html"
   },
   {
-    "title": "Jehovahs Witnesses; Let me try to explain the whole 'cult' thing...",
-    "file": "showthread.php@t=1810188.htm"
+    "title": "t1810673.html",
+    "file": "t1810673.html"
   },
   {
-    "title": "A Question About God & Church",
-    "file": "showthread.php@t=1810189.htm"
+    "title": "t1810677.html",
+    "file": "t1810677.html"
   },
   {
-    "title": "Can I get a sign over here...?",
-    "file": "showthread.php@t=1810190.htm"
+    "title": "t1810679.html",
+    "file": "t1810679.html"
   },
   {
-    "title": "my thoughts...",
-    "file": "showthread.php@t=1810191.htm"
+    "title": "t1810680.html",
+    "file": "t1810680.html"
   },
   {
-    "title": "A big FUCK YOU to you religious motherfuckers!",
-    "file": "showthread.php@t=1810192.htm"
+    "title": "t1810681.html",
+    "file": "t1810681.html"
   },
   {
-    "title": "On Angels",
-    "file": "showthread.php@t=1810193.htm"
+    "title": "t1810682.html",
+    "file": "t1810682.html"
   },
   {
-    "title": "Anyone use entheogens for spiritual purposes?",
-    "file": "showthread.php@t=1810194.htm"
+    "title": "t1810683.html",
+    "file": "t1810683.html"
   },
   {
-    "title": "Modern Satanism",
-    "file": "showthread.php@t=1810195.htm"
+    "title": "t1810684.html",
+    "file": "t1810684.html"
   },
   {
-    "title": "Why not lay off the over used argument.",
-    "file": "showthread.php@t=1810196.htm"
+    "title": "t1810685.html",
+    "file": "t1810685.html"
   },
   {
-    "title": "Dear God...",
-    "file": "showthread.php@t=1810197.htm"
+    "title": "t1810686.html",
+    "file": "t1810686.html"
   },
   {
-    "title": "Islam is False?",
-    "file": "showthread.php@t=1810198.htm"
+    "title": "t1810688.html",
+    "file": "t1810688.html"
   },
   {
-    "title": "Ash Wenesday",
-    "file": "showthread.php@t=1810199.htm"
+    "title": "t1810689.html",
+    "file": "t1810689.html"
   },
   {
-    "title": "How much does god want prayer?",
-    "file": "showthread.php@t=1810200.htm"
+    "title": "t1810692.html",
+    "file": "t1810692.html"
   },
   {
-    "title": "The Passion of the Christ",
-    "file": "showthread.php@t=1810201.htm"
+    "title": "t1810693.html",
+    "file": "t1810693.html"
   },
   {
-    "title": "GogMagog",
-    "file": "showthread.php@t=1810202.htm"
+    "title": "t1810695.html",
+    "file": "t1810695.html"
   },
   {
-    "title": "Christianity is one big funeral.",
-    "file": "showthread.php@t=1810203.htm"
+    "title": "t1810696.html",
+    "file": "t1810696.html"
   },
   {
-    "title": "Guess what....Religion is...",
-    "file": "showthread.php@t=1810204.htm"
+    "title": "t1810697.html",
+    "file": "t1810697.html"
   },
   {
-    "title": "Crowley- kook or messiah?",
-    "file": "showthread.php@t=1810205.htm"
+    "title": "t1810698.html",
+    "file": "t1810698.html"
   },
   {
-    "title": "I have half a soul!",
-    "file": "showthread.php@t=1810206.htm"
+    "title": "t1810699.html",
+    "file": "t1810699.html"
   },
   {
-    "title": "atheism is a religion, wow",
-    "file": "showthread.php@t=1810207.htm"
+    "title": "t1810701.html",
+    "file": "t1810701.html"
   },
   {
-    "title": "if you're catholic do you still go to Church?",
-    "file": "showthread.php@t=1810208.htm"
+    "title": "t1810703.html",
+    "file": "t1810703.html"
   },
   {
-    "title": "Illuminati and Christianity",
-    "file": "showthread.php@t=1810209.htm"
+    "title": "t1810706.html",
+    "file": "t1810706.html"
   },
   {
-    "title": "It isn't so illogical.",
-    "file": "showthread.php@t=1810210.htm"
+    "title": "t1810707.html",
+    "file": "t1810707.html"
   },
   {
-    "title": "Here's What I Have Decided.",
-    "file": "showthread.php@t=1810211.htm"
+    "title": "t1810708.html",
+    "file": "t1810708.html"
   },
   {
-    "title": "wanted good arguments for gods exsistence",
-    "file": "showthread.php@t=1810212.htm"
+    "title": "t1810710.html",
+    "file": "t1810710.html"
   },
   {
-    "title": "What do you think about this?",
-    "file": "showthread.php@t=1810213.htm"
+    "title": "t1810711.html",
+    "file": "t1810711.html"
   },
   {
-    "title": "Nothing to fear but fear itself.",
-    "file": "showthread.php@t=1810214.htm"
+    "title": "t1810712.html",
+    "file": "t1810712.html"
   },
   {
-    "title": "is it wrong to think Jesus was a total fox?",
-    "file": "showthread.php@t=1810215.htm"
+    "title": "t1810713.html",
+    "file": "t1810713.html"
   },
   {
-    "title": "I am God",
-    "file": "showthread.php@t=1810216.htm"
+    "title": "t1810714.html",
+    "file": "t1810714.html"
   },
   {
-    "title": "Jesus, Joan d'Arc",
-    "file": "showthread.php@t=1810217.htm"
+    "title": "t1810716.html",
+    "file": "t1810716.html"
   },
   {
-    "title": "was mary a-sexual?",
-    "file": "showthread.php@t=1810218.htm"
+    "title": "t1810718.html",
+    "file": "t1810718.html"
   },
   {
-    "title": "how the idea of god came about",
-    "file": "showthread.php@t=1810219.htm"
+    "title": "t1810720.html",
+    "file": "t1810720.html"
   },
   {
-    "title": "Did God create himself?",
-    "file": "showthread.php@t=1810220.htm"
+    "title": "t1810721.html",
+    "file": "t1810721.html"
   },
   {
-    "title": "your beliefs are false, you are condemned to an eternity in hell",
-    "file": "showthread.php@t=1810221.htm"
+    "title": "t1810722.html",
+    "file": "t1810722.html"
   },
   {
-    "title": "Need some advice",
-    "file": "showthread.php@t=1810222.htm"
+    "title": "t1810723.html",
+    "file": "t1810723.html"
   },
   {
-    "title": "Jesus is...",
-    "file": "showthread.php@t=1810223.htm"
+    "title": "t1810724.html",
+    "file": "t1810724.html"
   },
   {
-    "title": "WWJD bracelets etc.",
-    "file": "showthread.php@t=1810224.htm"
+    "title": "t1810726.html",
+    "file": "t1810726.html"
   },
   {
-    "title": "GOD doesn't mean BIBLE",
-    "file": "showthread.php@t=1810225.htm"
+    "title": "t1810727.html",
+    "file": "t1810727.html"
   },
   {
-    "title": "Questions I want answered",
-    "file": "showthread.php@t=1810226.htm"
+    "title": "t1810728.html",
+    "file": "t1810728.html"
   },
   {
-    "title": "The Problem With Heaven",
-    "file": "showthread.php@t=1810227.htm"
+    "title": "t1810729.html",
+    "file": "t1810729.html"
   },
   {
-    "title": "Religious Tolerance",
-    "file": "showthread.php@t=1810228.htm"
+    "title": "t1810730.html",
+    "file": "t1810730.html"
   },
   {
-    "title": "What would God look like?",
-    "file": "showthread.php@t=1810229.htm"
+    "title": "t1810731.html",
+    "file": "t1810731.html"
   },
   {
-    "title": "The Christian mindset I just hate...",
-    "file": "showthread.php@t=1810230.htm"
+    "title": "t1810736.html",
+    "file": "t1810736.html"
   },
   {
-    "title": "Mormons",
-    "file": "showthread.php@t=1810231.htm"
+    "title": "t1810737.html",
+    "file": "t1810737.html"
   },
   {
-    "title": "Favorite Characters In The Bible",
-    "file": "showthread.php@t=1810232.htm"
+    "title": "t1810738.html",
+    "file": "t1810738.html"
   },
   {
-    "title": "THE SECRET COVENANT",
-    "file": "showthread.php@t=1810233.htm"
+    "title": "t1810739.html",
+    "file": "t1810739.html"
   },
   {
-    "title": "calling all agnostics!!!",
-    "file": "showthread.php@t=1810234.htm"
+    "title": "t1810741.html",
+    "file": "t1810741.html"
   },
   {
-    "title": "my version of christianity",
-    "file": "showthread.php@t=1810235.htm"
+    "title": "t1810742.html",
+    "file": "t1810742.html"
   },
   {
-    "title": "Answer Me This",
-    "file": "showthread.php@t=1810236.htm"
+    "title": "t1810743.html",
+    "file": "t1810743.html"
   },
   {
-    "title": "How many religions have you gone thru?",
-    "file": "showthread.php@t=1810237.htm"
+    "title": "t1810744.html",
+    "file": "t1810744.html"
   },
   {
-    "title": "Martyrs",
-    "file": "showthread.php@t=1810238.htm"
+    "title": "t1810746.html",
+    "file": "t1810746.html"
   },
   {
-    "title": "If you were a Religious Image...",
-    "file": "showthread.php@t=1810239.htm"
+    "title": "t1810750.html",
+    "file": "t1810750.html"
   },
   {
-    "title": "Christians:  Can you explain the events of the 1st Easter morning?",
-    "file": "showthread.php@t=1810240.htm"
+    "title": "t1810753.html",
+    "file": "t1810753.html"
   },
   {
-    "title": "23",
-    "file": "showthread.php@t=1810241.htm"
+    "title": "t1810754.html",
+    "file": "t1810754.html"
   },
   {
-    "title": "God Changed His Mind",
-    "file": "showthread.php@t=1810242.htm"
+    "title": "t1810755.html",
+    "file": "t1810755.html"
   },
   {
-    "title": "New Religion - Chillinism",
-    "file": "showthread.php@t=1810243.htm"
+    "title": "t1810756.html",
+    "file": "t1810756.html"
   },
   {
-    "title": "New Testament Documents",
-    "file": "showthread.php@t=1810244.htm"
+    "title": "t1810757.html",
+    "file": "t1810757.html"
   },
   {
-    "title": "Confirmation Retreat",
-    "file": "showthread.php@t=1810245.htm"
+    "title": "t1810758.html",
+    "file": "t1810758.html"
   },
   {
-    "title": "Eris says it all.",
-    "file": "showthread.php@t=1810246.htm"
+    "title": "t1810759.html",
+    "file": "t1810759.html"
   },
   {
-    "title": "MY New Religion.",
-    "file": "showthread.php@t=1810247.htm"
+    "title": "t1810760.html",
+    "file": "t1810760.html"
   },
   {
-    "title": "Religion explained!",
-    "file": "showthread.php@t=1810248.htm"
+    "title": "t1810761.html",
+    "file": "t1810761.html"
   },
   {
-    "title": "suicide",
-    "file": "showthread.php@t=1810249.htm"
+    "title": "t1810763.html",
+    "file": "t1810763.html"
   },
   {
-    "title": "Jesus clone",
-    "file": "showthread.php@t=1810250.htm"
+    "title": "t1810767.html",
+    "file": "t1810767.html"
   },
   {
-    "title": "The second coming, Elvis.",
-    "file": "showthread.php@t=1810251.htm"
+    "title": "t1810769.html",
+    "file": "t1810769.html"
   },
   {
-    "title": "Is it Atheism?",
-    "file": "showthread.php@t=1810252.htm"
+    "title": "t1810770.html",
+    "file": "t1810770.html"
   },
   {
-    "title": "Intelligent Design: A Counter Arguement to Evolution",
-    "file": "showthread.php@t=1810253.htm"
+    "title": "t1810771.html",
+    "file": "t1810771.html"
   },
   {
-    "title": "I have the ideology, but it's all floaty and stuff...",
-    "file": "showthread.php@t=1810254.htm"
+    "title": "t1810772.html",
+    "file": "t1810772.html"
   },
   {
-    "title": "Would you fuck Him in the butt?",
-    "file": "showthread.php@t=1810255.htm"
+    "title": "t1810773.html",
+    "file": "t1810773.html"
   },
   {
-    "title": "Was Jesus a Hippy?",
-    "file": "showthread.php@t=1810256.htm"
+    "title": "t1810774.html",
+    "file": "t1810774.html"
   },
   {
-    "title": "just a thought",
-    "file": "showthread.php@t=1810257.htm"
+    "title": "t1810775.html",
+    "file": "t1810775.html"
   },
   {
-    "title": "Just some more christian bullshit",
-    "file": "showthread.php@t=1810258.htm"
+    "title": "t1810776.html",
+    "file": "t1810776.html"
   },
   {
-    "title": "The Passion of Christ effect....",
-    "file": "showthread.php@t=1810259.htm"
+    "title": "t1810777.html",
+    "file": "t1810777.html"
   },
   {
-    "title": "christianity",
-    "file": "showthread.php@t=1810260.htm"
+    "title": "t1810778.html",
+    "file": "t1810778.html"
   },
   {
-    "title": "Science or Religion.",
-    "file": "showthread.php@t=1810261.htm"
+    "title": "t1810779.html",
+    "file": "t1810779.html"
   },
   {
-    "title": "Taking liberties with grammar in the name of God?",
-    "file": "showthread.php@t=1810262.htm"
+    "title": "t1810780.html",
+    "file": "t1810780.html"
   },
   {
-    "title": "Is Satan Truly Evil? And is God truly omniscient?",
-    "file": "showthread.php@t=1810263.htm"
+    "title": "t1810782.html",
+    "file": "t1810782.html"
   },
   {
-    "title": "Death not real?",
-    "file": "showthread.php@t=1810264.htm"
+    "title": "t1810787.html",
+    "file": "t1810787.html"
   },
   {
-    "title": "Creationism is bullshit",
-    "file": "showthread.php@t=1810265.htm"
+    "title": "t1810789.html",
+    "file": "t1810789.html"
   },
   {
-    "title": "Pearly Gates",
-    "file": "showthread.php@t=1810266.htm"
+    "title": "t1810790.html",
+    "file": "t1810790.html"
   },
   {
-    "title": "Religion has caused so many problems",
-    "file": "showthread.php@t=1810267.htm"
+    "title": "t1810791.html",
+    "file": "t1810791.html"
   },
   {
-    "title": "Michael Jackson: The Angel",
-    "file": "showthread.php@t=1810268.htm"
+    "title": "t1810792.html",
+    "file": "t1810792.html"
   },
   {
-    "title": "Think of this next time u bad mouth christians",
-    "file": "showthread.php@t=1810269.htm"
+    "title": "t1810793.html",
+    "file": "t1810793.html"
   },
   {
-    "title": "Yeshuva",
-    "file": "showthread.php@t=1810270.htm"
+    "title": "t1810794.html",
+    "file": "t1810794.html"
   },
   {
-    "title": "Questioning God, Wrong?",
-    "file": "showthread.php@t=1810271.htm"
+    "title": "t1810796.html",
+    "file": "t1810796.html"
   },
   {
-    "title": "where",
-    "file": "showthread.php@t=1810272.htm"
+    "title": "t1810800.html",
+    "file": "t1810800.html"
   },
   {
-    "title": "Gay marriage",
-    "file": "showthread.php@t=1810273.htm"
+    "title": "t1810801.html",
+    "file": "t1810801.html"
   },
   {
-    "title": "my problem(s) with christianity",
-    "file": "showthread.php@t=1810274.htm"
+    "title": "t1810804.html",
+    "file": "t1810804.html"
   },
   {
-    "title": "Even if there is a god...",
-    "file": "showthread.php@t=1810275.htm"
+    "title": "t1810805.html",
+    "file": "t1810805.html"
   },
   {
-    "title": "Christian believers and non believers alike, this should feed your brain",
-    "file": "showthread.php@t=1810276.htm"
+    "title": "t1810806.html",
+    "file": "t1810806.html"
   },
   {
-    "title": "The Amish suck.",
-    "file": "showthread.php@t=1810277.htm"
+    "title": "t1810807.html",
+    "file": "t1810807.html"
   },
   {
-    "title": "WWZD?",
-    "file": "showthread.php@t=1810278.htm"
+    "title": "t1810809.html",
+    "file": "t1810809.html"
   },
   {
-    "title": "any pantheists in the forum?",
-    "file": "showthread.php@t=1810279.htm"
+    "title": "t1810812.html",
+    "file": "t1810812.html"
   },
   {
-    "title": "curious...",
-    "file": "showthread.php@t=1810280.htm"
+    "title": "t1810813.html",
+    "file": "t1810813.html"
   },
   {
-    "title": "Still gripped by fear",
-    "file": "showthread.php@t=1810281.htm"
+    "title": "t1810814.html",
+    "file": "t1810814.html"
   },
   {
-    "title": "Start a cult!!!!1",
-    "file": "showthread.php@t=1810282.htm"
+    "title": "t1810815.html",
+    "file": "t1810815.html"
   },
   {
-    "title": "False religion",
-    "file": "showthread.php@t=1810283.htm"
+    "title": "t1810819.html",
+    "file": "t1810819.html"
   },
   {
-    "title": "What i think \"god\" is.",
-    "file": "showthread.php@t=1810284.htm"
+    "title": "t1810820.html",
+    "file": "t1810820.html"
   },
   {
-    "title": "Crucifixion not basis of Christianity",
-    "file": "showthread.php@t=1810285.htm"
+    "title": "t1810821.html",
+    "file": "t1810821.html"
   },
   {
-    "title": "My grandma",
-    "file": "showthread.php@t=1810286.htm"
+    "title": "t1810822.html",
+    "file": "t1810822.html"
   },
   {
-    "title": "If I go to hell",
-    "file": "showthread.php@t=1810287.htm"
+    "title": "t1810826.html",
+    "file": "t1810826.html"
   },
   {
-    "title": "The Law of Karma and misc scheisse",
-    "file": "showthread.php@t=1810288.htm"
+    "title": "t1810827.html",
+    "file": "t1810827.html"
   },
   {
-    "title": "Could this be heaven? Or Hell?",
-    "file": "showthread.php@t=1810289.htm"
+    "title": "t1810828.html",
+    "file": "t1810828.html"
   },
   {
-    "title": "Organised Religions",
-    "file": "showthread.php@t=1810290.htm"
+    "title": "t1810829.html",
+    "file": "t1810829.html"
   },
   {
-    "title": "When you die, do you get to keep your genitals?",
-    "file": "showthread.php@t=1810291.htm"
+    "title": "t1810830.html",
+    "file": "t1810830.html"
   },
   {
-    "title": "any christians here support bush?",
-    "file": "showthread.php@t=1810292.htm"
+    "title": "t1810832.html",
+    "file": "t1810832.html"
   },
   {
-    "title": "Why atheism  rules...",
-    "file": "showthread.php@t=1810293.htm"
+    "title": "t1810833.html",
+    "file": "t1810833.html"
   },
   {
-    "title": "Is Masturbation a Sin?????",
-    "file": "showthread.php@t=1810294.htm"
+    "title": "t1810834.html",
+    "file": "t1810834.html"
   },
   {
-    "title": "People are not afraid of dying, they are afraid of no longer living.",
-    "file": "showthread.php@t=1810295.htm"
+    "title": "t1810835.html",
+    "file": "t1810835.html"
   },
   {
-    "title": "Muslims, is their religion really that good?",
-    "file": "showthread.php@t=1810296.htm"
+    "title": "t1810836.html",
+    "file": "t1810836.html"
   },
   {
-    "title": "god",
-    "file": "showthread.php@t=1810297.htm"
+    "title": "t1810837.html",
+    "file": "t1810837.html"
   },
   {
-    "title": "Fridays",
-    "file": "showthread.php@t=1810298.htm"
+    "title": "t1810838.html",
+    "file": "t1810838.html"
   },
   {
-    "title": "The Church of Scientology",
-    "file": "showthread.php@t=1810299.htm"
+    "title": "t1810839.html",
+    "file": "t1810839.html"
   },
   {
-    "title": "meditation...",
-    "file": "showthread.php@t=1810300.htm"
+    "title": "t1810840.html",
+    "file": "t1810840.html"
   },
   {
-    "title": "Scientology",
-    "file": "showthread.php@t=1810301.htm"
+    "title": "t1810841.html",
+    "file": "t1810841.html"
   },
   {
-    "title": "On the Prosecution of God",
-    "file": "showthread.php@t=1810302.htm"
+    "title": "t1810842.html",
+    "file": "t1810842.html"
   },
   {
-    "title": "The Holy Ghost",
-    "file": "showthread.php@t=1810303.htm"
+    "title": "t1810844.html",
+    "file": "t1810844.html"
   },
   {
-    "title": "Old Testament Historical?",
-    "file": "showthread.php@t=1810304.htm"
+    "title": "t1810846.html",
+    "file": "t1810846.html"
   },
   {
-    "title": "Here's some definitions.  Learn to live by them because they're correct.",
-    "file": "showthread.php@t=1810305.htm"
+    "title": "t1810847.html",
+    "file": "t1810847.html"
   },
   {
-    "title": "Does God Post at TOTSE?",
-    "file": "showthread.php@t=1810306.htm"
+    "title": "t1810849.html",
+    "file": "t1810849.html"
   },
   {
-    "title": "GOD...OR SCIENCE?",
-    "file": "showthread.php@t=1810307.htm"
+    "title": "t1810851.html",
+    "file": "t1810851.html"
   },
   {
-    "title": "Do it like me...........",
-    "file": "showthread.php@t=1810308.htm"
+    "title": "t1810852.html",
+    "file": "t1810852.html"
   },
   {
-    "title": "my hell theory",
-    "file": "showthread.php@t=1810309.htm"
+    "title": "t1810854.html",
+    "file": "t1810854.html"
   },
   {
-    "title": "I have come to a conclusion, keep an open mind...",
-    "file": "showthread.php@t=1810310.htm"
+    "title": "t1810857.html",
+    "file": "t1810857.html"
   },
   {
-    "title": "the TRUE religon",
-    "file": "showthread.php@t=1810311.htm"
+    "title": "t1810858.html",
+    "file": "t1810858.html"
   },
   {
-    "title": "Predisposed",
-    "file": "showthread.php@t=1810312.htm"
+    "title": "t1810859.html",
+    "file": "t1810859.html"
   },
   {
-    "title": "christians are retarded pussys",
-    "file": "showthread.php@t=1810313.htm"
+    "title": "t1810862.html",
+    "file": "t1810862.html"
   },
   {
-    "title": "How many have this at thier school?",
-    "file": "showthread.php@t=1810314.htm"
+    "title": "t1810864.html",
+    "file": "t1810864.html"
   },
   {
-    "title": "On Shifting Consciousness",
-    "file": "showthread.php@t=1810315.htm"
+    "title": "t1810865.html",
+    "file": "t1810865.html"
   },
   {
-    "title": "Why is your religion right?",
-    "file": "showthread.php@t=1810316.htm"
+    "title": "t1810866.html",
+    "file": "t1810866.html"
   },
   {
-    "title": "I don't know what to believe",
-    "file": "showthread.php@t=1810317.htm"
+    "title": "t1810867.html",
+    "file": "t1810867.html"
   },
   {
-    "title": "Was Jesus an ALIEN?",
-    "file": "showthread.php@t=1810318.htm"
+    "title": "t1810868.html",
+    "file": "t1810868.html"
   },
   {
-    "title": "time to reveal the answer",
-    "file": "showthread.php@t=1810319.htm"
+    "title": "t1810869.html",
+    "file": "t1810869.html"
   },
   {
-    "title": "Definition of Love",
-    "file": "showthread.php@t=1810320.htm"
+    "title": "t1810871.html",
+    "file": "t1810871.html"
   },
   {
-    "title": "I still love you Bob",
-    "file": "showthread.php@t=1810321.htm"
+    "title": "t1810873.html",
+    "file": "t1810873.html"
   },
   {
-    "title": "When your Founding Hero is a Victim",
-    "file": "showthread.php@t=1810322.htm"
+    "title": "t1810874.html",
+    "file": "t1810874.html"
   },
   {
-    "title": "Romeo and Juliet",
-    "file": "showthread.php@t=1810323.htm"
+    "title": "t1810875.html",
+    "file": "t1810875.html"
   },
   {
-    "title": "Why I am not Christian ANYMORE?",
-    "file": "showthread.php@t=1810324.htm"
+    "title": "t1810878.html",
+    "file": "t1810878.html"
   },
   {
-    "title": "Could it be that all the teachings are True?",
-    "file": "showthread.php@t=1810325.htm"
+    "title": "t1810879.html",
+    "file": "t1810879.html"
   },
   {
-    "title": "Those annoying christians who give you papers about god",
-    "file": "showthread.php@t=1810326.htm"
+    "title": "t1810882.html",
+    "file": "t1810882.html"
   },
   {
-    "title": "all religions, same God",
-    "file": "showthread.php@t=1810327.htm"
+    "title": "t1810884.html",
+    "file": "t1810884.html"
   },
   {
-    "title": "Buddhism and God",
-    "file": "showthread.php@t=1810328.htm"
+    "title": "t1810885.html",
+    "file": "t1810885.html"
   },
   {
-    "title": "The Bible Code",
-    "file": "showthread.php@t=1810329.htm"
+    "title": "t1810886.html",
+    "file": "t1810886.html"
   },
   {
-    "title": "no such thing as god",
-    "file": "showthread.php@t=1810330.htm"
+    "title": "t1810888.html",
+    "file": "t1810888.html"
   },
   {
-    "title": "On Complexity and the Advent of the Gods",
-    "file": "showthread.php@t=1810331.htm"
+    "title": "t1810891.html",
+    "file": "t1810891.html"
   },
   {
-    "title": "if you commit suicide do you got to heaven?",
-    "file": "showthread.php@t=1810332.htm"
+    "title": "t1810894.html",
+    "file": "t1810894.html"
   },
   {
-    "title": "can someone explain why god needed Jesus too die for us?",
-    "file": "showthread.php@t=1810333.htm"
+    "title": "t1810895.html",
+    "file": "t1810895.html"
   },
   {
-    "title": "Y People Hate Christians...",
-    "file": "showthread.php@t=1810334.htm"
+    "title": "t1810896.html",
+    "file": "t1810896.html"
   },
   {
-    "title": "How Can Believing in god be right ?",
-    "file": "showthread.php@t=1810335.htm"
+    "title": "t1810899.html",
+    "file": "t1810899.html"
   },
   {
-    "title": "Faster spiritual growth",
-    "file": "showthread.php@t=1810336.htm"
+    "title": "t1810901.html",
+    "file": "t1810901.html"
   },
   {
-    "title": "The final attachment",
-    "file": "showthread.php@t=1810337.htm"
+    "title": "t1810904.html",
+    "file": "t1810904.html"
   },
   {
-    "title": "Any good Satanist readings to recommend?",
-    "file": "showthread.php@t=1810338.htm"
+    "title": "t1810906.html",
+    "file": "t1810906.html"
   },
   {
-    "title": "To people who pray",
-    "file": "showthread.php@t=1810339.htm"
+    "title": "t1810907.html",
+    "file": "t1810907.html"
   },
   {
-    "title": "question #2: if god gave us free will why does it have rules?",
-    "file": "showthread.php@t=1810340.htm"
+    "title": "t1810908.html",
+    "file": "t1810908.html"
   },
   {
-    "title": "Beliefs",
-    "file": "showthread.php@t=1810341.htm"
+    "title": "t1810909.html",
+    "file": "t1810909.html"
   },
   {
-    "title": "God wouldnt have let me exsist",
-    "file": "showthread.php@t=1810342.htm"
+    "title": "t1810910.html",
+    "file": "t1810910.html"
   },
   {
-    "title": "Live and Let Live, and Religion in Politics",
-    "file": "showthread.php@t=1810343.htm"
+    "title": "t1810911.html",
+    "file": "t1810911.html"
   },
   {
-    "title": "Are major religions just a way of keeping the plebians in line?",
-    "file": "showthread.php@t=1810344.htm"
+    "title": "t1810913.html",
+    "file": "t1810913.html"
   },
   {
-    "title": "Existance",
-    "file": "showthread.php@t=1810345.htm"
+    "title": "t1810914.html",
+    "file": "t1810914.html"
   },
   {
-    "title": "what would an angel look like?",
-    "file": "showthread.php@t=1810346.htm"
+    "title": "t1810916.html",
+    "file": "t1810916.html"
   },
   {
-    "title": "God is the unknown?",
-    "file": "showthread.php@t=1810347.htm"
+    "title": "t1810917.html",
+    "file": "t1810917.html"
   },
   {
-    "title": "dark religions",
-    "file": "showthread.php@t=1810348.htm"
+    "title": "t1810918.html",
+    "file": "t1810918.html"
   },
   {
-    "title": "abolition of religion",
-    "file": "showthread.php@t=1810349.htm"
+    "title": "t1810920.html",
+    "file": "t1810920.html"
   },
   {
-    "title": "Who Created God? Are We supposed to Know?",
-    "file": "showthread.php@t=1810350.htm"
+    "title": "t1810921.html",
+    "file": "t1810921.html"
   },
   {
-    "title": "is it just luck?",
-    "file": "showthread.php@t=1810351.htm"
+    "title": "t1810922.html",
+    "file": "t1810922.html"
   },
   {
-    "title": "Same sex Marriages",
-    "file": "showthread.php@t=1810352.htm"
+    "title": "t1810925.html",
+    "file": "t1810925.html"
   },
   {
-    "title": "Your Idea of Heaven",
-    "file": "showthread.php@t=1810353.htm"
+    "title": "t1810930.html",
+    "file": "t1810930.html"
   },
   {
-    "title": "Are we God?",
-    "file": "showthread.php@t=1810354.htm"
+    "title": "t1810932.html",
+    "file": "t1810932.html"
   },
   {
-    "title": "Jews are fag",
-    "file": "showthread.php@t=1810355.htm"
+    "title": "t1810934.html",
+    "file": "t1810934.html"
   },
   {
-    "title": "FUCK JESUS CHRIST!",
-    "file": "showthread.php@t=1810356.htm"
+    "title": "t1810935.html",
+    "file": "t1810935.html"
   },
   {
-    "title": "qabalah",
-    "file": "showthread.php@t=1810357.htm"
+    "title": "t1810936.html",
+    "file": "t1810936.html"
   },
   {
-    "title": "Jews Suck.",
-    "file": "showthread.php@t=1810358.htm"
+    "title": "t1810937.html",
+    "file": "t1810937.html"
   },
   {
-    "title": "I Have Found Hell...",
-    "file": "showthread.php@t=1810359.htm"
+    "title": "t1810938.html",
+    "file": "t1810938.html"
   },
   {
-    "title": "what could god represent?",
-    "file": "showthread.php@t=1810360.htm"
+    "title": "t1810939.html",
+    "file": "t1810939.html"
   },
   {
-    "title": "My theory on the nature of existance",
-    "file": "showthread.php@t=1810361.htm"
+    "title": "t1810940.html",
+    "file": "t1810940.html"
   },
   {
-    "title": "Easter",
-    "file": "showthread.php@t=1810362.htm"
+    "title": "t1810941.html",
+    "file": "t1810941.html"
   },
   {
-    "title": "do clones go to heaven?",
-    "file": "showthread.php@t=1810363.htm"
+    "title": "t1810942.html",
+    "file": "t1810942.html"
   },
   {
-    "title": "Every(no)thing",
-    "file": "showthread.php@t=1810364.htm"
+    "title": "t1810943.html",
+    "file": "t1810943.html"
   },
   {
-    "title": "Xtians that actually believe that the jews killed jesus are idiots.",
-    "file": "showthread.php@t=1810365.htm"
+    "title": "t1810944.html",
+    "file": "t1810944.html"
   },
   {
-    "title": "What really happened",
-    "file": "showthread.php@t=1810366.htm"
+    "title": "t1810946.html",
+    "file": "t1810946.html"
   },
   {
-    "title": "what god???",
-    "file": "showthread.php@t=1810367.htm"
+    "title": "t1810948.html",
+    "file": "t1810948.html"
   },
   {
-    "title": "Where did Jesus go for 3 days before he resurrected",
-    "file": "showthread.php@t=1810368.htm"
+    "title": "t1810949.html",
+    "file": "t1810949.html"
   },
   {
-    "title": "The Term \"Jew\"",
-    "file": "showthread.php@t=1810369.htm"
+    "title": "t1810950.html",
+    "file": "t1810950.html"
   },
   {
-    "title": "The Occult",
-    "file": "showthread.php@t=1810370.htm"
+    "title": "t1810952.html",
+    "file": "t1810952.html"
   },
   {
-    "title": "Christians in General?",
-    "file": "showthread.php@t=1810371.htm"
+    "title": "t1810953.html",
+    "file": "t1810953.html"
   },
   {
-    "title": "God--all good, and unknowable?",
-    "file": "showthread.php@t=1810372.htm"
+    "title": "t1810954.html",
+    "file": "t1810954.html"
   },
   {
-    "title": "confusionism and buddism",
-    "file": "showthread.php@t=1810373.htm"
+    "title": "t1810956.html",
+    "file": "t1810956.html"
   },
   {
-    "title": "If Jesus paid for our sins,",
-    "file": "showthread.php@t=1810374.htm"
+    "title": "t1810957.html",
+    "file": "t1810957.html"
   },
   {
-    "title": "Huge loopwhole. alot of stuff garbled into one tastey treat",
-    "file": "showthread.php@t=1810375.htm"
+    "title": "t1810959.html",
+    "file": "t1810959.html"
   },
   {
-    "title": "Contradiction?",
-    "file": "showthread.php@t=1810376.htm"
+    "title": "t1810960.html",
+    "file": "t1810960.html"
   },
   {
-    "title": "Hell does not exist",
-    "file": "showthread.php@t=1810377.htm"
+    "title": "t1810961.html",
+    "file": "t1810961.html"
   },
   {
-    "title": "You know you are an Atheist",
-    "file": "showthread.php@t=1810378.htm"
+    "title": "t1810962.html",
+    "file": "t1810962.html"
   },
   {
-    "title": "Chtistian Teens...ugh",
-    "file": "showthread.php@t=1810379.htm"
+    "title": "t1810963.html",
+    "file": "t1810963.html"
   },
   {
-    "title": "Hahahaha",
-    "file": "showthread.php@t=1810380.htm"
+    "title": "t1810965.html",
+    "file": "t1810965.html"
   },
   {
-    "title": "Jesus",
-    "file": "showthread.php@t=1810381.htm"
+    "title": "t1810966.html",
+    "file": "t1810966.html"
   },
   {
-    "title": "Why does God let bad things happen?",
-    "file": "showthread.php@t=1810382.htm"
+    "title": "t1810967.html",
+    "file": "t1810967.html"
   },
   {
-    "title": "The Bible has turned me off God",
-    "file": "showthread.php@t=1810383.htm"
+    "title": "t1810968.html",
+    "file": "t1810968.html"
   },
   {
-    "title": "niggers",
-    "file": "showthread.php@t=1810384.htm"
+    "title": "t1810970.html",
+    "file": "t1810970.html"
   },
   {
-    "title": "God is road kill?",
-    "file": "showthread.php@t=1810385.htm"
+    "title": "t1810972.html",
+    "file": "t1810972.html"
   },
   {
-    "title": "Moving to CA",
-    "file": "showthread.php@t=1810386.htm"
+    "title": "t1810973.html",
+    "file": "t1810973.html"
   },
   {
-    "title": "LSD",
-    "file": "showthread.php@t=1810387.htm"
+    "title": "t1810974.html",
+    "file": "t1810974.html"
   },
   {
-    "title": "my thoughts on the bible/jesus",
-    "file": "showthread.php@t=1810388.htm"
+    "title": "t1810976.html",
+    "file": "t1810976.html"
   },
   {
-    "title": "What do we have to do?",
-    "file": "showthread.php@t=1810389.htm"
+    "title": "t1810978.html",
+    "file": "t1810978.html"
   },
   {
-    "title": "What is the difference between Christian sub-religions?",
-    "file": "showthread.php@t=1810390.htm"
+    "title": "t1810980.html",
+    "file": "t1810980.html"
   },
   {
-    "title": "God. Does he have a sense of humor?",
-    "file": "showthread.php@t=1810391.htm"
+    "title": "t1810981.html",
+    "file": "t1810981.html"
   },
   {
-    "title": "Do retarded people go to hell?",
-    "file": "showthread.php@t=1810392.htm"
+    "title": "t1810984.html",
+    "file": "t1810984.html"
   },
   {
-    "title": "Why did God wait thousands of years before he made Jesus?",
-    "file": "showthread.php@t=1810393.htm"
+    "title": "t1810985.html",
+    "file": "t1810985.html"
   },
   {
-    "title": "Did anyone ever consider....",
-    "file": "showthread.php@t=1810394.htm"
+    "title": "t1810986.html",
+    "file": "t1810986.html"
   },
   {
-    "title": "holy cow!",
-    "file": "showthread.php@t=1810395.htm"
+    "title": "t1810987.html",
+    "file": "t1810987.html"
   },
   {
-    "title": "Limitations?",
-    "file": "showthread.php@t=1810396.htm"
+    "title": "t1810988.html",
+    "file": "t1810988.html"
   },
   {
-    "title": "On the Christian God:",
-    "file": "showthread.php@t=1810397.htm"
+    "title": "t1810989.html",
+    "file": "t1810989.html"
   },
   {
-    "title": "Why Christianity is so fucked up",
-    "file": "showthread.php@t=1810398.htm"
+    "title": "t1810990.html",
+    "file": "t1810990.html"
   },
   {
-    "title": "Heaven or Hell",
-    "file": "showthread.php@t=1810399.htm"
+    "title": "t1810991.html",
+    "file": "t1810991.html"
   },
   {
-    "title": "why god exists",
-    "file": "showthread.php@t=1810400.htm"
+    "title": "t1810997.html",
+    "file": "t1810997.html"
   },
   {
-    "title": "Noah's ark",
-    "file": "showthread.php@t=1810401.htm"
+    "title": "t1810999.html",
+    "file": "t1810999.html"
   },
   {
-    "title": "Dinosaurs",
-    "file": "showthread.php@t=1810402.htm"
+    "title": "t1811000.html",
+    "file": "t1811000.html"
   },
   {
-    "title": "As an agnostic, would I benefit from reading religious text?",
-    "file": "showthread.php@t=1810403.htm"
+    "title": "t1811001.html",
+    "file": "t1811001.html"
   },
   {
-    "title": "My God comes with a tourist map",
-    "file": "showthread.php@t=1810404.htm"
+    "title": "t1811002.html",
+    "file": "t1811002.html"
   },
   {
-    "title": "Christians: Help me!",
-    "file": "showthread.php@t=1810405.htm"
+    "title": "t1811004.html",
+    "file": "t1811004.html"
   },
   {
-    "title": "Samurai living",
-    "file": "showthread.php@t=1810406.htm"
+    "title": "t1811007.html",
+    "file": "t1811007.html"
   },
   {
-    "title": "All rolls back to Greek Mythology?",
-    "file": "showthread.php@t=1810407.htm"
+    "title": "t1811009.html",
+    "file": "t1811009.html"
   },
   {
-    "title": "I have fiigured it out.",
-    "file": "showthread.php@t=1810408.htm"
+    "title": "t1811014.html",
+    "file": "t1811014.html"
   },
   {
-    "title": "Oblivion",
-    "file": "showthread.php@t=1810409.htm"
+    "title": "t1811015.html",
+    "file": "t1811015.html"
   },
   {
-    "title": "Atheist views and the Bus ride home",
-    "file": "showthread.php@t=1810410.htm"
+    "title": "t1811016.html",
+    "file": "t1811016.html"
   },
   {
-    "title": "Ganesh milk 'miracle'",
-    "file": "showthread.php@t=1810411.htm"
+    "title": "t1811017.html",
+    "file": "t1811017.html"
   },
   {
-    "title": "Mutilation!",
-    "file": "showthread.php@t=1810412.htm"
+    "title": "t1811018.html",
+    "file": "t1811018.html"
   },
   {
-    "title": "ANSWER ME THIS  part II",
-    "file": "showthread.php@t=1810413.htm"
+    "title": "t1811019.html",
+    "file": "t1811019.html"
   },
   {
-    "title": "I'm a Neo Animist",
-    "file": "showthread.php@t=1810414.htm"
+    "title": "t1811020.html",
+    "file": "t1811020.html"
   },
   {
-    "title": "Did God/Jesus care about the rest of the world?",
-    "file": "showthread.php@t=1810415.htm"
+    "title": "t1811021.html",
+    "file": "t1811021.html"
   },
   {
-    "title": "Mary Magdalene",
-    "file": "showthread.php@t=1810416.htm"
+    "title": "t1811022.html",
+    "file": "t1811022.html"
   },
   {
-    "title": "\"Over-thinking, over-analyzing\"",
-    "file": "showthread.php@t=1810417.htm"
+    "title": "t1811024.html",
+    "file": "t1811024.html"
   },
   {
-    "title": "you cant argue with this proof of Gods existence",
-    "file": "showthread.php@t=1810418.htm"
+    "title": "t1811025.html",
+    "file": "t1811025.html"
   },
   {
-    "title": "GOD",
-    "file": "showthread.php@t=1810419.htm"
+    "title": "t1811027.html",
+    "file": "t1811027.html"
   },
   {
-    "title": "Why?!?!",
-    "file": "showthread.php@t=1810420.htm"
+    "title": "t1811028.html",
+    "file": "t1811028.html"
   },
   {
-    "title": "Just a thought.",
-    "file": "showthread.php@t=1810421.htm"
+    "title": "t1811030.html",
+    "file": "t1811030.html"
   },
   {
-    "title": "a little thought",
-    "file": "showthread.php@t=1810422.htm"
+    "title": "t1811032.html",
+    "file": "t1811032.html"
   },
   {
-    "title": "Chances of God",
-    "file": "showthread.php@t=1810424.htm"
+    "title": "t1811033.html",
+    "file": "t1811033.html"
   },
   {
-    "title": "Evolution vs. Creation : It's going down",
-    "file": "showthread.php@t=1810425.htm"
+    "title": "t1811034.html",
+    "file": "t1811034.html"
   },
   {
-    "title": "Ridiculing",
-    "file": "showthread.php@t=1810426.htm"
+    "title": "t1811035.html",
+    "file": "t1811035.html"
   },
   {
-    "title": "Why can't I have faith?",
-    "file": "showthread.php@t=1810428.htm"
+    "title": "t1811036.html",
+    "file": "t1811036.html"
   },
   {
-    "title": "A Mock Dissertation Dismantling religion",
-    "file": "showthread.php@t=1810429.htm"
+    "title": "t1811037.html",
+    "file": "t1811037.html"
   },
   {
-    "title": "Thought on gods (in general)",
-    "file": "showthread.php@t=1810432.htm"
+    "title": "t1811038.html",
+    "file": "t1811038.html"
   },
   {
-    "title": "...like a plate in an old 3d modeling prog.",
-    "file": "showthread.php@t=1810433.htm"
+    "title": "t1811039.html",
+    "file": "t1811039.html"
   },
   {
-    "title": "all this god crap...",
-    "file": "showthread.php@t=1810434.htm"
+    "title": "t1811040.html",
+    "file": "t1811040.html"
   },
   {
-    "title": "Gods",
-    "file": "showthread.php@t=1810435.htm"
+    "title": "t1811041.html",
+    "file": "t1811041.html"
   },
   {
-    "title": "Respect God?",
-    "file": "showthread.php@t=1810436.htm"
+    "title": "t1811043.html",
+    "file": "t1811043.html"
   },
   {
-    "title": "why do u believe?",
-    "file": "showthread.php@t=1810437.htm"
+    "title": "t1811044.html",
+    "file": "t1811044.html"
   },
   {
-    "title": "IM PISSED!",
-    "file": "showthread.php@t=1810441.htm"
+    "title": "t1811046.html",
+    "file": "t1811046.html"
   },
   {
-    "title": "To take it literally, or to not take it literally. That is the question.",
-    "file": "showthread.php@t=1810443.htm"
+    "title": "t1811047.html",
+    "file": "t1811047.html"
   },
   {
-    "title": "On the Study of Religions",
-    "file": "showthread.php@t=1810445.htm"
+    "title": "t1811048.html",
+    "file": "t1811048.html"
   },
   {
-    "title": "Bring me the body",
-    "file": "showthread.php@t=1810446.htm"
+    "title": "t1811049.html",
+    "file": "t1811049.html"
   },
   {
-    "title": "My Karma Ran Over Your Dogma",
-    "file": "showthread.php@t=1810447.htm"
+    "title": "t1811050.html",
+    "file": "t1811050.html"
   },
   {
-    "title": "Temple Of Set",
-    "file": "showthread.php@t=1810449.htm"
+    "title": "t1811053.html",
+    "file": "t1811053.html"
   },
   {
-    "title": "I have got it figured out...",
-    "file": "showthread.php@t=1810450.htm"
+    "title": "t1811054.html",
+    "file": "t1811054.html"
   },
   {
-    "title": "Islamocrazies",
-    "file": "showthread.php@t=1810451.htm"
+    "title": "t1811055.html",
+    "file": "t1811055.html"
   },
   {
-    "title": "Did Humans create God whom created Humans, ad infinitum.",
-    "file": "showthread.php@t=1810454.htm"
+    "title": "t1811056.html",
+    "file": "t1811056.html"
   },
   {
-    "title": "Am I Atheist?",
-    "file": "showthread.php@t=1810455.htm"
+    "title": "t1811057.html",
+    "file": "t1811057.html"
   },
   {
-    "title": "I really need some opinons...",
-    "file": "showthread.php@t=1810457.htm"
+    "title": "t1811058.html",
+    "file": "t1811058.html"
   },
   {
-    "title": "&Totse Religion",
-    "file": "showthread.php@t=1810458.htm"
+    "title": "t1811061.html",
+    "file": "t1811061.html"
   },
   {
-    "title": "21 grams????",
-    "file": "showthread.php@t=1810460.htm"
+    "title": "t1811062.html",
+    "file": "t1811062.html"
   },
   {
-    "title": "a real god for a real religion??",
-    "file": "showthread.php@t=1810461.htm"
+    "title": "t1811064.html",
+    "file": "t1811064.html"
   },
   {
-    "title": "Faith is god",
-    "file": "showthread.php@t=1810462.htm"
+    "title": "t1811065.html",
+    "file": "t1811065.html"
   },
   {
-    "title": "My agnostic beliefs",
-    "file": "showthread.php@t=1810463.htm"
+    "title": "t1811066.html",
+    "file": "t1811066.html"
   },
   {
-    "title": "wheres my place",
-    "file": "showthread.php@t=1810464.htm"
+    "title": "t1811067.html",
+    "file": "t1811067.html"
   },
   {
-    "title": "Extremely biased (also posted in BLTC)",
-    "file": "showthread.php@t=1810466.htm"
+    "title": "t1811069.html",
+    "file": "t1811069.html"
   },
   {
-    "title": "the ultimate truth",
-    "file": "showthread.php@t=1810467.htm"
+    "title": "t1811070.html",
+    "file": "t1811070.html"
   },
   {
-    "title": "losing my religion",
-    "file": "showthread.php@t=1810468.htm"
+    "title": "t1811071.html",
+    "file": "t1811071.html"
   },
   {
-    "title": "Is God in my shoe?",
-    "file": "showthread.php@t=1810469.htm"
+    "title": "t1811072.html",
+    "file": "t1811072.html"
   },
   {
-    "title": "Satanism",
-    "file": "showthread.php@t=1810470.htm"
+    "title": "t1811073.html",
+    "file": "t1811073.html"
   },
   {
-    "title": "Scientology",
-    "file": "showthread.php@t=1810473.htm"
+    "title": "t1811074.html",
+    "file": "t1811074.html"
   },
   {
-    "title": "a HIGHER BEING?!?",
-    "file": "showthread.php@t=1810474.htm"
+    "title": "t1811076.html",
+    "file": "t1811076.html"
   },
   {
-    "title": "Yaweh's Challenge",
-    "file": "showthread.php@t=1810476.htm"
+    "title": "t1811077.html",
+    "file": "t1811077.html"
   },
   {
-    "title": "A little bit of advice.",
-    "file": "showthread.php@t=1810478.htm"
+    "title": "t1811078.html",
+    "file": "t1811078.html"
   },
   {
-    "title": "Many people will find reasons to not believe this",
-    "file": "showthread.php@t=1810479.htm"
+    "title": "t1811079.html",
+    "file": "t1811079.html"
   },
   {
-    "title": "Fuckin' Caterpillars",
-    "file": "showthread.php@t=1810480.htm"
+    "title": "t1811080.html",
+    "file": "t1811080.html"
   },
   {
-    "title": "egyptian gods",
-    "file": "showthread.php@t=1810481.htm"
+    "title": "t1811081.html",
+    "file": "t1811081.html"
   },
   {
-    "title": "why do you believe in god",
-    "file": "showthread.php@t=1810482.htm"
+    "title": "t1811082.html",
+    "file": "t1811082.html"
   },
   {
-    "title": "i wana save you from HELL enter ISLAM",
-    "file": "showthread.php@t=1810483.htm"
+    "title": "t1811083.html",
+    "file": "t1811083.html"
   },
   {
-    "title": "Aliens, Sumerians, and the Meaning of Life",
-    "file": "showthread.php@t=1810484.htm"
+    "title": "t1811084.html",
+    "file": "t1811084.html"
   },
   {
-    "title": "goetia",
-    "file": "showthread.php@t=1810485.htm"
+    "title": "t1811085.html",
+    "file": "t1811085.html"
   },
   {
-    "title": "Bible scriptures",
-    "file": "showthread.php@t=1810487.htm"
+    "title": "t1811088.html",
+    "file": "t1811088.html"
   },
   {
-    "title": "Jehovah Witnesses",
-    "file": "showthread.php@t=1810488.htm"
+    "title": "t1811090.html",
+    "file": "t1811090.html"
   },
   {
-    "title": "God Haters",
-    "file": "showthread.php@t=1810490.htm"
+    "title": "t1811091.html",
+    "file": "t1811091.html"
   },
   {
-    "title": "Save me Jeebus!",
-    "file": "showthread.php@t=1810491.htm"
+    "title": "t1811093.html",
+    "file": "t1811093.html"
   },
   {
-    "title": "eternal life, or something like that",
-    "file": "showthread.php@t=1810492.htm"
+    "title": "t1811094.html",
+    "file": "t1811094.html"
   },
   {
-    "title": "Questions to ask a Mulism Friend",
-    "file": "showthread.php@t=1810493.htm"
+    "title": "t1811095.html",
+    "file": "t1811095.html"
   },
   {
-    "title": "When I met God",
-    "file": "showthread.php@t=1810494.htm"
+    "title": "t1811096.html",
+    "file": "t1811096.html"
   },
   {
-    "title": "Zionism? \"Fucking greedy Jews\"",
-    "file": "showthread.php@t=1810501.htm"
+    "title": "t1811097.html",
+    "file": "t1811097.html"
   },
   {
-    "title": "Suggestion",
-    "file": "showthread.php@t=1810502.htm"
+    "title": "t1811098.html",
+    "file": "t1811098.html"
   },
   {
-    "title": "God DOES exist....",
-    "file": "showthread.php@t=1810503.htm"
+    "title": "t1811099.html",
+    "file": "t1811099.html"
   },
   {
-    "title": "the Christian decision-making process",
-    "file": "showthread.php@t=1810504.htm"
+    "title": "t1811100.html",
+    "file": "t1811100.html"
   },
   {
-    "title": "What makes your beliefs?",
-    "file": "showthread.php@t=1810505.htm"
+    "title": "t1811101.html",
+    "file": "t1811101.html"
   },
   {
-    "title": "satan good or bad?",
-    "file": "showthread.php@t=1810507.htm"
+    "title": "t1811102.html",
+    "file": "t1811102.html"
   },
   {
-    "title": "redux on the locked topic by Kiko: re: god's existence",
-    "file": "showthread.php@t=1810508.htm"
+    "title": "t1811104.html",
+    "file": "t1811104.html"
   },
   {
-    "title": "God gave us no freedom",
-    "file": "showthread.php@t=1810509.htm"
+    "title": "t1811105.html",
+    "file": "t1811105.html"
   },
   {
-    "title": "My ideas about the existance of God",
-    "file": "showthread.php@t=1810513.htm"
+    "title": "t1811106.html",
+    "file": "t1811106.html"
   },
   {
-    "title": "What is the difference b/t a religon and cult?",
-    "file": "showthread.php@t=1810514.htm"
+    "title": "t1811109.html",
+    "file": "t1811109.html"
   },
   {
-    "title": "Common myths On Paganism",
-    "file": "showthread.php@t=1810515.htm"
+    "title": "t1811110.html",
+    "file": "t1811110.html"
   },
   {
-    "title": "Any sumerians?",
-    "file": "showthread.php@t=1810516.htm"
+    "title": "t1811111.html",
+    "file": "t1811111.html"
   },
   {
-    "title": "wipe out religeon!!!!!!!",
-    "file": "showthread.php@t=1810517.htm"
+    "title": "t1811114.html",
+    "file": "t1811114.html"
   },
   {
-    "title": "Live and let Live",
-    "file": "showthread.php@t=1810518.htm"
+    "title": "t1811115.html",
+    "file": "t1811115.html"
   },
   {
-    "title": "Why christianity/hinduism/islam etc. may well be wrong. Opinions?",
-    "file": "showthread.php@t=1810521.htm"
+    "title": "t1811116.html",
+    "file": "t1811116.html"
   },
   {
-    "title": "Is God punishing sinners with AIDS?",
-    "file": "showthread.php@t=1810524.htm"
+    "title": "t1811117.html",
+    "file": "t1811117.html"
   },
   {
-    "title": "We are god, god is us",
-    "file": "showthread.php@t=1810527.htm"
+    "title": "t1811120.html",
+    "file": "t1811120.html"
   },
   {
-    "title": "A thought I had one fine morn",
-    "file": "showthread.php@t=1810528.htm"
+    "title": "t1811121.html",
+    "file": "t1811121.html"
   },
   {
-    "title": "Do buddist believe in god?",
-    "file": "showthread.php@t=1810529.htm"
+    "title": "t1811122.html",
+    "file": "t1811122.html"
   },
   {
-    "title": "give me a reason",
-    "file": "showthread.php@t=1810530.htm"
+    "title": "t1811123.html",
+    "file": "t1811123.html"
   },
   {
-    "title": "modern day satainst",
-    "file": "showthread.php@t=1810531.htm"
+    "title": "t1811124.html",
+    "file": "t1811124.html"
   },
   {
-    "title": "How come jesus Lived 2000 years ago?",
-    "file": "showthread.php@t=1810532.htm"
+    "title": "t1811127.html",
+    "file": "t1811127.html"
   },
   {
-    "title": "Suggestion on new martial arts fourm",
-    "file": "showthread.php@t=1810533.htm"
+    "title": "t1811128.html",
+    "file": "t1811128.html"
   },
   {
-    "title": "KJ was full of SHIT!",
-    "file": "showthread.php@t=1810534.htm"
+    "title": "t1811130.html",
+    "file": "t1811130.html"
   },
   {
-    "title": "The Vatican",
-    "file": "showthread.php@t=1810535.htm"
+    "title": "t1811131.html",
+    "file": "t1811131.html"
   },
   {
-    "title": "Able 2 convince ppl that Myself & a friend = God/Devil",
-    "file": "showthread.php@t=1810536.htm"
+    "title": "t1811132.html",
+    "file": "t1811132.html"
   },
   {
-    "title": "Belief-O-Matic",
-    "file": "showthread.php@t=1810537.htm"
+    "title": "t1811135.html",
+    "file": "t1811135.html"
   },
   {
-    "title": "This MIGHT be your mother, it may not",
-    "file": "showthread.php@t=1810538.htm"
+    "title": "t1811137.html",
+    "file": "t1811137.html"
   },
   {
-    "title": "What is the KJ bible? Is it have anything to do with dogs?",
-    "file": "showthread.php@t=1810539.htm"
+    "title": "t1811139.html",
+    "file": "t1811139.html"
   },
   {
-    "title": "a question for atheists",
-    "file": "showthread.php@t=1810541.htm"
+    "title": "t1811140.html",
+    "file": "t1811140.html"
   },
   {
-    "title": "God kind of like Santa Claus?",
-    "file": "showthread.php@t=1810542.htm"
+    "title": "t1811141.html",
+    "file": "t1811141.html"
   },
   {
-    "title": "Jews aren't White?",
-    "file": "showthread.php@t=1810543.htm"
+    "title": "t1811142.html",
+    "file": "t1811142.html"
   },
   {
-    "title": "Psalm 23r1.2",
-    "file": "showthread.php@t=1810544.htm"
+    "title": "t1811143.html",
+    "file": "t1811143.html"
   },
   {
-    "title": "The New Church",
-    "file": "showthread.php@t=1810545.htm"
+    "title": "t1811144.html",
+    "file": "t1811144.html"
   },
   {
-    "title": "If jesus was a jew how come his nose wasn't big?",
-    "file": "showthread.php@t=1810546.htm"
+    "title": "t1811146.html",
+    "file": "t1811146.html"
   },
   {
-    "title": "Anyone agnostic?",
-    "file": "showthread.php@t=1810550.htm"
+    "title": "t1811147.html",
+    "file": "t1811147.html"
   },
   {
-    "title": "biblical phrases",
-    "file": "showthread.php@t=1810551.htm"
+    "title": "t1811148.html",
+    "file": "t1811148.html"
   },
   {
-    "title": "Evolution: Religion for the Morally Challenged",
-    "file": "showthread.php@t=1810555.htm"
+    "title": "t1811149.html",
+    "file": "t1811149.html"
   },
   {
-    "title": "What do you want?!",
-    "file": "showthread.php@t=1810557.htm"
+    "title": "t1811150.html",
+    "file": "t1811150.html"
   },
   {
-    "title": "Where do go when you die?",
-    "file": "showthread.php@t=1810558.htm"
+    "title": "t1811153.html",
+    "file": "t1811153.html"
   },
   {
-    "title": "Faith",
-    "file": "showthread.php@t=1810559.htm"
+    "title": "t1811156.html",
+    "file": "t1811156.html"
   },
   {
-    "title": "Destiny",
-    "file": "showthread.php@t=1810560.htm"
+    "title": "t1811158.html",
+    "file": "t1811158.html"
   },
   {
-    "title": "Was Judas a betrayer?",
-    "file": "showthread.php@t=1810561.htm"
+    "title": "t1811160.html",
+    "file": "t1811160.html"
   },
   {
-    "title": "Heaven's Gate and our lives",
-    "file": "showthread.php@t=1810562.htm"
+    "title": "t1811163.html",
+    "file": "t1811163.html"
   },
   {
-    "title": "Is Christianity the only condemning religion?",
-    "file": "showthread.php@t=1810565.htm"
+    "title": "t1811164.html",
+    "file": "t1811164.html"
   },
   {
-    "title": "Why can't people just respect religions?",
-    "file": "showthread.php@t=1810566.htm"
+    "title": "t1811165.html",
+    "file": "t1811165.html"
   },
   {
-    "title": "my take on religion",
-    "file": "showthread.php@t=1810567.htm"
+    "title": "t1811166.html",
+    "file": "t1811166.html"
   },
   {
-    "title": "Confession = Bullshit",
-    "file": "showthread.php@t=1810569.htm"
+    "title": "t1811167.html",
+    "file": "t1811167.html"
   },
   {
-    "title": "Best Religious Satires",
-    "file": "showthread.php@t=1810570.htm"
+    "title": "t1811668.html",
+    "file": "t1811668.html"
   },
   {
-    "title": "This 'Hell' Thing.",
-    "file": "showthread.php@t=1810571.htm"
+    "title": "t1811669.html",
+    "file": "t1811669.html"
   },
   {
-    "title": "Christianality = True Religion",
-    "file": "showthread.php@t=1810572.htm"
+    "title": "t1811670.html",
+    "file": "t1811670.html"
   },
   {
-    "title": "Judaism",
-    "file": "showthread.php@t=1810573.htm"
+    "title": "t1811671.html",
+    "file": "t1811671.html"
   },
   {
-    "title": "I Just Want Proof",
-    "file": "showthread.php@t=1810574.htm"
+    "title": "t1811672.html",
+    "file": "t1811672.html"
   },
   {
-    "title": "what i love about bigoted sites",
-    "file": "showthread.php@t=1810575.htm"
+    "title": "t1811673.html",
+    "file": "t1811673.html"
   },
   {
-    "title": "Person vs. Religion",
-    "file": "showthread.php@t=1810576.htm"
+    "title": "t1811674.html",
+    "file": "t1811674.html"
   },
   {
-    "title": "What are your religious/spiritual/theological beliefs?",
-    "file": "showthread.php@t=1810577.htm"
+    "title": "t1811675.html",
+    "file": "t1811675.html"
   },
   {
-    "title": "Books on free will",
-    "file": "showthread.php@t=1810578.htm"
+    "title": "t1811676.html",
+    "file": "t1811676.html"
   },
   {
-    "title": "jesus",
-    "file": "showthread.php@t=1810579.htm"
+    "title": "t1811678.html",
+    "file": "t1811678.html"
   },
   {
-    "title": "What Don't You Get In Christianality",
-    "file": "showthread.php@t=1810580.htm"
+    "title": "t1811679.html",
+    "file": "t1811679.html"
   },
   {
-    "title": "Let me prove something",
-    "file": "showthread.php@t=1810581.htm"
+    "title": "t1811680.html",
+    "file": "t1811680.html"
   },
   {
-    "title": "Question for Christians about the afterlife & mental state of the soul",
-    "file": "showthread.php@t=1810582.htm"
+    "title": "t1811681.html",
+    "file": "t1811681.html"
   },
   {
-    "title": "How do you explain other religions?",
-    "file": "showthread.php@t=1810583.htm"
+    "title": "t1811682.html",
+    "file": "t1811682.html"
   },
   {
-    "title": "7 Day theory",
-    "file": "showthread.php@t=1810584.htm"
+    "title": "t1811683.html",
+    "file": "t1811683.html"
   },
   {
-    "title": "did you know",
-    "file": "showthread.php@t=1810585.htm"
+    "title": "t1811684.html",
+    "file": "t1811684.html"
   },
   {
-    "title": "Gap Perfume Hidden Allah",
-    "file": "showthread.php@t=1810586.htm"
+    "title": "t1811685.html",
+    "file": "t1811685.html"
   },
   {
-    "title": "could god?",
-    "file": "showthread.php@t=1810587.htm"
+    "title": "t1811686.html",
+    "file": "t1811686.html"
   },
   {
-    "title": "religion, or the lack of it?",
-    "file": "showthread.php@t=1810589.htm"
+    "title": "t1811687.html",
+    "file": "t1811687.html"
   },
   {
-    "title": "my view on god",
-    "file": "showthread.php@t=1810590.htm"
+    "title": "t1811688.html",
+    "file": "t1811688.html"
   },
   {
-    "title": "What about?",
-    "file": "showthread.php@t=1810591.htm"
+    "title": "t1811689.html",
+    "file": "t1811689.html"
   },
   {
-    "title": "What about?",
-    "file": "showthread.php@t=1810592.htm"
+    "title": "t1811691.html",
+    "file": "t1811691.html"
   },
   {
-    "title": "Soul Mates",
-    "file": "showthread.php@t=1810593.htm"
+    "title": "t1811692.html",
+    "file": "t1811692.html"
   },
   {
-    "title": "Did Jesus drink coffee?",
-    "file": "showthread.php@t=1810594.htm"
+    "title": "t1811693.html",
+    "file": "t1811693.html"
   },
   {
-    "title": "why?",
-    "file": "showthread.php@t=1810597.htm"
+    "title": "t1811694.html",
+    "file": "t1811694.html"
   },
   {
-    "title": "God",
-    "file": "showthread.php@t=1810598.htm"
+    "title": "t1811695.html",
+    "file": "t1811695.html"
   },
   {
-    "title": "Satanists",
-    "file": "showthread.php@t=1810599.htm"
+    "title": "t1811696.html",
+    "file": "t1811696.html"
   },
   {
-    "title": "Omnipotence with Free Will",
-    "file": "showthread.php@t=1810600.htm"
+    "title": "t1811697.html",
+    "file": "t1811697.html"
   },
   {
-    "title": "Funny Thought About Lent",
-    "file": "showthread.php@t=1810601.htm"
+    "title": "t1811698.html",
+    "file": "t1811698.html"
   },
   {
-    "title": "Master at my job? Or just someone very very aware...",
-    "file": "showthread.php@t=1810602.htm"
+    "title": "t1811699.html",
+    "file": "t1811699.html"
   },
   {
-    "title": "Objectivism",
-    "file": "showthread.php@t=1810603.htm"
+    "title": "t1811701.html",
+    "file": "t1811701.html"
   },
   {
-    "title": "Mono or Poly? (Judaic)",
-    "file": "showthread.php@t=1810604.htm"
+    "title": "t1811702.html",
+    "file": "t1811702.html"
   },
   {
-    "title": "Qabalah Discussion",
-    "file": "showthread.php@t=1810605.htm"
+    "title": "t1811703.html",
+    "file": "t1811703.html"
   },
   {
-    "title": "Mr. Darwin",
-    "file": "showthread.php@t=1810606.htm"
+    "title": "t1811704.html",
+    "file": "t1811704.html"
   },
   {
-    "title": "What happened?",
-    "file": "showthread.php@t=1810607.htm"
+    "title": "t1811706.html",
+    "file": "t1811706.html"
   },
   {
-    "title": "Zealots :(",
-    "file": "showthread.php@t=1810609.htm"
+    "title": "t1811708.html",
+    "file": "t1811708.html"
   },
   {
-    "title": "Lucifer",
-    "file": "showthread.php@t=1810610.htm"
+    "title": "t1811709.html",
+    "file": "t1811709.html"
   },
   {
-    "title": "Can the Bible be infallible if it is written by fallible humans?",
-    "file": "showthread.php@t=1810611.htm"
+    "title": "t1811711.html",
+    "file": "t1811711.html"
   },
   {
-    "title": "Are there contradictions between the first and second chapters of Genesis?",
-    "file": "showthread.php@t=1810612.htm"
+    "title": "t1811712.html",
+    "file": "t1811712.html"
   },
   {
-    "title": "Evidence of a young earth...",
-    "file": "showthread.php@t=1810613.htm"
+    "title": "t1811715.html",
+    "file": "t1811715.html"
   },
   {
-    "title": "Accuracy of dating methods...",
-    "file": "showthread.php@t=1810614.htm"
+    "title": "t1811716.html",
+    "file": "t1811716.html"
   },
   {
-    "title": "Hypocrisy in the church...",
-    "file": "showthread.php@t=1810616.htm"
+    "title": "t1811717.html",
+    "file": "t1811717.html"
   },
   {
-    "title": "The Bible as a final authority",
-    "file": "showthread.php@t=1810617.htm"
+    "title": "t1811718.html",
+    "file": "t1811718.html"
   },
   {
-    "title": "They got that motherfucker",
-    "file": "showthread.php@t=1810619.htm"
+    "title": "t1811719.html",
+    "file": "t1811719.html"
   },
   {
-    "title": "Faculty of Mans Spirit",
-    "file": "showthread.php@t=1810620.htm"
+    "title": "t1811721.html",
+    "file": "t1811721.html"
   },
   {
-    "title": "hey guys.... if you dont belive, ur gonna go to hell!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11",
-    "file": "showthread.php@t=1810621.htm"
+    "title": "t1811722.html",
+    "file": "t1811722.html"
   },
   {
-    "title": "Very serious question",
-    "file": "showthread.php@t=1810622.htm"
+    "title": "t1811723.html",
+    "file": "t1811723.html"
   },
   {
-    "title": "a (no doubt cliched) quetion on God.",
-    "file": "showthread.php@t=1810623.htm"
+    "title": "t1811725.html",
+    "file": "t1811725.html"
   },
   {
-    "title": "Biblical Conspiracy",
-    "file": "showthread.php@t=1810624.htm"
+    "title": "t1811726.html",
+    "file": "t1811726.html"
   },
   {
-    "title": "??Faith??",
-    "file": "showthread.php@t=1810625.htm"
+    "title": "t1811727.html",
+    "file": "t1811727.html"
   },
   {
-    "title": "Top 10 signs you might be a christian",
-    "file": "showthread.php@t=1810626.htm"
+    "title": "t1811728.html",
+    "file": "t1811728.html"
   },
   {
-    "title": "Fuck Religion. ((and all the other creations of human ignorance...))",
-    "file": "showthread.php@t=1810627.htm"
+    "title": "t1811729.html",
+    "file": "t1811729.html"
   },
   {
-    "title": "Hit and Run",
-    "file": "showthread.php@t=1810628.htm"
+    "title": "t1811730.html",
+    "file": "t1811730.html"
   },
   {
-    "title": "Pope John Paul and Poison Gas",
-    "file": "showthread.php@t=1810629.htm"
+    "title": "t1811731.html",
+    "file": "t1811731.html"
   },
   {
-    "title": "Who else thinks so?",
-    "file": "showthread.php@t=1810630.htm"
+    "title": "t1811732.html",
+    "file": "t1811732.html"
   },
   {
-    "title": "Black Magic",
-    "file": "showthread.php@t=1810631.htm"
+    "title": "t1811733.html",
+    "file": "t1811733.html"
   },
   {
-    "title": "God?",
-    "file": "showthread.php@t=1810634.htm"
+    "title": "t1811734.html",
+    "file": "t1811734.html"
   },
   {
-    "title": "Hilarious comics",
-    "file": "showthread.php@t=1810635.htm"
+    "title": "t1811735.html",
+    "file": "t1811735.html"
   },
   {
-    "title": "Dear AI.......",
-    "file": "showthread.php@t=1810637.htm"
+    "title": "t1811736.html",
+    "file": "t1811736.html"
   },
   {
-    "title": "How does an Atheist Curse?",
-    "file": "showthread.php@t=1810639.htm"
+    "title": "t1811737.html",
+    "file": "t1811737.html"
   },
   {
-    "title": "Buddhaism",
-    "file": "showthread.php@t=1810640.htm"
+    "title": "t1811738.html",
+    "file": "t1811738.html"
   },
   {
-    "title": "More optimistic about the end of the world.",
-    "file": "showthread.php@t=1810641.htm"
+    "title": "t1811739.html",
+    "file": "t1811739.html"
   },
   {
-    "title": "Sikhism the relegion of modern World",
-    "file": "showthread.php@t=1810642.htm"
+    "title": "t1811740.html",
+    "file": "t1811740.html"
   },
   {
-    "title": "Does mass exist?",
-    "file": "showthread.php@t=1810643.htm"
+    "title": "t1811742.html",
+    "file": "t1811742.html"
   },
   {
-    "title": "Do you know what you believe ?",
-    "file": "showthread.php@t=1810644.htm"
+    "title": "t1811743.html",
+    "file": "t1811743.html"
   },
   {
-    "title": "Satanism Is Nothing Like Catholocism(sp?)",
-    "file": "showthread.php@t=1810645.htm"
+    "title": "t1811744.html",
+    "file": "t1811744.html"
   },
   {
-    "title": "Digital_Savior",
-    "file": "showthread.php@t=1810646.htm"
+    "title": "t1811746.html",
+    "file": "t1811746.html"
   },
   {
-    "title": "\"My God Given Rights\"",
-    "file": "showthread.php@t=1810647.htm"
+    "title": "t1811747.html",
+    "file": "t1811747.html"
   },
   {
-    "title": "Money Magic",
-    "file": "showthread.php@t=1810648.htm"
+    "title": "t1811748.html",
+    "file": "t1811748.html"
   },
   {
-    "title": "People are like computers",
-    "file": "showthread.php@t=1810649.htm"
+    "title": "t1811750.html",
+    "file": "t1811750.html"
   },
   {
-    "title": "My fucked up mind: ( can some one understand me more then myself??????",
-    "file": "showthread.php@t=1810650.htm"
+    "title": "t1811751.html",
+    "file": "t1811751.html"
   },
   {
-    "title": "Hall for Muslims Vandalized",
-    "file": "showthread.php@t=1810652.htm"
+    "title": "t1811752.html",
+    "file": "t1811752.html"
   },
   {
-    "title": "The Evolution of Creationism",
-    "file": "showthread.php@t=1810653.htm"
+    "title": "t1811753.html",
+    "file": "t1811753.html"
   },
   {
-    "title": "Why hate Him?",
-    "file": "showthread.php@t=1810654.htm"
+    "title": "t1811754.html",
+    "file": "t1811754.html"
   },
   {
-    "title": "Koran online",
-    "file": "showthread.php@t=1810655.htm"
+    "title": "t1811755.html",
+    "file": "t1811755.html"
   },
   {
-    "title": "Where do you turn for answers?",
-    "file": "showthread.php@t=1810656.htm"
+    "title": "t1811756.html",
+    "file": "t1811756.html"
   },
   {
-    "title": "which is more beleivable, paganism or catholocism?",
-    "file": "showthread.php@t=1810657.htm"
+    "title": "t1811757.html",
+    "file": "t1811757.html"
   },
   {
-    "title": "The Great Flood",
-    "file": "showthread.php@t=1810658.htm"
+    "title": "t1811758.html",
+    "file": "t1811758.html"
   },
   {
-    "title": "Fools intoxicated by religion",
-    "file": "showthread.php@t=1810659.htm"
+    "title": "t1811759.html",
+    "file": "t1811759.html"
   },
   {
-    "title": "Saudi: foreigners can carry guns",
-    "file": "showthread.php@t=1810660.htm"
+    "title": "t1811760.html",
+    "file": "t1811760.html"
   },
   {
-    "title": "Christians do Wiccan festvals",
-    "file": "showthread.php@t=1810661.htm"
+    "title": "t1811761.html",
+    "file": "t1811761.html"
   },
   {
-    "title": "The Quran is fake.  Islam is a scam",
-    "file": "showthread.php@t=1810663.htm"
+    "title": "t1811762.html",
+    "file": "t1811762.html"
   },
   {
-    "title": "How can you believe in something for which there is no proof of existence?",
-    "file": "showthread.php@t=1810664.htm"
+    "title": "t1811763.html",
+    "file": "t1811763.html"
   },
   {
-    "title": "Holy message",
-    "file": "showthread.php@t=1810665.htm"
+    "title": "t1811764.html",
+    "file": "t1811764.html"
   },
   {
-    "title": "I'm creating a new christian religion",
-    "file": "showthread.php@t=1810666.htm"
+    "title": "t1811765.html",
+    "file": "t1811765.html"
   },
   {
-    "title": "aghhhhh, just had my 10:45 pm poo",
-    "file": "showthread.php@t=1810667.htm"
+    "title": "t1811766.html",
+    "file": "t1811766.html"
   },
   {
-    "title": "I'm creating a new religon, a varient of Buddhism",
-    "file": "showthread.php@t=1810668.htm"
+    "title": "t1811767.html",
+    "file": "t1811767.html"
   },
   {
-    "title": "YOUR GOD IS DEAD!!!!!",
-    "file": "showthread.php@t=1810670.htm"
+    "title": "t1811768.html",
+    "file": "t1811768.html"
   },
   {
-    "title": "Messengers of god, living and passed on.",
-    "file": "showthread.php@t=1810671.htm"
+    "title": "t1811769.html",
+    "file": "t1811769.html"
   },
   {
-    "title": "In the Beginning was The Word...",
-    "file": "showthread.php@t=1810672.htm"
+    "title": "t1811770.html",
+    "file": "t1811770.html"
   },
   {
-    "title": "You are going to die",
-    "file": "showthread.php@t=1810673.htm"
+    "title": "t1811771.html",
+    "file": "t1811771.html"
   },
   {
-    "title": "Religious comics suck",
-    "file": "showthread.php@t=1810677.htm"
+    "title": "t1811772.html",
+    "file": "t1811772.html"
   },
   {
-    "title": "im a reverend!",
-    "file": "showthread.php@t=1810679.htm"
+    "title": "t1811773.html",
+    "file": "t1811773.html"
   },
   {
-    "title": "Christian Paradoxes",
-    "file": "showthread.php@t=1810680.htm"
+    "title": "t1811774.html",
+    "file": "t1811774.html"
   },
   {
-    "title": "Sniper Piper is a Creationalist who is ignorant and will not acknowledge the truth",
-    "file": "showthread.php@t=1810681.htm"
+    "title": "t1811775.html",
+    "file": "t1811775.html"
   },
   {
-    "title": "No Religion",
-    "file": "showthread.php@t=1810682.htm"
+    "title": "t1811776.html",
+    "file": "t1811776.html"
   },
   {
-    "title": "down with christianity",
-    "file": "showthread.php@t=1810683.htm"
+    "title": "t1811778.html",
+    "file": "t1811778.html"
   },
   {
-    "title": "this is how i think of it",
-    "file": "showthread.php@t=1810684.htm"
+    "title": "t1811779.html",
+    "file": "t1811779.html"
   },
   {
-    "title": "Who wrote the bible?",
-    "file": "showthread.php@t=1810685.htm"
+    "title": "t1811780.html",
+    "file": "t1811780.html"
   },
   {
-    "title": "Sell your soul",
-    "file": "showthread.php@t=1810686.htm"
+    "title": "t1811782.html",
+    "file": "t1811782.html"
   },
   {
-    "title": "Props to God",
-    "file": "showthread.php@t=1810688.htm"
+    "title": "t1811783.html",
+    "file": "t1811783.html"
   },
   {
-    "title": "LOSTCASE - STAND DOWN YOU FOOL",
-    "file": "showthread.php@t=1810689.htm"
+    "title": "t1811785.html",
+    "file": "t1811785.html"
   },
   {
-    "title": "mormons",
-    "file": "showthread.php@t=1810692.htm"
+    "title": "t1811786.html",
+    "file": "t1811786.html"
   },
   {
-    "title": "Jesus:The Untold Story",
-    "file": "showthread.php@t=1810693.htm"
+    "title": "t1811787.html",
+    "file": "t1811787.html"
   },
   {
-    "title": "Roman Catholicism - For You Christians(no non-Christians)",
-    "file": "showthread.php@t=1810695.htm"
+    "title": "t1811788.html",
+    "file": "t1811788.html"
   },
   {
-    "title": "Catholic Priests are Queer!",
-    "file": "showthread.php@t=1810696.htm"
+    "title": "t1811789.html",
+    "file": "t1811789.html"
   },
   {
-    "title": "this is incredibly disturbing",
-    "file": "showthread.php@t=1810697.htm"
+    "title": "t1811790.html",
+    "file": "t1811790.html"
   },
   {
-    "title": "evolution?",
-    "file": "showthread.php@t=1810698.htm"
+    "title": "t1811791.html",
+    "file": "t1811791.html"
   },
   {
-    "title": "viva la revolution",
-    "file": "showthread.php@t=1810699.htm"
+    "title": "t1811792.html",
+    "file": "t1811792.html"
   },
   {
-    "title": "this is gods revolution",
-    "file": "showthread.php@t=1810701.htm"
+    "title": "t1811793.html",
+    "file": "t1811793.html"
   },
   {
-    "title": "Can \"God\"?",
-    "file": "showthread.php@t=1810703.htm"
+    "title": "t1811794.html",
+    "file": "t1811794.html"
   },
   {
-    "title": "What version of the Bible (thinking King James)",
-    "file": "showthread.php@t=1810706.htm"
+    "title": "t1811795.html",
+    "file": "t1811795.html"
   },
   {
-    "title": "Conversing with a christian.",
-    "file": "showthread.php@t=1810707.htm"
+    "title": "t1811796.html",
+    "file": "t1811796.html"
   },
   {
-    "title": "Kids at my school started a Final Fantasy religion...",
-    "file": "showthread.php@t=1810708.htm"
+    "title": "t1811797.html",
+    "file": "t1811797.html"
   },
   {
-    "title": "upside down cross",
-    "file": "showthread.php@t=1810710.htm"
+    "title": "t1811798.html",
+    "file": "t1811798.html"
   },
   {
-    "title": "Favorite Book of the Bible?",
-    "file": "showthread.php@t=1810711.htm"
+    "title": "t1811800.html",
+    "file": "t1811800.html"
   },
   {
-    "title": "For people that believe atheists have no morals",
-    "file": "showthread.php@t=1810712.htm"
+    "title": "t1811801.html",
+    "file": "t1811801.html"
   },
   {
-    "title": "Religion, opium for the masses?",
-    "file": "showthread.php@t=1810713.htm"
+    "title": "t1811802.html",
+    "file": "t1811802.html"
   },
   {
-    "title": "Faith/Trust VS Proof",
-    "file": "showthread.php@t=1810714.htm"
+    "title": "t1811803.html",
+    "file": "t1811803.html"
   },
   {
-    "title": "Breaking the bread",
-    "file": "showthread.php@t=1810716.htm"
+    "title": "t1811804.html",
+    "file": "t1811804.html"
   },
   {
-    "title": "For Sniper Piper...",
-    "file": "showthread.php@t=1810718.htm"
+    "title": "t1811805.html",
+    "file": "t1811805.html"
   },
   {
-    "title": "Christians from atheist/agnostic families",
-    "file": "showthread.php@t=1810720.htm"
+    "title": "t1811806.html",
+    "file": "t1811806.html"
   },
   {
-    "title": "not caring",
-    "file": "showthread.php@t=1810721.htm"
+    "title": "t1811808.html",
+    "file": "t1811808.html"
   },
   {
-    "title": "On the Tiger and the Lamb",
-    "file": "showthread.php@t=1810722.htm"
+    "title": "t1811810.html",
+    "file": "t1811810.html"
   },
   {
-    "title": "Noah's Ark - likely story",
-    "file": "showthread.php@t=1810723.htm"
+    "title": "t1811814.html",
+    "file": "t1811814.html"
   },
   {
-    "title": "Anton LaVey",
-    "file": "showthread.php@t=1810724.htm"
+    "title": "t1811815.html",
+    "file": "t1811815.html"
   },
   {
-    "title": "Happiness or Intelligence",
-    "file": "showthread.php@t=1810726.htm"
+    "title": "t1811816.html",
+    "file": "t1811816.html"
   },
   {
-    "title": "Arrogant Pricks",
-    "file": "showthread.php@t=1810727.htm"
+    "title": "t1811817.html",
+    "file": "t1811817.html"
   },
   {
-    "title": "Agnostic and scared",
-    "file": "showthread.php@t=1810728.htm"
+    "title": "t1811818.html",
+    "file": "t1811818.html"
   },
   {
-    "title": "Your Faith is a fake.",
-    "file": "showthread.php@t=1810729.htm"
+    "title": "t1811820.html",
+    "file": "t1811820.html"
   },
   {
-    "title": "a question for Christians",
-    "file": "showthread.php@t=1810730.htm"
+    "title": "t1811821.html",
+    "file": "t1811821.html"
   },
   {
-    "title": "My God Can Beat the Shit Out of Your God",
-    "file": "showthread.php@t=1810731.htm"
+    "title": "t1811822.html",
+    "file": "t1811822.html"
   },
   {
-    "title": "anyone else notice",
-    "file": "showthread.php@t=1810736.htm"
+    "title": "t1811823.html",
+    "file": "t1811823.html"
   },
   {
-    "title": "It could be..",
-    "file": "showthread.php@t=1810737.htm"
+    "title": "t1811824.html",
+    "file": "t1811824.html"
   },
   {
-    "title": "Best and worst",
-    "file": "showthread.php@t=1810738.htm"
+    "title": "t1811825.html",
+    "file": "t1811825.html"
   },
   {
-    "title": "[POLL] Your Religion, Nig... (Wigs accepted too!)",
-    "file": "showthread.php@t=1810739.htm"
+    "title": "t1811826.html",
+    "file": "t1811826.html"
   },
   {
-    "title": "Dead Gods",
-    "file": "showthread.php@t=1810741.htm"
+    "title": "t1811828.html",
+    "file": "t1811828.html"
   },
   {
-    "title": "Apolocalyptic prophecy:  Keeps pious on toes?",
-    "file": "showthread.php@t=1810742.htm"
+    "title": "t1811829.html",
+    "file": "t1811829.html"
   },
   {
-    "title": "My own problem with Heaven/Hell",
-    "file": "showthread.php@t=1810743.htm"
+    "title": "t1811830.html",
+    "file": "t1811830.html"
   },
   {
-    "title": "Question",
-    "file": "showthread.php@t=1810744.htm"
+    "title": "t1811831.html",
+    "file": "t1811831.html"
   },
   {
-    "title": "Artificial Intelligence, cloning and preservation of memory.",
-    "file": "showthread.php@t=1810746.htm"
+    "title": "t1811832.html",
+    "file": "t1811832.html"
   },
   {
-    "title": "Why was jesus needed?",
-    "file": "showthread.php@t=1810750.htm"
+    "title": "t1811833.html",
+    "file": "t1811833.html"
   },
   {
-    "title": "Near Death Experiences",
-    "file": "showthread.php@t=1810753.htm"
+    "title": "t1811835.html",
+    "file": "t1811835.html"
   },
   {
-    "title": "the crusaders",
-    "file": "showthread.php@t=1810754.htm"
+    "title": "t1811836.html",
+    "file": "t1811836.html"
   },
   {
-    "title": "unconditional love",
-    "file": "showthread.php@t=1810755.htm"
+    "title": "t1811837.html",
+    "file": "t1811837.html"
   },
   {
-    "title": "Awsome Verses of The Bible",
-    "file": "showthread.php@t=1810756.htm"
+    "title": "t1811839.html",
+    "file": "t1811839.html"
   },
   {
-    "title": "Dark Religions",
-    "file": "showthread.php@t=1810757.htm"
+    "title": "t1811840.html",
+    "file": "t1811840.html"
   },
   {
-    "title": "Top Ten Signs You're a Fundamentalist Christian",
-    "file": "showthread.php@t=1810758.htm"
+    "title": "t1811841.html",
+    "file": "t1811841.html"
   },
   {
-    "title": "Vampiers: beliefs, values and followers",
-    "file": "showthread.php@t=1810759.htm"
+    "title": "t1811842.html",
+    "file": "t1811842.html"
   },
   {
-    "title": "TYTHING",
-    "file": "showthread.php@t=1810760.htm"
+    "title": "t1811843.html",
+    "file": "t1811843.html"
   },
   {
-    "title": "Percent of Athiests in the world.",
-    "file": "showthread.php@t=1810761.htm"
+    "title": "t1811845.html",
+    "file": "t1811845.html"
   },
   {
-    "title": "What is God's Form?",
-    "file": "showthread.php@t=1810763.htm"
+    "title": "t1811846.html",
+    "file": "t1811846.html"
   },
   {
-    "title": "best oxy-moron ever. try to prove it wrong!",
-    "file": "showthread.php@t=1810767.htm"
+    "title": "t1811848.html",
+    "file": "t1811848.html"
   },
   {
-    "title": "How could i start my own religion?",
-    "file": "showthread.php@t=1810769.htm"
+    "title": "t1811849.html",
+    "file": "t1811849.html"
   },
   {
-    "title": "You Might Be A Fundamentalist Atheist If...",
-    "file": "showthread.php@t=1810770.htm"
+    "title": "t1811852.html",
+    "file": "t1811852.html"
   },
   {
-    "title": "Religious Belief vs. Scientific Fact",
-    "file": "showthread.php@t=1810771.htm"
+    "title": "t1811853.html",
+    "file": "t1811853.html"
   },
   {
-    "title": "are we truly evil?",
-    "file": "showthread.php@t=1810772.htm"
+    "title": "t1811854.html",
+    "file": "t1811854.html"
   },
   {
-    "title": "Islam not a peaceful religion",
-    "file": "showthread.php@t=1810773.htm"
+    "title": "t1811856.html",
+    "file": "t1811856.html"
   },
   {
-    "title": "Can anything be proved?",
-    "file": "showthread.php@t=1810774.htm"
+    "title": "t1811857.html",
+    "file": "t1811857.html"
   },
   {
-    "title": "Atheists and the date.",
-    "file": "showthread.php@t=1810775.htm"
+    "title": "t1811858.html",
+    "file": "t1811858.html"
   },
   {
-    "title": "Christian Killers",
-    "file": "showthread.php@t=1810776.htm"
+    "title": "t1811859.html",
+    "file": "t1811859.html"
   },
   {
-    "title": "thinking of taking up a new religion",
-    "file": "showthread.php@t=1810777.htm"
+    "title": "t1811860.html",
+    "file": "t1811860.html"
   },
   {
-    "title": "As if you need another reason to hate Jack Chick...",
-    "file": "showthread.php@t=1810778.htm"
+    "title": "t1811861.html",
+    "file": "t1811861.html"
   },
   {
-    "title": "Noah's Flood ( Reality Check)",
-    "file": "showthread.php@t=1810779.htm"
+    "title": "t1811863.html",
+    "file": "t1811863.html"
   },
   {
-    "title": "very confused.",
-    "file": "showthread.php@t=1810780.htm"
+    "title": "t1811864.html",
+    "file": "t1811864.html"
   },
   {
-    "title": "I love jebus.",
-    "file": "showthread.php@t=1810782.htm"
+    "title": "t1811866.html",
+    "file": "t1811866.html"
   },
   {
-    "title": "Jesus",
-    "file": "showthread.php@t=1810787.htm"
+    "title": "t1811870.html",
+    "file": "t1811870.html"
   },
   {
-    "title": "U.N. receives Muslim 'apostasy' petition",
-    "file": "showthread.php@t=1810789.htm"
+    "title": "t1811871.html",
+    "file": "t1811871.html"
   },
   {
-    "title": "Question",
-    "file": "showthread.php@t=1810790.htm"
+    "title": "t1811873.html",
+    "file": "t1811873.html"
   },
   {
-    "title": "What would you prefer?",
-    "file": "showthread.php@t=1810791.htm"
+    "title": "t1811877.html",
+    "file": "t1811877.html"
   },
   {
-    "title": "question for christians.",
-    "file": "showthread.php@t=1810792.htm"
+    "title": "t1811879.html",
+    "file": "t1811879.html"
   },
   {
-    "title": "Question bout Satan",
-    "file": "showthread.php@t=1810793.htm"
+    "title": "t1811880.html",
+    "file": "t1811880.html"
   },
   {
-    "title": "The Best Religion",
-    "file": "showthread.php@t=1810794.htm"
+    "title": "t1811881.html",
+    "file": "t1811881.html"
   },
   {
-    "title": "Christianity-the most retarded thing known 2 man",
-    "file": "showthread.php@t=1810796.htm"
+    "title": "t1811882.html",
+    "file": "t1811882.html"
   },
   {
-    "title": "Questioning my way through life",
-    "file": "showthread.php@t=1810800.htm"
+    "title": "t1811883.html",
+    "file": "t1811883.html"
   },
   {
-    "title": "Life from Non-life?",
-    "file": "showthread.php@t=1810801.htm"
+    "title": "t1811884.html",
+    "file": "t1811884.html"
   },
   {
-    "title": "Evolution is no science",
-    "file": "showthread.php@t=1810804.htm"
+    "title": "t1811885.html",
+    "file": "t1811885.html"
   },
   {
-    "title": "Abortion",
-    "file": "showthread.php@t=1810805.htm"
+    "title": "t1811886.html",
+    "file": "t1811886.html"
   },
   {
-    "title": "God Frequency",
-    "file": "showthread.php@t=1810806.htm"
+    "title": "t1811887.html",
+    "file": "t1811887.html"
   },
   {
-    "title": "The Totse Astrology Test",
-    "file": "showthread.php@t=1810807.htm"
+    "title": "t1811888.html",
+    "file": "t1811888.html"
   },
   {
-    "title": "no religions = less suffering",
-    "file": "showthread.php@t=1810809.htm"
+    "title": "t1811889.html",
+    "file": "t1811889.html"
   },
   {
-    "title": "Why I'm not a christian (or: If God exists...)",
-    "file": "showthread.php@t=1810812.htm"
+    "title": "t1811890.html",
+    "file": "t1811890.html"
   },
   {
-    "title": "The Shahadah and kalimah of Islam",
-    "file": "showthread.php@t=1810813.htm"
+    "title": "t1811891.html",
+    "file": "t1811891.html"
   },
   {
-    "title": "Palestinian Authority Textbook Calls for Jihad and Martyrdom",
-    "file": "showthread.php@t=1810814.htm"
+    "title": "t1811892.html",
+    "file": "t1811892.html"
   },
   {
-    "title": "Islam: Religion or political ideology?",
-    "file": "showthread.php@t=1810815.htm"
+    "title": "t1811893.html",
+    "file": "t1811893.html"
   },
   {
-    "title": "Free Will versus God's Plan",
-    "file": "showthread.php@t=1810819.htm"
+    "title": "t1811894.html",
+    "file": "t1811894.html"
   },
   {
-    "title": "God... Does he exist? Does he Care?",
-    "file": "showthread.php@t=1810820.htm"
+    "title": "t1811895.html",
+    "file": "t1811895.html"
   },
   {
-    "title": "The death penalty",
-    "file": "showthread.php@t=1810821.htm"
+    "title": "t1811897.html",
+    "file": "t1811897.html"
   },
   {
-    "title": "France Expels Muslims",
-    "file": "showthread.php@t=1810822.htm"
+    "title": "t1811898.html",
+    "file": "t1811898.html"
   },
   {
-    "title": "Abortion sucks",
-    "file": "showthread.php@t=1810826.htm"
+    "title": "t1811899.html",
+    "file": "t1811899.html"
   },
   {
-    "title": "God and Evolution.",
-    "file": "showthread.php@t=1810827.htm"
+    "title": "t1811900.html",
+    "file": "t1811900.html"
   },
   {
-    "title": "Secular Humanism....Philosophy or Religion?",
-    "file": "showthread.php@t=1810828.htm"
+    "title": "t1811901.html",
+    "file": "t1811901.html"
   },
   {
-    "title": "The Biblical Significance of Iraq",
-    "file": "showthread.php@t=1810829.htm"
+    "title": "t1811902.html",
+    "file": "t1811902.html"
   },
   {
-    "title": "Ritual Murder by Jews",
-    "file": "showthread.php@t=1810830.htm"
+    "title": "t1811904.html",
+    "file": "t1811904.html"
   },
   {
-    "title": "Which ten commandments?",
-    "file": "showthread.php@t=1810832.htm"
+    "title": "t1811906.html",
+    "file": "t1811906.html"
   },
   {
-    "title": "Infinite Variation & Intelligent Design",
-    "file": "showthread.php@t=1810833.htm"
+    "title": "t1811907.html",
+    "file": "t1811907.html"
   },
   {
-    "title": "Satanism/Anti-christ",
-    "file": "showthread.php@t=1810834.htm"
+    "title": "t1811908.html",
+    "file": "t1811908.html"
   },
   {
-    "title": "a question 4 christians",
-    "file": "showthread.php@t=1810835.htm"
+    "title": "t1811909.html",
+    "file": "t1811909.html"
   },
   {
-    "title": "God",
-    "file": "showthread.php@t=1810836.htm"
+    "title": "t1811910.html",
+    "file": "t1811910.html"
   },
   {
-    "title": "Free Will",
-    "file": "showthread.php@t=1810837.htm"
+    "title": "t1811911.html",
+    "file": "t1811911.html"
   },
   {
-    "title": "a question 4 christians",
-    "file": "showthread.php@t=1810838.htm"
+    "title": "t1811912.html",
+    "file": "t1811912.html"
   },
   {
-    "title": "Religion.",
-    "file": "showthread.php@t=1810839.htm"
+    "title": "t1811913.html",
+    "file": "t1811913.html"
   },
   {
-    "title": "On being liked",
-    "file": "showthread.php@t=1810840.htm"
+    "title": "t1811914.html",
+    "file": "t1811914.html"
   },
   {
-    "title": "Some clarification...",
-    "file": "showthread.php@t=1810841.htm"
+    "title": "t1811915.html",
+    "file": "t1811915.html"
   },
   {
-    "title": "Official quick comment thread",
-    "file": "showthread.php@t=1810842.htm"
+    "title": "t1811916.html",
+    "file": "t1811916.html"
   },
   {
-    "title": "Something to be learned from the example of Mormonism?",
-    "file": "showthread.php@t=1810844.htm"
+    "title": "t1811917.html",
+    "file": "t1811917.html"
   },
   {
-    "title": "Christianity: Serious Questions",
-    "file": "showthread.php@t=1810846.htm"
+    "title": "t1812922.html",
+    "file": "t1812922.html"
   },
   {
-    "title": "Am I going to hell?",
-    "file": "showthread.php@t=1810847.htm"
+    "title": "t1812923.html",
+    "file": "t1812923.html"
   },
   {
-    "title": "Heaven?",
-    "file": "showthread.php@t=1810849.htm"
+    "title": "t1812924.html",
+    "file": "t1812924.html"
   },
   {
-    "title": "I FUCKED GOD IN THE ASS..",
-    "file": "showthread.php@t=1810851.htm"
+    "title": "t1812925.html",
+    "file": "t1812925.html"
   },
   {
-    "title": "god the imaginary friend",
-    "file": "showthread.php@t=1810852.htm"
+    "title": "t1812926.html",
+    "file": "t1812926.html"
   },
   {
-    "title": "Satan",
-    "file": "showthread.php@t=1810854.htm"
+    "title": "t1812927.html",
+    "file": "t1812927.html"
   },
   {
-    "title": "punishing the wicked",
-    "file": "showthread.php@t=1810857.htm"
+    "title": "t1812928.html",
+    "file": "t1812928.html"
   },
   {
-    "title": "A planet called Kolob?  What the hell?",
-    "file": "showthread.php@t=1810858.htm"
+    "title": "t1812929.html",
+    "file": "t1812929.html"
   },
   {
-    "title": "uhhh... whats the word...",
-    "file": "showthread.php@t=1810859.htm"
+    "title": "t1812930.html",
+    "file": "t1812930.html"
   },
   {
-    "title": "New religion!",
-    "file": "showthread.php@t=1810862.htm"
+    "title": "t1812931.html",
+    "file": "t1812931.html"
   },
   {
-    "title": "Does Jesus Support State Execution?",
-    "file": "showthread.php@t=1810864.htm"
+    "title": "t1812932.html",
+    "file": "t1812932.html"
   },
   {
-    "title": "Roman Catholicism",
-    "file": "showthread.php@t=1810865.htm"
+    "title": "t1812933.html",
+    "file": "t1812933.html"
   },
   {
-    "title": "The meaning of life",
-    "file": "showthread.php@t=1810866.htm"
+    "title": "t1812934.html",
+    "file": "t1812934.html"
   },
   {
-    "title": "circumsized",
-    "file": "showthread.php@t=1810867.htm"
+    "title": "t1812935.html",
+    "file": "t1812935.html"
   },
   {
-    "title": "Do you make fun of Jesus?",
-    "file": "showthread.php@t=1810868.htm"
+    "title": "t1812936.html",
+    "file": "t1812936.html"
   },
   {
-    "title": "Creating a religion",
-    "file": "showthread.php@t=1810869.htm"
+    "title": "t1812937.html",
+    "file": "t1812937.html"
   },
   {
-    "title": "Word of mouth",
-    "file": "showthread.php@t=1810871.htm"
+    "title": "t1812938.html",
+    "file": "t1812938.html"
   },
   {
-    "title": "How Jesus saved us",
-    "file": "showthread.php@t=1810873.htm"
+    "title": "t1812939.html",
+    "file": "t1812939.html"
   },
   {
-    "title": "im confused",
-    "file": "showthread.php@t=1810874.htm"
+    "title": "t1812940.html",
+    "file": "t1812940.html"
   },
   {
-    "title": "has the devil tricked us all....",
-    "file": "showthread.php@t=1810875.htm"
+    "title": "t1812941.html",
+    "file": "t1812941.html"
   },
   {
-    "title": "The Impossible Faith",
-    "file": "showthread.php@t=1810878.htm"
+    "title": "t1812942.html",
+    "file": "t1812942.html"
   },
   {
-    "title": "Mmmm... Satanizm",
-    "file": "showthread.php@t=1810879.htm"
+    "title": "t1812943.html",
+    "file": "t1812943.html"
   },
   {
-    "title": "We dont need any religion!",
-    "file": "showthread.php@t=1810882.htm"
+    "title": "t1812944.html",
+    "file": "t1812944.html"
   },
   {
-    "title": "Story of Satan",
-    "file": "showthread.php@t=1810884.htm"
+    "title": "t1812945.html",
+    "file": "t1812945.html"
   },
   {
-    "title": "aTribeCalledSean",
-    "file": "showthread.php@t=1810885.htm"
+    "title": "t1812946.html",
+    "file": "t1812946.html"
   },
   {
-    "title": "segregational religions",
-    "file": "showthread.php@t=1810886.htm"
+    "title": "t1812947.html",
+    "file": "t1812947.html"
   },
   {
-    "title": "Everyone get a life",
-    "file": "showthread.php@t=1810888.htm"
+    "title": "t1812948.html",
+    "file": "t1812948.html"
   },
   {
-    "title": "Faith",
-    "file": "showthread.php@t=1810891.htm"
+    "title": "t1812949.html",
+    "file": "t1812949.html"
   },
   {
-    "title": "05:42 answer me now.",
-    "file": "showthread.php@t=1810894.htm"
+    "title": "t1812950.html",
+    "file": "t1812950.html"
   },
   {
-    "title": "my neighbours dog",
-    "file": "showthread.php@t=1810895.htm"
+    "title": "t1812951.html",
+    "file": "t1812951.html"
   },
   {
-    "title": "Sight into the future why me..",
-    "file": "showthread.php@t=1810896.htm"
+    "title": "t1812952.html",
+    "file": "t1812952.html"
   },
   {
-    "title": "god, religion its all shit",
-    "file": "showthread.php@t=1810899.htm"
+    "title": "t1812953.html",
+    "file": "t1812953.html"
   },
   {
-    "title": "just a thought",
-    "file": "showthread.php@t=1810901.htm"
+    "title": "t1812954.html",
+    "file": "t1812954.html"
   },
   {
-    "title": "I'VE HAD IT, NO MORE OF THIS GOD SHIT.",
-    "file": "showthread.php@t=1810904.htm"
+    "title": "t1812955.html",
+    "file": "t1812955.html"
   },
   {
-    "title": "why is sex a sin?",
-    "file": "showthread.php@t=1810906.htm"
+    "title": "t1812956.html",
+    "file": "t1812956.html"
   },
   {
-    "title": "Attempt To Clear Up A Few Misconceptions About Jews",
-    "file": "showthread.php@t=1810907.htm"
+    "title": "t1812957.html",
+    "file": "t1812957.html"
   },
   {
-    "title": "2 questions",
-    "file": "showthread.php@t=1810908.htm"
+    "title": "t1812958.html",
+    "file": "t1812958.html"
   },
   {
-    "title": "Close Encounters with Pentacostals",
-    "file": "showthread.php@t=1810909.htm"
+    "title": "t1812959.html",
+    "file": "t1812959.html"
   },
   {
-    "title": "Believers in God",
-    "file": "showthread.php@t=1810910.htm"
+    "title": "t1812960.html",
+    "file": "t1812960.html"
   },
   {
-    "title": "Battleground God",
-    "file": "showthread.php@t=1810911.htm"
+    "title": "t1812961.html",
+    "file": "t1812961.html"
   },
   {
-    "title": "god really works!!!",
-    "file": "showthread.php@t=1810913.htm"
+    "title": "t1812962.html",
+    "file": "t1812962.html"
   },
   {
-    "title": "Islamic Warrior Quotes",
-    "file": "showthread.php@t=1810914.htm"
+    "title": "t1812963.html",
+    "file": "t1812963.html"
   },
   {
-    "title": "The second coming of Jesus",
-    "file": "showthread.php@t=1810916.htm"
+    "title": "t1812964.html",
+    "file": "t1812964.html"
   },
   {
-    "title": "Luciferrr",
-    "file": "showthread.php@t=1810917.htm"
+    "title": "t1812965.html",
+    "file": "t1812965.html"
   },
   {
-    "title": "pouch people",
-    "file": "showthread.php@t=1810918.htm"
+    "title": "t1812966.html",
+    "file": "t1812966.html"
   },
   {
-    "title": "An assignment 'bout hinduism",
-    "file": "showthread.php@t=1810920.htm"
+    "title": "t1812967.html",
+    "file": "t1812967.html"
   },
   {
-    "title": "why do jews hate everybody",
-    "file": "showthread.php@t=1810921.htm"
+    "title": "t1812968.html",
+    "file": "t1812968.html"
   },
   {
-    "title": "lmao",
-    "file": "showthread.php@t=1810922.htm"
+    "title": "t1812969.html",
+    "file": "t1812969.html"
   },
   {
-    "title": "Jesus went to hell.",
-    "file": "showthread.php@t=1810925.htm"
+    "title": "t1812970.html",
+    "file": "t1812970.html"
   },
   {
-    "title": "Issues with site",
-    "file": "showthread.php@t=1810930.htm"
+    "title": "t1812971.html",
+    "file": "t1812971.html"
   },
   {
-    "title": "The Omphalos Hypothesis",
-    "file": "showthread.php@t=1810932.htm"
+    "title": "t1812972.html",
+    "file": "t1812972.html"
   },
   {
-    "title": "Reality is an illusion, but ...",
-    "file": "showthread.php@t=1810934.htm"
+    "title": "t1812973.html",
+    "file": "t1812973.html"
   },
   {
-    "title": "Christ and the Pope",
-    "file": "showthread.php@t=1810935.htm"
+    "title": "t1812974.html",
+    "file": "t1812974.html"
   },
   {
-    "title": "Why suicide is a sin",
-    "file": "showthread.php@t=1810936.htm"
+    "title": "t1812975.html",
+    "file": "t1812975.html"
   },
   {
-    "title": "Jesus is a fake",
-    "file": "showthread.php@t=1810937.htm"
+    "title": "t1812976.html",
+    "file": "t1812976.html"
   },
   {
-    "title": "god is a fucking hypocrite!",
-    "file": "showthread.php@t=1810938.htm"
+    "title": "t1812977.html",
+    "file": "t1812977.html"
   },
   {
-    "title": "The existence of a God",
-    "file": "showthread.php@t=1810939.htm"
+    "title": "t1812978.html",
+    "file": "t1812978.html"
   },
   {
-    "title": "500 religions, they all can't be right...",
-    "file": "showthread.php@t=1810940.htm"
+    "title": "t1812979.html",
+    "file": "t1812979.html"
   },
   {
-    "title": "Join my religious cult!",
-    "file": "showthread.php@t=1810941.htm"
+    "title": "t1812980.html",
+    "file": "t1812980.html"
   },
   {
-    "title": "Jesus was a communist",
-    "file": "showthread.php@t=1810942.htm"
+    "title": "t1812981.html",
+    "file": "t1812981.html"
   },
   {
-    "title": "Theology Symbolization",
-    "file": "showthread.php@t=1810943.htm"
+    "title": "t1812982.html",
+    "file": "t1812982.html"
   },
   {
-    "title": "you are ALL going to hell!!!",
-    "file": "showthread.php@t=1810944.htm"
+    "title": "t1812983.html",
+    "file": "t1812983.html"
   },
   {
-    "title": "Another example of Muslim \"peace\"...",
-    "file": "showthread.php@t=1810946.htm"
+    "title": "t1812984.html",
+    "file": "t1812984.html"
   },
   {
-    "title": "End Of World Is nEar",
-    "file": "showthread.php@t=1810948.htm"
+    "title": "t1812985.html",
+    "file": "t1812985.html"
   },
   {
-    "title": "So is god -really- going to hold it against me?",
-    "file": "showthread.php@t=1810949.htm"
+    "title": "t1812986.html",
+    "file": "t1812986.html"
   },
   {
-    "title": "Canon.",
-    "file": "showthread.php@t=1810950.htm"
+    "title": "t1812987.html",
+    "file": "t1812987.html"
   },
   {
-    "title": "EMAIL JESUS",
-    "file": "showthread.php@t=1810952.htm"
+    "title": "t1812988.html",
+    "file": "t1812988.html"
   },
   {
-    "title": "religion of the west",
-    "file": "showthread.php@t=1810953.htm"
+    "title": "t1812989.html",
+    "file": "t1812989.html"
   },
   {
-    "title": "you fucking liberals.",
-    "file": "showthread.php@t=1810954.htm"
+    "title": "t1812990.html",
+    "file": "t1812990.html"
   },
   {
-    "title": "Spirtual Satanism",
-    "file": "showthread.php@t=1810956.htm"
+    "title": "t1812991.html",
+    "file": "t1812991.html"
   },
   {
-    "title": "Does the universe EVOLVE?",
-    "file": "showthread.php@t=1810957.htm"
+    "title": "t1812992.html",
+    "file": "t1812992.html"
   },
   {
-    "title": "Conversation with a Christian.",
-    "file": "showthread.php@t=1810959.htm"
+    "title": "t1812993.html",
+    "file": "t1812993.html"
   },
   {
-    "title": "bible 18 certificate",
-    "file": "showthread.php@t=1810960.htm"
+    "title": "t1812994.html",
+    "file": "t1812994.html"
   },
   {
-    "title": "A little question on the bible, mostly for DS",
-    "file": "showthread.php@t=1810961.htm"
+    "title": "t1812995.html",
+    "file": "t1812995.html"
   },
   {
-    "title": "HELLOOOOOO!!!!!!!!",
-    "file": "showthread.php@t=1810962.htm"
+    "title": "t1812996.html",
+    "file": "t1812996.html"
   },
   {
-    "title": "what do u believe",
-    "file": "showthread.php@t=1810963.htm"
+    "title": "t1812997.html",
+    "file": "t1812997.html"
   },
   {
-    "title": "Faith and the faithless",
-    "file": "showthread.php@t=1810965.htm"
+    "title": "t1812998.html",
+    "file": "t1812998.html"
   },
   {
-    "title": "OMG",
-    "file": "showthread.php@t=1810966.htm"
+    "title": "t1812999.html",
+    "file": "t1812999.html"
   },
   {
-    "title": "This seems wrong to me...",
-    "file": "showthread.php@t=1810967.htm"
+    "title": "t1813000.html",
+    "file": "t1813000.html"
   },
   {
-    "title": "wicca",
-    "file": "showthread.php@t=1810968.htm"
+    "title": "t1813001.html",
+    "file": "t1813001.html"
   },
   {
-    "title": "i realized something in church the other day",
-    "file": "showthread.php@t=1810970.htm"
+    "title": "t1813002.html",
+    "file": "t1813002.html"
   },
   {
-    "title": "God(s)",
-    "file": "showthread.php@t=1810972.htm"
+    "title": "t1813003.html",
+    "file": "t1813003.html"
   },
   {
-    "title": "Whats wrong with our world now?",
-    "file": "showthread.php@t=1810973.htm"
+    "title": "t1813004.html",
+    "file": "t1813004.html"
   },
   {
-    "title": "The Church Of The Black Diaond",
-    "file": "showthread.php@t=1810974.htm"
+    "title": "t1813005.html",
+    "file": "t1813005.html"
   },
   {
-    "title": "srry to say this but ...",
-    "file": "showthread.php@t=1810976.htm"
+    "title": "t1813006.html",
+    "file": "t1813006.html"
   },
   {
-    "title": "to bishop",
-    "file": "showthread.php@t=1810978.htm"
+    "title": "t1813007.html",
+    "file": "t1813007.html"
   },
   {
-    "title": "The Religous Right",
-    "file": "showthread.php@t=1810980.htm"
+    "title": "t1813008.html",
+    "file": "t1813008.html"
   },
   {
-    "title": "What do you guys think about Hinduism?",
-    "file": "showthread.php@t=1810981.htm"
+    "title": "t1813009.html",
+    "file": "t1813009.html"
   },
   {
-    "title": "Signs of occult activity in your child...",
-    "file": "showthread.php@t=1810984.htm"
+    "title": "t1813010.html",
+    "file": "t1813010.html"
   },
   {
-    "title": "They tried to convert me",
-    "file": "showthread.php@t=1810985.htm"
+    "title": "t1813011.html",
+    "file": "t1813011.html"
   },
   {
-    "title": "Reference Guides",
-    "file": "showthread.php@t=1810986.htm"
+    "title": "t1813012.html",
+    "file": "t1813012.html"
   },
   {
-    "title": "is god.................",
-    "file": "showthread.php@t=1810987.htm"
+    "title": "t1813013.html",
+    "file": "t1813013.html"
   },
   {
-    "title": "Will we ever understand each other?",
-    "file": "showthread.php@t=1810988.htm"
+    "title": "t1813014.html",
+    "file": "t1813014.html"
   },
   {
-    "title": "i will revert to christianity IF you answer these questions",
-    "file": "showthread.php@t=1810989.htm"
+    "title": "t1813015.html",
+    "file": "t1813015.html"
   },
   {
-    "title": "Greek",
-    "file": "showthread.php@t=1810990.htm"
+    "title": "t1813016.html",
+    "file": "t1813016.html"
   },
   {
-    "title": "Capitalism & Christianity",
-    "file": "showthread.php@t=1810991.htm"
+    "title": "t1813017.html",
+    "file": "t1813017.html"
   },
   {
-    "title": "The spiritual foundation that every person needs",
-    "file": "showthread.php@t=1810997.htm"
+    "title": "t1813018.html",
+    "file": "t1813018.html"
   },
   {
-    "title": "nialism",
-    "file": "showthread.php@t=1810999.htm"
+    "title": "t1813019.html",
+    "file": "t1813019.html"
   },
   {
-    "title": "homo's",
-    "file": "showthread.php@t=1811000.htm"
+    "title": "t1813020.html",
+    "file": "t1813020.html"
   },
   {
-    "title": "Negro Church",
-    "file": "showthread.php@t=1811001.htm"
+    "title": "t1813021.html",
+    "file": "t1813021.html"
   },
   {
-    "title": "on essence, form, and function",
-    "file": "showthread.php@t=1811002.htm"
+    "title": "t1813022.html",
+    "file": "t1813022.html"
   },
   {
-    "title": "The \"Adam and Eve\" Story in the Bible Doesn't Make Any Sense.",
-    "file": "showthread.php@t=1811004.htm"
+    "title": "t1813023.html",
+    "file": "t1813023.html"
   },
   {
-    "title": "The Lost Years of Jesus",
-    "file": "showthread.php@t=1811007.htm"
+    "title": "t1813024.html",
+    "file": "t1813024.html"
   },
   {
-    "title": "Letter for a christian from an atheist",
-    "file": "showthread.php@t=1811009.htm"
+    "title": "t1813025.html",
+    "file": "t1813025.html"
   },
   {
-    "title": "Fuck the bible, let's talk about theism",
-    "file": "showthread.php@t=1811014.htm"
+    "title": "t1813026.html",
+    "file": "t1813026.html"
   },
   {
-    "title": "Jews in power",
-    "file": "showthread.php@t=1811015.htm"
+    "title": "t1813027.html",
+    "file": "t1813027.html"
   },
   {
-    "title": "I'm impressed",
-    "file": "showthread.php@t=1811016.htm"
+    "title": "t1813028.html",
+    "file": "t1813028.html"
   },
   {
-    "title": "History of human race 1 - crow",
-    "file": "showthread.php@t=1811017.htm"
+    "title": "t1813029.html",
+    "file": "t1813029.html"
   },
   {
-    "title": "All-Loving or Omnipotent?",
-    "file": "showthread.php@t=1811018.htm"
+    "title": "t1813030.html",
+    "file": "t1813030.html"
   },
   {
-    "title": "Cool Atheist Quotes",
-    "file": "showthread.php@t=1811019.htm"
+    "title": "t1813031.html",
+    "file": "t1813031.html"
   },
   {
-    "title": "Religious Experiences",
-    "file": "showthread.php@t=1811020.htm"
+    "title": "t1813032.html",
+    "file": "t1813032.html"
   },
   {
-    "title": "oral sex skills",
-    "file": "showthread.php@t=1811021.htm"
+    "title": "t1813033.html",
+    "file": "t1813033.html"
   },
   {
-    "title": "Fanatacism",
-    "file": "showthread.php@t=1811022.htm"
+    "title": "t1813034.html",
+    "file": "t1813034.html"
   },
   {
-    "title": "losing people to cults =(",
-    "file": "showthread.php@t=1811024.htm"
+    "title": "t1813035.html",
+    "file": "t1813035.html"
   },
   {
-    "title": "All religions and philosophies are lost causes",
-    "file": "showthread.php@t=1811025.htm"
+    "title": "t1813036.html",
+    "file": "t1813036.html"
   },
   {
-    "title": "A Proverb of my own.",
-    "file": "showthread.php@t=1811027.htm"
+    "title": "t1813037.html",
+    "file": "t1813037.html"
   },
   {
-    "title": "the pledge of allegiance",
-    "file": "showthread.php@t=1811028.htm"
+    "title": "t1813038.html",
+    "file": "t1813038.html"
   },
   {
-    "title": "jesus was a fine dancer",
-    "file": "showthread.php@t=1811030.htm"
+    "title": "t1813039.html",
+    "file": "t1813039.html"
   },
   {
-    "title": "Christ clearly came to destroy Judaism",
-    "file": "showthread.php@t=1811032.htm"
+    "title": "t1813040.html",
+    "file": "t1813040.html"
   },
   {
-    "title": "proof that christians have lost their minds!",
-    "file": "showthread.php@t=1811033.htm"
+    "title": "t1813041.html",
+    "file": "t1813041.html"
   },
   {
-    "title": "Islam Collage",
-    "file": "showthread.php@t=1811034.htm"
+    "title": "t1813042.html",
+    "file": "t1813042.html"
   },
   {
-    "title": "Taking religion too far?: Halloween on Sunday",
-    "file": "showthread.php@t=1811035.htm"
+    "title": "t1813043.html",
+    "file": "t1813043.html"
   },
   {
-    "title": "Microchip Technology",
-    "file": "showthread.php@t=1811036.htm"
+    "title": "t1813044.html",
+    "file": "t1813044.html"
   },
   {
-    "title": "Islam",
-    "file": "showthread.php@t=1811037.htm"
+    "title": "t1813045.html",
+    "file": "t1813045.html"
   },
   {
-    "title": "Wisdom is just wisdom, right?",
-    "file": "showthread.php@t=1811038.htm"
+    "title": "t1813046.html",
+    "file": "t1813046.html"
   },
   {
-    "title": "Tattoo concordance",
-    "file": "showthread.php@t=1811039.htm"
+    "title": "t1813047.html",
+    "file": "t1813047.html"
   },
   {
-    "title": "Jews for Allah.",
-    "file": "showthread.php@t=1811040.htm"
+    "title": "t1813048.html",
+    "file": "t1813048.html"
   },
   {
-    "title": "Everyone hates the Jews.",
-    "file": "showthread.php@t=1811041.htm"
+    "title": "t1813049.html",
+    "file": "t1813049.html"
   },
   {
-    "title": "Protestantism and Mysticism",
-    "file": "showthread.php@t=1811043.htm"
+    "title": "t1813050.html",
+    "file": "t1813050.html"
   },
   {
-    "title": "Use of feminine language for God",
-    "file": "showthread.php@t=1811044.htm"
+    "title": "t1813051.html",
+    "file": "t1813051.html"
   },
   {
-    "title": "Lets talk theology...",
-    "file": "showthread.php@t=1811046.htm"
+    "title": "t1813052.html",
+    "file": "t1813052.html"
   },
   {
-    "title": "Did Albert Einstein believe in a personal God ?",
-    "file": "showthread.php@t=1811047.htm"
+    "title": "t1813053.html",
+    "file": "t1813053.html"
   },
   {
-    "title": "Jesus Was Nothing But A Jew",
-    "file": "showthread.php@t=1811048.htm"
+    "title": "t1813054.html",
+    "file": "t1813054.html"
   },
   {
-    "title": "Protestents Read this",
-    "file": "showthread.php@t=1811049.htm"
+    "title": "t1813055.html",
+    "file": "t1813055.html"
   },
   {
-    "title": "eins",
-    "file": "showthread.php@t=1811050.htm"
+    "title": "t1813056.html",
+    "file": "t1813056.html"
   },
   {
-    "title": "WWWWWW5WWW8WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW",
-    "file": "showthread.php@t=1811052.htm"
+    "title": "t1813057.html",
+    "file": "t1813057.html"
   },
   {
-    "title": "Need to know what religion this is?",
-    "file": "showthread.php@t=1811053.htm"
+    "title": "t1813058.html",
+    "file": "t1813058.html"
   },
   {
-    "title": "America founded on Christian beliefs",
-    "file": "showthread.php@t=1811054.htm"
+    "title": "t1813059.html",
+    "file": "t1813059.html"
   },
   {
-    "title": "Jesus's Life Span",
-    "file": "showthread.php@t=1811055.htm"
+    "title": "t1813060.html",
+    "file": "t1813060.html"
   },
   {
-    "title": "Christianity",
-    "file": "showthread.php@t=1811056.htm"
+    "title": "t1813061.html",
+    "file": "t1813061.html"
   },
   {
-    "title": "Yachtanabas",
-    "file": "showthread.php@t=1811057.htm"
+    "title": "t1813062.html",
+    "file": "t1813062.html"
   },
   {
-    "title": "Plz Help My Paper on Teleology and Deontology. It talks alittle about religions",
-    "file": "showthread.php@t=1811058.htm"
+    "title": "t1813063.html",
+    "file": "t1813063.html"
   },
   {
-    "title": "Questions/Flaws in Christianity",
-    "file": "showthread.php@t=1811061.htm"
+    "title": "t1813064.html",
+    "file": "t1813064.html"
   },
   {
-    "title": "A Possible Reason Christianity Was Created",
-    "file": "showthread.php@t=1811062.htm"
+    "title": "t1813065.html",
+    "file": "t1813065.html"
   },
   {
-    "title": "you all know their isnt a god",
-    "file": "showthread.php@t=1811064.htm"
+    "title": "t1813066.html",
+    "file": "t1813066.html"
   },
   {
-    "title": "I AM GOD!!!!!",
-    "file": "showthread.php@t=1811065.htm"
+    "title": "t1813067.html",
+    "file": "t1813067.html"
   },
   {
-    "title": "agnostic",
-    "file": "showthread.php@t=1811066.htm"
+    "title": "t1813068.html",
+    "file": "t1813068.html"
   },
   {
-    "title": "Truth about God and Religion",
-    "file": "showthread.php@t=1811067.htm"
+    "title": "t1813069.html",
+    "file": "t1813069.html"
   },
   {
-    "title": "Question for people who know about Wicca/paganism",
-    "file": "showthread.php@t=1811069.htm"
+    "title": "t1813070.html",
+    "file": "t1813070.html"
   },
   {
-    "title": "Any good reasons why I shouldn't become mormon?",
-    "file": "showthread.php@t=1811070.htm"
+    "title": "t1813071.html",
+    "file": "t1813071.html"
   },
   {
-    "title": "athiests are worse then christians!",
-    "file": "showthread.php@t=1811071.htm"
+    "title": "t1813072.html",
+    "file": "t1813072.html"
   },
   {
-    "title": "Satan's bible",
-    "file": "showthread.php@t=1811072.htm"
+    "title": "t1813073.html",
+    "file": "t1813073.html"
   },
   {
-    "title": "Why take the bible litteraly?",
-    "file": "showthread.php@t=1811073.htm"
+    "title": "t1813074.html",
+    "file": "t1813074.html"
   },
   {
-    "title": "Check out Time magazine this week.",
-    "file": "showthread.php@t=1811074.htm"
+    "title": "t1813075.html",
+    "file": "t1813075.html"
   },
   {
-    "title": "EMERGENCY! NATURE!",
-    "file": "showthread.php@t=1811076.htm"
+    "title": "t1813076.html",
+    "file": "t1813076.html"
   },
   {
-    "title": "Digital Savior.",
-    "file": "showthread.php@t=1811077.htm"
+    "title": "t1813077.html",
+    "file": "t1813077.html"
   },
   {
-    "title": "Free Will",
-    "file": "showthread.php@t=1811078.htm"
+    "title": "t1813078.html",
+    "file": "t1813078.html"
   },
   {
-    "title": "What if.....",
-    "file": "showthread.php@t=1811079.htm"
+    "title": "t1813079.html",
+    "file": "t1813079.html"
   },
   {
-    "title": "I wonder....",
-    "file": "showthread.php@t=1811080.htm"
+    "title": "t1813080.html",
+    "file": "t1813080.html"
   },
   {
-    "title": "A new age prophet, Halaelua(or whatever)",
-    "file": "showthread.php@t=1811081.htm"
+    "title": "t1813081.html",
+    "file": "t1813081.html"
   },
   {
-    "title": "Why are my posts getting below old posts?",
-    "file": "showthread.php@t=1811082.htm"
+    "title": "t1813082.html",
+    "file": "t1813082.html"
   },
   {
-    "title": "add me",
-    "file": "showthread.php@t=1811083.htm"
+    "title": "t1813083.html",
+    "file": "t1813083.html"
   },
   {
-    "title": "Need some help with a school paper",
-    "file": "showthread.php@t=1811084.htm"
+    "title": "t1813084.html",
+    "file": "t1813084.html"
   },
   {
-    "title": "If god does('nt) exist.",
-    "file": "showthread.php@t=1811085.htm"
+    "title": "t1813085.html",
+    "file": "t1813085.html"
   },
   {
-    "title": "noob question",
-    "file": "showthread.php@t=1811088.htm"
+    "title": "t1813086.html",
+    "file": "t1813086.html"
   },
   {
-    "title": "I'm back!",
-    "file": "showthread.php@t=1811090.htm"
+    "title": "t1813087.html",
+    "file": "t1813087.html"
   },
   {
-    "title": "Jehovah's Witneses",
-    "file": "showthread.php@t=1811091.htm"
+    "title": "t1813088.html",
+    "file": "t1813088.html"
   },
   {
-    "title": "Can God really forgive any sin?",
-    "file": "showthread.php@t=1811093.htm"
+    "title": "t1813089.html",
+    "file": "t1813089.html"
   },
   {
-    "title": "The Principia Discordia",
-    "file": "showthread.php@t=1811094.htm"
+    "title": "t1813090.html",
+    "file": "t1813090.html"
   },
   {
-    "title": "Go to bushisantichrist.com",
-    "file": "showthread.php@t=1811095.htm"
+    "title": "t1813091.html",
+    "file": "t1813091.html"
   },
   {
-    "title": "Athame Making",
-    "file": "showthread.php@t=1811096.htm"
+    "title": "t1813092.html",
+    "file": "t1813092.html"
   },
   {
-    "title": "Why was the sabbath changed?",
-    "file": "showthread.php@t=1811097.htm"
+    "title": "t1813093.html",
+    "file": "t1813093.html"
   },
   {
-    "title": "Questions for God",
-    "file": "showthread.php@t=1811098.htm"
+    "title": "t1813094.html",
+    "file": "t1813094.html"
   },
   {
-    "title": "Borderline Solipsism",
-    "file": "showthread.php@t=1811099.htm"
+    "title": "t1813095.html",
+    "file": "t1813095.html"
   },
   {
-    "title": "Paganism: Superior to Christianity",
-    "file": "showthread.php@t=1811100.htm"
+    "title": "t1813096.html",
+    "file": "t1813096.html"
   },
   {
-    "title": "Sirius star system and the Alien visitors",
-    "file": "showthread.php@t=1811101.htm"
+    "title": "t1813097.html",
+    "file": "t1813097.html"
   },
   {
-    "title": "Hobbits",
-    "file": "showthread.php@t=1811102.htm"
+    "title": "t1813098.html",
+    "file": "t1813098.html"
   },
   {
-    "title": "why are we here?",
-    "file": "showthread.php@t=1811104.htm"
+    "title": "t1813099.html",
+    "file": "t1813099.html"
   },
   {
-    "title": "why christianity is wrong........",
-    "file": "showthread.php@t=1811105.htm"
+    "title": "t1813100.html",
+    "file": "t1813100.html"
   },
   {
-    "title": "Hitler and the Catholic Church",
-    "file": "showthread.php@t=1811106.htm"
+    "title": "t1813101.html",
+    "file": "t1813101.html"
   },
   {
-    "title": "free will?",
-    "file": "showthread.php@t=1811109.htm"
+    "title": "t1813102.html",
+    "file": "t1813102.html"
   },
   {
-    "title": "666=Satan?",
-    "file": "showthread.php@t=1811110.htm"
+    "title": "t1813103.html",
+    "file": "t1813103.html"
   },
   {
-    "title": "Morality.",
-    "file": "showthread.php@t=1811111.htm"
+    "title": "t1813104.html",
+    "file": "t1813104.html"
   },
   {
-    "title": "Hypocritical Christians",
-    "file": "showthread.php@t=1811114.htm"
+    "title": "t1813105.html",
+    "file": "t1813105.html"
   },
   {
-    "title": "Join a cult",
-    "file": "showthread.php@t=1811115.htm"
+    "title": "t1813106.html",
+    "file": "t1813106.html"
   },
   {
-    "title": "Moses vs Jesus. ROYAL RUMBLE BABY",
-    "file": "showthread.php@t=1811116.htm"
+    "title": "t1813107.html",
+    "file": "t1813107.html"
   },
   {
-    "title": "Satanism",
-    "file": "showthread.php@t=1811117.htm"
+    "title": "t1813108.html",
+    "file": "t1813108.html"
   },
   {
-    "title": "Amish",
-    "file": "showthread.php@t=1811120.htm"
+    "title": "t1813109.html",
+    "file": "t1813109.html"
   },
   {
-    "title": "xtreem5150ahm",
-    "file": "showthread.php@t=1811121.htm"
+    "title": "t1813110.html",
+    "file": "t1813110.html"
   },
   {
-    "title": "I went to a funeral today...",
-    "file": "showthread.php@t=1811122.htm"
+    "title": "t1813111.html",
+    "file": "t1813111.html"
   },
   {
-    "title": "Genesis, Chapter 1 (Gods Work of Creation)",
-    "file": "showthread.php@t=1811123.htm"
+    "title": "t1813112.html",
+    "file": "t1813112.html"
   },
   {
-    "title": "Genesis Chapter 2 (Adam and Eve in the Garden of Eden)",
-    "file": "showthread.php@t=1811124.htm"
+    "title": "t1813113.html",
+    "file": "t1813113.html"
   },
   {
-    "title": "Genesis Chapter 3 (The First Sin and it's Punishment)",
-    "file": "showthread.php@t=1811127.htm"
+    "title": "t1813114.html",
+    "file": "t1813114.html"
   },
   {
-    "title": "Genesis Chapter 4 (The Two Brothers and the First Murder)",
-    "file": "showthread.php@t=1811128.htm"
+    "title": "t1813115.html",
+    "file": "t1813115.html"
   },
   {
-    "title": "god is a fag",
-    "file": "showthread.php@t=1811130.htm"
+    "title": "t1813116.html",
+    "file": "t1813116.html"
   },
   {
-    "title": "religion has caused all of humanity's problems",
-    "file": "showthread.php@t=1811131.htm"
+    "title": "t1813117.html",
+    "file": "t1813117.html"
   },
   {
-    "title": "religion of the amish",
-    "file": "showthread.php@t=1811132.htm"
+    "title": "t1813118.html",
+    "file": "t1813118.html"
   },
   {
-    "title": "Where did god come from?",
-    "file": "showthread.php@t=1811135.htm"
+    "title": "t1813119.html",
+    "file": "t1813119.html"
   },
   {
-    "title": "Joy of Death? a question for Catholics",
-    "file": "showthread.php@t=1811137.htm"
+    "title": "t1813120.html",
+    "file": "t1813120.html"
   },
   {
-    "title": "Mormon Q & A",
-    "file": "showthread.php@t=1811139.htm"
+    "title": "t1813121.html",
+    "file": "t1813121.html"
   },
   {
-    "title": "Instruction manuals for life",
-    "file": "showthread.php@t=1811140.htm"
+    "title": "t1813122.html",
+    "file": "t1813122.html"
   },
   {
-    "title": "Genesis Chapter 6 (God Warns Noah of the Coming Deluge) - King James Version",
-    "file": "showthread.php@t=1811141.htm"
+    "title": "t1813123.html",
+    "file": "t1813123.html"
   },
   {
-    "title": "Genesis Chapter 7 (Noah and his Family Saved in the Ark) - King James Version",
-    "file": "showthread.php@t=1811142.htm"
+    "title": "t1813124.html",
+    "file": "t1813124.html"
   },
   {
-    "title": "Lucifer and free will...",
-    "file": "showthread.php@t=1811143.htm"
+    "title": "t1813125.html",
+    "file": "t1813125.html"
   },
   {
-    "title": "Forced Church",
-    "file": "showthread.php@t=1811144.htm"
+    "title": "t1813126.html",
+    "file": "t1813126.html"
   },
   {
-    "title": "Encounter with a sinful, hedonistic homosexual.",
-    "file": "showthread.php@t=1811146.htm"
+    "title": "t1813127.html",
+    "file": "t1813127.html"
   },
   {
-    "title": "i need help from cristains",
-    "file": "showthread.php@t=1811147.htm"
+    "title": "t1813128.html",
+    "file": "t1813128.html"
   },
   {
-    "title": "Xcellent Xian Origins Reading List",
-    "file": "showthread.php@t=1811148.htm"
+    "title": "t1813129.html",
+    "file": "t1813129.html"
   },
   {
-    "title": "On The Context of The Bible",
-    "file": "showthread.php@t=1811149.htm"
+    "title": "t1813130.html",
+    "file": "t1813130.html"
   },
   {
-    "title": "Satan and his ways",
-    "file": "showthread.php@t=1811150.htm"
+    "title": "t1813131.html",
+    "file": "t1813131.html"
   },
   {
-    "title": "Eternity Frightens Me",
-    "file": "showthread.php@t=1811153.htm"
+    "title": "t1813132.html",
+    "file": "t1813132.html"
   },
   {
-    "title": "Knights Templar",
-    "file": "showthread.php@t=1811156.htm"
+    "title": "t1813133.html",
+    "file": "t1813133.html"
   },
   {
-    "title": "Theory of Self-deism?",
-    "file": "showthread.php@t=1811158.htm"
+    "title": "t1813134.html",
+    "file": "t1813134.html"
   },
   {
-    "title": "Heroin and these Christians!",
-    "file": "showthread.php@t=1811160.htm"
+    "title": "t1813135.html",
+    "file": "t1813135.html"
   },
   {
-    "title": "Just a Thought",
-    "file": "showthread.php@t=1811163.htm"
+    "title": "t1813136.html",
+    "file": "t1813136.html"
   },
   {
-    "title": "God and Physics",
-    "file": "showthread.php@t=1811164.htm"
+    "title": "t1813137.html",
+    "file": "t1813137.html"
   },
   {
-    "title": "What do theist's have to lose?",
-    "file": "showthread.php@t=1811165.htm"
+    "title": "t1813138.html",
+    "file": "t1813138.html"
   },
   {
-    "title": "Is God logical?",
-    "file": "showthread.php@t=1811166.htm"
+    "title": "t1813139.html",
+    "file": "t1813139.html"
   },
   {
-    "title": "Jehovahs witness!",
-    "file": "showthread.php@t=1811167.htm"
+    "title": "t1813140.html",
+    "file": "t1813140.html"
   },
   {
-    "title": "I wana lead christians",
-    "file": "showthread.php@t=1811668.htm"
+    "title": "t1813141.html",
+    "file": "t1813141.html"
   },
   {
-    "title": "Catholicism - The only relegion with miracles",
-    "file": "showthread.php@t=1811669.htm"
+    "title": "t1813142.html",
+    "file": "t1813142.html"
   },
   {
-    "title": "If religion is wrong....",
-    "file": "showthread.php@t=1811670.htm"
+    "title": "t1813143.html",
+    "file": "t1813143.html"
   },
   {
-    "title": "Why",
-    "file": "showthread.php@t=1811671.htm"
+    "title": "t1813144.html",
+    "file": "t1813144.html"
   },
   {
-    "title": "Contacting the Dead",
-    "file": "showthread.php@t=1811672.htm"
+    "title": "t1813145.html",
+    "file": "t1813145.html"
   },
   {
-    "title": "Your Greatest Revelation",
-    "file": "showthread.php@t=1811673.htm"
+    "title": "t1813146.html",
+    "file": "t1813146.html"
   },
   {
-    "title": "whats the point?",
-    "file": "showthread.php@t=1811674.htm"
+    "title": "t1813147.html",
+    "file": "t1813147.html"
   },
   {
-    "title": "The Last TIme Religion was any use",
-    "file": "showthread.php@t=1811675.htm"
+    "title": "t1813148.html",
+    "file": "t1813148.html"
   },
   {
-    "title": "Mammon is awesome",
-    "file": "showthread.php@t=1811676.htm"
+    "title": "t1813149.html",
+    "file": "t1813149.html"
   },
   {
-    "title": "Religious dreams",
-    "file": "showthread.php@t=1811678.htm"
+    "title": "t1813150.html",
+    "file": "t1813150.html"
   },
   {
-    "title": "Communion",
-    "file": "showthread.php@t=1811679.htm"
+    "title": "t1813151.html",
+    "file": "t1813151.html"
   },
   {
-    "title": "Eckankar",
-    "file": "showthread.php@t=1811680.htm"
+    "title": "t1813152.html",
+    "file": "t1813152.html"
   },
   {
-    "title": "The Pope",
-    "file": "showthread.php@t=1811681.htm"
+    "title": "t1813153.html",
+    "file": "t1813153.html"
   },
   {
-    "title": "Bummer of a Dream",
-    "file": "showthread.php@t=1811682.htm"
+    "title": "t1813154.html",
+    "file": "t1813154.html"
   },
   {
-    "title": "I dont need religion",
-    "file": "showthread.php@t=1811683.htm"
+    "title": "t1813155.html",
+    "file": "t1813155.html"
   },
   {
-    "title": "help me with my history project.",
-    "file": "showthread.php@t=1811684.htm"
+    "title": "t1813156.html",
+    "file": "t1813156.html"
   },
   {
-    "title": "got some questions,,,",
-    "file": "showthread.php@t=1811685.htm"
+    "title": "t1813157.html",
+    "file": "t1813157.html"
   },
   {
-    "title": "view on religon",
-    "file": "showthread.php@t=1811686.htm"
+    "title": "t1813158.html",
+    "file": "t1813158.html"
   },
   {
-    "title": "The best religious one liner i ever heard",
-    "file": "showthread.php@t=1811687.htm"
+    "title": "t1813159.html",
+    "file": "t1813159.html"
   },
   {
-    "title": "Science and religion",
-    "file": "showthread.php@t=1811688.htm"
+    "title": "t1813160.html",
+    "file": "t1813160.html"
   },
   {
-    "title": "Question to Christians...",
-    "file": "showthread.php@t=1811689.htm"
+    "title": "t1813161.html",
+    "file": "t1813161.html"
   },
   {
-    "title": "is there really",
-    "file": "showthread.php@t=1811691.htm"
+    "title": "t1813162.html",
+    "file": "t1813162.html"
   },
   {
-    "title": "I Think I have become Nihilist",
-    "file": "showthread.php@t=1811692.htm"
+    "title": "t1813163.html",
+    "file": "t1813163.html"
   },
   {
-    "title": "Good Friday or Easter Monday",
-    "file": "showthread.php@t=1811693.htm"
+    "title": "t1813164.html",
+    "file": "t1813164.html"
   },
   {
-    "title": "Whats wrong with this site?",
-    "file": "showthread.php@t=1811694.htm"
+    "title": "t1813165.html",
+    "file": "t1813165.html"
   },
   {
-    "title": "Who here is a minister?",
-    "file": "showthread.php@t=1811695.htm"
+    "title": "t1813166.html",
+    "file": "t1813166.html"
   },
   {
-    "title": "recreating christ's suffering",
-    "file": "showthread.php@t=1811696.htm"
+    "title": "t1813167.html",
+    "file": "t1813167.html"
   },
   {
-    "title": "Do we (humans) know anything?",
-    "file": "showthread.php@t=1811697.htm"
+    "title": "t1813168.html",
+    "file": "t1813168.html"
   },
   {
-    "title": "one CAN go too far",
-    "file": "showthread.php@t=1811698.htm"
+    "title": "t1813169.html",
+    "file": "t1813169.html"
   },
   {
-    "title": "Has Christianity hurt or helped civilization more?",
-    "file": "showthread.php@t=1811699.htm"
+    "title": "t1813170.html",
+    "file": "t1813170.html"
   },
   {
-    "title": "How would the world be without Christianity?",
-    "file": "showthread.php@t=1811701.htm"
+    "title": "t1813171.html",
+    "file": "t1813171.html"
   },
   {
-    "title": "They've made plans to rebulid the temple.",
-    "file": "showthread.php@t=1811702.htm"
+    "title": "t1813172.html",
+    "file": "t1813172.html"
   },
   {
-    "title": "how do you explain the Holy Ghost?",
-    "file": "showthread.php@t=1811703.htm"
+    "title": "t1813173.html",
+    "file": "t1813173.html"
   },
   {
-    "title": "what are the diffrent branches of christianity?",
-    "file": "showthread.php@t=1811704.htm"
+    "title": "t1813174.html",
+    "file": "t1813174.html"
   },
   {
-    "title": "PLEASE CHECK READ THIS...",
-    "file": "showthread.php@t=1811706.htm"
+    "title": "t1813175.html",
+    "file": "t1813175.html"
   },
   {
-    "title": "Hell",
-    "file": "showthread.php@t=1811708.htm"
+    "title": "t1813176.html",
+    "file": "t1813176.html"
   },
   {
-    "title": "Darwin's right, you know",
-    "file": "showthread.php@t=1811709.htm"
+    "title": "t1813177.html",
+    "file": "t1813177.html"
   },
   {
-    "title": "What do you think about Jesus NOW?!",
-    "file": "showthread.php@t=1811711.htm"
+    "title": "t1813178.html",
+    "file": "t1813178.html"
   },
   {
-    "title": "Chapter 6: God Warns Noah of the Coming Deluge. (The King James Version)",
-    "file": "showthread.php@t=1811712.htm"
+    "title": "t1813179.html",
+    "file": "t1813179.html"
   },
   {
-    "title": "Genesis:: Chapter 9:: God's Covenant with Noah (The King James Version)",
-    "file": "showthread.php@t=1811715.htm"
+    "title": "t1813180.html",
+    "file": "t1813180.html"
   },
   {
-    "title": "Taoism websites",
-    "file": "showthread.php@t=1811716.htm"
+    "title": "t1813181.html",
+    "file": "t1813181.html"
   },
   {
-    "title": "Blasphemy-loving James Bond fans might love this",
-    "file": "showthread.php@t=1811717.htm"
+    "title": "t1813182.html",
+    "file": "t1813182.html"
   },
   {
-    "title": "So, What Was Manna?: An Interesting Article I Found",
-    "file": "showthread.php@t=1811718.htm"
+    "title": "t1813183.html",
+    "file": "t1813183.html"
   },
   {
-    "title": "Where could i start my own religion?",
-    "file": "showthread.php@t=1811719.htm"
+    "title": "t1813184.html",
+    "file": "t1813184.html"
   },
   {
-    "title": "who would win in a fight Jesus or Mothra",
-    "file": "showthread.php@t=1811721.htm"
+    "title": "t1813185.html",
+    "file": "t1813185.html"
   },
   {
-    "title": "Regarding 'bad' and 'good'.",
-    "file": "showthread.php@t=1811722.htm"
+    "title": "t1813186.html",
+    "file": "t1813186.html"
   },
   {
-    "title": "Catholicism takes a huge hit...soon.",
-    "file": "showthread.php@t=1811723.htm"
+    "title": "t1813187.html",
+    "file": "t1813187.html"
   },
   {
-    "title": "Can anyone run for pope?",
-    "file": "showthread.php@t=1811725.htm"
+    "title": "t1813188.html",
+    "file": "t1813188.html"
   },
   {
-    "title": "Pope John Paul II has died.",
-    "file": "showthread.php@t=1811726.htm"
+    "title": "t1813189.html",
+    "file": "t1813189.html"
   },
   {
-    "title": "The Papacy: Notes of Historic Interest",
-    "file": "showthread.php@t=1811727.htm"
+    "title": "t1813190.html",
+    "file": "t1813190.html"
   },
   {
-    "title": "What happens if..",
-    "file": "showthread.php@t=1811728.htm"
+    "title": "t1813191.html",
+    "file": "t1813191.html"
   },
   {
-    "title": "Good Riddance to the Jew Killing Bastard!",
-    "file": "showthread.php@t=1811729.htm"
+    "title": "t1813192.html",
+    "file": "t1813192.html"
   },
   {
-    "title": "The Status Of The Pope",
-    "file": "showthread.php@t=1811730.htm"
+    "title": "t1813193.html",
+    "file": "t1813193.html"
   },
   {
-    "title": "its gonna be pretty funny after millions of peoples praying...",
-    "file": "showthread.php@t=1811731.htm"
+    "title": "t1813194.html",
+    "file": "t1813194.html"
   },
   {
-    "title": "does jesus have a middle name?",
-    "file": "showthread.php@t=1811732.htm"
+    "title": "t1813195.html",
+    "file": "t1813195.html"
   },
   {
-    "title": "Sellin' your soul to the devil",
-    "file": "showthread.php@t=1811733.htm"
+    "title": "t1813196.html",
+    "file": "t1813196.html"
   },
   {
-    "title": "Opening the seals of the Apocalypse",
-    "file": "showthread.php@t=1811734.htm"
+    "title": "t1813197.html",
+    "file": "t1813197.html"
   },
   {
-    "title": "The Pope is Dead",
-    "file": "showthread.php@t=1811735.htm"
+    "title": "t1813198.html",
+    "file": "t1813198.html"
   },
   {
-    "title": "What does a \"Pope\" do?",
-    "file": "showthread.php@t=1811736.htm"
+    "title": "t1813199.html",
+    "file": "t1813199.html"
   },
   {
-    "title": "anti-pope website",
-    "file": "showthread.php@t=1811737.htm"
+    "title": "t1813200.html",
+    "file": "t1813200.html"
   },
   {
-    "title": "Antichrist after popes death",
-    "file": "showthread.php@t=1811738.htm"
+    "title": "t1813201.html",
+    "file": "t1813201.html"
   },
   {
-    "title": "17 Ways NOT to go to Heaven",
-    "file": "showthread.php@t=1811739.htm"
+    "title": "t1813202.html",
+    "file": "t1813202.html"
   },
   {
-    "title": "Is drug use a Christian sin?",
-    "file": "showthread.php@t=1811740.htm"
+    "title": "t1813203.html",
+    "file": "t1813203.html"
   },
   {
-    "title": "Thoughts?",
-    "file": "showthread.php@t=1811742.htm"
+    "title": "t1813204.html",
+    "file": "t1813204.html"
   },
   {
-    "title": "Call upon angels...",
-    "file": "showthread.php@t=1811743.htm"
+    "title": "t1813205.html",
+    "file": "t1813205.html"
   },
   {
-    "title": "Oprah...",
-    "file": "showthread.php@t=1811744.htm"
+    "title": "t1813206.html",
+    "file": "t1813206.html"
   },
   {
-    "title": "Sucide/Hell",
-    "file": "showthread.php@t=1811746.htm"
+    "title": "t1813207.html",
+    "file": "t1813207.html"
   },
   {
-    "title": "101 Strange Beliefs of Jehovah Witnesses",
-    "file": "showthread.php@t=1811747.htm"
+    "title": "t1813208.html",
+    "file": "t1813208.html"
   },
   {
-    "title": "wanting to die?",
-    "file": "showthread.php@t=1811748.htm"
+    "title": "t1813209.html",
+    "file": "t1813209.html"
   },
   {
-    "title": "Genesis:: Chapter 10:: Genealogy of Noah's Descendants (The King James Version)",
-    "file": "showthread.php@t=1811750.htm"
+    "title": "t1813210.html",
+    "file": "t1813210.html"
   },
   {
-    "title": "The Pope is bullshit. So is the catholic church.",
-    "file": "showthread.php@t=1811751.htm"
+    "title": "t1813211.html",
+    "file": "t1813211.html"
   },
   {
-    "title": "My philosophies.",
-    "file": "showthread.php@t=1811752.htm"
+    "title": "t1813212.html",
+    "file": "t1813212.html"
   },
   {
-    "title": "True Islam",
-    "file": "showthread.php@t=1811753.htm"
+    "title": "t1813213.html",
+    "file": "t1813213.html"
   },
   {
-    "title": "Genesis: 11: Confusion of Tongues at the Tower of Babel (The King James Version)",
-    "file": "showthread.php@t=1811754.htm"
+    "title": "t1813214.html",
+    "file": "t1813214.html"
   },
   {
-    "title": "Genesis: 12: God's Call to Abram (The King James Version)",
-    "file": "showthread.php@t=1811755.htm"
+    "title": "t1813215.html",
+    "file": "t1813215.html"
   },
   {
-    "title": "My thoughts on the Pope's death...",
-    "file": "showthread.php@t=1811756.htm"
+    "title": "t1813216.html",
+    "file": "t1813216.html"
   },
   {
-    "title": "Shax...",
-    "file": "showthread.php@t=1811757.htm"
+    "title": "t1813217.html",
+    "file": "t1813217.html"
   },
   {
-    "title": "where do we go until judgement day?",
-    "file": "showthread.php@t=1811758.htm"
+    "title": "t1813218.html",
+    "file": "t1813218.html"
   },
   {
-    "title": "The Existence of God",
-    "file": "showthread.php@t=1811759.htm"
+    "title": "t1813219.html",
+    "file": "t1813219.html"
   },
   {
-    "title": "Reconciliation...",
-    "file": "showthread.php@t=1811760.htm"
+    "title": "t1813220.html",
+    "file": "t1813220.html"
   },
   {
-    "title": "Pretty sure chinese religion rocks.",
-    "file": "showthread.php@t=1811761.htm"
+    "title": "t1813221.html",
+    "file": "t1813221.html"
   },
   {
-    "title": "White, suburbanite Buddhism fetish, dispelled.",
-    "file": "showthread.php@t=1811762.htm"
+    "title": "t1813222.html",
+    "file": "t1813222.html"
   },
   {
-    "title": "Baraka",
-    "file": "showthread.php@t=1811763.htm"
+    "title": "t1813223.html",
+    "file": "t1813223.html"
   },
   {
-    "title": "Question about Mohammed",
-    "file": "showthread.php@t=1811764.htm"
+    "title": "t1813224.html",
+    "file": "t1813224.html"
   },
   {
-    "title": "Some questions I want to see answered by Christians",
-    "file": "showthread.php@t=1811765.htm"
+    "title": "t1813225.html",
+    "file": "t1813225.html"
   },
   {
-    "title": "A Decision...",
-    "file": "showthread.php@t=1811766.htm"
+    "title": "t1813226.html",
+    "file": "t1813226.html"
   },
   {
-    "title": "Earning Religion",
-    "file": "showthread.php@t=1811767.htm"
+    "title": "t1813227.html",
+    "file": "t1813227.html"
   },
   {
-    "title": "Jesus' Gospel",
-    "file": "showthread.php@t=1811768.htm"
+    "title": "t1813228.html",
+    "file": "t1813228.html"
   },
   {
-    "title": "The Great Tribulation",
-    "file": "showthread.php@t=1811769.htm"
+    "title": "t1813229.html",
+    "file": "t1813229.html"
   },
   {
-    "title": "The Great Raisin",
-    "file": "showthread.php@t=1811770.htm"
+    "title": "t1813230.html",
+    "file": "t1813230.html"
   },
   {
-    "title": "Pope John Paul II",
-    "file": "showthread.php@t=1811771.htm"
+    "title": "t1813231.html",
+    "file": "t1813231.html"
   },
   {
-    "title": "Question about Revelation (to Christians)",
-    "file": "showthread.php@t=1811772.htm"
+    "title": "t1813232.html",
+    "file": "t1813232.html"
   },
   {
-    "title": "Nescience",
-    "file": "showthread.php@t=1811773.htm"
+    "title": "t1813233.html",
+    "file": "t1813233.html"
   },
   {
-    "title": "Give me examples of taking the Bible literally.",
-    "file": "showthread.php@t=1811774.htm"
+    "title": "t1813234.html",
+    "file": "t1813234.html"
   },
   {
-    "title": "Find answers through science",
-    "file": "showthread.php@t=1811775.htm"
+    "title": "t1813235.html",
+    "file": "t1813235.html"
   },
   {
-    "title": "If there were a song to herald the coming of the Apocalypse...",
-    "file": "showthread.php@t=1811776.htm"
+    "title": "t1813236.html",
+    "file": "t1813236.html"
   },
   {
-    "title": "Atheism > Agnosticism",
-    "file": "showthread.php@t=1811778.htm"
+    "title": "t1813237.html",
+    "file": "t1813237.html"
   },
   {
-    "title": "Is God Mocking Man??? (LONG)",
-    "file": "showthread.php@t=1811779.htm"
+    "title": "t1813238.html",
+    "file": "t1813238.html"
   },
   {
-    "title": "how big was Noahs ark",
-    "file": "showthread.php@t=1811780.htm"
+    "title": "t1813239.html",
+    "file": "t1813239.html"
   },
   {
-    "title": "Atlantis",
-    "file": "showthread.php@t=1811782.htm"
+    "title": "t1813240.html",
+    "file": "t1813240.html"
   },
   {
-    "title": "Lot and his Daughters.... Charming...",
-    "file": "showthread.php@t=1811783.htm"
+    "title": "t1813241.html",
+    "file": "t1813241.html"
   },
   {
-    "title": "Was Jesus a bastard?",
-    "file": "showthread.php@t=1811785.htm"
+    "title": "t1813242.html",
+    "file": "t1813242.html"
   },
   {
-    "title": "Were Blacks decendants of Canaan?",
-    "file": "showthread.php@t=1811786.htm"
+    "title": "t1813243.html",
+    "file": "t1813243.html"
   },
   {
-    "title": "Aryans",
-    "file": "showthread.php@t=1811787.htm"
+    "title": "t1813244.html",
+    "file": "t1813244.html"
   },
   {
-    "title": "POPE SUCKS",
-    "file": "showthread.php@t=1811788.htm"
+    "title": "t1813245.html",
+    "file": "t1813245.html"
   },
   {
-    "title": "We are Gods??",
-    "file": "showthread.php@t=1811789.htm"
+    "title": "t1813246.html",
+    "file": "t1813246.html"
   },
   {
-    "title": "Shamanism...",
-    "file": "showthread.php@t=1811790.htm"
+    "title": "t1813247.html",
+    "file": "t1813247.html"
   },
   {
-    "title": "each cell is a galaxy",
-    "file": "showthread.php@t=1811791.htm"
+    "title": "t1813248.html",
+    "file": "t1813248.html"
   },
   {
-    "title": "Pendulums... Demons...",
-    "file": "showthread.php@t=1811792.htm"
+    "title": "t1813249.html",
+    "file": "t1813249.html"
   },
   {
-    "title": "mary was a whore",
-    "file": "showthread.php@t=1811793.htm"
+    "title": "t1813250.html",
+    "file": "t1813250.html"
   },
   {
-    "title": "Fine tuning the universe",
-    "file": "showthread.php@t=1811794.htm"
+    "title": "t1813251.html",
+    "file": "t1813251.html"
   },
   {
-    "title": "World's worst religion?",
-    "file": "showthread.php@t=1811795.htm"
+    "title": "t1813252.html",
+    "file": "t1813252.html"
   },
   {
-    "title": "abomination of desolation",
-    "file": "showthread.php@t=1811796.htm"
+    "title": "t1813253.html",
+    "file": "t1813253.html"
   },
   {
-    "title": "Bible n Masterbating",
-    "file": "showthread.php@t=1811797.htm"
+    "title": "t1813254.html",
+    "file": "t1813254.html"
   },
   {
-    "title": "religion and western society",
-    "file": "showthread.php@t=1811798.htm"
+    "title": "t1813255.html",
+    "file": "t1813255.html"
   },
   {
-    "title": "*~Modern Christianity vs. Christ's Christianity~*",
-    "file": "showthread.php@t=1811800.htm"
+    "title": "t1813256.html",
+    "file": "t1813256.html"
   },
   {
-    "title": "atheistic view on creation....?",
-    "file": "showthread.php@t=1811801.htm"
+    "title": "t1813257.html",
+    "file": "t1813257.html"
   },
   {
-    "title": "*~Shroud of Turin~*",
-    "file": "showthread.php@t=1811802.htm"
+    "title": "t1813258.html",
+    "file": "t1813258.html"
   },
   {
-    "title": "an awesome movie",
-    "file": "showthread.php@t=1811803.htm"
+    "title": "t1813259.html",
+    "file": "t1813259.html"
   },
   {
-    "title": "Question on satanic/occult stuff",
-    "file": "showthread.php@t=1811804.htm"
+    "title": "t1813260.html",
+    "file": "t1813260.html"
   },
   {
-    "title": "Fruits of Athiesm",
-    "file": "showthread.php@t=1811805.htm"
+    "title": "t1813261.html",
+    "file": "t1813261.html"
   },
   {
-    "title": "if i pray to satan?",
-    "file": "showthread.php@t=1811806.htm"
+    "title": "t1813262.html",
+    "file": "t1813262.html"
   },
   {
-    "title": "Religion",
-    "file": "showthread.php@t=1811808.htm"
+    "title": "t1813263.html",
+    "file": "t1813263.html"
   },
   {
-    "title": "hey bible dudes",
-    "file": "showthread.php@t=1811810.htm"
+    "title": "t1813264.html",
+    "file": "t1813264.html"
   },
   {
-    "title": "~~Argument Refuting God~~",
-    "file": "showthread.php@t=1811814.htm"
+    "title": "t1813265.html",
+    "file": "t1813265.html"
   },
   {
-    "title": "The bells of St Peters are ringing! We have a new pope",
-    "file": "showthread.php@t=1811815.htm"
+    "title": "t1813266.html",
+    "file": "t1813266.html"
   },
   {
-    "title": "new pope a hitler youth",
-    "file": "showthread.php@t=1811816.htm"
+    "title": "t1813267.html",
+    "file": "t1813267.html"
   },
   {
-    "title": "Heaven Less Opulant Than Vatican ?!",
-    "file": "showthread.php@t=1811817.htm"
+    "title": "t1813268.html",
+    "file": "t1813268.html"
   },
   {
-    "title": "Please check out this site.",
-    "file": "showthread.php@t=1811818.htm"
+    "title": "t1813269.html",
+    "file": "t1813269.html"
   },
   {
-    "title": "BIBLE",
-    "file": "showthread.php@t=1811820.htm"
+    "title": "t1813270.html",
+    "file": "t1813270.html"
   },
   {
-    "title": "'Magic'",
-    "file": "showthread.php@t=1811821.htm"
+    "title": "t1813271.html",
+    "file": "t1813271.html"
   },
   {
-    "title": "Where DUZ the color go...?",
-    "file": "showthread.php@t=1811822.htm"
+    "title": "t1813272.html",
+    "file": "t1813272.html"
   },
   {
-    "title": "PROVE to Me God Actually Exists",
-    "file": "showthread.php@t=1811823.htm"
+    "title": "t1813273.html",
+    "file": "t1813273.html"
   },
   {
-    "title": "Holocaust Museum",
-    "file": "showthread.php@t=1811824.htm"
+    "title": "t1813274.html",
+    "file": "t1813274.html"
   },
   {
-    "title": "Wow incredible image of the Virgin Mary",
-    "file": "showthread.php@t=1811825.htm"
+    "title": "t1813275.html",
+    "file": "t1813275.html"
   },
   {
-    "title": "Christian beliefs on animal testing",
-    "file": "showthread.php@t=1811826.htm"
+    "title": "t1813276.html",
+    "file": "t1813276.html"
   },
   {
-    "title": "saltpeter",
-    "file": "showthread.php@t=1811828.htm"
+    "title": "t1813277.html",
+    "file": "t1813277.html"
   },
   {
-    "title": "Personal thoughts (Christians should understand)",
-    "file": "showthread.php@t=1811829.htm"
+    "title": "t1813278.html",
+    "file": "t1813278.html"
   },
   {
-    "title": "End Times",
-    "file": "showthread.php@t=1811830.htm"
+    "title": "t1813279.html",
+    "file": "t1813279.html"
   },
   {
-    "title": "Matzah accident",
-    "file": "showthread.php@t=1811831.htm"
+    "title": "t1813280.html",
+    "file": "t1813280.html"
   },
   {
-    "title": "God and Omniscience",
-    "file": "showthread.php@t=1811832.htm"
+    "title": "t1813281.html",
+    "file": "t1813281.html"
   },
   {
-    "title": "Jesus' last words",
-    "file": "showthread.php@t=1811833.htm"
+    "title": "t1813282.html",
+    "file": "t1813282.html"
   },
   {
-    "title": "Bible Viewer",
-    "file": "showthread.php@t=1811835.htm"
+    "title": "t1813283.html",
+    "file": "t1813283.html"
   },
   {
-    "title": "To Christians:",
-    "file": "showthread.php@t=1811836.htm"
+    "title": "t1813284.html",
+    "file": "t1813284.html"
   },
   {
-    "title": "To Religious people:",
-    "file": "showthread.php@t=1811837.htm"
+    "title": "t1813285.html",
+    "file": "t1813285.html"
   },
   {
-    "title": "To idiot fanatics:",
-    "file": "showthread.php@t=1811839.htm"
+    "title": "t1813286.html",
+    "file": "t1813286.html"
   },
   {
-    "title": "To God:",
-    "file": "showthread.php@t=1811840.htm"
+    "title": "t1813287.html",
+    "file": "t1813287.html"
   },
   {
-    "title": "How are those who are opposed to evolution",
-    "file": "showthread.php@t=1811841.htm"
+    "title": "t1813288.html",
+    "file": "t1813288.html"
   },
   {
-    "title": "If you overdose on Drugs...(Interesting thoughts)",
-    "file": "showthread.php@t=1811842.htm"
+    "title": "t1813289.html",
+    "file": "t1813289.html"
   },
   {
-    "title": "creation, again",
-    "file": "showthread.php@t=1811843.htm"
+    "title": "t1813290.html",
+    "file": "t1813290.html"
   },
   {
-    "title": "The End Of The World",
-    "file": "showthread.php@t=1811845.htm"
+    "title": "t1813291.html",
+    "file": "t1813291.html"
   },
   {
-    "title": "'Magic'",
-    "file": "showthread.php@t=1811846.htm"
+    "title": "t1813292.html",
+    "file": "t1813292.html"
   },
   {
-    "title": "Ouiji boards (who's done it?)",
-    "file": "showthread.php@t=1811848.htm"
+    "title": "t1813293.html",
+    "file": "t1813293.html"
   },
   {
-    "title": "Neuroanatomy and the Sistene Chapel",
-    "file": "showthread.php@t=1811849.htm"
+    "title": "t1813295.html",
+    "file": "t1813295.html"
   },
   {
-    "title": "atheist professor debates with student",
-    "file": "showthread.php@t=1811852.htm"
+    "title": "t1813296.html",
+    "file": "t1813296.html"
   },
   {
-    "title": "Who dies on a cross in one day?",
-    "file": "showthread.php@t=1811853.htm"
+    "title": "t1813297.html",
+    "file": "t1813297.html"
   },
   {
-    "title": "messages from mother mary and jesus themselves",
-    "file": "showthread.php@t=1811854.htm"
+    "title": "t1813298.html",
+    "file": "t1813298.html"
   },
   {
-    "title": "Benevolent and loving?",
-    "file": "showthread.php@t=1811856.htm"
+    "title": "t1813299.html",
+    "file": "t1813299.html"
   },
   {
-    "title": "Bible contradictions",
-    "file": "showthread.php@t=1811857.htm"
+    "title": "t1813300.html",
+    "file": "t1813300.html"
   },
   {
-    "title": "Someone's been tearing off the warning labels",
-    "file": "showthread.php@t=1811858.htm"
+    "title": "t1813301.html",
+    "file": "t1813301.html"
   },
   {
-    "title": "New Age Religion",
-    "file": "showthread.php@t=1811859.htm"
+    "title": "t1813302.html",
+    "file": "t1813302.html"
   },
   {
-    "title": "So if your not christian..",
-    "file": "showthread.php@t=1811860.htm"
+    "title": "t1813303.html",
+    "file": "t1813303.html"
   },
   {
-    "title": "Are we in the last days (christian)",
-    "file": "showthread.php@t=1811861.htm"
+    "title": "t1813304.html",
+    "file": "t1813304.html"
   },
   {
-    "title": "My posts won't show up :(",
-    "file": "showthread.php@t=1811863.htm"
+    "title": "t1813305.html",
+    "file": "t1813305.html"
   },
   {
-    "title": "A message to the masses",
-    "file": "showthread.php@t=1811864.htm"
+    "title": "t1813306.html",
+    "file": "t1813306.html"
   },
   {
-    "title": "Catholic Question",
-    "file": "showthread.php@t=1811866.htm"
+    "title": "t1813307.html",
+    "file": "t1813307.html"
   },
   {
-    "title": "New Bible Fragment Reveals the Number of the Beast is Really 616",
-    "file": "showthread.php@t=1811870.htm"
+    "title": "t1813308.html",
+    "file": "t1813308.html"
   },
   {
-    "title": "personal bias in the bible",
-    "file": "showthread.php@t=1811871.htm"
+    "title": "t1813309.html",
+    "file": "t1813309.html"
   },
   {
-    "title": "Fanatics",
-    "file": "showthread.php@t=1811873.htm"
+    "title": "t1813310.html",
+    "file": "t1813310.html"
   },
   {
-    "title": "An interesting take by issac Asimov",
-    "file": "showthread.php@t=1811877.htm"
+    "title": "t1813311.html",
+    "file": "t1813311.html"
   },
   {
-    "title": "the ark and other lies",
-    "file": "showthread.php@t=1811879.htm"
+    "title": "t1813312.html",
+    "file": "t1813312.html"
   },
   {
-    "title": "Today, May 5, is the National Day of Prayer",
-    "file": "showthread.php@t=1811880.htm"
+    "title": "t1813313.html",
+    "file": "t1813313.html"
   },
   {
-    "title": "A Slight Concession",
-    "file": "showthread.php@t=1811881.htm"
+    "title": "t1813314.html",
+    "file": "t1813314.html"
   },
   {
-    "title": "Do you take the Bible literally?",
-    "file": "showthread.php@t=1811882.htm"
+    "title": "t1813315.html",
+    "file": "t1813315.html"
   },
   {
-    "title": "Anointed",
-    "file": "showthread.php@t=1811883.htm"
+    "title": "t1813316.html",
+    "file": "t1813316.html"
   },
   {
-    "title": "Removal Of Creationist Book From Grand Canyon Bookstores",
-    "file": "showthread.php@t=1811884.htm"
+    "title": "t1813317.html",
+    "file": "t1813317.html"
   },
   {
-    "title": "What, not who, is God?",
-    "file": "showthread.php@t=1811885.htm"
+    "title": "t1813318.html",
+    "file": "t1813318.html"
   },
   {
-    "title": "Police in heaven",
-    "file": "showthread.php@t=1811886.htm"
+    "title": "t1813319.html",
+    "file": "t1813319.html"
   },
   {
-    "title": "Just let them live on in their fantasy world and ignorance",
-    "file": "showthread.php@t=1811887.htm"
+    "title": "t1813320.html",
+    "file": "t1813320.html"
   },
   {
-    "title": "Straight from Phelps, absolutely brilliant.",
-    "file": "showthread.php@t=1811888.htm"
+    "title": "t1813321.html",
+    "file": "t1813321.html"
   },
   {
-    "title": "Benedict",
-    "file": "showthread.php@t=1811889.htm"
+    "title": "t1813322.html",
+    "file": "t1813322.html"
   },
   {
-    "title": "email.. cute",
-    "file": "showthread.php@t=1811890.htm"
+    "title": "t1813323.html",
+    "file": "t1813323.html"
   },
   {
-    "title": "God",
-    "file": "showthread.php@t=1811891.htm"
+    "title": "t1813324.html",
+    "file": "t1813324.html"
   },
   {
-    "title": "occult philosophy, satanism, magick, alchemy",
-    "file": "showthread.php@t=1811892.htm"
+    "title": "t1813325.html",
+    "file": "t1813325.html"
   },
   {
-    "title": "My god beat the shit out of your god.",
-    "file": "showthread.php@t=1811893.htm"
+    "title": "t1813326.html",
+    "file": "t1813326.html"
   },
   {
-    "title": "Question for non Christians and the alike",
-    "file": "showthread.php@t=1811894.htm"
+    "title": "t1813327.html",
+    "file": "t1813327.html"
   },
   {
-    "title": "Lost Cause!",
-    "file": "showthread.php@t=1811895.htm"
+    "title": "t1813328.html",
+    "file": "t1813328.html"
   },
   {
-    "title": "A religion that worships music.",
-    "file": "showthread.php@t=1811897.htm"
+    "title": "t1813329.html",
+    "file": "t1813329.html"
   },
   {
-    "title": "Question to Jeb Bush",
-    "file": "showthread.php@t=1811898.htm"
+    "title": "t1813330.html",
+    "file": "t1813330.html"
   },
   {
-    "title": "Look how god cares",
-    "file": "showthread.php@t=1811899.htm"
+    "title": "t1813331.html",
+    "file": "t1813331.html"
   },
   {
-    "title": "Bushido",
-    "file": "showthread.php@t=1811900.htm"
+    "title": "t1813332.html",
+    "file": "t1813332.html"
   },
   {
-    "title": "Question to the Faithful",
-    "file": "showthread.php@t=1811901.htm"
+    "title": "t1813333.html",
+    "file": "t1813333.html"
   },
   {
-    "title": "My brutally honest opinion on christianity...",
-    "file": "showthread.php@t=1811902.htm"
+    "title": "t1813334.html",
+    "file": "t1813334.html"
   },
   {
-    "title": "I'm Catholic",
-    "file": "showthread.php@t=1811904.htm"
+    "title": "t1813335.html",
+    "file": "t1813335.html"
   },
   {
-    "title": "god can't be that nice a guy....",
-    "file": "showthread.php@t=1811906.htm"
+    "title": "t1813336.html",
+    "file": "t1813336.html"
   },
   {
-    "title": "If given the chance...",
-    "file": "showthread.php@t=1811907.htm"
+    "title": "t1813337.html",
+    "file": "t1813337.html"
   },
   {
-    "title": "God Exists... Athiests are Wrong",
-    "file": "showthread.php@t=1811908.htm"
+    "title": "t1813338.html",
+    "file": "t1813338.html"
   },
   {
-    "title": "Sexism in Religious Texts",
-    "file": "showthread.php@t=1811909.htm"
+    "title": "t1813339.html",
+    "file": "t1813339.html"
   },
   {
-    "title": "Is homosexuality a sin?",
-    "file": "showthread.php@t=1811910.htm"
+    "title": "t1813340.html",
+    "file": "t1813340.html"
   },
   {
-    "title": "Dear Mods:",
-    "file": "showthread.php@t=1811911.htm"
+    "title": "t1813341.html",
+    "file": "t1813341.html"
   },
   {
-    "title": "HOW TO REACH HEAVEN",
-    "file": "showthread.php@t=1811912.htm"
+    "title": "t1813342.html",
+    "file": "t1813342.html"
   },
   {
-    "title": "Any polytheists here?",
-    "file": "showthread.php@t=1811913.htm"
+    "title": "t1813343.html",
+    "file": "t1813343.html"
   },
   {
-    "title": "Crusades",
-    "file": "showthread.php@t=1811914.htm"
+    "title": "t1813344.html",
+    "file": "t1813344.html"
   },
   {
-    "title": "Are Ugaritic texts religious documents or not?",
-    "file": "showthread.php@t=1811915.htm"
+    "title": "t1813345.html",
+    "file": "t1813345.html"
   },
   {
-    "title": "Question to any atheist",
-    "file": "showthread.php@t=1811916.htm"
+    "title": "t1813346.html",
+    "file": "t1813346.html"
   },
   {
-    "title": "Lets all be brutally honests - Atheists and Believers",
-    "file": "showthread.php@t=1811917.htm"
+    "title": "t1813347.html",
+    "file": "t1813347.html"
   },
   {
-    "title": "Compassion.",
-    "file": "showthread.php@t=1812922.htm"
+    "title": "t1813348.html",
+    "file": "t1813348.html"
   },
   {
-    "title": "Lucifer's Light!",
-    "file": "showthread.php@t=1812923.htm"
+    "title": "t1813349.html",
+    "file": "t1813349.html"
   },
   {
-    "title": "what if we could...................",
-    "file": "showthread.php@t=1812924.htm"
+    "title": "t1813350.html",
+    "file": "t1813350.html"
   },
   {
-    "title": "Poll: Norse or Greek?",
-    "file": "showthread.php@t=1812925.htm"
+    "title": "t1813351.html",
+    "file": "t1813351.html"
   },
   {
-    "title": "Principle or Practice - Which Defines Christianity?",
-    "file": "showthread.php@t=1812926.htm"
+    "title": "t1813352.html",
+    "file": "t1813352.html"
   },
   {
-    "title": "Origins of Christianity",
-    "file": "showthread.php@t=1812927.htm"
+    "title": "t1813353.html",
+    "file": "t1813353.html"
   },
   {
-    "title": "need some quick help (Jew question)",
-    "file": "showthread.php@t=1812928.htm"
+    "title": "t1813354.html",
+    "file": "t1813354.html"
   },
   {
-    "title": "Astral projection replacing religion",
-    "file": "showthread.php@t=1812929.htm"
+    "title": "t1813355.html",
+    "file": "t1813355.html"
   },
   {
-    "title": "God or an Angel Text Messaged Me",
-    "file": "showthread.php@t=1812930.htm"
+    "title": "t1813356.html",
+    "file": "t1813356.html"
   },
   {
-    "title": "To the Body of Christ [Not to the World]",
-    "file": "showthread.php@t=1812931.htm"
+    "title": "t1813357.html",
+    "file": "t1813357.html"
   },
   {
-    "title": "Why was my message locked?",
-    "file": "showthread.php@t=1812932.htm"
+    "title": "t1813358.html",
+    "file": "t1813358.html"
   },
   {
-    "title": "is anyone offended by this picture?",
-    "file": "showthread.php@t=1812933.htm"
+    "title": "t1813359.html",
+    "file": "t1813359.html"
   },
   {
-    "title": "What is God thinking when I'm driving drunk?",
-    "file": "showthread.php@t=1812934.htm"
+    "title": "t1813360.html",
+    "file": "t1813360.html"
   },
   {
-    "title": "Whats..",
-    "file": "showthread.php@t=1812935.htm"
+    "title": "t1813361.html",
+    "file": "t1813361.html"
   },
   {
-    "title": "my opinion of religion",
-    "file": "showthread.php@t=1812936.htm"
+    "title": "t1813362.html",
+    "file": "t1813362.html"
   },
   {
-    "title": "If god exists then so does the devil? is that concept acceptable in the modern world?",
-    "file": "showthread.php@t=1812937.htm"
+    "title": "t1813363.html",
+    "file": "t1813363.html"
   },
   {
-    "title": "Evolution Vs Intelligent Design in school",
-    "file": "showthread.php@t=1812938.htm"
+    "title": "t1813364.html",
+    "file": "t1813364.html"
   },
   {
-    "title": "the principia discorda",
-    "file": "showthread.php@t=1812939.htm"
+    "title": "t1813365.html",
+    "file": "t1813365.html"
   },
   {
-    "title": "intelligent christians",
-    "file": "showthread.php@t=1812940.htm"
+    "title": "t1813366.html",
+    "file": "t1813366.html"
   },
   {
-    "title": "Biblical Flaws: Inconsistent triad",
-    "file": "showthread.php@t=1812941.htm"
+    "title": "t1813367.html",
+    "file": "t1813367.html"
   },
   {
-    "title": "If we didnt have religon, what would happen?",
-    "file": "showthread.php@t=1812942.htm"
+    "title": "t1813368.html",
+    "file": "t1813368.html"
   },
   {
-    "title": "Conscious Evolution",
-    "file": "showthread.php@t=1812943.htm"
+    "title": "t1813369.html",
+    "file": "t1813369.html"
   },
   {
-    "title": "decisions that you do not make, they are made for you.",
-    "file": "showthread.php@t=1812944.htm"
+    "title": "t1813370.html",
+    "file": "t1813370.html"
   },
   {
-    "title": "Some Questions Concerning Atheists.",
-    "file": "showthread.php@t=1812945.htm"
+    "title": "t1813371.html",
+    "file": "t1813371.html"
   },
   {
-    "title": "my essay for shcool",
-    "file": "showthread.php@t=1812946.htm"
+    "title": "t1813372.html",
+    "file": "t1813372.html"
   },
   {
-    "title": "Kane is the only god.",
-    "file": "showthread.php@t=1812947.htm"
+    "title": "t1813373.html",
+    "file": "t1813373.html"
   },
   {
-    "title": "Aliens",
-    "file": "showthread.php@t=1812948.htm"
+    "title": "t1813374.html",
+    "file": "t1813374.html"
   },
   {
-    "title": "Christians dont exist",
-    "file": "showthread.php@t=1812949.htm"
+    "title": "t1813375.html",
+    "file": "t1813375.html"
   },
   {
-    "title": "I love god!",
-    "file": "showthread.php@t=1812950.htm"
+    "title": "t1813376.html",
+    "file": "t1813376.html"
   },
   {
-    "title": "God (just plain old god)",
-    "file": "showthread.php@t=1812951.htm"
+    "title": "t1813377.html",
+    "file": "t1813377.html"
   },
   {
-    "title": "YO MTV RAPS",
-    "file": "showthread.php@t=1812952.htm"
+    "title": "t1813378.html",
+    "file": "t1813378.html"
   },
   {
-    "title": "Homos",
-    "file": "showthread.php@t=1812953.htm"
+    "title": "t1813379.html",
+    "file": "t1813379.html"
   },
   {
-    "title": "dd",
-    "file": "showthread.php@t=1812954.htm"
+    "title": "t1813380.html",
+    "file": "t1813380.html"
   },
   {
-    "title": "Christians with cutlasses go after Muslims in Nigeria...",
-    "file": "showthread.php@t=1812955.htm"
+    "title": "t1813381.html",
+    "file": "t1813381.html"
   },
   {
-    "title": "HAHAHAHAHAHA",
-    "file": "showthread.php@t=1812956.htm"
+    "title": "t1813382.html",
+    "file": "t1813382.html"
   },
   {
-    "title": "I'm a Christian...",
-    "file": "showthread.php@t=1812957.htm"
+    "title": "t1813383.html",
+    "file": "t1813383.html"
   },
   {
-    "title": "Christians, help me see the light!",
-    "file": "showthread.php@t=1812958.htm"
+    "title": "t1813384.html",
+    "file": "t1813384.html"
   },
   {
-    "title": "I want to join a monastery!",
-    "file": "showthread.php@t=1812959.htm"
+    "title": "t1813385.html",
+    "file": "t1813385.html"
   },
   {
-    "title": "About the Christian wine-drinking...",
-    "file": "showthread.php@t=1812960.htm"
+    "title": "t1813386.html",
+    "file": "t1813386.html"
   },
   {
-    "title": "I have to ask this",
-    "file": "showthread.php@t=1812961.htm"
+    "title": "t1813388.html",
+    "file": "t1813388.html"
   },
   {
-    "title": "Something that has to be asked",
-    "file": "showthread.php@t=1812962.htm"
+    "title": "t1813389.html",
+    "file": "t1813389.html"
   },
   {
-    "title": "Why the fuck did Jesus vape the fig tree?",
-    "file": "showthread.php@t=1812963.htm"
+    "title": "t1813390.html",
+    "file": "t1813390.html"
   },
   {
-    "title": "The islamic religion is for mentally weak radicals (excluding christians).",
-    "file": "showthread.php@t=1812964.htm"
+    "title": "t1813391.html",
+    "file": "t1813391.html"
   },
   {
-    "title": "Was Mary raped by THE HOLY GHOST???",
-    "file": "showthread.php@t=1812965.htm"
+    "title": "t1813392.html",
+    "file": "t1813392.html"
   },
   {
-    "title": "Reincarnation",
-    "file": "showthread.php@t=1812966.htm"
+    "title": "t1813393.html",
+    "file": "t1813393.html"
   },
   {
-    "title": "Why does the bible have two creation stories?",
-    "file": "showthread.php@t=1812967.htm"
+    "title": "t1813394.html",
+    "file": "t1813394.html"
   },
   {
-    "title": "someone explain to me the diff between sunni's and shiaites",
-    "file": "showthread.php@t=1812968.htm"
+    "title": "t1813395.html",
+    "file": "t1813395.html"
   },
   {
-    "title": "What is the church's obsession with 3's?",
-    "file": "showthread.php@t=1812969.htm"
+    "title": "t1813396.html",
+    "file": "t1813396.html"
   },
   {
-    "title": "Should I become a Buddhist?",
-    "file": "showthread.php@t=1812970.htm"
+    "title": "t1813397.html",
+    "file": "t1813397.html"
   },
   {
-    "title": "Scientists Wrong About Mesozoic Mammals...",
-    "file": "showthread.php@t=1812971.htm"
+    "title": "t1813398.html",
+    "file": "t1813398.html"
   },
   {
-    "title": "A few good quotes to live by.",
-    "file": "showthread.php@t=1812972.htm"
+    "title": "t1813399.html",
+    "file": "t1813399.html"
   },
   {
-    "title": "A christian opinion",
-    "file": "showthread.php@t=1812973.htm"
+    "title": "t1813400.html",
+    "file": "t1813400.html"
   },
   {
-    "title": "all religeons are wrong",
-    "file": "showthread.php@t=1812974.htm"
+    "title": "t1813401.html",
+    "file": "t1813401.html"
   },
   {
-    "title": "In the end, intelligent design doesn't serve christian belief",
-    "file": "showthread.php@t=1812975.htm"
+    "title": "t1813402.html",
+    "file": "t1813402.html"
   },
   {
-    "title": "god, tv, and santa claus punching the clown...",
-    "file": "showthread.php@t=1812976.htm"
+    "title": "t1813403.html",
+    "file": "t1813403.html"
   },
   {
-    "title": "Is religion the cause of war?",
-    "file": "showthread.php@t=1812977.htm"
+    "title": "t1813404.html",
+    "file": "t1813404.html"
   },
   {
-    "title": "questioning religion at young age?",
-    "file": "showthread.php@t=1812978.htm"
+    "title": "t1813405.html",
+    "file": "t1813405.html"
   },
   {
-    "title": "The Bible.",
-    "file": "showthread.php@t=1812979.htm"
+    "title": "t1813406.html",
+    "file": "t1813406.html"
   },
   {
-    "title": "Who are your favourite proponents of atheism?",
-    "file": "showthread.php@t=1812980.htm"
+    "title": "t1813407.html",
+    "file": "t1813407.html"
   },
   {
-    "title": "Hello, I am god.",
-    "file": "showthread.php@t=1812981.htm"
+    "title": "t1813408.html",
+    "file": "t1813408.html"
   },
   {
-    "title": "Losing the faith...",
-    "file": "showthread.php@t=1812982.htm"
+    "title": "t1813409.html",
+    "file": "t1813409.html"
   },
   {
-    "title": "fuck both sides of this argument.",
-    "file": "showthread.php@t=1812983.htm"
+    "title": "t1813410.html",
+    "file": "t1813410.html"
   },
   {
-    "title": "faith versus scientific method",
-    "file": "showthread.php@t=1812984.htm"
+    "title": "t1813411.html",
+    "file": "t1813411.html"
   },
   {
-    "title": "Catholicism :-/",
-    "file": "showthread.php@t=1812985.htm"
+    "title": "t1813412.html",
+    "file": "t1813412.html"
   },
   {
-    "title": "My clear-time joke.",
-    "file": "showthread.php@t=1812986.htm"
+    "title": "t1813416.html",
+    "file": "t1813416.html"
   },
   {
-    "title": "Is Agnostic Christianity possible?",
-    "file": "showthread.php@t=1812987.htm"
+    "title": "t1813417.html",
+    "file": "t1813417.html"
   },
   {
-    "title": "Mormonism",
-    "file": "showthread.php@t=1812988.htm"
+    "title": "t1813418.html",
+    "file": "t1813418.html"
   },
   {
-    "title": "Ask a Christian a question.",
-    "file": "showthread.php@t=1812989.htm"
+    "title": "t1813419.html",
+    "file": "t1813419.html"
   },
   {
-    "title": "I just gotta answer this",
-    "file": "showthread.php@t=1812990.htm"
+    "title": "t1813420.html",
+    "file": "t1813420.html"
   },
   {
-    "title": "DO JESUS SHAVE HIS POOSY???!",
-    "file": "showthread.php@t=1812991.htm"
+    "title": "t1813422.html",
+    "file": "t1813422.html"
   },
   {
-    "title": "so if you pray for something bad to happen. . .",
-    "file": "showthread.php@t=1812992.htm"
+    "title": "t1813424.html",
+    "file": "t1813424.html"
   },
   {
-    "title": "Why do you believe what you believe???",
-    "file": "showthread.php@t=1812993.htm"
+    "title": "t1813425.html",
+    "file": "t1813425.html"
   },
   {
-    "title": "The Truth",
-    "file": "showthread.php@t=1812994.htm"
+    "title": "t1813426.html",
+    "file": "t1813426.html"
   },
   {
-    "title": "Have Any Biblical Prophecies Been Fufilled?",
-    "file": "showthread.php@t=1812995.htm"
+    "title": "t1813427.html",
+    "file": "t1813427.html"
   },
   {
-    "title": "The Pope was in the Hitler Youth",
-    "file": "showthread.php@t=1812996.htm"
+    "title": "t1813428.html",
+    "file": "t1813428.html"
   },
   {
-    "title": "religion = teh_suck",
-    "file": "showthread.php@t=1812997.htm"
+    "title": "t1813429.html",
+    "file": "t1813429.html"
   },
   {
-    "title": "my brief op on christianity",
-    "file": "showthread.php@t=1812998.htm"
+    "title": "t1813430.html",
+    "file": "t1813430.html"
   },
   {
-    "title": "Muslims are insane",
-    "file": "showthread.php@t=1812999.htm"
+    "title": "t1813431.html",
+    "file": "t1813431.html"
   },
   {
-    "title": "God is dog backwards.",
-    "file": "showthread.php@t=1813000.htm"
+    "title": "t1813432.html",
+    "file": "t1813432.html"
   },
   {
-    "title": "All religions are false",
-    "file": "showthread.php@t=1813001.htm"
+    "title": "t1813433.html",
+    "file": "t1813433.html"
   },
   {
-    "title": "An argument for/against evolution & a question.",
-    "file": "showthread.php@t=1813002.htm"
+    "title": "t1813434.html",
+    "file": "t1813434.html"
   },
   {
-    "title": "Why you should not read the Bible",
-    "file": "showthread.php@t=1813003.htm"
+    "title": "t1813435.html",
+    "file": "t1813435.html"
   },
   {
-    "title": "Catholic Questions",
-    "file": "showthread.php@t=1813004.htm"
+    "title": "t1813436.html",
+    "file": "t1813436.html"
   },
   {
-    "title": "Christian state-schools",
-    "file": "showthread.php@t=1813005.htm"
+    "title": "t1813437.html",
+    "file": "t1813437.html"
   },
   {
-    "title": "Think you know the bible?",
-    "file": "showthread.php@t=1813006.htm"
+    "title": "t1813438.html",
+    "file": "t1813438.html"
   },
   {
-    "title": "I honestly want to know..",
-    "file": "showthread.php@t=1813007.htm"
+    "title": "t1813439.html",
+    "file": "t1813439.html"
   },
   {
-    "title": "Still don't believe in evolution?",
-    "file": "showthread.php@t=1813008.htm"
+    "title": "t1813440.html",
+    "file": "t1813440.html"
   },
   {
-    "title": "Does spreading 'The Word' do more harm than good?",
-    "file": "showthread.php@t=1813009.htm"
+    "title": "t1813441.html",
+    "file": "t1813441.html"
   },
   {
-    "title": "Why do you put your palms together when you pray?",
-    "file": "showthread.php@t=1813010.htm"
+    "title": "t1813442.html",
+    "file": "t1813442.html"
   },
   {
-    "title": "Arsonists Arrested",
-    "file": "showthread.php@t=1813011.htm"
+    "title": "t1813443.html",
+    "file": "t1813443.html"
   },
   {
-    "title": "The Urantia Papers",
-    "file": "showthread.php@t=1813012.htm"
+    "title": "t1813444.html",
+    "file": "t1813444.html"
   },
   {
-    "title": "out of all major religions to come and pass...",
-    "file": "showthread.php@t=1813013.htm"
+    "title": "t1813445.html",
+    "file": "t1813445.html"
   },
   {
-    "title": "Questioning the \"All Powerfull\" Christian God",
-    "file": "showthread.php@t=1813014.htm"
+    "title": "t1813446.html",
+    "file": "t1813446.html"
   },
   {
-    "title": "The explanation of FATE",
-    "file": "showthread.php@t=1813015.htm"
+    "title": "t1813447.html",
+    "file": "t1813447.html"
   },
   {
-    "title": "what happens to jews when they die?",
-    "file": "showthread.php@t=1813016.htm"
+    "title": "t1813448.html",
+    "file": "t1813448.html"
   },
   {
-    "title": "Jesus was a Hindu",
-    "file": "showthread.php@t=1813017.htm"
+    "title": "t1813449.html",
+    "file": "t1813449.html"
   },
   {
-    "title": "Earth?",
-    "file": "showthread.php@t=1813018.htm"
+    "title": "t1813450.html",
+    "file": "t1813450.html"
   },
   {
-    "title": "Love",
-    "file": "showthread.php@t=1813019.htm"
+    "title": "t1813451.html",
+    "file": "t1813451.html"
   },
   {
-    "title": "is it possible god exists but simply isn't all powerful?",
-    "file": "showthread.php@t=1813020.htm"
+    "title": "t1813452.html",
+    "file": "t1813452.html"
   },
   {
-    "title": "Catholicism",
-    "file": "showthread.php@t=1813021.htm"
+    "title": "t1813454.html",
+    "file": "t1813454.html"
   },
   {
-    "title": "Philosophical Question",
-    "file": "showthread.php@t=1813022.htm"
+    "title": "t1813456.html",
+    "file": "t1813456.html"
   },
   {
-    "title": "a suggestion",
-    "file": "showthread.php@t=1813023.htm"
+    "title": "t1813457.html",
+    "file": "t1813457.html"
   },
   {
-    "title": "Am i meditating correctly?",
-    "file": "showthread.php@t=1813024.htm"
+    "title": "t1813458.html",
+    "file": "t1813458.html"
   },
   {
-    "title": "Jehovah Witnesses",
-    "file": "showthread.php@t=1813025.htm"
+    "title": "t1813459.html",
+    "file": "t1813459.html"
   },
   {
-    "title": "Atheism vs Christianity: Does God Exist?",
-    "file": "showthread.php@t=1813026.htm"
+    "title": "t1813460.html",
+    "file": "t1813460.html"
   },
   {
-    "title": "why did god make our anus's so fragile??",
-    "file": "showthread.php@t=1813027.htm"
+    "title": "t1813461.html",
+    "file": "t1813461.html"
   },
   {
-    "title": "Why was religion created?",
-    "file": "showthread.php@t=1813028.htm"
+    "title": "t1813462.html",
+    "file": "t1813462.html"
   },
   {
-    "title": "Darwinism and god (serious)",
-    "file": "showthread.php@t=1813029.htm"
+    "title": "t1813463.html",
+    "file": "t1813463.html"
   },
   {
-    "title": "Satanism",
-    "file": "showthread.php@t=1813030.htm"
+    "title": "t1813464.html",
+    "file": "t1813464.html"
   },
   {
-    "title": "If god created man, who created god?",
-    "file": "showthread.php@t=1813031.htm"
+    "title": "t1813465.html",
+    "file": "t1813465.html"
   },
   {
-    "title": "Cults and \"organized\" religion",
-    "file": "showthread.php@t=1813032.htm"
+    "title": "t1813467.html",
+    "file": "t1813467.html"
   },
   {
-    "title": "Do any of you feel that your going where you want to?",
-    "file": "showthread.php@t=1813033.htm"
+    "title": "t1813468.html",
+    "file": "t1813468.html"
   },
   {
-    "title": "The TRUTH about the Bible",
-    "file": "showthread.php@t=1813034.htm"
+    "title": "t1813469.html",
+    "file": "t1813469.html"
   },
   {
-    "title": "Can anyone confirm this John Paul II event?",
-    "file": "showthread.php@t=1813035.htm"
+    "title": "t1813471.html",
+    "file": "t1813471.html"
   },
   {
-    "title": "So I got my free Koran in the mail yesterday",
-    "file": "showthread.php@t=1813036.htm"
+    "title": "t1813473.html",
+    "file": "t1813473.html"
   },
   {
-    "title": "Why?",
-    "file": "showthread.php@t=1813037.htm"
+    "title": "t1813474.html",
+    "file": "t1813474.html"
   },
   {
-    "title": "Rust!",
-    "file": "showthread.php@t=1813038.htm"
+    "title": "t1813475.html",
+    "file": "t1813475.html"
   },
   {
-    "title": "Jesus and Charlie Manson.",
-    "file": "showthread.php@t=1813039.htm"
+    "title": "t1813476.html",
+    "file": "t1813476.html"
   },
   {
-    "title": "Ok to eat meat?",
-    "file": "showthread.php@t=1813040.htm"
+    "title": "t1813477.html",
+    "file": "t1813477.html"
   },
   {
-    "title": "heard it on the radio, if that says anything",
-    "file": "showthread.php@t=1813041.htm"
+    "title": "t1813478.html",
+    "file": "t1813478.html"
   },
   {
-    "title": "Allah and Ghayrullah. A simple brief.",
-    "file": "showthread.php@t=1813042.htm"
+    "title": "t1813479.html",
+    "file": "t1813479.html"
   },
   {
-    "title": "I am GOD",
-    "file": "showthread.php@t=1813043.htm"
+    "title": "t1813480.html",
+    "file": "t1813480.html"
   },
   {
-    "title": "Islam",
-    "file": "showthread.php@t=1813044.htm"
+    "title": "t1813481.html",
+    "file": "t1813481.html"
   },
   {
-    "title": "Religious tolerance",
-    "file": "showthread.php@t=1813045.htm"
+    "title": "t1813482.html",
+    "file": "t1813482.html"
   },
   {
-    "title": "I need some questions/ideas that disprove christianity",
-    "file": "showthread.php@t=1813046.htm"
+    "title": "t1813483.html",
+    "file": "t1813483.html"
   },
   {
-    "title": "PI in the Bible",
-    "file": "showthread.php@t=1813047.htm"
+    "title": "t1813484.html",
+    "file": "t1813484.html"
   },
   {
-    "title": "Herod and Christ - A look at Matthew and Luke",
-    "file": "showthread.php@t=1813048.htm"
+    "title": "t1813485.html",
+    "file": "t1813485.html"
   },
   {
-    "title": "Refute these bibical contradications",
-    "file": "showthread.php@t=1813049.htm"
+    "title": "t1813486.html",
+    "file": "t1813486.html"
   },
   {
-    "title": "There's no God. When will you realize this?",
-    "file": "showthread.php@t=1813050.htm"
+    "title": "t1813489.html",
+    "file": "t1813489.html"
   },
   {
-    "title": "Atheism and depression",
-    "file": "showthread.php@t=1813051.htm"
+    "title": "t1813492.html",
+    "file": "t1813492.html"
   },
   {
-    "title": "US taxpayers finance 'silver ring thing'",
-    "file": "showthread.php@t=1813052.htm"
+    "title": "t1813493.html",
+    "file": "t1813493.html"
   },
   {
-    "title": "Does the following statement sound familiar?",
-    "file": "showthread.php@t=1813053.htm"
+    "title": "t1813495.html",
+    "file": "t1813495.html"
   },
   {
-    "title": "Best Creation Myth",
-    "file": "showthread.php@t=1813054.htm"
+    "title": "t1813496.html",
+    "file": "t1813496.html"
   },
   {
-    "title": "prophets or poets in the bible",
-    "file": "showthread.php@t=1813055.htm"
+    "title": "t1813497.html",
+    "file": "t1813497.html"
   },
   {
-    "title": "Question for Christians only, what is the answer to this social question?",
-    "file": "showthread.php@t=1813056.htm"
+    "title": "t1813500.html",
+    "file": "t1813500.html"
   },
   {
-    "title": "Islam vs Christianity",
-    "file": "showthread.php@t=1813057.htm"
+    "title": "t1813501.html",
+    "file": "t1813501.html"
   },
   {
-    "title": "Lets be honest with each other....",
-    "file": "showthread.php@t=1813058.htm"
+    "title": "t1813502.html",
+    "file": "t1813502.html"
   },
   {
-    "title": "Suggest a religion to me...",
-    "file": "showthread.php@t=1813059.htm"
+    "title": "t1813503.html",
+    "file": "t1813503.html"
   },
   {
-    "title": "Asatru",
-    "file": "showthread.php@t=1813060.htm"
+    "title": "t1813504.html",
+    "file": "t1813504.html"
   },
   {
-    "title": "i want an interesting religion.",
-    "file": "showthread.php@t=1813061.htm"
+    "title": "t1813505.html",
+    "file": "t1813505.html"
   },
   {
-    "title": "Are people going to continually mock me just because i believe in something?",
-    "file": "showthread.php@t=1813062.htm"
+    "title": "t1813506.html",
+    "file": "t1813506.html"
   },
   {
-    "title": "Similarities between Pandora's Box and The Garden of Eden",
-    "file": "showthread.php@t=1813063.htm"
+    "title": "t1813507.html",
+    "file": "t1813507.html"
   },
   {
-    "title": "Fun with babelfish",
-    "file": "showthread.php@t=1813064.htm"
+    "title": "t1813508.html",
+    "file": "t1813508.html"
   },
   {
-    "title": "Christianity Vs. Paganist",
-    "file": "showthread.php@t=1813065.htm"
+    "title": "t1813509.html",
+    "file": "t1813509.html"
   },
   {
-    "title": "True Bible facts",
-    "file": "showthread.php@t=1813066.htm"
+    "title": "t1813512.html",
+    "file": "t1813512.html"
   },
   {
-    "title": "religion-the source of all violence?",
-    "file": "showthread.php@t=1813067.htm"
+    "title": "t1813513.html",
+    "file": "t1813513.html"
   },
   {
-    "title": "Do you have a religion?",
-    "file": "showthread.php@t=1813068.htm"
+    "title": "t1813514.html",
+    "file": "t1813514.html"
   },
   {
-    "title": "Is religion dead in the West?",
-    "file": "showthread.php@t=1813069.htm"
+    "title": "t1813515.html",
+    "file": "t1813515.html"
   },
   {
-    "title": "All about Pentecostals",
-    "file": "showthread.php@t=1813070.htm"
+    "title": "t1813517.html",
+    "file": "t1813517.html"
   },
   {
-    "title": "How Do We Know God Is The Right One?",
-    "file": "showthread.php@t=1813071.htm"
+    "title": "t1813518.html",
+    "file": "t1813518.html"
   },
   {
-    "title": "A spontaneous rant... I think we can all identify with these thoughts.",
-    "file": "showthread.php@t=1813072.htm"
+    "title": "t1813519.html",
+    "file": "t1813519.html"
   },
   {
-    "title": "Islam",
-    "file": "showthread.php@t=1813073.htm"
+    "title": "t1813520.html",
+    "file": "t1813520.html"
   },
   {
-    "title": "The Jedi Religion",
-    "file": "showthread.php@t=1813074.htm"
+    "title": "t1813522.html",
+    "file": "t1813522.html"
   },
   {
-    "title": "are there any people of faith?",
-    "file": "showthread.php@t=1813075.htm"
+    "title": "t1813523.html",
+    "file": "t1813523.html"
   },
   {
-    "title": "Christian people",
-    "file": "showthread.php@t=1813076.htm"
+    "title": "t1813524.html",
+    "file": "t1813524.html"
   },
   {
-    "title": "Blinded by darkness",
-    "file": "showthread.php@t=1813077.htm"
+    "title": "t1813525.html",
+    "file": "t1813525.html"
   },
   {
-    "title": "2 questions i have never had an original answer to.",
-    "file": "showthread.php@t=1813078.htm"
+    "title": "t1813526.html",
+    "file": "t1813526.html"
   },
   {
-    "title": "Educate me in the matters of your christian god",
-    "file": "showthread.php@t=1813079.htm"
+    "title": "t1813527.html",
+    "file": "t1813527.html"
   },
   {
-    "title": "Arkansas angers me....",
-    "file": "showthread.php@t=1813080.htm"
+    "title": "t1813528.html",
+    "file": "t1813528.html"
   },
   {
-    "title": "Question for Creationists",
-    "file": "showthread.php@t=1813081.htm"
+    "title": "t1813529.html",
+    "file": "t1813529.html"
   },
   {
-    "title": "The worlds most rationale arab",
-    "file": "showthread.php@t=1813082.htm"
+    "title": "t1813531.html",
+    "file": "t1813531.html"
   },
   {
-    "title": "I wrote the bible",
-    "file": "showthread.php@t=1813083.htm"
+    "title": "t1813532.html",
+    "file": "t1813532.html"
   },
   {
-    "title": "North American Shamanism - Questions for my project...",
-    "file": "showthread.php@t=1813084.htm"
+    "title": "t1813533.html",
+    "file": "t1813533.html"
   },
   {
-    "title": "The Satanic Bible",
-    "file": "showthread.php@t=1813085.htm"
+    "title": "t1813534.html",
+    "file": "t1813534.html"
   },
   {
-    "title": "Just thought this may be of some interest...",
-    "file": "showthread.php@t=1813086.htm"
+    "title": "t1813535.html",
+    "file": "t1813535.html"
   },
   {
-    "title": "In a survey of 50 countries, the US has one of the lowest percentages of atheists",
-    "file": "showthread.php@t=1813087.htm"
+    "title": "t1813537.html",
+    "file": "t1813537.html"
   },
   {
-    "title": "Just wondering - Double standards?",
-    "file": "showthread.php@t=1813088.htm"
+    "title": "t1813539.html",
+    "file": "t1813539.html"
   },
   {
-    "title": "theory on why God hasnt showed himself in a while",
-    "file": "showthread.php@t=1813089.htm"
+    "title": "t1813540.html",
+    "file": "t1813540.html"
   },
   {
-    "title": "prieure de sion",
-    "file": "showthread.php@t=1813090.htm"
+    "title": "t1813542.html",
+    "file": "t1813542.html"
   },
   {
-    "title": "questions about the davinci code",
-    "file": "showthread.php@t=1813091.htm"
+    "title": "t1813543.html",
+    "file": "t1813543.html"
   },
   {
-    "title": "Women...",
-    "file": "showthread.php@t=1813092.htm"
+    "title": "t1813544.html",
+    "file": "t1813544.html"
   },
   {
-    "title": "Limbo",
-    "file": "showthread.php@t=1813093.htm"
+    "title": "t1813545.html",
+    "file": "t1813545.html"
   },
   {
-    "title": "*Proof*  God exists!  *Proof*",
-    "file": "showthread.php@t=1813094.htm"
+    "title": "t1813546.html",
+    "file": "t1813546.html"
   },
   {
-    "title": "I want to become a missionary!",
-    "file": "showthread.php@t=1813095.htm"
+    "title": "t1813547.html",
+    "file": "t1813547.html"
   },
   {
-    "title": "So... this evolution vs intelligent design debate is hot stuff eh?",
-    "file": "showthread.php@t=1813096.htm"
+    "title": "t1813549.html",
+    "file": "t1813549.html"
   },
   {
-    "title": "Key figures in the great schism",
-    "file": "showthread.php@t=1813097.htm"
+    "title": "t1813550.html",
+    "file": "t1813550.html"
   },
   {
-    "title": "Creation of an Entity through belief",
-    "file": "showthread.php@t=1813098.htm"
+    "title": "t1813551.html",
+    "file": "t1813551.html"
   },
   {
-    "title": "Question for Christians: Do you know what evolution is?",
-    "file": "showthread.php@t=1813099.htm"
+    "title": "t1813552.html",
+    "file": "t1813552.html"
   },
   {
-    "title": "I want to convert to Judaism",
-    "file": "showthread.php@t=1813100.htm"
+    "title": "t1813553.html",
+    "file": "t1813553.html"
   },
   {
-    "title": "Muslims",
-    "file": "showthread.php@t=1813101.htm"
+    "title": "t1813554.html",
+    "file": "t1813554.html"
   },
   {
-    "title": "Hilarious",
-    "file": "showthread.php@t=1813102.htm"
+    "title": "t1813555.html",
+    "file": "t1813555.html"
   },
   {
-    "title": "homosexuality and the bible",
-    "file": "showthread.php@t=1813103.htm"
+    "title": "t1813556.html",
+    "file": "t1813556.html"
   },
   {
-    "title": "Koans",
-    "file": "showthread.php@t=1813104.htm"
+    "title": "t1813557.html",
+    "file": "t1813557.html"
   },
   {
-    "title": "fuck all religons",
-    "file": "showthread.php@t=1813105.htm"
+    "title": "t1813558.html",
+    "file": "t1813558.html"
   },
   {
-    "title": "Third Eyes....",
-    "file": "showthread.php@t=1813106.htm"
+    "title": "t1813559.html",
+    "file": "t1813559.html"
   },
   {
-    "title": "the end",
-    "file": "showthread.php@t=1813107.htm"
+    "title": "t1813560.html",
+    "file": "t1813560.html"
   },
   {
-    "title": "For what shall it profit a man,",
-    "file": "showthread.php@t=1813108.htm"
+    "title": "t1813561.html",
+    "file": "t1813561.html"
   },
   {
-    "title": "do any of you think god is real.",
-    "file": "showthread.php@t=1813109.htm"
+    "title": "t1813562.html",
+    "file": "t1813562.html"
   },
   {
-    "title": "Question to fellow atheists...",
-    "file": "showthread.php@t=1813110.htm"
+    "title": "t1813563.html",
+    "file": "t1813563.html"
   },
   {
-    "title": "Who wrote Revs and why does it avoid....",
-    "file": "showthread.php@t=1813111.htm"
+    "title": "t1813564.html",
+    "file": "t1813564.html"
   },
   {
-    "title": "a great insite",
-    "file": "showthread.php@t=1813112.htm"
+    "title": "t1813565.html",
+    "file": "t1813565.html"
   },
   {
-    "title": "Protestant Denominations (humor)",
-    "file": "showthread.php@t=1813113.htm"
+    "title": "t1813566.html",
+    "file": "t1813566.html"
   },
   {
-    "title": "The Raelian Message",
-    "file": "showthread.php@t=1813114.htm"
+    "title": "t1813568.html",
+    "file": "t1813568.html"
   },
   {
-    "title": "Would the world be better off without religion?",
-    "file": "showthread.php@t=1813115.htm"
+    "title": "t1813569.html",
+    "file": "t1813569.html"
   },
   {
-    "title": "Christianity and Name Change...",
-    "file": "showthread.php@t=1813116.htm"
+    "title": "t1813571.html",
+    "file": "t1813571.html"
   },
   {
-    "title": "The Devious Daiey theory",
-    "file": "showthread.php@t=1813117.htm"
+    "title": "t1813572.html",
+    "file": "t1813572.html"
   },
   {
-    "title": "The Handling of Holy Texts",
-    "file": "showthread.php@t=1813118.htm"
+    "title": "t1813573.html",
+    "file": "t1813573.html"
   },
   {
-    "title": "Alt Religion",
-    "file": "showthread.php@t=1813119.htm"
+    "title": "t1813574.html",
+    "file": "t1813574.html"
   },
   {
-    "title": "the \"can good do this, such that he can't do it anymore\" bit",
-    "file": "showthread.php@t=1813120.htm"
+    "title": "t1813575.html",
+    "file": "t1813575.html"
   },
   {
-    "title": "Legal high sites that accept paypal",
-    "file": "showthread.php@t=1813121.htm"
+    "title": "t1813576.html",
+    "file": "t1813576.html"
   },
   {
-    "title": "Need help with project",
-    "file": "showthread.php@t=1813122.htm"
+    "title": "t1813577.html",
+    "file": "t1813577.html"
   },
   {
-    "title": "Maitreya",
-    "file": "showthread.php@t=1813123.htm"
+    "title": "t1813578.html",
+    "file": "t1813578.html"
   },
   {
-    "title": "Question regarding The Bible",
-    "file": "showthread.php@t=1813124.htm"
+    "title": "t1813579.html",
+    "file": "t1813579.html"
   },
   {
-    "title": "Question for Christians from a Muslim",
-    "file": "showthread.php@t=1813125.htm"
+    "title": "t1813580.html",
+    "file": "t1813580.html"
   },
   {
-    "title": "i think i found a belief",
-    "file": "showthread.php@t=1813126.htm"
+    "title": "t1813581.html",
+    "file": "t1813581.html"
   },
   {
-    "title": "mormons affecting america",
-    "file": "showthread.php@t=1813127.htm"
+    "title": "t1813582.html",
+    "file": "t1813582.html"
   },
   {
-    "title": "Did Adam & Eve Have Belly Buttons?",
-    "file": "showthread.php@t=1813128.htm"
+    "title": "t1813583.html",
+    "file": "t1813583.html"
   },
   {
-    "title": "Question needs answering.",
-    "file": "showthread.php@t=1813129.htm"
+    "title": "t1813584.html",
+    "file": "t1813584.html"
   },
   {
-    "title": "Christianity/Satanism is a paradox.",
-    "file": "showthread.php@t=1813130.htm"
+    "title": "t1813585.html",
+    "file": "t1813585.html"
   },
   {
-    "title": "Religion, Philosophy and War",
-    "file": "showthread.php@t=1813131.htm"
+    "title": "t1813586.html",
+    "file": "t1813586.html"
   },
   {
-    "title": "Even if the Christian god did exist...",
-    "file": "showthread.php@t=1813132.htm"
+    "title": "t1813587.html",
+    "file": "t1813587.html"
   },
   {
-    "title": "Fossil could be missing link",
-    "file": "showthread.php@t=1813133.htm"
+    "title": "t1813591.html",
+    "file": "t1813591.html"
   },
   {
-    "title": "Question about Jesus's existence",
-    "file": "showthread.php@t=1813134.htm"
+    "title": "t1813592.html",
+    "file": "t1813592.html"
   },
   {
-    "title": "Freewill, Is there such a thing?",
-    "file": "showthread.php@t=1813135.htm"
+    "title": "t1813593.html",
+    "file": "t1813593.html"
   },
   {
-    "title": "Should I Slaughter Some Nonbelievers?",
-    "file": "showthread.php@t=1813136.htm"
+    "title": "t1813594.html",
+    "file": "t1813594.html"
   },
   {
-    "title": "What did jesus before he died?",
-    "file": "showthread.php@t=1813137.htm"
+    "title": "t1813595.html",
+    "file": "t1813595.html"
   },
   {
-    "title": "Gospel Of Judas Surfaces After 1,700 Years",
-    "file": "showthread.php@t=1813138.htm"
+    "title": "t1813596.html",
+    "file": "t1813596.html"
   },
   {
-    "title": "Jesus Christ without facial hair?",
-    "file": "showthread.php@t=1813139.htm"
+    "title": "t1813597.html",
+    "file": "t1813597.html"
   },
   {
-    "title": "Jesus loves fuck ups more than christians!",
-    "file": "showthread.php@t=1813140.htm"
+    "title": "t1813599.html",
+    "file": "t1813599.html"
   },
   {
-    "title": "Egypt was a christian nation before it bacame a islamic nation.",
-    "file": "showthread.php@t=1813141.htm"
+    "title": "t1813600.html",
+    "file": "t1813600.html"
   },
   {
-    "title": "admiration to Digital Savior",
-    "file": "showthread.php@t=1813142.htm"
+    "title": "t1813602.html",
+    "file": "t1813602.html"
   },
   {
-    "title": "Jesus betrayed on purpose",
-    "file": "showthread.php@t=1813143.htm"
+    "title": "t1813603.html",
+    "file": "t1813603.html"
   },
   {
-    "title": "!!!!!!!!!!!!!!!!!!!!!!!!!!Rahelah!!!!!!!!!!!!!!!!! !!!!!!!",
-    "file": "showthread.php@t=1813144.htm"
+    "title": "t1813606.html",
+    "file": "t1813606.html"
   },
   {
-    "title": "Question",
-    "file": "showthread.php@t=1813145.htm"
+    "title": "t1813607.html",
+    "file": "t1813607.html"
   },
   {
-    "title": "Chaoism",
-    "file": "showthread.php@t=1813146.htm"
+    "title": "t1813608.html",
+    "file": "t1813608.html"
   },
   {
-    "title": "artist's rendition of jesus without a beard?",
-    "file": "showthread.php@t=1813147.htm"
+    "title": "t1813609.html",
+    "file": "t1813609.html"
   },
   {
-    "title": "I give up",
-    "file": "showthread.php@t=1813148.htm"
+    "title": "t1813610.html",
+    "file": "t1813610.html"
   },
   {
-    "title": "Death to free will defense!",
-    "file": "showthread.php@t=1813149.htm"
+    "title": "t1813611.html",
+    "file": "t1813611.html"
   },
   {
-    "title": "Most westernised Muslim country...",
-    "file": "showthread.php@t=1813150.htm"
+    "title": "t1813612.html",
+    "file": "t1813612.html"
   },
   {
-    "title": "Can anyone comprehen Eternity &.......",
-    "file": "showthread.php@t=1813151.htm"
+    "title": "t1813613.html",
+    "file": "t1813613.html"
   },
   {
-    "title": "Your beliefs from the Internet",
-    "file": "showthread.php@t=1813152.htm"
+    "title": "t1813614.html",
+    "file": "t1813614.html"
   },
   {
-    "title": "Jesus loves death metal",
-    "file": "showthread.php@t=1813153.htm"
+    "title": "t1813617.html",
+    "file": "t1813617.html"
   },
   {
-    "title": "suicide",
-    "file": "showthread.php@t=1813154.htm"
+    "title": "t1813619.html",
+    "file": "t1813619.html"
   },
   {
-    "title": "Im an atheist, and i think hell would be bad ass.",
-    "file": "showthread.php@t=1813155.htm"
+    "title": "t1813620.html",
+    "file": "t1813620.html"
   },
   {
-    "title": "Lets try again lol",
-    "file": "showthread.php@t=1813156.htm"
+    "title": "t1813621.html",
+    "file": "t1813621.html"
   },
   {
-    "title": "Jesus Doesnt Exist",
-    "file": "showthread.php@t=1813157.htm"
+    "title": "t1813622.html",
+    "file": "t1813622.html"
   },
   {
-    "title": "Why do you put faith in [insert god here]?",
-    "file": "showthread.php@t=1813158.htm"
+    "title": "t1813623.html",
+    "file": "t1813623.html"
   },
   {
-    "title": "My god CAN beat the shit out of your god.",
-    "file": "showthread.php@t=1813159.htm"
+    "title": "t1813626.html",
+    "file": "t1813626.html"
   },
   {
-    "title": "Why can Christians push their faith....",
-    "file": "showthread.php@t=1813160.htm"
+    "title": "t1813627.html",
+    "file": "t1813627.html"
   },
   {
-    "title": "Repent America",
-    "file": "showthread.php@t=1813161.htm"
+    "title": "t1813628.html",
+    "file": "t1813628.html"
   },
   {
-    "title": "Whats the Abomination of Desolation?",
-    "file": "showthread.php@t=1813162.htm"
+    "title": "t1813629.html",
+    "file": "t1813629.html"
   },
   {
-    "title": "Reasons For Believing",
-    "file": "showthread.php@t=1813163.htm"
+    "title": "t1813630.html",
+    "file": "t1813630.html"
   },
   {
-    "title": "Why I left 'MGCBTSOOYG'",
-    "file": "showthread.php@t=1813164.htm"
+    "title": "t1813631.html",
+    "file": "t1813631.html"
   },
   {
-    "title": "Acceptance in christianity",
-    "file": "showthread.php@t=1813165.htm"
+    "title": "t1813632.html",
+    "file": "t1813632.html"
   },
   {
-    "title": "Hell",
-    "file": "showthread.php@t=1813166.htm"
+    "title": "t1813634.html",
+    "file": "t1813634.html"
   },
   {
-    "title": "Christian cheaters?",
-    "file": "showthread.php@t=1813167.htm"
+    "title": "t1813636.html",
+    "file": "t1813636.html"
   },
   {
-    "title": "Does anyone share my thought on religion?",
-    "file": "showthread.php@t=1813168.htm"
+    "title": "t1813637.html",
+    "file": "t1813637.html"
   },
   {
-    "title": "Ultimate Test of Faith",
-    "file": "showthread.php@t=1813169.htm"
+    "title": "t1813638.html",
+    "file": "t1813638.html"
   },
   {
-    "title": "Babble on Babylon.",
-    "file": "showthread.php@t=1813170.htm"
+    "title": "t1813639.html",
+    "file": "t1813639.html"
   },
   {
-    "title": "Understanding of God",
-    "file": "showthread.php@t=1813171.htm"
+    "title": "t1813640.html",
+    "file": "t1813640.html"
   },
   {
-    "title": "Fuck God",
-    "file": "showthread.php@t=1813172.htm"
+    "title": "t1813642.html",
+    "file": "t1813642.html"
   },
   {
-    "title": "\"God created the universe\" Or some such, Its just a quote so read.",
-    "file": "showthread.php@t=1813173.htm"
+    "title": "t1813643.html",
+    "file": "t1813643.html"
   },
   {
-    "title": "The devil redeemed...",
-    "file": "showthread.php@t=1813174.htm"
+    "title": "t1813645.html",
+    "file": "t1813645.html"
   },
   {
-    "title": "My religious beliefs - recommendations? things to look into?",
-    "file": "showthread.php@t=1813175.htm"
+    "title": "t1813646.html",
+    "file": "t1813646.html"
   },
   {
-    "title": "Religious Holidays",
-    "file": "showthread.php@t=1813176.htm"
+    "title": "t1813647.html",
+    "file": "t1813647.html"
   },
   {
-    "title": "I cant believe someone would do this",
-    "file": "showthread.php@t=1813177.htm"
+    "title": "t1813649.html",
+    "file": "t1813649.html"
   },
   {
-    "title": "omnipotent god",
-    "file": "showthread.php@t=1813178.htm"
+    "title": "t1813651.html",
+    "file": "t1813651.html"
   },
   {
-    "title": "Filipino Devotees Nailed to the Cross",
-    "file": "showthread.php@t=1813179.htm"
+    "title": "t1813652.html",
+    "file": "t1813652.html"
   },
   {
-    "title": "Catholics and Christians?",
-    "file": "showthread.php@t=1813180.htm"
+    "title": "t1813653.html",
+    "file": "t1813653.html"
   },
   {
-    "title": "Scientist uncover \"the missing link\"",
-    "file": "showthread.php@t=1813181.htm"
+    "title": "t1813654.html",
+    "file": "t1813654.html"
   },
   {
-    "title": "General Theory of God",
-    "file": "showthread.php@t=1813182.htm"
+    "title": "t1813655.html",
+    "file": "t1813655.html"
   },
   {
-    "title": "God=UFO",
-    "file": "showthread.php@t=1813183.htm"
+    "title": "t1813656.html",
+    "file": "t1813656.html"
   },
   {
-    "title": "Magickal Atheist?",
-    "file": "showthread.php@t=1813184.htm"
+    "title": "t1813657.html",
+    "file": "t1813657.html"
   },
   {
-    "title": "Amusing plays on Christian reality...",
-    "file": "showthread.php@t=1813185.htm"
+    "title": "t1813658.html",
+    "file": "t1813658.html"
   },
   {
-    "title": "why lucifer is the god of light",
-    "file": "showthread.php@t=1813186.htm"
+    "title": "t1813659.html",
+    "file": "t1813659.html"
   },
   {
-    "title": "Is masterbating a sin?",
-    "file": "showthread.php@t=1813187.htm"
+    "title": "t1813661.html",
+    "file": "t1813661.html"
   },
   {
-    "title": "my opinion on \"god\" and christianity",
-    "file": "showthread.php@t=1813188.htm"
+    "title": "t1813663.html",
+    "file": "t1813663.html"
   },
   {
-    "title": "Why capfreedomdick likes lucifer",
-    "file": "showthread.php@t=1813189.htm"
+    "title": "t1813664.html",
+    "file": "t1813664.html"
   },
   {
-    "title": "The New God",
-    "file": "showthread.php@t=1813190.htm"
+    "title": "t1813665.html",
+    "file": "t1813665.html"
   },
   {
-    "title": "I just went to church",
-    "file": "showthread.php@t=1813191.htm"
+    "title": "t1813668.html",
+    "file": "t1813668.html"
   },
   {
-    "title": "Hey LostCause",
-    "file": "showthread.php@t=1813192.htm"
+    "title": "t1813672.html",
+    "file": "t1813672.html"
   },
   {
-    "title": "Memorable moments in MGCBTHOOYG history!",
-    "file": "showthread.php@t=1813193.htm"
+    "title": "t1813673.html",
+    "file": "t1813673.html"
   },
   {
-    "title": "Church Hopping",
-    "file": "showthread.php@t=1813194.htm"
+    "title": "t1813674.html",
+    "file": "t1813674.html"
   },
   {
-    "title": "When will Christianity die out?",
-    "file": "showthread.php@t=1813195.htm"
+    "title": "t1813675.html",
+    "file": "t1813675.html"
   },
   {
-    "title": "Straight christian opinions on pot",
-    "file": "showthread.php@t=1813196.htm"
+    "title": "t1813676.html",
+    "file": "t1813676.html"
   },
   {
-    "title": "Adam and Eve's Incestuous Escapade",
-    "file": "showthread.php@t=1813197.htm"
+    "title": "t1813677.html",
+    "file": "t1813677.html"
   },
   {
-    "title": "Sinless God Paradox",
-    "file": "showthread.php@t=1813198.htm"
+    "title": "t1813678.html",
+    "file": "t1813678.html"
   },
   {
-    "title": "Heaven and Hell",
-    "file": "showthread.php@t=1813199.htm"
+    "title": "t1813679.html",
+    "file": "t1813679.html"
   },
   {
-    "title": "Hidden Books of the Buy-Bull",
-    "file": "showthread.php@t=1813200.htm"
+    "title": "t1813680.html",
+    "file": "t1813680.html"
   },
   {
-    "title": "Knowledge Versus Faith",
-    "file": "showthread.php@t=1813201.htm"
+    "title": "t1813681.html",
+    "file": "t1813681.html"
   },
   {
-    "title": "So I\u0092ve become an agnostic.",
-    "file": "showthread.php@t=1813202.htm"
+    "title": "t1813682.html",
+    "file": "t1813682.html"
   },
   {
-    "title": "Who has believed our report?",
-    "file": "showthread.php@t=1813203.htm"
+    "title": "t1813683.html",
+    "file": "t1813683.html"
   },
   {
-    "title": "Blame the Victim",
-    "file": "showthread.php@t=1813204.htm"
+    "title": "t1813684.html",
+    "file": "t1813684.html"
   },
   {
-    "title": "The old testament is so wrong it isnt even funny",
-    "file": "showthread.php@t=1813205.htm"
+    "title": "t1813685.html",
+    "file": "t1813685.html"
   },
   {
-    "title": "There is no god.",
-    "file": "showthread.php@t=1813206.htm"
+    "title": "t1813687.html",
+    "file": "t1813687.html"
   },
   {
-    "title": "Destruction of Cities",
-    "file": "showthread.php@t=1813207.htm"
+    "title": "t1813688.html",
+    "file": "t1813688.html"
   },
   {
-    "title": "Atheism vs. Nihilism",
-    "file": "showthread.php@t=1813208.htm"
+    "title": "t1813689.html",
+    "file": "t1813689.html"
   },
   {
-    "title": "Non-Christian accounts of Jesus's miracles",
-    "file": "showthread.php@t=1813209.htm"
+    "title": "t1813690.html",
+    "file": "t1813690.html"
   },
   {
-    "title": "Baptism..",
-    "file": "showthread.php@t=1813210.htm"
+    "title": "t1813691.html",
+    "file": "t1813691.html"
   },
   {
-    "title": "Judas",
-    "file": "showthread.php@t=1813211.htm"
+    "title": "t1813692.html",
+    "file": "t1813692.html"
   },
   {
-    "title": "Question for all faiths",
-    "file": "showthread.php@t=1813212.htm"
+    "title": "t1813693.html",
+    "file": "t1813693.html"
   },
   {
-    "title": "God outside of Time and Space",
-    "file": "showthread.php@t=1813213.htm"
+    "title": "t1813694.html",
+    "file": "t1813694.html"
   },
   {
-    "title": "Question for Tom Cruise and Scientologists",
-    "file": "showthread.php@t=1813214.htm"
+    "title": "t1813695.html",
+    "file": "t1813695.html"
   },
   {
-    "title": "The Ultimate Sacrifice",
-    "file": "showthread.php@t=1813215.htm"
+    "title": "t1813696.html",
+    "file": "t1813696.html"
   },
   {
-    "title": "I converted to Islam.",
-    "file": "showthread.php@t=1813216.htm"
+    "title": "t1813697.html",
+    "file": "t1813697.html"
   },
   {
-    "title": "Neva Rogers",
-    "file": "showthread.php@t=1813217.htm"
+    "title": "t1813698.html",
+    "file": "t1813698.html"
   },
   {
-    "title": "trying to get in touch with my past",
-    "file": "showthread.php@t=1813218.htm"
+    "title": "t1813699.html",
+    "file": "t1813699.html"
   },
   {
-    "title": "effort on islam expedition",
-    "file": "showthread.php@t=1813219.htm"
+    "title": "t1813700.html",
+    "file": "t1813700.html"
   },
   {
-    "title": "The self-assured believer",
-    "file": "showthread.php@t=1813220.htm"
+    "title": "t1813701.html",
+    "file": "t1813701.html"
   },
   {
-    "title": "should ID be taught in school?",
-    "file": "showthread.php@t=1813221.htm"
+    "title": "t1813702.html",
+    "file": "t1813702.html"
   },
   {
-    "title": "Renewing Faith",
-    "file": "showthread.php@t=1813222.htm"
+    "title": "t1813703.html",
+    "file": "t1813703.html"
   },
   {
-    "title": "I wrote this a LONG time ago",
-    "file": "showthread.php@t=1813223.htm"
+    "title": "t1813704.html",
+    "file": "t1813704.html"
   },
   {
-    "title": "Abortion, help my asrguements.",
-    "file": "showthread.php@t=1813224.htm"
+    "title": "t1813705.html",
+    "file": "t1813705.html"
   },
   {
-    "title": "Why do christians feel that refering to the bible proves their point?",
-    "file": "showthread.php@t=1813225.htm"
+    "title": "t1813706.html",
+    "file": "t1813706.html"
   },
   {
-    "title": "Living creatures go to...",
-    "file": "showthread.php@t=1813226.htm"
+    "title": "t1813707.html",
+    "file": "t1813707.html"
   },
   {
-    "title": "Condoms are the new sin on the block",
-    "file": "showthread.php@t=1813227.htm"
+    "title": "t1813708.html",
+    "file": "t1813708.html"
   },
   {
-    "title": "the thing you find most odd about mormonism?",
-    "file": "showthread.php@t=1813228.htm"
+    "title": "t1813709.html",
+    "file": "t1813709.html"
   },
   {
-    "title": "The all knowing Christian God",
-    "file": "showthread.php@t=1813229.htm"
+    "title": "t1813710.html",
+    "file": "t1813710.html"
   },
   {
-    "title": "so i went to church....",
-    "file": "showthread.php@t=1813230.htm"
+    "title": "t1813711.html",
+    "file": "t1813711.html"
   },
   {
-    "title": "Zoroastrianism",
-    "file": "showthread.php@t=1813231.htm"
+    "title": "t1813712.html",
+    "file": "t1813712.html"
   },
   {
-    "title": "It's RAISINS, not VIRGINS",
-    "file": "showthread.php@t=1813232.htm"
+    "title": "t1813713.html",
+    "file": "t1813713.html"
   },
   {
-    "title": "It's YOUNG WOMAN, not VIRGIN",
-    "file": "showthread.php@t=1813233.htm"
+    "title": "t1813714.html",
+    "file": "t1813714.html"
   },
   {
-    "title": "Documentaries About Religious Figures",
-    "file": "showthread.php@t=1813234.htm"
+    "title": "t1813715.html",
+    "file": "t1813715.html"
   },
   {
-    "title": "Scientology?",
-    "file": "showthread.php@t=1813235.htm"
+    "title": "t1813716.html",
+    "file": "t1813716.html"
   },
   {
-    "title": "Man Is Destroying the Earth, Pray That God Will Save The World",
-    "file": "showthread.php@t=1813236.htm"
+    "title": "t1813717.html",
+    "file": "t1813717.html"
   },
   {
-    "title": "Since When Is Prayer A Dirty Word?",
-    "file": "showthread.php@t=1813237.htm"
+    "title": "t1813718.html",
+    "file": "t1813718.html"
   },
   {
-    "title": "what if jesus is a nigger???",
-    "file": "showthread.php@t=1813238.htm"
+    "title": "t1813719.html",
+    "file": "t1813719.html"
   },
   {
-    "title": "A very interesting find.",
-    "file": "showthread.php@t=1813239.htm"
+    "title": "t1813720.html",
+    "file": "t1813720.html"
   },
   {
-    "title": "ten commandments...",
-    "file": "showthread.php@t=1813240.htm"
+    "title": "t1813721.html",
+    "file": "t1813721.html"
   },
   {
-    "title": "whats your opinion of this quote?",
-    "file": "showthread.php@t=1813241.htm"
+    "title": "t1813722.html",
+    "file": "t1813722.html"
   },
   {
-    "title": "God still likes burnt offerings!",
-    "file": "showthread.php@t=1813242.htm"
+    "title": "t1813723.html",
+    "file": "t1813723.html"
   },
   {
-    "title": "This does NOT deserved to be closed",
-    "file": "showthread.php@t=1813243.htm"
+    "title": "t1813724.html",
+    "file": "t1813724.html"
   },
   {
-    "title": "Who's funnier?",
-    "file": "showthread.php@t=1813244.htm"
+    "title": "t1813725.html",
+    "file": "t1813725.html"
   },
   {
-    "title": "is there any jew missionaries out there?",
-    "file": "showthread.php@t=1813245.htm"
+    "title": "t1813726.html",
+    "file": "t1813726.html"
   },
   {
-    "title": "How do we grade sins?",
-    "file": "showthread.php@t=1813246.htm"
+    "title": "t1813727.html",
+    "file": "t1813727.html"
   },
   {
-    "title": "God is not all-powerful.",
-    "file": "showthread.php@t=1813247.htm"
+    "title": "t1813728.html",
+    "file": "t1813728.html"
   },
   {
-    "title": "Why do you(or dont) believe in God",
-    "file": "showthread.php@t=1813248.htm"
+    "title": "t1813729.html",
+    "file": "t1813729.html"
   },
   {
-    "title": "god is nearly dead",
-    "file": "showthread.php@t=1813249.htm"
+    "title": "t1813730.html",
+    "file": "t1813730.html"
   },
   {
-    "title": "Islam is like a bully.",
-    "file": "showthread.php@t=1813250.htm"
+    "title": "t1813732.html",
+    "file": "t1813732.html"
   },
   {
-    "title": "Tower of Babel",
-    "file": "showthread.php@t=1813251.htm"
+    "title": "t1813733.html",
+    "file": "t1813733.html"
   },
   {
-    "title": "Religious Images",
-    "file": "showthread.php@t=1813252.htm"
+    "title": "t1813734.html",
+    "file": "t1813734.html"
   },
   {
-    "title": "Origins and Civil Liberties",
-    "file": "showthread.php@t=1813253.htm"
+    "title": "t1813735.html",
+    "file": "t1813735.html"
   },
   {
-    "title": "Necronomicon",
-    "file": "showthread.php@t=1813254.htm"
+    "title": "t1813736.html",
+    "file": "t1813736.html"
   },
   {
-    "title": "Toxic Forums!!!!!!!!!!!!!",
-    "file": "showthread.php@t=1813255.htm"
+    "title": "t1813737.html",
+    "file": "t1813737.html"
   },
   {
-    "title": "Quick question about Yahweh!",
-    "file": "showthread.php@t=1813256.htm"
+    "title": "t1813738.html",
+    "file": "t1813738.html"
   },
   {
-    "title": "The 700 game (calling up that pat asshole)",
-    "file": "showthread.php@t=1813257.htm"
+    "title": "t1813739.html",
+    "file": "t1813739.html"
   },
   {
-    "title": "What happened to Jesus?",
-    "file": "showthread.php@t=1813258.htm"
+    "title": "t1813740.html",
+    "file": "t1813740.html"
   },
   {
-    "title": "Look at what your awesome \"God\" is up to",
-    "file": "showthread.php@t=1813259.htm"
+    "title": "t1813741.html",
+    "file": "t1813741.html"
   },
   {
-    "title": "My imaginary friend. or life goes on",
-    "file": "showthread.php@t=1813260.htm"
+    "title": "t1813742.html",
+    "file": "t1813742.html"
   },
   {
-    "title": "Religion",
-    "file": "showthread.php@t=1813261.htm"
+    "title": "t1813743.html",
+    "file": "t1813743.html"
   },
   {
-    "title": "L Ron Hubbard",
-    "file": "showthread.php@t=1813262.htm"
+    "title": "t1813744.html",
+    "file": "t1813744.html"
   },
   {
-    "title": "Hell and who goes there.",
-    "file": "showthread.php@t=1813263.htm"
+    "title": "t1813745.html",
+    "file": "t1813745.html"
   },
   {
-    "title": "What's in hell? Fire or nougat?",
-    "file": "showthread.php@t=1813264.htm"
+    "title": "t1813746.html",
+    "file": "t1813746.html"
   },
   {
-    "title": "Question for Christians about demonic or Satanic possession.",
-    "file": "showthread.php@t=1813265.htm"
+    "title": "t1813747.html",
+    "file": "t1813747.html"
   },
   {
-    "title": "You all need English lessons",
-    "file": "showthread.php@t=1813266.htm"
+    "title": "t1813748.html",
+    "file": "t1813748.html"
   },
   {
-    "title": "support for evolution",
-    "file": "showthread.php@t=1813267.htm"
+    "title": "t1813749.html",
+    "file": "t1813749.html"
   },
   {
-    "title": "cult of confessions",
-    "file": "showthread.php@t=1813268.htm"
+    "title": "t1813750.html",
+    "file": "t1813750.html"
   },
   {
-    "title": "no this is not a re-post",
-    "file": "showthread.php@t=1813269.htm"
+    "title": "t1813751.html",
+    "file": "t1813751.html"
   },
   {
-    "title": "My life with the thrill kill kult...(will or no)",
-    "file": "showthread.php@t=1813270.htm"
+    "title": "t1813752.html",
+    "file": "t1813752.html"
   },
   {
-    "title": "Catholicism: The Story Behind The Bullshit",
-    "file": "showthread.php@t=1813271.htm"
+    "title": "t1813753.html",
+    "file": "t1813753.html"
   },
   {
-    "title": "What's Islam's stance on science?",
-    "file": "showthread.php@t=1813272.htm"
+    "title": "t1813754.html",
+    "file": "t1813754.html"
   },
   {
-    "title": "Spear of Destiny",
-    "file": "showthread.php@t=1813273.htm"
+    "title": "t1813755.html",
+    "file": "t1813755.html"
   },
   {
-    "title": "Is Jesus comeing back?",
-    "file": "showthread.php@t=1813274.htm"
+    "title": "t1813756.html",
+    "file": "t1813756.html"
   },
   {
-    "title": "The bible says Hell is spending eternity away from God, but . . . .",
-    "file": "showthread.php@t=1813275.htm"
+    "title": "t1813757.html",
+    "file": "t1813757.html"
   },
   {
-    "title": "Is this actually true?",
-    "file": "showthread.php@t=1813276.htm"
+    "title": "t1813758.html",
+    "file": "t1813758.html"
   },
   {
-    "title": "I'm tired of Islam",
-    "file": "showthread.php@t=1813277.htm"
+    "title": "t1813759.html",
+    "file": "t1813759.html"
   },
   {
-    "title": "Mombobo",
-    "file": "showthread.php@t=1813278.htm"
+    "title": "t1813760.html",
+    "file": "t1813760.html"
   },
   {
-    "title": "so...jesus was a buddhist then?",
-    "file": "showthread.php@t=1813279.htm"
+    "title": "t1813761.html",
+    "file": "t1813761.html"
   },
   {
-    "title": "Jesus H? Christ",
-    "file": "showthread.php@t=1813280.htm"
+    "title": "t1813762.html",
+    "file": "t1813762.html"
   },
   {
-    "title": "Whats ur favorite book of the bible?",
-    "file": "showthread.php@t=1813281.htm"
+    "title": "t1813763.html",
+    "file": "t1813763.html"
   },
   {
-    "title": "evidence for creationism",
-    "file": "showthread.php@t=1813282.htm"
+    "title": "t1813764.html",
+    "file": "t1813764.html"
   },
   {
-    "title": "A World without Islam?",
-    "file": "showthread.php@t=1813283.htm"
+    "title": "t1813765.html",
+    "file": "t1813765.html"
   },
   {
-    "title": "NIHILISM",
-    "file": "showthread.php@t=1813284.htm"
+    "title": "t1813766.html",
+    "file": "t1813766.html"
   },
   {
-    "title": "So I need to start a new religion...",
-    "file": "showthread.php@t=1813285.htm"
+    "title": "t1813767.html",
+    "file": "t1813767.html"
   },
   {
-    "title": "Converting to catholocism",
-    "file": "showthread.php@t=1813286.htm"
+    "title": "t1813768.html",
+    "file": "t1813768.html"
   },
   {
-    "title": "Originality",
-    "file": "showthread.php@t=1813287.htm"
+    "title": "t1813769.html",
+    "file": "t1813769.html"
   },
   {
-    "title": "What the hell just happened?",
-    "file": "showthread.php@t=1813288.htm"
+    "title": "t1813770.html",
+    "file": "t1813770.html"
   },
   {
-    "title": "Worst religion ever???",
-    "file": "showthread.php@t=1813289.htm"
+    "title": "t1813771.html",
+    "file": "t1813771.html"
   },
   {
-    "title": "06/06/06",
-    "file": "showthread.php@t=1813290.htm"
+    "title": "t1813772.html",
+    "file": "t1813772.html"
   },
   {
-    "title": "Divine Intervention (on a quite small scale...)",
-    "file": "showthread.php@t=1813291.htm"
+    "title": "t1813773.html",
+    "file": "t1813773.html"
   },
   {
-    "title": "Freewill, again!",
-    "file": "showthread.php@t=1813292.htm"
+    "title": "t1813774.html",
+    "file": "t1813774.html"
   },
   {
-    "title": "Religion is for pedos",
-    "file": "showthread.php@t=1813293.htm"
+    "title": "t1813775.html",
+    "file": "t1813775.html"
   },
   {
-    "title": "Was Mohamed a pedophile?",
-    "file": "showthread.php@t=1813295.htm"
+    "title": "t1813776.html",
+    "file": "t1813776.html"
   },
   {
-    "title": "Why can't you discern God?",
-    "file": "showthread.php@t=1813296.htm"
+    "title": "t1813777.html",
+    "file": "t1813777.html"
   },
   {
-    "title": "Methodism is Gay",
-    "file": "showthread.php@t=1813297.htm"
+    "title": "t1813779.html",
+    "file": "t1813779.html"
   },
   {
-    "title": "Why all religion should be abolished",
-    "file": "showthread.php@t=1813298.htm"
+    "title": "t1813780.html",
+    "file": "t1813780.html"
   },
   {
-    "title": "I would like to interview a Taoist.",
-    "file": "showthread.php@t=1813299.htm"
+    "title": "t1813781.html",
+    "file": "t1813781.html"
   },
   {
-    "title": "age of aquarius?",
-    "file": "showthread.php@t=1813300.htm"
+    "title": "t1813782.html",
+    "file": "t1813782.html"
   },
   {
-    "title": "Thou shalt not kill (murder)",
-    "file": "showthread.php@t=1813301.htm"
+    "title": "t1813784.html",
+    "file": "t1813784.html"
   },
   {
-    "title": "Is gayness a sin?",
-    "file": "showthread.php@t=1813302.htm"
+    "title": "t1813786.html",
+    "file": "t1813786.html"
   },
   {
-    "title": "Muhammed was an immoral womenizer",
-    "file": "showthread.php@t=1813303.htm"
+    "title": "t1813787.html",
+    "file": "t1813787.html"
   },
   {
-    "title": "Having girlfriends and other \"close\" relationships in Islam...",
-    "file": "showthread.php@t=1813304.htm"
+    "title": "t1813788.html",
+    "file": "t1813788.html"
   },
   {
-    "title": "FaithFreedom - Ex muslims",
-    "file": "showthread.php@t=1813305.htm"
+    "title": "t1813789.html",
+    "file": "t1813789.html"
   },
   {
-    "title": "Creationism - Church of the flying spaghetti monster",
-    "file": "showthread.php@t=1813306.htm"
+    "title": "t1813790.html",
+    "file": "t1813790.html"
   },
   {
-    "title": "The Tower Of Babel Connection",
-    "file": "showthread.php@t=1813307.htm"
+    "title": "t1813791.html",
+    "file": "t1813791.html"
   },
   {
-    "title": "Theistic Satanism",
-    "file": "showthread.php@t=1813308.htm"
+    "title": "t1813792.html",
+    "file": "t1813792.html"
   },
   {
-    "title": "Freewill and a (hopefully) new idea",
-    "file": "showthread.php@t=1813309.htm"
+    "title": "t1813793.html",
+    "file": "t1813793.html"
   },
   {
-    "title": "Logic.  the highest authority in the universe?",
-    "file": "showthread.php@t=1813310.htm"
+    "title": "t1813794.html",
+    "file": "t1813794.html"
   },
   {
-    "title": "Reconciling Science With Faith",
-    "file": "showthread.php@t=1813311.htm"
+    "title": "t1813795.html",
+    "file": "t1813795.html"
   },
   {
-    "title": "Sun and Moon worship...",
-    "file": "showthread.php@t=1813312.htm"
+    "title": "t1813796.html",
+    "file": "t1813796.html"
   },
   {
-    "title": "Oh, Jesus Christ.",
-    "file": "showthread.php@t=1813313.htm"
+    "title": "t1813797.html",
+    "file": "t1813797.html"
   },
   {
-    "title": "My friend is TOO religious....some help here",
-    "file": "showthread.php@t=1813314.htm"
+    "title": "t1813798.html",
+    "file": "t1813798.html"
   },
   {
-    "title": "Metaphor for religion",
-    "file": "showthread.php@t=1813315.htm"
+    "title": "t1813799.html",
+    "file": "t1813799.html"
   },
   {
-    "title": "needing help against the higher power",
-    "file": "showthread.php@t=1813316.htm"
+    "title": "t1813800.html",
+    "file": "t1813800.html"
   },
   {
-    "title": "Christianity Hijacking Myths?",
-    "file": "showthread.php@t=1813317.htm"
+    "title": "t1813801.html",
+    "file": "t1813801.html"
   },
   {
-    "title": "how do you deal with this?",
-    "file": "showthread.php@t=1813318.htm"
+    "title": "t1813802.html",
+    "file": "t1813802.html"
   },
   {
-    "title": "I Am God!!",
-    "file": "showthread.php@t=1813319.htm"
+    "title": "t1813803.html",
+    "file": "t1813803.html"
   },
   {
-    "title": "This is an outrage",
-    "file": "showthread.php@t=1813320.htm"
+    "title": "t1813804.html",
+    "file": "t1813804.html"
   },
   {
-    "title": "WHAT IS GOD?",
-    "file": "showthread.php@t=1813321.htm"
+    "title": "t1813805.html",
+    "file": "t1813805.html"
   },
   {
-    "title": "How many of you out there are atheists?",
-    "file": "showthread.php@t=1813322.htm"
+    "title": "t1813806.html",
+    "file": "t1813806.html"
   },
   {
-    "title": "God and Faith (this is the wrong forum)",
-    "file": "showthread.php@t=1813323.htm"
+    "title": "t1813807.html",
+    "file": "t1813807.html"
   },
   {
-    "title": "Interested in Islam? Ask Questions here!",
-    "file": "showthread.php@t=1813324.htm"
+    "title": "t1813808.html",
+    "file": "t1813808.html"
   },
   {
-    "title": "The TRUE Religion. Which is Right?",
-    "file": "showthread.php@t=1813325.htm"
+    "title": "t1813809.html",
+    "file": "t1813809.html"
   },
   {
-    "title": "Christians and god",
-    "file": "showthread.php@t=1813326.htm"
+    "title": "t1813810.html",
+    "file": "t1813810.html"
   },
   {
-    "title": "Christian msn!",
-    "file": "showthread.php@t=1813327.htm"
+    "title": "t1813811.html",
+    "file": "t1813811.html"
   },
   {
-    "title": "What would you call me?",
-    "file": "showthread.php@t=1813328.htm"
+    "title": "t1813812.html",
+    "file": "t1813812.html"
   },
   {
-    "title": "Close minded Christians",
-    "file": "showthread.php@t=1813329.htm"
+    "title": "t1813813.html",
+    "file": "t1813813.html"
   },
   {
-    "title": "does anyone here believe in pre-christian religions or druidry?",
-    "file": "showthread.php@t=1813330.htm"
+    "title": "t1813814.html",
+    "file": "t1813814.html"
   },
   {
-    "title": "who believes in reincarnation?",
-    "file": "showthread.php@t=1813331.htm"
+    "title": "t1813815.html",
+    "file": "t1813815.html"
   },
   {
-    "title": "Does GOD like the dykes",
-    "file": "showthread.php@t=1813332.htm"
+    "title": "t1813816.html",
+    "file": "t1813816.html"
   },
   {
-    "title": "Looking for open-minded christian for a debate",
-    "file": "showthread.php@t=1813333.htm"
+    "title": "t1813817.html",
+    "file": "t1813817.html"
   },
   {
-    "title": "Abraham's ten tests of faith",
-    "file": "showthread.php@t=1813334.htm"
+    "title": "t1813818.html",
+    "file": "t1813818.html"
   },
   {
-    "title": "Whatever helps you sleep at night...",
-    "file": "showthread.php@t=1813335.htm"
+    "title": "t1813819.html",
+    "file": "t1813819.html"
   },
   {
-    "title": "Proove to me there is a god",
-    "file": "showthread.php@t=1813336.htm"
+    "title": "t1813820.html",
+    "file": "t1813820.html"
   },
   {
-    "title": "Reincarnation > Heaven",
-    "file": "showthread.php@t=1813337.htm"
+    "title": "t1813822.html",
+    "file": "t1813822.html"
   },
   {
-    "title": "to everyone here.",
-    "file": "showthread.php@t=1813338.htm"
+    "title": "t1813823.html",
+    "file": "t1813823.html"
   },
   {
-    "title": "the catholics will all burn",
-    "file": "showthread.php@t=1813339.htm"
+    "title": "t1813824.html",
+    "file": "t1813824.html"
   },
   {
-    "title": "the best following",
-    "file": "showthread.php@t=1813340.htm"
+    "title": "t1813825.html",
+    "file": "t1813825.html"
   },
   {
-    "title": "Opus Dei",
-    "file": "showthread.php@t=1813341.htm"
+    "title": "t1813826.html",
+    "file": "t1813826.html"
   },
   {
-    "title": "Are you an idiot",
-    "file": "showthread.php@t=1813342.htm"
+    "title": "t1813827.html",
+    "file": "t1813827.html"
   },
   {
-    "title": "Religion and Jesus",
-    "file": "showthread.php@t=1813343.htm"
+    "title": "t1813828.html",
+    "file": "t1813828.html"
   },
   {
-    "title": "Why do people ignore evidence?",
-    "file": "showthread.php@t=1813344.htm"
+    "title": "t1813829.html",
+    "file": "t1813829.html"
   },
   {
-    "title": "What would you consider proof of God or gods",
-    "file": "showthread.php@t=1813345.htm"
+    "title": "t1813831.html",
+    "file": "t1813831.html"
   },
   {
-    "title": "theory about the Christian hijacking Myths",
-    "file": "showthread.php@t=1813346.htm"
+    "title": "t1813832.html",
+    "file": "t1813832.html"
   },
   {
-    "title": "Interesting Thought on Omnipotence",
-    "file": "showthread.php@t=1813347.htm"
+    "title": "t1813833.html",
+    "file": "t1813833.html"
   },
   {
-    "title": "If there is God, why can't I see Him?",
-    "file": "showthread.php@t=1813348.htm"
+    "title": "t1813834.html",
+    "file": "t1813834.html"
   },
   {
-    "title": "why do people preach",
-    "file": "showthread.php@t=1813349.htm"
+    "title": "t1813835.html",
+    "file": "t1813835.html"
   },
   {
-    "title": "If God knew...",
-    "file": "showthread.php@t=1813350.htm"
+    "title": "t1813836.html",
+    "file": "t1813836.html"
   },
   {
-    "title": "Mormonism Is Not Christianity",
-    "file": "showthread.php@t=1813351.htm"
+    "title": "t1813837.html",
+    "file": "t1813837.html"
   },
   {
-    "title": "God: the biggest catch 22 in the universe.",
-    "file": "showthread.php@t=1813352.htm"
+    "title": "t1813838.html",
+    "file": "t1813838.html"
   },
   {
-    "title": "Circumcision to discourage masturbation",
-    "file": "showthread.php@t=1813353.htm"
+    "title": "t1813839.html",
+    "file": "t1813839.html"
   },
   {
-    "title": "Jesus the hustler",
-    "file": "showthread.php@t=1813354.htm"
+    "title": "t1813840.html",
+    "file": "t1813840.html"
   },
   {
-    "title": "Here to answer anyone's question's about mormonism...  Except digital_savior",
-    "file": "showthread.php@t=1813355.htm"
+    "title": "t1813841.html",
+    "file": "t1813841.html"
   },
   {
-    "title": "i think i met god today....",
-    "file": "showthread.php@t=1813356.htm"
+    "title": "t1813842.html",
+    "file": "t1813842.html"
   },
   {
-    "title": "Christianity=World Destruction",
-    "file": "showthread.php@t=1813357.htm"
+    "title": "t1813843.html",
+    "file": "t1813843.html"
   },
   {
-    "title": "covenant question",
-    "file": "showthread.php@t=1813358.htm"
+    "title": "t1813845.html",
+    "file": "t1813845.html"
   },
   {
-    "title": "how come you go to hell if you kill yourself.",
-    "file": "showthread.php@t=1813359.htm"
+    "title": "t1813846.html",
+    "file": "t1813846.html"
   },
   {
-    "title": "Buddhists are really, really dull.",
-    "file": "showthread.php@t=1813360.htm"
+    "title": "t1813847.html",
+    "file": "t1813847.html"
   },
   {
-    "title": "The idea of a triune god coupled with salvation...",
-    "file": "showthread.php@t=1813361.htm"
+    "title": "t1813848.html",
+    "file": "t1813848.html"
   },
   {
-    "title": "Who Lives Above Religion",
-    "file": "showthread.php@t=1813362.htm"
+    "title": "t1813849.html",
+    "file": "t1813849.html"
   },
   {
-    "title": "Why do people have good intentions?",
-    "file": "showthread.php@t=1813363.htm"
+    "title": "t1813850.html",
+    "file": "t1813850.html"
   },
   {
-    "title": "an analogy of dreams",
-    "file": "showthread.php@t=1813364.htm"
+    "title": "t1813851.html",
+    "file": "t1813851.html"
   },
   {
-    "title": "why am i hated?",
-    "file": "showthread.php@t=1813365.htm"
+    "title": "t1813852.html",
+    "file": "t1813852.html"
   },
   {
-    "title": "the best!!",
-    "file": "showthread.php@t=1813366.htm"
+    "title": "t1813853.html",
+    "file": "t1813853.html"
   },
   {
-    "title": "Does the good Lord have free will?",
-    "file": "showthread.php@t=1813367.htm"
+    "title": "t1813854.html",
+    "file": "t1813854.html"
   },
   {
-    "title": "Ask an Atheist",
-    "file": "showthread.php@t=1813368.htm"
+    "title": "t1813855.html",
+    "file": "t1813855.html"
   },
   {
-    "title": "my views on stuff",
-    "file": "showthread.php@t=1813369.htm"
+    "title": "t1813856.html",
+    "file": "t1813856.html"
   },
   {
-    "title": "Jihadists needed",
-    "file": "showthread.php@t=1813370.htm"
+    "title": "t1813857.html",
+    "file": "t1813857.html"
   },
   {
-    "title": "Over all opinion",
-    "file": "showthread.php@t=1813371.htm"
+    "title": "t1813858.html",
+    "file": "t1813858.html"
   },
   {
-    "title": "Religion as a cause of war is overrated",
-    "file": "showthread.php@t=1813372.htm"
+    "title": "t1813859.html",
+    "file": "t1813859.html"
   },
   {
-    "title": "What woud you consider proof that there is NOT a God or gods",
-    "file": "showthread.php@t=1813373.htm"
+    "title": "t1813860.html",
+    "file": "t1813860.html"
   },
   {
-    "title": "Why didn't God inspire Scriptural translations to us?",
-    "file": "showthread.php@t=1813374.htm"
+    "title": "t1813861.html",
+    "file": "t1813861.html"
   },
   {
-    "title": "Hinduism vs. Buddhism",
-    "file": "showthread.php@t=1813375.htm"
+    "title": "t1813862.html",
+    "file": "t1813862.html"
   },
   {
-    "title": "\"I am Allah/Jesus/other!\"",
-    "file": "showthread.php@t=1813376.htm"
+    "title": "t1813863.html",
+    "file": "t1813863.html"
   },
   {
-    "title": "PHI- The Divine Number",
-    "file": "showthread.php@t=1813377.htm"
+    "title": "t1813865.html",
+    "file": "t1813865.html"
   },
   {
-    "title": "I want to start my own religion",
-    "file": "showthread.php@t=1813378.htm"
+    "title": "t1813866.html",
+    "file": "t1813866.html"
   },
   {
-    "title": "Finnally christan rock that doesn't suck ass",
-    "file": "showthread.php@t=1813379.htm"
+    "title": "t1813867.html",
+    "file": "t1813867.html"
   },
   {
-    "title": "Why is the bible full of metaphors that need 'interpretation'",
-    "file": "showthread.php@t=1813380.htm"
+    "title": "t1813868.html",
+    "file": "t1813868.html"
   },
   {
-    "title": "HOW COULD YOU??",
-    "file": "showthread.php@t=1813381.htm"
+    "title": "t1813870.html",
+    "file": "t1813870.html"
   },
   {
-    "title": "Does my screen name offend you?",
-    "file": "showthread.php@t=1813382.htm"
+    "title": "t1813871.html",
+    "file": "t1813871.html"
   },
   {
-    "title": "Genesis 1:12",
-    "file": "showthread.php@t=1813383.htm"
+    "title": "t1813872.html",
+    "file": "t1813872.html"
   },
   {
-    "title": "What would you count a sign from GOD as?",
-    "file": "showthread.php@t=1813384.htm"
+    "title": "t1813874.html",
+    "file": "t1813874.html"
   },
   {
-    "title": "is it a sin to......",
-    "file": "showthread.php@t=1813385.htm"
+    "title": "t1813875.html",
+    "file": "t1813875.html"
   },
   {
-    "title": "what is Nirvana?",
-    "file": "showthread.php@t=1813386.htm"
+    "title": "t1813876.html",
+    "file": "t1813876.html"
   },
   {
-    "title": "Dan Brown!",
-    "file": "showthread.php@t=1813388.htm"
+    "title": "t1813877.html",
+    "file": "t1813877.html"
   },
   {
-    "title": "Ask A Scientologist!",
-    "file": "showthread.php@t=1813389.htm"
+    "title": "t1813878.html",
+    "file": "t1813878.html"
   },
   {
-    "title": "My mother told me she loves god more than me.",
-    "file": "showthread.php@t=1813390.htm"
+    "title": "t1813879.html",
+    "file": "t1813879.html"
   },
   {
-    "title": "My Email to GodHatesFags.com",
-    "file": "showthread.php@t=1813391.htm"
+    "title": "t1813881.html",
+    "file": "t1813881.html"
   },
   {
-    "title": "What would Jesus do for a Klondike Bar?",
-    "file": "showthread.php@t=1813392.htm"
+    "title": "t1813882.html",
+    "file": "t1813882.html"
   },
   {
-    "title": "afterlife",
-    "file": "showthread.php@t=1813393.htm"
+    "title": "t1813883.html",
+    "file": "t1813883.html"
   },
   {
-    "title": "get your torches ready--another Christian",
-    "file": "showthread.php@t=1813394.htm"
+    "title": "t1813884.html",
+    "file": "t1813884.html"
   },
   {
-    "title": "Christian video game where you kill non-believers",
-    "file": "showthread.php@t=1813395.htm"
+    "title": "t1813886.html",
+    "file": "t1813886.html"
   },
   {
-    "title": "I wanted to get to know christians...",
-    "file": "showthread.php@t=1813396.htm"
+    "title": "t1813888.html",
+    "file": "t1813888.html"
   },
   {
-    "title": "ALL HAIL THE HOLY TABLE!!!!!",
-    "file": "showthread.php@t=1813397.htm"
+    "title": "t1813889.html",
+    "file": "t1813889.html"
   },
   {
-    "title": "ALL HAIL THE HOLY TABLE!!!!!",
-    "file": "showthread.php@t=1813398.htm"
+    "title": "t1813890.html",
+    "file": "t1813890.html"
   },
   {
-    "title": "Totse 06/06/06 Hack",
-    "file": "showthread.php@t=1813399.htm"
+    "title": "t1813892.html",
+    "file": "t1813892.html"
   },
   {
-    "title": "How do religions start?",
-    "file": "showthread.php@t=1813400.htm"
+    "title": "t1813893.html",
+    "file": "t1813893.html"
   },
   {
-    "title": "My view on Religion. It's not simple Atheism, as a lot of you thought.",
-    "file": "showthread.php@t=1813401.htm"
+    "title": "t1813894.html",
+    "file": "t1813894.html"
   },
   {
-    "title": "Would you say no?",
-    "file": "showthread.php@t=1813402.htm"
+    "title": "t1813895.html",
+    "file": "t1813895.html"
   },
   {
-    "title": "Complexity Proves God?",
-    "file": "showthread.php@t=1813403.htm"
+    "title": "t1813896.html",
+    "file": "t1813896.html"
   },
   {
-    "title": "Proof that he doesnt exist or just doesnt give shit.",
-    "file": "showthread.php@t=1813404.htm"
+    "title": "t1813897.html",
+    "file": "t1813897.html"
   },
   {
-    "title": "So 6/6/06, what if today was judgement day?",
-    "file": "showthread.php@t=1813405.htm"
+    "title": "t1813898.html",
+    "file": "t1813898.html"
   },
   {
-    "title": "For Atheist and Agnostics",
-    "file": "showthread.php@t=1813406.htm"
+    "title": "t1813899.html",
+    "file": "t1813899.html"
   },
   {
-    "title": "If God is real, he is a radical",
-    "file": "showthread.php@t=1813407.htm"
+    "title": "t1813900.html",
+    "file": "t1813900.html"
   },
   {
-    "title": "Gods skine colour?",
-    "file": "showthread.php@t=1813408.htm"
+    "title": "t1813901.html",
+    "file": "t1813901.html"
   },
   {
-    "title": "In case you haven't figured out by now...",
-    "file": "showthread.php@t=1813409.htm"
+    "title": "t1813902.html",
+    "file": "t1813902.html"
   },
   {
-    "title": "Revelation negates Armageddon.",
-    "file": "showthread.php@t=1813410.htm"
+    "title": "t1813903.html",
+    "file": "t1813903.html"
   },
   {
-    "title": "A little off the top.",
-    "file": "showthread.php@t=1813411.htm"
+    "title": "t1813904.html",
+    "file": "t1813904.html"
   },
   {
-    "title": "I think I am the way, the truth and the light.",
-    "file": "showthread.php@t=1813412.htm"
+    "title": "t1813905.html",
+    "file": "t1813905.html"
   },
   {
-    "title": "My talk with a religious person.",
-    "file": "showthread.php@t=1813416.htm"
+    "title": "t1813906.html",
+    "file": "t1813906.html"
   },
   {
-    "title": "The Westboro Baptist Church",
-    "file": "showthread.php@t=1813417.htm"
+    "title": "t1813907.html",
+    "file": "t1813907.html"
   },
   {
-    "title": "Atheism and the purpose of religion",
-    "file": "showthread.php@t=1813418.htm"
+    "title": "t1813908.html",
+    "file": "t1813908.html"
   },
   {
-    "title": "According to Creationist theory Dinosaurs didn't exsist millions of years ago.",
-    "file": "showthread.php@t=1813419.htm"
+    "title": "t1813909.html",
+    "file": "t1813909.html"
   },
   {
-    "title": "Totse help me out here",
-    "file": "showthread.php@t=1813420.htm"
+    "title": "t1813910.html",
+    "file": "t1813910.html"
   },
   {
-    "title": "How to Meditate",
-    "file": "showthread.php@t=1813422.htm"
+    "title": "t1813911.html",
+    "file": "t1813911.html"
   },
   {
-    "title": "If God is onmipotent",
-    "file": "showthread.php@t=1813424.htm"
+    "title": "t1813912.html",
+    "file": "t1813912.html"
   },
   {
-    "title": "LOOK WHAT CRISTIANS ARE DOING!!!",
-    "file": "showthread.php@t=1813425.htm"
+    "title": "t1813913.html",
+    "file": "t1813913.html"
   },
   {
-    "title": "Spiritual does not mean I am religous.",
-    "file": "showthread.php@t=1813426.htm"
+    "title": "t1813914.html",
+    "file": "t1813914.html"
   },
   {
-    "title": "a 6/6/06 thread pothead",
-    "file": "showthread.php@t=1813427.htm"
+    "title": "t1813915.html",
+    "file": "t1813915.html"
   },
   {
-    "title": "The Bible Says the Earth does not move",
-    "file": "showthread.php@t=1813428.htm"
+    "title": "t1813916.html",
+    "file": "t1813916.html"
   },
   {
-    "title": "On Islam and Christianity in the Middle East",
-    "file": "showthread.php@t=1813429.htm"
+    "title": "t1813917.html",
+    "file": "t1813917.html"
   },
   {
-    "title": "Jesus Video I made",
-    "file": "showthread.php@t=1813430.htm"
+    "title": "t1813918.html",
+    "file": "t1813918.html"
   },
   {
-    "title": "Strange test(Wicca, Satanism, Christians the whole shabang)",
-    "file": "showthread.php@t=1813431.htm"
+    "title": "t1813919.html",
+    "file": "t1813919.html"
   },
   {
-    "title": "I think someone has placed a curse on me",
-    "file": "showthread.php@t=1813432.htm"
+    "title": "t1813920.html",
+    "file": "t1813920.html"
   },
   {
-    "title": "Religion isn't real, Jesus was just a really good con artist.",
-    "file": "showthread.php@t=1813433.htm"
+    "title": "t1813921.html",
+    "file": "t1813921.html"
   },
   {
-    "title": "Jesus Video",
-    "file": "showthread.php@t=1813434.htm"
+    "title": "t1813922.html",
+    "file": "t1813922.html"
   },
   {
-    "title": "Verus?",
-    "file": "showthread.php@t=1813435.htm"
+    "title": "t1813923.html",
+    "file": "t1813923.html"
   },
   {
-    "title": "Eve & Adam= inbred humans",
-    "file": "showthread.php@t=1813436.htm"
+    "title": "t1813924.html",
+    "file": "t1813924.html"
   },
   {
-    "title": "Necronomicon...Marduc...everything",
-    "file": "showthread.php@t=1813437.htm"
+    "title": "t1813925.html",
+    "file": "t1813925.html"
   },
   {
-    "title": "OMFG !",
-    "file": "showthread.php@t=1813438.htm"
+    "title": "t1813926.html",
+    "file": "t1813926.html"
   },
   {
-    "title": "People who dont understand evolution/natural selection",
-    "file": "showthread.php@t=1813439.htm"
+    "title": "t1813927.html",
+    "file": "t1813927.html"
   },
   {
-    "title": "What the fuck is \"Church of the SubGenius.\"",
-    "file": "showthread.php@t=1813440.htm"
+    "title": "t1813928.html",
+    "file": "t1813928.html"
   },
   {
-    "title": "A List of Bible Contradictions",
-    "file": "showthread.php@t=1813441.htm"
+    "title": "t1813929.html",
+    "file": "t1813929.html"
   },
   {
-    "title": "To Digital_Thetan. You shit eating scientologist",
-    "file": "showthread.php@t=1813442.htm"
+    "title": "t1813930.html",
+    "file": "t1813930.html"
   },
   {
-    "title": "My friend asked me something the other day...",
-    "file": "showthread.php@t=1813443.htm"
+    "title": "t1813931.html",
+    "file": "t1813931.html"
   },
   {
-    "title": "The gender of God",
-    "file": "showthread.php@t=1813444.htm"
+    "title": "t1813932.html",
+    "file": "t1813932.html"
   },
   {
-    "title": "going to hell",
-    "file": "showthread.php@t=1813445.htm"
+    "title": "t1813933.html",
+    "file": "t1813933.html"
   },
   {
-    "title": "A question for Digital_Thetan",
-    "file": "showthread.php@t=1813446.htm"
+    "title": "t1813934.html",
+    "file": "t1813934.html"
   },
   {
-    "title": "Does anyone think Scientology is a religion?",
-    "file": "showthread.php@t=1813447.htm"
+    "title": "t1813936.html",
+    "file": "t1813936.html"
   },
   {
-    "title": "Wikipedia taken over by Scientology.",
-    "file": "showthread.php@t=1813448.htm"
+    "title": "t1813937.html",
+    "file": "t1813937.html"
   },
   {
-    "title": "How to Pray the Rosary - informational post for those who are interested [LONG]",
-    "file": "showthread.php@t=1813449.htm"
+    "title": "t1813938.html",
+    "file": "t1813938.html"
   },
   {
-    "title": "Religion?",
-    "file": "showthread.php@t=1813450.htm"
+    "title": "t1813939.html",
+    "file": "t1813939.html"
   },
   {
-    "title": "scared shitless",
-    "file": "showthread.php@t=1813451.htm"
+    "title": "t1813940.html",
+    "file": "t1813940.html"
   },
   {
-    "title": "A MUST read on scientology. Freakier than what you already know",
-    "file": "showthread.php@t=1813452.htm"
+    "title": "t1813941.html",
+    "file": "t1813941.html"
   },
   {
-    "title": "Could this at all be possible?",
-    "file": "showthread.php@t=1813454.htm"
+    "title": "t1813942.html",
+    "file": "t1813942.html"
   },
   {
-    "title": "there is nothing.",
-    "file": "showthread.php@t=1813456.htm"
+    "title": "t1813943.html",
+    "file": "t1813943.html"
   },
   {
-    "title": "Black Magic  and Secret Societies",
-    "file": "showthread.php@t=1813457.htm"
+    "title": "t1813944.html",
+    "file": "t1813944.html"
   },
   {
-    "title": "Thought you should know",
-    "file": "showthread.php@t=1813458.htm"
+    "title": "t1813945.html",
+    "file": "t1813945.html"
   },
   {
-    "title": "ALL christians, I seek a discussion.",
-    "file": "showthread.php@t=1813459.htm"
+    "title": "t1813946.html",
+    "file": "t1813946.html"
   },
   {
-    "title": "What is Heaven?",
-    "file": "showthread.php@t=1813460.htm"
+    "title": "t1813947.html",
+    "file": "t1813947.html"
   },
   {
-    "title": "Life & Death",
-    "file": "showthread.php@t=1813461.htm"
+    "title": "t1813948.html",
+    "file": "t1813948.html"
   },
   {
-    "title": "Jesus ruler of the jew..",
-    "file": "showthread.php@t=1813462.htm"
+    "title": "t1813949.html",
+    "file": "t1813949.html"
   },
   {
-    "title": "Only Post If you Are In the Witch Brood/Vampyre Coven",
-    "file": "showthread.php@t=1813463.htm"
+    "title": "t1813950.html",
+    "file": "t1813950.html"
   },
   {
-    "title": "Will God hate me if...",
-    "file": "showthread.php@t=1813464.htm"
+    "title": "t1813951.html",
+    "file": "t1813951.html"
   },
   {
-    "title": "If God manifested in front of you...",
-    "file": "showthread.php@t=1813465.htm"
+    "title": "t1813952.html",
+    "file": "t1813952.html"
   },
   {
-    "title": "I need somebody to help me have a better understanding of this.",
-    "file": "showthread.php@t=1813467.htm"
+    "title": "t1813953.html",
+    "file": "t1813953.html"
   },
   {
-    "title": "Roman Catholic Propoganda",
-    "file": "showthread.php@t=1813468.htm"
+    "title": "t1813954.html",
+    "file": "t1813954.html"
   },
   {
-    "title": "THERE IS NO GOD",
-    "file": "showthread.php@t=1813469.htm"
+    "title": "t1813955.html",
+    "file": "t1813955.html"
   },
   {
-    "title": "Arguing reason to the unreasonable",
-    "file": "showthread.php@t=1813471.htm"
+    "title": "t1813956.html",
+    "file": "t1813956.html"
   },
   {
-    "title": "Satanism",
-    "file": "showthread.php@t=1813473.htm"
+    "title": "t1813957.html",
+    "file": "t1813957.html"
   },
   {
-    "title": "a new kind of christian...",
-    "file": "showthread.php@t=1813474.htm"
+    "title": "t1813958.html",
+    "file": "t1813958.html"
   },
   {
-    "title": "God is mortal.",
-    "file": "showthread.php@t=1813475.htm"
+    "title": "t1813959.html",
+    "file": "t1813959.html"
   },
   {
-    "title": "request an article",
-    "file": "showthread.php@t=1813476.htm"
+    "title": "t1813960.html",
+    "file": "t1813960.html"
   },
   {
-    "title": "Jefferson Bible",
-    "file": "showthread.php@t=1813477.htm"
+    "title": "t1813961.html",
+    "file": "t1813961.html"
   },
   {
-    "title": "just wondering",
-    "file": "showthread.php@t=1813478.htm"
+    "title": "t1813962.html",
+    "file": "t1813962.html"
   },
   {
-    "title": "Life is a filter...",
-    "file": "showthread.php@t=1813479.htm"
+    "title": "t1813963.html",
+    "file": "t1813963.html"
   },
   {
-    "title": "&lrm;",
-    "file": "showthread.php@t=1813480.htm"
+    "title": "t1813964.html",
+    "file": "t1813964.html"
   },
   {
-    "title": "Define: God/your soul/what ever the fuck you know, to be true.",
-    "file": "showthread.php@t=1813481.htm"
+    "title": "t1813965.html",
+    "file": "t1813965.html"
   },
   {
-    "title": "Being homosexual makes you more likely to molest a child?",
-    "file": "showthread.php@t=1813482.htm"
+    "title": "t1813966.html",
+    "file": "t1813966.html"
   },
   {
-    "title": "Gay Son OMFGWTFBBQ",
-    "file": "showthread.php@t=1813483.htm"
+    "title": "t1813967.html",
+    "file": "t1813967.html"
   },
   {
-    "title": "My Problems With the Christian Church by Someone who Believes in God",
-    "file": "showthread.php@t=1813484.htm"
+    "title": "t1813968.html",
+    "file": "t1813968.html"
   },
   {
-    "title": "3 sexy sins",
-    "file": "showthread.php@t=1813485.htm"
+    "title": "t1813969.html",
+    "file": "t1813969.html"
   },
   {
-    "title": "Truth",
-    "file": "showthread.php@t=1813486.htm"
+    "title": "t1813970.html",
+    "file": "t1813970.html"
   },
   {
-    "title": "I'm thinking of converting to Catholicism",
-    "file": "showthread.php@t=1813489.htm"
+    "title": "t1813971.html",
+    "file": "t1813971.html"
   },
   {
-    "title": "Do we have free will?",
-    "file": "showthread.php@t=1813492.htm"
+    "title": "t1813972.html",
+    "file": "t1813972.html"
   },
   {
-    "title": "Naturism",
-    "file": "showthread.php@t=1813493.htm"
+    "title": "t1813973.html",
+    "file": "t1813973.html"
   },
   {
-    "title": "A Question About Jesus",
-    "file": "showthread.php@t=1813495.htm"
+    "title": "t1813974.html",
+    "file": "t1813974.html"
   },
   {
-    "title": "CHRISTIANS come convert me! I would like to here why you believe",
-    "file": "showthread.php@t=1813496.htm"
+    "title": "t1813975.html",
+    "file": "t1813975.html"
   },
   {
-    "title": "The truth about the Gospels",
-    "file": "showthread.php@t=1813497.htm"
+    "title": "t1813976.html",
+    "file": "t1813976.html"
   },
   {
-    "title": "My dear, Abrahim, you are flawed in your theories...",
-    "file": "showthread.php@t=1813500.htm"
+    "title": "t1813977.html",
+    "file": "t1813977.html"
   },
   {
-    "title": "Cell phone vs Bible/Quran",
-    "file": "showthread.php@t=1813501.htm"
+    "title": "t1813978.html",
+    "file": "t1813978.html"
   },
   {
-    "title": "Self Witness",
-    "file": "showthread.php@t=1813502.htm"
+    "title": "t1813979.html",
+    "file": "t1813979.html"
   },
   {
-    "title": "Let's all die now!",
-    "file": "showthread.php@t=1813503.htm"
+    "title": "t1813980.html",
+    "file": "t1813980.html"
   },
   {
-    "title": "The Brown Scapular",
-    "file": "showthread.php@t=1813504.htm"
+    "title": "t1813981.html",
+    "file": "t1813981.html"
   },
   {
-    "title": "Starting my own religion",
-    "file": "showthread.php@t=1813505.htm"
+    "title": "t1813982.html",
+    "file": "t1813982.html"
   },
   {
-    "title": "Religious Friends",
-    "file": "showthread.php@t=1813506.htm"
+    "title": "t1813983.html",
+    "file": "t1813983.html"
   },
   {
-    "title": "I'm a gnostic, NOW SAY SOMETHING!",
-    "file": "showthread.php@t=1813507.htm"
+    "title": "t1813984.html",
+    "file": "t1813984.html"
   },
   {
-    "title": "If you hate God, tell me why please.",
-    "file": "showthread.php@t=1813508.htm"
+    "title": "t1813985.html",
+    "file": "t1813985.html"
   },
   {
-    "title": "2nd BI Gang Thread",
-    "file": "showthread.php@t=1813509.htm"
+    "title": "t1813986.html",
+    "file": "t1813986.html"
   },
   {
-    "title": "Pro and cons of organized religion",
-    "file": "showthread.php@t=1813512.htm"
+    "title": "t1813987.html",
+    "file": "t1813987.html"
   },
   {
-    "title": "Namaste:)",
-    "file": "showthread.php@t=1813513.htm"
+    "title": "t1813988.html",
+    "file": "t1813988.html"
   },
   {
-    "title": "The Banana Argument",
-    "file": "showthread.php@t=1813514.htm"
+    "title": "t1813989.html",
+    "file": "t1813989.html"
   },
   {
-    "title": "To believers of any religion.",
-    "file": "showthread.php@t=1813515.htm"
+    "title": "t1813990.html",
+    "file": "t1813990.html"
   },
   {
-    "title": "taoism",
-    "file": "showthread.php@t=1813517.htm"
+    "title": "t1813991.html",
+    "file": "t1813991.html"
   },
   {
-    "title": "What if you are God?",
-    "file": "showthread.php@t=1813518.htm"
+    "title": "t1813992.html",
+    "file": "t1813992.html"
   },
   {
-    "title": "Convincing Christians that evolution is not evil",
-    "file": "showthread.php@t=1813519.htm"
+    "title": "t1813993.html",
+    "file": "t1813993.html"
   },
   {
-    "title": "Subgenius?",
-    "file": "showthread.php@t=1813520.htm"
+    "title": "t1813994.html",
+    "file": "t1813994.html"
   },
   {
-    "title": "Region, one of mans greatest inventions",
-    "file": "showthread.php@t=1813522.htm"
+    "title": "t1813995.html",
+    "file": "t1813995.html"
   },
   {
-    "title": "The Holy Qur'an [Many languages]",
-    "file": "showthread.php@t=1813523.htm"
+    "title": "t1813996.html",
+    "file": "t1813996.html"
   },
   {
-    "title": "Do you think god smokes weed",
-    "file": "showthread.php@t=1813524.htm"
+    "title": "t1813997.html",
+    "file": "t1813997.html"
   },
   {
-    "title": "The Afterlife",
-    "file": "showthread.php@t=1813525.htm"
+    "title": "t1813998.html",
+    "file": "t1813998.html"
   },
   {
-    "title": "a question about abortion",
-    "file": "showthread.php@t=1813526.htm"
+    "title": "t1813999.html",
+    "file": "t1813999.html"
   },
   {
-    "title": "Why was my thread locked",
-    "file": "showthread.php@t=1813527.htm"
+    "title": "t1814000.html",
+    "file": "t1814000.html"
   },
   {
-    "title": "Religion and war.",
-    "file": "showthread.php@t=1813528.htm"
+    "title": "t1814001.html",
+    "file": "t1814001.html"
   },
   {
-    "title": "a question about gods creations",
-    "file": "showthread.php@t=1813529.htm"
+    "title": "t1814002.html",
+    "file": "t1814002.html"
   },
   {
-    "title": "What makes Jesus's death different??",
-    "file": "showthread.php@t=1813531.htm"
+    "title": "t1814003.html",
+    "file": "t1814003.html"
   },
   {
-    "title": "Afterlife for an atheist according to various religions",
-    "file": "showthread.php@t=1813532.htm"
+    "title": "t1814004.html",
+    "file": "t1814004.html"
   },
   {
-    "title": "Chimps and religion?",
-    "file": "showthread.php@t=1813533.htm"
+    "title": "t1814005.html",
+    "file": "t1814005.html"
   },
   {
-    "title": "Watchmaker",
-    "file": "showthread.php@t=1813534.htm"
+    "title": "t1814006.html",
+    "file": "t1814006.html"
   },
   {
-    "title": "the *NEW* religion",
-    "file": "showthread.php@t=1813535.htm"
+    "title": "t1814007.html",
+    "file": "t1814007.html"
   },
   {
-    "title": "OT god vs. NT god???",
-    "file": "showthread.php@t=1813537.htm"
+    "title": "t1814008.html",
+    "file": "t1814008.html"
   },
   {
-    "title": "your religion",
-    "file": "showthread.php@t=1813539.htm"
+    "title": "t1814009.html",
+    "file": "t1814009.html"
   },
   {
-    "title": "Religion Ready Reckoner",
-    "file": "showthread.php@t=1813540.htm"
+    "title": "t1814010.html",
+    "file": "t1814010.html"
   },
   {
-    "title": "Does anyone here pray to Zeus?",
-    "file": "showthread.php@t=1813542.htm"
+    "title": "t1814011.html",
+    "file": "t1814011.html"
   },
   {
-    "title": "help me find a religion",
-    "file": "showthread.php@t=1813543.htm"
+    "title": "t1814012.html",
+    "file": "t1814012.html"
   },
   {
-    "title": "Who is Prophet Muhammad?????? [Many Languages] [including songs]",
-    "file": "showthread.php@t=1813544.htm"
+    "title": "t1814013.html",
+    "file": "t1814013.html"
   },
   {
-    "title": "my god beats up your brown god",
-    "file": "showthread.php@t=1813545.htm"
+    "title": "t1814014.html",
+    "file": "t1814014.html"
   },
   {
-    "title": "Want a spiritual experience?",
-    "file": "showthread.php@t=1813546.htm"
+    "title": "t1814015.html",
+    "file": "t1814015.html"
   },
   {
-    "title": "Analwhorism",
-    "file": "showthread.php@t=1813547.htm"
+    "title": "t1814016.html",
+    "file": "t1814016.html"
   },
   {
-    "title": "I have a question Abrahim",
-    "file": "showthread.php@t=1813549.htm"
+    "title": "t1814017.html",
+    "file": "t1814017.html"
   },
   {
-    "title": "I AM AHURA MAZDA AND I AM HERE TO FONDLE YOUR CHILDREN!!!",
-    "file": "showthread.php@t=1813550.htm"
+    "title": "t1814018.html",
+    "file": "t1814018.html"
   },
   {
-    "title": "something i just don't understand",
-    "file": "showthread.php@t=1813551.htm"
+    "title": "t1814019.html",
+    "file": "t1814019.html"
   },
   {
-    "title": "SG has a christian from one of their sites",
-    "file": "showthread.php@t=1813552.htm"
+    "title": "t1814020.html",
+    "file": "t1814020.html"
   },
   {
-    "title": "why was it closed?",
-    "file": "showthread.php@t=1813553.htm"
+    "title": "t1814021.html",
+    "file": "t1814021.html"
   },
   {
-    "title": "WHO HERE IS A SODOMITE BESIDES ME???",
-    "file": "showthread.php@t=1813554.htm"
+    "title": "t1814022.html",
+    "file": "t1814022.html"
   },
   {
-    "title": "abrahim (about islam)",
-    "file": "showthread.php@t=1813555.htm"
+    "title": "t1814023.html",
+    "file": "t1814023.html"
   },
   {
-    "title": "Is there a God?",
-    "file": "showthread.php@t=1813556.htm"
+    "title": "t1814024.html",
+    "file": "t1814024.html"
   },
   {
-    "title": "Nemo is God",
-    "file": "showthread.php@t=1813557.htm"
+    "title": "t1814025.html",
+    "file": "t1814025.html"
   },
   {
-    "title": "So I'm going to church this sunday.",
-    "file": "showthread.php@t=1813558.htm"
+    "title": "t1814026.html",
+    "file": "t1814026.html"
   },
   {
-    "title": "Do as I say not as I do.",
-    "file": "showthread.php@t=1813559.htm"
+    "title": "t1814027.html",
+    "file": "t1814027.html"
   },
   {
-    "title": "Jesus Was Black",
-    "file": "showthread.php@t=1813560.htm"
+    "title": "t1814028.html",
+    "file": "t1814028.html"
   },
   {
-    "title": "Jewish--Ethnicity or religion?",
-    "file": "showthread.php@t=1813561.htm"
+    "title": "t1814029.html",
+    "file": "t1814029.html"
   },
   {
-    "title": "I'm back",
-    "file": "showthread.php@t=1813562.htm"
+    "title": "t1814030.html",
+    "file": "t1814030.html"
   },
   {
-    "title": "How was god/big bang created part 2",
-    "file": "showthread.php@t=1813563.htm"
+    "title": "t1814031.html",
+    "file": "t1814031.html"
   },
   {
-    "title": "How was God Created?",
-    "file": "showthread.php@t=1813564.htm"
+    "title": "t1814032.html",
+    "file": "t1814032.html"
   },
   {
-    "title": "Agnostic",
-    "file": "showthread.php@t=1813565.htm"
+    "title": "t1814033.html",
+    "file": "t1814033.html"
   },
   {
-    "title": "Screw Religion, WE DON'T NEED IT.",
-    "file": "showthread.php@t=1813566.htm"
+    "title": "t1814034.html",
+    "file": "t1814034.html"
   },
   {
-    "title": "My new religion",
-    "file": "showthread.php@t=1813568.htm"
+    "title": "t1814035.html",
+    "file": "t1814035.html"
   },
   {
-    "title": "Astrology",
-    "file": "showthread.php@t=1813569.htm"
+    "title": "t1814036.html",
+    "file": "t1814036.html"
   },
   {
-    "title": "Prophecy Concerning Israeli-Hezbollah-Hamas fighting?",
-    "file": "showthread.php@t=1813571.htm"
+    "title": "t1814037.html",
+    "file": "t1814037.html"
   },
   {
-    "title": "is dis forum about god",
-    "file": "showthread.php@t=1813572.htm"
+    "title": "t1814038.html",
+    "file": "t1814038.html"
   },
   {
-    "title": "JESUS WAS A FUCKING HIPPIE",
-    "file": "showthread.php@t=1813573.htm"
+    "title": "t1814039.html",
+    "file": "t1814039.html"
   },
   {
-    "title": "Thelema",
-    "file": "showthread.php@t=1813574.htm"
+    "title": "t1814040.html",
+    "file": "t1814040.html"
   },
   {
-    "title": "Jehovas Witnesses",
-    "file": "showthread.php@t=1813575.htm"
+    "title": "t1814041.html",
+    "file": "t1814041.html"
   },
   {
-    "title": "There is a God.",
-    "file": "showthread.php@t=1813576.htm"
+    "title": "t1814042.html",
+    "file": "t1814042.html"
   },
   {
-    "title": "GODS POWERS!",
-    "file": "showthread.php@t=1813577.htm"
+    "title": "t1814043.html",
+    "file": "t1814043.html"
   },
   {
-    "title": "Im gunna end religion right now",
-    "file": "showthread.php@t=1813578.htm"
+    "title": "t1814044.html",
+    "file": "t1814044.html"
   },
   {
-    "title": "The Faith of an Atheist",
-    "file": "showthread.php@t=1813579.htm"
+    "title": "t1814045.html",
+    "file": "t1814045.html"
   },
   {
-    "title": "Does anybody give a shit about my Bible notes?",
-    "file": "showthread.php@t=1813580.htm"
+    "title": "t1814046.html",
+    "file": "t1814046.html"
   },
   {
-    "title": "i created my own religion and i worship my own gods",
-    "file": "showthread.php@t=1813581.htm"
+    "title": "t1814047.html",
+    "file": "t1814047.html"
   },
   {
-    "title": "There Is No GOD",
-    "file": "showthread.php@t=1813582.htm"
+    "title": "t1814048.html",
+    "file": "t1814048.html"
   },
   {
-    "title": "heres whats real that most debuff",
-    "file": "showthread.php@t=1813583.htm"
+    "title": "t1814049.html",
+    "file": "t1814049.html"
   },
   {
-    "title": "Biblical Theory",
-    "file": "showthread.php@t=1813584.htm"
+    "title": "t1814050.html",
+    "file": "t1814050.html"
   },
   {
-    "title": "morality?",
-    "file": "showthread.php@t=1813585.htm"
+    "title": "t1814051.html",
+    "file": "t1814051.html"
   },
   {
-    "title": "Sonshine",
-    "file": "showthread.php@t=1813586.htm"
+    "title": "t1814052.html",
+    "file": "t1814052.html"
   },
   {
-    "title": "FUCK",
-    "file": "showthread.php@t=1813587.htm"
+    "title": "t1814053.html",
+    "file": "t1814053.html"
   },
   {
-    "title": "How do you go about 'picking up' a faith?",
-    "file": "showthread.php@t=1813591.htm"
+    "title": "t1814054.html",
+    "file": "t1814054.html"
   },
   {
-    "title": "Abrahim, Question about the Islam.",
-    "file": "showthread.php@t=1813592.htm"
+    "title": "t1814055.html",
+    "file": "t1814055.html"
   },
   {
-    "title": "True?",
-    "file": "showthread.php@t=1813593.htm"
+    "title": "t1814056.html",
+    "file": "t1814056.html"
   },
   {
-    "title": "Are ancient religions still practiced at all?",
-    "file": "showthread.php@t=1813594.htm"
+    "title": "t1814057.html",
+    "file": "t1814057.html"
   },
   {
-    "title": "Book of ORIGIN",
-    "file": "showthread.php@t=1813595.htm"
+    "title": "t1814058.html",
+    "file": "t1814058.html"
   },
   {
-    "title": "Preachers with the wrong idea?",
-    "file": "showthread.php@t=1813596.htm"
+    "title": "t1814059.html",
+    "file": "t1814059.html"
   },
   {
-    "title": "converting to atheism?",
-    "file": "showthread.php@t=1813597.htm"
+    "title": "t1814060.html",
+    "file": "t1814060.html"
   },
   {
-    "title": "superior race",
-    "file": "showthread.php@t=1813599.htm"
+    "title": "t1814061.html",
+    "file": "t1814061.html"
   },
   {
-    "title": "What I don't understand...",
-    "file": "showthread.php@t=1813600.htm"
+    "title": "t1814062.html",
+    "file": "t1814062.html"
   },
   {
-    "title": "Becoming Shaman",
-    "file": "showthread.php@t=1813602.htm"
+    "title": "t1814063.html",
+    "file": "t1814063.html"
   },
   {
-    "title": "OK, this sums it up",
-    "file": "showthread.php@t=1813603.htm"
+    "title": "t1814064.html",
+    "file": "t1814064.html"
   },
   {
-    "title": "Forum Suggestions And Commentary Goes Here",
-    "file": "showthread.php@t=1813606.htm"
+    "title": "t1814065.html",
+    "file": "t1814065.html"
   },
   {
-    "title": "WOmen on Al jazeera speaks about muslims",
-    "file": "showthread.php@t=1813607.htm"
+    "title": "t1814066.html",
+    "file": "t1814066.html"
   },
   {
-    "title": "Atheism/Humanism",
-    "file": "showthread.php@t=1813608.htm"
+    "title": "t1814067.html",
+    "file": "t1814067.html"
   },
   {
-    "title": "What would you call me",
-    "file": "showthread.php@t=1813609.htm"
+    "title": "t1814068.html",
+    "file": "t1814068.html"
   },
   {
-    "title": "Could Jesus sin?",
-    "file": "showthread.php@t=1813610.htm"
+    "title": "t1814069.html",
+    "file": "t1814069.html"
   },
   {
-    "title": "Rhyme I wrote",
-    "file": "showthread.php@t=1813611.htm"
+    "title": "t1814070.html",
+    "file": "t1814070.html"
   },
   {
-    "title": "If we were created in the image of God...",
-    "file": "showthread.php@t=1813612.htm"
+    "title": "t1814071.html",
+    "file": "t1814071.html"
   },
   {
-    "title": "The Hand of Fatimah",
-    "file": "showthread.php@t=1813613.htm"
+    "title": "t1814072.html",
+    "file": "t1814072.html"
   },
   {
-    "title": "Human Conscience and God",
-    "file": "showthread.php@t=1813614.htm"
+    "title": "t1814073.html",
+    "file": "t1814073.html"
   },
   {
-    "title": "If you knew for certain that there was no God",
-    "file": "showthread.php@t=1813617.htm"
+    "title": "t1814074.html",
+    "file": "t1814074.html"
   },
   {
-    "title": "Meditations",
-    "file": "showthread.php@t=1813619.htm"
+    "title": "t1814075.html",
+    "file": "t1814075.html"
   },
   {
-    "title": "Solitary Monks",
-    "file": "showthread.php@t=1813620.htm"
+    "title": "t1814076.html",
+    "file": "t1814076.html"
   },
   {
-    "title": "Taliban Online",
-    "file": "showthread.php@t=1813621.htm"
+    "title": "t1814077.html",
+    "file": "t1814077.html"
   },
   {
-    "title": "Jesus died for us?",
-    "file": "showthread.php@t=1813622.htm"
+    "title": "t1814078.html",
+    "file": "t1814078.html"
   },
   {
-    "title": "WHY THE FUCK DID I DIE ON THE CROSS FOR YOU WORTHLESS ATHEIST COCKSUCKERS?!?!ONEONE",
-    "file": "showthread.php@t=1813623.htm"
+    "title": "t1814079.html",
+    "file": "t1814079.html"
   },
   {
-    "title": "Anglocan church is bullshit",
-    "file": "showthread.php@t=1813626.htm"
+    "title": "t1814080.html",
+    "file": "t1814080.html"
   },
   {
-    "title": "Jesus died to save us from eternal damnation.",
-    "file": "showthread.php@t=1813627.htm"
+    "title": "t1814081.html",
+    "file": "t1814081.html"
   },
   {
-    "title": "Is the world gonna end within the next 70 years? Serious Question.",
-    "file": "showthread.php@t=1813628.htm"
+    "title": "t1814082.html",
+    "file": "t1814082.html"
   },
   {
-    "title": "To Those  Who Criticize The Naturalistic In Favor Of Supernaturalism",
-    "file": "showthread.php@t=1813629.htm"
+    "title": "t1814083.html",
+    "file": "t1814083.html"
   },
   {
-    "title": "Interesting statistics",
-    "file": "showthread.php@t=1813630.htm"
+    "title": "t1814084.html",
+    "file": "t1814084.html"
   },
   {
-    "title": "Jews vs Christians",
-    "file": "showthread.php@t=1813631.htm"
+    "title": "t1814085.html",
+    "file": "t1814085.html"
   },
   {
-    "title": "Buddhism",
-    "file": "showthread.php@t=1813632.htm"
+    "title": "t1814086.html",
+    "file": "t1814086.html"
   },
   {
-    "title": "Bible question",
-    "file": "showthread.php@t=1813634.htm"
+    "title": "t1814087.html",
+    "file": "t1814087.html"
   },
   {
-    "title": "Does god exist?(not a normal \"does god exist\" thread)",
-    "file": "showthread.php@t=1813636.htm"
+    "title": "t1814088.html",
+    "file": "t1814088.html"
   },
   {
-    "title": "Why I believe in god.",
-    "file": "showthread.php@t=1813637.htm"
+    "title": "t1814089.html",
+    "file": "t1814089.html"
   },
   {
-    "title": "Islam and Terrorism",
-    "file": "showthread.php@t=1813638.htm"
+    "title": "t1814090.html",
+    "file": "t1814090.html"
   },
   {
-    "title": "\"Surely you believe in a god that cares for us?!\"",
-    "file": "showthread.php@t=1813639.htm"
+    "title": "t1814091.html",
+    "file": "t1814091.html"
   },
   {
-    "title": "Scientific truths in the Qur'an...",
-    "file": "showthread.php@t=1813640.htm"
+    "title": "t1814092.html",
+    "file": "t1814092.html"
   },
   {
-    "title": "A WARNING TO ALL!!!!!",
-    "file": "showthread.php@t=1813642.htm"
+    "title": "t1814093.html",
+    "file": "t1814093.html"
   },
   {
-    "title": "Satanism...",
-    "file": "showthread.php@t=1813643.htm"
+    "title": "t1814094.html",
+    "file": "t1814094.html"
   },
   {
-    "title": "Soul.",
-    "file": "showthread.php@t=1813645.htm"
+    "title": "t1814095.html",
+    "file": "t1814095.html"
   },
   {
-    "title": "Who actually cares?",
-    "file": "showthread.php@t=1813646.htm"
+    "title": "t1814096.html",
+    "file": "t1814096.html"
   },
   {
-    "title": "Religion is fucking gay",
-    "file": "showthread.php@t=1813647.htm"
+    "title": "t1814097.html",
+    "file": "t1814097.html"
   },
   {
-    "title": "Survival of the fittest cannot be proven?",
-    "file": "showthread.php@t=1813649.htm"
+    "title": "t1814098.html",
+    "file": "t1814098.html"
   },
   {
-    "title": "An Afterlife-what would you like?",
-    "file": "showthread.php@t=1813651.htm"
+    "title": "t1814099.html",
+    "file": "t1814099.html"
   },
   {
-    "title": "Vale Atefah",
-    "file": "showthread.php@t=1813652.htm"
+    "title": "t1814100.html",
+    "file": "t1814100.html"
   },
   {
-    "title": "christian holidays",
-    "file": "showthread.php@t=1813653.htm"
+    "title": "t1814101.html",
+    "file": "t1814101.html"
   },
   {
-    "title": "Christian holidays 2",
-    "file": "showthread.php@t=1813654.htm"
+    "title": "t1814102.html",
+    "file": "t1814102.html"
   },
   {
-    "title": "Announcing the Totse Religious Poll",
-    "file": "showthread.php@t=1813655.htm"
+    "title": "t1814103.html",
+    "file": "t1814103.html"
   },
   {
-    "title": "face it. your gonna die. then what?",
-    "file": "showthread.php@t=1813656.htm"
+    "title": "t1814104.html",
+    "file": "t1814104.html"
   },
   {
-    "title": "Non-Religious Faith",
-    "file": "showthread.php@t=1813657.htm"
+    "title": "t1814105.html",
+    "file": "t1814105.html"
   },
   {
-    "title": "Why non-literal interpretation is the right way to read the bible.",
-    "file": "showthread.php@t=1813658.htm"
+    "title": "t1814106.html",
+    "file": "t1814106.html"
   },
   {
-    "title": "laying of hands and speaking in tongues",
-    "file": "showthread.php@t=1813659.htm"
+    "title": "t1814107.html",
+    "file": "t1814107.html"
   },
   {
-    "title": "Can someone help me clearify whats going on?",
-    "file": "showthread.php@t=1813661.htm"
+    "title": "t1814108.html",
+    "file": "t1814108.html"
   },
   {
-    "title": "The Ultimate Absurdity of Christianity",
-    "file": "showthread.php@t=1813663.htm"
+    "title": "t1814109.html",
+    "file": "t1814109.html"
   },
   {
-    "title": "Why people are religious",
-    "file": "showthread.php@t=1813664.htm"
+    "title": "t1814110.html",
+    "file": "t1814110.html"
   },
   {
-    "title": "A promise to god",
-    "file": "showthread.php@t=1813665.htm"
+    "title": "t1814111.html",
+    "file": "t1814111.html"
   },
   {
-    "title": "For all you atheists out there.",
-    "file": "showthread.php@t=1813668.htm"
+    "title": "t1814112.html",
+    "file": "t1814112.html"
   },
   {
-    "title": "Man imprisoned for son's Christian name",
-    "file": "showthread.php@t=1813672.htm"
+    "title": "t1814113.html",
+    "file": "t1814113.html"
   },
   {
-    "title": "Vancouver BC MEETUP",
-    "file": "showthread.php@t=1813673.htm"
+    "title": "t1814114.html",
+    "file": "t1814114.html"
   },
   {
-    "title": "Are there a billion or more atheists in the world?",
-    "file": "showthread.php@t=1813674.htm"
+    "title": "t1814115.html",
+    "file": "t1814115.html"
   },
   {
-    "title": "Theistic Satanist",
-    "file": "showthread.php@t=1813675.htm"
+    "title": "t1814116.html",
+    "file": "t1814116.html"
   },
   {
-    "title": "Does anyone else see the Christian God as a spoilt brat?",
-    "file": "showthread.php@t=1813676.htm"
+    "title": "t1814117.html",
+    "file": "t1814117.html"
   },
   {
-    "title": "#@#@#@  Who Is Your God? #@#@#@",
-    "file": "showthread.php@t=1813677.htm"
+    "title": "t1814118.html",
+    "file": "t1814118.html"
   },
   {
-    "title": "Barber shop",
-    "file": "showthread.php@t=1813678.htm"
+    "title": "t1814119.html",
+    "file": "t1814119.html"
   },
   {
-    "title": "If Satan existed, I would be a Satanist!!!",
-    "file": "showthread.php@t=1813679.htm"
+    "title": "t1814120.html",
+    "file": "t1814120.html"
   },
   {
-    "title": "Altered Perceptionf of Reality",
-    "file": "showthread.php@t=1813680.htm"
+    "title": "t1814121.html",
+    "file": "t1814121.html"
   },
   {
-    "title": "Madness and Mysticism",
-    "file": "showthread.php@t=1813681.htm"
+    "title": "t1814122.html",
+    "file": "t1814122.html"
   },
   {
-    "title": "Subtle Body",
-    "file": "showthread.php@t=1813682.htm"
+    "title": "t1814123.html",
+    "file": "t1814123.html"
   },
   {
-    "title": "Do you think religion is being pushed on you...",
-    "file": "showthread.php@t=1813683.htm"
+    "title": "t1814124.html",
+    "file": "t1814124.html"
   },
   {
-    "title": "Gods Will?",
-    "file": "showthread.php@t=1813684.htm"
+    "title": "t1814125.html",
+    "file": "t1814125.html"
   },
   {
-    "title": "The Sun God",
-    "file": "showthread.php@t=1813685.htm"
+    "title": "t1814126.html",
+    "file": "t1814126.html"
   },
   {
-    "title": "Peanutology",
-    "file": "showthread.php@t=1813687.htm"
+    "title": "t1814127.html",
+    "file": "t1814127.html"
   },
   {
-    "title": "DOES GOD LOVE ME???",
-    "file": "showthread.php@t=1813688.htm"
+    "title": "t1814128.html",
+    "file": "t1814128.html"
   },
   {
-    "title": "what if you were god?",
-    "file": "showthread.php@t=1813689.htm"
+    "title": "t1814129.html",
+    "file": "t1814129.html"
   },
   {
-    "title": "Which religions does the old testament steal from?",
-    "file": "showthread.php@t=1813690.htm"
+    "title": "t1814130.html",
+    "file": "t1814130.html"
   },
   {
-    "title": "Church's belief on suicide",
-    "file": "showthread.php@t=1813691.htm"
+    "title": "t1814131.html",
+    "file": "t1814131.html"
   },
   {
-    "title": "Jesus as Messiah",
-    "file": "showthread.php@t=1813692.htm"
+    "title": "t1814132.html",
+    "file": "t1814132.html"
   },
   {
-    "title": "Is Islam pan-Arabism?",
-    "file": "showthread.php@t=1813693.htm"
+    "title": "t1814133.html",
+    "file": "t1814133.html"
   },
   {
-    "title": "God is not omnipotent.",
-    "file": "showthread.php@t=1813694.htm"
+    "title": "t1814134.html",
+    "file": "t1814134.html"
   },
   {
-    "title": "is this wrong?",
-    "file": "showthread.php@t=1813695.htm"
+    "title": "t1814135.html",
+    "file": "t1814135.html"
   },
   {
-    "title": "Interesting article that makes satan out as an alright guy.",
-    "file": "showthread.php@t=1813696.htm"
+    "title": "t1814136.html",
+    "file": "t1814136.html"
   },
   {
-    "title": "ENJOY YOUR ETERNAL REWARD OF FIRE AND BRIMSTONE ALL YOU NONE-BELIEVERS",
-    "file": "showthread.php@t=1813697.htm"
+    "title": "t1814137.html",
+    "file": "t1814137.html"
   },
   {
-    "title": "Looking for a religion.",
-    "file": "showthread.php@t=1813698.htm"
+    "title": "t1814138.html",
+    "file": "t1814138.html"
   },
   {
-    "title": "LaVeyan Satanism",
-    "file": "showthread.php@t=1813699.htm"
+    "title": "t1814139.html",
+    "file": "t1814139.html"
   },
   {
-    "title": "funnny cartoon with some very good points re:religion/politics",
-    "file": "showthread.php@t=1813700.htm"
+    "title": "t1814140.html",
+    "file": "t1814140.html"
   },
   {
-    "title": "Grandparents and my atheism",
-    "file": "showthread.php@t=1813701.htm"
+    "title": "t1814141.html",
+    "file": "t1814141.html"
   },
   {
-    "title": "Eternity",
-    "file": "showthread.php@t=1813702.htm"
+    "title": "t1814142.html",
+    "file": "t1814142.html"
   },
   {
-    "title": "Why am i a christian",
-    "file": "showthread.php@t=1813703.htm"
+    "title": "t1814143.html",
+    "file": "t1814143.html"
   },
   {
-    "title": "Vancouver MEETUP in 3 DAYS",
-    "file": "showthread.php@t=1813704.htm"
+    "title": "t1814144.html",
+    "file": "t1814144.html"
   },
   {
-    "title": "about nichiren?",
-    "file": "showthread.php@t=1813705.htm"
+    "title": "t1814145.html",
+    "file": "t1814145.html"
   },
   {
-    "title": "Is religion a form of psychological control?",
-    "file": "showthread.php@t=1813706.htm"
+    "title": "t1814146.html",
+    "file": "t1814146.html"
   },
   {
-    "title": "And Thor was pissed at me...",
-    "file": "showthread.php@t=1813707.htm"
+    "title": "t1814147.html",
+    "file": "t1814147.html"
   },
   {
-    "title": "man's nature..",
-    "file": "showthread.php@t=1813708.htm"
+    "title": "t1814148.html",
+    "file": "t1814148.html"
   },
   {
-    "title": "Can God Create A Rock So Heavy...",
-    "file": "showthread.php@t=1813709.htm"
+    "title": "t1814149.html",
+    "file": "t1814149.html"
   },
   {
-    "title": "For members of Abraham religions, to condemn egoism is to blaspheme.",
-    "file": "showthread.php@t=1813710.htm"
+    "title": "t1814150.html",
+    "file": "t1814150.html"
   },
   {
-    "title": "Religion bullshit? The Christianity Questionaire!!",
-    "file": "showthread.php@t=1813711.htm"
+    "title": "t1814151.html",
+    "file": "t1814151.html"
   },
   {
-    "title": "I have a question for Christians",
-    "file": "showthread.php@t=1813712.htm"
+    "title": "t1814152.html",
+    "file": "t1814152.html"
   },
   {
-    "title": "Alien thought?",
-    "file": "showthread.php@t=1813713.htm"
+    "title": "t1814153.html",
+    "file": "t1814153.html"
   },
   {
-    "title": "Rules to slaying an Immortal",
-    "file": "showthread.php@t=1813714.htm"
+    "title": "t1814154.html",
+    "file": "t1814154.html"
   },
   {
-    "title": "All Major Religions Believe in Extra Terrestrials!",
-    "file": "showthread.php@t=1813715.htm"
+    "title": "t1814155.html",
+    "file": "t1814155.html"
   },
   {
-    "title": "What religion you should be (in this tests opinian)",
-    "file": "showthread.php@t=1813716.htm"
+    "title": "t1814156.html",
+    "file": "t1814156.html"
   },
   {
-    "title": "God forgives all?",
-    "file": "showthread.php@t=1813717.htm"
+    "title": "t1814157.html",
+    "file": "t1814157.html"
   },
   {
-    "title": "Non offensive question for christians",
-    "file": "showthread.php@t=1813718.htm"
+    "title": "t1814158.html",
+    "file": "t1814158.html"
   },
   {
-    "title": "Blind faith...",
-    "file": "showthread.php@t=1813719.htm"
+    "title": "t1814159.html",
+    "file": "t1814159.html"
   },
   {
-    "title": "videos",
-    "file": "showthread.php@t=1813720.htm"
+    "title": "t1814160.html",
+    "file": "t1814160.html"
   },
   {
-    "title": "Pagan/Wiccans?",
-    "file": "showthread.php@t=1813721.htm"
+    "title": "t1814161.html",
+    "file": "t1814161.html"
   },
   {
-    "title": "Good or bad? You decide....",
-    "file": "showthread.php@t=1813722.htm"
+    "title": "t1814162.html",
+    "file": "t1814162.html"
   },
   {
-    "title": "Christianity as mysticism?",
-    "file": "showthread.php@t=1813723.htm"
+    "title": "t1814163.html",
+    "file": "t1814163.html"
   },
   {
-    "title": "Where does your faith come from?",
-    "file": "showthread.php@t=1813724.htm"
+    "title": "t1814164.html",
+    "file": "t1814164.html"
   },
   {
-    "title": "The purpose of our existence .........the real reason we are here",
-    "file": "showthread.php@t=1813725.htm"
+    "title": "t1814165.html",
+    "file": "t1814165.html"
   },
   {
-    "title": "Funny Conservetive Christians",
-    "file": "showthread.php@t=1813726.htm"
+    "title": "t1814166.html",
+    "file": "t1814166.html"
   },
   {
-    "title": "Cosmotheism?",
-    "file": "showthread.php@t=1813727.htm"
+    "title": "t1814167.html",
+    "file": "t1814167.html"
   },
   {
-    "title": "A young child, of much wisdom.",
-    "file": "showthread.php@t=1813728.htm"
+    "title": "t1814168.html",
+    "file": "t1814168.html"
   },
   {
-    "title": "does god accept wanking",
-    "file": "showthread.php@t=1813729.htm"
+    "title": "t1814169.html",
+    "file": "t1814169.html"
   },
   {
-    "title": "Jesus vs. Hitler",
-    "file": "showthread.php@t=1813730.htm"
+    "title": "t1814170.html",
+    "file": "t1814170.html"
   },
   {
-    "title": "To the Moslim of the forum.",
-    "file": "showthread.php@t=1813732.htm"
+    "title": "t1814171.html",
+    "file": "t1814171.html"
   },
   {
-    "title": "A question about Muhammed",
-    "file": "showthread.php@t=1813733.htm"
+    "title": "t1814172.html",
+    "file": "t1814172.html"
   },
   {
-    "title": "Its up to you know totse",
-    "file": "showthread.php@t=1813734.htm"
+    "title": "t1814173.html",
+    "file": "t1814173.html"
   },
   {
-    "title": "Islam and chemistry",
-    "file": "showthread.php@t=1813735.htm"
+    "title": "t1814174.html",
+    "file": "t1814174.html"
   },
   {
-    "title": "Praeternatural Abilities!",
-    "file": "showthread.php@t=1813736.htm"
+    "title": "t1814175.html",
+    "file": "t1814175.html"
   },
   {
-    "title": "If Jesus Wasn't Crucified",
-    "file": "showthread.php@t=1813737.htm"
+    "title": "t1814176.html",
+    "file": "t1814176.html"
   },
   {
-    "title": "fuck muslems they are stupid",
-    "file": "showthread.php@t=1813738.htm"
+    "title": "t1814177.html",
+    "file": "t1814177.html"
   },
   {
-    "title": "Online guide:  Killing Infidels",
-    "file": "showthread.php@t=1813739.htm"
+    "title": "t1814178.html",
+    "file": "t1814178.html"
   },
   {
-    "title": "Lucifer = God of Christianity",
-    "file": "showthread.php@t=1813740.htm"
+    "title": "t1814179.html",
+    "file": "t1814179.html"
   },
   {
-    "title": "Im atheist and never read the bible, should I?",
-    "file": "showthread.php@t=1813741.htm"
+    "title": "t1814180.html",
+    "file": "t1814180.html"
   },
   {
-    "title": "Finally",
-    "file": "showthread.php@t=1813742.htm"
+    "title": "t1814181.html",
+    "file": "t1814181.html"
   },
   {
-    "title": "God?!?!?!?........in the pledge of allegence(cant spell it I know)",
-    "file": "showthread.php@t=1813743.htm"
+    "title": "t1814182.html",
+    "file": "t1814182.html"
   },
   {
-    "title": "Catholics",
-    "file": "showthread.php@t=1813744.htm"
+    "title": "t1814183.html",
+    "file": "t1814183.html"
   },
   {
-    "title": "The New Religion - \"What Is Right\"",
-    "file": "showthread.php@t=1813745.htm"
+    "title": "t1814184.html",
+    "file": "t1814184.html"
   },
   {
-    "title": "A very simple question",
-    "file": "showthread.php@t=1813746.htm"
+    "title": "t1814185.html",
+    "file": "t1814185.html"
   },
   {
-    "title": "Realism",
-    "file": "showthread.php@t=1813747.htm"
+    "title": "t1814186.html",
+    "file": "t1814186.html"
   },
   {
-    "title": "If you are looking for facts to prove God's existence...",
-    "file": "showthread.php@t=1813748.htm"
+    "title": "t1814187.html",
+    "file": "t1814187.html"
   },
   {
-    "title": "I dont fucking care about religion or not beliving in god",
-    "file": "showthread.php@t=1813749.htm"
+    "title": "t1814188.html",
+    "file": "t1814188.html"
   },
   {
-    "title": "Why atheists are dumb",
-    "file": "showthread.php@t=1813750.htm"
+    "title": "t1814189.html",
+    "file": "t1814189.html"
   },
   {
-    "title": "Do you believe in angels?",
-    "file": "showthread.php@t=1813751.htm"
+    "title": "t1814190.html",
+    "file": "t1814190.html"
   },
   {
-    "title": "God is such a faggot",
-    "file": "showthread.php@t=1813752.htm"
+    "title": "t1814191.html",
+    "file": "t1814191.html"
   },
   {
-    "title": "What would you wish to be true?",
-    "file": "showthread.php@t=1813753.htm"
+    "title": "t1814192.html",
+    "file": "t1814192.html"
   },
   {
-    "title": "Conformation",
-    "file": "showthread.php@t=1813754.htm"
+    "title": "t1814193.html",
+    "file": "t1814193.html"
   },
   {
-    "title": "The Amish, cult or just delusional? (long)",
-    "file": "showthread.php@t=1813755.htm"
+    "title": "t1814194.html",
+    "file": "t1814194.html"
   },
   {
-    "title": "Dear God...",
-    "file": "showthread.php@t=1813756.htm"
+    "title": "t1814195.html",
+    "file": "t1814195.html"
   },
   {
-    "title": "the real god",
-    "file": "showthread.php@t=1813757.htm"
+    "title": "t1814196.html",
+    "file": "t1814196.html"
   },
   {
-    "title": "Morals or How I decided that there was no one way.",
-    "file": "showthread.php@t=1813758.htm"
+    "title": "t1814197.html",
+    "file": "t1814197.html"
   },
   {
-    "title": "Future of Islam?",
-    "file": "showthread.php@t=1813759.htm"
+    "title": "t1814198.html",
+    "file": "t1814198.html"
   },
   {
-    "title": "Is awareness necessary for survival?",
-    "file": "showthread.php@t=1813760.htm"
+    "title": "t1814199.html",
+    "file": "t1814199.html"
   },
   {
-    "title": "What cruel monster could be responsible for the death of millions?",
-    "file": "showthread.php@t=1813761.htm"
+    "title": "t1814200.html",
+    "file": "t1814200.html"
   },
   {
-    "title": "Its the Truth!",
-    "file": "showthread.php@t=1813762.htm"
+    "title": "t1814201.html",
+    "file": "t1814201.html"
   },
   {
-    "title": "Another stupid evolution thread",
-    "file": "showthread.php@t=1813763.htm"
+    "title": "t1814202.html",
+    "file": "t1814202.html"
   },
   {
-    "title": "Bible Supports Incest?",
-    "file": "showthread.php@t=1813764.htm"
+    "title": "t1814203.html",
+    "file": "t1814203.html"
   },
   {
-    "title": "Thoughts on God",
-    "file": "showthread.php@t=1813765.htm"
+    "title": "t1814204.html",
+    "file": "t1814204.html"
   },
   {
-    "title": "Thoughts on \"Magic.\"",
-    "file": "showthread.php@t=1813766.htm"
+    "title": "t1814205.html",
+    "file": "t1814205.html"
   },
   {
-    "title": "Hey Pagans!",
-    "file": "showthread.php@t=1813767.htm"
+    "title": "t1814206.html",
+    "file": "t1814206.html"
   },
   {
-    "title": "I was like Judas..(Christians)",
-    "file": "showthread.php@t=1813768.htm"
+    "title": "t1814207.html",
+    "file": "t1814207.html"
   },
   {
-    "title": "Religious folk- question of your opinion on your fellow brothers and sisters",
-    "file": "showthread.php@t=1813769.htm"
+    "title": "t1814208.html",
+    "file": "t1814208.html"
   },
   {
-    "title": "Gay marriage",
-    "file": "showthread.php@t=1813770.htm"
+    "title": "t1814209.html",
+    "file": "t1814209.html"
   },
   {
-    "title": "How Much Longer...",
-    "file": "showthread.php@t=1813771.htm"
+    "title": "t1814210.html",
+    "file": "t1814210.html"
   },
   {
-    "title": "The argument from lack of heat vision",
-    "file": "showthread.php@t=1813772.htm"
+    "title": "t1814211.html",
+    "file": "t1814211.html"
   },
   {
-    "title": "Instead of hating religion, does anyone else simply hate organized religion?",
-    "file": "showthread.php@t=1813773.htm"
+    "title": "t1814212.html",
+    "file": "t1814212.html"
   },
   {
-    "title": "What are some common questions?",
-    "file": "showthread.php@t=1813774.htm"
+    "title": "t1814213.html",
+    "file": "t1814213.html"
   },
   {
-    "title": "buddhism is it as good as it looks?",
-    "file": "showthread.php@t=1813775.htm"
+    "title": "t1814214.html",
+    "file": "t1814214.html"
   },
   {
-    "title": "Let's kill God.",
-    "file": "showthread.php@t=1813776.htm"
+    "title": "t1814215.html",
+    "file": "t1814215.html"
   },
   {
-    "title": "This question goes out to the atheist's from christian families....",
-    "file": "showthread.php@t=1813777.htm"
+    "title": "t1814216.html",
+    "file": "t1814216.html"
   },
   {
-    "title": "Atheists and Agnostics",
-    "file": "showthread.php@t=1813779.htm"
+    "title": "t1814217.html",
+    "file": "t1814217.html"
   },
   {
-    "title": "Should people belive in God?",
-    "file": "showthread.php@t=1813780.htm"
+    "title": "t1814218.html",
+    "file": "t1814218.html"
   },
   {
-    "title": "ABEL AND CAIN, SITTIN IN A TREE, F-U-C-K-I-N-G...",
-    "file": "showthread.php@t=1813781.htm"
+    "title": "t1814219.html",
+    "file": "t1814219.html"
   },
   {
-    "title": "LAWL LOSTCAUSE YOU ASSWIPE WHY YOU STAB MY THREAD?",
-    "file": "showthread.php@t=1813782.htm"
+    "title": "t1814220.html",
+    "file": "t1814220.html"
   },
   {
-    "title": "Christian beaten for drinking water",
-    "file": "showthread.php@t=1813784.htm"
+    "title": "t1814221.html",
+    "file": "t1814221.html"
   },
   {
-    "title": "A question for christians",
-    "file": "showthread.php@t=1813786.htm"
+    "title": "t1814222.html",
+    "file": "t1814222.html"
   },
   {
-    "title": "Is religion the real 'axis of evil'?",
-    "file": "showthread.php@t=1813787.htm"
+    "title": "t1814223.html",
+    "file": "t1814223.html"
   },
   {
-    "title": "banish \"better\"",
-    "file": "showthread.php@t=1813788.htm"
+    "title": "t1814224.html",
+    "file": "t1814224.html"
   },
   {
-    "title": "Getting into Hinduism",
-    "file": "showthread.php@t=1813789.htm"
+    "title": "t1814225.html",
+    "file": "t1814225.html"
   },
   {
-    "title": "just something ive been wondering",
-    "file": "showthread.php@t=1813790.htm"
+    "title": "t1814226.html",
+    "file": "t1814226.html"
   },
   {
-    "title": "The real reason people are Christians",
-    "file": "showthread.php@t=1813791.htm"
+    "title": "t1814227.html",
+    "file": "t1814227.html"
   },
   {
-    "title": "religion and drug use.",
-    "file": "showthread.php@t=1813792.htm"
+    "title": "t1814228.html",
+    "file": "t1814228.html"
   },
   {
-    "title": "Allah vs. God",
-    "file": "showthread.php@t=1813793.htm"
+    "title": "t1814229.html",
+    "file": "t1814229.html"
   },
   {
-    "title": "Nation of Islam - Your opinon?",
-    "file": "showthread.php@t=1813794.htm"
+    "title": "t1814230.html",
+    "file": "t1814230.html"
   },
   {
-    "title": "Armageddon (sp?)",
-    "file": "showthread.php@t=1813795.htm"
+    "title": "t1814231.html",
+    "file": "t1814231.html"
   },
   {
-    "title": "Eternal Damnation?",
-    "file": "showthread.php@t=1813796.htm"
+    "title": "t1814232.html",
+    "file": "t1814232.html"
   },
   {
-    "title": "Neonihilism or: He's Asleep Upstairs.",
-    "file": "showthread.php@t=1813797.htm"
+    "title": "t1814233.html",
+    "file": "t1814233.html"
   },
   {
-    "title": "A funny thought",
-    "file": "showthread.php@t=1813798.htm"
+    "title": "t1814234.html",
+    "file": "t1814234.html"
   },
   {
-    "title": "Religious consipracy!",
-    "file": "showthread.php@t=1813799.htm"
+    "title": "t1814235.html",
+    "file": "t1814235.html"
   },
   {
-    "title": "What are your thoughts on Buddhism?",
-    "file": "showthread.php@t=1813800.htm"
+    "title": "t1814236.html",
+    "file": "t1814236.html"
   },
   {
-    "title": "Typical day in an Islamic neighborhood",
-    "file": "showthread.php@t=1813801.htm"
+    "title": "t1814237.html",
+    "file": "t1814237.html"
   },
   {
-    "title": "\"Im not a slave to a god that doesnt exsist\"",
-    "file": "showthread.php@t=1813802.htm"
+    "title": "t1814238.html",
+    "file": "t1814238.html"
   },
   {
-    "title": "miracles",
-    "file": "showthread.php@t=1813803.htm"
+    "title": "t1814239.html",
+    "file": "t1814239.html"
   },
   {
-    "title": "The True Way.",
-    "file": "showthread.php@t=1813804.htm"
+    "title": "t1814240.html",
+    "file": "t1814240.html"
   },
   {
-    "title": "Noah's Ark obsessed man",
-    "file": "showthread.php@t=1813805.htm"
+    "title": "t1814241.html",
+    "file": "t1814241.html"
   },
   {
-    "title": "Its Kinnda Stupid",
-    "file": "showthread.php@t=1813806.htm"
+    "title": "t1814242.html",
+    "file": "t1814242.html"
   },
   {
-    "title": "Of My Own Existence I Am Certain, Every Else Has Yet To Be Proven To Me",
-    "file": "showthread.php@t=1813807.htm"
+    "title": "t1814243.html",
+    "file": "t1814243.html"
   },
   {
-    "title": "what do muslim's believe in?",
-    "file": "showthread.php@t=1813808.htm"
+    "title": "t1814244.html",
+    "file": "t1814244.html"
   },
   {
-    "title": "If God exists, could He be evil?",
-    "file": "showthread.php@t=1813809.htm"
+    "title": "t1814245.html",
+    "file": "t1814245.html"
   },
   {
-    "title": "greatest religion ever?",
-    "file": "showthread.php@t=1813810.htm"
+    "title": "t1814246.html",
+    "file": "t1814246.html"
   },
   {
-    "title": "Why?",
-    "file": "showthread.php@t=1813811.htm"
+    "title": "t1814247.html",
+    "file": "t1814247.html"
   },
   {
-    "title": "Islam and Christianity",
-    "file": "showthread.php@t=1813812.htm"
+    "title": "t1814248.html",
+    "file": "t1814248.html"
   },
   {
-    "title": "Jesus voted in as God",
-    "file": "showthread.php@t=1813813.htm"
+    "title": "t1814249.html",
+    "file": "t1814249.html"
   },
   {
-    "title": "is the pope's criticsm of islamic terrorism justified?",
-    "file": "showthread.php@t=1813814.htm"
+    "title": "t1814250.html",
+    "file": "t1814250.html"
   },
   {
-    "title": "What created God",
-    "file": "showthread.php@t=1813815.htm"
+    "title": "t1814251.html",
+    "file": "t1814251.html"
   },
   {
-    "title": "A second Treatise",
-    "file": "showthread.php@t=1813816.htm"
+    "title": "t1814252.html",
+    "file": "t1814252.html"
   },
   {
-    "title": "Mayan Popol Vuh vs. Genesis",
-    "file": "showthread.php@t=1813817.htm"
+    "title": "t1814253.html",
+    "file": "t1814253.html"
   },
   {
-    "title": "Loving the Lord jesus Christ",
-    "file": "showthread.php@t=1813818.htm"
+    "title": "t1814254.html",
+    "file": "t1814254.html"
   },
   {
-    "title": "Pentagram + school = me laughing my balls off",
-    "file": "showthread.php@t=1813819.htm"
+    "title": "t1814255.html",
+    "file": "t1814255.html"
   },
   {
-    "title": "To the Satanists",
-    "file": "showthread.php@t=1813820.htm"
+    "title": "t1814256.html",
+    "file": "t1814256.html"
   },
   {
-    "title": "Xenu the space Lord",
-    "file": "showthread.php@t=1813822.htm"
+    "title": "t1814257.html",
+    "file": "t1814257.html"
   },
   {
-    "title": "Religion",
-    "file": "showthread.php@t=1813823.htm"
+    "title": "t1814258.html",
+    "file": "t1814258.html"
   },
   {
-    "title": "my \"nothingness\" belief",
-    "file": "showthread.php@t=1813824.htm"
+    "title": "t1814259.html",
+    "file": "t1814259.html"
   },
   {
-    "title": "a few words about \"evidence\" and \"proof\"",
-    "file": "showthread.php@t=1813825.htm"
+    "title": "t1814260.html",
+    "file": "t1814260.html"
   },
   {
-    "title": "...So Who Created Hell?",
-    "file": "showthread.php@t=1813826.htm"
+    "title": "t1814261.html",
+    "file": "t1814261.html"
   },
   {
-    "title": "Who organized the attack on SG?",
-    "file": "showthread.php@t=1813827.htm"
+    "title": "t1814262.html",
+    "file": "t1814262.html"
   },
   {
-    "title": "Ok,so i've been given this new assignment at work...",
-    "file": "showthread.php@t=1813828.htm"
+    "title": "t1814263.html",
+    "file": "t1814263.html"
   },
   {
-    "title": "Why does God hate homosexuals?",
-    "file": "showthread.php@t=1813829.htm"
+    "title": "t1814264.html",
+    "file": "t1814264.html"
   },
   {
-    "title": "Karma ? im beginning to believe this is real",
-    "file": "showthread.php@t=1813831.htm"
+    "title": "t1814265.html",
+    "file": "t1814265.html"
   },
   {
-    "title": "belief in god?",
-    "file": "showthread.php@t=1813832.htm"
+    "title": "t1814266.html",
+    "file": "t1814266.html"
   },
   {
-    "title": "This is kinda messed up...",
-    "file": "showthread.php@t=1813833.htm"
+    "title": "t1814267.html",
+    "file": "t1814267.html"
   },
   {
-    "title": "You're religions creation story",
-    "file": "showthread.php@t=1813834.htm"
+    "title": "t1814268.html",
+    "file": "t1814268.html"
   },
   {
-    "title": "Free will & mental disorders",
-    "file": "showthread.php@t=1813835.htm"
+    "title": "t1814269.html",
+    "file": "t1814269.html"
   },
   {
-    "title": "atheism>religion of all kind",
-    "file": "showthread.php@t=1813836.htm"
+    "title": "t1814270.html",
+    "file": "t1814270.html"
   },
   {
-    "title": "a few words about agnostics",
-    "file": "showthread.php@t=1813837.htm"
+    "title": "t1814271.html",
+    "file": "t1814271.html"
   },
   {
-    "title": "does your god know the future?",
-    "file": "showthread.php@t=1813838.htm"
+    "title": "t1814272.html",
+    "file": "t1814272.html"
   },
   {
-    "title": "Magic or magick?",
-    "file": "showthread.php@t=1813839.htm"
+    "title": "t1814273.html",
+    "file": "t1814273.html"
   },
   {
-    "title": "In a week's time, I'm going to deface a Koran. For coursework.",
-    "file": "showthread.php@t=1813840.htm"
+    "title": "t1814274.html",
+    "file": "t1814274.html"
   },
   {
-    "title": "Why create parasites?",
-    "file": "showthread.php@t=1813841.htm"
+    "title": "t1814275.html",
+    "file": "t1814275.html"
   },
   {
-    "title": "God doesn't care about asian people.",
-    "file": "showthread.php@t=1813842.htm"
+    "title": "t1814276.html",
+    "file": "t1814276.html"
   },
   {
-    "title": "What would happen if I were to commit suicide?",
-    "file": "showthread.php@t=1813843.htm"
+    "title": "t1814277.html",
+    "file": "t1814277.html"
   },
   {
-    "title": "to the atheists/agnostics",
-    "file": "showthread.php@t=1813845.htm"
+    "title": "t1814278.html",
+    "file": "t1814278.html"
   },
   {
-    "title": "Funny flood theory...",
-    "file": "showthread.php@t=1813846.htm"
+    "title": "t1814279.html",
+    "file": "t1814279.html"
   },
   {
-    "title": "Is there a God?",
-    "file": "showthread.php@t=1813847.htm"
+    "title": "t1814280.html",
+    "file": "t1814280.html"
   },
   {
-    "title": "The Fundamentalist Christian vs Roman Catholic",
-    "file": "showthread.php@t=1813848.htm"
+    "title": "t1814281.html",
+    "file": "t1814281.html"
   },
   {
-    "title": "On Faith",
-    "file": "showthread.php@t=1813849.htm"
+    "title": "t1814282.html",
+    "file": "t1814282.html"
   },
   {
-    "title": "Proof Jesus isn't real?",
-    "file": "showthread.php@t=1813850.htm"
+    "title": "t1814283.html",
+    "file": "t1814283.html"
   },
   {
-    "title": "Jesus never fucken came back to life",
-    "file": "showthread.php@t=1813851.htm"
+    "title": "t1814284.html",
+    "file": "t1814284.html"
   },
   {
-    "title": "Did Jesus survive the crucifixion?",
-    "file": "showthread.php@t=1813852.htm"
+    "title": "t1814285.html",
+    "file": "t1814285.html"
   },
   {
-    "title": "Jesus thought wrong",
-    "file": "showthread.php@t=1813853.htm"
+    "title": "t1814286.html",
+    "file": "t1814286.html"
   },
   {
-    "title": "Do muslims believe in abstinence?",
-    "file": "showthread.php@t=1813854.htm"
+    "title": "t1814287.html",
+    "file": "t1814287.html"
   },
   {
-    "title": "Convictions are more dangerous enemies of truth than lies.",
-    "file": "showthread.php@t=1813855.htm"
+    "title": "t1814288.html",
+    "file": "t1814288.html"
   },
   {
-    "title": "how do you meditate",
-    "file": "showthread.php@t=1813856.htm"
+    "title": "t1814289.html",
+    "file": "t1814289.html"
   },
   {
-    "title": "Stuff that people say is in the bible but isnt",
-    "file": "showthread.php@t=1813857.htm"
+    "title": "t1814290.html",
+    "file": "t1814290.html"
   },
   {
-    "title": "Extremist Atheism. Atheists, what's your opinions on this article?",
-    "file": "showthread.php@t=1813858.htm"
+    "title": "t1814291.html",
+    "file": "t1814291.html"
   },
   {
-    "title": "What is a soul?",
-    "file": "showthread.php@t=1813859.htm"
+    "title": "t1814292.html",
+    "file": "t1814292.html"
   },
   {
-    "title": "The Death of God",
-    "file": "showthread.php@t=1813860.htm"
+    "title": "t1814293.html",
+    "file": "t1814293.html"
   },
   {
-    "title": "*EJACULATES ON LOST CAUSE'S FACE AND RUNS AWAY",
-    "file": "showthread.php@t=1813861.htm"
+    "title": "t1814294.html",
+    "file": "t1814294.html"
   },
   {
-    "title": "Is there a description of heaven anywhere?",
-    "file": "showthread.php@t=1813862.htm"
+    "title": "t1814295.html",
+    "file": "t1814295.html"
   },
   {
-    "title": "What Convinces You That Your Faith Is Reality?",
-    "file": "showthread.php@t=1813863.htm"
+    "title": "t1814296.html",
+    "file": "t1814296.html"
   },
   {
-    "title": "The truth about Israel and Lebanon",
-    "file": "showthread.php@t=1813865.htm"
+    "title": "t1814297.html",
+    "file": "t1814297.html"
   },
   {
-    "title": "LostCause, I ask you to extrapolate on your beliefs",
-    "file": "showthread.php@t=1813866.htm"
+    "title": "t1814298.html",
+    "file": "t1814298.html"
   },
   {
-    "title": "religion",
-    "file": "showthread.php@t=1813867.htm"
+    "title": "t1814299.html",
+    "file": "t1814299.html"
   },
   {
-    "title": "Human Nature:  Good or Evil",
-    "file": "showthread.php@t=1813868.htm"
+    "title": "t1814300.html",
+    "file": "t1814300.html"
   },
   {
-    "title": "Who goes to church?",
-    "file": "showthread.php@t=1813870.htm"
+    "title": "t1814301.html",
+    "file": "t1814301.html"
   },
   {
-    "title": "Some title, so as not to judge whats here",
-    "file": "showthread.php@t=1813871.htm"
+    "title": "t1814302.html",
+    "file": "t1814302.html"
   },
   {
-    "title": "Why do churches cover their windows?",
-    "file": "showthread.php@t=1813872.htm"
+    "title": "t1814303.html",
+    "file": "t1814303.html"
   },
   {
-    "title": "Taoism",
-    "file": "showthread.php@t=1813874.htm"
+    "title": "t1814304.html",
+    "file": "t1814304.html"
   },
   {
-    "title": "What's the point of pantheism?",
-    "file": "showthread.php@t=1813875.htm"
+    "title": "t1814305.html",
+    "file": "t1814305.html"
   },
   {
-    "title": "Islamic holy month of Ramadan has begun.",
-    "file": "showthread.php@t=1813876.htm"
+    "title": "t1814306.html",
+    "file": "t1814306.html"
   },
   {
-    "title": "Difference between god and santa claus",
-    "file": "showthread.php@t=1813877.htm"
+    "title": "t1814307.html",
+    "file": "t1814307.html"
   },
   {
-    "title": "Purporting a stereotype",
-    "file": "showthread.php@t=1813878.htm"
+    "title": "t1814308.html",
+    "file": "t1814308.html"
   },
   {
-    "title": "In Defense of Christian Orthodoxy",
-    "file": "showthread.php@t=1813879.htm"
+    "title": "t1814309.html",
+    "file": "t1814309.html"
   },
   {
-    "title": "the crusades are back!",
-    "file": "showthread.php@t=1813881.htm"
+    "title": "t1814310.html",
+    "file": "t1814310.html"
   },
   {
-    "title": "How do you justify your mortality?",
-    "file": "showthread.php@t=1813882.htm"
+    "title": "t1814311.html",
+    "file": "t1814311.html"
   },
   {
-    "title": "Say something to my Grandma",
-    "file": "showthread.php@t=1813883.htm"
+    "title": "t1814312.html",
+    "file": "t1814312.html"
   },
   {
-    "title": "On Religion",
-    "file": "showthread.php@t=1813884.htm"
+    "title": "t1814313.html",
+    "file": "t1814313.html"
   },
   {
-    "title": "The Will Power for Christians!!!",
-    "file": "showthread.php@t=1813886.htm"
+    "title": "t1814314.html",
+    "file": "t1814314.html"
   },
   {
-    "title": "Is God really an angry, mean, and strict God....",
-    "file": "showthread.php@t=1813888.htm"
+    "title": "t1814315.html",
+    "file": "t1814315.html"
   },
   {
-    "title": "Holy shit, I think I'm a Stig Mata...",
-    "file": "showthread.php@t=1813889.htm"
+    "title": "t1814316.html",
+    "file": "t1814316.html"
   },
   {
-    "title": "Christianic Hypocricy",
-    "file": "showthread.php@t=1813890.htm"
+    "title": "t1814317.html",
+    "file": "t1814317.html"
   },
   {
-    "title": "The last four letters of the word",
-    "file": "showthread.php@t=1813892.htm"
+    "title": "t1814318.html",
+    "file": "t1814318.html"
   },
   {
-    "title": "Atheist=Anti-Human?",
-    "file": "showthread.php@t=1813893.htm"
+    "title": "t1814319.html",
+    "file": "t1814319.html"
   },
   {
-    "title": "Islam is causing a lot of trouble",
-    "file": "showthread.php@t=1813894.htm"
+    "title": "t1814320.html",
+    "file": "t1814320.html"
   },
   {
-    "title": "DO YOU DISLIKE RELIGION",
-    "file": "showthread.php@t=1813895.htm"
+    "title": "t1814321.html",
+    "file": "t1814321.html"
   },
   {
-    "title": "If you don't believe in God.",
-    "file": "showthread.php@t=1813896.htm"
+    "title": "t1814322.html",
+    "file": "t1814322.html"
   },
   {
-    "title": "apocalyptic biblical verses",
-    "file": "showthread.php@t=1813897.htm"
+    "title": "t1814323.html",
+    "file": "t1814323.html"
   },
   {
-    "title": "God Arrogant?",
-    "file": "showthread.php@t=1813898.htm"
+    "title": "t1814324.html",
+    "file": "t1814324.html"
   },
   {
-    "title": "Divine Intervention",
-    "file": "showthread.php@t=1813899.htm"
+    "title": "t1814325.html",
+    "file": "t1814325.html"
   },
   {
-    "title": "People Who Say stuff like, \"OMG!! GOD HURTS PPL AND HE IS ANGRY >=( !!!11\"",
-    "file": "showthread.php@t=1813900.htm"
+    "title": "t1814326.html",
+    "file": "t1814326.html"
   },
   {
-    "title": "The Good, the Bad and the Ugly of  religion?",
-    "file": "showthread.php@t=1813901.htm"
+    "title": "t1814327.html",
+    "file": "t1814327.html"
   },
   {
-    "title": "a question about christianity...",
-    "file": "showthread.php@t=1813902.htm"
+    "title": "t1814328.html",
+    "file": "t1814328.html"
   },
   {
-    "title": "New Age?",
-    "file": "showthread.php@t=1813903.htm"
+    "title": "t1814329.html",
+    "file": "t1814329.html"
   },
   {
-    "title": "All-Powerful God",
-    "file": "showthread.php@t=1813904.htm"
+    "title": "t1814330.html",
+    "file": "t1814330.html"
   },
   {
-    "title": "LostCause is taca tai, homies.",
-    "file": "showthread.php@t=1813905.htm"
+    "title": "t1814331.html",
+    "file": "t1814331.html"
   },
   {
-    "title": "a few words about logic",
-    "file": "showthread.php@t=1813906.htm"
+    "title": "t1814332.html",
+    "file": "t1814332.html"
   },
   {
-    "title": "I converted my fiance.",
-    "file": "showthread.php@t=1813907.htm"
+    "title": "t1814333.html",
+    "file": "t1814333.html"
   },
   {
-    "title": "Why does there need to be a god?",
-    "file": "showthread.php@t=1813908.htm"
+    "title": "t1814334.html",
+    "file": "t1814334.html"
   },
   {
-    "title": "I invite all chistians to a debate with me.",
-    "file": "showthread.php@t=1813909.htm"
+    "title": "t1814335.html",
+    "file": "t1814335.html"
   },
   {
-    "title": "the release of atheism",
-    "file": "showthread.php@t=1813910.htm"
+    "title": "t1814336.html",
+    "file": "t1814336.html"
   },
   {
-    "title": "Catholic by culture; atheist by belief",
-    "file": "showthread.php@t=1813911.htm"
+    "title": "t1814337.html",
+    "file": "t1814337.html"
   },
   {
-    "title": "Does this sound ok?",
-    "file": "showthread.php@t=1813912.htm"
+    "title": "t1814338.html",
+    "file": "t1814338.html"
   },
   {
-    "title": "Question about funerals",
-    "file": "showthread.php@t=1813913.htm"
+    "title": "t1814339.html",
+    "file": "t1814339.html"
   },
   {
-    "title": "I am dreadfully disappointed to discover...",
-    "file": "showthread.php@t=1813914.htm"
+    "title": "t1814340.html",
+    "file": "t1814340.html"
   },
   {
-    "title": "if i was to start a new religion",
-    "file": "showthread.php@t=1813915.htm"
+    "title": "t1814341.html",
+    "file": "t1814341.html"
   },
   {
-    "title": "Atheism: A contradiction of itself?",
-    "file": "showthread.php@t=1813916.htm"
+    "title": "t1814342.html",
+    "file": "t1814342.html"
   },
   {
-    "title": "what do you live for?",
-    "file": "showthread.php@t=1813917.htm"
+    "title": "t1814343.html",
+    "file": "t1814343.html"
   },
   {
-    "title": "house centipedes",
-    "file": "showthread.php@t=1813918.htm"
+    "title": "t1814344.html",
+    "file": "t1814344.html"
   },
   {
-    "title": "My vision of \"GoD\"",
-    "file": "showthread.php@t=1813919.htm"
+    "title": "t1814345.html",
+    "file": "t1814345.html"
   },
   {
-    "title": "Veggie Tales.",
-    "file": "showthread.php@t=1813920.htm"
+    "title": "t1814346.html",
+    "file": "t1814346.html"
   },
   {
-    "title": "Got Morales?",
-    "file": "showthread.php@t=1813921.htm"
+    "title": "t1814347.html",
+    "file": "t1814347.html"
   },
   {
-    "title": "WHy not \"Choose\" to believe",
-    "file": "showthread.php@t=1813922.htm"
+    "title": "t1814348.html",
+    "file": "t1814348.html"
   },
   {
-    "title": "what is GOD?  Why should you believe?",
-    "file": "showthread.php@t=1813923.htm"
+    "title": "t1814349.html",
+    "file": "t1814349.html"
   },
   {
-    "title": "Weird thought",
-    "file": "showthread.php@t=1813924.htm"
+    "title": "t1814350.html",
+    "file": "t1814350.html"
   },
   {
-    "title": "Why would God let there be a hell?",
-    "file": "showthread.php@t=1813925.htm"
+    "title": "t1814351.html",
+    "file": "t1814351.html"
   },
   {
-    "title": "My god CAN beat the shit out of your god.",
-    "file": "showthread.php@t=1813926.htm"
+    "title": "t1814352.html",
+    "file": "t1814352.html"
   },
   {
-    "title": "The Fifteen Prayers of St Bridget of Sweden",
-    "file": "showthread.php@t=1813927.htm"
+    "title": "t1814353.html",
+    "file": "t1814353.html"
   },
   {
-    "title": "The bible was originally a fairy tale",
-    "file": "showthread.php@t=1813928.htm"
+    "title": "t1814354.html",
+    "file": "t1814354.html"
   },
   {
-    "title": "Without God there is no objective truths.",
-    "file": "showthread.php@t=1813929.htm"
+    "title": "t1814355.html",
+    "file": "t1814355.html"
   },
   {
-    "title": "Questions you cannot answer...",
-    "file": "showthread.php@t=1813930.htm"
+    "title": "t1814356.html",
+    "file": "t1814356.html"
   },
   {
-    "title": "Worst Religion.......ever",
-    "file": "showthread.php@t=1813931.htm"
+    "title": "t1814357.html",
+    "file": "t1814357.html"
   },
   {
-    "title": "What do we die for?",
-    "file": "showthread.php@t=1813932.htm"
+    "title": "t1814358.html",
+    "file": "t1814358.html"
   },
   {
-    "title": "Is the Lutheran variant of Christianity based on Anti-Semitism?",
-    "file": "showthread.php@t=1813933.htm"
+    "title": "t1814359.html",
+    "file": "t1814359.html"
   },
   {
-    "title": "new?",
-    "file": "showthread.php@t=1813934.htm"
+    "title": "t1814360.html",
+    "file": "t1814360.html"
   },
   {
-    "title": "Is hell endothermic or exothermic?",
-    "file": "showthread.php@t=1813936.htm"
+    "title": "t1814361.html",
+    "file": "t1814361.html"
   },
   {
-    "title": "Anyone else have a similar theory",
-    "file": "showthread.php@t=1813937.htm"
+    "title": "t1814362.html",
+    "file": "t1814362.html"
   },
   {
-    "title": "IS religion the root of 'evil'?",
-    "file": "showthread.php@t=1813938.htm"
+    "title": "t1814363.html",
+    "file": "t1814363.html"
   },
   {
-    "title": "'EVIL'",
-    "file": "showthread.php@t=1813939.htm"
+    "title": "t1814364.html",
+    "file": "t1814364.html"
   },
   {
-    "title": "How has your faith evolved?",
-    "file": "showthread.php@t=1813940.htm"
+    "title": "t1814365.html",
+    "file": "t1814365.html"
   },
   {
-    "title": "Depth of Ignorance",
-    "file": "showthread.php@t=1813941.htm"
+    "title": "t1814366.html",
+    "file": "t1814366.html"
   },
   {
-    "title": "How I became an Existential Christian Humanist",
-    "file": "showthread.php@t=1813942.htm"
+    "title": "t1814367.html",
+    "file": "t1814367.html"
   },
   {
-    "title": "my girlfriend wants to go to premarital counseling at church",
-    "file": "showthread.php@t=1813943.htm"
+    "title": "t1814368.html",
+    "file": "t1814368.html"
   },
   {
-    "title": "need for guidence",
-    "file": "showthread.php@t=1813944.htm"
+    "title": "t1814369.html",
+    "file": "t1814369.html"
   },
   {
-    "title": "If everything really WAS created...?",
-    "file": "showthread.php@t=1813945.htm"
+    "title": "t1814370.html",
+    "file": "t1814370.html"
   },
   {
-    "title": "NDE's true or false?",
-    "file": "showthread.php@t=1813946.htm"
+    "title": "t1814371.html",
+    "file": "t1814371.html"
   },
   {
-    "title": "Criticisms of Arguments for God's Existence",
-    "file": "showthread.php@t=1813947.htm"
+    "title": "t1814372.html",
+    "file": "t1814372.html"
   },
   {
-    "title": "Athiesm",
-    "file": "showthread.php@t=1813948.htm"
+    "title": "t1814373.html",
+    "file": "t1814373.html"
   },
   {
-    "title": "I know evolution is a bunch of BS but can someone tell me what the evolutionists say\"",
-    "file": "showthread.php@t=1813949.htm"
+    "title": "t1814374.html",
+    "file": "t1814374.html"
   },
   {
-    "title": "Are you a Bright?",
-    "file": "showthread.php@t=1813950.htm"
+    "title": "t1814375.html",
+    "file": "t1814375.html"
   },
   {
-    "title": "Jesus the Magician Sinner",
-    "file": "showthread.php@t=1813951.htm"
+    "title": "t1814376.html",
+    "file": "t1814376.html"
   },
   {
-    "title": "Jesus",
-    "file": "showthread.php@t=1813952.htm"
+    "title": "t1814377.html",
+    "file": "t1814377.html"
   },
   {
-    "title": "Stew anyone?",
-    "file": "showthread.php@t=1813953.htm"
+    "title": "t1814378.html",
+    "file": "t1814378.html"
   },
   {
-    "title": "Raileans?",
-    "file": "showthread.php@t=1813954.htm"
+    "title": "t1814379.html",
+    "file": "t1814379.html"
   },
   {
-    "title": "going to church",
-    "file": "showthread.php@t=1813955.htm"
+    "title": "t1814380.html",
+    "file": "t1814380.html"
   },
   {
-    "title": "does anyone believe in hell anymore?",
-    "file": "showthread.php@t=1813956.htm"
+    "title": "t1814381.html",
+    "file": "t1814381.html"
   },
   {
-    "title": "If the bible is infallible as it is inspired by god...",
-    "file": "showthread.php@t=1813957.htm"
+    "title": "t1814382.html",
+    "file": "t1814382.html"
   },
   {
-    "title": "Something that doesn't add up about intervention.",
-    "file": "showthread.php@t=1813958.htm"
+    "title": "t1814383.html",
+    "file": "t1814383.html"
   },
   {
-    "title": "My mom and her religion...",
-    "file": "showthread.php@t=1813959.htm"
+    "title": "t1814384.html",
+    "file": "t1814384.html"
   },
   {
-    "title": "Televangelists.",
-    "file": "showthread.php@t=1813960.htm"
+    "title": "t1814385.html",
+    "file": "t1814385.html"
   },
   {
-    "title": "The History of the World (According to the Christian Faith)",
-    "file": "showthread.php@t=1813961.htm"
+    "title": "t1814386.html",
+    "file": "t1814386.html"
   },
   {
-    "title": "Ego",
-    "file": "showthread.php@t=1813962.htm"
+    "title": "t1814387.html",
+    "file": "t1814387.html"
   },
   {
-    "title": "Mercy and love",
-    "file": "showthread.php@t=1813963.htm"
+    "title": "t1814388.html",
+    "file": "t1814388.html"
   },
   {
-    "title": "Who the hell writes this shit?",
-    "file": "showthread.php@t=1813964.htm"
+    "title": "t1814389.html",
+    "file": "t1814389.html"
   },
   {
-    "title": "If Mary Killed Jesus",
-    "file": "showthread.php@t=1813965.htm"
+    "title": "t1814390.html",
+    "file": "t1814390.html"
   },
   {
-    "title": "Jesus.",
-    "file": "showthread.php@t=1813966.htm"
+    "title": "t1814391.html",
+    "file": "t1814391.html"
   },
   {
-    "title": "God = Santa = BS",
-    "file": "showthread.php@t=1813967.htm"
+    "title": "t1814392.html",
+    "file": "t1814392.html"
   },
   {
-    "title": "scientific religion",
-    "file": "showthread.php@t=1813968.htm"
+    "title": "t1814393.html",
+    "file": "t1814393.html"
   },
   {
-    "title": "Heaven propaganda",
-    "file": "showthread.php@t=1813969.htm"
+    "title": "t1814394.html",
+    "file": "t1814394.html"
   },
   {
-    "title": "Evolution causes murder!",
-    "file": "showthread.php@t=1813970.htm"
+    "title": "t1814395.html",
+    "file": "t1814395.html"
   },
   {
-    "title": "If you were the creator...",
-    "file": "showthread.php@t=1813971.htm"
+    "title": "t1814396.html",
+    "file": "t1814396.html"
   },
   {
-    "title": "I wonder if all the Gods and goddeses are sitting around",
-    "file": "showthread.php@t=1813972.htm"
+    "title": "t1814397.html",
+    "file": "t1814397.html"
   },
   {
-    "title": "christian morals pwn?",
-    "file": "showthread.php@t=1813973.htm"
+    "title": "t1814398.html",
+    "file": "t1814398.html"
   },
   {
-    "title": "Islam has expired!",
-    "file": "showthread.php@t=1813974.htm"
+    "title": "t1814399.html",
+    "file": "t1814399.html"
   },
   {
-    "title": "Jesus was black",
-    "file": "showthread.php@t=1813975.htm"
+    "title": "t1814400.html",
+    "file": "t1814400.html"
   },
   {
-    "title": "\"Culture Wars\" and \"The Christmas Wars\"",
-    "file": "showthread.php@t=1813976.htm"
+    "title": "t1814401.html",
+    "file": "t1814401.html"
   },
   {
-    "title": "Quetzalcoatl was real?  When?",
-    "file": "showthread.php@t=1813977.htm"
+    "title": "t1814402.html",
+    "file": "t1814402.html"
   },
   {
-    "title": "similarities   between islam and christianity",
-    "file": "showthread.php@t=1813978.htm"
+    "title": "t1814403.html",
+    "file": "t1814403.html"
   },
   {
-    "title": "loophole in christian religion??",
-    "file": "showthread.php@t=1813979.htm"
+    "title": "t1814404.html",
+    "file": "t1814404.html"
   },
   {
-    "title": "When you commit a sin, who are you actually offending?",
-    "file": "showthread.php@t=1813980.htm"
+    "title": "t1814405.html",
+    "file": "t1814405.html"
   },
   {
-    "title": "If we're built from spirals...",
-    "file": "showthread.php@t=1813981.htm"
+    "title": "t1814406.html",
+    "file": "t1814406.html"
   },
   {
-    "title": "Girlfriends Religious.",
-    "file": "showthread.php@t=1813982.htm"
+    "title": "t1814407.html",
+    "file": "t1814407.html"
   },
   {
-    "title": "HEY!",
-    "file": "showthread.php@t=1813983.htm"
+    "title": "t1814408.html",
+    "file": "t1814408.html"
   },
   {
-    "title": "Contradictions and nonsense in the new testament.",
-    "file": "showthread.php@t=1813984.htm"
+    "title": "t1814409.html",
+    "file": "t1814409.html"
   },
   {
-    "title": "What about this..",
-    "file": "showthread.php@t=1813985.htm"
+    "title": "t1814410.html",
+    "file": "t1814410.html"
   },
   {
-    "title": "Your body is not the temple of God!",
-    "file": "showthread.php@t=1813986.htm"
+    "title": "t1814411.html",
+    "file": "t1814411.html"
   },
   {
-    "title": "What do you belive god is?",
-    "file": "showthread.php@t=1813987.htm"
+    "title": "t1814412.html",
+    "file": "t1814412.html"
   },
   {
-    "title": "Disproving God",
-    "file": "showthread.php@t=1813988.htm"
+    "title": "t1814413.html",
+    "file": "t1814413.html"
   },
   {
-    "title": "Healing.",
-    "file": "showthread.php@t=1813989.htm"
+    "title": "t1814414.html",
+    "file": "t1814414.html"
   },
   {
-    "title": "*sigh*",
-    "file": "showthread.php@t=1813990.htm"
+    "title": "t1814415.html",
+    "file": "t1814415.html"
   },
   {
-    "title": "Sikhs......... do you know who they are?",
-    "file": "showthread.php@t=1813991.htm"
+    "title": "t1814416.html",
+    "file": "t1814416.html"
   },
   {
-    "title": "My friend's argument for the existence of both evolution and a god.",
-    "file": "showthread.php@t=1813992.htm"
+    "title": "t1814417.html",
+    "file": "t1814417.html"
   },
   {
-    "title": "What does your religion do for you?",
-    "file": "showthread.php@t=1813993.htm"
+    "title": "t1814418.html",
+    "file": "t1814418.html"
   },
   {
-    "title": "Does god interfere w/ life on earth?",
-    "file": "showthread.php@t=1813994.htm"
+    "title": "t1814419.html",
+    "file": "t1814419.html"
   },
   {
-    "title": "God",
-    "file": "showthread.php@t=1813995.htm"
+    "title": "t1814420.html",
+    "file": "t1814420.html"
   },
   {
-    "title": "pre-destination/free will",
-    "file": "showthread.php@t=1813996.htm"
+    "title": "t1814421.html",
+    "file": "t1814421.html"
   },
   {
-    "title": "If \"Time\" exists, there can be no God",
-    "file": "showthread.php@t=1813997.htm"
+    "title": "t1814422.html",
+    "file": "t1814422.html"
   },
   {
-    "title": "According to the Bible, Jesus is not the son of God.",
-    "file": "showthread.php@t=1813998.htm"
+    "title": "t1814423.html",
+    "file": "t1814423.html"
   },
   {
-    "title": "If God was all powerful...",
-    "file": "showthread.php@t=1813999.htm"
+    "title": "t1814424.html",
+    "file": "t1814424.html"
   },
   {
-    "title": "The first commandment",
-    "file": "showthread.php@t=1814000.htm"
+    "title": "t1814425.html",
+    "file": "t1814425.html"
   },
   {
-    "title": "Why The World Needs Religion",
-    "file": "showthread.php@t=1814001.htm"
+    "title": "t1814426.html",
+    "file": "t1814426.html"
   },
   {
-    "title": "Islam",
-    "file": "showthread.php@t=1814002.htm"
+    "title": "t1814427.html",
+    "file": "t1814427.html"
   },
   {
-    "title": "Taliban online",
-    "file": "showthread.php@t=1814003.htm"
+    "title": "t1814428.html",
+    "file": "t1814428.html"
   },
   {
-    "title": "Religion + Sex = LostCause",
-    "file": "showthread.php@t=1814004.htm"
+    "title": "t1814429.html",
+    "file": "t1814429.html"
   },
   {
-    "title": "TEH MOTHER FUCKING BEWBIES!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-    "file": "showthread.php@t=1814005.htm"
+    "title": "t1814430.html",
+    "file": "t1814430.html"
   },
   {
-    "title": "A few questions for those of you who defend the bible",
-    "file": "showthread.php@t=1814006.htm"
+    "title": "t1814431.html",
+    "file": "t1814431.html"
   },
   {
-    "title": "would you still belive in god?",
-    "file": "showthread.php@t=1814007.htm"
+    "title": "t1814432.html",
+    "file": "t1814432.html"
   },
   {
-    "title": "ATTN: MGCBTSOOYG",
-    "file": "showthread.php@t=1814008.htm"
+    "title": "t1814433.html",
+    "file": "t1814433.html"
   },
   {
-    "title": "Tsarions views on our origins.",
-    "file": "showthread.php@t=1814009.htm"
+    "title": "t1814434.html",
+    "file": "t1814434.html"
   },
   {
-    "title": "So if God made us in his image....",
-    "file": "showthread.php@t=1814010.htm"
+    "title": "t1814435.html",
+    "file": "t1814435.html"
   },
   {
-    "title": "How do Catholic priests decide that they want to become priests?",
-    "file": "showthread.php@t=1814011.htm"
+    "title": "t1814436.html",
+    "file": "t1814436.html"
   },
   {
-    "title": "Interesting theory.",
-    "file": "showthread.php@t=1814012.htm"
+    "title": "t1814437.html",
+    "file": "t1814437.html"
   },
   {
-    "title": "My Jesus...",
-    "file": "showthread.php@t=1814013.htm"
+    "title": "t1814438.html",
+    "file": "t1814438.html"
   },
   {
-    "title": "Explain why you're not agnostic.",
-    "file": "showthread.php@t=1814014.htm"
+    "title": "t1814439.html",
+    "file": "t1814439.html"
   },
   {
-    "title": "converting to Buddhism, Help!",
-    "file": "showthread.php@t=1814015.htm"
+    "title": "t1814440.html",
+    "file": "t1814440.html"
   },
   {
-    "title": "christian men are gay and so is jesus",
-    "file": "showthread.php@t=1814016.htm"
+    "title": "t1814441.html",
+    "file": "t1814441.html"
   },
   {
-    "title": "Being atheist",
-    "file": "showthread.php@t=1814017.htm"
+    "title": "t1814442.html",
+    "file": "t1814442.html"
   },
   {
-    "title": "Can God make a breast so large that even he cannot lift it?",
-    "file": "showthread.php@t=1814018.htm"
+    "title": "t1814443.html",
+    "file": "t1814443.html"
   },
   {
-    "title": "If God is Unknowable, then how is a belief in Him different from a belief in nothing?",
-    "file": "showthread.php@t=1814019.htm"
+    "title": "t1814444.html",
+    "file": "t1814444.html"
   },
   {
-    "title": "\"Letters to God\" Found at Sea",
-    "file": "showthread.php@t=1814020.htm"
+    "title": "t1814445.html",
+    "file": "t1814445.html"
   },
   {
-    "title": "how can god not exist?",
-    "file": "showthread.php@t=1814021.htm"
+    "title": "t1814446.html",
+    "file": "t1814446.html"
   },
   {
-    "title": "Giant Humans",
-    "file": "showthread.php@t=1814022.htm"
+    "title": "t1814447.html",
+    "file": "t1814447.html"
   },
   {
-    "title": "The Ted Haggard Scandal...",
-    "file": "showthread.php@t=1814023.htm"
+    "title": "t1814448.html",
+    "file": "t1814448.html"
   },
   {
-    "title": "Following Buddhist Beliefs, is smoking weed bad karma?",
-    "file": "showthread.php@t=1814024.htm"
+    "title": "t1814449.html",
+    "file": "t1814449.html"
   },
   {
-    "title": "I need a religion...",
-    "file": "showthread.php@t=1814025.htm"
+    "title": "t1814450.html",
+    "file": "t1814450.html"
   },
   {
-    "title": "whats so hard to get about atheism?",
-    "file": "showthread.php@t=1814026.htm"
+    "title": "t1814451.html",
+    "file": "t1814451.html"
   },
   {
-    "title": "RELIGION IS A CANCER ON THE WORLD",
-    "file": "showthread.php@t=1814027.htm"
+    "title": "t1814452.html",
+    "file": "t1814452.html"
   },
   {
-    "title": "Buddhism",
-    "file": "showthread.php@t=1814028.htm"
+    "title": "t1814453.html",
+    "file": "t1814453.html"
   },
   {
-    "title": "Hell in Buddhism and Hinduism?",
-    "file": "showthread.php@t=1814029.htm"
+    "title": "t1814454.html",
+    "file": "t1814454.html"
   },
   {
-    "title": "My new found religion...",
-    "file": "showthread.php@t=1814030.htm"
+    "title": "t1814455.html",
+    "file": "t1814455.html"
   },
   {
-    "title": "Religion battles in my mind",
-    "file": "showthread.php@t=1814031.htm"
+    "title": "t1814456.html",
+    "file": "t1814456.html"
   },
   {
-    "title": "observation of some repeated questions",
-    "file": "showthread.php@t=1814032.htm"
+    "title": "t1814457.html",
+    "file": "t1814457.html"
   },
   {
-    "title": "Vote yes for free speech now!!!",
-    "file": "showthread.php@t=1814033.htm"
+    "title": "t1814458.html",
+    "file": "t1814458.html"
   },
   {
-    "title": "myspace comment inspired me to write",
-    "file": "showthread.php@t=1814034.htm"
+    "title": "t1814459.html",
+    "file": "t1814459.html"
   },
   {
-    "title": "Jesus and history",
-    "file": "showthread.php@t=1814035.htm"
+    "title": "t1814460.html",
+    "file": "t1814460.html"
   },
   {
-    "title": "Moral Similarities in the Religions",
-    "file": "showthread.php@t=1814036.htm"
+    "title": "t1814461.html",
+    "file": "t1814461.html"
   },
   {
-    "title": "Japanese researchers find dolphin with 'remains of legs'",
-    "file": "showthread.php@t=1814037.htm"
+    "title": "t1814462.html",
+    "file": "t1814462.html"
   },
   {
-    "title": "Richard Dawkins is the man",
-    "file": "showthread.php@t=1814038.htm"
+    "title": "t1814463.html",
+    "file": "t1814463.html"
   },
   {
-    "title": "50 Reasons the Christian God is imaginary",
-    "file": "showthread.php@t=1814039.htm"
+    "title": "t1814464.html",
+    "file": "t1814464.html"
   },
   {
-    "title": "Quran.doc",
-    "file": "showthread.php@t=1814040.htm"
+    "title": "t1814465.html",
+    "file": "t1814465.html"
   },
   {
-    "title": "So the Mormons called on me today...",
-    "file": "showthread.php@t=1814041.htm"
+    "title": "t1814466.html",
+    "file": "t1814466.html"
   },
   {
-    "title": "Missionary Story",
-    "file": "showthread.php@t=1814042.htm"
+    "title": "t1814467.html",
+    "file": "t1814467.html"
   },
   {
-    "title": "Bible Used In Argument",
-    "file": "showthread.php@t=1814043.htm"
+    "title": "t1814468.html",
+    "file": "t1814468.html"
   },
   {
-    "title": "$25 million creation museum being built",
-    "file": "showthread.php@t=1814044.htm"
+    "title": "t1814469.html",
+    "file": "t1814469.html"
   },
   {
-    "title": "New \"Religion\"",
-    "file": "showthread.php@t=1814045.htm"
+    "title": "t1814470.html",
+    "file": "t1814470.html"
   },
   {
-    "title": "Wal-Mart goes back to \"Merry Christmas\"",
-    "file": "showthread.php@t=1814046.htm"
+    "title": "t1814471.html",
+    "file": "t1814471.html"
   },
   {
-    "title": "Zen Buddhism",
-    "file": "showthread.php@t=1814047.htm"
+    "title": "t1814472.html",
+    "file": "t1814472.html"
   },
   {
-    "title": "jesus camp closed",
-    "file": "showthread.php@t=1814048.htm"
+    "title": "t1814473.html",
+    "file": "t1814473.html"
   },
   {
-    "title": "To all the people who argue with the exsistance of god..",
-    "file": "showthread.php@t=1814049.htm"
+    "title": "t1814474.html",
+    "file": "t1814474.html"
   },
   {
-    "title": "If you are an atheist",
-    "file": "showthread.php@t=1814050.htm"
+    "title": "t1814475.html",
+    "file": "t1814475.html"
   },
   {
-    "title": "Mark Gabriel",
-    "file": "showthread.php@t=1814051.htm"
+    "title": "t1814476.html",
+    "file": "t1814476.html"
   },
   {
-    "title": "If the Abrahamic religions had never started...",
-    "file": "showthread.php@t=1814052.htm"
+    "title": "t1814477.html",
+    "file": "t1814477.html"
   },
   {
-    "title": "a trend i've found in christian preachings(long)",
-    "file": "showthread.php@t=1814053.htm"
+    "title": "t1814478.html",
+    "file": "t1814478.html"
   },
   {
-    "title": "Dear \"Owned\"",
-    "file": "showthread.php@t=1814054.htm"
+    "title": "t1814479.html",
+    "file": "t1814479.html"
   },
   {
-    "title": "what about \"ghosts\"?",
-    "file": "showthread.php@t=1814055.htm"
+    "title": "t1814480.html",
+    "file": "t1814480.html"
   },
   {
-    "title": "God, and why you should wholly disbelieve.",
-    "file": "showthread.php@t=1814056.htm"
+    "title": "t1814481.html",
+    "file": "t1814481.html"
   },
   {
-    "title": "Question about Synagogues",
-    "file": "showthread.php@t=1814057.htm"
+    "title": "t1814482.html",
+    "file": "t1814482.html"
   },
   {
-    "title": "A comment for the evelution topic posters here",
-    "file": "showthread.php@t=1814058.htm"
+    "title": "t1814483.html",
+    "file": "t1814483.html"
   },
   {
-    "title": "Evolution and the ego",
-    "file": "showthread.php@t=1814059.htm"
+    "title": "t1814484.html",
+    "file": "t1814484.html"
   },
   {
-    "title": "So, who believes in God?",
-    "file": "showthread.php@t=1814060.htm"
+    "title": "t1814485.html",
+    "file": "t1814485.html"
   },
   {
-    "title": "creationism evidence.",
-    "file": "showthread.php@t=1814061.htm"
+    "title": "t1814486.html",
+    "file": "t1814486.html"
   },
   {
-    "title": "\"intelligent\" disscusions on god.",
-    "file": "showthread.php@t=1814062.htm"
+    "title": "t1814487.html",
+    "file": "t1814487.html"
   },
   {
-    "title": "Christianity and Polytheism",
-    "file": "showthread.php@t=1814063.htm"
+    "title": "t1814488.html",
+    "file": "t1814488.html"
   },
   {
-    "title": "Buddhism",
-    "file": "showthread.php@t=1814064.htm"
+    "title": "t1814489.html",
+    "file": "t1814489.html"
   },
   {
-    "title": "words from the new Bishop",
-    "file": "showthread.php@t=1814065.htm"
+    "title": "t1814490.html",
+    "file": "t1814490.html"
   },
   {
-    "title": "\"athiests believe there is NOTHING\"?",
-    "file": "showthread.php@t=1814066.htm"
+    "title": "t1814491.html",
+    "file": "t1814491.html"
   },
   {
-    "title": "Athiesm is a religon",
-    "file": "showthread.php@t=1814067.htm"
+    "title": "t1814495.html",
+    "file": "t1814495.html"
   },
   {
-    "title": "Atheism Is NOT A Religion.",
-    "file": "showthread.php@t=1814068.htm"
+    "title": "t1984871.html",
+    "file": "t1984871.html"
   },
   {
-    "title": "Argument for God",
-    "file": "showthread.php@t=1814069.htm"
+    "title": "t1984872.html",
+    "file": "t1984872.html"
   },
   {
-    "title": "What would it take to start a religion?",
-    "file": "showthread.php@t=1814070.htm"
+    "title": "t1984873.html",
+    "file": "t1984873.html"
   },
   {
-    "title": "Seriously, Religion: Just A Conspiracy?",
-    "file": "showthread.php@t=1814071.htm"
+    "title": "t1984874.html",
+    "file": "t1984874.html"
   },
   {
-    "title": "do any other people believe this...",
-    "file": "showthread.php@t=1814072.htm"
+    "title": "t1984876.html",
+    "file": "t1984876.html"
   },
   {
-    "title": "Questions about Buddhism",
-    "file": "showthread.php@t=1814073.htm"
+    "title": "t1985314.html",
+    "file": "t1985314.html"
   },
   {
-    "title": "If you are an atheist, how do you think religions started?",
-    "file": "showthread.php@t=1814074.htm"
+    "title": "t1985315.html",
+    "file": "t1985315.html"
   },
   {
-    "title": "Philosophy Vs. Religon",
-    "file": "showthread.php@t=1814075.htm"
+    "title": "t1985316.html",
+    "file": "t1985316.html"
   },
   {
-    "title": "Coming of Christ",
-    "file": "showthread.php@t=1814076.htm"
+    "title": "t1985317.html",
+    "file": "t1985317.html"
   },
   {
-    "title": "Come Up Higher",
-    "file": "showthread.php@t=1814077.htm"
+    "title": "t1985318.html",
+    "file": "t1985318.html"
   },
   {
-    "title": "My world religions course really opened up my eyes on some religions.",
-    "file": "showthread.php@t=1814078.htm"
+    "title": "t1985319.html",
+    "file": "t1985319.html"
   },
   {
-    "title": "halocaust question",
-    "file": "showthread.php@t=1814079.htm"
+    "title": "t1985806.html",
+    "file": "t1985806.html"
   },
   {
-    "title": "toward Monotheistic unification",
-    "file": "showthread.php@t=1814080.htm"
+    "title": "t1985807.html",
+    "file": "t1985807.html"
   },
   {
-    "title": "False religions",
-    "file": "showthread.php@t=1814081.htm"
+    "title": "t1985808.html",
+    "file": "t1985808.html"
   },
   {
-    "title": "I'M LEAVING TOTSE",
-    "file": "showthread.php@t=1814082.htm"
+    "title": "t1985809.html",
+    "file": "t1985809.html"
   },
   {
-    "title": "A few questions",
-    "file": "showthread.php@t=1814083.htm"
+    "title": "t1985810.html",
+    "file": "t1985810.html"
   },
   {
-    "title": "What do these symbols mean?",
-    "file": "showthread.php@t=1814084.htm"
+    "title": "t1985811.html",
+    "file": "t1985811.html"
   },
   {
-    "title": "how do christians justify enjoying secualr music",
-    "file": "showthread.php@t=1814085.htm"
+    "title": "t1986250.html",
+    "file": "t1986250.html"
   },
   {
-    "title": "Brahman and the Maha-Mantra",
-    "file": "showthread.php@t=1814086.htm"
+    "title": "t1986251.html",
+    "file": "t1986251.html"
   },
   {
-    "title": "Identifying a satanist",
-    "file": "showthread.php@t=1814087.htm"
+    "title": "t1986252.html",
+    "file": "t1986252.html"
   },
   {
-    "title": "Some questions on my relgion",
-    "file": "showthread.php@t=1814088.htm"
+    "title": "t1986253.html",
+    "file": "t1986253.html"
   },
   {
-    "title": "Thoughts about The Maitreya",
-    "file": "showthread.php@t=1814089.htm"
+    "title": "t1986254.html",
+    "file": "t1986254.html"
   },
   {
-    "title": "Gnostic Christians",
-    "file": "showthread.php@t=1814090.htm"
+    "title": "t1986694.html",
+    "file": "t1986694.html"
   },
   {
-    "title": "Bullshit",
-    "file": "showthread.php@t=1814091.htm"
+    "title": "t1986696.html",
+    "file": "t1986696.html"
   },
   {
-    "title": "Muslims trying to convert americans",
-    "file": "showthread.php@t=1814092.htm"
+    "title": "t1986697.html",
+    "file": "t1986697.html"
   },
   {
-    "title": "Pope going to Turkey.",
-    "file": "showthread.php@t=1814093.htm"
+    "title": "t1986951.html",
+    "file": "t1986951.html"
   },
   {
-    "title": "Starting a new religion....",
-    "file": "showthread.php@t=1814094.htm"
+    "title": "t1987302.html",
+    "file": "t1987302.html"
   },
   {
-    "title": "Prove to me there is a god. I WILL listen this time.",
-    "file": "showthread.php@t=1814095.htm"
+    "title": "t1987303.html",
+    "file": "t1987303.html"
   },
   {
-    "title": "jesus lives?a question for christians",
-    "file": "showthread.php@t=1814096.htm"
+    "title": "t1987304.html",
+    "file": "t1987304.html"
   },
   {
-    "title": "God is Imaginary",
-    "file": "showthread.php@t=1814097.htm"
+    "title": "t1987305.html",
+    "file": "t1987305.html"
   },
   {
-    "title": "WOO!!!! 96% on RE test.",
-    "file": "showthread.php@t=1814098.htm"
+    "title": "t1987306.html",
+    "file": "t1987306.html"
   },
   {
-    "title": "Separation of church and state",
-    "file": "showthread.php@t=1814099.htm"
+    "title": "t1987307.html",
+    "file": "t1987307.html"
   },
   {
-    "title": "Are we humans perfect?",
-    "file": "showthread.php@t=1814100.htm"
+    "title": "t1987308.html",
+    "file": "t1987308.html"
   },
   {
-    "title": "Pope supports Turkey's bid to join E.U",
-    "file": "showthread.php@t=1814101.htm"
+    "title": "t1987309.html",
+    "file": "t1987309.html"
   },
   {
-    "title": "what religon do you follow?",
-    "file": "showthread.php@t=1814102.htm"
+    "title": "t1987510.html",
+    "file": "t1987510.html"
   },
   {
-    "title": "Conversation",
-    "file": "showthread.php@t=1814103.htm"
+    "title": "t1987554.html",
+    "file": "t1987554.html"
   },
   {
-    "title": "Why the Obsession with Jihad?",
-    "file": "showthread.php@t=1814104.htm"
+    "title": "t1987886.html",
+    "file": "t1987886.html"
   },
   {
-    "title": "Questions.",
-    "file": "showthread.php@t=1814105.htm"
+    "title": "t1987887.html",
+    "file": "t1987887.html"
   },
   {
-    "title": "Do christians morally object to hacking?",
-    "file": "showthread.php@t=1814106.htm"
+    "title": "t1987888.html",
+    "file": "t1987888.html"
   },
   {
-    "title": "Jackketch, I'm calling you out",
-    "file": "showthread.php@t=1814107.htm"
+    "title": "t1987889.html",
+    "file": "t1987889.html"
   },
   {
-    "title": "I am proclaiming myself as the Prophet of TOTSE sent by the one God",
-    "file": "showthread.php@t=1814108.htm"
+    "title": "t1987890.html",
+    "file": "t1987890.html"
   },
   {
-    "title": "Satan... a good guy?",
-    "file": "showthread.php@t=1814109.htm"
+    "title": "t1987891.html",
+    "file": "t1987891.html"
   },
   {
-    "title": "Noah's Ark problems.",
-    "file": "showthread.php@t=1814110.htm"
+    "title": "t1987892.html",
+    "file": "t1987892.html"
   },
   {
-    "title": "ATTN LostCause",
-    "file": "showthread.php@t=1814111.htm"
+    "title": "t1987893.html",
+    "file": "t1987893.html"
   },
   {
-    "title": "Early religions and drugs.",
-    "file": "showthread.php@t=1814112.htm"
+    "title": "t1987894.html",
+    "file": "t1987894.html"
   },
   {
-    "title": "Atheist Organizations",
-    "file": "showthread.php@t=1814113.htm"
+    "title": "t1987895.html",
+    "file": "t1987895.html"
   },
   {
-    "title": "My God.",
-    "file": "showthread.php@t=1814114.htm"
+    "title": "t1988169.html",
+    "file": "t1988169.html"
   },
   {
-    "title": "Atheism does not work...",
-    "file": "showthread.php@t=1814115.htm"
+    "title": "t1988186.html",
+    "file": "t1988186.html"
   },
   {
-    "title": "Heaven",
-    "file": "showthread.php@t=1814116.htm"
+    "title": "t1988375.html",
+    "file": "t1988375.html"
   },
   {
-    "title": "Hmm...",
-    "file": "showthread.php@t=1814117.htm"
+    "title": "t1988513.html",
+    "file": "t1988513.html"
   },
   {
-    "title": "Muslim vs muslim",
-    "file": "showthread.php@t=1814118.htm"
+    "title": "t1988522.html",
+    "file": "t1988522.html"
   },
   {
-    "title": "Somalian Islamic Court Declares Jihad against Ethiopia:",
-    "file": "showthread.php@t=1814119.htm"
+    "title": "t1988610.html",
+    "file": "t1988610.html"
   },
   {
-    "title": "'To the Church at Galatia'",
-    "file": "showthread.php@t=1814120.htm"
+    "title": "t1988636.html",
+    "file": "t1988636.html"
   },
   {
-    "title": "how do Creationists explane",
-    "file": "showthread.php@t=1814121.htm"
+    "title": "t1988706.html",
+    "file": "t1988706.html"
   },
   {
-    "title": "Islamic thugs brutally murder teacher for educating girls",
-    "file": "showthread.php@t=1814122.htm"
+    "title": "t1988769.html",
+    "file": "t1988769.html"
   },
   {
-    "title": "Did anyone else find this funny.",
-    "file": "showthread.php@t=1814123.htm"
+    "title": "t1988818.html",
+    "file": "t1988818.html"
   },
   {
-    "title": "In U.S., fear and distrust of Muslims runs deep",
-    "file": "showthread.php@t=1814124.htm"
+    "title": "t1989066.html",
+    "file": "t1989066.html"
   },
   {
-    "title": "Favorite Religious Quote",
-    "file": "showthread.php@t=1814125.htm"
+    "title": "t1989087.html",
+    "file": "t1989087.html"
   },
   {
-    "title": "Why Muslim extremists are getting on my tits.",
-    "file": "showthread.php@t=1814126.htm"
+    "title": "t1989124.html",
+    "file": "t1989124.html"
   },
   {
-    "title": "Face it: Religion's a bunch of ancient bullshit",
-    "file": "showthread.php@t=1814127.htm"
+    "title": "t1989128.html",
+    "file": "t1989128.html"
   },
   {
-    "title": "Think you're a christian?",
-    "file": "showthread.php@t=1814128.htm"
+    "title": "t1989145.html",
+    "file": "t1989145.html"
   },
   {
-    "title": "Why should i belive in your god?",
-    "file": "showthread.php@t=1814129.htm"
+    "title": "t1989185.html",
+    "file": "t1989185.html"
   },
   {
-    "title": "Will Hell be that bad?",
-    "file": "showthread.php@t=1814130.htm"
+    "title": "t1989205.html",
+    "file": "t1989205.html"
   },
   {
-    "title": "something i never understood about christianity..",
-    "file": "showthread.php@t=1814131.htm"
+    "title": "t1989672.html",
+    "file": "t1989672.html"
   },
   {
-    "title": "Is speaking out against Islam Racist?",
-    "file": "showthread.php@t=1814132.htm"
+    "title": "t1989827.html",
+    "file": "t1989827.html"
   },
   {
-    "title": "Buddhism",
-    "file": "showthread.php@t=1814133.htm"
+    "title": "t1989949.html",
+    "file": "t1989949.html"
   },
   {
-    "title": "How exactly does the holy trinity work?",
-    "file": "showthread.php@t=1814134.htm"
+    "title": "t1989951.html",
+    "file": "t1989951.html"
   },
   {
-    "title": "Carbon Dating.",
-    "file": "showthread.php@t=1814135.htm"
+    "title": "t1990318.html",
+    "file": "t1990318.html"
   },
   {
-    "title": "So, it's Christmas season",
-    "file": "showthread.php@t=1814136.htm"
+    "title": "t1990718.html",
+    "file": "t1990718.html"
   },
   {
-    "title": "Do Demons exist?",
-    "file": "showthread.php@t=1814137.htm"
+    "title": "t1991254.html",
+    "file": "t1991254.html"
   },
   {
-    "title": "A new religion: religion bashing",
-    "file": "showthread.php@t=1814138.htm"
+    "title": "t1991752.html",
+    "file": "t1991752.html"
   },
   {
-    "title": "We need more GODS!!!",
-    "file": "showthread.php@t=1814139.htm"
+    "title": "t1991941.html",
+    "file": "t1991941.html"
   },
   {
-    "title": "reincarnation",
-    "file": "showthread.php@t=1814140.htm"
+    "title": "t1992036.html",
+    "file": "t1992036.html"
   },
   {
-    "title": "Odenism",
-    "file": "showthread.php@t=1814141.htm"
+    "title": "t1992169.html",
+    "file": "t1992169.html"
   },
   {
-    "title": "Okay all hail coke and beer",
-    "file": "showthread.php@t=1814142.htm"
+    "title": "t1992224.html",
+    "file": "t1992224.html"
   },
   {
-    "title": "The \"not-self\" of Buddhism",
-    "file": "showthread.php@t=1814143.htm"
+    "title": "t1992268.html",
+    "file": "t1992268.html"
   },
   {
-    "title": "Question about starting my own religon",
-    "file": "showthread.php@t=1814144.htm"
+    "title": "t1992283.html",
+    "file": "t1992283.html"
   },
   {
-    "title": "The Atheist Delusion",
-    "file": "showthread.php@t=1814145.htm"
+    "title": "t1992410.html",
+    "file": "t1992410.html"
   },
   {
-    "title": "Richard Dawkins :The Root of All Evil",
-    "file": "showthread.php@t=1814146.htm"
+    "title": "t1992455.html",
+    "file": "t1992455.html"
   },
   {
-    "title": "What religion would you pick?",
-    "file": "showthread.php@t=1814147.htm"
+    "title": "t1992703.html",
+    "file": "t1992703.html"
   },
   {
-    "title": "\"44 percent of Americans believe that Jesus will return to Earth within 50 years.",
-    "file": "showthread.php@t=1814148.htm"
+    "title": "t1992954.html",
+    "file": "t1992954.html"
   },
   {
-    "title": "Kick Ass Bible Quotes.",
-    "file": "showthread.php@t=1814149.htm"
+    "title": "t1993103.html",
+    "file": "t1993103.html"
   },
   {
-    "title": "Shut the fuck up.",
-    "file": "showthread.php@t=1814150.htm"
+    "title": "t1993381.html",
+    "file": "t1993381.html"
   },
   {
-    "title": "pretty extreme christian website",
-    "file": "showthread.php@t=1814151.htm"
+    "title": "t1993676.html",
+    "file": "t1993676.html"
   },
   {
-    "title": "Somthing I dont understand about christianity",
-    "file": "showthread.php@t=1814152.htm"
+    "title": "t1993679.html",
+    "file": "t1993679.html"
   },
   {
-    "title": "Could someone help me?",
-    "file": "showthread.php@t=1814153.htm"
+    "title": "t1994079.html",
+    "file": "t1994079.html"
   },
   {
-    "title": "What is hell like?",
-    "file": "showthread.php@t=1814154.htm"
+    "title": "t1994102.html",
+    "file": "t1994102.html"
   },
   {
-    "title": "crusades question",
-    "file": "showthread.php@t=1814155.htm"
+    "title": "t1994320.html",
+    "file": "t1994320.html"
   },
   {
-    "title": "Religion in Society, by Me(long)",
-    "file": "showthread.php@t=1814156.htm"
+    "title": "t1994322.html",
+    "file": "t1994322.html"
   },
   {
-    "title": "If god exists, could he be evil?",
-    "file": "showthread.php@t=1814157.htm"
+    "title": "t1994419.html",
+    "file": "t1994419.html"
   },
   {
-    "title": "So I'm buying a copy of the Qur'an",
-    "file": "showthread.php@t=1814158.htm"
+    "title": "t1994426.html",
+    "file": "t1994426.html"
   },
   {
-    "title": "i belive in jesus talk to me about it k mother fucker",
-    "file": "showthread.php@t=1814159.htm"
+    "title": "t1994445.html",
+    "file": "t1994445.html"
   },
   {
-    "title": "Fimbulwinter - Nuclear Winter?",
-    "file": "showthread.php@t=1814160.htm"
+    "title": "t1994453.html",
+    "file": "t1994453.html"
   },
   {
-    "title": "Totse is jewish?",
-    "file": "showthread.php@t=1814161.htm"
+    "title": "t1994644.html",
+    "file": "t1994644.html"
   },
   {
-    "title": "the concept of God in relation to us, explained simply",
-    "file": "showthread.php@t=1814162.htm"
+    "title": "t1994817.html",
+    "file": "t1994817.html"
   },
   {
-    "title": "All Religion Is Gay",
-    "file": "showthread.php@t=1814163.htm"
+    "title": "t1994899.html",
+    "file": "t1994899.html"
   },
   {
-    "title": "Bread of Life",
-    "file": "showthread.php@t=1814164.htm"
+    "title": "t1995179.html",
+    "file": "t1995179.html"
   },
   {
-    "title": "So you think the Bible is just fairy tales?",
-    "file": "showthread.php@t=1814165.htm"
+    "title": "t1995246.html",
+    "file": "t1995246.html"
   },
   {
-    "title": "Religion has screwed up my friends cognitive abilities.",
-    "file": "showthread.php@t=1814166.htm"
+    "title": "t1995258.html",
+    "file": "t1995258.html"
   },
   {
-    "title": "share your favorite religious storys,parables,koans, etc...",
-    "file": "showthread.php@t=1814167.htm"
+    "title": "t1995483.html",
+    "file": "t1995483.html"
   },
   {
-    "title": "Stupid Bible rule",
-    "file": "showthread.php@t=1814168.htm"
+    "title": "t1995566.html",
+    "file": "t1995566.html"
   },
   {
-    "title": "Destiny? fate?",
-    "file": "showthread.php@t=1814169.htm"
+    "title": "t1996079.html",
+    "file": "t1996079.html"
   },
   {
-    "title": "The vicegrip of Christianity. A thread for ex-Christians.",
-    "file": "showthread.php@t=1814170.htm"
+    "title": "t1996381.html",
+    "file": "t1996381.html"
   },
   {
-    "title": "Atheist/Humanist/Rationalist/Freethinker/Agnostics - Funerals",
-    "file": "showthread.php@t=1814171.htm"
+    "title": "t1996396.html",
+    "file": "t1996396.html"
   },
   {
-    "title": "What would god do if baby jesus was kidnapped?",
-    "file": "showthread.php@t=1814172.htm"
+    "title": "t1996421.html",
+    "file": "t1996421.html"
   },
   {
-    "title": "How long does Christianity have?",
-    "file": "showthread.php@t=1814173.htm"
+    "title": "t1996428.html",
+    "file": "t1996428.html"
   },
   {
-    "title": "Sweden",
-    "file": "showthread.php@t=1814174.htm"
+    "title": "t1996568.html",
+    "file": "t1996568.html"
   },
   {
-    "title": "Has anyone read the Jefferson Bible?",
-    "file": "showthread.php@t=1814175.htm"
+    "title": "t1996632.html",
+    "file": "t1996632.html"
   },
   {
-    "title": "Atheism. How does it make sense?",
-    "file": "showthread.php@t=1814176.htm"
+    "title": "t1996635.html",
+    "file": "t1996635.html"
   },
   {
-    "title": "tao teh ching",
-    "file": "showthread.php@t=1814177.htm"
+    "title": "t1996786.html",
+    "file": "t1996786.html"
   },
   {
-    "title": "what is the concept of Nihilism?",
-    "file": "showthread.php@t=1814178.htm"
+    "title": "t1996791.html",
+    "file": "t1996791.html"
   },
   {
-    "title": "Is there any quote from the bible against abortion?",
-    "file": "showthread.php@t=1814179.htm"
+    "title": "t1997044.html",
+    "file": "t1997044.html"
   },
   {
-    "title": "Merry Auschwitz and a happy Jew year.",
-    "file": "showthread.php@t=1814180.htm"
+    "title": "t1997433.html",
+    "file": "t1997433.html"
   },
   {
-    "title": "The size of heaven and hell.",
-    "file": "showthread.php@t=1814181.htm"
+    "title": "t1997646.html",
+    "file": "t1997646.html"
   },
   {
-    "title": "People are insane.",
-    "file": "showthread.php@t=1814182.htm"
+    "title": "t1997680.html",
+    "file": "t1997680.html"
   },
   {
-    "title": "Who in here has read the holy books?",
-    "file": "showthread.php@t=1814183.htm"
+    "title": "t1997688.html",
+    "file": "t1997688.html"
   },
   {
-    "title": "Did Jesus Die For Our Sins, Or Was He A Martyr?",
-    "file": "showthread.php@t=1814184.htm"
+    "title": "t1997734.html",
+    "file": "t1997734.html"
   },
   {
-    "title": "Why Atheists and Theists are both wrong",
-    "file": "showthread.php@t=1814185.htm"
+    "title": "t1997870.html",
+    "file": "t1997870.html"
   },
   {
-    "title": "Can anyone prove to me God exists?",
-    "file": "showthread.php@t=1814186.htm"
+    "title": "t1997942.html",
+    "file": "t1997942.html"
   },
   {
-    "title": "i've done it, i've finally found out why masturbation is a sin.",
-    "file": "showthread.php@t=1814187.htm"
+    "title": "t1998464.html",
+    "file": "t1998464.html"
   },
   {
-    "title": "Other Religions and Hell",
-    "file": "showthread.php@t=1814188.htm"
+    "title": "t1998470.html",
+    "file": "t1998470.html"
   },
   {
-    "title": "Pagan Origins of Christmas?",
-    "file": "showthread.php@t=1814189.htm"
+    "title": "t1998481.html",
+    "file": "t1998481.html"
   },
   {
-    "title": "Demystifying the Resurrection!",
-    "file": "showthread.php@t=1814190.htm"
+    "title": "t1998514.html",
+    "file": "t1998514.html"
   },
   {
-    "title": "god saves or kills?",
-    "file": "showthread.php@t=1814191.htm"
+    "title": "t1998515.html",
+    "file": "t1998515.html"
   },
   {
-    "title": "The basics of starting a new religon?",
-    "file": "showthread.php@t=1814192.htm"
+    "title": "t1998561.html",
+    "file": "t1998561.html"
   },
   {
-    "title": "Fundamentalist Christians",
-    "file": "showthread.php@t=1814193.htm"
+    "title": "t1998615.html",
+    "file": "t1998615.html"
   },
   {
-    "title": "christians have hijacked \"god\" (rant)",
-    "file": "showthread.php@t=1814194.htm"
+    "title": "t1998939.html",
+    "file": "t1998939.html"
   },
   {
-    "title": "You're still going to hell...",
-    "file": "showthread.php@t=1814195.htm"
+    "title": "t1999038.html",
+    "file": "t1999038.html"
   },
   {
-    "title": "Tradeing a soul to save a soul?",
-    "file": "showthread.php@t=1814196.htm"
+    "title": "t1999080.html",
+    "file": "t1999080.html"
   },
   {
-    "title": "Coexistance is impossible.",
-    "file": "showthread.php@t=1814197.htm"
+    "title": "t1999496.html",
+    "file": "t1999496.html"
   },
   {
-    "title": "Why do you believe in God?",
-    "file": "showthread.php@t=1814198.htm"
+    "title": "t1999562.html",
+    "file": "t1999562.html"
   },
   {
-    "title": "The End",
-    "file": "showthread.php@t=1814199.htm"
+    "title": "t1999573.html",
+    "file": "t1999573.html"
   },
   {
-    "title": "Falacy of Macroevolution",
-    "file": "showthread.php@t=1814200.htm"
+    "title": "t1999997.html",
+    "file": "t1999997.html"
   },
   {
-    "title": "Making sense out of the binding of Isaac.",
-    "file": "showthread.php@t=1814201.htm"
+    "title": "t2000005.html",
+    "file": "t2000005.html"
   },
   {
-    "title": "my atheistism is slipping... make it come back",
-    "file": "showthread.php@t=1814202.htm"
+    "title": "t2000157.html",
+    "file": "t2000157.html"
   },
   {
-    "title": "A question for athiests",
-    "file": "showthread.php@t=1814203.htm"
+    "title": "t2000518.html",
+    "file": "t2000518.html"
   },
   {
-    "title": "AHHHHHHHHHHHHHHHHHHHHH",
-    "file": "showthread.php@t=1814204.htm"
+    "title": "t2000595.html",
+    "file": "t2000595.html"
   },
   {
-    "title": "I have no sympathy for Islam",
-    "file": "showthread.php@t=1814205.htm"
+    "title": "t2000774.html",
+    "file": "t2000774.html"
   },
   {
-    "title": "Test those Christians",
-    "file": "showthread.php@t=1814206.htm"
+    "title": "t2000894.html",
+    "file": "t2000894.html"
   },
   {
-    "title": "can you justify your religion??",
-    "file": "showthread.php@t=1814207.htm"
+    "title": "t2000934.html",
+    "file": "t2000934.html"
   },
   {
-    "title": "Atheists, why do you hate Christians so much, and Christians, vise versa?",
-    "file": "showthread.php@t=1814208.htm"
+    "title": "t2001424.html",
+    "file": "t2001424.html"
   },
   {
-    "title": "Muslims Driving Out the Last of Bethlehem's Christians..",
-    "file": "showthread.php@t=1814209.htm"
+    "title": "t2001449.html",
+    "file": "t2001449.html"
   },
   {
-    "title": "Why wasn't Jesus the first man?",
-    "file": "showthread.php@t=1814210.htm"
+    "title": "t2001456.html",
+    "file": "t2001456.html"
   },
   {
-    "title": "Spiritual Individualism",
-    "file": "showthread.php@t=1814211.htm"
+    "title": "t2001460.html",
+    "file": "t2001460.html"
   },
   {
-    "title": "I thought about this on Sunday while sitting in church.",
-    "file": "showthread.php@t=1814212.htm"
+    "title": "t2001472.html",
+    "file": "t2001472.html"
   },
   {
-    "title": "The christmas conspiracy",
-    "file": "showthread.php@t=1814213.htm"
+    "title": "t2001732.html",
+    "file": "t2001732.html"
   },
   {
-    "title": "Remember when the pope called Islam a violent religion...",
-    "file": "showthread.php@t=1814214.htm"
+    "title": "t2002564.html",
+    "file": "t2002564.html"
   },
   {
-    "title": "Why is it that most religions seem to involve serving something?",
-    "file": "showthread.php@t=1814215.htm"
+    "title": "t2002616.html",
+    "file": "t2002616.html"
   },
   {
-    "title": "Normally I feel bad when a plane crashes but not this time",
-    "file": "showthread.php@t=1814216.htm"
+    "title": "t2002663.html",
+    "file": "t2002663.html"
   },
   {
-    "title": "Do you believe in God/guardian angels/something?",
-    "file": "showthread.php@t=1814217.htm"
+    "title": "t2002721.html",
+    "file": "t2002721.html"
   },
   {
-    "title": "Scientology.",
-    "file": "showthread.php@t=1814218.htm"
+    "title": "t2002978.html",
+    "file": "t2002978.html"
   },
   {
-    "title": "All sins are equal in the eyes of God.",
-    "file": "showthread.php@t=1814219.htm"
+    "title": "t2003001.html",
+    "file": "t2003001.html"
   },
   {
-    "title": "I can't understand how people believe this. Can someone explain it to me?",
-    "file": "showthread.php@t=1814220.htm"
+    "title": "t2003157.html",
+    "file": "t2003157.html"
   },
   {
-    "title": "I'm the one and only True GOD, join my religion for etarnal happiness",
-    "file": "showthread.php@t=1814221.htm"
+    "title": "t2003160.html",
+    "file": "t2003160.html"
   },
   {
-    "title": "Hinduism",
-    "file": "showthread.php@t=1814222.htm"
+    "title": "t2003283.html",
+    "file": "t2003283.html"
   },
   {
-    "title": "proof God cannot exist",
-    "file": "showthread.php@t=1814223.htm"
+    "title": "t2003438.html",
+    "file": "t2003438.html"
   },
   {
-    "title": "If You Could Start All Over Again.....",
-    "file": "showthread.php@t=1814224.htm"
+    "title": "t2003924.html",
+    "file": "t2003924.html"
   },
   {
-    "title": "Why The \"Who Created The Universe\" Argument Fails",
-    "file": "showthread.php@t=1814225.htm"
+    "title": "t2004072.html",
+    "file": "t2004072.html"
   },
   {
-    "title": "No religion is \"wrong\"",
-    "file": "showthread.php@t=1814226.htm"
+    "title": "t2004156.html",
+    "file": "t2004156.html"
   },
   {
-    "title": "An observation...",
-    "file": "showthread.php@t=1814227.htm"
+    "title": "t2004216.html",
+    "file": "t2004216.html"
   },
   {
-    "title": "A challenge to Christians.",
-    "file": "showthread.php@t=1814228.htm"
+    "title": "t2004435.html",
+    "file": "t2004435.html"
   },
   {
-    "title": "If you believe God exists, You are a fucking dumbass!",
-    "file": "showthread.php@t=1814229.htm"
+    "title": "t2004467.html",
+    "file": "t2004467.html"
   },
   {
-    "title": "To any MySpacers",
-    "file": "showthread.php@t=1814230.htm"
+    "title": "t2004483.html",
+    "file": "t2004483.html"
   },
   {
-    "title": "43.5% of Indonesians Ready to go on Violent Jihad:",
-    "file": "showthread.php@t=1814231.htm"
+    "title": "t2004721.html",
+    "file": "t2004721.html"
   },
   {
-    "title": "Abolish Religion.",
-    "file": "showthread.php@t=1814232.htm"
+    "title": "t2004722.html",
+    "file": "t2004722.html"
   },
   {
-    "title": "HEY!",
-    "file": "showthread.php@t=1814233.htm"
+    "title": "t2004765.html",
+    "file": "t2004765.html"
   },
   {
-    "title": "atheists: What do you use for comfort other than god?",
-    "file": "showthread.php@t=1814234.htm"
+    "title": "t2004969.html",
+    "file": "t2004969.html"
   },
   {
-    "title": "Mary Magdalene",
-    "file": "showthread.php@t=1814235.htm"
+    "title": "t2005068.html",
+    "file": "t2005068.html"
   },
   {
-    "title": "Holiday Trees of Christmas Trees: DEBATE",
-    "file": "showthread.php@t=1814236.htm"
+    "title": "t2005327.html",
+    "file": "t2005327.html"
   },
   {
-    "title": "Mohammed moving gid",
-    "file": "showthread.php@t=1814237.htm"
+    "title": "t2005398.html",
+    "file": "t2005398.html"
   },
   {
-    "title": "Church tomorrow....",
-    "file": "showthread.php@t=1814238.htm"
+    "title": "t2005433.html",
+    "file": "t2005433.html"
   },
   {
-    "title": "How do you get close with God?",
-    "file": "showthread.php@t=1814239.htm"
+    "title": "t2005556.html",
+    "file": "t2005556.html"
   },
   {
-    "title": "Get out there and blow some shit up.",
-    "file": "showthread.php@t=1814240.htm"
+    "title": "t2006110.html",
+    "file": "t2006110.html"
   },
   {
-    "title": "Raping of the pagen religions by Christianity",
-    "file": "showthread.php@t=1814241.htm"
+    "title": "t2006180.html",
+    "file": "t2006180.html"
   },
   {
-    "title": "your views on satanism",
-    "file": "showthread.php@t=1814242.htm"
+    "title": "t2006452.html",
+    "file": "t2006452.html"
   },
   {
-    "title": "Happy birthday Jesus",
-    "file": "showthread.php@t=1814243.htm"
+    "title": "t2006940.html",
+    "file": "t2006940.html"
   },
   {
-    "title": "is anyone listining??",
-    "file": "showthread.php@t=1814244.htm"
+    "title": "t2006972.html",
+    "file": "t2006972.html"
   },
   {
-    "title": "Serious(non offensive)question for athesists?",
-    "file": "showthread.php@t=1814245.htm"
+    "title": "t2007002.html",
+    "file": "t2007002.html"
   },
   {
-    "title": "Intelligent Design, Why?",
-    "file": "showthread.php@t=1814246.htm"
+    "title": "t2007017.html",
+    "file": "t2007017.html"
   },
   {
-    "title": "Top Ten signs your a christian",
-    "file": "showthread.php@t=1814247.htm"
+    "title": "t2007115.html",
+    "file": "t2007115.html"
   },
   {
-    "title": "quota for nirvana",
-    "file": "showthread.php@t=1814248.htm"
+    "title": "t2007127.html",
+    "file": "t2007127.html"
   },
   {
-    "title": "Is there anything in the Bible that directly condemns abortion or stem-cell research?",
-    "file": "showthread.php@t=1814249.htm"
+    "title": "t2007147.html",
+    "file": "t2007147.html"
   },
   {
-    "title": "Attn ArmsMerchant, Ate, etc. The official Atheist Vs. Theist showdown thread.",
-    "file": "showthread.php@t=1814250.htm"
+    "title": "t2007342.html",
+    "file": "t2007342.html"
   },
   {
-    "title": "Occams Razor.",
-    "file": "showthread.php@t=1814251.htm"
+    "title": "t2007505.html",
+    "file": "t2007505.html"
   },
   {
-    "title": "Does anyone here pray the rosary?",
-    "file": "showthread.php@t=1814252.htm"
+    "title": "t2007520.html",
+    "file": "t2007520.html"
   },
   {
-    "title": "A question for atheists.",
-    "file": "showthread.php@t=1814253.htm"
+    "title": "t2007570.html",
+    "file": "t2007570.html"
   },
   {
-    "title": "Did Osmium find Jesus?",
-    "file": "showthread.php@t=1814254.htm"
+    "title": "t2007698.html",
+    "file": "t2007698.html"
   },
   {
-    "title": "Im doubting my faith...",
-    "file": "showthread.php@t=1814255.htm"
+    "title": "t2007842.html",
+    "file": "t2007842.html"
   },
   {
-    "title": "should kids be raised into religion",
-    "file": "showthread.php@t=1814256.htm"
+    "title": "t2007882.html",
+    "file": "t2007882.html"
   },
   {
-    "title": "why did you choose pantheism?",
-    "file": "showthread.php@t=1814257.htm"
+    "title": "t2008383.html",
+    "file": "t2008383.html"
   },
   {
-    "title": "to get into the christian heaven",
-    "file": "showthread.php@t=1814258.htm"
+    "title": "t2008401.html",
+    "file": "t2008401.html"
   },
   {
-    "title": "Historical Jesus versus Jesus the Myth",
-    "file": "showthread.php@t=1814259.htm"
+    "title": "t2008425.html",
+    "file": "t2008425.html"
   },
   {
-    "title": "Muslims shout at Jesus' home:'Islam will dominate the world'",
-    "file": "showthread.php@t=1814260.htm"
+    "title": "t2008623.html",
+    "file": "t2008623.html"
   },
   {
-    "title": "Hfu the magick worm beast/god",
-    "file": "showthread.php@t=1814261.htm"
+    "title": "t2008653.html",
+    "file": "t2008653.html"
   },
   {
-    "title": "ndeed",
-    "file": "showthread.php@t=1814262.htm"
+    "title": "t2008794.html",
+    "file": "t2008794.html"
   },
   {
-    "title": "Five Ways to Prove God's Existence.",
-    "file": "showthread.php@t=1814263.htm"
+    "title": "t2008984.html",
+    "file": "t2008984.html"
   },
   {
-    "title": "Defining God",
-    "file": "showthread.php@t=1814264.htm"
+    "title": "t2009066.html",
+    "file": "t2009066.html"
   },
   {
-    "title": "Heaven or Hell",
-    "file": "showthread.php@t=1814265.htm"
+    "title": "t2009123.html",
+    "file": "t2009123.html"
   },
   {
-    "title": "Of death, immortality, karma, enlightenment, etc.",
-    "file": "showthread.php@t=1814266.htm"
+    "title": "t2009179.html",
+    "file": "t2009179.html"
   },
   {
-    "title": "gathering",
-    "file": "showthread.php@t=1814267.htm"
+    "title": "t2009324.html",
+    "file": "t2009324.html"
   },
   {
-    "title": "christian god is a egotistic power hungry bitch(proof)",
-    "file": "showthread.php@t=1814268.htm"
+    "title": "t2009363.html",
+    "file": "t2009363.html"
   },
   {
-    "title": "Converting to Islam!?! Help...",
-    "file": "showthread.php@t=1814269.htm"
+    "title": "t2009415.html",
+    "file": "t2009415.html"
   },
   {
-    "title": "I have killed my other thread.",
-    "file": "showthread.php@t=1814270.htm"
+    "title": "t2009592.html",
+    "file": "t2009592.html"
   },
   {
-    "title": "Know What Really GRINDS MY GEARS, The Haunting show on Discovery",
-    "file": "showthread.php@t=1814271.htm"
+    "title": "t2009639.html",
+    "file": "t2009639.html"
   },
   {
-    "title": "On the Human Mind and its Relation to Religion",
-    "file": "showthread.php@t=1814272.htm"
+    "title": "t2009733.html",
+    "file": "t2009733.html"
   },
   {
-    "title": "why worship a man. jesus christ.",
-    "file": "showthread.php@t=1814273.htm"
+    "title": "t2010267.html",
+    "file": "t2010267.html"
   },
   {
-    "title": "Sam Harris",
-    "file": "showthread.php@t=1814274.htm"
+    "title": "t2010407.html",
+    "file": "t2010407.html"
   },
   {
-    "title": "Some random thoughts about a Creator",
-    "file": "showthread.php@t=1814275.htm"
+    "title": "t2010574.html",
+    "file": "t2010574.html"
   },
   {
-    "title": "Starting a new religon",
-    "file": "showthread.php@t=1814276.htm"
+    "title": "t2011008.html",
+    "file": "t2011008.html"
   },
   {
-    "title": "(Serious Thread) Has anyone seem a ghost and/or talked to Satan?",
-    "file": "showthread.php@t=1814277.htm"
+    "title": "t2011266.html",
+    "file": "t2011266.html"
   },
   {
-    "title": "Religious Fuckers are fucking retarded fuckers",
-    "file": "showthread.php@t=1814278.htm"
+    "title": "t2011357.html",
+    "file": "t2011357.html"
   },
   {
-    "title": "Crisis of Faith",
-    "file": "showthread.php@t=1814279.htm"
+    "title": "t2011607.html",
+    "file": "t2011607.html"
   },
   {
-    "title": "An exercise in spiritual guides/Astral Plane",
-    "file": "showthread.php@t=1814280.htm"
+    "title": "t2011704.html",
+    "file": "t2011704.html"
   },
   {
-    "title": "Free Will and the Bible",
-    "file": "showthread.php@t=1814281.htm"
+    "title": "t2011790.html",
+    "file": "t2011790.html"
   },
   {
-    "title": "My Proof that a Supreme Being Cannot Exist",
-    "file": "showthread.php@t=1814282.htm"
+    "title": "t2011814.html",
+    "file": "t2011814.html"
   },
   {
-    "title": "Shut up.",
-    "file": "showthread.php@t=1814283.htm"
+    "title": "t2011823.html",
+    "file": "t2011823.html"
   },
   {
-    "title": "Biblical contradictions explained",
-    "file": "showthread.php@t=1814284.htm"
+    "title": "t2012603.html",
+    "file": "t2012603.html"
   },
   {
-    "title": "Night - Elie Wiesel - BOOK",
-    "file": "showthread.php@t=1814285.htm"
+    "title": "t2012754.html",
+    "file": "t2012754.html"
   },
   {
-    "title": "Another Question About God",
-    "file": "showthread.php@t=1814286.htm"
+    "title": "t2012958.html",
+    "file": "t2012958.html"
   },
   {
-    "title": "why hasn't got sent us a sign?",
-    "file": "showthread.php@t=1814287.htm"
+    "title": "t2013064.html",
+    "file": "t2013064.html"
   },
   {
-    "title": "comedy relief... sorta",
-    "file": "showthread.php@t=1814288.htm"
+    "title": "t2013096.html",
+    "file": "t2013096.html"
   },
   {
-    "title": "What did god do before he created the universe?",
-    "file": "showthread.php@t=1814289.htm"
+    "title": "t2013642.html",
+    "file": "t2013642.html"
   },
   {
-    "title": "what a suprise a homosexual icon has been accepted by the vatician",
-    "file": "showthread.php@t=1814290.htm"
+    "title": "t2013700.html",
+    "file": "t2013700.html"
   },
   {
-    "title": "Destiny",
-    "file": "showthread.php@t=1814291.htm"
+    "title": "t2013702.html",
+    "file": "t2013702.html"
   },
   {
-    "title": "History of world religion in 1.9 minutes.",
-    "file": "showthread.php@t=1814292.htm"
+    "title": "t2014190.html",
+    "file": "t2014190.html"
   },
   {
-    "title": "Jesus vs. God",
-    "file": "showthread.php@t=1814293.htm"
+    "title": "t2014302.html",
+    "file": "t2014302.html"
   },
   {
-    "title": "The worst Christians",
-    "file": "showthread.php@t=1814294.htm"
+    "title": "t2014348.html",
+    "file": "t2014348.html"
   },
   {
-    "title": "My thoughts on God & religion",
-    "file": "showthread.php@t=1814295.htm"
+    "title": "t2014412.html",
+    "file": "t2014412.html"
   },
   {
-    "title": "Genesis: according to Daniel Quinn",
-    "file": "showthread.php@t=1814296.htm"
+    "title": "t2014572.html",
+    "file": "t2014572.html"
   },
   {
-    "title": "I need to write a religious essay for class.",
-    "file": "showthread.php@t=1814297.htm"
+    "title": "t2014759.html",
+    "file": "t2014759.html"
   },
   {
-    "title": "God and suffering",
-    "file": "showthread.php@t=1814298.htm"
+    "title": "t2014881.html",
+    "file": "t2014881.html"
   },
   {
-    "title": "God and Rock",
-    "file": "showthread.php@t=1814299.htm"
+    "title": "t2015581.html",
+    "file": "t2015581.html"
   },
   {
-    "title": "I hate religion",
-    "file": "showthread.php@t=1814300.htm"
+    "title": "t2015610.html",
+    "file": "t2015610.html"
   },
   {
-    "title": "How come when someone is jewish they are -super- jewish?",
-    "file": "showthread.php@t=1814301.htm"
+    "title": "t2015879.html",
+    "file": "t2015879.html"
   },
   {
-    "title": "God Gene",
-    "file": "showthread.php@t=1814302.htm"
+    "title": "t2015900.html",
+    "file": "t2015900.html"
   },
   {
-    "title": "catholics",
-    "file": "showthread.php@t=1814303.htm"
+    "title": "t2016083.html",
+    "file": "t2016083.html"
   },
   {
-    "title": "Anyone here believe in norse or egyptian religion",
-    "file": "showthread.php@t=1814304.htm"
+    "title": "t2016299.html",
+    "file": "t2016299.html"
   },
   {
-    "title": "OT vs NT Enlightened chistian's response needed",
-    "file": "showthread.php@t=1814305.htm"
+    "title": "t2016387.html",
+    "file": "t2016387.html"
   },
   {
-    "title": "Jesus Christ:  Liberal or Conservative?",
-    "file": "showthread.php@t=1814306.htm"
+    "title": "t2016621.html",
+    "file": "t2016621.html"
   },
   {
-    "title": "Matthew 5:17-18",
-    "file": "showthread.php@t=1814307.htm"
+    "title": "t2016665.html",
+    "file": "t2016665.html"
   },
   {
-    "title": "God doesn't give a shit",
-    "file": "showthread.php@t=1814308.htm"
+    "title": "t2017005.html",
+    "file": "t2017005.html"
   },
   {
-    "title": "Why does god have to be a man?",
-    "file": "showthread.php@t=1814309.htm"
+    "title": "t2017341.html",
+    "file": "t2017341.html"
   },
   {
-    "title": "worshiping/praying",
-    "file": "showthread.php@t=1814310.htm"
+    "title": "t2017417.html",
+    "file": "t2017417.html"
   },
   {
-    "title": "Considering this how much energy....",
-    "file": "showthread.php@t=1814311.htm"
+    "title": "t2017429.html",
+    "file": "t2017429.html"
   },
   {
-    "title": "Grace: a unique christian concept?",
-    "file": "showthread.php@t=1814312.htm"
+    "title": "t2017617.html",
+    "file": "t2017617.html"
   },
   {
-    "title": "A question for thought?",
-    "file": "showthread.php@t=1814313.htm"
+    "title": "t2017758.html",
+    "file": "t2017758.html"
   },
   {
-    "title": "Satanisim sounds alright",
-    "file": "showthread.php@t=1814314.htm"
+    "title": "t2017854.html",
+    "file": "t2017854.html"
   },
   {
-    "title": "judeism",
-    "file": "showthread.php@t=1814315.htm"
+    "title": "t2018080.html",
+    "file": "t2018080.html"
   },
   {
-    "title": "God",
-    "file": "showthread.php@t=1814316.htm"
+    "title": "t2018191.html",
+    "file": "t2018191.html"
   },
   {
-    "title": "Favourite Bible Citations?",
-    "file": "showthread.php@t=1814317.htm"
+    "title": "t2018364.html",
+    "file": "t2018364.html"
   },
   {
-    "title": "Why in the FUCK do people take everything they hear about the bible literally?",
-    "file": "showthread.php@t=1814318.htm"
+    "title": "t2018832.html",
+    "file": "t2018832.html"
   },
   {
-    "title": "Jehovah's witnesses",
-    "file": "showthread.php@t=1814319.htm"
+    "title": "t2018930.html",
+    "file": "t2018930.html"
   },
   {
-    "title": "Fuck Everybody.",
-    "file": "showthread.php@t=1814320.htm"
+    "title": "t2019177.html",
+    "file": "t2019177.html"
   },
   {
-    "title": "People shouldnt turn to a religion for faith",
-    "file": "showthread.php@t=1814321.htm"
+    "title": "t2019327.html",
+    "file": "t2019327.html"
   },
   {
-    "title": "Do you believe in ghosts?",
-    "file": "showthread.php@t=1814322.htm"
+    "title": "t2019352.html",
+    "file": "t2019352.html"
   },
   {
-    "title": "Are we just Gods experiment!?!",
-    "file": "showthread.php@t=1814323.htm"
+    "title": "t2019471.html",
+    "file": "t2019471.html"
   },
   {
-    "title": "Did God leave us?",
-    "file": "showthread.php@t=1814324.htm"
+    "title": "t2019763.html",
+    "file": "t2019763.html"
   },
   {
-    "title": "I GOT IT!!!!!",
-    "file": "showthread.php@t=1814325.htm"
+    "title": "t2019790.html",
+    "file": "t2019790.html"
   },
   {
-    "title": "God is Irrational(video)",
-    "file": "showthread.php@t=1814326.htm"
+    "title": "t2019993.html",
+    "file": "t2019993.html"
   },
   {
-    "title": "Britain's Preachers of Hate:",
-    "file": "showthread.php@t=1814327.htm"
+    "title": "t2020175.html",
+    "file": "t2020175.html"
   },
   {
-    "title": "dumbass your from the stars",
-    "file": "showthread.php@t=1814328.htm"
+    "title": "t2020238.html",
+    "file": "t2020238.html"
   },
   {
-    "title": "www.notse.net",
-    "file": "showthread.php@t=1814329.htm"
+    "title": "t2020430.html",
+    "file": "t2020430.html"
   },
   {
-    "title": "do you pray?",
-    "file": "showthread.php@t=1814330.htm"
+    "title": "t2020529.html",
+    "file": "t2020529.html"
   },
   {
-    "title": "Death",
-    "file": "showthread.php@t=1814331.htm"
+    "title": "t2020618.html",
+    "file": "t2020618.html"
   },
   {
-    "title": "I finally get scientology",
-    "file": "showthread.php@t=1814332.htm"
+    "title": "t2020671.html",
+    "file": "t2020671.html"
   },
   {
-    "title": "Why Wicca WON'T grow into a big religion",
-    "file": "showthread.php@t=1814333.htm"
+    "title": "t2020673.html",
+    "file": "t2020673.html"
   },
   {
-    "title": "Did God send Martin Luther King here?",
-    "file": "showthread.php@t=1814334.htm"
+    "title": "t2020876.html",
+    "file": "t2020876.html"
   },
   {
-    "title": "Bitch about Satanism here",
-    "file": "showthread.php@t=1814335.htm"
+    "title": "t2021230.html",
+    "file": "t2021230.html"
   },
   {
-    "title": "The First Noble Truth",
-    "file": "showthread.php@t=1814336.htm"
+    "title": "t2021245.html",
+    "file": "t2021245.html"
   },
   {
-    "title": "What if Jesus Came Back?",
-    "file": "showthread.php@t=1814337.htm"
+    "title": "t2021479.html",
+    "file": "t2021479.html"
   },
   {
-    "title": "Why God is an asshole, if he exists, which he doesn't.",
-    "file": "showthread.php@t=1814338.htm"
+    "title": "t2021506.html",
+    "file": "t2021506.html"
   },
   {
-    "title": "Dying....",
-    "file": "showthread.php@t=1814339.htm"
+    "title": "t2021600.html",
+    "file": "t2021600.html"
   },
   {
-    "title": "catholic control?",
-    "file": "showthread.php@t=1814340.htm"
+    "title": "t2021841.html",
+    "file": "t2021841.html"
   },
   {
-    "title": "religious cannibalism",
-    "file": "showthread.php@t=1814341.htm"
+    "title": "t2021874.html",
+    "file": "t2021874.html"
   },
   {
-    "title": "The Second Noble Truth",
-    "file": "showthread.php@t=1814342.htm"
+    "title": "t2021956.html",
+    "file": "t2021956.html"
   },
   {
-    "title": "U.S Born Imam Preaching Hate in Britain:",
-    "file": "showthread.php@t=1814343.htm"
+    "title": "t2021961.html",
+    "file": "t2021961.html"
   },
   {
-    "title": "If god is love why would he send us to hell?",
-    "file": "showthread.php@t=1814344.htm"
+    "title": "t2022100.html",
+    "file": "t2022100.html"
   },
   {
-    "title": "Why  the fuck is there a Skinny Buddha and a  Fat Buddha?",
-    "file": "showthread.php@t=1814345.htm"
+    "title": "t2022156.html",
+    "file": "t2022156.html"
   },
   {
-    "title": "Our Country is Going into the Moral Toilet",
-    "file": "showthread.php@t=1814346.htm"
+    "title": "t2022367.html",
+    "file": "t2022367.html"
   },
   {
-    "title": "do animals have souls?",
-    "file": "showthread.php@t=1814347.htm"
+    "title": "t2022457.html",
+    "file": "t2022457.html"
   },
   {
-    "title": "\"Veiled Threat\"",
-    "file": "showthread.php@t=1814348.htm"
+    "title": "t2022571.html",
+    "file": "t2022571.html"
   },
   {
-    "title": "What do you think the point of religion is?",
-    "file": "showthread.php@t=1814349.htm"
+    "title": "t2022615.html",
+    "file": "t2022615.html"
   },
   {
-    "title": "Religion can be damaging to a kids morals, thought process",
-    "file": "showthread.php@t=1814350.htm"
+    "title": "t2022660.html",
+    "file": "t2022660.html"
   },
   {
-    "title": "I HATE FUCKING MUSELMS",
-    "file": "showthread.php@t=1814351.htm"
+    "title": "t2022686.html",
+    "file": "t2022686.html"
   },
   {
-    "title": "My God can beat the shit out of your God.",
-    "file": "showthread.php@t=1814352.htm"
+    "title": "t2023067.html",
+    "file": "t2023067.html"
   },
   {
-    "title": "Atheists and Believers",
-    "file": "showthread.php@t=1814353.htm"
+    "title": "t2023318.html",
+    "file": "t2023318.html"
   },
   {
-    "title": "The Third Noble Truth",
-    "file": "showthread.php@t=1814354.htm"
+    "title": "t2023319.html",
+    "file": "t2023319.html"
   },
   {
-    "title": "what if eurabia actually stood up to muslims",
-    "file": "showthread.php@t=1814355.htm"
+    "title": "t2023625.html",
+    "file": "t2023625.html"
   },
   {
-    "title": "What defines something as a religion?",
-    "file": "showthread.php@t=1814356.htm"
+    "title": "t2023628.html",
+    "file": "t2023628.html"
   },
   {
-    "title": "The Bible--where do I start?",
-    "file": "showthread.php@t=1814357.htm"
+    "title": "t2023634.html",
+    "file": "t2023634.html"
   },
   {
-    "title": "We drink our enemies' blood",
-    "file": "showthread.php@t=1814358.htm"
+    "title": "t2023636.html",
+    "file": "t2023636.html"
   },
   {
-    "title": "Catholic Polytheism",
-    "file": "showthread.php@t=1814359.htm"
+    "title": "t2023692.html",
+    "file": "t2023692.html"
   },
   {
-    "title": "\"Moderate\" Turkey (this is for yango wango)",
-    "file": "showthread.php@t=1814360.htm"
+    "title": "t2023713.html",
+    "file": "t2023713.html"
   },
   {
-    "title": "godisimaginary.com is biased crap",
-    "file": "showthread.php@t=1814361.htm"
+    "title": "t2023779.html",
+    "file": "t2023779.html"
   },
   {
-    "title": "Should people believe in a God; should I believe in a God (even if he isn't real)?",
-    "file": "showthread.php@t=1814362.htm"
+    "title": "t2023877.html",
+    "file": "t2023877.html"
   },
   {
-    "title": "The 2nd coming.",
-    "file": "showthread.php@t=1814363.htm"
+    "title": "t2024119.html",
+    "file": "t2024119.html"
   },
   {
-    "title": "Money and Scientology",
-    "file": "showthread.php@t=1814364.htm"
+    "title": "t2024132.html",
+    "file": "t2024132.html"
   },
   {
-    "title": "need help/islam",
-    "file": "showthread.php@t=1814365.htm"
+    "title": "t2024586.html",
+    "file": "t2024586.html"
   },
   {
-    "title": "old and new testaments",
-    "file": "showthread.php@t=1814366.htm"
+    "title": "t2024596.html",
+    "file": "t2024596.html"
   },
   {
-    "title": "Keep religion out of schools and government, or else",
-    "file": "showthread.php@t=1814367.htm"
+    "title": "t2024785.html",
+    "file": "t2024785.html"
   },
   {
-    "title": "Help!",
-    "file": "showthread.php@t=1814368.htm"
+    "title": "t2025134.html",
+    "file": "t2025134.html"
   },
   {
-    "title": "Evolution is a Religion....Not a Science",
-    "file": "showthread.php@t=1814369.htm"
+    "title": "t2025256.html",
+    "file": "t2025256.html"
   },
   {
-    "title": "Islam in Australia",
-    "file": "showthread.php@t=1814370.htm"
+    "title": "t2025283.html",
+    "file": "t2025283.html"
   },
   {
-    "title": "The Fourth Noble Truth",
-    "file": "showthread.php@t=1814371.htm"
+    "title": "t2025408.html",
+    "file": "t2025408.html"
   },
   {
-    "title": "God=Greed",
-    "file": "showthread.php@t=1814372.htm"
+    "title": "t2025534.html",
+    "file": "t2025534.html"
   },
   {
-    "title": "What's your favorite \"sin\"?",
-    "file": "showthread.php@t=1814373.htm"
+    "title": "t2025614.html",
+    "file": "t2025614.html"
   },
   {
-    "title": "Billion Christians, but only 144,000 saved?",
-    "file": "showthread.php@t=1814374.htm"
+    "title": "t2025730.html",
+    "file": "t2025730.html"
   },
   {
-    "title": "A religion without a Goddess is already half way to atheism",
-    "file": "showthread.php@t=1814375.htm"
+    "title": "t2025803.html",
+    "file": "t2025803.html"
   },
   {
-    "title": "Higher entities...do you believe?",
-    "file": "showthread.php@t=1814376.htm"
+    "title": "t2025839.html",
+    "file": "t2025839.html"
   },
   {
-    "title": "Keller writes Harry Potter Fanfiction",
-    "file": "showthread.php@t=1814377.htm"
+    "title": "t2025871.html",
+    "file": "t2025871.html"
   },
   {
-    "title": "Scientologists(s/p)",
-    "file": "showthread.php@t=1814378.htm"
+    "title": "t2025898.html",
+    "file": "t2025898.html"
   },
   {
-    "title": "Yemeni Jews threatened with killings and abductions.",
-    "file": "showthread.php@t=1814379.htm"
+    "title": "t2026132.html",
+    "file": "t2026132.html"
   },
   {
-    "title": "in reply to atheists and believers",
-    "file": "showthread.php@t=1814380.htm"
+    "title": "t2026206.html",
+    "file": "t2026206.html"
   },
   {
-    "title": "ALLAH U AKBAR !",
-    "file": "showthread.php@t=1814381.htm"
+    "title": "t2026533.html",
+    "file": "t2026533.html"
   },
   {
-    "title": "Discordian headcount",
-    "file": "showthread.php@t=1814382.htm"
+    "title": "t2026644.html",
+    "file": "t2026644.html"
   },
   {
-    "title": "Why do people put faith in Faith?",
-    "file": "showthread.php@t=1814383.htm"
+    "title": "t2026683.html",
+    "file": "t2026683.html"
   },
   {
-    "title": "Can god create a rock so big, he himself cannot lift it?",
-    "file": "showthread.php@t=1814384.htm"
+    "title": "t2026736.html",
+    "file": "t2026736.html"
   },
   {
-    "title": "God is NOT  \"on our side\"",
-    "file": "showthread.php@t=1814385.htm"
+    "title": "t2026857.html",
+    "file": "t2026857.html"
   },
   {
-    "title": "JESUS",
-    "file": "showthread.php@t=1814386.htm"
+    "title": "t2026975.html",
+    "file": "t2026975.html"
   },
   {
-    "title": "The basis for Islam, Christainity, and Judaism in a nutshell.",
-    "file": "showthread.php@t=1814387.htm"
+    "title": "t2026989.html",
+    "file": "t2026989.html"
   },
   {
-    "title": "what are we going to do when they find out there are aliens?",
-    "file": "showthread.php@t=1814388.htm"
+    "title": "t2026995.html",
+    "file": "t2026995.html"
   },
   {
-    "title": "The Mormon God can beat the hell out of all your other Gods.",
-    "file": "showthread.php@t=1814389.htm"
+    "title": "t2027070.html",
+    "file": "t2027070.html"
   },
   {
-    "title": "1915 Genocide",
-    "file": "showthread.php@t=1814390.htm"
+    "title": "t2027113.html",
+    "file": "t2027113.html"
   },
   {
-    "title": "Is there a difference?",
-    "file": "showthread.php@t=1814391.htm"
+    "title": "t2027144.html",
+    "file": "t2027144.html"
   },
   {
-    "title": "ATTN: LostCause",
-    "file": "showthread.php@t=1814392.htm"
+    "title": "t2027378.html",
+    "file": "t2027378.html"
   },
   {
-    "title": "Islam's troubles/ double standards",
-    "file": "showthread.php@t=1814393.htm"
+    "title": "t2027873.html",
+    "file": "t2027873.html"
   },
   {
-    "title": "Why  Atheism?",
-    "file": "showthread.php@t=1814394.htm"
+    "title": "t2027977.html",
+    "file": "t2027977.html"
   },
   {
-    "title": "Does religion help your life?",
-    "file": "showthread.php@t=1814395.htm"
+    "title": "t2028020.html",
+    "file": "t2028020.html"
   },
   {
-    "title": "Opinions of other atheists coming from religious families/bible belt",
-    "file": "showthread.php@t=1814396.htm"
+    "title": "t2028032.html",
+    "file": "t2028032.html"
   },
   {
-    "title": "religous kid in my class/anywhere=annoying",
-    "file": "showthread.php@t=1814397.htm"
+    "title": "t2028178.html",
+    "file": "t2028178.html"
   },
   {
-    "title": "God, Christianity, and Santa Claus ( long post)",
-    "file": "showthread.php@t=1814398.htm"
+    "title": "t2028207.html",
+    "file": "t2028207.html"
   },
   {
-    "title": "The Bhagavad Gita",
-    "file": "showthread.php@t=1814399.htm"
+    "title": "t2028300.html",
+    "file": "t2028300.html"
   },
   {
-    "title": "*vid*Christians, are you crazier than the westboro church?(the god hates fags people)",
-    "file": "showthread.php@t=1814400.htm"
+    "title": "t2028747.html",
+    "file": "t2028747.html"
   },
   {
-    "title": "Enlightenment",
-    "file": "showthread.php@t=1814401.htm"
+    "title": "t2028777.html",
+    "file": "t2028777.html"
   },
   {
-    "title": "My first supernatural type experience",
-    "file": "showthread.php@t=1814402.htm"
+    "title": "t2028879.html",
+    "file": "t2028879.html"
   },
   {
-    "title": "Guess My Faith! (Contest with money)",
-    "file": "showthread.php@t=1814403.htm"
+    "title": "t2028882.html",
+    "file": "t2028882.html"
   },
   {
-    "title": "They're Killing Each Other",
-    "file": "showthread.php@t=1814404.htm"
+    "title": "t2028899.html",
+    "file": "t2028899.html"
   },
   {
-    "title": "Oracles?",
-    "file": "showthread.php@t=1814405.htm"
+    "title": "t2028964.html",
+    "file": "t2028964.html"
   },
   {
-    "title": "To atheists: Is this a valid statement?",
-    "file": "showthread.php@t=1814406.htm"
+    "title": "t2029086.html",
+    "file": "t2029086.html"
   },
   {
-    "title": "Religion and charity",
-    "file": "showthread.php@t=1814407.htm"
+    "title": "t2029244.html",
+    "file": "t2029244.html"
   },
   {
-    "title": "Remote Viewing",
-    "file": "showthread.php@t=1814408.htm"
+    "title": "t2029293.html",
+    "file": "t2029293.html"
   },
   {
-    "title": "1/3 of British young Muslims believes that whoever leaves Islam should be executed",
-    "file": "showthread.php@t=1814409.htm"
+    "title": "t2029572.html",
+    "file": "t2029572.html"
   },
   {
-    "title": "proof we will never meet aliens and that we never will!",
-    "file": "showthread.php@t=1814410.htm"
+    "title": "t2029604.html",
+    "file": "t2029604.html"
   },
   {
-    "title": "Dont you think it should be a law that you shouldn't be forced to go to church?",
-    "file": "showthread.php@t=1814411.htm"
+    "title": "t2029632.html",
+    "file": "t2029632.html"
   },
   {
-    "title": "The Blasphemy Challenge",
-    "file": "showthread.php@t=1814412.htm"
+    "title": "t2029690.html",
+    "file": "t2029690.html"
   },
   {
-    "title": "'04 Poll of Saudis shows wide support for bin Laden's views",
-    "file": "showthread.php@t=1814413.htm"
+    "title": "t2029773.html",
+    "file": "t2029773.html"
   },
   {
-    "title": "The Ontological Argument.",
-    "file": "showthread.php@t=1814414.htm"
+    "title": "t2029979.html",
+    "file": "t2029979.html"
   },
   {
-    "title": "Picking And Choosing",
-    "file": "showthread.php@t=1814415.htm"
+    "title": "t2029981.html",
+    "file": "t2029981.html"
   },
   {
-    "title": "Sinning?",
-    "file": "showthread.php@t=1814416.htm"
+    "title": "t2030201.html",
+    "file": "t2030201.html"
   },
   {
-    "title": "_____ is so great it proves there is a Creator",
-    "file": "showthread.php@t=1814417.htm"
+    "title": "t2030270.html",
+    "file": "t2030270.html"
   },
   {
-    "title": "Muslims Target Muslims on Shiite Holy Day::",
-    "file": "showthread.php@t=1814418.htm"
+    "title": "t2030579.html",
+    "file": "t2030579.html"
   },
   {
-    "title": "God = Universe?",
-    "file": "showthread.php@t=1814419.htm"
+    "title": "t2030611.html",
+    "file": "t2030611.html"
   },
   {
-    "title": "Genesis 1:27",
-    "file": "showthread.php@t=1814420.htm"
+    "title": "t2030680.html",
+    "file": "t2030680.html"
   },
   {
-    "title": "Nihlism is absurd",
-    "file": "showthread.php@t=1814421.htm"
+    "title": "t2030698.html",
+    "file": "t2030698.html"
   },
   {
-    "title": "U.K Arrest Kidnap and Behead Ring in Birmingham.",
-    "file": "showthread.php@t=1814422.htm"
+    "title": "t2030783.html",
+    "file": "t2030783.html"
   },
   {
-    "title": "Mr.Deity, allmightiness one day at a time",
-    "file": "showthread.php@t=1814423.htm"
+    "title": "t2030822.html",
+    "file": "t2030822.html"
   },
   {
-    "title": "Faith, religion, and spirituality",
-    "file": "showthread.php@t=1814424.htm"
+    "title": "t2030823.html",
+    "file": "t2030823.html"
   },
   {
-    "title": "'Palestinian Genocide Day' instead of Holocaust Day",
-    "file": "showthread.php@t=1814425.htm"
+    "title": "t2030883.html",
+    "file": "t2030883.html"
   },
   {
-    "title": "The Islamic Mein Kamph (flash presentation)",
-    "file": "showthread.php@t=1814426.htm"
+    "title": "t2031154.html",
+    "file": "t2031154.html"
   },
   {
-    "title": "Greetings, I am Muhammad.",
-    "file": "showthread.php@t=1814427.htm"
+    "title": "t2031155.html",
+    "file": "t2031155.html"
   },
   {
-    "title": "Question for evolutionists(not an arguement)",
-    "file": "showthread.php@t=1814428.htm"
+    "title": "t2031204.html",
+    "file": "t2031204.html"
   },
   {
-    "title": "I just had a fun conversation.",
-    "file": "showthread.php@t=1814429.htm"
+    "title": "t2031216.html",
+    "file": "t2031216.html"
   },
   {
-    "title": "Richard Dawkins - The God Delusion",
-    "file": "showthread.php@t=1814430.htm"
+    "title": "t2031263.html",
+    "file": "t2031263.html"
   },
   {
-    "title": "You guys...",
-    "file": "showthread.php@t=1814431.htm"
+    "title": "t2031410.html",
+    "file": "t2031410.html"
   },
   {
-    "title": "ALL HAIL",
-    "file": "showthread.php@t=1814432.htm"
+    "title": "t2031456.html",
+    "file": "t2031456.html"
   },
   {
-    "title": "ATTN: Atheists",
-    "file": "showthread.php@t=1814433.htm"
+    "title": "t2031481.html",
+    "file": "t2031481.html"
   },
   {
-    "title": "Any Discordians/Erisians in the house?",
-    "file": "showthread.php@t=1814434.htm"
+    "title": "t2031664.html",
+    "file": "t2031664.html"
   },
   {
-    "title": "For those who dont beleive in God...",
-    "file": "showthread.php@t=1814435.htm"
+    "title": "t2031666.html",
+    "file": "t2031666.html"
   },
   {
-    "title": "Anybody worship the sun?",
-    "file": "showthread.php@t=1814436.htm"
+    "title": "t2031846.html",
+    "file": "t2031846.html"
   },
   {
-    "title": "thought experiment for Christians",
-    "file": "showthread.php@t=1814437.htm"
+    "title": "t2031904.html",
+    "file": "t2031904.html"
   },
   {
-    "title": "Not quite sure where to begin",
-    "file": "showthread.php@t=1814438.htm"
+    "title": "t2032005.html",
+    "file": "t2032005.html"
   },
   {
-    "title": "What Does Calvary Represent?",
-    "file": "showthread.php@t=1814439.htm"
+    "title": "t2032022.html",
+    "file": "t2032022.html"
   },
   {
-    "title": "Religious Freedom Inquiry",
-    "file": "showthread.php@t=1814440.htm"
+    "title": "t2032044.html",
+    "file": "t2032044.html"
   },
   {
-    "title": "The Solution",
-    "file": "showthread.php@t=1814441.htm"
+    "title": "t2032129.html",
+    "file": "t2032129.html"
   },
   {
-    "title": "Iran Children - Taught to HATE",
-    "file": "showthread.php@t=1814442.htm"
+    "title": "t2032135.html",
+    "file": "t2032135.html"
   },
   {
-    "title": "For those who believe in god...",
-    "file": "showthread.php@t=1814443.htm"
+    "title": "t2032192.html",
+    "file": "t2032192.html"
   },
   {
-    "title": "Nazinin is Saved!",
-    "file": "showthread.php@t=1814444.htm"
+    "title": "t2032227.html",
+    "file": "t2032227.html"
   },
   {
-    "title": "a question for atheists!",
-    "file": "showthread.php@t=1814445.htm"
+    "title": "t2032455.html",
+    "file": "t2032455.html"
   },
   {
-    "title": "Jews in &Totse?",
-    "file": "showthread.php@t=1814446.htm"
+    "title": "t2032503.html",
+    "file": "t2032503.html"
   },
   {
-    "title": "Religion and the Earth",
-    "file": "showthread.php@t=1814447.htm"
+    "title": "t2032513.html",
+    "file": "t2032513.html"
   },
   {
-    "title": "Free Koran?",
-    "file": "showthread.php@t=1814448.htm"
+    "title": "t2032537.html",
+    "file": "t2032537.html"
   },
   {
-    "title": "Gnostic books",
-    "file": "showthread.php@t=1814449.htm"
+    "title": "t2032554.html",
+    "file": "t2032554.html"
   },
   {
-    "title": "ATTN: Theists",
-    "file": "showthread.php@t=1814450.htm"
+    "title": "t2032565.html",
+    "file": "t2032565.html"
   },
   {
-    "title": "Spirituality= Very good Faith= Good Organized religion = bad?",
-    "file": "showthread.php@t=1814451.htm"
+    "title": "t2032608.html",
+    "file": "t2032608.html"
   },
   {
-    "title": "Who's the Saint whose Body Hasn't Decomposed??? (Catholic, female)",
-    "file": "showthread.php@t=1814452.htm"
+    "title": "t2032637.html",
+    "file": "t2032637.html"
   },
   {
-    "title": "Some thoughts on the negativity of reason and positivity of religion.",
-    "file": "showthread.php@t=1814453.htm"
+    "title": "t2032689.html",
+    "file": "t2032689.html"
   },
   {
-    "title": "New Discordian Ritual",
-    "file": "showthread.php@t=1814454.htm"
+    "title": "t2032800.html",
+    "file": "t2032800.html"
   },
   {
-    "title": "Monotheism without Abraham?",
-    "file": "showthread.php@t=1814455.htm"
+    "title": "t2032810.html",
+    "file": "t2032810.html"
   },
   {
-    "title": "A prayer for the class?",
-    "file": "showthread.php@t=1814456.htm"
+    "title": "t2032813.html",
+    "file": "t2032813.html"
   },
   {
-    "title": "This BBC software is a piece of shit.",
-    "file": "showthread.php@t=1814457.htm"
+    "title": "t2032814.html",
+    "file": "t2032814.html"
   },
   {
-    "title": "This PBB software sucks.",
-    "file": "showthread.php@t=1814458.htm"
+    "title": "t2032835.html",
+    "file": "t2032835.html"
   },
   {
-    "title": "I'm going to seriously study religion - I want recommendations.",
-    "file": "showthread.php@t=1814459.htm"
+    "title": "t2032847.html",
+    "file": "t2032847.html"
   },
   {
-    "title": "Why I am a Hindu and an Atheist",
-    "file": "showthread.php@t=1814460.htm"
+    "title": "t2032873.html",
+    "file": "t2032873.html"
   },
   {
-    "title": "My mother is trying to FORCE me to go church.",
-    "file": "showthread.php@t=1814461.htm"
+    "title": "t2032893.html",
+    "file": "t2032893.html"
   },
   {
-    "title": "Anti-Semitic Congressman",
-    "file": "showthread.php@t=1814462.htm"
+    "title": "t2032909.html",
+    "file": "t2032909.html"
   },
   {
-    "title": "Am I going to hell?",
-    "file": "showthread.php@t=1814463.htm"
+    "title": "t2032923.html",
+    "file": "t2032923.html"
   },
   {
-    "title": "Fuck You For I Am A Singularity!!",
-    "file": "showthread.php@t=1814464.htm"
+    "title": "t2032953.html",
+    "file": "t2032953.html"
   },
   {
-    "title": "&#65242;&#65235;&#65274;&#65205; &#65203;&#65254;&#65219;&#65162;&#65218; &#65010;&#65154;&#65173;&#65190;",
-    "file": "showthread.php@t=1814465.htm"
+    "title": "t2032955.html",
+    "file": "t2032955.html"
   },
   {
-    "title": "Best Abrahamic Religion?",
-    "file": "showthread.php@t=1814466.htm"
+    "title": "t2032982.html",
+    "file": "t2032982.html"
   },
   {
-    "title": "Atheist-bashing with Paula Zahn on CNN",
-    "file": "showthread.php@t=1814467.htm"
+    "title": "t2033013.html",
+    "file": "t2033013.html"
   },
   {
-    "title": "a new discordian book",
-    "file": "showthread.php@t=1814468.htm"
+    "title": "t2033023.html",
+    "file": "t2033023.html"
   },
   {
-    "title": "Atheists: Would you let your kids go to a Christian church?",
-    "file": "showthread.php@t=1814469.htm"
+    "title": "t2033069.html",
+    "file": "t2033069.html"
   },
   {
-    "title": "Tales of Gilgamesh",
-    "file": "showthread.php@t=1814470.htm"
+    "title": "t2033094.html",
+    "file": "t2033094.html"
   },
   {
-    "title": "Why do you Believe/Disbelieve in (your) Religion",
-    "file": "showthread.php@t=1814471.htm"
+    "title": "t2033179.html",
+    "file": "t2033179.html"
   },
   {
-    "title": "Muslims Riot over renovation in Jerusalem.",
-    "file": "showthread.php@t=1814472.htm"
+    "title": "t2033231.html",
+    "file": "t2033231.html"
   },
   {
-    "title": "LostCause is a terrible mod",
-    "file": "showthread.php@t=1814473.htm"
+    "title": "t2033280.html",
+    "file": "t2033280.html"
   },
   {
-    "title": "Conservative media misrepresent scientific theories to promote Christianity",
-    "file": "showthread.php@t=1814474.htm"
+    "title": "t2033284.html",
+    "file": "t2033284.html"
   },
   {
-    "title": "Swearing on the bible in court",
-    "file": "showthread.php@t=1814475.htm"
+    "title": "t2033290.html",
+    "file": "t2033290.html"
   },
   {
-    "title": "In this thread we discuss all the good things Jesus did",
-    "file": "showthread.php@t=1814476.htm"
+    "title": "t2033325.html",
+    "file": "t2033325.html"
   },
   {
-    "title": "Little circle things when you were in grade school",
-    "file": "showthread.php@t=1814477.htm"
+    "title": "t2033343.html",
+    "file": "t2033343.html"
   },
   {
-    "title": "I believe in god.",
-    "file": "showthread.php@t=1814478.htm"
+    "title": "t2033375.html",
+    "file": "t2033375.html"
   },
   {
-    "title": "Is this true",
-    "file": "showthread.php@t=1814479.htm"
+    "title": "t2033388.html",
+    "file": "t2033388.html"
   },
   {
-    "title": "Islamic psychosis",
-    "file": "showthread.php@t=1814480.htm"
+    "title": "t2033397.html",
+    "file": "t2033397.html"
   },
   {
-    "title": "religion and the Vietnam war",
-    "file": "showthread.php@t=1814481.htm"
+    "title": "t2033448.html",
+    "file": "t2033448.html"
   },
   {
-    "title": "Video that just changed my life",
-    "file": "showthread.php@t=1814482.htm"
+    "title": "t2033472.html",
+    "file": "t2033472.html"
   },
   {
-    "title": "An enthralling story about christianity in school",
-    "file": "showthread.php@t=1814483.htm"
+    "title": "t2033483.html",
+    "file": "t2033483.html"
   },
   {
-    "title": "God Does Not Exist (PROOF)",
-    "file": "showthread.php@t=1814484.htm"
+    "title": "t2033593.html",
+    "file": "t2033593.html"
   },
   {
-    "title": "Seven Deadly Sins",
-    "file": "showthread.php@t=1814485.htm"
+    "title": "t2033607.html",
+    "file": "t2033607.html"
   },
   {
-    "title": "Do believers in God think that atheists are immoral?",
-    "file": "showthread.php@t=1814486.htm"
+    "title": "t2033616.html",
+    "file": "t2033616.html"
   },
   {
-    "title": "Why God Exists.",
-    "file": "showthread.php@t=1814487.htm"
+    "title": "t2033617.html",
+    "file": "t2033617.html"
   },
   {
-    "title": "God exists.",
-    "file": "showthread.php@t=1814488.htm"
+    "title": "t2033651.html",
+    "file": "t2033651.html"
   },
   {
-    "title": "Did Jesus know?",
-    "file": "showthread.php@t=1814489.htm"
+    "title": "t2033660.html",
+    "file": "t2033660.html"
   },
   {
-    "title": "Why do you people even care?",
-    "file": "showthread.php@t=1814490.htm"
+    "title": "t2033688.html",
+    "file": "t2033688.html"
   },
   {
-    "title": "did Jesus change the world",
-    "file": "showthread.php@t=1814491.htm"
+    "title": "t2033705.html",
+    "file": "t2033705.html"
   },
   {
-    "title": "This is religious in a way but also weird.",
-    "file": "showthread.php@t=1814495.htm"
+    "title": "t2033706.html",
+    "file": "t2033706.html"
   },
   {
-    "title": "Finnaly I have Proof! Here you go Ressotami!",
-    "file": "showthread.php@t=1984871.htm"
+    "title": "t2033714.html",
+    "file": "t2033714.html"
   },
   {
-    "title": "Genesis 2:21-22 (the Lord took Adam's rib and made a woman)",
-    "file": "showthread.php@t=1984872.htm"
+    "title": "t2033716.html",
+    "file": "t2033716.html"
   },
   {
-    "title": "Two proofs for God",
-    "file": "showthread.php@t=1984873.htm"
+    "title": "t2033740.html",
+    "file": "t2033740.html"
   },
   {
-    "title": "Evolution and Christianity",
-    "file": "showthread.php@t=1984874.htm"
+    "title": "t2033742.html",
+    "file": "t2033742.html"
   },
   {
-    "title": "Kissing Hank's Ass",
-    "file": "showthread.php@t=1984876.htm"
+    "title": "t2033744.html",
+    "file": "t2033744.html"
   },
   {
-    "title": "Everybody on here is RETARDED",
-    "file": "showthread.php@t=1985314.htm"
+    "title": "t2033753.html",
+    "file": "t2033753.html"
   },
   {
-    "title": "The Reaping",
-    "file": "showthread.php@t=1985315.htm"
+    "title": "t2033761.html",
+    "file": "t2033761.html"
   },
   {
-    "title": "goodbye",
-    "file": "showthread.php@t=1985316.htm"
+    "title": "t2033764.html",
+    "file": "t2033764.html"
   },
   {
-    "title": "Creationist museum: T-rex had such big teeth so it could open coconuts",
-    "file": "showthread.php@t=1985317.htm"
+    "title": "t2033770.html",
+    "file": "t2033770.html"
   },
   {
-    "title": "Growing more and more resentful of Christianity",
-    "file": "showthread.php@t=1985318.htm"
+    "title": "t2033787.html",
+    "file": "t2033787.html"
   },
   {
-    "title": "So, something rare happened...",
-    "file": "showthread.php@t=1985319.htm"
+    "title": "t2033793.html",
+    "file": "t2033793.html"
   },
   {
-    "title": "Religious bombshell: Do not read if you need your faith.",
-    "file": "showthread.php@t=1985806.htm"
+    "title": "t2033808.html",
+    "file": "t2033808.html"
   },
   {
-    "title": "Atheist/agnostic activism",
-    "file": "showthread.php@t=1985807.htm"
+    "title": "t2033818.html",
+    "file": "t2033818.html"
   },
   {
-    "title": "Does religion ultimately benefit us?",
-    "file": "showthread.php@t=1985808.htm"
+    "title": "t2033838.html",
+    "file": "t2033838.html"
   },
   {
-    "title": "Faking it",
-    "file": "showthread.php@t=1985809.htm"
+    "title": "t2033848.html",
+    "file": "t2033848.html"
   },
   {
-    "title": "Mawlid al-Nabi",
-    "file": "showthread.php@t=1985810.htm"
+    "title": "t2033858.html",
+    "file": "t2033858.html"
   },
   {
-    "title": "I know it's probably a dumb question (evolution) but..",
-    "file": "showthread.php@t=1985811.htm"
+    "title": "t2033859.html",
+    "file": "t2033859.html"
   },
   {
-    "title": "Considering atheism",
-    "file": "showthread.php@t=1986250.htm"
+    "title": "t2033866.html",
+    "file": "t2033866.html"
   },
   {
-    "title": "Did Noah hate dinosaurs?",
-    "file": "showthread.php@t=1986251.htm"
+    "title": "t2033867.html",
+    "file": "t2033867.html"
   },
   {
-    "title": "Just wondering.",
-    "file": "showthread.php@t=1986252.htm"
+    "title": "t2033900.html",
+    "file": "t2033900.html"
   },
   {
-    "title": "apologies & thanks.",
-    "file": "showthread.php@t=1986253.htm"
+    "title": "t2033901.html",
+    "file": "t2033901.html"
   },
   {
-    "title": "I found actual proof that God exists (pix)",
-    "file": "showthread.php@t=1986254.htm"
+    "title": "t2033903.html",
+    "file": "t2033903.html"
   },
   {
-    "title": "the truth...",
-    "file": "showthread.php@t=1986694.htm"
+    "title": "t2033917.html",
+    "file": "t2033917.html"
   },
   {
-    "title": "chocolate jesus contorversy",
-    "file": "showthread.php@t=1986696.htm"
+    "title": "t2033928.html",
+    "file": "t2033928.html"
   },
   {
-    "title": "Any flaws in Protestantism?",
-    "file": "showthread.php@t=1986697.htm"
+    "title": "t2033930.html",
+    "file": "t2033930.html"
   },
   {
-    "title": "WW3, if draft were to happen",
-    "file": "showthread.php@t=1986951.htm"
+    "title": "t2033941.html",
+    "file": "t2033941.html"
   },
   {
-    "title": "Best. Religion. Ever.",
-    "file": "showthread.php@t=1987302.htm"
+    "title": "t2033971.html",
+    "file": "t2033971.html"
   },
   {
-    "title": "sikhs",
-    "file": "showthread.php@t=1987303.htm"
+    "title": "t2033998.html",
+    "file": "t2033998.html"
   },
   {
-    "title": "Hinduism is the MOTHER of all religions",
-    "file": "showthread.php@t=1987304.htm"
+    "title": "t2034034.html",
+    "file": "t2034034.html"
   },
   {
-    "title": "Rastafarianism",
-    "file": "showthread.php@t=1987305.htm"
+    "title": "t2034036.html",
+    "file": "t2034036.html"
   },
   {
-    "title": "Zionism - Even Jews are not safe",
-    "file": "showthread.php@t=1987306.htm"
+    "title": "t2034038.html",
+    "file": "t2034038.html"
   },
   {
-    "title": "Why did god have to rape a poor virgin?",
-    "file": "showthread.php@t=1987307.htm"
+    "title": "t2034041.html",
+    "file": "t2034041.html"
   },
   {
-    "title": "Why do you not belive in God?",
-    "file": "showthread.php@t=1987308.htm"
+    "title": "t2034042.html",
+    "file": "t2034042.html"
   },
   {
-    "title": "Does Anyone Else See Irony in Shepherd Metaphor?",
-    "file": "showthread.php@t=1987309.htm"
+    "title": "t2034043.html",
+    "file": "t2034043.html"
   },
   {
-    "title": "Bill Keller On Howard Stern",
-    "file": "showthread.php@t=1987510.htm"
+    "title": "t2034044.html",
+    "file": "t2034044.html"
   },
   {
-    "title": "A tribute to our deceased friend",
-    "file": "showthread.php@t=1987554.htm"
+    "title": "t2034046.html",
+    "file": "t2034046.html"
   },
   {
-    "title": "Why did god need jesus anyway?",
-    "file": "showthread.php@t=1987886.htm"
+    "title": "t2034048.html",
+    "file": "t2034048.html"
   },
   {
-    "title": "Are you the God?",
-    "file": "showthread.php@t=1987887.htm"
+    "title": "t2034268.html",
+    "file": "t2034268.html"
   },
   {
-    "title": "PLEASE GOD HELP ME!",
-    "file": "showthread.php@t=1987888.htm"
+    "title": "t2034286.html",
+    "file": "t2034286.html"
   },
   {
-    "title": "Newsweek CENTERFOLD: Sam Harris vs. Rick Warren",
-    "file": "showthread.php@t=1987889.htm"
+    "title": "t2034448.html",
+    "file": "t2034448.html"
   },
   {
-    "title": "Homosexuality: nature, nurture, or irrelevant?",
-    "file": "showthread.php@t=1987890.htm"
+    "title": "t2034586.html",
+    "file": "t2034586.html"
   },
   {
-    "title": "Jesus walks with us today!! Rejoice!!!",
-    "file": "showthread.php@t=1987891.htm"
+    "title": "t2034753.html",
+    "file": "t2034753.html"
   },
   {
-    "title": "jesus christ",
-    "file": "showthread.php@t=1987892.htm"
+    "title": "t2034925.html",
+    "file": "t2034925.html"
   },
   {
-    "title": "God given gifts.",
-    "file": "showthread.php@t=1987893.htm"
+    "title": "t2035168.html",
+    "file": "t2035168.html"
   },
   {
-    "title": "killing jesus",
-    "file": "showthread.php@t=1987894.htm"
+    "title": "t2035262.html",
+    "file": "t2035262.html"
   },
   {
-    "title": "Scriptural Interpretation: Where Do You Draw the Line?",
-    "file": "showthread.php@t=1987895.htm"
+    "title": "t2035482.html",
+    "file": "t2035482.html"
   },
   {
-    "title": "MySQL errors - Page 2",
-    "file": "showthread.php@t=1988375&page=2.htm"
+    "title": "t2035552.html",
+    "file": "t2035552.html"
   },
   {
-    "title": "MySQL errors - Page 3",
-    "file": "showthread.php@t=1988375&page=3.htm"
+    "title": "t2035912.html",
+    "file": "t2035912.html"
   },
   {
-    "title": "MySQL errors - Page 8",
-    "file": "showthread.php@t=1988375&page=8.htm"
+    "title": "t2035959.html",
+    "file": "t2035959.html"
   },
   {
-    "title": "MySQL errors",
-    "file": "showthread.php@t=1988375.htm"
+    "title": "t2036432.html",
+    "file": "t2036432.html"
   },
   {
-    "title": "Hard-Wired for God?",
-    "file": "showthread.php@t=1988513.htm"
+    "title": "t2036450.html",
+    "file": "t2036450.html"
   },
   {
-    "title": "Revolutionism",
-    "file": "showthread.php@t=1988522.htm"
+    "title": "t2037076.html",
+    "file": "t2037076.html"
   },
   {
-    "title": "Why do scriptures hold more weight than observable reality?",
-    "file": "showthread.php@t=1988610.htm"
+    "title": "t2037081.html",
+    "file": "t2037081.html"
   },
   {
-    "title": "habem nova modum (we have a new mod)",
-    "file": "showthread.php@t=1988636.htm"
+    "title": "t2037158.html",
+    "file": "t2037158.html"
   },
   {
-    "title": "The Right Isn't Too Bright",
-    "file": "showthread.php@t=1988706.htm"
+    "title": "t2037364.html",
+    "file": "t2037364.html"
   },
   {
-    "title": "God and Devil",
-    "file": "showthread.php@t=1988769.htm"
+    "title": "t2037676.html",
+    "file": "t2037676.html"
   },
   {
-    "title": "george bush= god?",
-    "file": "showthread.php@t=1988818.htm"
+    "title": "t2037689.html",
+    "file": "t2037689.html"
   },
   {
-    "title": "Prayer",
-    "file": "showthread.php@t=1989066.htm"
+    "title": "t2037837.html",
+    "file": "t2037837.html"
   },
   {
-    "title": "Jesus has returned!",
-    "file": "showthread.php@t=1989087.htm"
+    "title": "t2038602.html",
+    "file": "t2038602.html"
   },
   {
-    "title": "If he/she returned.....? *REAL debate*",
-    "file": "showthread.php@t=1989124.htm"
+    "title": "t2039207.html",
+    "file": "t2039207.html"
   },
   {
-    "title": "Wiccans",
-    "file": "showthread.php@t=1989128.htm"
+    "title": "t2039427.html",
+    "file": "t2039427.html"
   },
   {
-    "title": "Put 3 Christians in a room...",
-    "file": "showthread.php@t=1989145.htm"
+    "title": "t2039474.html",
+    "file": "t2039474.html"
   },
   {
-    "title": "Is it just me or is the term \"atheist\" odd?",
-    "file": "showthread.php@t=1989185.htm"
+    "title": "t2040096.html",
+    "file": "t2040096.html"
   },
   {
-    "title": "We Have But One Reason For Belief...",
-    "file": "showthread.php@t=1989205.htm"
+    "title": "t2040152.html",
+    "file": "t2040152.html"
   },
   {
-    "title": "What do you believe in?",
-    "file": "showthread.php@t=1989672.htm"
+    "title": "t2040184.html",
+    "file": "t2040184.html"
   },
   {
-    "title": "Stephen Gaskin on God",
-    "file": "showthread.php@t=1989827.htm"
+    "title": "t2040510.html",
+    "file": "t2040510.html"
   },
   {
-    "title": "Is it wrong....",
-    "file": "showthread.php@t=1989949.htm"
+    "title": "t2040755.html",
+    "file": "t2040755.html"
   },
   {
-    "title": "Jewish Religion.....Stupid?",
-    "file": "showthread.php@t=1989951.htm"
+    "title": "t2041033.html",
+    "file": "t2041033.html"
   },
   {
-    "title": "Christos Anesti",
-    "file": "showthread.php@t=1990318.htm"
+    "title": "t2041321.html",
+    "file": "t2041321.html"
   },
   {
-    "title": "Christianity = Excellent Marketing?",
-    "file": "showthread.php@t=1990718.htm"
+    "title": "t2041853.html",
+    "file": "t2041853.html"
   },
   {
-    "title": "Is this any type of proof against religion?",
-    "file": "showthread.php@t=1991254.htm"
+    "title": "t2041889.html",
+    "file": "t2041889.html"
   },
   {
-    "title": "Atheism is wrong. With FULL atheist beliefs, you're blind like Christians and Muslims",
-    "file": "showthread.php@t=1991752.htm"
+    "title": "t2042099.html",
+    "file": "t2042099.html"
   },
   {
-    "title": "Born of water and the spirit",
-    "file": "showthread.php@t=1991941.htm"
+    "title": "t2042481.html",
+    "file": "t2042481.html"
   },
   {
-    "title": "Why...",
-    "file": "showthread.php@t=1992036.htm"
+    "title": "t2042751.html",
+    "file": "t2042751.html"
   },
   {
-    "title": "problem with religeon...",
-    "file": "showthread.php@t=1992169.htm"
+    "title": "t2043080.html",
+    "file": "t2043080.html"
   },
   {
-    "title": "An example of the church invading the innocent mind.",
-    "file": "showthread.php@t=1992224.htm"
+    "title": "t2043106.html",
+    "file": "t2043106.html"
   },
   {
-    "title": "Proof There Is No God...Well Kinda",
-    "file": "showthread.php@t=1992268.htm"
+    "title": "t2043240.html",
+    "file": "t2043240.html"
   },
   {
-    "title": "Fighting Over Religion...Pointless?",
-    "file": "showthread.php@t=1992283.htm"
+    "title": "t2043255.html",
+    "file": "t2043255.html"
   },
   {
-    "title": "Concerning Atheists...",
-    "file": "showthread.php@t=1992410.htm"
+    "title": "t2043508.html",
+    "file": "t2043508.html"
   },
   {
-    "title": "Just a weird thought.",
-    "file": "showthread.php@t=1992455.htm"
+    "title": "t2043622.html",
+    "file": "t2043622.html"
   },
   {
-    "title": "Evolution!!!",
-    "file": "showthread.php@t=1992703.htm"
+    "title": "t2043818.html",
+    "file": "t2043818.html"
   },
   {
-    "title": "Transitional fossils",
-    "file": "showthread.php@t=1992954.htm"
+    "title": "t2043824.html",
+    "file": "t2043824.html"
   },
   {
-    "title": "An idea about the nature of \"God\" and how it can be explored.",
-    "file": "showthread.php@t=1993103.htm"
+    "title": "t2044009.html",
+    "file": "t2044009.html"
   },
   {
-    "title": "There is no traditional God or Gods.",
-    "file": "showthread.php@t=1993381.htm"
+    "title": "t2044016.html",
+    "file": "t2044016.html"
   },
   {
-    "title": "The Cosmological Argument",
-    "file": "showthread.php@t=1993676.htm"
+    "title": "t2044124.html",
+    "file": "t2044124.html"
   },
   {
-    "title": "Who is this?",
-    "file": "showthread.php@t=1993679.htm"
+    "title": "t2044224.html",
+    "file": "t2044224.html"
   },
   {
-    "title": "How can Christians be pro-capitalism?",
-    "file": "showthread.php@t=1994079.htm"
+    "title": "t2044363.html",
+    "file": "t2044363.html"
   },
   {
-    "title": "intolerant, moi?",
-    "file": "showthread.php@t=1994102.htm"
+    "title": "t2044617.html",
+    "file": "t2044617.html"
   },
   {
-    "title": "Why Can't I Own A Canadian?",
-    "file": "showthread.php@t=1994320.htm"
+    "title": "t2044672.html",
+    "file": "t2044672.html"
   },
   {
-    "title": "Many religious people AND athiests seem to have the wrong idea...",
-    "file": "showthread.php@t=1994322.htm"
+    "title": "t2044855.html",
+    "file": "t2044855.html"
   },
   {
-    "title": "Why I Am Agnostic.",
-    "file": "showthread.php@t=1994419.htm"
+    "title": "t2045039.html",
+    "file": "t2045039.html"
   },
   {
-    "title": "Judas - Heaven or Hell?",
-    "file": "showthread.php@t=1994426.htm"
+    "title": "t2045138.html",
+    "file": "t2045138.html"
   },
   {
-    "title": "Calling all Catholics - Sedevacantist vs Trads vs Conciliar - WHO's RIGHT?",
-    "file": "showthread.php@t=1994445.htm"
+    "title": "t2045178.html",
+    "file": "t2045178.html"
   },
   {
-    "title": "Catholic!?!?!",
-    "file": "showthread.php@t=1994453.htm"
+    "title": "t2045182.html",
+    "file": "t2045182.html"
   },
   {
-    "title": "ATTN Catholics",
-    "file": "showthread.php@t=1994644.htm"
+    "title": "t2045306.html",
+    "file": "t2045306.html"
   },
   {
-    "title": "Archbishop of Canterbury says that anti-gays misread bible",
-    "file": "showthread.php@t=1994817.htm"
+    "title": "t2045724.html",
+    "file": "t2045724.html"
   },
   {
-    "title": "I am God.",
-    "file": "showthread.php@t=1994899.htm"
+    "title": "t2045855.html",
+    "file": "t2045855.html"
   },
   {
-    "title": "Uncanny Similarities With Christianity",
-    "file": "showthread.php@t=1995179.htm"
+    "title": "t2045929.html",
+    "file": "t2045929.html"
   },
   {
-    "title": "You're not God, I am.",
-    "file": "showthread.php@t=1995246.htm"
+    "title": "t2046029.html",
+    "file": "t2046029.html"
   },
   {
-    "title": "Is Christ here right now?",
-    "file": "showthread.php@t=1995258.htm"
+    "title": "t2046071.html",
+    "file": "t2046071.html"
   },
   {
-    "title": "Will the anti-christ know he's the anti-christ? Did Jesus know immediately?",
-    "file": "showthread.php@t=1995483.htm"
+    "title": "t2046447.html",
+    "file": "t2046447.html"
   },
   {
-    "title": "Chaos Magic",
-    "file": "showthread.php@t=1995566.htm"
+    "title": "t2046581.html",
+    "file": "t2046581.html"
   },
   {
-    "title": "Golden Rule",
-    "file": "showthread.php@t=1996079.htm"
+    "title": "t2046755.html",
+    "file": "t2046755.html"
   },
   {
-    "title": "Is it okay to steal from followers of false religions?",
-    "file": "showthread.php@t=1996381.htm"
+    "title": "t2046838.html",
+    "file": "t2046838.html"
   },
   {
-    "title": "Derren Brown's \"instant conversion\".",
-    "file": "showthread.php@t=1996396.htm"
+    "title": "t2046839.html",
+    "file": "t2046839.html"
   },
   {
-    "title": "My interpretation of hell",
-    "file": "showthread.php@t=1996421.htm"
+    "title": "t2046997.html",
+    "file": "t2046997.html"
   },
   {
-    "title": "Bible As A Textbook?",
-    "file": "showthread.php@t=1996428.htm"
+    "title": "t2047171.html",
+    "file": "t2047171.html"
   },
   {
-    "title": "Does intelligent design have a place in the classroom?",
-    "file": "showthread.php@t=1996568.htm"
+    "title": "t2047232.html",
+    "file": "t2047232.html"
   },
   {
-    "title": "Evangelicals",
-    "file": "showthread.php@t=1996632.htm"
+    "title": "t2047443.html",
+    "file": "t2047443.html"
   },
   {
-    "title": "Fundamentalism = The End of God?",
-    "file": "showthread.php@t=1996635.htm"
+    "title": "t2047457.html",
+    "file": "t2047457.html"
   },
   {
-    "title": "Look into molecules for time/space travel",
-    "file": "showthread.php@t=1996786.htm"
+    "title": "t2047754.html",
+    "file": "t2047754.html"
   },
   {
-    "title": "Can you justify killing another human being in the name of god?",
-    "file": "showthread.php@t=1996791.htm"
+    "title": "t2047821.html",
+    "file": "t2047821.html"
   },
   {
-    "title": "1 Question To God",
-    "file": "showthread.php@t=1997044.htm"
+    "title": "t2047982.html",
+    "file": "t2047982.html"
   },
   {
-    "title": "are athiests satanists?",
-    "file": "showthread.php@t=1997433.htm"
+    "title": "t2048111.html",
+    "file": "t2048111.html"
   },
   {
-    "title": "Genesis 1.29",
-    "file": "showthread.php@t=1997646.htm"
+    "title": "t2048436.html",
+    "file": "t2048436.html"
   },
   {
-    "title": "why an apple",
-    "file": "showthread.php@t=1997680.htm"
+    "title": "t2048518.html",
+    "file": "t2048518.html"
   },
   {
-    "title": "Moral code",
-    "file": "showthread.php@t=1997688.htm"
+    "title": "t2048641.html",
+    "file": "t2048641.html"
   },
   {
-    "title": "Self inducted feticism through fake shame",
-    "file": "showthread.php@t=1997734.htm"
+    "title": "t2048653.html",
+    "file": "t2048653.html"
   },
   {
-    "title": "you will be rewarded by god for being illogical?",
-    "file": "showthread.php@t=1997870.htm"
+    "title": "t2048690.html",
+    "file": "t2048690.html"
   },
   {
-    "title": "Cutting the crap, a short example of bible 101",
-    "file": "showthread.php@t=1997942.htm"
+    "title": "t2049206.html",
+    "file": "t2049206.html"
   },
   {
-    "title": "Life possible on new planet",
-    "file": "showthread.php@t=1998464.htm"
+    "title": "t2049316.html",
+    "file": "t2049316.html"
   },
   {
-    "title": "A Faith Of Commas?",
-    "file": "showthread.php@t=1998470.htm"
+    "title": "t2049485.html",
+    "file": "t2049485.html"
   },
   {
-    "title": "Self inducted feticism through fake shame",
-    "file": "showthread.php@t=1998481.htm"
+    "title": "t2049525.html",
+    "file": "t2049525.html"
   },
   {
-    "title": "Coupling is a mental and physical need",
-    "file": "showthread.php@t=1998514.htm"
+    "title": "t2049748.html",
+    "file": "t2049748.html"
   },
   {
-    "title": "John Marco Allegro",
-    "file": "showthread.php@t=1998561.htm"
+    "title": "t2049910.html",
+    "file": "t2049910.html"
   },
   {
-    "title": "New Religion...",
-    "file": "showthread.php@t=1998615.htm"
+    "title": "t2050019.html",
+    "file": "t2050019.html"
   },
   {
-    "title": "Do religious soldiers go to hell?",
-    "file": "showthread.php@t=1998939.htm"
+    "title": "t2050122.html",
+    "file": "t2050122.html"
   },
   {
-    "title": "What do you get out of religion?",
-    "file": "showthread.php@t=1999038.htm"
+    "title": "t2050344.html",
+    "file": "t2050344.html"
   },
   {
-    "title": "people who know nothing about judaism",
-    "file": "showthread.php@t=1999080.htm"
+    "title": "t2050384.html",
+    "file": "t2050384.html"
   },
   {
-    "title": "Community",
-    "file": "showthread.php@t=1999175.htm"
+    "title": "t2050558.html",
+    "file": "t2050558.html"
   },
   {
-    "title": "The God Who Wasn't There",
-    "file": "showthread.php@t=1999496.htm"
+    "title": "t2050847.html",
+    "file": "t2050847.html"
   },
   {
-    "title": "A question about evangelical church beliefs",
-    "file": "showthread.php@t=1999562.htm"
+    "title": "t2050911.html",
+    "file": "t2050911.html"
   },
   {
-    "title": "... but did you see Christians riot and trow molotovs?",
-    "file": "showthread.php@t=1999573.htm"
+    "title": "t2051154.html",
+    "file": "t2051154.html"
   },
   {
-    "title": "My visit to the church of Scientology (warning: long post)",
-    "file": "showthread.php@t=1999997.htm"
+    "title": "t2051466.html",
+    "file": "t2051466.html"
   },
   {
-    "title": "Is GW Bush going against God's will?",
-    "file": "showthread.php@t=2000005.htm"
+    "title": "t2051484.html",
+    "file": "t2051484.html"
   },
   {
-    "title": "Black God?",
-    "file": "showthread.php@t=2000157.htm"
+    "title": "t2051945.html",
+    "file": "t2051945.html"
   },
   {
-    "title": "Someone of the wiccan persuasion",
-    "file": "showthread.php@t=2000518.htm"
+    "title": "t2052279.html",
+    "file": "t2052279.html"
   },
   {
-    "title": "My new faith",
-    "file": "showthread.php@t=2000595.htm"
+    "title": "t2052289.html",
+    "file": "t2052289.html"
   },
   {
-    "title": "Please help me name a certain someone*",
-    "file": "showthread.php@t=2000774.htm"
+    "title": "t2052316.html",
+    "file": "t2052316.html"
   },
   {
-    "title": "So why did god make sex pleasureable?",
-    "file": "showthread.php@t=2000894.htm"
+    "title": "t2052332.html",
+    "file": "t2052332.html"
   },
   {
-    "title": "creationism=evolution",
-    "file": "showthread.php@t=2000934.htm"
+    "title": "t2052376.html",
+    "file": "t2052376.html"
   },
   {
-    "title": "was jesus really white?",
-    "file": "showthread.php@t=2001424.htm"
+    "title": "t2052438.html",
+    "file": "t2052438.html"
   },
   {
-    "title": "I finally found a book that doesnt seem like bs",
-    "file": "showthread.php@t=2001449.htm"
+    "title": "t2052926.html",
+    "file": "t2052926.html"
   },
   {
-    "title": "The only argument for the existence of God to impress me.",
-    "file": "showthread.php@t=2001456.htm"
+    "title": "t2053041.html",
+    "file": "t2053041.html"
   },
   {
-    "title": "ATTN: everyone!!! i am an atheist",
-    "file": "showthread.php@t=2001460.htm"
+    "title": "t2053556.html",
+    "file": "t2053556.html"
   },
   {
-    "title": "I'm Christ, Seriousely.",
-    "file": "showthread.php@t=2001472.htm"
+    "title": "t2053716.html",
+    "file": "t2053716.html"
   },
   {
-    "title": "Free will.",
-    "file": "showthread.php@t=2001732.htm"
+    "title": "t2053776.html",
+    "file": "t2053776.html"
   },
   {
-    "title": "Jesus existence debate thread...",
-    "file": "showthread.php@t=2002564.htm"
+    "title": "t2053948.html",
+    "file": "t2053948.html"
   },
   {
-    "title": "atariology",
-    "file": "showthread.php@t=2002616.htm"
+    "title": "t2054566.html",
+    "file": "t2054566.html"
   },
   {
-    "title": "That one book written by Martin somebody about origin of religions (Zeus, Jesus, etc)",
-    "file": "showthread.php@t=2002663.htm"
+    "title": "t2054570.html",
+    "file": "t2054570.html"
   },
   {
-    "title": "Church of Atheism",
-    "file": "showthread.php@t=2002721.htm"
+    "title": "t2054738.html",
+    "file": "t2054738.html"
   },
   {
-    "title": "Yay for circular definitions.",
-    "file": "showthread.php@t=2002978.htm"
+    "title": "t2054755.html",
+    "file": "t2054755.html"
   },
   {
-    "title": "Favourite Religions and Why",
-    "file": "showthread.php@t=2003001.htm"
+    "title": "t2054898.html",
+    "file": "t2054898.html"
   },
   {
-    "title": "Could Jesus save Lucifer?",
-    "file": "showthread.php@t=2003157.htm"
+    "title": "t2054997.html",
+    "file": "t2054997.html"
   },
   {
-    "title": "Athiest activists are cowards!",
-    "file": "showthread.php@t=2003160.htm"
+    "title": "t2055085.html",
+    "file": "t2055085.html"
   },
   {
-    "title": "Any one have logical explaination.",
-    "file": "showthread.php@t=2003283.htm"
+    "title": "t2055312.html",
+    "file": "t2055312.html"
   },
   {
-    "title": "Satan in Hell = Foot in mouth",
-    "file": "showthread.php@t=2003438.htm"
+    "title": "t2055357.html",
+    "file": "t2055357.html"
   },
   {
-    "title": "Motor home good for church?",
-    "file": "showthread.php@t=2003924.htm"
+    "title": "t2055436.html",
+    "file": "t2055436.html"
   },
   {
-    "title": "Stop arse raping Revelations! Late night poorly written rant and bible 101.",
-    "file": "showthread.php@t=2004072.htm"
+    "title": "t2055476.html",
+    "file": "t2055476.html"
   },
   {
-    "title": "Starting My Own Religion",
-    "file": "showthread.php@t=2004156.htm"
+    "title": "t2055720.html",
+    "file": "t2055720.html"
   },
   {
-    "title": "God bless the trolls!",
-    "file": "showthread.php@t=2004216.htm"
+    "title": "t2055831.html",
+    "file": "t2055831.html"
   },
   {
-    "title": "The Bible",
-    "file": "showthread.php@t=2004435.htm"
+    "title": "t2056065.html",
+    "file": "t2056065.html"
   },
   {
-    "title": "Buddhism",
-    "file": "showthread.php@t=2004467.htm"
+    "title": "t2056077.html",
+    "file": "t2056077.html"
   },
   {
-    "title": "deism",
-    "file": "showthread.php@t=2004483.htm"
+    "title": "t2056183.html",
+    "file": "t2056183.html"
   },
   {
-    "title": "Arguing with christians",
-    "file": "showthread.php@t=2004721.htm"
+    "title": "t2056584.html",
+    "file": "t2056584.html"
   },
   {
-    "title": "Which Faith Do You Align Yourself With? POLL multi answer.",
-    "file": "showthread.php@t=2004722.htm"
+    "title": "t2056864.html",
+    "file": "t2056864.html"
   },
   {
-    "title": "something i dont understand about the way the bible came to be..",
-    "file": "showthread.php@t=2004765.htm"
+    "title": "t2057158.html",
+    "file": "t2057158.html"
   },
   {
-    "title": "Crack Cocaine Church",
-    "file": "showthread.php@t=2004969.htm"
+    "title": "t2057667.html",
+    "file": "t2057667.html"
   },
   {
-    "title": "God is worse than satan",
-    "file": "showthread.php@t=2005068.htm"
+    "title": "t2057849.html",
+    "file": "t2057849.html"
   },
   {
-    "title": "The Crusades part 2",
-    "file": "showthread.php@t=2005327.htm"
+    "title": "t2057854.html",
+    "file": "t2057854.html"
   },
   {
-    "title": "Jerry Falwell Expires",
-    "file": "showthread.php@t=2005398.htm"
+    "title": "t2057971.html",
+    "file": "t2057971.html"
   },
   {
-    "title": "linguistic confusion with the word 'atheist'",
-    "file": "showthread.php@t=2005433.htm"
+    "title": "t2058019.html",
+    "file": "t2058019.html"
   },
   {
-    "title": "My Take on Happiness and Faith",
-    "file": "showthread.php@t=2005556.htm"
+    "title": "t2058197.html",
+    "file": "t2058197.html"
   },
   {
-    "title": "Favorite Bible passages?",
-    "file": "showthread.php@t=2006110.htm"
+    "title": "t2058348.html",
+    "file": "t2058348.html"
   },
   {
-    "title": "Religious mob stones young girl",
-    "file": "showthread.php@t=2006452.htm"
+    "title": "t2058400.html",
+    "file": "t2058400.html"
   },
   {
-    "title": "God's Love?",
-    "file": "showthread.php@t=2006940.htm"
+    "title": "t2058449.html",
+    "file": "t2058449.html"
   },
   {
-    "title": "One War With No Religion",
-    "file": "showthread.php@t=2006972.htm"
+    "title": "t2058503.html",
+    "file": "t2058503.html"
   },
   {
-    "title": "Crazy fuckin scientologiest",
-    "file": "showthread.php@t=2007002.htm"
+    "title": "t2058687.html",
+    "file": "t2058687.html"
   },
   {
-    "title": "For those of you who think the US was founded on Christian values.",
-    "file": "showthread.php@t=2007017.htm"
+    "title": "t2058801.html",
+    "file": "t2058801.html"
   },
   {
-    "title": "Sunni Caliphate, reinstate?",
-    "file": "showthread.php@t=2007115.htm"
+    "title": "t2059068.html",
+    "file": "t2059068.html"
   },
   {
-    "title": "I have a curious question of the aftermath of the \"End Times\"",
-    "file": "showthread.php@t=2007127.htm"
+    "title": "t2059094.html",
+    "file": "t2059094.html"
   },
   {
-    "title": "All Hail Discordia@!",
-    "file": "showthread.php@t=2007147.htm"
+    "title": "t2059349.html",
+    "file": "t2059349.html"
   },
   {
-    "title": "A simple Christian question...",
-    "file": "showthread.php@t=2007342.htm"
+    "title": "t2059368.html",
+    "file": "t2059368.html"
   },
   {
-    "title": "Youtubers Have A Go",
-    "file": "showthread.php@t=2007505.htm"
+    "title": "t2059511.html",
+    "file": "t2059511.html"
   },
   {
-    "title": "Will",
-    "file": "showthread.php@t=2007520.htm"
+    "title": "t2059567.html",
+    "file": "t2059567.html"
   },
   {
-    "title": "Atheists as Pompous Pricks.",
-    "file": "showthread.php@t=2007570.htm"
+    "title": "t2059576.html",
+    "file": "t2059576.html"
   },
   {
-    "title": "interesting ethical problem",
-    "file": "showthread.php@t=2007698.htm"
+    "title": "t2059678.html",
+    "file": "t2059678.html"
   },
   {
-    "title": "I just received the weirdest email.",
-    "file": "showthread.php@t=2007842.htm"
+    "title": "t2059761.html",
+    "file": "t2059761.html"
   },
   {
-    "title": "is this guy full of shit?",
-    "file": "showthread.php@t=2007882.htm"
+    "title": "t2059876.html",
+    "file": "t2059876.html"
   },
   {
-    "title": "Does anyone here believe in astrology?",
-    "file": "showthread.php@t=2008383.htm"
+    "title": "t2059964.html",
+    "file": "t2059964.html"
   },
   {
-    "title": "The only true religion of Peace is....",
-    "file": "showthread.php@t=2008401.htm"
+    "title": "t2060000.html",
+    "file": "t2060000.html"
   },
   {
-    "title": "Why dont some people believe in Jesus Christ???",
-    "file": "showthread.php@t=2008425.htm"
+    "title": "t2060059.html",
+    "file": "t2060059.html"
   },
   {
-    "title": "Atheist resurrgence....",
-    "file": "showthread.php@t=2008623.htm"
+    "title": "t2060076.html",
+    "file": "t2060076.html"
   },
   {
-    "title": "Name this religion",
-    "file": "showthread.php@t=2008653.htm"
+    "title": "t2060121.html",
+    "file": "t2060121.html"
   },
   {
-    "title": "Religion In Schools?",
-    "file": "showthread.php@t=2008794.htm"
+    "title": "t2060528.html",
+    "file": "t2060528.html"
   },
   {
-    "title": "Why don't some people believe in Mithra/Krishna/Dionysus/Osiris????",
-    "file": "showthread.php@t=2008984.htm"
+    "title": "t2060661.html",
+    "file": "t2060661.html"
   },
   {
-    "title": "T!!",
-    "file": "showthread.php@t=2009066.htm"
+    "title": "t2061080.html",
+    "file": "t2061080.html"
   },
   {
-    "title": "There is no god...",
-    "file": "showthread.php@t=2009123.htm"
+    "title": "t2061163.html",
+    "file": "t2061163.html"
   },
   {
-    "title": "Buddhism in Tibet.",
-    "file": "showthread.php@t=2009179.htm"
+    "title": "t2061203.html",
+    "file": "t2061203.html"
   },
   {
-    "title": "The Bible approves Abortion? Check this.",
-    "file": "showthread.php@t=2009324.htm"
+    "title": "t2061317.html",
+    "file": "t2061317.html"
   },
   {
-    "title": "The Obliteration of Religion",
-    "file": "showthread.php@t=2009363.htm"
+    "title": "t2061429.html",
+    "file": "t2061429.html"
   },
   {
-    "title": "Islam",
-    "file": "showthread.php@t=2009415.htm"
+    "title": "t2061604.html",
+    "file": "t2061604.html"
   },
   {
-    "title": "I want to learn more about buddhism",
-    "file": "showthread.php@t=2009592.htm"
+    "title": "t2061639.html",
+    "file": "t2061639.html"
   },
   {
-    "title": "I'm sick of people saying that \"agnosticism\" is a \"cop out\"",
-    "file": "showthread.php@t=2009639.htm"
+    "title": "t2061742.html",
+    "file": "t2061742.html"
   },
   {
-    "title": "Sikhs get pissed off",
-    "file": "showthread.php@t=2009733.htm"
+    "title": "t2061851.html",
+    "file": "t2061851.html"
   },
   {
-    "title": "A symbol I dreamed of. Does anyone recognise it?",
-    "file": "showthread.php@t=2010267.htm"
+    "title": "t2061890.html",
+    "file": "t2061890.html"
   },
   {
-    "title": "Ultimate place to die.",
-    "file": "showthread.php@t=2010407.htm"
+    "title": "t2061960.html",
+    "file": "t2061960.html"
   },
   {
-    "title": "Need to a catholic perspective on genetic engineering.",
-    "file": "showthread.php@t=2010574.htm"
+    "title": "t2062209.html",
+    "file": "t2062209.html"
   },
   {
-    "title": "Genesis 6:1-4",
-    "file": "showthread.php@t=2011008.htm"
+    "title": "t2062214.html",
+    "file": "t2062214.html"
   },
   {
-    "title": "A Good Christian Argument.",
-    "file": "showthread.php@t=2011266.htm"
+    "title": "t2062337.html",
+    "file": "t2062337.html"
   },
   {
-    "title": "Why things are the way they are.",
-    "file": "showthread.php@t=2011357.htm"
+    "title": "t2062472.html",
+    "file": "t2062472.html"
   },
   {
-    "title": "Scientology",
-    "file": "showthread.php@t=2011607.htm"
+    "title": "t2062823.html",
+    "file": "t2062823.html"
   },
   {
-    "title": "Militant Atheism: \"Atheists, stand the fuck up\"",
-    "file": "showthread.php@t=2011704.htm"
+    "title": "t2062839.html",
+    "file": "t2062839.html"
   },
   {
-    "title": "I Want to Believe",
-    "file": "showthread.php@t=2011790.htm"
+    "title": "t2063084.html",
+    "file": "t2063084.html"
   },
   {
-    "title": "Very Confused About My Religion",
-    "file": "showthread.php@t=2011814.htm"
+    "title": "t2063167.html",
+    "file": "t2063167.html"
   },
   {
-    "title": "Existance, and what it means to people.",
-    "file": "showthread.php@t=2011823.htm"
+    "title": "t2063329.html",
+    "file": "t2063329.html"
   },
   {
-    "title": "What will become of the religious fundamentalists",
-    "file": "showthread.php@t=2012603.htm"
+    "title": "t2063419.html",
+    "file": "t2063419.html"
   },
   {
-    "title": "Christian Domestic Discipline",
-    "file": "showthread.php@t=2012754.htm"
+    "title": "t2063713.html",
+    "file": "t2063713.html"
   },
   {
-    "title": "Various thoughts on atheism, theism, relgiion, and general thought..",
-    "file": "showthread.php@t=2012958.htm"
+    "title": "t2063819.html",
+    "file": "t2063819.html"
   },
   {
-    "title": "Make me an Atheist",
-    "file": "showthread.php@t=2013064.htm"
+    "title": "t2063822.html",
+    "file": "t2063822.html"
   },
   {
-    "title": "Why is religion so bad?",
-    "file": "showthread.php@t=2013096.htm"
+    "title": "t2063864.html",
+    "file": "t2063864.html"
   },
   {
-    "title": "Questions regarding Hinduism (brahman, atman, maya)",
-    "file": "showthread.php@t=2013700.htm"
+    "title": "t2063886.html",
+    "file": "t2063886.html"
   },
   {
-    "title": "So I had a very weird experience.",
-    "file": "showthread.php@t=2013702.htm"
+    "title": "t2064007.html",
+    "file": "t2064007.html"
   },
   {
-    "title": "the only reason you shouldnt be an atheist",
-    "file": "showthread.php@t=2014190.htm"
+    "title": "t2064461.html",
+    "file": "t2064461.html"
   },
   {
-    "title": "Being in Love",
-    "file": "showthread.php@t=2014302.htm"
+    "title": "t2065058.html",
+    "file": "t2065058.html"
   },
   {
-    "title": "ask a gnostic wiccan anything",
-    "file": "showthread.php@t=2014348.htm"
+    "title": "t2065081.html",
+    "file": "t2065081.html"
   },
   {
-    "title": "WTF is your problem with Atheists?",
-    "file": "showthread.php@t=2014412.htm"
+    "title": "t2065493.html",
+    "file": "t2065493.html"
   },
   {
-    "title": "Both sides keep getting it wrong. . . .",
-    "file": "showthread.php@t=2014881.htm"
+    "title": "t2065613.html",
+    "file": "t2065613.html"
   },
   {
-    "title": "'xenu' and scientology",
-    "file": "showthread.php@t=2015581.htm"
+    "title": "t2065630.html",
+    "file": "t2065630.html"
   },
   {
-    "title": "Aramaic Primacy",
-    "file": "showthread.php@t=2015610.htm"
+    "title": "t2065690.html",
+    "file": "t2065690.html"
   },
   {
-    "title": "To HELL with religion (worth the read. . .)",
-    "file": "showthread.php@t=2015879.htm"
+    "title": "t2065862.html",
+    "file": "t2065862.html"
   },
   {
-    "title": "My Religion...(Read it, only take 20min tops)",
-    "file": "showthread.php@t=2015900.htm"
+    "title": "t2065889.html",
+    "file": "t2065889.html"
   },
   {
-    "title": "This sickens me... :(",
-    "file": "showthread.php@t=2016083.htm"
+    "title": "t2065970.html",
+    "file": "t2065970.html"
   },
   {
-    "title": "you're views on god",
-    "file": "showthread.php@t=2016299.htm"
+    "title": "t2066088.html",
+    "file": "t2066088.html"
   },
   {
-    "title": "Athiests are morally superior to believers",
-    "file": "showthread.php@t=2016387.htm"
+    "title": "t2066182.html",
+    "file": "t2066182.html"
   },
   {
-    "title": "What makes you believe in God, or any other religion?",
-    "file": "showthread.php@t=2016621.htm"
+    "title": "t2066252.html",
+    "file": "t2066252.html"
   },
   {
-    "title": "This Just In: Jesus was a woman",
-    "file": "showthread.php@t=2016665.htm"
+    "title": "t2066586.html",
+    "file": "t2066586.html"
   },
   {
-    "title": "Afterlife...?",
-    "file": "showthread.php@t=2017341.htm"
+    "title": "t2066637.html",
+    "file": "t2066637.html"
   },
   {
-    "title": "Three thoughts on Christian doctrine.",
-    "file": "showthread.php@t=2017429.htm"
+    "title": "t2066645.html",
+    "file": "t2066645.html"
   },
   {
-    "title": "ATTN: Christians...",
-    "file": "showthread.php@t=2017617.htm"
+    "title": "t2066678.html",
+    "file": "t2066678.html"
   },
   {
-    "title": "What the fuck.",
-    "file": "showthread.php@t=2017758.htm"
+    "title": "t2066898.html",
+    "file": "t2066898.html"
   },
   {
-    "title": "First Post In This Forum",
-    "file": "showthread.php@t=2018364.htm"
+    "title": "t2066957.html",
+    "file": "t2066957.html"
   },
   {
-    "title": "The Strange Thoughts of Atheists and Agnostics:",
-    "file": "showthread.php@t=2018832.htm"
+    "title": "t2066970.html",
+    "file": "t2066970.html"
   },
   {
-    "title": "Why I don't believe in god!",
-    "file": "showthread.php@t=2019177.htm"
+    "title": "t2067491.html",
+    "file": "t2067491.html"
   },
   {
-    "title": "Having FAITH in Christianity.....easier then or now?",
-    "file": "showthread.php@t=2019327.htm"
+    "title": "t2067503.html",
+    "file": "t2067503.html"
   },
   {
-    "title": "Who?",
-    "file": "showthread.php@t=2019471.htm"
+    "title": "t2067551.html",
+    "file": "t2067551.html"
   },
   {
-    "title": "Summer Solstice is tonight",
-    "file": "showthread.php@t=2019763.htm"
+    "title": "t2067553.html",
+    "file": "t2067553.html"
   },
   {
-    "title": "Why does it even matter...",
-    "file": "showthread.php@t=2019790.htm"
+    "title": "t2067700.html",
+    "file": "t2067700.html"
   },
   {
-    "title": "Islamic Brainwashing?",
-    "file": "showthread.php@t=2019993.htm"
+    "title": "t2067734.html",
+    "file": "t2067734.html"
   },
   {
-    "title": "Funny video",
-    "file": "showthread.php@t=2020175.htm"
+    "title": "t2067786.html",
+    "file": "t2067786.html"
   },
   {
-    "title": "UFO Apocalypse Cult Gathers in Western NY",
-    "file": "showthread.php@t=2020238.htm"
+    "title": "t2067908.html",
+    "file": "t2067908.html"
   },
   {
-    "title": "christian paradox",
-    "file": "showthread.php@t=2020430.htm"
+    "title": "t2068073.html",
+    "file": "t2068073.html"
   },
   {
-    "title": "Any Theists in the house?",
-    "file": "showthread.php@t=2020529.htm"
+    "title": "t2068138.html",
+    "file": "t2068138.html"
   },
   {
-    "title": "Selective Bible Reading",
-    "file": "showthread.php@t=2020618.htm"
+    "title": "t2068371.html",
+    "file": "t2068371.html"
   },
   {
-    "title": "I have a question..",
-    "file": "showthread.php@t=2020671.htm"
+    "title": "t2068461.html",
+    "file": "t2068461.html"
   },
   {
-    "title": "I like to go with Billy Joel's philosphy(sp?)",
-    "file": "showthread.php@t=2020673.htm"
+    "title": "t2068488.html",
+    "file": "t2068488.html"
   },
   {
-    "title": "God doesn't believe in atheists",
-    "file": "showthread.php@t=2020876.htm"
+    "title": "t2068603.html",
+    "file": "t2068603.html"
   },
   {
-    "title": "Recurring theme in nature?",
-    "file": "showthread.php@t=2021230.htm"
+    "title": "t2068652.html",
+    "file": "t2068652.html"
   },
   {
-    "title": "Thou shall not kill",
-    "file": "showthread.php@t=2021245.htm"
+    "title": "t2068798.html",
+    "file": "t2068798.html"
   },
   {
-    "title": "The power of Christ compels YOU..",
-    "file": "showthread.php@t=2021479.htm"
+    "title": "t2068926.html",
+    "file": "t2068926.html"
   },
   {
-    "title": "Video about prophecies and Jesus's virgin birth",
-    "file": "showthread.php@t=2021506.htm"
+    "title": "t2068947.html",
+    "file": "t2068947.html"
   },
   {
-    "title": "Religion without slavery?",
-    "file": "showthread.php@t=2021600.htm"
+    "title": "t2069250.html",
+    "file": "t2069250.html"
   },
   {
-    "title": "Does science conflict with theism?",
-    "file": "showthread.php@t=2021841.htm"
+    "title": "t2069538.html",
+    "file": "t2069538.html"
   },
   {
-    "title": "Faith",
-    "file": "showthread.php@t=2021874.htm"
+    "title": "t2070472.html",
+    "file": "t2070472.html"
   },
   {
-    "title": "Another aetheist thread - Being pushy and in your face",
-    "file": "showthread.php@t=2022100.htm"
+    "title": "t2070485.html",
+    "file": "t2070485.html"
   },
   {
-    "title": "the day I met an angel",
-    "file": "showthread.php@t=2022367.htm"
+    "title": "t2070538.html",
+    "file": "t2070538.html"
   },
   {
-    "title": "To the Athiests and Believers",
-    "file": "showthread.php@t=2022457.htm"
+    "title": "t2070851.html",
+    "file": "t2070851.html"
   },
   {
-    "title": "How do you know you are right?",
-    "file": "showthread.php@t=2022571.htm"
+    "title": "t2071301.html",
+    "file": "t2071301.html"
   },
   {
-    "title": "Death",
-    "file": "showthread.php@t=2022615.htm"
+    "title": "t2071306.html",
+    "file": "t2071306.html"
   },
   {
-    "title": "A hillarious atheist",
-    "file": "showthread.php@t=2022660.htm"
+    "title": "t2071384.html",
+    "file": "t2071384.html"
   },
   {
-    "title": "Religion..",
-    "file": "showthread.php@t=2022686.htm"
+    "title": "t2072440.html",
+    "file": "t2072440.html"
   },
   {
-    "title": "Where does it say its neccesary to go to church in the bible?",
-    "file": "showthread.php@t=2023067.htm"
+    "title": "t2072474.html",
+    "file": "t2072474.html"
   },
   {
-    "title": "Proof for/against the existance of god.",
-    "file": "showthread.php@t=2023318.htm"
+    "title": "t2072783.html",
+    "file": "t2072783.html"
   },
   {
-    "title": "A fundamental flaw in the concept of karma",
-    "file": "showthread.php@t=2023625.htm"
+    "title": "t2073046.html",
+    "file": "t2073046.html"
   },
   {
-    "title": "Finally, I get it.",
-    "file": "showthread.php@t=2023628.htm"
+    "title": "t2073262.html",
+    "file": "t2073262.html"
   },
   {
-    "title": "is it legal...",
-    "file": "showthread.php@t=2023634.htm"
+    "title": "t2073383.html",
+    "file": "t2073383.html"
   },
   {
-    "title": "Dope POV of christianity",
-    "file": "showthread.php@t=2023636.htm"
+    "title": "t2073404.html",
+    "file": "t2073404.html"
   },
   {
-    "title": "totse, im really confused...",
-    "file": "showthread.php@t=2023692.htm"
+    "title": "t2073442.html",
+    "file": "t2073442.html"
   },
   {
-    "title": "Abiogenesis",
-    "file": "showthread.php@t=2023779.htm"
+    "title": "t2073541.html",
+    "file": "t2073541.html"
   },
   {
-    "title": "An Argument from reason",
-    "file": "showthread.php@t=2023877.htm"
+    "title": "t2073932.html",
+    "file": "t2073932.html"
   },
   {
-    "title": "Killing Jesus with Irony!!!",
-    "file": "showthread.php@t=2024119.htm"
+    "title": "t2074202.html",
+    "file": "t2074202.html"
   },
   {
-    "title": "Athiests as a majority",
-    "file": "showthread.php@t=2024132.htm"
+    "title": "t2074347.html",
+    "file": "t2074347.html"
   },
   {
-    "title": "satanists",
-    "file": "showthread.php@t=2024586.htm"
+    "title": "t2074348.html",
+    "file": "t2074348.html"
   },
   {
-    "title": "Faith?",
-    "file": "showthread.php@t=2024596.htm"
+    "title": "t2074360.html",
+    "file": "t2074360.html"
   },
   {
-    "title": "if u believe it god ur gay",
-    "file": "showthread.php@t=2024785.htm"
+    "title": "t2074371.html",
+    "file": "t2074371.html"
   },
   {
-    "title": "Design",
-    "file": "showthread.php@t=2025134.htm"
+    "title": "t2074389.html",
+    "file": "t2074389.html"
   },
   {
-    "title": "why athiesm is wrong",
-    "file": "showthread.php@t=2025408.htm"
+    "title": "t2074559.html",
+    "file": "t2074559.html"
   },
   {
-    "title": "Do retards and the chronically dumb go to Heaven?",
-    "file": "showthread.php@t=2025534.htm"
+    "title": "t2074991.html",
+    "file": "t2074991.html"
   },
   {
-    "title": "Redskin religion",
-    "file": "showthread.php@t=2025614.htm"
+    "title": "t2075125.html",
+    "file": "t2075125.html"
   },
   {
-    "title": "Dum Clamat Tacet",
-    "file": "showthread.php@t=2025730.htm"
+    "title": "t2075341.html",
+    "file": "t2075341.html"
   },
   {
-    "title": "JUDGEMENT is set (not will be)",
-    "file": "showthread.php@t=2025803.htm"
+    "title": "t2075744.html",
+    "file": "t2075744.html"
   },
   {
-    "title": "It's time for another Chick comic!",
-    "file": "showthread.php@t=2025839.htm"
+    "title": "t2075971.html",
+    "file": "t2075971.html"
   },
   {
-    "title": "lets just say you were to...",
-    "file": "showthread.php@t=2025871.htm"
+    "title": "t2076106.html",
+    "file": "t2076106.html"
   },
   {
-    "title": "Lair website updated",
-    "file": "showthread.php@t=2025898.htm"
+    "title": "t2076241.html",
+    "file": "t2076241.html"
   },
   {
-    "title": "Controlled deliveries of illegal substances",
-    "file": "showthread.php@t=2026132.htm"
+    "title": "t2076349.html",
+    "file": "t2076349.html"
   },
   {
-    "title": "Almost got caught.",
-    "file": "showthread.php@t=2026206.htm"
+    "title": "t2076507.html",
+    "file": "t2076507.html"
   },
   {
-    "title": "if you could choose",
-    "file": "showthread.php@t=2026644.htm"
+    "title": "t2076536.html",
+    "file": "t2076536.html"
   },
   {
-    "title": "Comparison of the lives of Horus and Jesus: coincidence?",
-    "file": "showthread.php@t=2026683.htm"
+    "title": "t2076630.html",
+    "file": "t2076630.html"
   },
   {
-    "title": "What are your hopes and dreams for the future?",
-    "file": "showthread.php@t=2026736.htm"
+    "title": "t2076698.html",
+    "file": "t2076698.html"
   },
   {
-    "title": "Please help a stupid kid",
-    "file": "showthread.php@t=2026857.htm"
+    "title": "t2076714.html",
+    "file": "t2076714.html"
   },
   {
-    "title": "lets just say you were to...",
-    "file": "showthread.php@t=2026975.htm"
+    "title": "t2076894.html",
+    "file": "t2076894.html"
   },
   {
-    "title": "interesting mints",
-    "file": "showthread.php@t=2026989.htm"
+    "title": "t2077024.html",
+    "file": "t2077024.html"
   },
   {
-    "title": "lets just say you were to...",
-    "file": "showthread.php@t=2026995.htm"
+    "title": "t2077074.html",
+    "file": "t2077074.html"
   },
   {
-    "title": "G. W. Bush: Ballsiest President Ever",
-    "file": "showthread.php@t=2027070.htm"
+    "title": "t2077308.html",
+    "file": "t2077308.html"
   },
   {
-    "title": "Is there a way to trigger crying?",
-    "file": "showthread.php@t=2027113.htm"
+    "title": "t2077450.html",
+    "file": "t2077450.html"
   },
   {
-    "title": "The Deer Hunter:Question.",
-    "file": "showthread.php@t=2027144.htm"
+    "title": "t2077598.html",
+    "file": "t2077598.html"
   },
   {
-    "title": "Benefits of Heaven",
-    "file": "showthread.php@t=2027378.htm"
+    "title": "t2077651.html",
+    "file": "t2077651.html"
   },
   {
-    "title": "Al Gore, the anti-christ?",
-    "file": "showthread.php@t=2027873.htm"
+    "title": "t2077710.html",
+    "file": "t2077710.html"
   },
   {
-    "title": "All these xian arguments",
-    "file": "showthread.php@t=2027977.htm"
+    "title": "t2078585.html",
+    "file": "t2078585.html"
   },
   {
-    "title": "Muslims in the West",
-    "file": "showthread.php@t=2028178.htm"
+    "title": "t2078650.html",
+    "file": "t2078650.html"
   },
   {
-    "title": "How Accurate Wuld You Say The \"Sex In God's Words\" Article Is?",
-    "file": "showthread.php@t=2028207.htm"
+    "title": "t2079178.html",
+    "file": "t2079178.html"
   },
   {
-    "title": "What are your spiritual beliefs, and why do you believe in them?",
-    "file": "showthread.php@t=2028300.htm"
+    "title": "t2079199.html",
+    "file": "t2079199.html"
   },
   {
-    "title": "Latin comming back to Catholosism!",
-    "file": "showthread.php@t=2028777.htm"
+    "title": "t2079952.html",
+    "file": "t2079952.html"
   },
   {
-    "title": "Religious People (Specifically Christians) Answer My Question!",
-    "file": "showthread.php@t=2028879.htm"
+    "title": "t2079957.html",
+    "file": "t2079957.html"
   },
   {
-    "title": "Believing what you want.",
-    "file": "showthread.php@t=2028964.htm"
+    "title": "t2080192.html",
+    "file": "t2080192.html"
   },
   {
-    "title": "poll: how did you come to believe what you believe?",
-    "file": "showthread.php@t=2029086.htm"
+    "title": "t2080222.html",
+    "file": "t2080222.html"
   },
   {
-    "title": "Mithraism - another source of Christian mythology",
-    "file": "showthread.php@t=2029293.htm"
+    "title": "t2080596.html",
+    "file": "t2080596.html"
   },
   {
-    "title": "The Longest Running Falsehood in Creationism",
-    "file": "showthread.php@t=2029632.htm"
+    "title": "t2080658.html",
+    "file": "t2080658.html"
   },
   {
-    "title": "I was bent over the toilet bowl this morning, puking my guts out..",
-    "file": "showthread.php@t=2029690.htm"
+    "title": "t2080698.html",
+    "file": "t2080698.html"
   },
   {
-    "title": "Proof that reading the OT literally is a mistake.",
-    "file": "showthread.php@t=2029773.htm"
+    "title": "t2080824.html",
+    "file": "t2080824.html"
   },
   {
-    "title": "more Papal bull",
-    "file": "showthread.php@t=2030698.htm"
+    "title": "t2080902.html",
+    "file": "t2080902.html"
   },
   {
-    "title": "Does this dismiss Christianity as impratical/invalid?",
-    "file": "showthread.php@t=2031204.htm"
+    "title": "t2081105.html",
+    "file": "t2081105.html"
   },
   {
-    "title": "Atheists Pick and Choose?",
-    "file": "showthread.php@t=2031216.htm"
+    "title": "t2081190.html",
+    "file": "t2081190.html"
   },
   {
-    "title": "A rational faith that solves the problem of an all-knowing being.",
-    "file": "showthread.php@t=2031263.htm"
+    "title": "t2081363.html",
+    "file": "t2081363.html"
   },
   {
-    "title": "Questionable God?",
-    "file": "showthread.php@t=2031456.htm"
+    "title": "t2081484.html",
+    "file": "t2081484.html"
   },
   {
-    "title": "I can now see why terrorism can take hold in Islam.",
-    "file": "showthread.php@t=2031904.htm"
+    "title": "t2081542.html",
+    "file": "t2081542.html"
   },
   {
-    "title": "Divine Command Theory, In Practice.",
-    "file": "showthread.php@t=2032135.htm"
+    "title": "t2081793.html",
+    "file": "t2081793.html"
   },
   {
-    "title": "My religious beliefs, as explained to a friend on msn",
-    "file": "showthread.php@t=2032227.htm"
+    "title": "t2081821.html",
+    "file": "t2081821.html"
   },
   {
-    "title": "How to become a Christian?",
-    "file": "showthread.php@t=2032513.htm"
+    "title": "t2081960.html",
+    "file": "t2081960.html"
   },
   {
-    "title": "He died for our sins",
-    "file": "showthread.php@t=2032554.htm"
+    "title": "t2081978.html",
+    "file": "t2081978.html"
   },
   {
-    "title": "U.K. schoolgirl loses \u0091virginity ring\u0092 court battle",
-    "file": "showthread.php@t=2032847.htm"
+    "title": "t2082127.html",
+    "file": "t2082127.html"
   },
   {
-    "title": "Calling God 'Him'",
-    "file": "showthread.php@t=2033179.htm"
+    "title": "t2082187.html",
+    "file": "t2082187.html"
   },
   {
-    "title": "Right, someone explain this please",
-    "file": "showthread.php@t=2033448.htm"
+    "title": "t2082493.html",
+    "file": "t2082493.html"
   },
   {
-    "title": "Text File I Wrote For Totse",
-    "file": "showthread.php@t=2033808.htm"
+    "title": "t2082729.html",
+    "file": "t2082729.html"
   },
   {
-    "title": "problems with Christianity",
-    "file": "showthread.php@t=2033858.htm"
+    "title": "t2082805.html",
+    "file": "t2082805.html"
   },
   {
-    "title": "Does anyone here realize there's a difference between God and Religion?",
-    "file": "showthread.php@t=2033900.htm"
+    "title": "t2083052.html",
+    "file": "t2083052.html"
   },
   {
-    "title": "Athiesm sucks, religion sucks. I thought this would interest you....",
-    "file": "showthread.php@t=2033917.htm"
+    "title": "t2083432.html",
+    "file": "t2083432.html"
   },
   {
-    "title": "what am i?",
-    "file": "showthread.php@t=2033941.htm"
+    "title": "t2083586.html",
+    "file": "t2083586.html"
   },
   {
-    "title": "Are Atheism and Religion totally irreconciable?",
-    "file": "showthread.php@t=2034268.htm"
+    "title": "t2083861.html",
+    "file": "t2083861.html"
   },
   {
-    "title": "Athiest or Agnostic.",
-    "file": "showthread.php@t=2034286.htm"
+    "title": "t2083866.html",
+    "file": "t2083866.html"
   },
   {
-    "title": "How exactly is Islam a backwards religion.",
-    "file": "showthread.php@t=2034448.htm"
+    "title": "t2083938.html",
+    "file": "t2083938.html"
   },
   {
-    "title": "Discordianism",
-    "file": "showthread.php@t=2034586.htm"
+    "title": "t2084083.html",
+    "file": "t2084083.html"
   },
   {
-    "title": "How Has Your Church Changed to Attract More Visitors?",
-    "file": "showthread.php@t=2034753.htm"
+    "title": "t2084291.html",
+    "file": "t2084291.html"
   },
   {
-    "title": "Aliens fucked with us in the past?",
-    "file": "showthread.php@t=2034925.htm"
+    "title": "t2084815.html",
+    "file": "t2084815.html"
   },
   {
-    "title": "Are you guys really searching for the truth?",
-    "file": "showthread.php@t=2035168.htm"
+    "title": "t2084837.html",
+    "file": "t2084837.html"
   },
   {
-    "title": "Defining Mythology...",
-    "file": "showthread.php@t=2035262.htm"
+    "title": "t2084840.html",
+    "file": "t2084840.html"
   },
   {
-    "title": "Scientific explanation for demonic possession",
-    "file": "showthread.php@t=2035482.htm"
+    "title": "t2085009.html",
+    "file": "t2085009.html"
   },
   {
-    "title": "Values of society",
-    "file": "showthread.php@t=2035552.htm"
+    "title": "t2085094.html",
+    "file": "t2085094.html"
   },
   {
-    "title": "People who go to hell",
-    "file": "showthread.php@t=2035912.htm"
+    "title": "t2085274.html",
+    "file": "t2085274.html"
   },
   {
-    "title": "The Only Truth",
-    "file": "showthread.php@t=2035959.htm"
+    "title": "t2085873.html",
+    "file": "t2085873.html"
   },
   {
-    "title": "The Official Atheists Suck Thread",
-    "file": "showthread.php@t=2036432.htm"
+    "title": "t2086283.html",
+    "file": "t2086283.html"
   },
   {
-    "title": "Super Paper Mario has Religious References!",
-    "file": "showthread.php@t=2036450.htm"
+    "title": "t2086362.html",
+    "file": "t2086362.html"
   },
   {
-    "title": "Religion: Unite or Divide?",
-    "file": "showthread.php@t=2037076.htm"
+    "title": "t2086658.html",
+    "file": "t2086658.html"
   },
   {
-    "title": "Religion:  Conflict between Humans and Animals",
-    "file": "showthread.php@t=2037081.htm"
+    "title": "t2086980.html",
+    "file": "t2086980.html"
   },
   {
-    "title": "Biblical justification for \"no sex before marriage\" precept?",
-    "file": "showthread.php@t=2037158.htm"
+    "title": "t2087139.html",
+    "file": "t2087139.html"
   },
   {
-    "title": "Holy War! Take your pick...",
-    "file": "showthread.php@t=2037364.htm"
+    "title": "t2087169.html",
+    "file": "t2087169.html"
   },
   {
-    "title": "The post that was just closed...",
-    "file": "showthread.php@t=2037676.htm"
+    "title": "t2087732.html",
+    "file": "t2087732.html"
   },
   {
-    "title": "Theological Paradoxes",
-    "file": "showthread.php@t=2037689.htm"
+    "title": "t2087735.html",
+    "file": "t2087735.html"
   },
   {
-    "title": "No greater believer than a penitent",
-    "file": "showthread.php@t=2037837.htm"
+    "title": "t2087785.html",
+    "file": "t2087785.html"
   },
   {
-    "title": "Going To Hell For Eternity Seems Rather Unfair..",
-    "file": "showthread.php@t=2038602.htm"
+    "title": "t2088151.html",
+    "file": "t2088151.html"
   },
   {
-    "title": "Jesus Christ Superstar",
-    "file": "showthread.php@t=2039207.htm"
+    "title": "t2088235.html",
+    "file": "t2088235.html"
   },
   {
-    "title": "Intelligent Design, major mistake",
-    "file": "showthread.php@t=2039427.htm"
+    "title": "t2088389.html",
+    "file": "t2088389.html"
   },
   {
-    "title": "A rather interesting video.",
-    "file": "showthread.php@t=2039474.htm"
+    "title": "t2088571.html",
+    "file": "t2088571.html"
   },
   {
-    "title": "I've discovered why we're here",
-    "file": "showthread.php@t=2040096.htm"
+    "title": "t2088624.html",
+    "file": "t2088624.html"
   },
   {
-    "title": "New here, Just interested in something.",
-    "file": "showthread.php@t=2040152.htm"
+    "title": "t2088705.html",
+    "file": "t2088705.html"
   },
   {
-    "title": "I don't understand the point of the Holy Bible",
-    "file": "showthread.php@t=2040184.htm"
+    "title": "t2088977.html",
+    "file": "t2088977.html"
   },
   {
-    "title": "I think I have come up with two \"proofs\" of God's existence.",
-    "file": "showthread.php@t=2040510.htm"
+    "title": "t2092333.html",
+    "file": "t2092333.html"
   },
   {
-    "title": "omnipotence versus free will",
-    "file": "showthread.php@t=2040755.htm"
+    "title": "t2102549.html",
+    "file": "t2102549.html"
   },
   {
-    "title": "Anyone muslim here?",
-    "file": "showthread.php@t=2041033.htm"
+    "title": "t2105590.html",
+    "file": "t2105590.html"
   },
   {
-    "title": "Killing",
-    "file": "showthread.php@t=2041321.htm"
+    "title": "t2106014.html",
+    "file": "t2106014.html"
   },
   {
-    "title": "The Point of the Book of Job",
-    "file": "showthread.php@t=2041853.htm"
+    "title": "t2106236.html",
+    "file": "t2106236.html"
   },
   {
-    "title": "What religion suits me?",
-    "file": "showthread.php@t=2041889.htm"
+    "title": "t2106480.html",
+    "file": "t2106480.html"
   },
   {
-    "title": "Evidence for and Against - and an attempt to find evidence for christianity",
-    "file": "showthread.php@t=2042099.htm"
+    "title": "t2106862.html",
+    "file": "t2106862.html"
   },
   {
-    "title": "Good god!",
-    "file": "showthread.php@t=2042481.htm"
+    "title": "t2106968.html",
+    "file": "t2106968.html"
   },
   {
-    "title": "Finding a Balance/Christianity on Trial",
-    "file": "showthread.php@t=2042751.htm"
+    "title": "t2107020.html",
+    "file": "t2107020.html"
   },
   {
-    "title": "Heres Proof That Atheists Will All Die!",
-    "file": "showthread.php@t=2043080.htm"
+    "title": "t2107043.html",
+    "file": "t2107043.html"
   },
   {
-    "title": "Zeitgeist: The Movie",
-    "file": "showthread.php@t=2043106.htm"
+    "title": "t2107212.html",
+    "file": "t2107212.html"
   },
   {
-    "title": "An answer to all of your questions.",
-    "file": "showthread.php@t=2043240.htm"
+    "title": "t2107222.html",
+    "file": "t2107222.html"
   },
   {
-    "title": "Jesus/God are...",
-    "file": "showthread.php@t=2043255.htm"
+    "title": "t2107540.html",
+    "file": "t2107540.html"
   },
   {
-    "title": "what you believe",
-    "file": "showthread.php@t=2043508.htm"
+    "title": "t2107658.html",
+    "file": "t2107658.html"
   },
   {
-    "title": "gospel of thomas",
-    "file": "showthread.php@t=2043622.htm"
+    "title": "t2107698.html",
+    "file": "t2107698.html"
   },
   {
-    "title": "So who here is a Unitarian Universealist",
-    "file": "showthread.php@t=2043818.htm"
+    "title": "t2107792.html",
+    "file": "t2107792.html"
   },
   {
-    "title": "if the god is all powerful?",
-    "file": "showthread.php@t=2043824.htm"
+    "title": "t2108739.html",
+    "file": "t2108739.html"
   },
   {
-    "title": "new reason why i dislike pushy christians",
-    "file": "showthread.php@t=2044009.htm"
+    "title": "t2109508.html",
+    "file": "t2109508.html"
   },
   {
-    "title": "Hinduism? (white religion)?",
-    "file": "showthread.php@t=2044016.htm"
+    "title": "t2109566.html",
+    "file": "t2109566.html"
   },
   {
-    "title": "The question of good?",
-    "file": "showthread.php@t=2044124.htm"
+    "title": "t2109743.html",
+    "file": "t2109743.html"
   },
   {
-    "title": "I have come up with a theory that emerges evolution and creationism, I",
-    "file": "showthread.php@t=2044224.htm"
+    "title": "t2110041.html",
+    "file": "t2110041.html"
   },
   {
-    "title": "Skeptic's Annotated Ommission",
-    "file": "showthread.php@t=2044363.htm"
+    "title": "t2110223.html",
+    "file": "t2110223.html"
   },
   {
-    "title": "Should christians even speak.....",
-    "file": "showthread.php@t=2044617.htm"
+    "title": "t2110954.html",
+    "file": "t2110954.html"
   },
   {
-    "title": "Why atheists are so pushy...",
-    "file": "showthread.php@t=2044672.htm"
+    "title": "t2111074.html",
+    "file": "t2111074.html"
   },
   {
-    "title": "who would win in a fight, Jesus or Mothra",
-    "file": "showthread.php@t=2044855.htm"
+    "title": "t2111883.html",
+    "file": "t2111883.html"
   },
   {
-    "title": "And so i have decided",
-    "file": "showthread.php@t=2045039.htm"
+    "title": "t2111942.html",
+    "file": "t2111942.html"
   },
   {
-    "title": "Why do christians deny the deaths of millions?",
-    "file": "showthread.php@t=2045138.htm"
+    "title": "t2112191.html",
+    "file": "t2112191.html"
   },
   {
-    "title": "Polytheism?? wtf?",
-    "file": "showthread.php@t=2045178.htm"
+    "title": "t2112736.html",
+    "file": "t2112736.html"
   },
   {
-    "title": "By god, I think I have it !",
-    "file": "showthread.php@t=2045182.htm"
+    "title": "t2113770.html",
+    "file": "t2113770.html"
   },
   {
-    "title": "Lucifer and the Mark of the Beast",
-    "file": "showthread.php@t=2045306.htm"
+    "title": "t2113990.html",
+    "file": "t2113990.html"
   },
   {
-    "title": "Give up our mind to become god?",
-    "file": "showthread.php@t=2045724.htm"
+    "title": "t2114631.html",
+    "file": "t2114631.html"
   },
   {
-    "title": "Good and Evil Do Not Exist...",
-    "file": "showthread.php@t=2045855.htm"
+    "title": "t2115146.html",
+    "file": "t2115146.html"
   },
   {
-    "title": "The Original Sin",
-    "file": "showthread.php@t=2045929.htm"
+    "title": "t2115833.html",
+    "file": "t2115833.html"
   },
   {
-    "title": "So why is Lucifer a baddie again?",
-    "file": "showthread.php@t=2046029.htm"
+    "title": "t2115860.html",
+    "file": "t2115860.html"
   },
   {
-    "title": "Muslim advice needed pls",
-    "file": "showthread.php@t=2046071.htm"
+    "title": "t2116472.html",
+    "file": "t2116472.html"
   },
   {
-    "title": "Proof of the supernatural?",
-    "file": "showthread.php@t=2046447.htm"
+    "title": "t2118008.html",
+    "file": "t2118008.html"
   },
   {
-    "title": "Atheists are wrong, and that is final:",
-    "file": "showthread.php@t=2046581.htm"
+    "title": "t2118134.html",
+    "file": "t2118134.html"
   },
   {
-    "title": "The truth about evolution....",
-    "file": "showthread.php@t=2046755.htm"
+    "title": "t2118407.html",
+    "file": "t2118407.html"
   },
   {
-    "title": "Are these mushrooms still good?",
-    "file": "showthread.php@t=2046838.htm"
+    "title": "t2118802.html",
+    "file": "t2118802.html"
   },
   {
-    "title": "Wwjd",
-    "file": "showthread.php@t=2046839.htm"
+    "title": "t2118855.html",
+    "file": "t2118855.html"
   },
   {
-    "title": "Religion, Spirituality, and Magic Mushrooms",
-    "file": "showthread.php@t=2046997.htm"
+    "title": "t2118903.html",
+    "file": "t2118903.html"
   },
   {
-    "title": "Selling your soul to satan",
-    "file": "showthread.php@t=2047171.htm"
+    "title": "t2119806.html",
+    "file": "t2119806.html"
   },
   {
-    "title": "The Official Xtians Suck Thread!",
-    "file": "showthread.php@t=2047232.htm"
+    "title": "t2120244.html",
+    "file": "t2120244.html"
   },
   {
-    "title": "Dk Pt Cd, Q.",
-    "file": "showthread.php@t=2047443.htm"
+    "title": "t2120607.html",
+    "file": "t2120607.html"
   },
   {
-    "title": "Praise to the Devil?",
-    "file": "showthread.php@t=2047457.htm"
+    "title": "t2120710.html",
+    "file": "t2120710.html"
   },
   {
-    "title": "Evolution? (race)",
-    "file": "showthread.php@t=2047754.htm"
+    "title": "t2121435.html",
+    "file": "t2121435.html"
   },
   {
-    "title": "When Christianity has gone.",
-    "file": "showthread.php@t=2047821.htm"
+    "title": "t2121625.html",
+    "file": "t2121625.html"
   },
   {
-    "title": "Good and Evil, my take",
-    "file": "showthread.php@t=2047982.htm"
+    "title": "t2122320.html",
+    "file": "t2122320.html"
   },
   {
-    "title": "Atheists, I pose you this question",
-    "file": "showthread.php@t=2048111.htm"
+    "title": "t2122597.html",
+    "file": "t2122597.html"
   },
   {
-    "title": "Here's a new creation story.",
-    "file": "showthread.php@t=2048436.htm"
+    "title": "t2122666.html",
+    "file": "t2122666.html"
   },
   {
-    "title": "Good Book?",
-    "file": "showthread.php@t=2048518.htm"
+    "title": "t2122676.html",
+    "file": "t2122676.html"
   },
   {
-    "title": "a little idea i had",
-    "file": "showthread.php@t=2048641.htm"
+    "title": "t2122820.html",
+    "file": "t2122820.html"
   },
   {
-    "title": "I Can Beat the Shit Out of Your God",
-    "file": "showthread.php@t=2048653.htm"
+    "title": "t2124087.html",
+    "file": "t2124087.html"
   },
   {
-    "title": "Why devote time to religion?",
-    "file": "showthread.php@t=2048690.htm"
+    "title": "t2124467.html",
+    "file": "t2124467.html"
   },
   {
-    "title": "From your book of shadows...",
-    "file": "showthread.php@t=2049206.htm"
+    "title": "t2125332.html",
+    "file": "t2125332.html"
   },
   {
-    "title": "why",
-    "file": "showthread.php@t=2049316.htm"
+    "title": "t2125445.html",
+    "file": "t2125445.html"
   },
   {
-    "title": "one of seven deadly sins",
-    "file": "showthread.php@t=2049485.htm"
+    "title": "t2125504.html",
+    "file": "t2125504.html"
   },
   {
-    "title": "evelution question?",
-    "file": "showthread.php@t=2049525.htm"
+    "title": "t2125722.html",
+    "file": "t2125722.html"
   },
   {
-    "title": "Santa Claus: Have you accepted Him as your saviour?",
-    "file": "showthread.php@t=2049748.htm"
+    "title": "t2125808.html",
+    "file": "t2125808.html"
   },
   {
-    "title": "Ive finally told my parents i dont believe in god any more",
-    "file": "showthread.php@t=2049910.htm"
+    "title": "t2125887.html",
+    "file": "t2125887.html"
   },
   {
-    "title": "The one question.",
-    "file": "showthread.php@t=2050019.htm"
+    "title": "t2125992.html",
+    "file": "t2125992.html"
   },
   {
-    "title": "Athiest Domination",
-    "file": "showthread.php@t=2050122.htm"
+    "title": "t2126036.html",
+    "file": "t2126036.html"
   },
   {
-    "title": "how do I know that....",
-    "file": "showthread.php@t=2050344.htm"
+    "title": "t2126091.html",
+    "file": "t2126091.html"
   },
   {
-    "title": "Evolution question (consciousness)",
-    "file": "showthread.php@t=2050384.htm"
+    "title": "t2126165.html",
+    "file": "t2126165.html"
   },
   {
-    "title": "End of days",
-    "file": "showthread.php@t=2050558.htm"
+    "title": "t2126184.html",
+    "file": "t2126184.html"
   },
   {
-    "title": "Using Relgious Hatred Laws",
-    "file": "showthread.php@t=2050847.htm"
+    "title": "t2126329.html",
+    "file": "t2126329.html"
   },
   {
-    "title": "Perverted Interpretation Of The Bible",
-    "file": "showthread.php@t=2050911.htm"
+    "title": "t2126480.html",
+    "file": "t2126480.html"
   },
   {
-    "title": "swinophobic faiths?",
-    "file": "showthread.php@t=2051154.htm"
+    "title": "t2126503.html",
+    "file": "t2126503.html"
   },
   {
-    "title": "Congrats Angryfemme",
-    "file": "showthread.php@t=2051466.htm"
+    "title": "t2126640.html",
+    "file": "t2126640.html"
   },
   {
-    "title": "illusion of free will?",
-    "file": "showthread.php@t=2051484.htm"
+    "title": "t2126820.html",
+    "file": "t2126820.html"
   },
   {
-    "title": "The one true religion",
-    "file": "showthread.php@t=2051945.htm"
+    "title": "t2126920.html",
+    "file": "t2126920.html"
   },
   {
-    "title": "a few questions about jesus",
-    "file": "showthread.php@t=2052279.htm"
+    "title": "t2126977.html",
+    "file": "t2126977.html"
   },
   {
-    "title": "A few points that are beyond human comprehension",
-    "file": "showthread.php@t=2052289.htm"
+    "title": "t2127015.html",
+    "file": "t2127015.html"
   },
   {
-    "title": "The supercomputer.",
-    "file": "showthread.php@t=2052316.htm"
+    "title": "t2127028.html",
+    "file": "t2127028.html"
   },
   {
-    "title": "Christian preachers are not there to save our souls.",
-    "file": "showthread.php@t=2052332.htm"
+    "title": "t2127099.html",
+    "file": "t2127099.html"
   },
   {
-    "title": "The amish",
-    "file": "showthread.php@t=2052376.htm"
+    "title": "t2127244.html",
+    "file": "t2127244.html"
   },
   {
-    "title": "Don't Need No Country, Don't Fly No Flag...!",
-    "file": "showthread.php@t=2052438.htm"
+    "title": "t2127952.html",
+    "file": "t2127952.html"
   },
   {
-    "title": "...? Can someone explain this for me...",
-    "file": "showthread.php@t=2052926.htm"
+    "title": "t2128093.html",
+    "file": "t2128093.html"
   },
   {
-    "title": "Xians love gays but hate homosexuality?",
-    "file": "showthread.php@t=2053041.htm"
+    "title": "t2128177.html",
+    "file": "t2128177.html"
   },
   {
-    "title": "why religion fails",
-    "file": "showthread.php@t=2053556.htm"
+    "title": "t2128183.html",
+    "file": "t2128183.html"
   },
   {
-    "title": "Determinism & Materialism",
-    "file": "showthread.php@t=2053716.htm"
+    "title": "t2128186.html",
+    "file": "t2128186.html"
   },
   {
-    "title": "Witless fucktard Xtian Moderators on Beatlelinks.net",
-    "file": "showthread.php@t=2053776.htm"
+    "title": "t2128324.html",
+    "file": "t2128324.html"
   },
   {
-    "title": "Why i love Xtians.",
-    "file": "showthread.php@t=2053948.htm"
+    "title": "t2128374.html",
+    "file": "t2128374.html"
   },
   {
-    "title": "Hey Jackketch!",
-    "file": "showthread.php@t=2054566.htm"
+    "title": "t2128418.html",
+    "file": "t2128418.html"
   },
   {
-    "title": "On religion and searching for truth",
-    "file": "showthread.php@t=2054570.htm"
+    "title": "t2128526.html",
+    "file": "t2128526.html"
   },
   {
-    "title": "more religious nuttery in Texas",
-    "file": "showthread.php@t=2054738.htm"
+    "title": "t2128561.html",
+    "file": "t2128561.html"
   },
   {
-    "title": "the vow of the Bodhisattva",
-    "file": "showthread.php@t=2054755.htm"
+    "title": "t2128693.html",
+    "file": "t2128693.html"
   },
   {
-    "title": "Idol Worship",
-    "file": "showthread.php@t=2054898.htm"
+    "title": "t2128707.html",
+    "file": "t2128707.html"
   },
   {
-    "title": "Why do we only recognize religions as sacred beliefs?",
-    "file": "showthread.php@t=2054997.htm"
+    "title": "t2128785.html",
+    "file": "t2128785.html"
   },
   {
-    "title": "A trend I am seeing with the animosity to religion.",
-    "file": "showthread.php@t=2055085.htm"
+    "title": "t2129137.html",
+    "file": "t2129137.html"
   },
   {
-    "title": "Spiritual Fulfillment Through Volunteering",
-    "file": "showthread.php@t=2055312.htm"
+    "title": "t2129247.html",
+    "file": "t2129247.html"
   },
   {
-    "title": "Aquarius and the rise of neo-gnosticism",
-    "file": "showthread.php@t=2055357.htm"
+    "title": "t2129286.html",
+    "file": "t2129286.html"
   },
   {
-    "title": "New addiditions to the Bible",
-    "file": "showthread.php@t=2055436.htm"
+    "title": "t2129288.html",
+    "file": "t2129288.html"
   },
   {
-    "title": "What faith were you raised under?",
-    "file": "showthread.php@t=2055476.htm"
+    "title": "t2129359.html",
+    "file": "t2129359.html"
   },
   {
-    "title": "My mother is having our dogs blessed.",
-    "file": "showthread.php@t=2055720.htm"
+    "title": "t2129412.html",
+    "file": "t2129412.html"
   },
   {
-    "title": "the 144 000",
-    "file": "showthread.php@t=2055831.htm"
+    "title": "t2129424.html",
+    "file": "t2129424.html"
   },
   {
-    "title": "The obvious truth",
-    "file": "showthread.php@t=2056065.htm"
+    "title": "t2129430.html",
+    "file": "t2129430.html"
   },
   {
-    "title": "Should Religion Be Respected?",
-    "file": "showthread.php@t=2056077.htm"
+    "title": "t2129755.html",
+    "file": "t2129755.html"
   },
   {
-    "title": "Did Jesus die on a cross?",
-    "file": "showthread.php@t=2056183.htm"
+    "title": "t2129802.html",
+    "file": "t2129802.html"
   },
   {
-    "title": "I had Mormons over today",
-    "file": "showthread.php@t=2056584.htm"
+    "title": "t2129816.html",
+    "file": "t2129816.html"
   },
   {
-    "title": "A response to Obbe.",
-    "file": "showthread.php@t=2056864.htm"
+    "title": "t2129953.html",
+    "file": "t2129953.html"
   },
   {
-    "title": "noah ark lost civilisations and time before time",
-    "file": "showthread.php@t=2057158.htm"
+    "title": "t2130254.html",
+    "file": "t2130254.html"
   },
   {
-    "title": "what has any religion achieved? ever?",
-    "file": "showthread.php@t=2057667.htm"
+    "title": "t2130342.html",
+    "file": "t2130342.html"
   },
   {
-    "title": "Prove Christ exists, judge order priests",
-    "file": "showthread.php@t=2057849.htm"
+    "title": "t2130346.html",
+    "file": "t2130346.html"
   },
   {
-    "title": "I am god. (4 reel)",
-    "file": "showthread.php@t=2057854.htm"
+    "title": "t2130504.html",
+    "file": "t2130504.html"
   },
   {
-    "title": "Faith vs Religion",
-    "file": "showthread.php@t=2057971.htm"
+    "title": "t2130735.html",
+    "file": "t2130735.html"
   },
   {
-    "title": "Folsom Street Fair Poster",
-    "file": "showthread.php@t=2058019.htm"
+    "title": "t2130758.html",
+    "file": "t2130758.html"
   },
   {
-    "title": "I was questioned by police today....",
-    "file": "showthread.php@t=2058197.htm"
+    "title": "t2130858.html",
+    "file": "t2130858.html"
   },
   {
-    "title": "Lol what? Non religous people acting religous.",
-    "file": "showthread.php@t=2058348.htm"
+    "title": "t2131161.html",
+    "file": "t2131161.html"
   },
   {
-    "title": "If the soul exists...",
-    "file": "showthread.php@t=2058400.htm"
+    "title": "t2131206.html",
+    "file": "t2131206.html"
   },
   {
-    "title": "My god is dead.",
-    "file": "showthread.php@t=2058449.htm"
+    "title": "t2131345.html",
+    "file": "t2131345.html"
   },
   {
-    "title": "When is Ramadan?",
-    "file": "showthread.php@t=2058503.htm"
+    "title": "t2131519.html",
+    "file": "t2131519.html"
   },
   {
-    "title": "Alone",
-    "file": "showthread.php@t=2058687.htm"
+    "title": "t2131534.html",
+    "file": "t2131534.html"
   },
   {
-    "title": "Evidence for the Bible.",
-    "file": "showthread.php@t=2058801.htm"
+    "title": "t2131804.html",
+    "file": "t2131804.html"
   },
   {
-    "title": "What's the point of a faith?",
-    "file": "showthread.php@t=2059068.htm"
+    "title": "t2131873.html",
+    "file": "t2131873.html"
   },
   {
-    "title": "Nihilism is actually Monotheism in disguise",
-    "file": "showthread.php@t=2059094.htm"
+    "title": "t2131996.html",
+    "file": "t2131996.html"
   },
   {
-    "title": "Atheists, I suggest to you this:",
-    "file": "showthread.php@t=2059349.htm"
+    "title": "t2132028.html",
+    "file": "t2132028.html"
   },
   {
-    "title": "Having a house church",
-    "file": "showthread.php@t=2059368.htm"
+    "title": "t2132070.html",
+    "file": "t2132070.html"
   },
   {
-    "title": "Atheists, I ask you this...",
-    "file": "showthread.php@t=2059511.htm"
+    "title": "t2132074.html",
+    "file": "t2132074.html"
   },
   {
-    "title": "\"Without God, It's Just A Viscious Cycle.\"",
-    "file": "showthread.php@t=2059567.htm"
+    "title": "t2132278.html",
+    "file": "t2132278.html"
   },
   {
-    "title": "Picture of God!",
-    "file": "showthread.php@t=2059576.htm"
+    "title": "t2132302.html",
+    "file": "t2132302.html"
   },
   {
-    "title": "books of the bible",
-    "file": "showthread.php@t=2059678.htm"
+    "title": "t2132381.html",
+    "file": "t2132381.html"
   },
   {
-    "title": "Sign it, if you will...",
-    "file": "showthread.php@t=2059761.htm"
+    "title": "t2132632.html",
+    "file": "t2132632.html"
   },
   {
-    "title": "Best book to convince someone to stop believing christianity?",
-    "file": "showthread.php@t=2059876.htm"
+    "title": "t2132937.html",
+    "file": "t2132937.html"
   },
   {
-    "title": "My opinions and morality: Atheists welcome",
-    "file": "showthread.php@t=2059964.htm"
+    "title": "t2132946.html",
+    "file": "t2132946.html"
   },
   {
-    "title": "Another Atheist thread - Hypocrites?",
-    "file": "showthread.php@t=2060000.htm"
+    "title": "t2133093.html",
+    "file": "t2133093.html"
   },
   {
-    "title": "Your beliefs (to those who are religious)",
-    "file": "showthread.php@t=2060059.htm"
+    "title": "t2133202.html",
+    "file": "t2133202.html"
   },
   {
-    "title": "On Athiesm- a definition",
-    "file": "showthread.php@t=2060076.htm"
+    "title": "t2133252.html",
+    "file": "t2133252.html"
   },
   {
-    "title": "Ignosticism",
-    "file": "showthread.php@t=2060121.htm"
+    "title": "t2133264.html",
+    "file": "t2133264.html"
   },
   {
-    "title": "Christians and Music.",
-    "file": "showthread.php@t=2060528.htm"
+    "title": "t2133302.html",
+    "file": "t2133302.html"
   },
   {
-    "title": "The Truth About Religion!!",
-    "file": "showthread.php@t=2060661.htm"
+    "title": "t2133450.html",
+    "file": "t2133450.html"
   },
   {
-    "title": "The Banana: Proof a God exists.",
-    "file": "showthread.php@t=2061080.htm"
+    "title": "t2133468.html",
+    "file": "t2133468.html"
   },
   {
-    "title": "Man recieves $150,000 price on his head by AQ",
-    "file": "showthread.php@t=2061163.htm"
+    "title": "t2133478.html",
+    "file": "t2133478.html"
   },
   {
-    "title": "defining God",
-    "file": "showthread.php@t=2061203.htm"
+    "title": "t2133503.html",
+    "file": "t2133503.html"
   },
   {
-    "title": "hypothetical scenario",
-    "file": "showthread.php@t=2061317.htm"
+    "title": "t2133536.html",
+    "file": "t2133536.html"
   },
   {
-    "title": "Religion Class",
-    "file": "showthread.php@t=2061429.htm"
+    "title": "t2133645.html",
+    "file": "t2133645.html"
   },
   {
-    "title": "A response to theism...",
-    "file": "showthread.php@t=2061604.htm"
+    "title": "t2133781.html",
+    "file": "t2133781.html"
   },
   {
-    "title": "Taliban didn't think this through",
-    "file": "showthread.php@t=2061639.htm"
+    "title": "t2133815.html",
+    "file": "t2133815.html"
   },
   {
-    "title": "What I see in karma.",
-    "file": "showthread.php@t=2061742.htm"
+    "title": "t2134190.html",
+    "file": "t2134190.html"
   },
   {
-    "title": "about god",
-    "file": "showthread.php@t=2061851.htm"
+    "title": "t2134371.html",
+    "file": "t2134371.html"
   },
   {
-    "title": "Pushy Xtians",
-    "file": "showthread.php@t=2061890.htm"
+    "title": "t2134427.html",
+    "file": "t2134427.html"
   },
   {
-    "title": "Something I am a bit confused about.",
-    "file": "showthread.php@t=2061960.htm"
+    "title": "t2134507.html",
+    "file": "t2134507.html"
   },
   {
-    "title": "?'s for religious people",
-    "file": "showthread.php@t=2062209.htm"
+    "title": "t2134509.html",
+    "file": "t2134509.html"
   },
   {
-    "title": "This guy made me dislike christians (your opinions)",
-    "file": "showthread.php@t=2062214.htm"
+    "title": "t2134564.html",
+    "file": "t2134564.html"
   },
   {
-    "title": "Pushy \"victim\" atheists",
-    "file": "showthread.php@t=2062337.htm"
+    "title": "t2134571.html",
+    "file": "t2134571.html"
   },
   {
-    "title": "\"Tune into God\" WTF",
-    "file": "showthread.php@t=2062472.htm"
+    "title": "t2134650.html",
+    "file": "t2134650.html"
   },
   {
-    "title": "The body of christ...",
-    "file": "showthread.php@t=2062823.htm"
+    "title": "t2134673.html",
+    "file": "t2134673.html"
   },
   {
-    "title": "100% Certainty and Faith",
-    "file": "showthread.php@t=2062839.htm"
+    "title": "t2134931.html",
+    "file": "t2134931.html"
   },
   {
-    "title": "Create a Greek God/Goddess!",
-    "file": "showthread.php@t=2063084.htm"
+    "title": "t2135231.html",
+    "file": "t2135231.html"
   },
   {
-    "title": "Official Church stance on Muslims?",
-    "file": "showthread.php@t=2063167.htm"
+    "title": "t2135285.html",
+    "file": "t2135285.html"
   },
   {
-    "title": "Question about hell",
-    "file": "showthread.php@t=2063329.htm"
+    "title": "t2135304.html",
+    "file": "t2135304.html"
   },
   {
-    "title": "Near Death Experiences",
-    "file": "showthread.php@t=2063419.htm"
+    "title": "t2135487.html",
+    "file": "t2135487.html"
   },
   {
-    "title": "Atheists do not exist",
-    "file": "showthread.php@t=2063713.htm"
+    "title": "t2135532.html",
+    "file": "t2135532.html"
   },
   {
-    "title": "Message To Human Scum",
-    "file": "showthread.php@t=2063819.htm"
+    "title": "t2135603.html",
+    "file": "t2135603.html"
   },
   {
-    "title": "Atheist FAQ",
-    "file": "showthread.php@t=2063822.htm"
+    "title": "t2135631.html",
+    "file": "t2135631.html"
   },
   {
-    "title": "Athiestic Satanism",
-    "file": "showthread.php@t=2063864.htm"
+    "title": "t2135789.html",
+    "file": "t2135789.html"
   },
   {
-    "title": "On the burden of the proof.",
-    "file": "showthread.php@t=2063886.htm"
+    "title": "t2135944.html",
+    "file": "t2135944.html"
   },
   {
-    "title": "Creationism: A threat to human rights",
-    "file": "showthread.php@t=2064007.htm"
+    "title": "t2135984.html",
+    "file": "t2135984.html"
   },
   {
-    "title": "I think its weird to believe GOD now :(",
-    "file": "showthread.php@t=2064461.htm"
+    "title": "t2136147.html",
+    "file": "t2136147.html"
   },
   {
-    "title": "Druids",
-    "file": "showthread.php@t=2065058.htm"
+    "title": "t2136184.html",
+    "file": "t2136184.html"
   },
   {
-    "title": "Secular schools have no place in society",
-    "file": "showthread.php@t=2065081.htm"
+    "title": "t2136229.html",
+    "file": "t2136229.html"
   },
   {
-    "title": "What's more moral: Religion or Atheism?",
-    "file": "showthread.php@t=2065493.htm"
+    "title": "t2136244.html",
+    "file": "t2136244.html"
   },
   {
-    "title": "Going to a bible study tomorrow, need help.",
-    "file": "showthread.php@t=2065613.htm"
+    "title": "t2136293.html",
+    "file": "t2136293.html"
   },
   {
-    "title": "with all this shit about mars on discovery",
-    "file": "showthread.php@t=2065630.htm"
+    "title": "t2136342.html",
+    "file": "t2136342.html"
   },
   {
-    "title": "Ask a Christian",
-    "file": "showthread.php@t=2065690.htm"
+    "title": "t2136350.html",
+    "file": "t2136350.html"
   },
   {
-    "title": "Secret Tantric Buddhist Texts Revealed",
-    "file": "showthread.php@t=2065862.htm"
+    "title": "t2136535.html",
+    "file": "t2136535.html"
   },
   {
-    "title": "Moment of silence in school?",
-    "file": "showthread.php@t=2065889.htm"
+    "title": "t2136634.html",
+    "file": "t2136634.html"
   },
   {
-    "title": "Christianity is about to fuck America, HARD. (video)",
-    "file": "showthread.php@t=2065970.htm"
+    "title": "t2136664.html",
+    "file": "t2136664.html"
   },
   {
-    "title": "who would win in a fight Jesus....or Mothra?",
-    "file": "showthread.php@t=2066088.htm"
+    "title": "t2136688.html",
+    "file": "t2136688.html"
   },
   {
-    "title": "Veil which hides the eternal spirit",
-    "file": "showthread.php@t=2066182.htm"
+    "title": "t2136737.html",
+    "file": "t2136737.html"
   },
   {
-    "title": "Why I believe in god.  Just look up in the sky (Long)",
-    "file": "showthread.php@t=2066252.htm"
+    "title": "t2136803.html",
+    "file": "t2136803.html"
   },
   {
-    "title": "Luther and Erasmus",
-    "file": "showthread.php@t=2066586.htm"
+    "title": "t2136905.html",
+    "file": "t2136905.html"
   },
   {
-    "title": "theory on why we might have souls",
-    "file": "showthread.php@t=2066637.htm"
+    "title": "t2136920.html",
+    "file": "t2136920.html"
   },
   {
-    "title": "Truth to revelations?",
-    "file": "showthread.php@t=2066645.htm"
+    "title": "t2136932.html",
+    "file": "t2136932.html"
   },
   {
-    "title": "What does god look like?",
-    "file": "showthread.php@t=2066678.htm"
+    "title": "t2137195.html",
+    "file": "t2137195.html"
   },
   {
-    "title": "Salvation and purpose",
-    "file": "showthread.php@t=2066898.htm"
+    "title": "t2137215.html",
+    "file": "t2137215.html"
   },
   {
-    "title": "My friends proof God isn't real",
-    "file": "showthread.php@t=2066957.htm"
+    "title": "t2137416.html",
+    "file": "t2137416.html"
   },
   {
-    "title": "God is stupid",
-    "file": "showthread.php@t=2066970.htm"
+    "title": "t2137532.html",
+    "file": "t2137532.html"
   },
   {
-    "title": "Church of the Flying Spaghetti Monster",
-    "file": "showthread.php@t=2067491.htm"
+    "title": "t2137616.html",
+    "file": "t2137616.html"
   },
   {
-    "title": "God said the answer is 12",
-    "file": "showthread.php@t=2067503.htm"
+    "title": "t2137642.html",
+    "file": "t2137642.html"
   },
   {
-    "title": "Jesus was a prophet?",
-    "file": "showthread.php@t=2067551.htm"
+    "title": "t2137659.html",
+    "file": "t2137659.html"
   },
   {
-    "title": "Morals Cannot Exist Without Religion?",
-    "file": "showthread.php@t=2067553.htm"
+    "title": "t2137674.html",
+    "file": "t2137674.html"
   },
   {
-    "title": "Zoroastrianism going extinct?",
-    "file": "showthread.php@t=2067700.htm"
+    "title": "t2137678.html",
+    "file": "t2137678.html"
   },
   {
-    "title": "Westboro Baptist Church",
-    "file": "showthread.php@t=2067734.htm"
+    "title": "t2137793.html",
+    "file": "t2137793.html"
   },
   {
-    "title": "Judgement Day- Intelligent Design On Trial",
-    "file": "showthread.php@t=2067786.htm"
+    "title": "t2137815.html",
+    "file": "t2137815.html"
   },
   {
-    "title": "Religion as Child Abuse",
-    "file": "showthread.php@t=2067908.htm"
+    "title": "t2138007.html",
+    "file": "t2138007.html"
   },
   {
-    "title": "A question to all believers:",
-    "file": "showthread.php@t=2068073.htm"
+    "title": "t2138136.html",
+    "file": "t2138136.html"
   },
   {
-    "title": "This forum should be renamed to \" Make fun of the christians\"",
-    "file": "showthread.php@t=2068138.htm"
+    "title": "t2138193.html",
+    "file": "t2138193.html"
   },
   {
-    "title": "To followers of any religion...",
-    "file": "showthread.php@t=2068371.htm"
+    "title": "t2138348.html",
+    "file": "t2138348.html"
   },
   {
-    "title": "Agree/Disagree: /Longest Totse Post EVER!",
-    "file": "showthread.php@t=2068461.htm"
+    "title": "t2138683.html",
+    "file": "t2138683.html"
   },
   {
-    "title": "Is God Real?",
-    "file": "showthread.php@t=2068488.htm"
+    "title": "t2138767.html",
+    "file": "t2138767.html"
   },
   {
-    "title": "Open your motherfucking eyes.",
-    "file": "showthread.php@t=2068603.htm"
+    "title": "t2139065.html",
+    "file": "t2139065.html"
   },
   {
-    "title": "Who was John of Patmos?",
-    "file": "showthread.php@t=2068652.htm"
+    "title": "t2139088.html",
+    "file": "t2139088.html"
   },
   {
-    "title": "Attention ID supporters",
-    "file": "showthread.php@t=2068798.htm"
+    "title": "t2139259.html",
+    "file": "t2139259.html"
   },
   {
-    "title": "About this section",
-    "file": "showthread.php@t=2068926.htm"
+    "title": "t2139442.html",
+    "file": "t2139442.html"
   },
   {
-    "title": "A real atheist FAQ.",
-    "file": "showthread.php@t=2068947.htm"
+    "title": "t2139496.html",
+    "file": "t2139496.html"
   },
   {
-    "title": "Why won't god heal amputees?",
-    "file": "showthread.php@t=2069250.htm"
+    "title": "t2139631.html",
+    "file": "t2139631.html"
   },
   {
-    "title": "What think you?  A definition of god.",
-    "file": "showthread.php@t=2069538.htm"
+    "title": "t2139662.html",
+    "file": "t2139662.html"
   },
   {
-    "title": "Some guy once said:",
-    "file": "showthread.php@t=2070472.htm"
+    "title": "t2139719.html",
+    "file": "t2139719.html"
   },
   {
-    "title": "The Devil's Advocate",
-    "file": "showthread.php@t=2070485.htm"
+    "title": "t2139738.html",
+    "file": "t2139738.html"
   },
   {
-    "title": "baptist.",
-    "file": "showthread.php@t=2070538.htm"
+    "title": "t2139748.html",
+    "file": "t2139748.html"
   },
   {
-    "title": "The Omega Point",
-    "file": "showthread.php@t=2070851.htm"
+    "title": "t2139752.html",
+    "file": "t2139752.html"
   },
   {
-    "title": "God spoke to me",
-    "file": "showthread.php@t=2071301.htm"
+    "title": "t2139953.html",
+    "file": "t2139953.html"
   },
   {
-    "title": "what if..",
-    "file": "showthread.php@t=2071306.htm"
+    "title": "t2139998.html",
+    "file": "t2139998.html"
   },
   {
-    "title": "Creation of the soul(?)",
-    "file": "showthread.php@t=2071384.htm"
+    "title": "t2140049.html",
+    "file": "t2140049.html"
   },
   {
-    "title": "Someone explain this please (why we shouldnt mate outside our race)",
-    "file": "showthread.php@t=2072440.htm"
+    "title": "t2140187.html",
+    "file": "t2140187.html"
   },
   {
-    "title": "please help",
-    "file": "showthread.php@t=2072474.htm"
+    "title": "t2140247.html",
+    "file": "t2140247.html"
   },
   {
-    "title": "The atheistic/apatheistic implications of Objectivism help with depression. (long)",
-    "file": "showthread.php@t=2072783.htm"
+    "title": "t2140357.html",
+    "file": "t2140357.html"
   },
   {
-    "title": "Decision",
-    "file": "showthread.php@t=2073046.htm"
+    "title": "t2140364.html",
+    "file": "t2140364.html"
   },
   {
-    "title": "What's the deal with this Bill Donahue guy?",
-    "file": "showthread.php@t=2073262.htm"
+    "title": "t2140395.html",
+    "file": "t2140395.html"
   },
   {
-    "title": "Reccomend me some religions..",
-    "file": "showthread.php@t=2073383.htm"
+    "title": "t2140398.html",
+    "file": "t2140398.html"
   },
   {
-    "title": "So Yesterday In Confirmation Class",
-    "file": "showthread.php@t=2073404.htm"
+    "title": "t2140410.html",
+    "file": "t2140410.html"
   },
   {
-    "title": "inspiration for ateists",
-    "file": "showthread.php@t=2073442.htm"
+    "title": "t2140531.html",
+    "file": "t2140531.html"
   },
   {
-    "title": "This was pretty interesting..",
-    "file": "showthread.php@t=2073541.htm"
+    "title": "t2140845.html",
+    "file": "t2140845.html"
   },
   {
-    "title": "What If Jesus IS real",
-    "file": "showthread.php@t=2073932.htm"
+    "title": "t2140952.html",
+    "file": "t2140952.html"
   },
   {
-    "title": "The Oldest Athiest You Know",
-    "file": "showthread.php@t=2074202.htm"
+    "title": "t2141112.html",
+    "file": "t2141112.html"
   },
   {
-    "title": "Obbe v Hare Debate Discussion sub-thread",
-    "file": "showthread.php@t=2074347.htm"
+    "title": "t2141310.html",
+    "file": "t2141310.html"
   },
   {
-    "title": "Obbe v Hare_geist official debate thread",
-    "file": "showthread.php@t=2074348.htm"
+    "title": "t2141549.html",
+    "file": "t2141549.html"
   },
   {
-    "title": "atheism, and theism, both dont really make sense",
-    "file": "showthread.php@t=2074360.htm"
+    "title": "t2141555.html",
+    "file": "t2141555.html"
   },
   {
-    "title": "How close your beliefs are to reality",
-    "file": "showthread.php@t=2074371.htm"
+    "title": "t2141662.html",
+    "file": "t2141662.html"
   },
   {
-    "title": "knowledge, belief, and reality",
-    "file": "showthread.php@t=2074389.htm"
+    "title": "t2141669.html",
+    "file": "t2141669.html"
   },
   {
-    "title": "The Double Standard Against Atheism",
-    "file": "showthread.php@t=2074559.htm"
+    "title": "t2141775.html",
+    "file": "t2141775.html"
   },
   {
-    "title": "telling my hardcore christian parents that I am an athiest",
-    "file": "showthread.php@t=2074991.htm"
+    "title": "t2141818.html",
+    "file": "t2141818.html"
   },
   {
-    "title": "Christ",
-    "file": "showthread.php@t=2075125.htm"
+    "title": "t2141920.html",
+    "file": "t2141920.html"
   },
   {
-    "title": "was krishna a specified man",
-    "file": "showthread.php@t=2075341.htm"
+    "title": "t2142042.html",
+    "file": "t2142042.html"
   },
   {
-    "title": "\"the church\" says:",
-    "file": "showthread.php@t=2075744.htm"
+    "title": "t2142048.html",
+    "file": "t2142048.html"
   },
   {
-    "title": "There is no God",
-    "file": "showthread.php@t=2075971.htm"
+    "title": "t2142071.html",
+    "file": "t2142071.html"
   },
   {
-    "title": "\"Even God Spoke From the Burning Bush\"",
-    "file": "showthread.php@t=2076106.htm"
+    "title": "t2142373.html",
+    "file": "t2142373.html"
   },
   {
-    "title": "Do stillborn babies go to hell?",
-    "file": "showthread.php@t=2076241.htm"
+    "title": "t2142427.html",
+    "file": "t2142427.html"
   },
   {
-    "title": "Suicide",
-    "file": "showthread.php@t=2076349.htm"
+    "title": "t2142476.html",
+    "file": "t2142476.html"
   },
   {
-    "title": "Should I turn to Christianity?",
-    "file": "showthread.php@t=2076507.htm"
+    "title": "t2142540.html",
+    "file": "t2142540.html"
   },
   {
-    "title": "The Value of Religion",
-    "file": "showthread.php@t=2076536.htm"
+    "title": "t2142546.html",
+    "file": "t2142546.html"
   },
   {
-    "title": "Mormons shouldn't be defined at Christians",
-    "file": "showthread.php@t=2076630.htm"
+    "title": "t2142709.html",
+    "file": "t2142709.html"
   },
   {
-    "title": "I enjoyed reading this (probably old)",
-    "file": "showthread.php@t=2076698.htm"
+    "title": "t2142990.html",
+    "file": "t2142990.html"
   },
   {
-    "title": "ArmsMerchant",
-    "file": "showthread.php@t=2076714.htm"
+    "title": "t2143015.html",
+    "file": "t2143015.html"
   },
   {
-    "title": "Millions of Christians pray to Allah",
-    "file": "showthread.php@t=2076894.htm"
+    "title": "t2143052.html",
+    "file": "t2143052.html"
   },
   {
-    "title": "I reject the idea of original sin.",
-    "file": "showthread.php@t=2077024.htm"
+    "title": "t2143134.html",
+    "file": "t2143134.html"
   },
   {
-    "title": "What verses in the Quar'an does it say to murder infidels?",
-    "file": "showthread.php@t=2077074.htm"
+    "title": "t2143232.html",
+    "file": "t2143232.html"
   },
   {
-    "title": "How do you react to disagreement on religious (or other) beliefs?",
-    "file": "showthread.php@t=2077308.htm"
+    "title": "t2143246.html",
+    "file": "t2143246.html"
   },
   {
-    "title": "getting into heaven",
-    "file": "showthread.php@t=2077450.htm"
+    "title": "t2143250.html",
+    "file": "t2143250.html"
   },
   {
-    "title": "Lot's Daughters",
-    "file": "showthread.php@t=2077598.htm"
+    "title": "t2143434.html",
+    "file": "t2143434.html"
   },
   {
-    "title": "The Moddy Situation.",
-    "file": "showthread.php@t=2077651.htm"
+    "title": "t2143596.html",
+    "file": "t2143596.html"
   },
   {
-    "title": "The Golden Compass debate- enlighten me?",
-    "file": "showthread.php@t=2077710.htm"
+    "title": "t2143614.html",
+    "file": "t2143614.html"
   },
   {
-    "title": "Biblical Art",
-    "file": "showthread.php@t=2078585.htm"
+    "title": "t2143649.html",
+    "file": "t2143649.html"
   },
   {
-    "title": "Confirmation for my brother.?",
-    "file": "showthread.php@t=2078650.htm"
+    "title": "t2143695.html",
+    "file": "t2143695.html"
   },
   {
-    "title": "godsquad is having it out with the people of my college",
-    "file": "showthread.php@t=2079178.htm"
+    "title": "t2143754.html",
+    "file": "t2143754.html"
   },
   {
-    "title": "route to belief? believers only please...",
-    "file": "showthread.php@t=2079199.htm"
+    "title": "t2143783.html",
+    "file": "t2143783.html"
   },
   {
-    "title": "Hypocratic Christian Rock",
-    "file": "showthread.php@t=2079952.htm"
+    "title": "t2143794.html",
+    "file": "t2143794.html"
   },
   {
-    "title": "Dealing with religious people II",
-    "file": "showthread.php@t=2079957.htm"
+    "title": "t2143861.html",
+    "file": "t2143861.html"
   },
   {
-    "title": "Criticisms of the Jewish Talmud?",
-    "file": "showthread.php@t=2080192.htm"
+    "title": "t2144037.html",
+    "file": "t2144037.html"
   },
   {
-    "title": "Hundreds of Questions to Ask a Muslim",
-    "file": "showthread.php@t=2080222.htm"
+    "title": "t2144205.html",
+    "file": "t2144205.html"
   },
   {
-    "title": "gods plan and free will",
-    "file": "showthread.php@t=2080596.htm"
+    "title": "t2144239.html",
+    "file": "t2144239.html"
   },
   {
-    "title": "The Hell Theory",
-    "file": "showthread.php@t=2080658.htm"
+    "title": "t2144466.html",
+    "file": "t2144466.html"
   },
   {
-    "title": "So over 1 billion people believe in immaculate conception!?",
-    "file": "showthread.php@t=2080698.htm"
+    "title": "t2144509.html",
+    "file": "t2144509.html"
   },
   {
-    "title": "Wouldn't killing religious people be to their own benefit..?",
-    "file": "showthread.php@t=2080824.htm"
+    "title": "t2144552.html",
+    "file": "t2144552.html"
   },
   {
-    "title": "Do Christians actually read the New Testament or learn about the religion?",
-    "file": "showthread.php@t=2080902.htm"
+    "title": "t2144609.html",
+    "file": "t2144609.html"
   },
   {
-    "title": "why are you atheist?",
-    "file": "showthread.php@t=2081105.htm"
+    "title": "t2144978.html",
+    "file": "t2144978.html"
   },
   {
-    "title": "Binding of Isaac (Or: How far would YOU go for your faith?)",
-    "file": "showthread.php@t=2081190.htm"
+    "title": "t2145145.html",
+    "file": "t2145145.html"
   },
   {
-    "title": "Atheist/theist conversation",
-    "file": "showthread.php@t=2081363.htm"
+    "title": "t2145214.html",
+    "file": "t2145214.html"
   },
   {
-    "title": "This Forum reminds me of a story..",
-    "file": "showthread.php@t=2081484.htm"
+    "title": "t2145259.html",
+    "file": "t2145259.html"
   },
   {
-    "title": "Bible 101:How Do You Know That [NT] Verse Was Translated Right?",
-    "file": "showthread.php@t=2081542.htm"
+    "title": "t2145481.html",
+    "file": "t2145481.html"
   },
   {
-    "title": "Christianity returns to its roots",
-    "file": "showthread.php@t=2081793.htm"
+    "title": "t2145547.html",
+    "file": "t2145547.html"
   },
   {
-    "title": "20 reasons to abandon \"christianity\"",
-    "file": "showthread.php@t=2081821.htm"
+    "title": "t2145668.html",
+    "file": "t2145668.html"
   },
   {
-    "title": "Satanism, the answer to all the questions.",
-    "file": "showthread.php@t=2081960.htm"
+    "title": "t2145810.html",
+    "file": "t2145810.html"
   },
   {
-    "title": "My View on religion",
-    "file": "showthread.php@t=2081978.htm"
+    "title": "t2145903.html",
+    "file": "t2145903.html"
   },
   {
-    "title": "Why be proud?",
-    "file": "showthread.php@t=2082127.htm"
+    "title": "t2146224.html",
+    "file": "t2146224.html"
   },
   {
-    "title": "why athiests are wrong",
-    "file": "showthread.php@t=2082187.htm"
+    "title": "t2146491.html",
+    "file": "t2146491.html"
   },
   {
-    "title": "Merry Christmas",
-    "file": "showthread.php@t=2082493.htm"
+    "title": "t2146565.html",
+    "file": "t2146565.html"
   },
   {
-    "title": "I have a curious question....",
-    "file": "showthread.php@t=2082729.htm"
+    "title": "t2146567.html",
+    "file": "t2146567.html"
   },
   {
-    "title": "I can beat the shit out of your God.",
-    "file": "showthread.php@t=2082805.htm"
+    "title": "t2146687.html",
+    "file": "t2146687.html"
   },
   {
-    "title": "i ermm.  titty",
-    "file": "showthread.php@t=2083052.htm"
+    "title": "t2146892.html",
+    "file": "t2146892.html"
   },
   {
-    "title": "Answering Muslim's  Defence over the Violence in the Quaran",
-    "file": "showthread.php@t=2083432.htm"
+    "title": "t2146921.html",
+    "file": "t2146921.html"
   },
   {
-    "title": "What is God?  An answer.",
-    "file": "showthread.php@t=2083586.htm"
+    "title": "t2146957.html",
+    "file": "t2146957.html"
   },
   {
-    "title": "Arguing what we don't know??",
-    "file": "showthread.php@t=2083861.htm"
+    "title": "t2147037.html",
+    "file": "t2147037.html"
   },
   {
-    "title": "Why do people debate the existence of God?",
-    "file": "showthread.php@t=2083866.htm"
+    "title": "t2147099.html",
+    "file": "t2147099.html"
   },
   {
-    "title": "\"For I am merciful, saith the Lord, and I will not keep anger forever.\" -Jeremiah 3:1",
-    "file": "showthread.php@t=2083938.htm"
+    "title": "t2147113.html",
+    "file": "t2147113.html"
   },
   {
-    "title": "Question about God's love for us",
-    "file": "showthread.php@t=2084083.htm"
+    "title": "t2147473.html",
+    "file": "t2147473.html"
   },
   {
-    "title": "If the Bible is bullshit...",
-    "file": "showthread.php@t=2084291.htm"
+    "title": "t2147551.html",
+    "file": "t2147551.html"
   },
   {
-    "title": "Proof that God Exists",
-    "file": "showthread.php@t=2084815.htm"
+    "title": "t2147710.html",
+    "file": "t2147710.html"
   },
   {
-    "title": "Defending Islam's Reputation",
-    "file": "showthread.php@t=2084837.htm"
+    "title": "t2147787.html",
+    "file": "t2147787.html"
   },
   {
-    "title": "Do you follow a \"code\"?",
-    "file": "showthread.php@t=2084840.htm"
+    "title": "t2147985.html",
+    "file": "t2147985.html"
   },
   {
-    "title": "To Believers: Why didn't God show himself before?",
-    "file": "showthread.php@t=2085009.htm"
+    "title": "t2147999.html",
+    "file": "t2147999.html"
   },
   {
-    "title": "Where are the Dinosaurs in the bible?",
-    "file": "showthread.php@t=2085094.htm"
+    "title": "t2148048.html",
+    "file": "t2148048.html"
   },
   {
-    "title": "This lil thing purifies Karma....",
-    "file": "showthread.php@t=2085274.htm"
+    "title": "t2148194.html",
+    "file": "t2148194.html"
   },
   {
-    "title": "All \"proof\" that God exists is circumstantial at best!",
-    "file": "showthread.php@t=2085873.htm"
+    "title": "t2148328.html",
+    "file": "t2148328.html"
   },
   {
-    "title": "If God Exists...",
-    "file": "showthread.php@t=2086283.htm"
+    "title": "t2148407.html",
+    "file": "t2148407.html"
   },
   {
-    "title": "This is disconcerting.",
-    "file": "showthread.php@t=2086362.htm"
+    "title": "t2148450.html",
+    "file": "t2148450.html"
   },
   {
-    "title": "Why Atheism Must Be Abolished",
-    "file": "showthread.php@t=2086658.htm"
+    "title": "t2148749.html",
+    "file": "t2148749.html"
   },
   {
-    "title": "Beliefs on God?",
-    "file": "showthread.php@t=2086980.htm"
+    "title": "t2148795.html",
+    "file": "t2148795.html"
   },
   {
-    "title": "So I Guess This Is Part Of God's Plan Too?",
-    "file": "showthread.php@t=2087139.htm"
+    "title": "t2148918.html",
+    "file": "t2148918.html"
   },
   {
-    "title": "The Muslim interperatation of Jesus (must see)",
-    "file": "showthread.php@t=2087169.htm"
+    "title": "t2148953.html",
+    "file": "t2148953.html"
   },
   {
-    "title": "who accepts jesus",
-    "file": "showthread.php@t=2087732.htm"
+    "title": "t2148989.html",
+    "file": "t2148989.html"
   },
   {
-    "title": "Questions Regarding the Source of Morality",
-    "file": "showthread.php@t=2087735.htm"
+    "title": "t2148998.html",
+    "file": "t2148998.html"
   },
   {
-    "title": "Why I do not believe in God. Just look up in the sky (not Long)",
-    "file": "showthread.php@t=2087785.htm"
+    "title": "t2149000.html",
+    "file": "t2149000.html"
   },
   {
-    "title": "'non supernatural christianity'",
-    "file": "showthread.php@t=2088151.htm"
+    "title": "t2149347.html",
+    "file": "t2149347.html"
   },
   {
-    "title": "Christ's return",
-    "file": "showthread.php@t=2088235.htm"
+    "title": "t2149381.html",
+    "file": "t2149381.html"
   },
   {
-    "title": "Invited to a Mormon church service",
-    "file": "showthread.php@t=2088389.htm"
+    "title": "t2149479.html",
+    "file": "t2149479.html"
   },
   {
-    "title": "Western conceptions of eastern gods.",
-    "file": "showthread.php@t=2088571.htm"
+    "title": "t2149508.html",
+    "file": "t2149508.html"
   },
   {
-    "title": "Life, a never ending hell?",
-    "file": "showthread.php@t=2088624.htm"
+    "title": "t2149773.html",
+    "file": "t2149773.html"
   },
   {
-    "title": "If You Ignore Them...",
-    "file": "showthread.php@t=2088705.htm"
+    "title": "t2149861.html",
+    "file": "t2149861.html"
   },
   {
-    "title": "I'm declaring myself agnostic/ Where is God?",
-    "file": "showthread.php@t=2088977.htm"
+    "title": "t2149975.html",
+    "file": "t2149975.html"
   },
   {
-    "title": "Religulous",
-    "file": "showthread.php@t=2092333&goto=nextnewest.htm"
+    "title": "t2149987.html",
+    "file": "t2149987.html"
   },
   {
-    "title": "Four Questions",
-    "file": "showthread.php@t=2092333&goto=nextoldest.htm"
+    "title": "t2150082.html",
+    "file": "t2150082.html"
   },
   {
-    "title": "Please outline your beliefs",
-    "file": "showthread.php@t=2092333&nojs=1.htm"
+    "title": "t2150134.html",
+    "file": "t2150134.html"
   },
   {
-    "title": "Please outline your beliefs",
-    "file": "showthread.php@t=2092333&page=10&nojs=1.htm"
+    "title": "t2150182.html",
+    "file": "t2150182.html"
   },
   {
-    "title": "Please outline your beliefs - Page 10",
-    "file": "showthread.php@t=2092333&page=10.htm"
+    "title": "t2150193.html",
+    "file": "t2150193.html"
   },
   {
-    "title": "Please outline your beliefs - Page 2",
-    "file": "showthread.php@t=2092333&page=2&nojs=1.htm"
+    "title": "t2150418.html",
+    "file": "t2150418.html"
   },
   {
-    "title": "Please outline your beliefs - Page 2",
-    "file": "showthread.php@t=2092333&page=2.htm"
+    "title": "t2150693.html",
+    "file": "t2150693.html"
   },
   {
-    "title": "Please outline your beliefs - Page 3",
-    "file": "showthread.php@t=2092333&page=3&nojs=1.htm"
+    "title": "t2150743.html",
+    "file": "t2150743.html"
   },
   {
-    "title": "Please outline your beliefs - Page 3",
-    "file": "showthread.php@t=2092333&page=3.htm"
+    "title": "t2150763.html",
+    "file": "t2150763.html"
   },
   {
-    "title": "Please outline your beliefs - Page 4",
-    "file": "showthread.php@t=2092333&page=4.htm"
+    "title": "t2150872.html",
+    "file": "t2150872.html"
   },
   {
-    "title": "Please outline your beliefs - Page 5",
-    "file": "showthread.php@t=2092333&page=5.htm"
+    "title": "t2151087.html",
+    "file": "t2151087.html"
   },
   {
-    "title": "Please outline your beliefs - Page 6",
-    "file": "showthread.php@t=2092333&page=6.htm"
+    "title": "t2151312.html",
+    "file": "t2151312.html"
   },
   {
-    "title": "Please outline your beliefs - Page 7",
-    "file": "showthread.php@t=2092333&page=7.htm"
+    "title": "t2151413.html",
+    "file": "t2151413.html"
   },
   {
-    "title": "Please outline your beliefs - Page 8",
-    "file": "showthread.php@t=2092333&page=8.htm"
+    "title": "t2151432.html",
+    "file": "t2151432.html"
   },
   {
-    "title": "Please outline your beliefs",
-    "file": "showthread.php@t=2092333&page=9.htm"
+    "title": "t2151495.html",
+    "file": "t2151495.html"
   },
   {
-    "title": "Please outline your beliefs",
-    "file": "showthread.php@t=2092333.htm"
+    "title": "t2151873.html",
+    "file": "t2151873.html"
   },
   {
-    "title": "How to experience god.",
-    "file": "showthread.php@t=2102549&goto=nextnewest.htm"
+    "title": "t2152028.html",
+    "file": "t2152028.html"
   },
   {
-    "title": "Do you guys HONESTLY believe any of this?",
-    "file": "showthread.php@t=2102549&goto=nextoldest.htm"
+    "title": "t2152161.html",
+    "file": "t2152161.html"
   },
   {
-    "title": "the seven faces of God",
-    "file": "showthread.php@t=2102549&nojs=1.htm"
+    "title": "t2152224.html",
+    "file": "t2152224.html"
   },
   {
-    "title": "the seven faces of God",
-    "file": "showthread.php@t=2102549&page=10.htm"
+    "title": "t2152385.html",
+    "file": "t2152385.html"
   },
   {
-    "title": "the seven faces of God",
-    "file": "showthread.php@t=2102549&page=11.htm"
+    "title": "t2152441.html",
+    "file": "t2152441.html"
   },
   {
-    "title": "the seven faces of God - Page 12",
-    "file": "showthread.php@t=2102549&page=12&nojs=1.htm"
+    "title": "t2152487.html",
+    "file": "t2152487.html"
   },
   {
-    "title": "the seven faces of God - Page 12",
-    "file": "showthread.php@t=2102549&page=12.htm"
+    "title": "t2152520.html",
+    "file": "t2152520.html"
   },
   {
-    "title": "the seven faces of God - Page 2",
-    "file": "showthread.php@t=2102549&page=2&nojs=1.htm"
+    "title": "t2152524.html",
+    "file": "t2152524.html"
   },
   {
-    "title": "the seven faces of God - Page 2",
-    "file": "showthread.php@t=2102549&page=2.htm"
+    "title": "t2152549.html",
+    "file": "t2152549.html"
   },
   {
-    "title": "the seven faces of God - Page 3",
-    "file": "showthread.php@t=2102549&page=3&nojs=1.htm"
+    "title": "t2152551.html",
+    "file": "t2152551.html"
   },
   {
-    "title": "the seven faces of God - Page 3",
-    "file": "showthread.php@t=2102549&page=3.htm"
+    "title": "t2152632.html",
+    "file": "t2152632.html"
   },
   {
-    "title": "the seven faces of God - Page 4",
-    "file": "showthread.php@t=2102549&page=4.htm"
+    "title": "t2152799.html",
+    "file": "t2152799.html"
   },
   {
-    "title": "the seven faces of God - Page 5",
-    "file": "showthread.php@t=2102549&page=5.htm"
+    "title": "t2152837.html",
+    "file": "t2152837.html"
   },
   {
-    "title": "the seven faces of God - Page 6",
-    "file": "showthread.php@t=2102549&page=6.htm"
+    "title": "t2152883.html",
+    "file": "t2152883.html"
   },
   {
-    "title": "the seven faces of God",
-    "file": "showthread.php@t=2102549&page=7.htm"
+    "title": "t2152912.html",
+    "file": "t2152912.html"
   },
   {
-    "title": "the seven faces of God",
-    "file": "showthread.php@t=2102549&page=8.htm"
+    "title": "t2152977.html",
+    "file": "t2152977.html"
   },
   {
-    "title": "the seven faces of God",
-    "file": "showthread.php@t=2102549&page=9.htm"
+    "title": "t2153152.html",
+    "file": "t2153152.html"
   },
   {
-    "title": "the seven faces of God",
-    "file": "showthread.php@t=2102549.htm"
+    "title": "t2153214.html",
+    "file": "t2153214.html"
   },
   {
-    "title": "Freethinker Essay",
-    "file": "showthread.php@t=2126820.htm"
+    "title": "t2153298.html",
+    "file": "t2153298.html"
   },
   {
-    "title": "atheism",
-    "file": "showthread.php@t=2126920.htm"
+    "title": "t2153319.html",
+    "file": "t2153319.html"
   },
   {
-    "title": "Could you handle the truth?",
-    "file": "showthread.php@t=2126977.htm"
+    "title": "t2153322.html",
+    "file": "t2153322.html"
   },
   {
-    "title": "if you could worship anything in film/literature, what would it be?",
-    "file": "showthread.php@t=2127099.htm"
+    "title": "t2153426.html",
+    "file": "t2153426.html"
   },
   {
-    "title": "Megabyte Witchcraft, Techn0-Scry1ng",
-    "file": "showthread.php@t=2127244.htm"
+    "title": "t2153550.html",
+    "file": "t2153550.html"
   },
   {
-    "title": "armsmerchant is a pedo",
-    "file": "showthread.php@t=2128183.htm"
+    "title": "t2153665.html",
+    "file": "t2153665.html"
   },
   {
-    "title": "On Witnessing.",
-    "file": "showthread.php@t=2128186.htm"
+    "title": "t2153731.html",
+    "file": "t2153731.html"
   },
   {
-    "title": "why doesn't god apportion out suffering equally?",
-    "file": "showthread.php@t=2128324.htm"
+    "title": "t2153795.html",
+    "file": "t2153795.html"
   },
   {
-    "title": "Hedonism is my Religion; Art is my method of worship.",
-    "file": "showthread.php@t=2128526.htm"
+    "title": "t2153867.html",
+    "file": "t2153867.html"
   },
   {
-    "title": "What will it take to get religion out of our lives?",
-    "file": "showthread.php@t=2128707.htm"
+    "title": "t2153870.html",
+    "file": "t2153870.html"
   },
   {
-    "title": "Buddhism",
-    "file": "showthread.php@t=2128785.htm"
+    "title": "t2153887.html",
+    "file": "t2153887.html"
   },
   {
-    "title": "if god didn't exist...",
-    "file": "showthread.php@t=2129137.htm"
+    "title": "t2153976.html",
+    "file": "t2153976.html"
   },
   {
-    "title": "A question for Christians.",
-    "file": "showthread.php@t=2129286.htm"
+    "title": "t2154159.html",
+    "file": "t2154159.html"
   },
   {
-    "title": "Repentance steps for Rick Warren",
-    "file": "showthread.php@t=2129802.htm"
+    "title": "t2154250.html",
+    "file": "t2154250.html"
   },
   {
-    "title": "I'm thinking of becoming JW",
-    "file": "showthread.php@t=2130254.htm"
+    "title": "t2154295.html",
+    "file": "t2154295.html"
   },
   {
-    "title": "hindu rap..",
-    "file": "showthread.php@t=2130346.htm"
+    "title": "t2154406.html",
+    "file": "t2154406.html"
   },
   {
-    "title": "Abrahamic Religions Are The Bane Of Humanity.",
-    "file": "showthread.php@t=2130504.htm"
+    "title": "t2154465.html",
+    "file": "t2154465.html"
   },
   {
-    "title": "need help with paper",
-    "file": "showthread.php@t=2131161.htm"
+    "title": "t2154490.html",
+    "file": "t2154490.html"
   },
   {
-    "title": "Superior Religion?",
-    "file": "showthread.php@t=2131345.htm"
+    "title": "t2154669.html",
+    "file": "t2154669.html"
   },
   {
-    "title": "Big Bang is Best Evidence of God Since Moses Came Down From Sinai",
-    "file": "showthread.php@t=2131804.htm"
+    "title": "t2154698.html",
+    "file": "t2154698.html"
   },
   {
-    "title": "God(s) and emotion",
-    "file": "showthread.php@t=2132070.htm"
+    "title": "t2154705.html",
+    "file": "t2154705.html"
   },
   {
-    "title": "Christian god and its characteristics",
-    "file": "showthread.php@t=2132074.htm"
+    "title": "t2154730.html",
+    "file": "t2154730.html"
   },
   {
-    "title": "meet Saint Death",
-    "file": "showthread.php@t=2132302.htm"
+    "title": "t2154745.html",
+    "file": "t2154745.html"
   },
   {
-    "title": "Other people's beliefs, or lack thereof...",
-    "file": "showthread.php@t=2133264.htm"
+    "title": "t2154792.html",
+    "file": "t2154792.html"
   },
   {
-    "title": "Facts that there is a god!",
-    "file": "showthread.php@t=2133478.htm"
+    "title": "t2154862.html",
+    "file": "t2154862.html"
   },
   {
-    "title": "Misrepresentation and Insincerity",
-    "file": "showthread.php@t=2133815.htm"
+    "title": "t2154889.html",
+    "file": "t2154889.html"
   },
   {
-    "title": "Evolution in Perspective",
-    "file": "showthread.php@t=2134190.htm"
+    "title": "t2155132.html",
+    "file": "t2155132.html"
   },
   {
-    "title": "Genisis",
-    "file": "showthread.php@t=2134427.htm"
+    "title": "t2155164.html",
+    "file": "t2155164.html"
   },
   {
-    "title": "What does it mean to be \"Gods chosen people\"",
-    "file": "showthread.php@t=2134650.htm"
+    "title": "t2155439.html",
+    "file": "t2155439.html"
   },
   {
-    "title": "Finally: Mainstream Atheist Movie",
-    "file": "showthread.php@t=2134931.htm"
+    "title": "t2155482.html",
+    "file": "t2155482.html"
   },
   {
-    "title": "Dobson vs Obama",
-    "file": "showthread.php@t=2135285.htm"
+    "title": "t2155616.html",
+    "file": "t2155616.html"
   },
   {
-    "title": "Hermeticism: What's your take?",
-    "file": "showthread.php@t=2135304.htm"
+    "title": "t2155631.html",
+    "file": "t2155631.html"
   },
   {
-    "title": "Does there exist a good theistic argument anywhere?",
-    "file": "showthread.php@t=2135944.htm"
+    "title": "t2155711.html",
+    "file": "t2155711.html"
   },
   {
-    "title": "Why do people get so angry about religion?",
-    "file": "showthread.php@t=2136147.htm"
+    "title": "t2155839.html",
+    "file": "t2155839.html"
   },
   {
-    "title": "Sam Harris VS. Reza Aslan",
-    "file": "showthread.php@t=2136229.htm"
+    "title": "t2155845.html",
+    "file": "t2155845.html"
   },
   {
-    "title": "Body Piercings, Tattoos = SATAN",
-    "file": "showthread.php@t=2136342&goto=nextnewest.htm"
+    "title": "t2156276.html",
+    "file": "t2156276.html"
   },
   {
-    "title": "Masta Thief returns!!! And as a Deist  here to expose the truth of christianity=O",
-    "file": "showthread.php@t=2136342&goto=nextoldest.htm"
+    "title": "t2156372.html",
+    "file": "t2156372.html"
   },
   {
-    "title": "Which faith do you align yourself with? NEW POLL for 2008:",
-    "file": "showthread.php@t=2136342&nojs=1.htm"
+    "title": "t2156470.html",
+    "file": "t2156470.html"
   },
   {
-    "title": "Which faith do you align yourself with? NEW POLL for 2008: - Page 2",
-    "file": "showthread.php@t=2136342&page=2.htm"
+    "title": "t2156535.html",
+    "file": "t2156535.html"
   },
   {
-    "title": "Which faith do you align yourself with? NEW POLL for 2008: - Page 3",
-    "file": "showthread.php@t=2136342&page=3&nojs=1.htm"
+    "title": "t2156553.html",
+    "file": "t2156553.html"
   },
   {
-    "title": "Which faith do you align yourself with? NEW POLL for 2008: - Page 3",
-    "file": "showthread.php@t=2136342&page=3.htm"
+    "title": "t2156591.html",
+    "file": "t2156591.html"
   },
   {
-    "title": "Which faith do you align yourself with? NEW POLL for 2008: - Page 4",
-    "file": "showthread.php@t=2136342&page=4.htm"
+    "title": "t2156735.html",
+    "file": "t2156735.html"
   },
   {
-    "title": "Which faith do you align yourself with? NEW POLL for 2008: - Page 5",
-    "file": "showthread.php@t=2136342&page=5.htm"
+    "title": "t2156818.html",
+    "file": "t2156818.html"
   },
   {
-    "title": "Which faith do you align yourself with? NEW POLL for 2008: - Page 6",
-    "file": "showthread.php@t=2136342&page=6.htm"
+    "title": "t2156861.html",
+    "file": "t2156861.html"
   },
   {
-    "title": "Which faith do you align yourself with? NEW POLL for 2008: - Page 7",
-    "file": "showthread.php@t=2136342&page=7.htm"
+    "title": "t2157145.html",
+    "file": "t2157145.html"
   },
   {
-    "title": "Which faith do you align yourself with? NEW POLL for 2008: - Page 8",
-    "file": "showthread.php@t=2136342&page=8.htm"
+    "title": "t2157174.html",
+    "file": "t2157174.html"
   },
   {
-    "title": "Which faith do you align yourself with? NEW POLL for 2008: - Page 9",
-    "file": "showthread.php@t=2136342&page=9.htm"
+    "title": "t2157187.html",
+    "file": "t2157187.html"
   },
   {
-    "title": "Which faith do you align yourself with? NEW POLL for 2008:",
-    "file": "showthread.php@t=2136342.htm"
+    "title": "t2157196.html",
+    "file": "t2157196.html"
   },
   {
-    "title": "One reason i hold to believe GOD.",
-    "file": "showthread.php@t=2136350.htm"
+    "title": "t2157321.html",
+    "file": "t2157321.html"
   },
   {
-    "title": "If i go to hell, at least my friends will be there",
-    "file": "showthread.php@t=2136688.htm"
+    "title": "t2157412.html",
+    "file": "t2157412.html"
   },
   {
-    "title": "What do you think heaven looks like and what is the first thing you'd do?",
-    "file": "showthread.php@t=2137195.htm"
+    "title": "t2157537.html",
+    "file": "t2157537.html"
   },
   {
-    "title": "I ask of you",
-    "file": "showthread.php@t=2137678.htm"
+    "title": "t2157618.html",
+    "file": "t2157618.html"
   },
   {
-    "title": "The Pharmacratic Inquisition",
-    "file": "showthread.php@t=2137815.htm"
+    "title": "t2157638.html",
+    "file": "t2157638.html"
   },
   {
-    "title": "New Registrations are enabled - Page 13",
-    "file": "showthread.php@t=2138007&page=13.htm"
+    "title": "t2157659.html",
+    "file": "t2157659.html"
   },
   {
-    "title": "New Registrations are enabled - Page 2",
-    "file": "showthread.php@t=2138007&page=2.htm"
+    "title": "t2157686.html",
+    "file": "t2157686.html"
   },
   {
-    "title": "New Registrations are enabled - Page 3",
-    "file": "showthread.php@t=2138007&page=3.htm"
+    "title": "t2157788.html",
+    "file": "t2157788.html"
   },
   {
-    "title": "New Registrations are enabled",
-    "file": "showthread.php@t=2138007.htm"
+    "title": "t2157839.html",
+    "file": "t2157839.html"
   },
   {
-    "title": "How did god come to exist?",
-    "file": "showthread.php@t=2138193.htm"
+    "title": "t2157867.html",
+    "file": "t2157867.html"
   },
   {
-    "title": "Argumentum Ornithologicum - Page 2",
-    "file": "showthread.php@t=2138683&page=2.htm"
+    "title": "t2157972.html",
+    "file": "t2157972.html"
   },
   {
-    "title": "Argumentum Ornithologicum",
-    "file": "showthread.php@t=2138683.htm"
+    "title": "t2157981.html",
+    "file": "t2157981.html"
   },
   {
-    "title": "Mystery tablet could redefine Jewish-Christian links",
-    "file": "showthread.php@t=2139259.htm"
+    "title": "t2158165.html",
+    "file": "t2158165.html"
   },
   {
-    "title": "So I have some christian friends and",
-    "file": "showthread.php@t=2139738.htm"
+    "title": "t2158274.html",
+    "file": "t2158274.html"
   },
   {
-    "title": "Category reorganization - Page 11",
-    "file": "showthread.php@t=2140364&page=11.htm"
+    "title": "t2158394.html",
+    "file": "t2158394.html"
   },
   {
-    "title": "Category reorganization - Page 2",
-    "file": "showthread.php@t=2140364&page=2.htm"
+    "title": "t2158398.html",
+    "file": "t2158398.html"
   },
   {
-    "title": "Category reorganization - Page 3",
-    "file": "showthread.php@t=2140364&page=3.htm"
+    "title": "t2158406.html",
+    "file": "t2158406.html"
   },
   {
-    "title": "Category reorganization",
-    "file": "showthread.php@t=2140364.htm"
+    "title": "t2158501.html",
+    "file": "t2158501.html"
   },
   {
-    "title": "You don't have to be batshit crazy to be religious, but it sure helps",
-    "file": "showthread.php@t=2140410.htm"
+    "title": "t2158502.html",
+    "file": "t2158502.html"
   },
   {
-    "title": "I think the proof that jesus has already returned to earth is",
-    "file": "showthread.php@t=2141112.htm"
+    "title": "t2158536.html",
+    "file": "t2158536.html"
   },
   {
-    "title": "If God were human, what profession would he choose to practive?",
-    "file": "showthread.php@t=2141775&goto=nextnewest.htm"
+    "title": "t2158566.html",
+    "file": "t2158566.html"
   },
   {
-    "title": "One reason i hold to believe GOD.",
-    "file": "showthread.php@t=2141775&goto=nextoldest.htm"
+    "title": "t2158768.html",
+    "file": "t2158768.html"
   },
   {
-    "title": "please read before posting, mark II",
-    "file": "showthread.php@t=2141775.htm"
+    "title": "t2158770.html",
+    "file": "t2158770.html"
   },
   {
-    "title": "Hey Arms, I has a question",
-    "file": "showthread.php@t=2141818.htm"
+    "title": "t2158848.html",
+    "file": "t2158848.html"
   },
   {
-    "title": "Misuse Of The Term \"God\".",
-    "file": "showthread.php@t=2142427.htm"
+    "title": "t2159170.html",
+    "file": "t2159170.html"
   },
   {
-    "title": "okay, how'd we do?",
-    "file": "showthread.php@t=2142476.htm"
+    "title": "t2159187.html",
+    "file": "t2159187.html"
   },
   {
-    "title": "Qur'an and Self-Reference",
-    "file": "showthread.php@t=2142540.htm"
+    "title": "t2159208.html",
+    "file": "t2159208.html"
   },
   {
-    "title": "enlightenment and lucifer?",
-    "file": "showthread.php@t=2142990.htm"
+    "title": "t2159261.html",
+    "file": "t2159261.html"
   },
   {
-    "title": "Does Atheism Exist?",
-    "file": "showthread.php@t=2143134.htm"
+    "title": "t2159400.html",
+    "file": "t2159400.html"
   },
   {
-    "title": "seven stages of spiritual consciousness",
-    "file": "showthread.php@t=2143232.htm"
+    "title": "t2159550.html",
+    "file": "t2159550.html"
   },
   {
-    "title": "new forum title, header?",
-    "file": "showthread.php@t=2143246.htm"
+    "title": "t2159569.html",
+    "file": "t2159569.html"
   },
   {
-    "title": "God loves me!",
-    "file": "showthread.php@t=2143250.htm"
+    "title": "t2159607.html",
+    "file": "t2159607.html"
   },
   {
-    "title": "I will be gone to a Christian camp for a week. God help me.",
-    "file": "showthread.php@t=2143434.htm"
+    "title": "t2159656.html",
+    "file": "t2159656.html"
   },
   {
-    "title": "Scientology vs Anonymous?",
-    "file": "showthread.php@t=2143596.htm"
+    "title": "t2159668.html",
+    "file": "t2159668.html"
   },
   {
-    "title": "To all christians",
-    "file": "showthread.php@t=2143614.htm"
+    "title": "t2159736.html",
+    "file": "t2159736.html"
   },
   {
-    "title": "This shouldn't be real...",
-    "file": "showthread.php@t=2144037.htm"
+    "title": "t2159742.html",
+    "file": "t2159742.html"
   },
   {
-    "title": "God will fuck you up",
-    "file": "showthread.php@t=2144509.htm"
+    "title": "t2159935.html",
+    "file": "t2159935.html"
   },
   {
-    "title": "The Three Things That Built The Christian Church",
-    "file": "showthread.php@t=2144978.htm"
+    "title": "t2159958.html",
+    "file": "t2159958.html"
   },
   {
-    "title": "i hate christianity",
-    "file": "showthread.php@t=2146565.htm"
+    "title": "t2160007.html",
+    "file": "t2160007.html"
   },
   {
-    "title": "Krishnamurtis's secret",
-    "file": "showthread.php@t=2146687.htm"
+    "title": "t2160234.html",
+    "file": "t2160234.html"
   },
   {
-    "title": "What church is this?",
-    "file": "showthread.php@t=2146957.htm"
+    "title": "t2160307.html",
+    "file": "t2160307.html"
   },
   {
-    "title": "Jesus wasn't white.",
-    "file": "showthread.php@t=2148998.htm"
+    "title": "t2160416.html",
+    "file": "t2160416.html"
   },
   {
-    "title": "my explanation on the immaculate conception",
-    "file": "showthread.php@t=2149000.htm"
+    "title": "t2160488.html",
+    "file": "t2160488.html"
   },
   {
-    "title": "How To Disprove God",
-    "file": "showthread.php@t=2149347.htm"
+    "title": "t2160552.html",
+    "file": "t2160552.html"
   },
   {
-    "title": "Letting go of our Blankets (a fate worse then death?)",
-    "file": "showthread.php@t=2149479.htm"
+    "title": "t2160588.html",
+    "file": "t2160588.html"
   },
   {
-    "title": "how do you think heaven and hell work?",
-    "file": "showthread.php@t=2149975.htm"
+    "title": "t2160724.html",
+    "file": "t2160724.html"
   },
   {
-    "title": "Metaphysicist and oddballz194, not moderators anymore... - Page 11",
-    "file": "showthread.php@t=2149987&page=11.htm"
+    "title": "t2160835.html",
+    "file": "t2160835.html"
   },
   {
-    "title": "Metaphysicist and oddballz194, not moderators anymore... - Page 2",
-    "file": "showthread.php@t=2149987&page=2.htm"
+    "title": "t2160866.html",
+    "file": "t2160866.html"
   },
   {
-    "title": "Metaphysicist and oddballz194, not moderators anymore... - Page 3",
-    "file": "showthread.php@t=2149987&page=3.htm"
+    "title": "t2160874.html",
+    "file": "t2160874.html"
   },
   {
-    "title": "Metaphysicist and oddballz194, not moderators anymore...",
-    "file": "showthread.php@t=2149987.htm"
+    "title": "t2160890.html",
+    "file": "t2160890.html"
   },
   {
-    "title": "Fear of Death",
-    "file": "showthread.php@t=2150693.htm"
+    "title": "t2161044.html",
+    "file": "t2161044.html"
   },
   {
-    "title": "Lol I got arrested",
-    "file": "showthread.php@t=2150872.htm"
+    "title": "t2161058.html",
+    "file": "t2161058.html"
   },
   {
-    "title": "Gaskin on God",
-    "file": "showthread.php@t=2151087.htm"
+    "title": "t2161061.html",
+    "file": "t2161061.html"
   },
   {
-    "title": "Lol so I started a Secular Student Alliance at my school",
-    "file": "showthread.php@t=2151873.htm"
+    "title": "t2161230.html",
+    "file": "t2161230.html"
   },
   {
-    "title": "Being a responsible atheist.",
-    "file": "showthread.php@t=2152161.htm"
+    "title": "t2161293.html",
+    "file": "t2161293.html"
   },
   {
-    "title": "If all religion is obviously false...",
-    "file": "showthread.php@t=2152912.htm"
+    "title": "t2161461.html",
+    "file": "t2161461.html"
   },
   {
-    "title": "I am burnt out on bias. (trying to show everyones hipocrisy)",
-    "file": "showthread.php@t=2152977.htm"
+    "title": "t2161538.html",
+    "file": "t2161538.html"
   },
   {
-    "title": "An Idea of \"God\" with Pseudo-Pantheism",
-    "file": "showthread.php@t=2153298.htm"
+    "title": "t2161600.html",
+    "file": "t2161600.html"
   },
   {
-    "title": "Maybe!",
-    "file": "showthread.php@t=2153426.htm"
+    "title": "t2161899.html",
+    "file": "t2161899.html"
   },
   {
-    "title": "The serpent of Eden",
-    "file": "showthread.php@t=2153665.htm"
+    "title": "t2161903.html",
+    "file": "t2161903.html"
   },
   {
-    "title": "another message from God",
-    "file": "showthread.php@t=2153795.htm"
+    "title": "t2161950.html",
+    "file": "t2161950.html"
   },
   {
-    "title": "Why argue?",
-    "file": "showthread.php@t=2153867.htm"
+    "title": "t2162112.html",
+    "file": "t2162112.html"
   },
   {
-    "title": "Christianity is arguably true.",
-    "file": "showthread.php@t=2153870.htm"
+    "title": "t2162226.html",
+    "file": "t2162226.html"
   },
   {
-    "title": "christian/jewish mythology",
-    "file": "showthread.php@t=2153976.htm"
+    "title": "t2162300.html",
+    "file": "t2162300.html"
   },
   {
-    "title": "good, evil, Oneness, and the illusion of separation",
-    "file": "showthread.php@t=2154730.htm"
+    "title": "t2162369.html",
+    "file": "t2162369.html"
   },
   {
-    "title": "View of God from a Christian that doesnt go to church",
-    "file": "showthread.php@t=2155164.htm"
+    "title": "t2162449.html",
+    "file": "t2162449.html"
   },
   {
-    "title": "The Religion Game",
-    "file": "showthread.php@t=2155616.htm"
+    "title": "t2162465.html",
+    "file": "t2162465.html"
   },
   {
-    "title": "Can anyone think of some good reasons to be religious",
-    "file": "showthread.php@t=2156818.htm"
+    "title": "t2162534.html",
+    "file": "t2162534.html"
   },
   {
-    "title": "Help me believe in God",
-    "file": "showthread.php@t=2157196.htm"
+    "title": "t2162598.html",
+    "file": "t2162598.html"
   },
   {
-    "title": "Aum Shinrikyo cult",
-    "file": "showthread.php@t=2157659.htm"
+    "title": "t2162614.html",
+    "file": "t2162614.html"
   },
   {
-    "title": "What if Jesus does come back?",
-    "file": "showthread.php@t=2157686.htm"
+    "title": "t2162669.html",
+    "file": "t2162669.html"
   },
   {
-    "title": "God and Mother Earth",
-    "file": "showthread.php@t=2158768.htm"
+    "title": "t2162672.html",
+    "file": "t2162672.html"
   },
   {
-    "title": "Book of Xenu, Prophetic dreams",
-    "file": "showthread.php@t=2159208.htm"
+    "title": "t2162866.html",
+    "file": "t2162866.html"
   },
   {
-    "title": "L. Ron Hubbard commercials",
-    "file": "showthread.php@t=2159607.htm"
+    "title": "t2162943.html",
+    "file": "t2162943.html"
   },
   {
-    "title": "An analogy for God.",
-    "file": "showthread.php@t=2159656.htm"
+    "title": "t2163048.html",
+    "file": "t2163048.html"
   },
   {
-    "title": "Why did barbarians convert to Christianity?",
-    "file": "showthread.php@t=2159736.htm"
+    "title": "t2163204.html",
+    "file": "t2163204.html"
   },
   {
-    "title": "For people that know Genesis: Was the attempted murder of Isaac...",
-    "file": "showthread.php@t=2159935.htm"
+    "title": "t2163575.html",
+    "file": "t2163575.html"
   },
   {
-    "title": "why aren't there any good prohets these days",
-    "file": "showthread.php@t=2159958.htm"
+    "title": "t2163590.html",
+    "file": "t2163590.html"
   },
   {
-    "title": "Text File: Why Hell is Not Neccessarily a Bad Place",
-    "file": "showthread.php@t=2160007.htm"
+    "title": "t2163633.html",
+    "file": "t2163633.html"
   },
   {
-    "title": "Break the Walls, my Brothers",
-    "file": "showthread.php@t=2160234.htm"
+    "title": "t2163772.html",
+    "file": "t2163772.html"
   },
   {
-    "title": "What's the truth?",
-    "file": "showthread.php@t=2160307.htm"
+    "title": "t2163878.html",
+    "file": "t2163878.html"
   },
   {
-    "title": "How do Christians and Catholics feel about this?",
-    "file": "showthread.php@t=2160552.htm"
+    "title": "t2163923.html",
+    "file": "t2163923.html"
   },
   {
-    "title": "Religion as Child Abuse",
-    "file": "showthread.php@t=2160724.htm"
+    "title": "t2164008.html",
+    "file": "t2164008.html"
   },
   {
-    "title": "If God exists, he's an asshole.",
-    "file": "showthread.php@t=2160835.htm"
+    "title": "t2164066.html",
+    "file": "t2164066.html"
   },
   {
-    "title": "String theory copied from an ancient indian philosophy of dualism.",
-    "file": "showthread.php@t=2160866.htm"
+    "title": "t2164375.html",
+    "file": "t2164375.html"
   },
   {
-    "title": "Sorcery and Idoltry - The Unknown and Moses",
-    "file": "showthread.php@t=2160874.htm"
+    "title": "t2164447.html",
+    "file": "t2164447.html"
   },
   {
-    "title": "Jesus is Esus? one of satans names???? wtf,,",
-    "file": "showthread.php@t=2161058.htm"
+    "title": "t2164679.html",
+    "file": "t2164679.html"
   },
   {
-    "title": "Prayer",
-    "file": "showthread.php@t=2161061.htm"
+    "title": "t2164815.html",
+    "file": "t2164815.html"
   },
   {
-    "title": "evolution and theism",
-    "file": "showthread.php@t=2161293.htm"
+    "title": "t2164829.html",
+    "file": "t2164829.html"
   },
   {
-    "title": "Hedonistic Imperative",
-    "file": "showthread.php@t=2161461.htm"
+    "title": "t2164835.html",
+    "file": "t2164835.html"
   },
   {
-    "title": "My religion is clearly the best.",
-    "file": "showthread.php@t=2161600.htm"
+    "title": "t2164885.html",
+    "file": "t2164885.html"
   },
   {
-    "title": "Why do Muslims feel compelled to name their sons Muhommad (after their prophet)",
-    "file": "showthread.php@t=2161899.htm"
+    "title": "t2165045.html",
+    "file": "t2165045.html"
   },
   {
-    "title": "Power point on mac",
-    "file": "showthread.php@t=2162369.htm"
+    "title": "t2165069.html",
+    "file": "t2165069.html"
   },
   {
-    "title": "Agnosticism",
-    "file": "showthread.php@t=2162449.htm"
+    "title": "t2165250.html",
+    "file": "t2165250.html"
   },
   {
-    "title": "What if 'Jesus' was an imposter?",
-    "file": "showthread.php@t=2162465.htm"
+    "title": "t2165349.html",
+    "file": "t2165349.html"
   },
   {
-    "title": "Evolution vs. Creatism.",
-    "file": "showthread.php@t=2162534.htm"
+    "title": "t2165380.html",
+    "file": "t2165380.html"
   },
   {
-    "title": "another temple stampede in India",
-    "file": "showthread.php@t=2162598.htm"
+    "title": "t2165438.html",
+    "file": "t2165438.html"
   },
   {
-    "title": "God Exists",
-    "file": "showthread.php@t=2162669.htm"
+    "title": "t2165451.html",
+    "file": "t2165451.html"
   },
   {
-    "title": "In The Beggining....",
-    "file": "showthread.php@t=2162672.htm"
+    "title": "t2165472.html",
+    "file": "t2165472.html"
   },
   {
-    "title": "What you think of Prophet Muhammad (PBUH)?",
-    "file": "showthread.php@t=2163204.htm"
+    "title": "t2165559.html",
+    "file": "t2165559.html"
   },
   {
-    "title": "Opinions",
-    "file": "showthread.php@t=2164066.htm"
+    "title": "t2165725.html",
+    "file": "t2165725.html"
   },
   {
-    "title": "Out of curiosity...",
-    "file": "showthread.php@t=2165045.htm"
+    "title": "t2165827.html",
+    "file": "t2165827.html"
   },
   {
-    "title": "The external facets",
-    "file": "showthread.php@t=2165069.htm"
+    "title": "t2165847.html",
+    "file": "t2165847.html"
   },
   {
-    "title": "Why would the Israelies build another Temple.",
-    "file": "showthread.php@t=2165349.htm"
+    "title": "t2165872.html",
+    "file": "t2165872.html"
   },
   {
-    "title": "Are we fallible? If so, then we should have no law.",
-    "file": "showthread.php@t=2165559.htm"
+    "title": "t2165957.html",
+    "file": "t2165957.html"
   },
   {
-    "title": "How does faith respond to the issue of handicapped people?",
-    "file": "showthread.php@t=2165827.htm"
+    "title": "t2165959.html",
+    "file": "t2165959.html"
   },
   {
-    "title": "What exactly is Pure Consciousness?",
-    "file": "showthread.php@t=2165959.htm"
+    "title": "t2165976.html",
+    "file": "t2165976.html"
   },
   {
-    "title": "Muslims should see this",
-    "file": "showthread.php@t=2166710.htm"
+    "title": "t2166088.html",
+    "file": "t2166088.html"
   },
   {
-    "title": "My first Mac",
-    "file": "showthread.php@t=2166834.htm"
+    "title": "t2166139.html",
+    "file": "t2166139.html"
   },
   {
-    "title": "Prison break?",
-    "file": "showthread.php@t=2167197.htm"
+    "title": "t2166172.html",
+    "file": "t2166172.html"
   },
   {
-    "title": "Where to Shred This Winter",
-    "file": "showthread.php@t=2167746.htm"
+    "title": "t2166404.html",
+    "file": "t2166404.html"
   },
   {
-    "title": "Nation of Islam:Justified beliefs?",
-    "file": "showthread.php@t=2167906.htm"
+    "title": "t2166619.html",
+    "file": "t2166619.html"
   },
   {
-    "title": "Christianity is Illogical",
-    "file": "showthread.php@t=2167976.htm"
+    "title": "t2166636.html",
+    "file": "t2166636.html"
   },
   {
-    "title": "Paean to Pharmakopos",
-    "file": "showthread.php@t=2167984.htm"
+    "title": "t2166710.html",
+    "file": "t2166710.html"
   },
   {
-    "title": "outdoor cannibis growing",
-    "file": "showthread.php@t=2168093.htm"
+    "title": "t2166834.html",
+    "file": "t2166834.html"
   },
   {
-    "title": "Deer huntin'.",
-    "file": "showthread.php@t=2168154.htm"
+    "title": "t2166881.html",
+    "file": "t2166881.html"
   },
   {
-    "title": "My own adieu...",
-    "file": "showthread.php@t=2168271&goto=nextnewest.htm"
+    "title": "t2166922.html",
+    "file": "t2166922.html"
   },
   {
-    "title": "The Arrogance of Christianity",
-    "file": "showthread.php@t=2168271&goto=nextoldest.htm"
+    "title": "t2167197.html",
+    "file": "t2167197.html"
   },
   {
-    "title": "Why Believe in Christianity over all other religions? - Page 13",
-    "file": "showthread.php@t=2168271&page=13.htm"
+    "title": "t2167475.html",
+    "file": "t2167475.html"
   },
   {
-    "title": "Why Believe in Christianity over all other religions? - Page 19",
-    "file": "showthread.php@t=2168271&page=19.htm"
+    "title": "t2167477.html",
+    "file": "t2167477.html"
   },
   {
-    "title": "Why Believe in Christianity over all other religions? - Page 2",
-    "file": "showthread.php@t=2168271&page=2.htm"
+    "title": "t2167636.html",
+    "file": "t2167636.html"
   },
   {
-    "title": "Why Believe in Christianity over all other religions? - Page 3",
-    "file": "showthread.php@t=2168271&page=3&nojs=1.htm"
+    "title": "t2167746.html",
+    "file": "t2167746.html"
   },
   {
-    "title": "Why Believe in Christianity over all other religions? - Page 3",
-    "file": "showthread.php@t=2168271&page=3.htm"
+    "title": "t2167772.html",
+    "file": "t2167772.html"
   },
   {
-    "title": "Why Believe in Christianity over all other religions? - Page 4",
-    "file": "showthread.php@t=2168271&page=4.htm"
+    "title": "t2167789.html",
+    "file": "t2167789.html"
   },
   {
-    "title": "Why Believe in Christianity over all other religions? - Page 5",
-    "file": "showthread.php@t=2168271&page=5.htm"
+    "title": "t2167906.html",
+    "file": "t2167906.html"
   },
   {
-    "title": "Why Believe in Christianity over all other religions? - Page 6",
-    "file": "showthread.php@t=2168271&page=6.htm"
+    "title": "t2167976.html",
+    "file": "t2167976.html"
   },
   {
-    "title": "Why Believe in Christianity over all other religions? - Page 7",
-    "file": "showthread.php@t=2168271&page=7.htm"
+    "title": "t2167984.html",
+    "file": "t2167984.html"
   },
   {
-    "title": "Why Believe in Christianity over all other religions? - Page 8",
-    "file": "showthread.php@t=2168271&page=8.htm"
+    "title": "t2167987.html",
+    "file": "t2167987.html"
   },
   {
-    "title": "Why Believe in Christianity over all other religions?",
-    "file": "showthread.php@t=2168271.htm"
+    "title": "t2168011.html",
+    "file": "t2168011.html"
   },
   {
-    "title": "salvia divinorum cuttings?",
-    "file": "showthread.php@t=2168355.htm"
+    "title": "t2168093.html",
+    "file": "t2168093.html"
   },
   {
-    "title": "Crazy Weekend",
-    "file": "showthread.php@t=2168358.htm"
+    "title": "t2168154.html",
+    "file": "t2168154.html"
   },
   {
-    "title": "N0ob",
-    "file": "showthread.php@t=2168954.htm"
+    "title": "t2168271.html",
+    "file": "t2168271.html"
   },
   {
-    "title": "Bamboo",
-    "file": "showthread.php@t=2169160.htm"
+    "title": "t2168327.html",
+    "file": "t2168327.html"
   },
   {
-    "title": "The Illusion That We Live In",
-    "file": "showthread.php@t=2169292.htm"
+    "title": "t2168355.html",
+    "file": "t2168355.html"
   },
   {
-    "title": "Growing weed as a teen",
-    "file": "showthread.php@t=2170088.htm"
+    "title": "t2168358.html",
+    "file": "t2168358.html"
   },
   {
-    "title": "Any pagan or wiccan can tell me somethin?",
-    "file": "showthread.php@t=2170813.htm"
+    "title": "t2168455.html",
+    "file": "t2168455.html"
   },
   {
-    "title": "Anti mold bud",
-    "file": "showthread.php@t=2170997.htm"
+    "title": "t2168464.html",
+    "file": "t2168464.html"
   },
   {
-    "title": "Narasimha Pooja",
-    "file": "showthread.php@t=2171373.htm"
+    "title": "t2168494.html",
+    "file": "t2168494.html"
   },
   {
-    "title": "exactly",
-    "file": "showthread.php@t=2171435.htm"
+    "title": "t2168666.html",
+    "file": "t2168666.html"
   },
   {
-    "title": "tithing",
-    "file": "showthread.php@t=2171638.htm"
+    "title": "t2168679.html",
+    "file": "t2168679.html"
   },
   {
-    "title": "Learning a language without formal institutions",
-    "file": "showthread.php@t=2171765.htm"
+    "title": "t2168800.html",
+    "file": "t2168800.html"
   },
   {
-    "title": "People have a shallow understanding of religion",
-    "file": "showthread.php@t=2171823.htm"
+    "title": "t2168954.html",
+    "file": "t2168954.html"
   },
   {
-    "title": "The Seven Deadly Sins",
-    "file": "showthread.php@t=2171861.htm"
+    "title": "t2169160.html",
+    "file": "t2169160.html"
   },
   {
-    "title": "Religious belief is bad for people",
-    "file": "showthread.php@t=2171865.htm"
+    "title": "t2169292.html",
+    "file": "t2169292.html"
   },
   {
-    "title": "Use of Profanity in Languages",
-    "file": "showthread.php@t=2172134&goto=nextnewest.htm"
+    "title": "t2169462.html",
+    "file": "t2169462.html"
   },
   {
-    "title": "substituting english words for french",
-    "file": "showthread.php@t=2172134&goto=nextoldest.htm"
+    "title": "t2169511.html",
+    "file": "t2169511.html"
   },
   {
-    "title": "How to formulate a good argument?",
-    "file": "showthread.php@t=2172134&nojs=1.htm"
+    "title": "t2169617.html",
+    "file": "t2169617.html"
   },
   {
-    "title": "How to formulate a good argument? - Page 2",
-    "file": "showthread.php@t=2172134&page=2.htm"
+    "title": "t2169621.html",
+    "file": "t2169621.html"
   },
   {
-    "title": "How to formulate a good argument? - Page 3",
-    "file": "showthread.php@t=2172134&page=3.htm"
+    "title": "t2170088.html",
+    "file": "t2170088.html"
   },
   {
-    "title": "How to formulate a good argument?",
-    "file": "showthread.php@t=2172134.htm"
+    "title": "t2170269.html",
+    "file": "t2170269.html"
   },
   {
-    "title": "My Near Death Experiance (Hell)",
-    "file": "showthread.php@t=2172195.htm"
+    "title": "t2170813.html",
+    "file": "t2170813.html"
   },
   {
-    "title": "the Perennial Philosophy on good and evil",
-    "file": "showthread.php@t=2172890.htm"
+    "title": "t2170997.html",
+    "file": "t2170997.html"
   },
   {
-    "title": "Recently-deleted forums. threads, and posts... - Page 16",
-    "file": "showthread.php@t=2173036&page=16.htm"
+    "title": "t2171109.html",
+    "file": "t2171109.html"
   },
   {
-    "title": "Recently-deleted forums. threads, and posts... - Page 2",
-    "file": "showthread.php@t=2173036&page=2.htm"
+    "title": "t2171373.html",
+    "file": "t2171373.html"
   },
   {
-    "title": "Recently-deleted forums. threads, and posts... - Page 3",
-    "file": "showthread.php@t=2173036&page=3.htm"
+    "title": "t2171435.html",
+    "file": "t2171435.html"
   },
   {
-    "title": "Recently-deleted forums. threads, and posts...",
-    "file": "showthread.php@t=2173036.htm"
+    "title": "t2171539.html",
+    "file": "t2171539.html"
   },
   {
-    "title": "Found a movie on ancient indian philosopher - in sanskrit/with english subtitles",
-    "file": "showthread.php@t=2173177.htm"
+    "title": "t2171570.html",
+    "file": "t2171570.html"
   },
   {
-    "title": "viking religion?",
-    "file": "showthread.php@t=2173807.htm"
+    "title": "t2171638.html",
+    "file": "t2171638.html"
   },
   {
-    "title": "Where can I find these kinds of dictionaries?",
-    "file": "showthread.php@t=2173919&goto=nextnewest.htm"
+    "title": "t2171765.html",
+    "file": "t2171765.html"
   },
   {
-    "title": "Anyone speak Malay?",
-    "file": "showthread.php@t=2173919&goto=nextoldest.htm"
+    "title": "t2171823.html",
+    "file": "t2171823.html"
   },
   {
-    "title": "meh",
-    "file": "showthread.php@t=2173919&nojs=1.htm"
+    "title": "t2171861.html",
+    "file": "t2171861.html"
   },
   {
-    "title": "meh - Page 2",
-    "file": "showthread.php@t=2173919&page=2.htm"
+    "title": "t2171865.html",
+    "file": "t2171865.html"
   },
   {
-    "title": "meh",
-    "file": "showthread.php@t=2173919.htm"
+    "title": "t2171866.html",
+    "file": "t2171866.html"
   },
   {
-    "title": "Nature=Truth",
-    "file": "showthread.php@t=2174051.htm"
+    "title": "t2171900.html",
+    "file": "t2171900.html"
   },
   {
-    "title": "None are an island. -and analyzing paradox of comfort through rejection.",
-    "file": "showthread.php@t=2174067.htm"
+    "title": "t2171910.html",
+    "file": "t2171910.html"
   },
   {
-    "title": "Theory that I came up with, that makes more sense then \"big bang\"",
-    "file": "showthread.php@t=2174170.htm"
+    "title": "t2172077.html",
+    "file": "t2172077.html"
   },
   {
-    "title": "This Is What Happens When You Die  *Sacred Teachings Inside*",
-    "file": "showthread.php@t=2175218.htm"
+    "title": "t2172134.html",
+    "file": "t2172134.html"
   },
   {
-    "title": "Check out my drawings.",
-    "file": "showthread.php@t=2175298.htm"
+    "title": "t2172195.html",
+    "file": "t2172195.html"
   },
   {
-    "title": "Mod Changes - Page 2",
-    "file": "showthread.php@t=2175513&page=2.htm"
+    "title": "t2172427.html",
+    "file": "t2172427.html"
   },
   {
-    "title": "Mod Changes - Page 3",
-    "file": "showthread.php@t=2175513&page=3.htm"
+    "title": "t2172611.html",
+    "file": "t2172611.html"
   },
   {
-    "title": "Mod Changes - Page 37",
-    "file": "showthread.php@t=2175513&page=37.htm"
+    "title": "t2172890.html",
+    "file": "t2172890.html"
   },
   {
-    "title": "Mod Changes",
-    "file": "showthread.php@t=2175513.htm"
+    "title": "t2173036.html",
+    "file": "t2173036.html"
   },
   {
-    "title": "Dawn of a New Light",
-    "file": "showthread.php@t=2175893.htm"
+    "title": "t2173177.html",
+    "file": "t2173177.html"
   },
   {
-    "title": "hacking my sansa mp3 to work on mac?",
-    "file": "showthread.php@t=2175903.htm"
+    "title": "t2173587.html",
+    "file": "t2173587.html"
   },
   {
-    "title": "Athiests vs. Non-believers and my rant.",
-    "file": "showthread.php@t=2176168.htm"
+    "title": "t2173717.html",
+    "file": "t2173717.html"
   },
   {
-    "title": "A strange phenomenon",
-    "file": "showthread.php@t=2176305.htm"
+    "title": "t2173807.html",
+    "file": "t2173807.html"
   },
   {
-    "title": "uTorrent",
-    "file": "showthread.php@t=2176539.htm"
+    "title": "t2173828.html",
+    "file": "t2173828.html"
   },
   {
-    "title": "Competition",
-    "file": "showthread.php@t=2176870.htm"
+    "title": "t2173902.html",
+    "file": "t2173902.html"
   },
   {
-    "title": "\"I don't do that, I'm Christian\"",
-    "file": "showthread.php@t=2177024.htm"
+    "title": "t2173919.html",
+    "file": "t2173919.html"
   },
   {
-    "title": "The English Pagans (stone/woodhendge)",
-    "file": "showthread.php@t=2177227.htm"
+    "title": "t2174013.html",
+    "file": "t2174013.html"
   },
   {
-    "title": "There's no point for me to try and believe in God...",
-    "file": "showthread.php@t=2177236.htm"
+    "title": "t2174032.html",
+    "file": "t2174032.html"
   },
   {
-    "title": "intolerance will not be tolerated",
-    "file": "showthread.php@t=2177393.htm"
+    "title": "t2174051.html",
+    "file": "t2174051.html"
   },
   {
-    "title": "Hell does not exist",
-    "file": "showthread.php@t=2177657.htm"
+    "title": "t2174067.html",
+    "file": "t2174067.html"
   },
   {
-    "title": "Safe storage of powders",
-    "file": "showthread.php@t=2177828.htm"
+    "title": "t2174170.html",
+    "file": "t2174170.html"
   },
   {
-    "title": "Here's proof. REAL proof.",
-    "file": "showthread.php@t=2178147.htm"
+    "title": "t2174171.html",
+    "file": "t2174171.html"
   },
   {
-    "title": "Political Correctness",
-    "file": "showthread.php@t=2178581.htm"
+    "title": "t2174383.html",
+    "file": "t2174383.html"
   },
   {
-    "title": "a question towards the BB forum",
-    "file": "showthread.php@t=2178609.htm"
+    "title": "t2174423.html",
+    "file": "t2174423.html"
   },
   {
-    "title": "how accurately does south park portray scientology and mormanism?",
-    "file": "showthread.php@t=2178640.htm"
+    "title": "t2174550.html",
+    "file": "t2174550.html"
   },
   {
-    "title": "Vocabulary Primslar Style! (Japanese)",
-    "file": "showthread.php@t=2178983&goto=nextnewest.htm"
+    "title": "t2174759.html",
+    "file": "t2174759.html"
   },
   {
-    "title": "Russian translation PLEASE",
-    "file": "showthread.php@t=2178983&goto=nextoldest.htm"
+    "title": "t2174850.html",
+    "file": "t2174850.html"
   },
   {
-    "title": "which is the correct form?",
-    "file": "showthread.php@t=2178983&nojs=1.htm"
+    "title": "t2174885.html",
+    "file": "t2174885.html"
   },
   {
-    "title": "which is the correct form? - Page 2",
-    "file": "showthread.php@t=2178983&page=2.htm"
+    "title": "t2175093.html",
+    "file": "t2175093.html"
   },
   {
-    "title": "which is the correct form?",
-    "file": "showthread.php@t=2178983.htm"
+    "title": "t2175129.html",
+    "file": "t2175129.html"
   },
   {
-    "title": "\"God\" help me...",
-    "file": "showthread.php@t=2179109.htm"
+    "title": "t2175218.html",
+    "file": "t2175218.html"
   },
   {
-    "title": "Upgrading your macbook's memory",
-    "file": "showthread.php@t=2179163.htm"
+    "title": "t2175231.html",
+    "file": "t2175231.html"
   },
   {
-    "title": "Jehovas Witnesses",
-    "file": "showthread.php@t=2179293.htm"
+    "title": "t2175257.html",
+    "file": "t2175257.html"
   },
   {
-    "title": "If you are religious......",
-    "file": "showthread.php@t=2179448.htm"
+    "title": "t2175298.html",
+    "file": "t2175298.html"
   },
   {
-    "title": "simple buddhism's all it is",
-    "file": "showthread.php@t=2179539.htm"
+    "title": "t2175456.html",
+    "file": "t2175456.html"
   },
   {
-    "title": "DRM (Digital Restrictions Management) and Mac's",
-    "file": "showthread.php@t=2179543.htm"
+    "title": "t2175513.html",
+    "file": "t2175513.html"
   },
   {
-    "title": "For religous/spiritual people",
-    "file": "showthread.php@t=2179610.htm"
+    "title": "t2175549.html",
+    "file": "t2175549.html"
   },
   {
-    "title": "i can see a paradox.",
-    "file": "showthread.php@t=2179647&goto=nextnewest.htm"
+    "title": "t2175730.html",
+    "file": "t2175730.html"
   },
   {
-    "title": "How can Muslims be non-radical?",
-    "file": "showthread.php@t=2179647&goto=nextoldest.htm"
+    "title": "t2175893.html",
+    "file": "t2175893.html"
   },
   {
-    "title": "ask a jew",
-    "file": "showthread.php@t=2179647&page=10.htm"
+    "title": "t2175903.html",
+    "file": "t2175903.html"
   },
   {
-    "title": "ask a jew - Page 2",
-    "file": "showthread.php@t=2179647&page=2&nojs=1.htm"
+    "title": "t2175971.html",
+    "file": "t2175971.html"
   },
   {
-    "title": "ask a jew - Page 2",
-    "file": "showthread.php@t=2179647&page=2.htm"
+    "title": "t2176057.html",
+    "file": "t2176057.html"
   },
   {
-    "title": "ask a jew - Page 3",
-    "file": "showthread.php@t=2179647&page=3&nojs=1.htm"
+    "title": "t2176094.html",
+    "file": "t2176094.html"
   },
   {
-    "title": "ask a jew - Page 3",
-    "file": "showthread.php@t=2179647&page=3.htm"
+    "title": "t2176168.html",
+    "file": "t2176168.html"
   },
   {
-    "title": "ask a jew - Page 4",
-    "file": "showthread.php@t=2179647&page=4.htm"
+    "title": "t2176288.html",
+    "file": "t2176288.html"
   },
   {
-    "title": "ask a jew - Page 5",
-    "file": "showthread.php@t=2179647&page=5.htm"
+    "title": "t2176305.html",
+    "file": "t2176305.html"
   },
   {
-    "title": "ask a jew - Page 6",
-    "file": "showthread.php@t=2179647&page=6.htm"
+    "title": "t2176375.html",
+    "file": "t2176375.html"
   },
   {
-    "title": "ask a jew - Page 7",
-    "file": "showthread.php@t=2179647&page=7.htm"
+    "title": "t2176405.html",
+    "file": "t2176405.html"
   },
   {
-    "title": "ask a jew - Page 8",
-    "file": "showthread.php@t=2179647&page=8.htm"
+    "title": "t2176476.html",
+    "file": "t2176476.html"
   },
   {
-    "title": "ask a jew - Page 9",
-    "file": "showthread.php@t=2179647&page=9.htm"
+    "title": "t2176539.html",
+    "file": "t2176539.html"
   },
   {
-    "title": "ask a jew",
-    "file": "showthread.php@t=2179647.htm"
+    "title": "t2176870.html",
+    "file": "t2176870.html"
   },
   {
-    "title": "Im an artistic Dyslexic",
-    "file": "showthread.php@t=2179701.htm"
+    "title": "t2177024.html",
+    "file": "t2177024.html"
   },
   {
-    "title": "is this a good arguement (in your opinion), for the inexistance of heaven?",
-    "file": "showthread.php@t=2179719.htm"
+    "title": "t2177039.html",
+    "file": "t2177039.html"
   },
   {
-    "title": "World Peace",
-    "file": "showthread.php@t=2179846.htm"
+    "title": "t2177185.html",
+    "file": "t2177185.html"
   },
   {
-    "title": "i think that their is a cult in my community",
-    "file": "showthread.php@t=2180003.htm"
+    "title": "t2177227.html",
+    "file": "t2177227.html"
   },
   {
-    "title": "Obtaining Pure Oxygen",
-    "file": "showthread.php@t=2180570.htm"
+    "title": "t2177229.html",
+    "file": "t2177229.html"
   },
   {
-    "title": "The pope, wearing priceless jewels and carrying a staff made of solid gold....",
-    "file": "showthread.php@t=2180639.htm"
+    "title": "t2177236.html",
+    "file": "t2177236.html"
   },
   {
-    "title": "My Type Of Art",
-    "file": "showthread.php@t=2180714.htm"
+    "title": "t2177393.html",
+    "file": "t2177393.html"
   },
   {
-    "title": "Does anyone understand the Tao?",
-    "file": "showthread.php@t=2180799&goto=nextnewest.htm"
+    "title": "t2177433.html",
+    "file": "t2177433.html"
   },
   {
-    "title": "i can see a paradox.",
-    "file": "showthread.php@t=2180799&goto=nextoldest.htm"
+    "title": "t2177657.html",
+    "file": "t2177657.html"
   },
   {
-    "title": "The Origins of Religion, Magic Mushrooms, and The Dawn of Civilization: The Box Set",
-    "file": "showthread.php@t=2180799&nojs=1.htm"
+    "title": "t2177828.html",
+    "file": "t2177828.html"
   },
   {
-    "title": "The Origins of Religion, Magic Mushrooms, and The Dawn of Civilization: The Box Set - Page 10",
-    "file": "showthread.php@t=2180799&page=10.htm"
+    "title": "t2177894.html",
+    "file": "t2177894.html"
   },
   {
-    "title": "The Origins of Religion, Magic Mushrooms, and The Dawn of Civilization: The Box Set - Page 11",
-    "file": "showthread.php@t=2180799&page=11.htm"
+    "title": "t2178147.html",
+    "file": "t2178147.html"
   },
   {
-    "title": "The Origins of Religion, Magic Mushrooms, and The Dawn of Civilization: The Box Set - Page 12",
-    "file": "showthread.php@t=2180799&page=12.htm"
+    "title": "t2178581.html",
+    "file": "t2178581.html"
   },
   {
-    "title": "The Origins of Religion, Magic Mushrooms, and The Dawn of Civilization: The Box Set - Page 13",
-    "file": "showthread.php@t=2180799&page=13&nojs=1.htm"
+    "title": "t2178609.html",
+    "file": "t2178609.html"
   },
   {
-    "title": "The Origins of Religion, Magic Mushrooms, and The Dawn of Civilization: The Box Set - Page 13",
-    "file": "showthread.php@t=2180799&page=13.htm"
+    "title": "t2178640.html",
+    "file": "t2178640.html"
   },
   {
-    "title": "The Origins of Religion, Magic Mushrooms, and The Dawn of Civilization: The Box Set - Page 2",
-    "file": "showthread.php@t=2180799&page=2&nojs=1.htm"
+    "title": "t2178950.html",
+    "file": "t2178950.html"
   },
   {
-    "title": "The Origins of Religion, Magic Mushrooms, and The Dawn of Civilization: The Box Set - Page 2",
-    "file": "showthread.php@t=2180799&page=2.htm"
+    "title": "t2178983.html",
+    "file": "t2178983.html"
   },
   {
-    "title": "The Origins of Religion, Magic Mushrooms, and The Dawn of Civilization: The Box Set - Page 3",
-    "file": "showthread.php@t=2180799&page=3&nojs=1.htm"
+    "title": "t2179099.html",
+    "file": "t2179099.html"
   },
   {
-    "title": "The Origins of Religion, Magic Mushrooms, and The Dawn of Civilization: The Box Set - Page 3",
-    "file": "showthread.php@t=2180799&page=3.htm"
+    "title": "t2179109.html",
+    "file": "t2179109.html"
   },
   {
-    "title": "The Origins of Religion, Magic Mushrooms, and The Dawn of Civilization: The Box Set - Page 4",
-    "file": "showthread.php@t=2180799&page=4.htm"
+    "title": "t2179138.html",
+    "file": "t2179138.html"
   },
   {
-    "title": "The Origins of Religion, Magic Mushrooms, and The Dawn of Civilization: The Box Set - Page 5",
-    "file": "showthread.php@t=2180799&page=5.htm"
+    "title": "t2179163.html",
+    "file": "t2179163.html"
   },
   {
-    "title": "The Origins of Religion, Magic Mushrooms, and The Dawn of Civilization: The Box Set",
-    "file": "showthread.php@t=2180799&page=6.htm"
+    "title": "t2179250.html",
+    "file": "t2179250.html"
   },
   {
-    "title": "The Origins of Religion, Magic Mushrooms, and The Dawn of Civilization: The Box Set - Page 7",
-    "file": "showthread.php@t=2180799&page=7.htm"
+    "title": "t2179293.html",
+    "file": "t2179293.html"
   },
   {
-    "title": "The Origins of Religion, Magic Mushrooms, and The Dawn of Civilization: The Box Set - Page 8",
-    "file": "showthread.php@t=2180799&page=8.htm"
+    "title": "t2179309.html",
+    "file": "t2179309.html"
   },
   {
-    "title": "The Origins of Religion, Magic Mushrooms, and The Dawn of Civilization: The Box Set - Page 9",
-    "file": "showthread.php@t=2180799&page=9.htm"
+    "title": "t2179377.html",
+    "file": "t2179377.html"
   },
   {
-    "title": "The Origins of Religion, Magic Mushrooms, and The Dawn of Civilization: The Box Set",
-    "file": "showthread.php@t=2180799.htm"
+    "title": "t2179435.html",
+    "file": "t2179435.html"
   },
   {
-    "title": "The Bicameral Mind",
-    "file": "showthread.php@t=2180908.htm"
+    "title": "t2179448.html",
+    "file": "t2179448.html"
   },
   {
-    "title": "Photoshopped?",
-    "file": "showthread.php@t=2180977.htm"
+    "title": "t2179539.html",
+    "file": "t2179539.html"
   },
   {
-    "title": "Guidestones vandalized",
-    "file": "showthread.php@t=2181095.htm"
+    "title": "t2179543.html",
+    "file": "t2179543.html"
   },
   {
-    "title": "What do you think of this video?",
-    "file": "showthread.php@t=2181420.htm"
+    "title": "t2179599.html",
+    "file": "t2179599.html"
   },
   {
-    "title": "Is Hiv virus real??",
-    "file": "showthread.php@t=2181533.htm"
+    "title": "t2179610.html",
+    "file": "t2179610.html"
   },
   {
-    "title": "How Many Languages Do You Speak?",
-    "file": "showthread.php@t=2181537&goto=nextnewest.htm"
+    "title": "t2179624.html",
+    "file": "t2179624.html"
   },
   {
-    "title": "Russian Music!",
-    "file": "showthread.php@t=2181537&goto=nextoldest.htm"
+    "title": "t2179647.html",
+    "file": "t2179647.html"
   },
   {
-    "title": "which is the world's most difficult language?",
-    "file": "showthread.php@t=2181537&nojs=1.htm"
+    "title": "t2179701.html",
+    "file": "t2179701.html"
   },
   {
-    "title": "which is the world's most difficult language? - Page 2",
-    "file": "showthread.php@t=2181537&page=2.htm"
+    "title": "t2179719.html",
+    "file": "t2179719.html"
   },
   {
-    "title": "which is the world's most difficult language? - Page 3",
-    "file": "showthread.php@t=2181537&page=3.htm"
+    "title": "t2179765.html",
+    "file": "t2179765.html"
   },
   {
-    "title": "which is the world's most difficult language? - Page 4",
-    "file": "showthread.php@t=2181537&page=4.htm"
+    "title": "t2179846.html",
+    "file": "t2179846.html"
   },
   {
-    "title": "which is the world's most difficult language? - Page 5",
-    "file": "showthread.php@t=2181537&page=5.htm"
+    "title": "t2179918.html",
+    "file": "t2179918.html"
   },
   {
-    "title": "which is the world's most difficult language?",
-    "file": "showthread.php@t=2181537.htm"
+    "title": "t2180003.html",
+    "file": "t2180003.html"
   },
   {
-    "title": "Starting Stencils",
-    "file": "showthread.php@t=2181564.htm"
+    "title": "t2180056.html",
+    "file": "t2180056.html"
   },
   {
-    "title": "Powdering Aluminum",
-    "file": "showthread.php@t=2182210.htm"
+    "title": "t2180204.html",
+    "file": "t2180204.html"
   },
   {
-    "title": "Anyone care to discuss the utility of prayer, meditation, introspection?",
-    "file": "showthread.php@t=2182310.htm"
+    "title": "t2180477.html",
+    "file": "t2180477.html"
   },
   {
-    "title": "Plastique Thermite?",
-    "file": "showthread.php@t=2182506.htm"
+    "title": "t2180570.html",
+    "file": "t2180570.html"
   },
   {
-    "title": "A video that attacks prayer",
-    "file": "showthread.php@t=2182676.htm"
+    "title": "t2180639.html",
+    "file": "t2180639.html"
   },
   {
-    "title": "Is it wrong to believe there is no GOD...and Athiest need to form an Orginization....",
-    "file": "showthread.php@t=2182754.htm"
+    "title": "t2180714.html",
+    "file": "t2180714.html"
   },
   {
-    "title": "Nature of God?",
-    "file": "showthread.php@t=2182763.htm"
+    "title": "t2180799.html",
+    "file": "t2180799.html"
   },
   {
-    "title": "Rebel voodoo madness",
-    "file": "showthread.php@t=2182782.htm"
+    "title": "t2180908.html",
+    "file": "t2180908.html"
   },
   {
-    "title": "An atheist priest",
-    "file": "showthread.php@t=2182835.htm"
+    "title": "t2180977.html",
+    "file": "t2180977.html"
   },
   {
-    "title": "A rational proof of human secular ethics.",
-    "file": "showthread.php@t=2182957.htm"
+    "title": "t2181075.html",
+    "file": "t2181075.html"
   },
   {
-    "title": "will you people please get out of your god-box, and stop ruining everything?",
-    "file": "showthread.php@t=2182999.htm"
+    "title": "t2181095.html",
+    "file": "t2181095.html"
   },
   {
-    "title": "The Christian religion.",
-    "file": "showthread.php@t=2183365.htm"
+    "title": "t2181119.html",
+    "file": "t2181119.html"
   },
   {
-    "title": "Shouldn't those who fall under Christianity/Catholicism endorse marxism/communism?",
-    "file": "showthread.php@t=2183408.htm"
+    "title": "t2181288.html",
+    "file": "t2181288.html"
   },
   {
-    "title": "Two interesting online books",
-    "file": "showthread.php@t=2183469.htm"
+    "title": "t2181420.html",
+    "file": "t2181420.html"
   },
   {
-    "title": "there is no god",
-    "file": "showthread.php@t=2183698&goto=nextnewest.htm"
+    "title": "t2181422.html",
+    "file": "t2181422.html"
   },
   {
-    "title": "Japan",
-    "file": "showthread.php@t=2183698&goto=nextoldest.htm"
+    "title": "t2181533.html",
+    "file": "t2181533.html"
   },
   {
-    "title": "Bicameral Mind Theory - Attempt B.",
-    "file": "showthread.php@t=2183698&nojs=1.htm"
+    "title": "t2181537.html",
+    "file": "t2181537.html"
   },
   {
-    "title": "Bicameral Mind Theory - Attempt B. - Page 2",
-    "file": "showthread.php@t=2183698&page=2&nojs=1.htm"
+    "title": "t2181564.html",
+    "file": "t2181564.html"
   },
   {
-    "title": "Bicameral Mind Theory - Attempt B. - Page 2",
-    "file": "showthread.php@t=2183698&page=2.htm"
+    "title": "t2182035.html",
+    "file": "t2182035.html"
   },
   {
-    "title": "Bicameral Mind Theory - Attempt B. - Page 3",
-    "file": "showthread.php@t=2183698&page=3&nojs=1.htm"
+    "title": "t2182147.html",
+    "file": "t2182147.html"
   },
   {
-    "title": "Bicameral Mind Theory - Attempt B. - Page 3",
-    "file": "showthread.php@t=2183698&page=3.htm"
+    "title": "t2182210.html",
+    "file": "t2182210.html"
   },
   {
-    "title": "Bicameral Mind Theory - Attempt B.",
-    "file": "showthread.php@t=2183698.htm"
+    "title": "t2182310.html",
+    "file": "t2182310.html"
   },
   {
-    "title": "Have a very Half Baked Chistmas",
-    "file": "showthread.php@t=2184015.htm"
+    "title": "t2182506.html",
+    "file": "t2182506.html"
   },
   {
-    "title": "Christmas Time - My God, what are you doing?",
-    "file": "showthread.php@t=2184098.htm"
+    "title": "t2182676.html",
+    "file": "t2182676.html"
   },
   {
-    "title": "Happy Non-Denominational Celebration Day from HB",
-    "file": "showthread.php@t=2184138.htm"
+    "title": "t2182682.html",
+    "file": "t2182682.html"
   },
   {
-    "title": "Luck or grace?",
-    "file": "showthread.php@t=2184370&goto=nextnewest.htm"
+    "title": "t2182754.html",
+    "file": "t2182754.html"
   },
   {
-    "title": "Does anyone understand the Tao?",
-    "file": "showthread.php@t=2184370&goto=nextoldest.htm"
+    "title": "t2182758.html",
+    "file": "t2182758.html"
   },
   {
-    "title": "Guide on the Theistic argument",
-    "file": "showthread.php@t=2184370&nojs=1.htm"
+    "title": "t2182763.html",
+    "file": "t2182763.html"
   },
   {
-    "title": "Guide on the Theistic argument - Page 2",
-    "file": "showthread.php@t=2184370&page=2&nojs=1.htm"
+    "title": "t2182766.html",
+    "file": "t2182766.html"
   },
   {
-    "title": "Guide on the Theistic argument - Page 2",
-    "file": "showthread.php@t=2184370&page=2.htm"
+    "title": "t2182782.html",
+    "file": "t2182782.html"
   },
   {
-    "title": "Guide on the Theistic argument - Page 3",
-    "file": "showthread.php@t=2184370&page=3&nojs=1.htm"
+    "title": "t2182791.html",
+    "file": "t2182791.html"
   },
   {
-    "title": "Guide on the Theistic argument - Page 3",
-    "file": "showthread.php@t=2184370&page=3.htm"
+    "title": "t2182835.html",
+    "file": "t2182835.html"
   },
   {
-    "title": "Guide on the Theistic argument - Page 4",
-    "file": "showthread.php@t=2184370&page=4.htm"
+    "title": "t2182912.html",
+    "file": "t2182912.html"
   },
   {
-    "title": "Guide on the Theistic argument - Page 5",
-    "file": "showthread.php@t=2184370&page=5.htm"
+    "title": "t2182957.html",
+    "file": "t2182957.html"
   },
   {
-    "title": "Guide on the Theistic argument - Page 6",
-    "file": "showthread.php@t=2184370&page=6.htm"
+    "title": "t2182999.html",
+    "file": "t2182999.html"
   },
   {
-    "title": "Guide on the Theistic argument - Page 7",
-    "file": "showthread.php@t=2184370&page=7&nojs=1.htm"
+    "title": "t2183157.html",
+    "file": "t2183157.html"
   },
   {
-    "title": "Guide on the Theistic argument - Page 7",
-    "file": "showthread.php@t=2184370&page=7.htm"
+    "title": "t2183313.html",
+    "file": "t2183313.html"
   },
   {
-    "title": "Guide on the Theistic argument",
-    "file": "showthread.php@t=2184370.htm"
+    "title": "t2183365.html",
+    "file": "t2183365.html"
   },
   {
-    "title": "Free Will Paradox",
-    "file": "showthread.php@t=2184432.htm"
+    "title": "t2183408.html",
+    "file": "t2183408.html"
   },
   {
-    "title": "Needs a caption?",
-    "file": "showthread.php@t=2184439.htm"
+    "title": "t2183469.html",
+    "file": "t2183469.html"
   },
   {
-    "title": "Four Questions",
-    "file": "showthread.php@t=2184512.htm"
+    "title": "t2183645.html",
+    "file": "t2183645.html"
   },
   {
-    "title": "Religion Comes From Ancient Astrology and Sun Worship",
-    "file": "showthread.php@t=2184540.htm"
+    "title": "t2183698.html",
+    "file": "t2183698.html"
   },
   {
-    "title": "Are you a bilingual person?",
-    "file": "showthread.php@t=2184698.htm"
+    "title": "t2184015.html",
+    "file": "t2184015.html"
   },
   {
-    "title": "Talks by Ajahn Brahm",
-    "file": "showthread.php@t=2184865.htm"
+    "title": "t2184098.html",
+    "file": "t2184098.html"
   },
   {
-    "title": "The Origins of Religion, Magic Mushrooms, and The Dawn of Civilization: The Box Set",
-    "file": "showthread.php@t=2184969&goto=nextnewest.htm"
+    "title": "t2184114.html",
+    "file": "t2184114.html"
   },
   {
-    "title": "ask a jew",
-    "file": "showthread.php@t=2184969&goto=nextoldest.htm"
+    "title": "t2184138.html",
+    "file": "t2184138.html"
   },
   {
-    "title": "i can see a paradox.",
-    "file": "showthread.php@t=2184969&nojs=1.htm"
+    "title": "t2184193.html",
+    "file": "t2184193.html"
   },
   {
-    "title": "i can see a paradox. - Page 2",
-    "file": "showthread.php@t=2184969&page=2&nojs=1.htm"
+    "title": "t2184370.html",
+    "file": "t2184370.html"
   },
   {
-    "title": "i can see a paradox. - Page 2",
-    "file": "showthread.php@t=2184969&page=2.htm"
+    "title": "t2184432.html",
+    "file": "t2184432.html"
   },
   {
-    "title": "i can see a paradox. - Page 3",
-    "file": "showthread.php@t=2184969&page=3&nojs=1.htm"
+    "title": "t2184439.html",
+    "file": "t2184439.html"
   },
   {
-    "title": "i can see a paradox. - Page 3",
-    "file": "showthread.php@t=2184969&page=3.htm"
+    "title": "t2184512.html",
+    "file": "t2184512.html"
   },
   {
-    "title": "i can see a paradox. - Page 4",
-    "file": "showthread.php@t=2184969&page=4.htm"
+    "title": "t2184540.html",
+    "file": "t2184540.html"
   },
   {
-    "title": "i can see a paradox. - Page 5",
-    "file": "showthread.php@t=2184969&page=5.htm"
+    "title": "t2184648.html",
+    "file": "t2184648.html"
   },
   {
-    "title": "i can see a paradox. - Page 6",
-    "file": "showthread.php@t=2184969&page=6.htm"
+    "title": "t2184698.html",
+    "file": "t2184698.html"
   },
   {
-    "title": "i can see a paradox. - Page 7",
-    "file": "showthread.php@t=2184969&page=7.htm"
+    "title": "t2184703.html",
+    "file": "t2184703.html"
   },
   {
-    "title": "i can see a paradox.",
-    "file": "showthread.php@t=2184969.htm"
+    "title": "t2184745.html",
+    "file": "t2184745.html"
   },
   {
-    "title": "can you trick alice into giving you the password?",
-    "file": "showthread.php@t=2185005.htm"
+    "title": "t2184755.html",
+    "file": "t2184755.html"
   },
   {
-    "title": "Design a character",
-    "file": "showthread.php@t=2185104.htm"
+    "title": "t2184865.html",
+    "file": "t2184865.html"
   },
   {
-    "title": "Do you guys HONESTLY believe any of this?",
-    "file": "showthread.php@t=2185181.htm"
+    "title": "t2184969.html",
+    "file": "t2184969.html"
   },
   {
-    "title": "PSP please quickly help me!!",
-    "file": "showthread.php@t=2185280.htm"
+    "title": "t2185005.html",
+    "file": "t2185005.html"
   },
   {
-    "title": "\"Be still, and know that I am God.\"",
-    "file": "showthread.php@t=2185307.htm"
+    "title": "t2185102.html",
+    "file": "t2185102.html"
   },
   {
-    "title": "Maintenance Notice - Page 2",
-    "file": "showthread.php@t=2185433&page=2.htm"
+    "title": "t2185104.html",
+    "file": "t2185104.html"
   },
   {
-    "title": "Maintenance Notice - Page 3",
-    "file": "showthread.php@t=2185433&page=3.htm"
+    "title": "t2185149.html",
+    "file": "t2185149.html"
   },
   {
-    "title": "Maintenance Notice - Page 6",
-    "file": "showthread.php@t=2185433&page=6.htm"
+    "title": "t2185181.html",
+    "file": "t2185181.html"
   },
   {
-    "title": "Maintenance Notice",
-    "file": "showthread.php@t=2185433.htm"
+    "title": "t2185204.html",
+    "file": "t2185204.html"
   },
   {
-    "title": "Circumcision",
-    "file": "showthread.php@t=2185439.htm"
+    "title": "t2185280.html",
+    "file": "t2185280.html"
   },
   {
-    "title": "Meditation on World Peace",
-    "file": "showthread.php@t=2185443.htm"
+    "title": "t2185307.html",
+    "file": "t2185307.html"
   },
   {
-    "title": "Canada admits the U.S is using alien technology.",
-    "file": "showthread.php@t=2185487.htm"
+    "title": "t2185433.html",
+    "file": "t2185433.html"
   },
   {
-    "title": "need help with wifi hacking",
-    "file": "showthread.php@t=2185519.htm"
+    "title": "t2185439.html",
+    "file": "t2185439.html"
   },
   {
-    "title": "Drugs and Spiritual Growth",
-    "file": "showthread.php@t=2185587.htm"
+    "title": "t2185443.html",
+    "file": "t2185443.html"
   },
   {
-    "title": "The Devil",
-    "file": "showthread.php@t=2185649.htm"
+    "title": "t2185487.html",
+    "file": "t2185487.html"
   },
   {
-    "title": "so we have 51 states now?",
-    "file": "showthread.php@t=2185719.htm"
+    "title": "t2185519.html",
+    "file": "t2185519.html"
   },
   {
-    "title": "Here we go:",
-    "file": "showthread.php@t=2185808.htm"
+    "title": "t2185587.html",
+    "file": "t2185587.html"
   },
   {
-    "title": "I got the ESA a-knockin on my door from a torrent",
-    "file": "showthread.php@t=2185839.htm"
+    "title": "t2185591.html",
+    "file": "t2185591.html"
   },
   {
-    "title": "Recent Development on Obama Citizenship.",
-    "file": "showthread.php@t=2185903.htm"
+    "title": "t2185641.html",
+    "file": "t2185641.html"
   },
   {
-    "title": "Al-Qaeda is not real",
-    "file": "showthread.php@t=2186093.htm"
+    "title": "t2185649.html",
+    "file": "t2185649.html"
   },
   {
-    "title": "Are you a bilingual person?",
-    "file": "showthread.php@t=2186097&goto=nextnewest.htm"
+    "title": "t2185719.html",
+    "file": "t2185719.html"
   },
   {
-    "title": "How to formulate a good argument?",
-    "file": "showthread.php@t=2186097&goto=nextoldest.htm"
+    "title": "t2185721.html",
+    "file": "t2185721.html"
   },
   {
-    "title": "Use of Profanity in Languages",
-    "file": "showthread.php@t=2186097&nojs=1.htm"
+    "title": "t2185803.html",
+    "file": "t2185803.html"
   },
   {
-    "title": "Use of Profanity in Languages - Page 2",
-    "file": "showthread.php@t=2186097&page=2.htm"
+    "title": "t2185808.html",
+    "file": "t2185808.html"
   },
   {
-    "title": "Use of Profanity in Languages",
-    "file": "showthread.php@t=2186097.htm"
+    "title": "t2185839.html",
+    "file": "t2185839.html"
   },
   {
-    "title": "Japan",
-    "file": "showthread.php@t=2186104&goto=nextnewest.htm"
+    "title": "t2185879.html",
+    "file": "t2185879.html"
   },
   {
-    "title": "I Went To Church",
-    "file": "showthread.php@t=2186104&goto=nextoldest.htm"
+    "title": "t2185903.html",
+    "file": "t2185903.html"
   },
   {
-    "title": "Religion and Science",
-    "file": "showthread.php@t=2186104&nojs=1.htm"
+    "title": "t2185921.html",
+    "file": "t2185921.html"
   },
   {
-    "title": "Religion and Science - Page 2",
-    "file": "showthread.php@t=2186104&page=2&nojs=1.htm"
+    "title": "t2186073.html",
+    "file": "t2186073.html"
   },
   {
-    "title": "Religion and Science - Page 2",
-    "file": "showthread.php@t=2186104&page=2.htm"
+    "title": "t2186082.html",
+    "file": "t2186082.html"
   },
   {
-    "title": "Religion and Science - Page 3",
-    "file": "showthread.php@t=2186104&page=3.htm"
+    "title": "t2186090.html",
+    "file": "t2186090.html"
   },
   {
-    "title": "Religion and Science - Page 4",
-    "file": "showthread.php@t=2186104&page=4&nojs=1.htm"
+    "title": "t2186093.html",
+    "file": "t2186093.html"
   },
   {
-    "title": "Religion and Science - Page 4",
-    "file": "showthread.php@t=2186104&page=4.htm"
+    "title": "t2186097.html",
+    "file": "t2186097.html"
   },
   {
-    "title": "Religion and Science",
-    "file": "showthread.php@t=2186104.htm"
+    "title": "t2186104.html",
+    "file": "t2186104.html"
   },
   {
-    "title": "Best way to inject subtitles into an AVI?",
-    "file": "showthread.php@t=2186335.htm"
+    "title": "t2186106.html",
+    "file": "t2186106.html"
   },
   {
-    "title": "Genesis: Some questions",
-    "file": "showthread.php@t=2186343&goto=nextnewest.htm"
+    "title": "t2186119.html",
+    "file": "t2186119.html"
   },
   {
-    "title": "Which faith do you align yourself with? NEW POLL for 2008:",
-    "file": "showthread.php@t=2186343&goto=nextoldest.htm"
+    "title": "t2186193.html",
+    "file": "t2186193.html"
   },
   {
-    "title": "Body Piercings, Tattoos = SATAN",
-    "file": "showthread.php@t=2186343&nojs=1.htm"
+    "title": "t2186234.html",
+    "file": "t2186234.html"
   },
   {
-    "title": "Body Piercings, Tattoos = SATAN - Page 2",
-    "file": "showthread.php@t=2186343&page=2.htm"
+    "title": "t2186269.html",
+    "file": "t2186269.html"
   },
   {
-    "title": "Body Piercings, Tattoos = SATAN",
-    "file": "showthread.php@t=2186343.htm"
+    "title": "t2186309.html",
+    "file": "t2186309.html"
   },
   {
-    "title": "Why Aren't Computers Easier To Upgrade?",
-    "file": "showthread.php@t=2186345.htm"
+    "title": "t2186324.html",
+    "file": "t2186324.html"
   },
   {
-    "title": "tattoo design",
-    "file": "showthread.php@t=2186440.htm"
+    "title": "t2186335.html",
+    "file": "t2186335.html"
   },
   {
-    "title": "Need some help with my Network..",
-    "file": "showthread.php@t=2186481.htm"
+    "title": "t2186343.html",
+    "file": "t2186343.html"
   },
   {
-    "title": "You'll never guess what I found in my hosts file",
-    "file": "showthread.php@t=2186545.htm"
+    "title": "t2186345.html",
+    "file": "t2186345.html"
   },
   {
-    "title": "My New Knife",
-    "file": "showthread.php@t=2186573.htm"
+    "title": "t2186440.html",
+    "file": "t2186440.html"
   },
   {
-    "title": "ask a jew",
-    "file": "showthread.php@t=2186596&goto=nextnewest.htm"
+    "title": "t2186481.html",
+    "file": "t2186481.html"
   },
   {
-    "title": "various thoughts about Christianity...",
-    "file": "showthread.php@t=2186596&goto=nextoldest.htm"
+    "title": "t2186545.html",
+    "file": "t2186545.html"
   },
   {
-    "title": "How can Muslims be non-radical? - Page 2",
-    "file": "showthread.php@t=2186596&page=2&nojs=1.htm"
+    "title": "t2186573.html",
+    "file": "t2186573.html"
   },
   {
-    "title": "How can Muslims be non-radical? - Page 2",
-    "file": "showthread.php@t=2186596&page=2.htm"
+    "title": "t2186596.html",
+    "file": "t2186596.html"
   },
   {
-    "title": "How can Muslims be non-radical? - Page 3",
-    "file": "showthread.php@t=2186596&page=3&nojs=1.htm"
+    "title": "t2186622.html",
+    "file": "t2186622.html"
   },
   {
-    "title": "How can Muslims be non-radical? - Page 3",
-    "file": "showthread.php@t=2186596&page=3.htm"
+    "title": "t2186640.html",
+    "file": "t2186640.html"
   },
   {
-    "title": "How can Muslims be non-radical? - Page 4",
-    "file": "showthread.php@t=2186596&page=4&nojs=1.htm"
+    "title": "t2186654.html",
+    "file": "t2186654.html"
   },
   {
-    "title": "How can Muslims be non-radical? - Page 4",
-    "file": "showthread.php@t=2186596&page=4.htm"
+    "title": "t2186665.html",
+    "file": "t2186665.html"
   },
   {
-    "title": "How can Muslims be non-radical?",
-    "file": "showthread.php@t=2186596.htm"
+    "title": "t2186669.html",
+    "file": "t2186669.html"
   },
   {
-    "title": "Religion and Science",
-    "file": "showthread.php@t=2186640&goto=nextnewest.htm"
+    "title": "t2186692.html",
+    "file": "t2186692.html"
   },
   {
-    "title": "King James Bible",
-    "file": "showthread.php@t=2186640&goto=nextoldest.htm"
+    "title": "t2186714.html",
+    "file": "t2186714.html"
   },
   {
-    "title": "I Went To Church",
-    "file": "showthread.php@t=2186640&nojs=1.htm"
+    "title": "t2186746.html",
+    "file": "t2186746.html"
   },
   {
-    "title": "I Went To Church - Page 2",
-    "file": "showthread.php@t=2186640&page=2&nojs=1.htm"
+    "title": "t2186749.html",
+    "file": "t2186749.html"
   },
   {
-    "title": "I Went To Church - Page 2",
-    "file": "showthread.php@t=2186640&page=2.htm"
+    "title": "t2186767.html",
+    "file": "t2186767.html"
   },
   {
-    "title": "I Went To Church",
-    "file": "showthread.php@t=2186640.htm"
+    "title": "t2186785.html",
+    "file": "t2186785.html"
   },
   {
-    "title": "PSP Tools",
-    "file": "showthread.php@t=2186654.htm"
+    "title": "t2186846.html",
+    "file": "t2186846.html"
   },
   {
-    "title": "$99 pistol in Canada",
-    "file": "showthread.php@t=2186665.htm"
+    "title": "t2186850.html",
+    "file": "t2186850.html"
   },
   {
-    "title": "Anti body armour",
-    "file": "showthread.php@t=2186692.htm"
+    "title": "t2186852.html",
+    "file": "t2186852.html"
   },
   {
-    "title": "302 File moved",
-    "file": "showthread.php@t=2186693.htm"
+    "title": "t2186887.html",
+    "file": "t2186887.html"
   },
   {
-    "title": "Random Gun Porn 2: The Big Boys",
-    "file": "showthread.php@t=2186746.htm"
+    "title": "t2186901.html",
+    "file": "t2186901.html"
   },
   {
-    "title": "Post your systems!",
-    "file": "showthread.php@t=2186749.htm"
+    "title": "t2186906.html",
+    "file": "t2186906.html"
   },
   {
-    "title": "The Best laptop EVER!",
-    "file": "showthread.php@t=2186767.htm"
+    "title": "t2186981.html",
+    "file": "t2186981.html"
   },
   {
-    "title": "the secret of the alchemists",
-    "file": "showthread.php@t=2186846.htm"
+    "title": "t2186991.html",
+    "file": "t2186991.html"
   },
   {
-    "title": "Southern Baptist pedo conspiracy?",
-    "file": "showthread.php@t=2186850.htm"
+    "title": "t2186992.html",
+    "file": "t2186992.html"
   },
   {
-    "title": "Will the new proposed economic measures work",
-    "file": "showthread.php@t=2186887.htm"
+    "title": "t2187021.html",
+    "file": "t2187021.html"
   },
   {
-    "title": "Why Believe in Christianity over all other religions?",
-    "file": "showthread.php@t=2186901&goto=nextnewest.htm"
+    "title": "t2187050.html",
+    "file": "t2187050.html"
   },
   {
-    "title": "there is no god",
-    "file": "showthread.php@t=2186901&goto=nextoldest.htm"
+    "title": "t2187097.html",
+    "file": "t2187097.html"
   },
   {
-    "title": "The Arrogance of Christianity",
-    "file": "showthread.php@t=2186901&nojs=1.htm"
+    "title": "t2187128.html",
+    "file": "t2187128.html"
   },
   {
-    "title": "The Arrogance of Christianity - Page 2",
-    "file": "showthread.php@t=2186901&page=2&nojs=1.htm"
+    "title": "t2187142.html",
+    "file": "t2187142.html"
   },
   {
-    "title": "The Arrogance of Christianity - Page 2",
-    "file": "showthread.php@t=2186901&page=2.htm"
+    "title": "t2187162.html",
+    "file": "t2187162.html"
   },
   {
-    "title": "The Arrogance of Christianity - Page 3",
-    "file": "showthread.php@t=2186901&page=3&nojs=1.htm"
+    "title": "t2187192.html",
+    "file": "t2187192.html"
   },
   {
-    "title": "The Arrogance of Christianity - Page 3",
-    "file": "showthread.php@t=2186901&page=3.htm"
+    "title": "t2187218.html",
+    "file": "t2187218.html"
   },
   {
-    "title": "The Arrogance of Christianity - Page 4",
-    "file": "showthread.php@t=2186901&page=4&nojs=1.htm"
+    "title": "t2187229.html",
+    "file": "t2187229.html"
   },
   {
-    "title": "The Arrogance of Christianity - Page 4",
-    "file": "showthread.php@t=2186901&page=4.htm"
+    "title": "t2187271.html",
+    "file": "t2187271.html"
   },
   {
-    "title": "The Arrogance of Christianity",
-    "file": "showthread.php@t=2186901.htm"
+    "title": "t2187280.html",
+    "file": "t2187280.html"
   },
   {
-    "title": "Where to sell a botnet?",
-    "file": "showthread.php@t=2186906.htm"
+    "title": "t2187301.html",
+    "file": "t2187301.html"
   },
   {
-    "title": "Was invading Gaza really necessary?",
-    "file": "showthread.php@t=2186981.htm"
+    "title": "t2187302.html",
+    "file": "t2187302.html"
   },
   {
-    "title": "China",
-    "file": "showthread.php@t=2186991.htm"
+    "title": "t2187331.html",
+    "file": "t2187331.html"
   },
   {
-    "title": "302 File moved",
-    "file": "showthread.php@t=2186992&goto=newpost.htm"
+    "title": "t2187343.html",
+    "file": "t2187343.html"
   },
   {
-    "title": "Bicameral Mind Theory - Attempt B.",
-    "file": "showthread.php@t=2186992&goto=nextnewest.htm"
+    "title": "t2187391.html",
+    "file": "t2187391.html"
   },
   {
-    "title": "Religion and Science",
-    "file": "showthread.php@t=2186992&goto=nextoldest.htm"
+    "title": "t2187415.html",
+    "file": "t2187415.html"
   },
   {
-    "title": "Japan - Page 2",
-    "file": "showthread.php@t=2186992&page=2&nojs=1.htm"
+    "title": "t2187434.html",
+    "file": "t2187434.html"
   },
   {
-    "title": "Japan - Page 2",
-    "file": "showthread.php@t=2186992&page=2.htm"
+    "title": "t2187441.html",
+    "file": "t2187441.html"
   },
   {
-    "title": "Japan - Page 3",
-    "file": "showthread.php@t=2186992&page=3&nojs=1.htm"
+    "title": "t2187464.html",
+    "file": "t2187464.html"
   },
   {
-    "title": "Japan - Page 3",
-    "file": "showthread.php@t=2186992&page=3.htm"
+    "title": "t2187472.html",
+    "file": "t2187472.html"
   },
   {
-    "title": "Japan - Page 4",
-    "file": "showthread.php@t=2186992&page=4.htm"
+    "title": "t2187538.html",
+    "file": "t2187538.html"
   },
   {
-    "title": "Japan",
-    "file": "showthread.php@t=2186992.htm"
+    "title": "t2187572.html",
+    "file": "t2187572.html"
   },
   {
-    "title": "WoW questions...",
-    "file": "showthread.php@t=2187097.htm"
+    "title": "t2187656.html",
+    "file": "t2187656.html"
   },
   {
-    "title": "302 File moved",
-    "file": "showthread.php@t=2187128&goto=newpost.htm"
+    "title": "t2187695.html",
+    "file": "t2187695.html"
   },
   {
-    "title": "A perfect example of how God cannot send anyone to hell (movie links inside)",
-    "file": "showthread.php@t=2187128.htm"
+    "title": "t2187703.html",
+    "file": "t2187703.html"
   },
   {
-    "title": "302 File moved",
-    "file": "showthread.php@t=2187192&goto=newpost.htm"
+    "title": "t2187709.html",
+    "file": "t2187709.html"
   },
   {
-    "title": "I Went To Church",
-    "file": "showthread.php@t=2187192&goto=nextnewest.htm"
+    "title": "t2187757.html",
+    "file": "t2187757.html"
   },
   {
-    "title": "Religion and Fear",
-    "file": "showthread.php@t=2187192&goto=nextoldest.htm"
+    "title": "t2187783.html",
+    "file": "t2187783.html"
   },
   {
-    "title": "King James Bible",
-    "file": "showthread.php@t=2187192&nojs=1.htm"
+    "title": "t2187806.html",
+    "file": "t2187806.html"
   },
   {
-    "title": "King James Bible",
-    "file": "showthread.php@t=2187192.htm"
+    "title": "t2187808.html",
+    "file": "t2187808.html"
   },
   {
-    "title": "302 File moved",
-    "file": "showthread.php@t=2187218&goto=newpost.htm"
+    "title": "t2187856.html",
+    "file": "t2187856.html"
   },
   {
-    "title": "Guide on the Theistic argument",
-    "file": "showthread.php@t=2187218&goto=nextnewest.htm"
+    "title": "t2187863.html",
+    "file": "t2187863.html"
   },
   {
-    "title": "The Origins of Religion, Magic Mushrooms, and The Dawn of Civilization: The Box Set",
-    "file": "showthread.php@t=2187218&goto=nextoldest.htm"
+    "title": "t2187874.html",
+    "file": "t2187874.html"
   },
   {
-    "title": "Does anyone understand the Tao?",
-    "file": "showthread.php@t=2187218.htm"
+    "title": "t2187894.html",
+    "file": "t2187894.html"
   },
   {
-    "title": "Star Wars fans rejoice!",
-    "file": "showthread.php@t=2187229.htm"
+    "title": "t2187897.html",
+    "file": "t2187897.html"
   },
   {
-    "title": "bombarding Gaza",
-    "file": "showthread.php@t=2187271.htm"
+    "title": "t2187930.html",
+    "file": "t2187930.html"
   },
   {
-    "title": "I got connection on LAN, but no internet",
-    "file": "showthread.php@t=2187301.htm"
+    "title": "t2187934.html",
+    "file": "t2187934.html"
   },
   {
-    "title": "The situation in Israel.",
-    "file": "showthread.php@t=2187302.htm"
+    "title": "t2188026.html",
+    "file": "t2188026.html"
   },
   {
-    "title": "302 File moved",
-    "file": "showthread.php@t=2187331&goto=newpost.htm"
+    "title": "t2188034.html",
+    "file": "t2188034.html"
   },
   {
-    "title": "various thoughts about Christianity...",
-    "file": "showthread.php@t=2187331.htm"
+    "title": "t2188035.html",
+    "file": "t2188035.html"
   },
   {
-    "title": "Properly growing spiritually",
-    "file": "showthread.php@t=2187391.htm"
+    "title": "t2188041.html",
+    "file": "t2188041.html"
   },
   {
-    "title": "how to rip dvds to avi?",
-    "file": "showthread.php@t=2187415.htm"
+    "title": "t2188050.html",
+    "file": "t2188050.html"
   },
   {
-    "title": "Dead Rising",
-    "file": "showthread.php@t=2187464.htm"
+    "title": "t2188153.html",
+    "file": "t2188153.html"
   },
   {
-    "title": "Question About Levels On GTA 4 Online",
-    "file": "showthread.php@t=2187472.htm"
+    "title": "t2188157.html",
+    "file": "t2188157.html"
   },
   {
-    "title": "302 File moved",
-    "file": "showthread.php@t=2187538&goto=newpost.htm"
+    "title": "t2188164.html",
+    "file": "t2188164.html"
   },
   {
-    "title": "Which faith do you align yourself with? NEW POLL for 2008:",
-    "file": "showthread.php@t=2187538&goto=nextnewest.htm"
+    "title": "t2188183.html",
+    "file": "t2188183.html"
   },
   {
-    "title": "No god buses",
-    "file": "showthread.php@t=2187538&goto=nextoldest.htm"
+    "title": "t2188223.html",
+    "file": "t2188223.html"
   },
   {
-    "title": "Masta Thief returns!!! And as a Deist  here to expose the truth of christianity=O - Page 2",
-    "file": "showthread.php@t=2187538&page=2&nojs=1.htm"
+    "title": "t2188232.html",
+    "file": "t2188232.html"
   },
   {
-    "title": "Masta Thief returns!!! And as a Deist  here to expose the truth of christianity=O - Page 2",
-    "file": "showthread.php@t=2187538&page=2.htm"
+    "title": "t2188237.html",
+    "file": "t2188237.html"
   },
   {
-    "title": "Masta Thief returns!!! And as a Deist  here to expose the truth of christianity=O",
-    "file": "showthread.php@t=2187538.htm"
+    "title": "t2188263.html",
+    "file": "t2188263.html"
   },
   {
-    "title": "Database crash - Page 2",
-    "file": "showthread.php@t=2187572&page=2.htm"
+    "title": "t2188272.html",
+    "file": "t2188272.html"
   },
   {
-    "title": "Database crash - Page 3",
-    "file": "showthread.php@t=2187572&page=3.htm"
+    "title": "t2188278.html",
+    "file": "t2188278.html"
   },
   {
-    "title": "Database crash - Page 4",
-    "file": "showthread.php@t=2187572&page=4.htm"
+    "title": "t2188294.html",
+    "file": "t2188294.html"
   },
   {
-    "title": "Database crash",
-    "file": "showthread.php@t=2187572.htm"
+    "title": "t2188329.html",
+    "file": "t2188329.html"
   },
   {
-    "title": "UFO sightings, and words appearing on my wall.",
-    "file": "showthread.php@t=2187656.htm"
+    "title": "t2188408.html",
+    "file": "t2188408.html"
   },
   {
-    "title": "Sluggish PC performance...",
-    "file": "showthread.php@t=2187695.htm"
+    "title": "t2188417.html",
+    "file": "t2188417.html"
   },
   {
-    "title": "Palit Video Card Contest",
-    "file": "showthread.php@t=2187703.htm"
+    "title": "t2188432.html",
+    "file": "t2188432.html"
   },
   {
-    "title": "[UK] Police Given New Powers to hack your PC",
-    "file": "showthread.php@t=2187709.htm"
+    "title": "t2188453.html",
+    "file": "t2188453.html"
   },
   {
-    "title": "Fear 2: Project Origin",
-    "file": "showthread.php@t=2187757.htm"
+    "title": "t2188454.html",
+    "file": "t2188454.html"
   },
   {
-    "title": "Hamas Rockets",
-    "file": "showthread.php@t=2187783.htm"
+    "title": "t2188477.html",
+    "file": "t2188477.html"
   },
   {
-    "title": "Constructive games...",
-    "file": "showthread.php@t=2187806.htm"
+    "title": "t2188554.html",
+    "file": "t2188554.html"
   },
   {
-    "title": "Easy Napalm experiment",
-    "file": "showthread.php@t=2187808.htm"
+    "title": "t2188562.html",
+    "file": "t2188562.html"
   },
   {
-    "title": "302 File moved",
-    "file": "showthread.php@t=2187856&goto=newpost.htm"
+    "title": "t2188593.html",
+    "file": "t2188593.html"
   },
   {
-    "title": "Masta Thief returns!!! And as a Deist  here to expose the truth of christianity=O",
-    "file": "showthread.php@t=2187856&goto=nextnewest.htm"
+    "title": "t2188599.html",
+    "file": "t2188599.html"
   },
   {
-    "title": "Luck or grace?",
-    "file": "showthread.php@t=2187856&goto=nextoldest.htm"
+    "title": "t2188687.html",
+    "file": "t2188687.html"
   },
   {
-    "title": "No god buses",
-    "file": "showthread.php@t=2187856.htm"
+    "title": "t2188735.html",
+    "file": "t2188735.html"
   },
   {
-    "title": "firearm explosion/gun cleaning",
-    "file": "showthread.php@t=2187863.htm"
+    "title": "t2188745.html",
+    "file": "t2188745.html"
   },
   {
-    "title": "Don't you guys think this is a little messed up?",
-    "file": "showthread.php@t=2187894.htm"
+    "title": "t2188757.html",
+    "file": "t2188757.html"
   },
   {
-    "title": "can you be in the US army forever?",
-    "file": "showthread.php@t=2187897.htm"
+    "title": "t2188858.html",
+    "file": "t2188858.html"
   },
   {
-    "title": "NHL 09- greatest hockey game ever?",
-    "file": "showthread.php@t=2187930.htm"
+    "title": "t2188868.html",
+    "file": "t2188868.html"
   },
   {
-    "title": "302 File moved",
-    "file": "showthread.php@t=2187934&goto=newpost.htm"
+    "title": "t2188885.html",
+    "file": "t2188885.html"
   },
   {
-    "title": "No god buses",
-    "file": "showthread.php@t=2187934&goto=nextnewest.htm"
+    "title": "t2188886.html",
+    "file": "t2188886.html"
   },
   {
-    "title": "Guide on the Theistic argument",
-    "file": "showthread.php@t=2187934&goto=nextoldest.htm"
+    "title": "t2188892.html",
+    "file": "t2188892.html"
   },
   {
-    "title": "Luck or grace?",
-    "file": "showthread.php@t=2187934&nojs=1.htm"
-  },
-  {
-    "title": "Luck or grace?",
-    "file": "showthread.php@t=2187934.htm"
-  },
-  {
-    "title": "302 File moved",
-    "file": "showthread.php@t=2188026&goto=newpost.htm"
-  },
-  {
-    "title": "King James Bible",
-    "file": "showthread.php@t=2188026&goto=nextnewest.htm"
-  },
-  {
-    "title": "Genesis: Some questions",
-    "file": "showthread.php@t=2188026&goto=nextoldest.htm"
-  },
-  {
-    "title": "Religion and Fear",
-    "file": "showthread.php@t=2188026&nojs=1.htm"
-  },
-  {
-    "title": "Religion and Fear - Page 2",
-    "file": "showthread.php@t=2188026&page=2&nojs=1.htm"
-  },
-  {
-    "title": "Religion and Fear - Page 2",
-    "file": "showthread.php@t=2188026&page=2.htm"
-  },
-  {
-    "title": "Religion and Fear",
-    "file": "showthread.php@t=2188026.htm"
-  },
-  {
-    "title": "The Coming Age of China Superpower",
-    "file": "showthread.php@t=2188034.htm"
-  },
-  {
-    "title": "Where is everyone?",
-    "file": "showthread.php@t=2188035.htm"
-  },
-  {
-    "title": "302 File moved",
-    "file": "showthread.php@t=2188041&goto=newpost.htm"
-  },
-  {
-    "title": "Religion and Fear",
-    "file": "showthread.php@t=2188041&goto=nextnewest.htm"
-  },
-  {
-    "title": "Body Piercings, Tattoos = SATAN",
-    "file": "showthread.php@t=2188041&goto=nextoldest.htm"
-  },
-  {
-    "title": "Genesis: Some questions",
-    "file": "showthread.php@t=2188041&nojs=1.htm"
-  },
-  {
-    "title": "Genesis: Some questions - Page 2",
-    "file": "showthread.php@t=2188041&page=2&nojs=1.htm"
-  },
-  {
-    "title": "Genesis: Some questions - Page 2",
-    "file": "showthread.php@t=2188041&page=2.htm"
-  },
-  {
-    "title": "Genesis: Some questions",
-    "file": "showthread.php@t=2188041.htm"
-  },
-  {
-    "title": "Causing a minister misery!",
-    "file": "showthread.php@t=2188050.htm"
-  },
-  {
-    "title": "Netbook GAEMIN issue",
-    "file": "showthread.php@t=2188157.htm"
-  },
-  {
-    "title": "2012 doomsday",
-    "file": "showthread.php@t=2188183.htm"
-  },
-  {
-    "title": "i have revenge dripping from teeth",
-    "file": "showthread.php@t=2188223.htm"
-  },
-  {
-    "title": "Using a fake ID in Vegas",
-    "file": "showthread.php@t=2188232.htm"
-  },
-  {
-    "title": "Why is torture such a fukin big deal?",
-    "file": "showthread.php@t=2188237.htm"
-  },
-  {
-    "title": "Unwritten Man Rule....",
-    "file": "showthread.php@t=2188263.htm"
-  },
-  {
-    "title": "Working at a video store - any bad ideas?",
-    "file": "showthread.php@t=2188272.htm"
-  },
-  {
-    "title": "Is my friend mentally ill?",
-    "file": "showthread.php@t=2188278.htm"
-  },
-  {
-    "title": "Some dude needs advice.. stupid situation.",
-    "file": "showthread.php@t=2188294.htm"
-  },
-  {
-    "title": "Having a crush on your girlfriends best friend",
-    "file": "showthread.php@t=2188329.htm"
-  },
-  {
-    "title": "Neodymium Magnets and Tags",
-    "file": "showthread.php@t=2188408.htm"
-  },
-  {
-    "title": "Small gestures of affection",
-    "file": "showthread.php@t=2188417.htm"
-  },
-  {
-    "title": "hiding a gun in a car?",
-    "file": "showthread.php@t=2188432.htm"
-  },
-  {
-    "title": "A friend in need. (abusive relationship)",
-    "file": "showthread.php@t=2188453.htm"
-  },
-  {
-    "title": "Huge nipples are gross.",
-    "file": "showthread.php@t=2188454.htm"
-  },
-  {
-    "title": "Filling a chicks uterus with concrete.",
-    "file": "showthread.php@t=2188477.htm"
-  },
-  {
-    "title": "All good things must come to an end... - Page 2",
-    "file": "showthread.php@t=2188554&page=2.htm"
-  },
-  {
-    "title": "All good things must come to an end... - Page 23",
-    "file": "showthread.php@t=2188554&page=23.htm"
-  },
-  {
-    "title": "All good things must come to an end... - Page 3",
-    "file": "showthread.php@t=2188554&page=3.htm"
-  },
-  {
-    "title": "All good things must come to an end...",
-    "file": "showthread.php@t=2188554.htm"
-  },
-  {
-    "title": "Last day of Totse?",
-    "file": "showthread.php@t=2188562.htm"
-  },
-  {
-    "title": "Apparently TOTSE is closing.....",
-    "file": "showthread.php@t=2188593.htm"
-  },
-  {
-    "title": "302 File moved",
-    "file": "showthread.php@t=2188599&goto=newpost.htm"
-  },
-  {
-    "title": "there is no god",
-    "file": "showthread.php@t=2188599.htm"
-  },
-  {
-    "title": "302 File moved",
-    "file": "showthread.php@t=2188735&goto=newpost.htm"
-  },
-  {
-    "title": "Jedi Knights Religon",
-    "file": "showthread.php@t=2188735&goto=nextnewest.htm"
-  },
-  {
-    "title": "Why Believe in Christianity over all other religions?",
-    "file": "showthread.php@t=2188735&goto=nextoldest.htm"
-  },
-  {
-    "title": "My own adieu...",
-    "file": "showthread.php@t=2188735&nojs=1.htm"
-  },
-  {
-    "title": "My own adieu...",
-    "file": "showthread.php@t=2188735.htm"
-  },
-  {
-    "title": "302 File moved",
-    "file": "showthread.php@t=2188745&goto=newpost.htm"
-  },
-  {
-    "title": "My structure of why I think what I think.",
-    "file": "showthread.php@t=2188745.htm"
-  },
-  {
-    "title": "302 File moved",
-    "file": "showthread.php@t=2188858&goto=newpost.htm"
-  },
-  {
-    "title": "My structure of why I think what I think.",
-    "file": "showthread.php@t=2188858&goto=nextnewest.htm"
-  },
-  {
-    "title": "My own adieu...",
-    "file": "showthread.php@t=2188858&goto=nextoldest.htm"
-  },
-  {
-    "title": "Jedi Knights Religon",
-    "file": "showthread.php@t=2188858&nojs=1.htm"
-  },
-  {
-    "title": "Jedi Knights Religon",
-    "file": "showthread.php@t=2188858.htm"
-  },
-  {
-    "title": "302 File moved",
-    "file": "showthread.php@t=2188868&goto=newpost.htm"
-  },
-  {
-    "title": "Community",
-    "file": "showthread.php@t=2188868&goto=nextnewest.htm"
-  },
-  {
-    "title": "My structure of why I think what I think.",
-    "file": "showthread.php@t=2188868&goto=nextoldest.htm"
-  },
-  {
-    "title": "see you at zoklet.net!",
-    "file": "showthread.php@t=2188868&nojs=1.htm"
-  },
-  {
-    "title": "see you at zoklet.net!",
-    "file": "showthread.php@t=2188868.htm"
-  },
-  {
-    "title": "Community",
-    "file": "showthread.php@t=2188883&goto=newpost.htm"
-  },
-  {
-    "title": "Community",
-    "file": "showthread.php@t=2188883.htm"
-  },
-  {
-    "title": "Community",
-    "file": "showthread.php@t=2188884&goto=newpost.htm"
-  },
-  {
-    "title": "Community",
-    "file": "showthread.php@t=2188884.htm"
-  },
-  {
-    "title": "302 File moved",
-    "file": "showthread.php@t=2188885&goto=newpost.htm"
-  },
-  {
-    "title": ":(",
-    "file": "showthread.php@t=2188885.htm"
-  },
-  {
-    "title": "302 File moved",
-    "file": "showthread.php@t=2188886&goto=newpost.htm"
-  },
-  {
-    "title": "I love you totse.",
-    "file": "showthread.php@t=2188886.htm"
-  },
-  {
-    "title": "Community",
-    "file": "showthread.php@t=2188887&goto=newpost.htm"
-  },
-  {
-    "title": "Community",
-    "file": "showthread.php@t=2188887.htm"
-  },
-  {
-    "title": "Community",
-    "file": "showthread.php@t=2188888&goto=newpost.htm"
-  },
-  {
-    "title": "Community",
-    "file": "showthread.php@t=2188888.htm"
-  },
-  {
-    "title": "Community",
-    "file": "showthread.php@t=2188889&goto=newpost.htm"
-  },
-  {
-    "title": "Community",
-    "file": "showthread.php@t=2188889.htm"
-  },
-  {
-    "title": "Community",
-    "file": "showthread.php@t=2188890&goto=newpost.htm"
-  },
-  {
-    "title": "Community",
-    "file": "showthread.php@t=2188890.htm"
-  },
-  {
-    "title": "Community",
-    "file": "showthread.php@t=2188891&goto=newpost.htm"
-  },
-  {
-    "title": "Community",
-    "file": "showthread.php@t=2188891.htm"
-  },
-  {
-    "title": "302 File moved",
-    "file": "showthread.php@t=2188892&goto=newpost.htm"
-  },
-  {
-    "title": "The_Burning_Man's Final Thread at &T",
-    "file": "showthread.php@t=2188892.htm"
-  },
-  {
-    "title": "Community",
-    "file": "showthread.php@t=2188893&goto=newpost.htm"
-  },
-  {
-    "title": "Community",
-    "file": "showthread.php@t=2188893.htm"
-  },
-  {
-    "title": "Community",
-    "file": "showthread.php@t=2188894&goto=newpost.htm"
-  },
-  {
-    "title": "Community",
-    "file": "showthread.php@t=2188894.htm"
-  },
-  {
-    "title": "302 File moved",
-    "file": "showthread.php@t=2188895&goto=newpost.htm"
-  },
-  {
-    "title": "Small .22LR pistols",
-    "file": "showthread.php@t=2188895.htm"
-  },
-  {
-    "title": "Community",
-    "file": "showthread.php@t=2188896&goto=newpost.htm"
-  },
-  {
-    "title": "Community",
-    "file": "showthread.php@t=2188896.htm"
-  },
-  {
-    "title": "Community",
-    "file": "showthread.php@t=2188897&goto=newpost.htm"
-  },
-  {
-    "title": "Community",
-    "file": "showthread.php@t=2188897.htm"
-  },
-  {
-    "title": "Community",
-    "file": "showthread.php@t=42918.htm"
+    "title": "t2188895.html",
+    "file": "t2188895.html"
   }
 ];
