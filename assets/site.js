@@ -1,6 +1,6 @@
-// Randomizes the ad slots and Hot Topics box on every page load.
-// Ads are real images recovered from the archive, shown for nostalgia only -
-// no tracking, no live network calls, nothing server-side.
+// Randomizes the banner slots and Hot Topics box on every page load.
+// Banners are real images recovered from the archive, shown for nostalgia
+// only - no tracking, no live network calls, nothing server-side.
 // Hot Topics links point at the actual rebuilt thread pages in this site
 // (community/threads/) - the manifest itself is generated from the real
 // build output, so every entry here genuinely exists.
@@ -22,19 +22,19 @@ document.addEventListener("DOMContentLoaded", function () {
     // resolve correctly for pages sitting at the site root.
     const prefix = (typeof SITE_PREFIX !== "undefined") ? SITE_PREFIX : "";
 
-    // Top banner ad
-    const topSlot = document.getElementById("ad-slot-top");
-    if (topSlot && typeof AD_BANNERS !== "undefined" && AD_BANNERS.length) {
-        const pick = pickRandom(AD_BANNERS, 1)[0];
+    // Top banner
+    const topSlot = document.getElementById("banner-slot-top");
+    if (topSlot && typeof RECOVERED_BANNERS !== "undefined" && RECOVERED_BANNERS.length) {
+        const pick = pickRandom(RECOVERED_BANNERS, 1)[0];
         topSlot.src = prefix + pick;
         topSlot.style.display = "";
     }
 
     // Two sidebar mini-banners
-    if (typeof AD_MINIBANNERS !== "undefined" && AD_MINIBANNERS.length) {
-        const picks = pickRandom(AD_MINIBANNERS, 2);
-        const slot1 = document.getElementById("ad-slot-mini-1");
-        const slot2 = document.getElementById("ad-slot-mini-2");
+    if (typeof RECOVERED_MINIBANNERS !== "undefined" && RECOVERED_MINIBANNERS.length) {
+        const picks = pickRandom(RECOVERED_MINIBANNERS, 2);
+        const slot1 = document.getElementById("banner-slot-mini-1");
+        const slot2 = document.getElementById("banner-slot-mini-2");
         if (slot1 && picks[0]) { slot1.src = prefix + picks[0]; slot1.style.display = ""; }
         if (slot2 && picks[1]) { slot2.src = prefix + picks[1]; slot2.style.display = ""; }
     }
