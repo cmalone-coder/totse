@@ -1,0 +1,659 @@
+<html>
+<head>
+<title>totse.com | Recovering from a UNIX Root Compromise</title>
+<link rel="shortcut icon" href="../../../favicon.ico">
+<link rel="stylesheet" href="../../../styles/totse3.css">
+<script>const SITE_PREFIX = "../../../";</script>
+<script src="../../../assets/ads.js"></script>
+<script src="../../../assets/hot_topics.js"></script>
+</head>
+
+<body background="../../../images/t3/bg.jpg" bgcolor="#2D3856" text="#000000" link="#FFFFFF" vlink="#FFFFFF" alink="#F5F5F5" leftmargin="5" topmargin="5">
+
+<!-- Top of page table -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="center">
+		<td width="43%" align="left">
+			<img src="../../../images/t3/logos/totse01.gif" border="0" width="358" height="43">
+		</td>
+		<td width="2%">&nbsp;</td>
+		<td width="55%" align="right">
+			<!-- Top banner ad slot - filled client-side from the recovered original ad images -->
+			<div class="bannertext"><img id="ad-slot-top" src="" alt="" border="1" style="display:none;"></div>
+		</td>
+	</tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="top">
+
+		<!-- Left side navigation tabs -->
+		<td align="right" width="157">
+			<table width="157" border="0" cellpadding="0" cellspacing="0">
+				<tr><td height="50"><img src="../../../images/t3/0.gif"></td></tr>
+			</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">About</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Community</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Art</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Carnality</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Entertainment</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Science</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Society</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/0lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/0ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" height="15" background="../../../images/t3/0lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="15" background="../../../images/t3/0cm.jpg">
+									<span class="sactive">Technology</span>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/0lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/0cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+
+		</td>
+
+		<!-- Content column -->
+		<td align="left">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+				<tr>
+					<td width="13" height="11" background="../../../images/t3/3lt.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" height="11" background="../../../images/t3/3ct.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="13" height="11" background="../../../images/t3/3rt.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<!-- Ubiquitous nav menu - placeholders for now, real targets get wired up once we rebuild these sections -->
+				<tr>
+					<td width="13" height="11" background="../../../images/t3/3lm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" height="11" background="../../../images/t3/3cm.jpg" align="right">
+						<span class="navtoppipe">
+							<a href="../../../#" class="navtop">register</a> |
+							<a href="../../../#" class="navtop">bbs</a> |
+							<a href="../../../#" class="navtop">search</a> |
+							<a href="../../../#" class="navtop">rss</a> |
+							<a href="../../../#" class="navtop">faq</a> |
+							<a href="../../../#" class="navtop">about</a>
+						</span>
+					</td>
+					<td width="13" height="11" background="../../../images/t3/3rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+				<tr>
+					<td width="13" height="11" background="../../../images/t3/3lm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" height="11" background="../../../images/t3/3cm.jpg" align="right">
+						<span class="navtoppipe">
+							<a href="../../../#" class="navtop">meet up</a> |
+							<a href="../../../#" class="navtop">add to del.icio.us</a> |
+							<a href="../../../#" class="navtop">digg it</a>
+						</span>
+					</td>
+					<td width="13" height="11" background="../../../images/t3/3rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr valign="top">
+					<td width="13" background="../../../images/t3/0cm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" height="640" background="../../../images/t3/0cm.jpg">
+<h1>Recovering from a UNIX Root Compromise</h1>
+
+<div class="disclaim"><hr>
+NOTICE: TO ALL CONCERNED Certain text files and messages contained on this site deal with activities and devices which would be in violation of various Federal, State, and local laws if actually carried out or constructed. The webmasters of this site do not advocate the breaking of any law. Our text files and message bases are for informational purposes only. We recommend that you contact your local law enforcement officials before undertaking any project based upon any information obtained from this or any other web site. We do not guarantee that any of the information contained on this system is correct, workable, or factual. We are not responsible for, nor do we assume any liability for, damages resulting from the use of any information on this site. 
+<hr></div>
+
+Steps for Recovering from a UNIX Root Compromise<br>
+<br>
+This document sets out suggested steps for responding to a root compromise.<br>
+Your response should be carried out in several stages:<br>
+<br>
+A. Look For the Extent of the Intrusion.<br>
+1. Look for modifications made to system software and configuration files.<br>
+2. Look for tools installed by the intruder.<br>
+3. Similarly check other local systems.<br>
+4. Check for systems at remote sites that may be involved or affected.<br>
+<br>
+B. Recover from the Intrusion.<br>
+1. Regain control.<br>
+- Disconnect from the network if necessary. Copy log files.<br>
+- Review log files, check binaries & config files.<br>
+2. Undo intruder modifications and install a clean system.<br>
+3. Contact the sites identified in A.4.<br>
+<br>
+C. Secure Your Systems.<br>
+1. Install all system security patches.<br>
+2. Consult CERT advisories, summaries, and vendor-initiated bulletins.<br>
+3. Install security tools.<br>
+4. Enable logging.<br>
+5. Configure firewalls to defend networks.<br>
+6. Review security using our UNIX configuration guidelines.<br>
+7. Change all passwords.<br>
+8. Reconnect to the Internet.<br>
+9. Complete a CERT incident reporting form.<br>
+<br>
+In addition to the information in this document, we provide three other<br>
+companion documents that may help you:<br>
+<br>
+ftp://info.cert.org/pub/tech_tips/UNIX_configuration_guidelines<br>
+- contains suggestions for avoiding common UNIX system<br>
+configuration problems that have been exploited<br>
+<br>
+ftp://info.cert.org/pub/tech_tips/intruder_detection_checklist<br>
+- contains suggestions for determining if your system may have<br>
+been compromised<br>
+<br>
+ftp://info.cert.org/pub/tech_tips/security_tools<br>
+- contains descriptions of tools that can be used to help secure a<br>
+system and deter break-ins<br>
+<br>
+- -------------------------------------------------------------------------------<br>
+<br>
+A. Look For the Extent of the Intrusion.<br>
+<br>
+Note that all action taken during the course of an investigation should be<br>
+in accordance with your organization's policies and procedures.<br>
+<br>
+1. Look for modifications made to system software and configuration files.<br>
+<br>
+Verify all system files such as binaries and configuration files.<br>
+<br>
+We urge you to thoroughly check all your system binaries against<br>
+distribution media and the latest available patches for Trojan horse<br>
+programs. Additionally, verify your configuration files against<br>
+copies that you know to be unchanged. We have seen an extensive range<br>
+of Trojan horse binaries installed by intruders, including login, su,<br>
+telnet, in.telnetd, ftp, ls, ps, netstat, ifconfig, find, du, df,<br>
+libc, sync, inetd, and syslogd. Also check any binaries referenced in<br>
+/etc/inetd.conf, and other critical network and system programs and<br>
+shared object libraries.<br>
+<br>
+Because some Trojan horse programs could have the same timestamps as<br>
+the original binaries and give the correct sum(1) values, we<br>
+recommend you use cmp(1) to make a direct comparison of the binaries<br>
+and the original distribution media.<br>
+<br>
+Alternatively, you can check the MD5 results on suspect binaries<br>
+against a list of MD5 checksums from known good binaries. Ask your<br>
+vendor if they make MD5 checksums available for their distribution<br>
+binaries.<br>
+<br>
+In addition, tools such as Tripwire can archive MD5 checksums of<br>
+known good binaries when used immediately after a system<br>
+installation. If you use Tripwire, you should regularly maintain the<br>
+checksums on removable or read-only media. For more details on<br>
+Tripwire and MD5, see<br>
+<br>
+ftp://info.cert.org/pub/tech_tips/security_tools<br>
+<br>
+2. Look for tools installed by the intruder.<br>
+<br>
+When intruders compromise a system, there is always the potential for<br>
+them to install custom-made tools for continued monitoring or<br>
+continued access to the compromised system through Trojan horses and<br>
+packet sniffers. We encourage you to search thoroughly for such<br>
+tools.<br>
+<br>
+In particular, when a root compromise occurs, there is the potential<br>
+for intruders to install a network monitoring program, commonly<br>
+called a sniffer (or packet sniffer), to capture user account and<br>
+password information. In addition to the file checking we suggest in<br>
+step A.1., we encourage you to review CERT advisory CA-94:01,<br>
+available from<br>
+<br>
+ftp://info.cert.org/pub/cert_advisories/CA-94:01.network.monitoring.attacks<br>
+<br>
+The advisory includes a description of sniffer activity and suggested<br>
+approaches for addressing this problem. There is more information about<br>
+packet sniffers and other sites in step B.3.<br>
+<br>
+3. Similarly check other local systems.<br>
+<br>
+We encourage you to check all of your systems, not just those that<br>
+you know to be compromised. Include in your check any systems<br>
+associated with the compromised system through shared network-based<br>
+services (such as NIS and NFS) or through any method of trust (such<br>
+as systems in hosts.equiv or .rhosts files, or a Kerberos server).<br>
+<br>
+4. Check for systems at remote sites that may be involved or affected.<br>
+<br>
+We encourage you examine log files, intruder output files, and any<br>
+files modified or created during and since the time of the intrusion.<br>
+Look for information that leads you to suspect that another site may<br>
+be linked with the compromise. We often find that other sites linked<br>
+to a compromise (whether upstream or downstream of the compromise)<br>
+have often themselves been victims of a compromise. It is therefore<br>
+important that any other potential victim sites are identified and<br>
+notified as soon as possible. More details about contacting sites are<br>
+in step B.3.<br>
+<br>
+B. Recover from the Intrusion.<br>
+<br>
+Note that when following the steps below, you should also keep in mind the<br>
+steps you will take in Section C, "Secure Your Systems."<br>
+<br>
+1. Regain control.<br>
+<br>
+To regain control of your system, you may need to disconnect it from<br>
+the network or operate in single-user mode temporarily. These steps<br>
+keep users and intruders from accessing the system.<br>
+<br>
+With your system disconnected from the network, you can now<br>
+thoroughly review log files and configuration files for intruder<br>
+modifications, signs of intrusion, and configuration weaknesses.<br>
+<br>
+We recommend that you make copies of all files identified as being of<br>
+interest from steps A.1., A.2. and A.3. Retain these copies for<br>
+future reference.<br>
+<br>
+(If any files might be needed later for a legal investigation, make a<br>
+"level 0" dump of the file system; label, sign, and date the dump;<br>
+and keep the dump in a secure location to maintain and preserve the<br>
+integrity of the evidence while it is in your custody.)<br>
+<br>
+We can help you recover from this intrusion by offering technical<br>
+advice when possible and helping you coordinate with other sites.<br>
+<br>
+2. Undo intruder modifications and install a clean system.<br>
+<br>
+We encourage you to restore your system using known, clean binaries.<br>
+If restoring from a backup, ensure that the backup itself is from an<br>
+uncompromised machine. (Keep in mind that you could re-introduce a<br>
+vulnerability that would allow an intruder to gain unauthorized<br>
+access.) If you have any doubts, re-install the operating system<br>
+using the original distribution media.<br>
+<br>
+Try to identify and remove (or patch) any vulnerability used to gain<br>
+access. Ensure that all relevant security patches are applied to the<br>
+restored system, and install all applicable security tools (see<br>
+sections C.1. and C.3. below).<br>
+<br>
+Configure your system to offer only the network services that the<br>
+system is intended to offer, and no others. Check to ensure that<br>
+there are no weaknesses in the configuration files for those<br>
+services, and that those services are available only to the intended<br>
+set of other systems.<br>
+<br>
+Take an MD5 checksum snapshot of the newly restored system using a<br>
+tool such as Tripwire.<br>
+<br>
+3. Contact the sites identified in A.4.<br>
+<br>
+* What to tell sites:<br>
+<br>
+If you find any evidence of compromise or intruder activity at any<br>
+other sites during the activities described in step A.4., contact<br>
+those sites. Tell them what you have found, explain that this may<br>
+be a sign of compromise or intruder activity at their site, and<br>
+suggest that they may wish to take steps to determine if/how the<br>
+compromise occurred and prevent a recurrence.<br>
+<br>
+We would appreciate a Cc to cert@cert.org on any correspondence. If<br>
+you like, you can let the site know that you are working with us on<br>
+on this incident (please include the assigned CERT tracking number<br>
+in the subject line of your messages). Also let them know that we<br>
+can offer assistance on how to recover from the compromise.<br>
+<br>
+* How to get contact information:<br>
+<br>
+If you need contact information for a particular site, we encourage<br>
+you to use the InterNIC's whois database. For help in doing so, you<br>
+may want to consult<br>
+<br>
+ftp://info.cert.org/pub/whois_how_to<br>
+<br>
+You may also want to check the contacts list of the Forum of<br>
+Incident Response and Security Teams (FIRST), available in<br>
+<br>
+ftp://info.cert.org/pub/FIRST/first-contacts<br>
+http://www.first.org/team-info/team-contact<br>
+<br>
+If you are still unsure of a site or contact details, please get in<br>
+touch with us.<br>
+<br>
+* How to mail password files:<br>
+<br>
+If you include a password file in a mail message, ensure that you<br>
+do not further propagate passwords traversing the Internet in<br>
+cleartext. You can do this by stripping the passwords from the<br>
+original files using the following script:<br>
+<br>
+% awk -F: '{ print $1":(deleted):"$3":"$4":"$5":"$6":"$7 }' \<br>
+$file &gt; $file.stripped<br>
+<br>
+If you need any assistance in identifying the site to which a<br>
+password file belongs, please contact us.<br>
+<br>
+* What to do about packet sniffers:<br>
+<br>
+If you find that a packet sniffer has been installed on your<br>
+systems, we strongly urge you to examine the output file from the<br>
+sniffer to determine what other machines are at risk. Machines at<br>
+risk are those that appear in the destination field of a captured<br>
+packet. You can quickly obtain a list of these machines by<br>
+executing the following command:<br>
+<br>
+% grep PATH: $sniffer_log_file | awk '{print $4}' | \<br>
+awk -F\( '{print $1}'| sort -u<br>
+<br>
+Note that the above command works with many packet sniffers that we<br>
+have seen. It is based on the assumption that first two lines for<br>
+each logged packet appear in the packet sniffer output log as:<br>
+<br>
+-- TCP/IP LOG -- TM: Tue Nov 15 15:12:29 --<br>
+PATH: not_at_risk.foo.edu(1567) =&gt; at_risk.foo.edu(telnet)<br>
+<br>
+You may need to adjust the command for your particular case.<br>
+<br>
+You should be aware that there may be other machines at risk in<br>
+addition to the ones that appear in the sniffer log. This may be<br>
+because the intruder has obtained previous sniffer logs from your<br>
+systems, or through other attack methods.<br>
+<br>
+Please send us a list of all hosts you know to be affected; this<br>
+helps us determine the scope of the problem.<br>
+<br>
+C. Secure Your Systems.<br>
+<br>
+1. Install all system security patches.<br>
+<br>
+We strongly encourage you to ensure that each of your systems has the<br>
+full set of security patches. This is a major step in defending your<br>
+systems from attack, and its importance cannot be overstated. We<br>
+recommend that you contact your vendor for a list of the latest<br>
+available security patches and instructions for obtaining them.<br>
+<br>
+2. Consult CERT advisories, summaries, and vendor-initiated bulletins.<br>
+<br>
+We encourage you to consult past CERT advisories, summaries, and<br>
+vendor-initiated bulletins, and follow the instructions that are<br>
+relevant to your particular configuration. Be sure that you have<br>
+installed all applicable patches or workarounds described in the CERT<br>
+publications, including the broadly applicable advisories on services<br>
+such as rdist, tftp, ftpd, httpd (World Wide Web), anonymous FTP, NFS,<br>
+and sendmail.<br>
+<br>
+Remember to check the advisories periodically to ensure that<br>
+you have the most current information.<br>
+<br>
+Past CERT advisories are available from<br>
+<br>
+ftp://info.cert.org/pub/cert_advisories/<br>
+<br>
+An index of all advisories is in the 01-README file in that<br>
+directory.<br>
+<br>
+Past CERT summaries are available from<br>
+<br>
+ftp://info.cert.org/pub/cert_summaries/<br>
+<br>
+Vendor-initiated bulletins are available from<br>
+<br>
+ftp://info.cert.org/pub/cert_bulletins/<br>
+<br>
+An index of all the vendor-initiated bulletins is in the 01-README<br>
+file in that directory.<br>
+<br>
+3. Install security tools.<br>
+<br>
+Consider using some of the software security tools that are available,<br>
+such as Tripwire, COPS, and the TCP wrapper package. See<br>
+<br>
+ftp://info.cert.org/pub/tools/<br>
+ftp://info.cert.org/pub/tech_tips/security_tools<br>
+<br>
+Please browse through the other information in our FTP archive<br>
+(ftp://info.cert.org/pub/) for other tools and information.<br>
+<br>
+4. Enable logging.<br>
+<br>
+Make sure that logging/auditing/accounting programs are enabled (for<br>
+example, process accounting) and that they are set to an appropriate<br>
+level (for example, sendmail logging should be level 9 or higher).<br>
+Backup your logs, and/or consider writing your logs to a different<br>
+machine or a secure logging host.<br>
+<br>
+5. Configure firewalls to defend networks.<br>
+<br>
+Consider filtering certain TCP/IP services at your firewall or<br>
+router. For some suggestions, please refer to "Packet Filtering for<br>
+Firewall Systems," available from<br>
+<br>
+ftp://info.cert.org/pub/tech_tips/packet_filtering<br>
+<br>
+6. Review security using our UNIX configuration guidelines.<br>
+<br>
+To help you assess the security of your system(s), please refer to our<br>
+UNIX configuration guidelines and our security tools document, which<br>
+may be useful to you in checking your system for vulnerabilities that<br>
+are often exploited by intruders. The guidelines are available from<br>
+<br>
+ftp://info.cert.org/pub/tech_tips/UNIX_configuration_guidelines<br>
+<br>
+and the list of security tools is available from<br>
+<br>
+ftp://info.cert.org/pub/tech_tips/security_tools<br>
+<br>
+7. Change all passwords.<br>
+<br>
+After all security holes or configuration problems have been patched<br>
+or corrected, we suggest that you change the passwords of ALL<br>
+accounts on the affected system(s). Ensure that passwords for all<br>
+accounts are not easy to guess. You may want to consider using<br>
+vendor-supplied or third-party tools to enforce your password<br>
+policies.<br>
+<br>
+8. Reconnect to the Internet.<br>
+<br>
+If you disconnected from the Internet, the best time to reconnect is<br>
+after you have completed all the steps listed above.<br>
+<br>
+9. Complete a CERT incident reporting form.<br>
+<br>
+To report a computer security incident to the CERT Coordination<br>
+Center, please complete and return a copy of our Incident Reporting<br>
+Form, available from<br>
+<br>
+ftp://info.cert.org/pub/incident_reporting_form<br>
+<br>
+The information on the form helps us provide the best assistance, as<br>
+it enables us to understand the scope of the incident, to determine<br>
+if your incident may be related to any other incidents that have been<br>
+reported to us, and to identify trends in intruder activities.<br>
+<br>
+-------------------------------------------------------------------------<br>
+<br>
+Copyright 1996 Carnegie Mellon University<br>
+<br>
+This material may be reproduced and distributed without permission provided<br>
+it is used for noncommercial purposes and the copyright statement is<br>
+included.<br>
+<br>
+CERT is a service mark of Carnegie Mellon University.<br>
+<br>
+The CERT Coordination Center is sponsored by the Defense Advanced Research<br>
+Projects Agency (DARPA). The Software Engineering Institute is sponsored by<br>
+the U.S. Department of Defense.
+					</td>
+					<td width="13" background="../../../images/t3/0rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr valign="top">
+					<td width="13" background="../../../images/t3/0cm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" background="../../../images/t3/0cm.jpg">
+						<center>
+							&nbsp;<br>
+							<span class="copyright">To the best of our knowledge, the text on this page may be freely reproduced and distributed.</span>
+							<br>&nbsp;<br>
+						</center>
+					</td>
+					<td width="13" background="../../../images/t3/0rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr valign="bottom">
+					<td width="13" height="15" background="../../../images/t3/3lm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="96%" height="15" background="../../../images/t3/3cm.jpg">
+						&nbsp;
+						<center><span class="navbotpipe"><span class="navbot"><a href="../../../#" class="navbot">About</a> | <a href="../../../#" class="navbot">Community</a> | <a href="../../../#" class="navbot">Art</a> | <a href="../../../#" class="navbot">Carnality</a> | <a href="../../../#" class="navbot">Entertainment</a> | <a href="../../../#" class="navbot">Science</a> | <a href="../../../#" class="navbot">Society</a> | <a href="../../../#" class="navbot">Technology</a></span></span></center>
+					</td>
+					<td width="13" height="15" background="../../../images/t3/3rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr>
+					<td width="13" height="17" background="../../../images/t3/3lb.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="96%" height="17" background="../../../images/t3/3cb.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="13" height="17" background="../../../images/t3/3rb.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+			</table>
+		</td>
+
+		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots -->
+		<td width="20%" align="center" valign="top">
+
+			<table width="170" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="13" height="11" background="../../../images/t3/1rt.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+				<tr>
+					<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="144" background="../../../images/t3/1cm.jpg">
+						<center><span class="hottop">Hot Topics</span></center>
+						<table border="0" cellpadding="1" cellspacing="2" width="100%" id="hot-topics-list">
+							<!-- populated client-side with 10 random real threads from the archive -->
+						</table>
+					</td>
+					<td width="13" background="../../../images/t3/1rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+				<tr>
+					<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="13" height="17" background="../../../images/t3/1rb.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+			</table>
+
+			&nbsp;
+
+			<!-- Recovered original ad images, rotated randomly client-side - nostalgia only, not live/tracking ads -->
+			<center>
+				<img id="ad-slot-mini-1" src="" alt="" border="1" style="display:none;">
+				<br>&nbsp;<br>
+				<img id="ad-slot-mini-2" src="" alt="" border="1" style="display:none;">
+			</center>
+
+		</td>
+	</tr>
+</table>
+
+<script src="../../../assets/site.js"></script>
+
+</body>
+</html>

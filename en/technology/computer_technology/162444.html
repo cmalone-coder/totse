@@ -1,0 +1,701 @@
+<html>
+<head>
+<title>totse.com | UNIX IP Stack Tuning Guide v2.7</title>
+<link rel="shortcut icon" href="../../../favicon.ico">
+<link rel="stylesheet" href="../../../styles/totse3.css">
+<script>const SITE_PREFIX = "../../../";</script>
+<script src="../../../assets/ads.js"></script>
+<script src="../../../assets/hot_topics.js"></script>
+</head>
+
+<body background="../../../images/t3/bg.jpg" bgcolor="#2D3856" text="#000000" link="#FFFFFF" vlink="#FFFFFF" alink="#F5F5F5" leftmargin="5" topmargin="5">
+
+<!-- Top of page table -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="center">
+		<td width="43%" align="left">
+			<img src="../../../images/t3/logos/totse01.gif" border="0" width="358" height="43">
+		</td>
+		<td width="2%">&nbsp;</td>
+		<td width="55%" align="right">
+			<!-- Top banner ad slot - filled client-side from the recovered original ad images -->
+			<div class="bannertext"><img id="ad-slot-top" src="" alt="" border="1" style="display:none;"></div>
+		</td>
+	</tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="top">
+
+		<!-- Left side navigation tabs -->
+		<td align="right" width="157">
+			<table width="157" border="0" cellpadding="0" cellspacing="0">
+				<tr><td height="50"><img src="../../../images/t3/0.gif"></td></tr>
+			</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">About</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Community</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Art</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Carnality</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Entertainment</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Science</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Society</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/0lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/0ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" height="15" background="../../../images/t3/0lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="15" background="../../../images/t3/0cm.jpg">
+									<span class="sactive">Technology</span>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/0lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/0cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+
+		</td>
+
+		<!-- Content column -->
+		<td align="left">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+				<tr>
+					<td width="13" height="11" background="../../../images/t3/3lt.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" height="11" background="../../../images/t3/3ct.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="13" height="11" background="../../../images/t3/3rt.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<!-- Ubiquitous nav menu - placeholders for now, real targets get wired up once we rebuild these sections -->
+				<tr>
+					<td width="13" height="11" background="../../../images/t3/3lm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" height="11" background="../../../images/t3/3cm.jpg" align="right">
+						<span class="navtoppipe">
+							<a href="../../../#" class="navtop">register</a> |
+							<a href="../../../#" class="navtop">bbs</a> |
+							<a href="../../../#" class="navtop">search</a> |
+							<a href="../../../#" class="navtop">rss</a> |
+							<a href="../../../#" class="navtop">faq</a> |
+							<a href="../../../#" class="navtop">about</a>
+						</span>
+					</td>
+					<td width="13" height="11" background="../../../images/t3/3rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+				<tr>
+					<td width="13" height="11" background="../../../images/t3/3lm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" height="11" background="../../../images/t3/3cm.jpg" align="right">
+						<span class="navtoppipe">
+							<a href="../../../#" class="navtop">meet up</a> |
+							<a href="../../../#" class="navtop">add to del.icio.us</a> |
+							<a href="../../../#" class="navtop">digg it</a>
+						</span>
+					</td>
+					<td width="13" height="11" background="../../../images/t3/3rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr valign="top">
+					<td width="13" background="../../../images/t3/0cm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" height="640" background="../../../images/t3/0cm.jpg">
+<h1>UNIX IP Stack Tuning Guide v2.7</h1>
+<h2>by Rob Thomas</h2>
+
+
+<p>
+UNIX IP Stack Tuning Guide v2.7 </p>
+
+<p>By Rob Thomas, robt@cymru.com, 03 DEC 2000 </p>
+
+<p>Introduction</p>
+
+<p>The purpose of this document is to strengthen the UNIX IP stack against a variety of attack types prevalent on the Internet today. This document details the settings recommended for UNIX servers designed to provide network intensive services such as HTTP or routing (firewall services). This document covers the following UNIX variants: </p>
+
+<p>A. IBM AIX 4.3.X <br>
+B. Sun Solaris 7 <br>
+C. Compaq Tru64 UNIX 5.X <br>
+D. HP HP-UX 11.0 (research ongoing) <br>
+E. Linux kernel 2.2 (tested both SuSE Linux 7.0 and RedHat 7.0) <br>
+F. FreeBSD <br>
+G. IRIX 6.5.10 </p>
+
+<p>Windows NT/2000 will be covered in future releases. 
+The tuning changes noted below will not remain across reboots. Thus, these changes should be added to a runtime commands file so that the changes are enacted at each boot. </p>
+
+<p>AIX - /etc/rc.net <br>
+Solaris - /etc/init.d/inetinit <br>
+Tru64 UNIX - Use the sysconfigdb or dxkerneltuner command <br>
+HP-UX - /etc/rc.config.d/nddconf <br>
+Linux kernel 2.2 - /etc/sysctl.conf <br>
+FreeBSD - /etc/rc.conf <br>
+IRIX - Use the systune command </p>
+
+<p>No tuning steps should be undertaken without a keen insight into the purpose and effect of such steps. It is assumed that the personnel who undertake such tuning are well versed in the UNIX kernel with bit-level understanding of TCP/IP and the RFCs that govern IP behavior. </p>
+
+<p>Revision History</p>
+
+<p>Version 1.0 - Created the AIX IP stack tuning guide<br>
+Version 2.0 - Added Solaris and additional AIX tuning tips, reformated doc<br>
+Version 2.2 - Added ARP tuning tips<br>
+Version 2.3 - Added Compaq Tru64 UNIX SYN defense tips<br>
+Version 2.4 - Added HP HP-UX 11.0 tuning tips<br>
+Version 2.5 - Added Linux and FreeBSD tuning tips<br>
+Version 2.6 - Added IRIX 6.5.10 and additional FreeBSD tuning tips<br>
+Version 2.7 - Added additional HP-UX 11.0 tuning tips</p>
+
+<p>Credits</p>
+
+<p>This has become a global effort, and this document is made more rich and valuable thanks to the input of several very helpful folks! Kudos and lauds for the folks below: </p>
+
+<p>Thanks to the Compaq Software Security Response Team for the Tru64 UNIX SYN flood defense pointers. </p>
+
+<p>For HP-UX 11.0, thanks to Tom Harrold for running ndd over and over at my every request. :-) </p>
+
+<p>Thanks to Klaus Moeller for a copious collection of Linux tuning tips. </p>
+
+<p>Thanks to Andrew Korty for the FreeBSD tuning tips. </p>
+
+<p>Thanks to Christian Lambert and Alex Icasiano of SGI for the IRIX tuning tips. </p>
+
+<p>Thanks, as always, to the FIRST community for support, questions, and feedback. </p>
+
+<p>General IP Stack Tuning Recommendations</p>
+
+<p>1. TCP send and receive spaces </p>
+
+<p>The TCP send and receive spaces directly effect the TCP window size parameter. An increased window size will allow for more efficient transfers, particularly bulk transfers such as FTP and HTTP. The default for each is not optimal, and should be increased to 32768 bytes. This value should not be increased above 64K bytes unless the implications of RFC1323 and RFC2018 are fully understood and support for both is enabled. </p>
+
+<p>Do not enable RFC1323 without also enabling support for RFC2018. Remember, pipe drain is a Bad Thing[tm]. </p>
+
+<p>A. AIX </p>
+
+<p>/usr/sbin/no -o tcp_sendspace=32768 <br>
+/usr/sbin/no -o tcp_recvspace=32768 </p>
+
+<p>B. Solaris </p>
+
+<p>/usr/sbin/ndd -set /dev/tcp tcp_xmit_hiwat 32768 <br>
+/usr/sbin/ndd -set /dev/tcp tcp_recv_hiwat 32768 </p>
+
+<p>C. Tru64 UNIX </p>
+
+<p>No tuning recommendations. </p>
+
+<p>D. HP-UX </p>
+
+<p>The TCP send and receive spaces are set to 32768 by default </p>
+
+<p>E. Linux kernel 2.2 </p>
+
+<p>While Linux automagically assigns the TCP send and receive spaces, support for both RFC1323 (large window support, net.ipv4.tcp_window_scaling) and RFC2018 (SACK support, net.ipv4.tcp_sack) are enabled by default. </p>
+
+<p>F. FreeBSD </p>
+
+<p>sysctl -w net.inet.tcp.sendspace=32768 <br>
+sysctl -w net.inet.tcp.recvspace=32768 </p>
+
+<p>G. IRIX </p>
+
+<p>The default settings for IRIX are 64Kbytes for both the TCP send and receive spaces. </p>
+
+<p>2. Socket queue defense against SYN attacks </p>
+
+<p>While great effort is undertaken to defend any network from those with malicious intent, several ports (largely TCP) must remain open to conduct business. Internet vandals may attempt to exploit these ports to launch a denial of service attack. One of the most popular attacks remains the SYN flood, wherein the socket queue of the attacked host is overwhelmed with bogus connection requests. To defend against such attacks, certain UNIX variants maintain separate queues for inbound socket connection requests. One queue is for half-open sockets (SYN received, SYN|ACK sent), the other queue for fully-open sockets awaiting an accept() call from the application. These two queues should be increased so that an attack of low to moderate intensity will have little to no effect on the stability or availability of the server. </p>
+
+<p>A. AIX </p>
+
+<p>/usr/sbin/no -o clean_partial_conns=1 </p>
+
+<p>This setting will instruct the kernel to randomly remove half-open sockets from the q0 queue to make room for new sockets. </p>
+
+<p>B. Solaris </p>
+
+<p>/usr/sbin/ndd -set /dev/tcp tcp_conn_req_max_q 1024 </p>
+
+<p>The q queue holds sockets awaiting an accept() call from the application. </p>
+
+<p>/usr/sbin/ndd -set /dev/tcp tcp_conn_req_max_q0 2048 </p>
+
+<p>The q0 queue contains half-open sockets. </p>
+
+<p>C. Tru64 UNIX </p>
+
+<p>/sbin/sysconfig -r socket sominconn=65535 </p>
+
+<p>The value of sominconn determines how many simultaneous incoming SYN packets can be handled by the system. </p>
+
+<p>/sbin/sysconfig -r socket somaxconn=65535 </p>
+
+<p>The value of somaxconn sets the maximum number of pending TCP connections. </p>
+
+<p>D. HP-UX </p>
+
+<p>/usr/sbin/ndd -set tcp_syn_rcvd_max 1024 <br>
+/usr/sbin/ndd -set tcp_conn_request_max 200 </p>
+
+<p>E. Linux kernel 2.2 </p>
+
+<p>/sbin/sysctl -w net.ipv4.tcp_max_syn_backlog=1280 </p>
+
+<p>Increases the size of the socket queue (effectively, q0). </p>
+
+<p>/sbin/sysctl -w net.ipv4.tcp_syn_cookies=1 </p>
+
+<p>Enables support for TCP SYN cookies, which mitigates the effectiveness of SYN floods. However, this may cause performance problems for large windows (see RFC1323 and RFC2018). To read more about SYN cookies, please review DJ Bernstein's paper here. </p>
+
+<p>F. FreeBSD </p>
+
+<p>sysctl -w kern.ipc.somaxconn=1024 </p>
+
+<p>G. IRIX </p>
+
+<p>The listen() queue is hardcoded to 32. However, the system actually enforces the limit of pending connections as ((3 * backlog) / 2) + 1. This yields a maximum backlog of 49 connections. </p>
+
+<p>3. Redirects </p>
+
+<p>A miscreant can use IP redirects to modify the routing table on a remote host. In a well-designed network, redirects to the end stations should not be required. Both the sending and accepting of redirects should be disabled. </p>
+
+<p>A. AIX </p>
+
+<p>/usr/sbin/no -o ipignoreredirects=1 <br>
+/usr/sbin/no -o ipsendredirects=0 </p>
+
+<p>B. Solaris </p>
+
+<p>/usr/sbin/ndd -set /dev/ip ip_ignore_redirect 1 <br>
+/usr/sbin/ndd -set /dev/ip ip_send_redirects 0 </p>
+
+<p>C. Tru64 UNIX </p>
+
+<p>No tuning recommendations. </p>
+
+<p>D. HP-UX </p>
+
+<p>/usr/sbin/ndd -set /dev/ip ip_send_redirects 0 </p>
+
+<p>E. Linux kernel 2.2 </p>
+
+<p>/sbin/sysctl -w net.ipv4.conf.all.send_redirects=0 <br>
+/sbin/sysctl -w net.ipv4.conf.all.accept_redirects=0 </p>
+
+<p>F. FreeBSD </p>
+
+<p>sysctl -w net.inet.icmp.drop_redirect=1 <br>
+sysctl -w net.inet.icmp.log_redirect=1 <br>
+sysctl -w net.inet.ip.redirect=0 <br>
+sysctl -w net.inet6.ip6.redirect=0 </p>
+
+<p>G. IRIX </p>
+
+<p>/usr/sbin/systune icmp_dropredirects to 1 </p>
+
+<p>4. ARP cleanup </p>
+
+<p>It is possible for a miscreant to create a resource exhaustion or performance degredation by filling the IP route cache with bogus ARP entries. In Solaris, there are two parameters that govern the cleanup interval for the IP route cache. For unsolicited ARP responses, the parameter to be tuned is arp_cleanup_interval. In AIX, the cleanup interval is governed by the value of arpt_killc. However, this parameter governs both solicited and unsolicited ARP entries. For this reason, it is likely best to leave the parameter at the default setting of 20 minutes. </p>
+
+<p>A. AIX </p>
+
+<p>/usr/sbin/no -o arpt_killc=20 </p>
+
+<p>B. Solaris </p>
+
+<p>/usr/sbin/ndd -set /dev/arp arp_cleanup_interval 60000 </p>
+
+<p>C. Tru64 UNIX </p>
+
+<p>No tuning recommendations. </p>
+
+<p>D. HP-UX </p>
+
+<p>By default set to five minutes. </p>
+
+<p>E. Linux kernel 2.2 </p>
+
+<p>No tuning recommendations. </p>
+
+<p>F. FreeBSD </p>
+
+<p>sysctl -w net.link.ether.inet.max_age=1200 </p>
+
+<p>G. IRIX </p>
+
+<p>No tuning recommendations. </p>
+
+<p>5. Source routing </p>
+
+<p>With source routing, an attacker can attempt to reach internal IP addresses - including RFC1918 addresses. It is important to disable the acceptance of source routed packets to prevent subtle probes of your internal networks. </p>
+
+<p>A. AIX </p>
+
+<p>/usr/sbin/no -o ipsrcroutesend=0 </p>
+
+<p>Disable the sending of source routed packets. </p>
+
+<p>/usr/sbin/no -o ipsrcrouteforward=0 </p>
+
+<p>This is important if the box is routing, e.g. a firewall. Disable this feature to prevent the host from forwarding source routed packets. </p>
+
+<p>B. Solaris </p>
+
+<p>/usr/sbin/ndd -set /dev/ip ip_src_route_forward 0 </p>
+
+<p>This is important if the box is routing, e.g. a firewall. Disable this feature to prevent the host from forwarding source routed packets. </p>
+
+<p>C. Tru64 UNIX </p>
+
+<p>No tuning recommendations. </p>
+
+<p>D. HP-UX </p>
+
+<p>ndd -set /dev/ip ip_forward_src_routed 0 </p>
+
+<p>Disable this feature to prevent the host from forwarding source routed packets. </p>
+
+<p>E. Linux kernel 2.2 </p>
+
+<p>/sbin/sysctl -w net.ipv4.conf.all.accept_source_route=0 </p>
+
+<p>Drop all source route packets. </p>
+
+<p>/sbin/sysctl -w net.ipv4.conf.all.forwarding=0 <br>
+/sbin/sysctl -w net.ipv4.conf.all.mc_forwarding=0 </p>
+
+<p>Do not forward source routed frames. </p>
+
+<p>F. FreeBSD </p>
+
+<p>sysctl -w net.inet.ip.sourceroute=0 <br>
+sysctl -w net.inet.ip.accept_sourceroute=0 </p>
+
+<p>G. IRIX </p>
+
+<p>/usr/sbin/systune ipforward to 2 </p>
+
+<p>6. TIME_WAIT setting </p>
+
+<p>On a busy web server, many sockets may linger in the TIME_WAIT state. This is caused by improperly coded client applications that do not properly shut down a socket. This can also be used as a type of DDoS attack. </p>
+
+<p>A. AIX </p>
+
+<p>No tuning recommendations. </p>
+
+<p>B. Solaris </p>
+
+<p>/usr/sbin/ndd -set /dev/tcp tcp_time_wait_interval 60000 </p>
+
+<p>This parameter effects the amount of time a TCP socket will remain in the TIME_WAIT state. The default is quite high for a busy web server, so it should be lowered to 60000 milliseconds (60 seconds). The parameter name was corrected in Solaris 7 and higher. Prior to Solaris 7, the parameter was incorrectly labeled as tcp_close_wait_interval. </p>
+
+<p>C. Tru64 UNIX </p>
+
+<p>No tuning recommendations. </p>
+
+<p>D. HP-UX </p>
+
+<p>ndd -set /dev/tcp tcp_time_wait_interval 60000 </p>
+
+<p>Sockets will linger in TIME_WAIT state no more than 60 seconds. </p>
+
+<p>E. Linux kernel 2.2 </p>
+
+<p>/sbin/sysctl -w net.ipv4.vs.timeout_timewait=60 </p>
+
+<p>Sockets will linger in TIME_WAIT state for no more than 60 seconds. </p>
+
+<p>F. FreeBSD </p>
+
+<p>No tuning recommendations. </p>
+
+<p>G. IRIX </p>
+
+<p>/usr/sbin/systune tcp_2msl to 60 </p>
+
+<p>7. Broadcast ECHO response </p>
+
+<p>Smurf attacks work by sending ICMP 8 0 (ECHO REQUEST) messages to a broadcast address from a spoofed address. Some IP stacks will respond, by default, to such messages. This should be disabled. Further, if the host is a firewall (router), it should not propogate directed broadcasts. </p>
+
+<p>A. AIX </p>
+
+<p>/usr/sbin/no -o directed_broadcast=0 </p>
+
+<p>Do not respond to directed broadcasts. </p>
+
+<p>B. Solaris </p>
+
+<p>/usr/sbin/ndd -set /dev/ip ip_respond_to_echo_broadcast 0 </p>
+
+<p>Do not respond to directed broadcasts. </p>
+
+<p>/usr/sbin/ndd -set /dev/ip ip_forward_directed_broadcasts 0 </p>
+
+<p>Do not forward directed broadcasts. </p>
+
+<p>C. Tru64 UNIX </p>
+
+<p>No tuning recommendations. </p>
+
+<p>D. HP-UX </p>
+
+<p>ndd -set /dev/ip ip_respond_to_echo_broadcast 0 </p>
+
+<p>Do not respond to directed broadcasts. </p>
+
+<p>ndd -set /dev/ip ip_forward_directed_broadcasts 0 </p>
+
+<p>Do not forward directed broadcasts. </p>
+
+<p>E. Linux kernel 2.2 </p>
+
+<p>/sbin/sysctl -w net.ipv4.icmp_echo_ignore_broadcasts=1 </p>
+
+<p>Do not respond to directed broadcasts. </p>
+
+<p>F. FreeBSD </p>
+
+<p>sysctl -w net.inet.icmp.bmcastecho=0 </p>
+
+<p>G. IRIX </p>
+
+<p>/usr/sbin/systune allow_brdaddr_srcaddr to 0 </p>
+
+<p>8. Other broadcast probes </p>
+
+<p>There are two other broadcast probes that a miscreant could utilize against a network. The address mask query can be used to map out the size of the netblock, and set a range for further probes. The timestamp broadcast is another means of mapping and fingerprinting hosts. </p>
+
+<p>A. AIX </p>
+
+<p>/usr/sbin/no -o icmpaddressmask=0 </p>
+
+<p>Prevent address mask queries. </p>
+
+<p>B. Solaris </p>
+
+<p>/usr/sbin/ndd -set /dev/ip ip_respond_to_address_mask_broadcast 0 </p>
+
+<p>Prevent address mask queries. </p>
+
+<p>/usr/sbin/ndd -set /dev/ip ip_respond_to_timestamp_broadcast 0 </p>
+
+<p>Disable timestamp broadcast query response. </p>
+
+<p>C. Tru64 UNIX </p>
+
+<p>No tuning recomendations. </p>
+
+<p>D. HP-UX </p>
+
+<p>ndd -set /dev/ip ip_respond_to_address_mask_broadcast 0 </p>
+
+<p>Prevent the host from revealing the configured netmask. </p>
+
+<p>ndd -set /dev/ip ip_respond_to_timestamp_broadcast 0 </p>
+
+<p>Disable timestamp broadcast query response. </p>
+
+<p>E. Linux kernel 2.2 </p>
+
+<p>No tuning recommendations. </p>
+
+<p>F. FreeBSD </p>
+
+<p>sysctl -w net.inet.icmp.maskrepl=0 </p>
+
+<p>G. IRIX </p>
+
+<p>Use ipfilterd to block unwanted ICMP types. </p>
+
+<p>9. Support for RFC1948 </p>
+
+<p>This will utilize RFC1948 sequence number generation techniques to ensure that the sequence number for a given TCP socket is very difficult to guess. This tactic prevents TCP session hijacking, which could be quite an issue with e-commerce. </p>
+
+<p>B. Solaris </p>
+
+<p>Set TCP_STRONG_ISS=2 in /etc/default/inetinit. </p>
+
+<p>This will require a reboot to take effect. </p>
+
+<p>G. IRIX </p>
+
+<p>/usr/sbin/systune tcpiss_md5 to 1
+</p>
+					</td>
+					<td width="13" background="../../../images/t3/0rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr valign="top">
+					<td width="13" background="../../../images/t3/0cm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" background="../../../images/t3/0cm.jpg">
+						<center>
+							&nbsp;<br>
+							<span class="copyright">To the best of our knowledge, the text on this page may be freely reproduced and distributed.</span>
+							<br>&nbsp;<br>
+						</center>
+					</td>
+					<td width="13" background="../../../images/t3/0rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr valign="bottom">
+					<td width="13" height="15" background="../../../images/t3/3lm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="96%" height="15" background="../../../images/t3/3cm.jpg">
+						&nbsp;
+						<center><span class="navbotpipe"><span class="navbot"><a href="../../../#" class="navbot">About</a> | <a href="../../../#" class="navbot">Community</a> | <a href="../../../#" class="navbot">Art</a> | <a href="../../../#" class="navbot">Carnality</a> | <a href="../../../#" class="navbot">Entertainment</a> | <a href="../../../#" class="navbot">Science</a> | <a href="../../../#" class="navbot">Society</a> | <a href="../../../#" class="navbot">Technology</a></span></span></center>
+					</td>
+					<td width="13" height="15" background="../../../images/t3/3rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr>
+					<td width="13" height="17" background="../../../images/t3/3lb.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="96%" height="17" background="../../../images/t3/3cb.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="13" height="17" background="../../../images/t3/3rb.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+			</table>
+		</td>
+
+		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots -->
+		<td width="20%" align="center" valign="top">
+
+			<table width="170" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="13" height="11" background="../../../images/t3/1rt.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+				<tr>
+					<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="144" background="../../../images/t3/1cm.jpg">
+						<center><span class="hottop">Hot Topics</span></center>
+						<table border="0" cellpadding="1" cellspacing="2" width="100%" id="hot-topics-list">
+							<!-- populated client-side with 10 random real threads from the archive -->
+						</table>
+					</td>
+					<td width="13" background="../../../images/t3/1rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+				<tr>
+					<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="13" height="17" background="../../../images/t3/1rb.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+			</table>
+
+			&nbsp;
+
+			<!-- Recovered original ad images, rotated randomly client-side - nostalgia only, not live/tracking ads -->
+			<center>
+				<img id="ad-slot-mini-1" src="" alt="" border="1" style="display:none;">
+				<br>&nbsp;<br>
+				<img id="ad-slot-mini-2" src="" alt="" border="1" style="display:none;">
+			</center>
+
+		</td>
+	</tr>
+</table>
+
+<script src="../../../assets/site.js"></script>
+
+</body>
+</html>

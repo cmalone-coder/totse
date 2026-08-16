@@ -1,0 +1,2963 @@
+<html>
+<head>
+<title>totse.com | An introduction to UNIX - Kernighan</title>
+<link rel="shortcut icon" href="../../../favicon.ico">
+<link rel="stylesheet" href="../../../styles/totse3.css">
+<script>const SITE_PREFIX = "../../../";</script>
+<script src="../../../assets/ads.js"></script>
+<script src="../../../assets/hot_topics.js"></script>
+</head>
+
+<body background="../../../images/t3/bg.jpg" bgcolor="#2D3856" text="#000000" link="#FFFFFF" vlink="#FFFFFF" alink="#F5F5F5" leftmargin="5" topmargin="5">
+
+<!-- Top of page table -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="center">
+		<td width="43%" align="left">
+			<img src="../../../images/t3/logos/totse01.gif" border="0" width="358" height="43">
+		</td>
+		<td width="2%">&nbsp;</td>
+		<td width="55%" align="right">
+			<!-- Top banner ad slot - filled client-side from the recovered original ad images -->
+			<div class="bannertext"><img id="ad-slot-top" src="" alt="" border="1" style="display:none;"></div>
+		</td>
+	</tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="top">
+
+		<!-- Left side navigation tabs -->
+		<td align="right" width="157">
+			<table width="157" border="0" cellpadding="0" cellspacing="0">
+				<tr><td height="50"><img src="../../../images/t3/0.gif"></td></tr>
+			</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">About</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Community</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Art</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Carnality</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Entertainment</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Science</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Society</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/0lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/0ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" height="15" background="../../../images/t3/0lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="15" background="../../../images/t3/0cm.jpg">
+									<span class="sactive">Technology</span>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/0lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/0cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+
+		</td>
+
+		<!-- Content column -->
+		<td align="left">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+				<tr>
+					<td width="13" height="11" background="../../../images/t3/3lt.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" height="11" background="../../../images/t3/3ct.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="13" height="11" background="../../../images/t3/3rt.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<!-- Ubiquitous nav menu - placeholders for now, real targets get wired up once we rebuild these sections -->
+				<tr>
+					<td width="13" height="11" background="../../../images/t3/3lm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" height="11" background="../../../images/t3/3cm.jpg" align="right">
+						<span class="navtoppipe">
+							<a href="../../../#" class="navtop">register</a> |
+							<a href="../../../#" class="navtop">bbs</a> |
+							<a href="../../../#" class="navtop">search</a> |
+							<a href="../../../#" class="navtop">rss</a> |
+							<a href="../../../#" class="navtop">faq</a> |
+							<a href="../../../#" class="navtop">about</a>
+						</span>
+					</td>
+					<td width="13" height="11" background="../../../images/t3/3rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+				<tr>
+					<td width="13" height="11" background="../../../images/t3/3lm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" height="11" background="../../../images/t3/3cm.jpg" align="right">
+						<span class="navtoppipe">
+							<a href="../../../#" class="navtop">meet up</a> |
+							<a href="../../../#" class="navtop">add to del.icio.us</a> |
+							<a href="../../../#" class="navtop">digg it</a>
+						</span>
+					</td>
+					<td width="13" height="11" background="../../../images/t3/3rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr valign="top">
+					<td width="13" background="../../../images/t3/0cm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" height="640" background="../../../images/t3/0cm.jpg">
+<h1>An introduction to UNIX - Kernighan</h1>
+
+<div class="disclaim"><hr>
+NOTICE: TO ALL CONCERNED Certain text files and messages contained on this site deal with activities and devices which would be in violation of various Federal, State, and local laws if actually carried out or constructed. The webmasters of this site do not advocate the breaking of any law. Our text files and message bases are for informational purposes only. We recommend that you contact your local law enforcement officials before undertaking any project based upon any information obtained from this or any other web site. We do not guarantee that any of the information contained on this system is correct, workable, or factual. We are not responsible for, nor do we assume any liability for, damages resulting from the use of any information on this site. 
+<hr></div>
+
+B<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+UUUUNNNNIIIIXXXX FFFFoooorrrr BBBBeeeeggggiiiinnnnneeerrrrssss----SSSSeeeeccccoooonnnndddd EEEEddddiiiittttoooonnnn<br>
+<br>
+<br>
+Brian W. Kernighan<br>
+<br>
+Bell Laboratories<br>
+<br>
+Murray Hill, New Jersey 07974<br>
+<br>
+<br>
+_A_B_S_T_R_A_C_T<br>
+<br>
+This paper  is  meant  to  help  new  users  get<br>
+started  on  the  UNIX*  operating   system.    It<br>
+includes:<br>
+<br>
+o+basics needed for day-to-day use of the system -<br>
+typing  commands,  correcting  typing  mistakes,<br>
+logging in and out, mail, inter-terminal commun-<br>
+ication,   the   file  system,  printing  files,<br>
+redirecting I/O, pipes, and the shell.<br>
+<br>
+o+document preparation - a brief discussion of the<br>
+major  formatting  programs  and macro packages,<br>
+hints  on  preparing  documents,   and   capsule<br>
+descriptions of some supporting software.<br>
+<br>
+o+UNIX programming - using the editor, programming<br>
+the shell, programming in C, other languages and<br>
+tools.<br>
+<br>
+o+An annotated UNIX bibliography.<br>
+<br>
+<br>
+_I_N_T_R_O_D_U_C_T_I_O_N<br>
+<br>
+From the user's point of view, the UNIX  operating  system<br>
+<br>
+is  easy  to  learn  and  use, and presents few of the usual<br>
+<br>
+impediments to getting the job done.  It is  hard,  however,<br>
+<br>
+__________________________<br>
+* UNIX is a Trademark of Bell Laboratories.<br>
+<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+2                                         _U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s<br>
+<br>
+for the beginner to know where to start, and how to make the<br>
+<br>
+best  use  of the facilities available.  The purpose of this<br>
+<br>
+introduction is to help new users get used to the main ideas<br>
+<br>
+of  the  UNIX  system  and  start making effective use of it<br>
+<br>
+quickly.<br>
+<br>
+You should have a couple of other documents with  you  for<br>
+<br>
+easy  reference as you read this one.  The most important is<br>
+<br>
+_T_h_e _U_N_I_X _P_r_o_g_r_a_m_m_e_r'_s _M_a_n_u_a_l; it's often easier to t<br>
+<br>
+to  read  about  something  in the manual than to repeat its<br>
+<br>
+contents here.  The other  useful  document  is  _A  _T_u_t_o_r_i_a_l<br>
+<br>
+_I_n_t_r_o_d_u_c_t_i_o_n  _t_o  _t_h_e  _U_N_I_X _T_e_x_t _E_d_i_t_o_ will tell you<br>
+<br>
+how to use the editor to get text -  programs,  data,  docu-<br>
+<br>
+ments - into the computer.<br>
+<br>
+A word of warning: the UNIX system has become quite  popu-<br>
+<br>
+lar, and there are several major variants in widespread use.<br>
+<br>
+Of course details also change with time.   So  although  the<br>
+<br>
+basic  structure  of UNIX and how to use it is common to all<br>
+<br>
+versions, there will certainly be a  few  things  which  are<br>
+<br>
+different  on  your  system from what is described here.  We<br>
+<br>
+have tried to minimize the problem, but be aware of it.   In<br>
+<br>
+cases of doubt, this paper describes Version 7 UNIX.<br>
+<br>
+This paper has five sections:<br>
+<br>
+1.Getting Started: How to log in, how to type, what to  do<br>
+<br>
+about mistakes in typing, how to log out.  Some of this is<br>
+<br>
+dependent on which system you log into (phone numbers, for<br>
+<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+_U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s                                         3<br>
+<br>
+example)  and  what terminal you use, so this section must<br>
+<br>
+necessarily be supplemented by local information.<br>
+<br>
+2.Day-to-day Use: Things you need every  day  to  use  the<br>
+<br>
+system  effectively:  generally  useful commands; the file<br>
+<br>
+system.<br>
+<br>
+3.Document Preparation: Preparing manuscripts  is  one  of<br>
+<br>
+the  most common uses for UNIX systems.  This section con-<br>
+<br>
+tains advice, but not extensive instructions on any of the<br>
+<br>
+formatting tools.<br>
+<br>
+4.Writing  Programs:  UNIX  is  an  excellent  system  for<br>
+<br>
+developing programs.  This section talks about some of the<br>
+<br>
+tools, but again is not a tutorial in any of the  program-<br>
+<br>
+ming languages provided by the system.<br>
+<br>
+5.A UNIX Reading List.  An annotated bibliography of docu-<br>
+<br>
+ments that new users should be aware of.<br>
+<br>
+_I.  _G_E_T_T_I_N_G _S_T_A_R_T_E_D<br>
+<br>
+_L_o_g_g_i_n_g _I_n<br>
+<br>
+You must have a UNIX login name, which you  can  get  from<br>
+<br>
+whoever  administers your system.  You also need to know the<br>
+<br>
+phone number, unless your system uses permanently  connected<br>
+<br>
+terminals.   The  UNIX  system  is capable of dealing with a<br>
+<br>
+wide variety of terminals: Terminet 300's; Execuport, TI and<br>
+<br>
+similar  portables;  video  (CRT) terminals like the HP2640,<br>
+<br>
+etc.; high-priced  graphics  terminals  like  the  Tektronix<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+4                                         _U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s<br>
+<br>
+4014;  plotting  terminals like those from GSI and DASI; and<br>
+<br>
+even the venerable Teletype in its various forms.  But note:<br>
+<br>
+UNIX  is  strongly oriented towards devices with _l_o_w_e_r _c_a_s_e.<br>
+<br>
+If your terminal produces only upper case  (e.g.,  model  33<br>
+<br>
+Teletype,  some  video and portable terminals), life will be<br>
+<br>
+so difficult that you should look for another terminal.<br>
+<br>
+Be sure to set the switches appropriately on your  device.<br>
+<br>
+Switches  that  might need to be adjusted include the speed,<br>
+<br>
+upper/lower case mode, full duplex,  even  parity,  and  any<br>
+<br>
+others  that  local  wisdom advises.  Establish a connection<br>
+<br>
+using whatever magic is needed for your terminal;  this  may<br>
+<br>
+involve  dialing  a  telephone  call  or  merely  flipping a<br>
+<br>
+switch.  In either case, UNIX should type ``llllooooggggiiiinnnn::::'' at you.<br>
+<br>
+If  it  types  garbage, you may be at the wrong speed; check<br>
+<br>
+the switches.  If that fails, push the ``break'' or ``inter-<br>
+<br>
+rupt''  key a few times, slowly.  If that fails to produce a<br>
+<br>
+login message, consult a guru.<br>
+<br>
+When you get a llllooooggggiiiinnnn:::: message, type  your  login  name  _i_n_w_e_r  _c_a_s_e.   Follow it by a RETURN; the system will not do<br>
+<br>
+anything  until  you  type  a  RETURN.   If  a  password  is<br>
+<br>
+required, you will be asked for it, and (if possible) print-<br>
+<br>
+ing will be turned off while  you  type  it.   Don't  forget<br>
+<br>
+RETURN.<br>
+<br>
+The culmination of your login efforts is a ``prompt  char-<br>
+<br>
+acter,''  a  single character that indicates that the system<br>
+<br>
+is ready to accept commands from you.  The prompt  character<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+_U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s                                         5<br>
+<br>
+is  usually  a  dollar sign $$$$ or a percent sign %%%%.  (You may<br>
+<br>
+also get a message of the day just before the prompt charac-<br>
+<br>
+ter, or a notification that you have mail.)<br>
+<br>
+_T_y_p_i_n_g _C_o_m_m_a_n_d_s<br>
+<br>
+Once you've seen the prompt character, you can  type  com-<br>
+<br>
+mands, which are requests that the system do something.  Try<br>
+<br>
+typing<br>
+<br>
+ddddaaaatttteeee<br>
+<br>
+followed by RETURN.  You should get back something like<br>
+<br>
+MMMMoooonnnn JJJJaaaannnn 11116666 11114444::::11117777::10000 EEEESSSSTTTT 1111999977778888<br>
+<br>
+Don't forget the RETURN after the command, or  nothing  will<br>
+<br>
+happen.   If  you think you're being ignored, type a RETURN;<br>
+<br>
+something should happen.  RETURN won't be  mentioned  again,<br>
+<br>
+but  don't forget it - it has to be there at the end of each<br>
+<br>
+line.<br>
+<br>
+Another command you might try  is  wwwwhhhhoooo,  which  tells  you<br>
+<br>
+everyone who is currently logged in:<br>
+<br>
+wwwwhhhhoooo<br>
+<br>
+gives something like<br>
+<br>
+mmmmbbbb   ttttttttyyyy00001111JJJJaaaannnn 11116666    000::::11111111<br>
+sssskkkkiiii  ttttttttyyyy00005555JJJJaaaannnn 11116666    999::::33333333<br>
+ggggaaaammmm  ttttttttyyyy11111111JJJJaaaannnn 11116666    333::::00007777<br>
+<br>
+The time is when  the  user  logged  in;  ``ttyxx''  is  the<br>
+<br>
+system's idea of what terminal the user is on.<br>
+<br>
+<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+6                                         _U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s<br>
+<br>
+If you make a mistake typing the command name,  and  refer<br>
+<br>
+to  a  non-existent command, you will be told.  For example,<br>
+<br>
+if you type<br>
+<br>
+wwwwhhhhoooommmm<br>
+<br>
+you will be told<br>
+<br>
+wwwwhhhhoooommmm:::: nnnnooootttt ffffoooouuuunnnndddd<br>
+<br>
+Of course, if you inadvertently type the name of some  other<br>
+<br>
+command, it will run, with more or less mysterious results.<br>
+<br>
+_S_t_r_a_n_g_e _T_e_r_m_i_n_a_l _B_e_h_a_v_i_o_r<br>
+<br>
+Sometimes you can get into a  state  where  your  terminal<br>
+<br>
+acts  strangely.   For  example,  each  letter  may be typed<br>
+<br>
+twice, or the RETURN may not cause a line feed or  a  return<br>
+<br>
+to  the  left margin.  You can often fix this by logging out<br>
+<br>
+and logging back in.  Or you can read the description of the<br>
+<br>
+command ssssttttttttyyyy in section I of the manual.  To get intelligent<br>
+<br>
+treatment of tab characters (which are much used in UNIX) if<br>
+<br>
+your terminal doesn't have tabs, type the command<br>
+<br>
+ssssttttttttyyyy ----ttttaaaabbbbssss<br>
+<br>
+and the system will convert each tab into the  right  number<br>
+<br>
+of  blanks  for  you.   If your terminal does have computer-<br>
+<br>
+settable tabs, the command ttttaaaabbbbssss will set the stops correctly<br>
+<br>
+for you.<br>
+<br>
+_M_i_s_t_a_k_e_s _i_n _T_y_p_i_n_g<br>
+<br>
+If you make a typing mistake, and see it before RETURN has<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+_U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s                                         7<br>
+<br>
+been  typed,  there  are  two  ways  to recover.  The sharp-<br>
+<br>
+character #### erases the last character typed; in fact succes-<br>
+<br>
+sive uses of #### erase characters back to the beginning of the<br>
+<br>
+line (but not beyond).   So  if  you  type  badly,  you  can<br>
+<br>
+correct as you go:<br>
+<br>
+dddddddd####aaaatttttttteeee########eeee<br>
+<br>
+is the same as ddddaaaatttteeee.<br>
+<br>
+The at-sign @@@@ erases all of the characters typed so far on<br>
+<br>
+the  current  input  line,  so  if the line is irretrievably<br>
+<br>
+fouled up, type an @@@@ and start the line over.<br>
+<br>
+What if you must enter a sharp or at-sign as part  of  the<br>
+<br>
+text?   If  you  precede  either #### or @@@@ by a backslash \\\\, it<br>
+<br>
+loses its erase meaning.  So to enter a sharp or at-sign  in<br>
+<br>
+something,  type  \\\\####  or  \\\\@@@@.  The system will always echo a<br>
+<br>
+newline at you after your at-sign, even  if  preceded  by  a<br>
+<br>
+backslash.  Don't worry - the at-sign has been recorded.<br>
+<br>
+To erase a backslash, you have to type two sharps  or  two<br>
+<br>
+at-signs,  as  in \\\\########.  The backslash is used extensively in<br>
+<br>
+UNIX to indicate that the following character is in some way<br>
+<br>
+special.<br>
+<br>
+_R_e_a_d-_a_h_e_a_d<br>
+<br>
+UNIX has full read-ahead, which means that you can type as<br>
+<br>
+fast  as you want, whenever you want, even when some command<br>
+<br>
+is typing at you.  If you type  during  output,  your  input<br>
+<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+8                                         _U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s<br>
+<br>
+characters  will  appear  intermixed with the output charac-<br>
+<br>
+ters, but they will be stored away and  interpreted  in  the<br>
+<br>
+correct  order.   So you can type several commands one after<br>
+<br>
+another without waiting for the  first  to  finish  or  even<br>
+<br>
+begin.<br>
+<br>
+_S_t_o_p_p_i_n_g _a _P_r_o_g_r_a_m<br>
+<br>
+You can stop most programs by typing the character ``DEL''<br>
+<br>
+(perhaps  called ``delete'' or ``rubout'' on your terminal).<br>
+<br>
+The ``interrupt'' or ``break'' key found on  most  terminals<br>
+<br>
+can  also be used.  In a few programs, like the text editor,<br>
+<br>
+DEL stops whatever the program is doing but  leaves  you  in<br>
+<br>
+that program.  Hanging up the phone will stop most programs.<br>
+<br>
+_L_o_g_g_i_n_g _O_u_t<br>
+<br>
+The easiest way to log out is to hang up the  phone.   You<br>
+<br>
+can also type<br>
+<br>
+llllooooggggiiiinnnn<br>
+<br>
+and let someone else use the terminal you were  on.   It  is<br>
+<br>
+usually  not sufficient just to turn off the terminal.  Most<br>
+<br>
+UNIX systems do not use a time-out mechanism, so  you'll  be<br>
+<br>
+there forever unless you hang up.<br>
+<br>
+_M_a_i_l<br>
+<br>
+When you log in, you may sometimes get the message<br>
+<br>
+YYYYoooouuuu hhhhaaaavvvveeee mmmmaaaaiiiillll....<br>
+<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+_U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s                                         9<br>
+<br>
+UNIX provides a postal system so you  can  communicate  with<br>
+<br>
+other users of the system.  To read your mail, type the com-<br>
+<br>
+mand<br>
+<br>
+mmmmaaaaiiiillll<br>
+<br>
+Your mail will be printed,  one  message  at  a  time,  most<br>
+<br>
+recent  message  first.   After each message, mmmmaaaaiiiillll waits for<br>
+<br>
+you to say what to do with it.  The two basic responses  are<br>
+<br>
+dddd, which deletes the message, and RETURN, which does not (so<br>
+<br>
+it will still be there the next time you read your mailbox).<br>
+<br>
+Other  responses are described in the manual.  (Earlier ver-<br>
+<br>
+sions of mmmmaaaaiiiillll do not process one message at a time, but  are<br>
+<br>
+otherwise similar.)<br>
+<br>
+How do you send mail to someone else?  Suppose it is to go<br>
+<br>
+to  ``joe'' (assuming ``joe'' is someone's login name).  The<br>
+<br>
+easiest way is this:<br>
+<br>
+mmmmaaaaiiiillll jjjjooooeeee<br>
+_n_o_w _t_y_p_e _i_n _t_h_e _t_e_x_t _o_f _t_h_e _l_e_t_t_e_r<br>
+_o_n _a_s _m_a_n_y _l_i_n_e_s _a_s _y_o_u _l_i_k_e ...<br>
+_A_f_t_e_r _t_h_e _l_a_s_t _l_i_n_e _o_f _t_h_e _l_e_t_t_e_r<br>
+_t_y_p_e _t_h_e _c_h_a_r_a_c_t_e_r ``_c_o_n_t_r_o_l-_d'',<br>
+_t_h_a_t _i_s, _h_o_l_d _d_o_w_n ``_c_o_n_t_r_o_l'' _a_n_d _t_y_p_e<br>
+_a _l_e_t_t_e_r ``_d''.<br>
+<br>
+And that's it.  The  ``control-d''  sequence,  often  called<br>
+<br>
+``EOF''  for  end-of-file,  is used throughout the system to<br>
+<br>
+mark the end of input from a terminal, so you might as  well<br>
+<br>
+get used to it.<br>
+<br>
+For practice, send  mail  to  yourself.   (This  isn't  as<br>
+<br>
+strange  as it might sound - mail to oneself is a handy rem-<br>
+<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+10                                        _U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s<br>
+<br>
+inder mechanism.)<br>
+<br>
+There are other ways to send mail - you can send a  previ-<br>
+<br>
+ously  prepared letter, and you can mail to a number of peo-<br>
+<br>
+ple all at once.  For more details see mmmmaaaaiiiillll(1).  (The  nota-<br>
+<br>
+tion mmmmaaaaiiiillll(1) means the command mmmmaaaaiiiillll in section 1 of N_I_X<br>
+<br>
+_P_r_o_g_r_a_m_m_e_r'_s _M_a_n_u_a_l.)<br>
+<br>
+_W_r_i_t_i_n_g _t_o _o_t_h_e_r _u_s_e_r_s<br>
+<br>
+At some point, out of the blue will come a message like<br>
+<br>
+MMMMeeeessssssssaaaaggggeeee ffffrrrroooommmm jjjjooooeeetttttyyyy00007777............<br>
+<br>
+accompanied by a startling beep.  It means that Joe wants to<br>
+<br>
+talk  to  you, but unless you take explicit action you won't<br>
+<br>
+be able to talk back.  To respond, type the command<br>
+<br>
+wwwwrrrriiiitttteeee jjjjooooeeee<br>
+<br>
+This establishes a two-way communication path.  Now whatever<br>
+<br>
+Joe  types  on  his  terminal  will appear on yours and vice<br>
+<br>
+versa.  The path is slow, rather like talking to  the  moon.<br>
+<br>
+(If you are in the middle of something, you have to get to a<br>
+<br>
+state where you can type a command.  Normally, whatever pro-<br>
+<br>
+gram  you are running has to terminate or be terminated.  If<br>
+<br>
+you're editing, you can escape temporarily from the editor -<br>
+<br>
+read the editor tutorial.)<br>
+<br>
+A protocol is needed to keep what you  type  from  getting<br>
+<br>
+garbled up with what Joe types. Typically it's like this:<br>
+<br>
+<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+_U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s                                        11<br>
+<br>
+<br>
+Joe types wwwwrrrriiiitttteeee ssssmmmmiiiitttthhhh and waits.<br>
+Smith types wwwwrrrriiiitttteeee jjjjooooeeee and waits.<br>
+Joe now types his message (as many  lines  as  he  likes).<br>
+When  he's ready for a reply, he signals it by typing ((((oooo)))),<br>
+which stands for ``over''.<br>
+Now Smith types a reply, also terminated by ((((oooo)))).<br>
+This cycle repeats  until  someone  gets  tired;  he  then<br>
+signals  his  intent  to  quit  with  ((((oooooooo)))), for ``over and<br>
+out''.<br>
+To terminate the  conversation,  each  side  must  type  a<br>
+``control-d''  character alone on a line. (``Delete'' also<br>
+works.) When the other person types his ``control-d'', you<br>
+will get the message EEEEOOOOFFFF on your terminal.<br>
+<br>
+<br>
+If you write to  someone  who  isn't  logged  in,  or  who<br>
+<br>
+doesn't want to be disturbed, you'll be told.  If the target<br>
+<br>
+is logged in but doesn't answer  after  a  decent  interval,<br>
+<br>
+simply type ``control-d''.<br>
+<br>
+_O_n-_l_i_n_e _M_a_n_u_a_l<br>
+<br>
+The _U_N_I_X _P_r_o_g_r_a_m_m_e_r'_s _M_a_n_u_a_l is  typically  kept  on-linyou  get stuck on something, and can't find an expert to<br>
+<br>
+assist you, you can print on your terminal some manual  sec-<br>
+<br>
+tion  that  might help.  This is also useful for getting the<br>
+<br>
+most up-to-date information on a command.  To print a manual<br>
+<br>
+section,  type ``man command-name''.  Thus to read up on the<br>
+<br>
+wwwwhhhhoooo command, type<br>
+<br>
+mmmmaaaannnn wwwwhhhhoooo<br>
+<br>
+and, of course,<br>
+<br>
+mmmmaaaannnn mmmmaaaannnn<br>
+<br>
+tells all about the mmmmaaaannnn command.<br>
+<br>
+<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+12                                        _U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s<br>
+<br>
+_C_o_m_p_u_t_e_r _A_i_d_e_d _I_n_s_t_r_u_c_t_i_o_n<br>
+<br>
+Your UNIX system  may  have  available  a  program  called<br>
+<br>
+lllleeeeaaaarrrrnnnn, which provides computer aided instruction on the file<br>
+<br>
+system and basic commands, the editor, document preparation,<br>
+<br>
+and even C programming.  Try typing the command<br>
+<br>
+lllleeeeaaaarrrrnnnn<br>
+<br>
+If lllleeeeaaaarrrrnnnn exists on your system, it will tell you what to  do<br>
+<br>
+from there.<br>
+<br>
+_I_I.  _D_A_Y-_T_O-_D_A_Y _U_S_E<br>
+<br>
+_C_r_e_a_t_i_n_g _F_i_l_e_s - _T_h_e _E_d_i_t_o_r<br>
+<br>
+If you have to type a paper or a letter or a program,  how<br>
+<br>
+do  you  get the information stored in the machine?  Most of<br>
+<br>
+these tasks are done  with  the  UNIX  ``text  editor''  eeeedddd.<br>
+<br>
+Since  eeeedddd is thoroughly documented in eeeedddd(1) and explained in<br>
+<br>
+_A _T_u_t_o_r_i_a_l _I_n_t_r_o_d_u_c_t_i_o_n _t_o _t_h_e _U_N_I_X _T_  _E_d_i_t_o_r,  we  won't<br>
+<br>
+spend  any  time here describing how to use it.  All we want<br>
+<br>
+it for right now is to make some _f_i_l_e_s.  (A file is  just  a<br>
+<br>
+collection  of information stored in the machine, a simplis-<br>
+<br>
+tic but adequate definition.)<br>
+<br>
+To create a file called jjjjuuuunnnnkkkk with some text in it, do  the<br>
+<br>
+following:<br>
+<br>
+eeeedddd jjjjuuuunnnnkkkk(invokes the text editor)<br>
+aaaa     (command to ``ed'', to add text)<br>
+_n_o_w _t_y_p_e _i_n<br>
+_w_h_a_t_e_v_e_r _t_e_x_t _y_o_u _w_a_n_t ...<br>
+....     (signals the end of adding text)<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+_U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s                                        13<br>
+<br>
+The ``....'' that signals the end of adding text must be at the<br>
+<br>
+beginning  of  a line by itself.  Don't forget it, for until<br>
+<br>
+it is typed, no other  eeeedddd  commands  will  be  recognized  -<br>
+<br>
+everything you type will be treated as text to be added.<br>
+<br>
+At this point you can do various editing operations on the<br>
+<br>
+text  you  typed  in,  such as correcting spelling mistakes,<br>
+<br>
+rearranging paragraphs and  the  like.   Finally,  you  must<br>
+<br>
+write  the  information  you have typed into a file with the<br>
+<br>
+editor command wwww:<br>
+<br>
+wwww<br>
+<br>
+eeeedddd will respond with the number of characters it wrote  into<br>
+<br>
+the file jjjjuuuunnnnkkkk.<br>
+<br>
+Until the wwww command, nothing is stored permanently, so  if<br>
+<br>
+you hang up and go home the information is lost.|- But  after<br>
+<br>
+wwww the information is there permanently; you can re-access it<br>
+<br>
+any time by typing<br>
+<br>
+eeeedddd jjjjuuuunnnnkkkk<br>
+<br>
+Type a qqqq command to quit the editor.  (If you  try  to  quit<br>
+<br>
+without  writing, eeeedddd will print a ???? to remind you.  A second<br>
+<br>
+qqqq gets you out regardless.)<br>
+<br>
+Now create a second file called tttteeeemmmmpppp in the  same  manner.<br>
+<br>
+You should now have two files, jjjjuuuunnnnkkkk and tttteeeemmmmpppp.<br>
+__________________________<br>
+|- This is not strictly true -  if  you  hang  up  while<br>
+editing,  the  data  you  were working on is saved in a<br>
+file called eeeedddd....hhhhuuuupppp, which you can continue with at your<br>
+next session.<br>
+<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+14                                        _U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s<br>
+<br>
+_W_h_a_t _f_i_l_e_s _a_r_e _o_u_t _t_h_e_r_e?<br>
+<br>
+The llllssss (for ``list'') command lists the  names  (not  con-<br>
+<br>
+tents)  of  any  of the files that UNIX knows about.  If you<br>
+<br>
+type<br>
+<br>
+llllssss<br>
+<br>
+the response will be<br>
+<br>
+jjjjuuuunnnnkkkk<br>
+tttteeeemmmmpppp<br>
+<br>
+which are indeed the two files just created.  The names  are<br>
+<br>
+sorted  into  alphabetical  order  automatically,  but other<br>
+<br>
+variations are possible.  For example, the command<br>
+<br>
+llllssss ----tttt<br>
+<br>
+causes the files to be listed in the  order  in  which  they<br>
+<br>
+were last changed, most recent first.  The ----llll option gives a<br>
+<br>
+``long'' listing:<br>
+<br>
+llllssss ----llll<br>
+<br>
+will produce something like<br>
+<br>
+----rrrrwwww----rrrrwwww----rrrrwwww---- 1111 bbbbwwwwkkk41111 JJJJuuuullll 22222222 2222::::55556666 jjjjuuuunnnn<br>
+----rrrrwwww----rrrrwwww----rrrrwwww---- 1111 bbbbwwwwkkk78888 JJJJuuuullll 22222222 2222::::55557777 tttteeeemmmm<br>
+<br>
+The date and time are of the last change to the  file.   The<br>
+<br>
+41  and  78 are the number of characters (which should agree<br>
+<br>
+with the numbers you got from eeeedddd).  bbbbwwwwkkkk is the owner of  the<br>
+<br>
+file,  that  is,  the person who created it.  The ----rrrrwwww----rrrrwwww----rwww----<br>
+<br>
+tells who has permission to read and write the file, in this<br>
+<br>
+case everyone.<br>
+<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+_U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s                                        15<br>
+<br>
+Options can be combined: llllssss ----lllltttt gives the  same  thing  as<br>
+<br>
+llllssss ----llll,  but  sorted  into time order.  You can also name the<br>
+<br>
+files you're interested in, and llllssss will list the information<br>
+<br>
+about them only.  More details can be found in llllssss(1).<br>
+<br>
+The use of optional arguments  that  begin  with  a  minus<br>
+<br>
+sign,  like ----tttt and ----lllltttt, is a common convention for UNIX pro-<br>
+<br>
+grams.  In general, if a program accepts such optional argu-<br>
+<br>
+ments,  they  precede  any  filename  arguments.  It is also<br>
+<br>
+vital that you separate the various arguments  with  spaces:<br>
+<br>
+llllssss----llll is not the same as llllssss  ----llll.<br>
+<br>
+_P_r_i_n_t_i_n_g _F_i_l_e_s<br>
+<br>
+Now that you've got a file of text, how do you print it so<br>
+<br>
+people can look at it?  There are a host of programs that do<br>
+<br>
+that, probably more than are needed.<br>
+<br>
+One simple thing is to use the editor, since  printing  is<br>
+<br>
+often done just before making changes anyway.  You can say<br>
+<br>
+eeeedddd jjjjuuuunnnnkkkk<br>
+1111,,,,$$$$pppp<br>
+<br>
+eeeedddd will reply with the count of the characters in  jjjjuuuunnnnkkkk  and<br>
+<br>
+then  print  all the lines in the file.  After you learn how<br>
+<br>
+to use the editor, you can be selective about the parts  you<br>
+<br>
+print.<br>
+<br>
+There are times when it's not feasible to use  the  editor<br>
+<br>
+for  printing.   For  example, there is a limit on how big a<br>
+<br>
+file eeeedddd can handle (several thousand lines).   Secondly,  it<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+16                                        _U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s<br>
+<br>
+will  only  print one file at a time, and sometimes you want<br>
+<br>
+to print several, one after another.  So here are  a  couple<br>
+<br>
+of alternatives.<br>
+<br>
+First is ccccaaaatttt, the simplest of all the  printing  programs.<br>
+<br>
+ccccaaaatttt  simply  prints  on the terminal the contents of all the<br>
+<br>
+files named in a list.  Thus<br>
+<br>
+ccccaaaatttt jjjjuuuunnnnkkkk<br>
+<br>
+prints one file, and<br>
+<br>
+ccccaaaatttt jjjjuuuunnnnkkkk tttteeeemmmmpppp<br>
+<br>
+prints two.  The files are simply  concatenated  (hence  the<br>
+<br>
+name ``ccccaaaatttt'') onto the terminal.<br>
+<br>
+pppprrrr produces formatted printouts of files.  As with ccccaaaatttt, pppprrrts  all  the  files  named in a list.  The difference is<br>
+<br>
+that it produces headings with date, time, page  number  and<br>
+<br>
+file  name  at the top of each page, and extra lines to skip<br>
+<br>
+over the fold in the paper.  Thus,<br>
+<br>
+pppprrrr jjjjuuuunnnnkkkk tttteeeemmmmpppp<br>
+<br>
+will print jjjjuuuunnnnkkkk neatly, then skip to the top of a  new  page<br>
+<br>
+and print tttteeeemmmmpppp neatly.<br>
+<br>
+pppprrrr can also produce multi-column output:<br>
+<br>
+pppprrrr ----3333 jjjjuuuunnnnkkkk<br>
+<br>
+prints jjjjuuuunnnnkkkk in 3-column format.  You can use any  reasonable<br>
+<br>
+number  in  place  of ``3'' and pppprrrr will do its best.  pppprrrr has<br>
+<br>
+other capabilities as well; see pppprrrr(1).<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+_U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s                                        17<br>
+<br>
+It should be noted that pppprrrr is _n_o_t a formatting program  in<br>
+<br>
+the  sense of shuffling lines around and justifying margins.<br>
+<br>
+The true formatters are nnnnrrrrooooffffffff and ttttrrrrooooffffffff,e  will  get<br>
+<br>
+to in the section on document preparation.<br>
+<br>
+There are also programs that print files on  a  high-speed<br>
+<br>
+printer.   Look  in your manual under oooopppprrrr and llllpppprrrr.  Which to<br>
+<br>
+use depends on what equipment is attached to your machine.<br>
+<br>
+_S_h_u_f_f_l_i_n_g _F_i_l_e_s _A_b_o_u_t<br>
+<br>
+Now that you have some files in the file system  and  some<br>
+<br>
+experience in printing them, you can try bigger things.  For<br>
+<br>
+example, you can move a  file  from  one  place  to  another<br>
+<br>
+(which amounts to giving it a new name), like this:<br>
+<br>
+mmmmvvvv jjjjuuuunnnnkkkk pppprrrreeeecccciiiioooouuuusss means that what used  to  be  ``junk''  is  now  ``pre-<br>
+<br>
+cious''.  If you do an llllssss command now, you will get<br>
+<br>
+pppprrrreeeecccciiiioooouuuussss<br>
+tttteeeemmmmpppp<br>
+<br>
+Beware that if you move a file to another one  that  already<br>
+<br>
+exists, the already existing contents are lost forever.<br>
+<br>
+If you want to make a _c_o_p_y of a file (that is, to have two<br>
+<br>
+versions of something), you can use the ccccpppp command:<br>
+<br>
+ccccpppp pppprrrreeeecccciiiioooouuuussss tttteeeemmmmppp1<br>
+<br>
+makes a duplicate copy of pppprrrreeeecccciiiioooouuuussss in tttteeeeppp1111.<br>
+<br>
+Finally, when you get tired of creating and moving  files,<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+18                                        _U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s<br>
+<br>
+there  is  a  command  to remove files from the file system,<br>
+<br>
+called rrrrmmmm.<br>
+<br>
+rrrrmmmm tttteeeemmmmpppp tttteeeemmmmpppp1111<br>
+<br>
+will remove both of the files named.<br>
+<br>
+You will get a warning message if one of the  named  files<br>
+<br>
+wasn't  there,  but  otherwise  rrrrmmmm, like most UNIX commands,<br>
+<br>
+does its work silently.  There is no prompting  or  chatter,<br>
+<br>
+and error messages are occasionally curt.  This terseness is<br>
+<br>
+sometimes disconcerting to newcomers, but experienced  users<br>
+<br>
+find it desirable.<br>
+<br>
+_W_h_a_t'_s _i_n _a _F_i_l_e_n_a_m_e<br>
+<br>
+So far we have used filenames without ever saying what's a<br>
+<br>
+legal  name,  so  it's  time  for a couple of rules.  First,<br>
+<br>
+filenames are limited to 14 characters, which is  enough  to<br>
+<br>
+be  descriptive.   Second,  although  you can use almost any<br>
+<br>
+character in a filename, common sense says you should  stick<br>
+<br>
+to ones that are visible, and that you should probably avoid<br>
+<br>
+characters that might be used with other meanings.  We  have<br>
+<br>
+already  seen,  for  example,  that in the llllssss command, llllssss ----tttt<br>
+<br>
+means to list in time order.  So if you  had  a  file  whose<br>
+<br>
+name was ----tttt, you would have a tough time listing it by name.<br>
+<br>
+Besides the minus sign, there  are  other  characters  which<br>
+<br>
+have  special meaning.  To avoid pitfalls, you would do well<br>
+<br>
+to use only letters, numbers and  the  period  until  you're<br>
+<br>
+familiar with the situation.<br>
+<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+_U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s                                        19<br>
+<br>
+On to some more positive suggestions.  Suppose you're typ-<br>
+<br>
+ing  a  large  document like a book.  Logically this divides<br>
+<br>
+into many small pieces, like chapters and perhaps  sections.<br>
+<br>
+Physically  it  must  be divided too, for eeeedddd will not handle<br>
+<br>
+really big files.  Thus you should type the  document  as  a<br>
+<br>
+number  of  files.   You might have a separate file for each<br>
+<br>
+chapter, called<br>
+<br>
+cccchhhhaaaapppp1111<br>
+cccchhhhaaaapppp2222<br>
+etc...<br>
+<br>
+Or, if each chapter were  broken  into  several  files,  you<br>
+<br>
+might have<br>
+<br>
+cccchhhhaaaapppp1111....1111<br>
+cccchhhhaaaapppp1111....2222<br>
+cccchhhhaaaapppp1111....3333<br>
+............<br>
+cccchhhhaaaapppp2222....1111<br>
+cccchhhhaaaapppp2222....2222<br>
+............<br>
+<br>
+You can now tell at a glance where a  particular  file  fits<br>
+<br>
+into the whole.<br>
+<br>
+There are advantages to  a  systematic  naming  convention<br>
+<br>
+which  are not obvious to the novice UNIX user.  What if you<br>
+<br>
+wanted to print the whole book?  You could say<br>
+<br>
+pppprrrr cccchhhhaaaapppp1111....1111 cccchhhhaaaapppp111.2222 cccchhhhaaaapppp1111....3333 .......................<br>
+but you would get tired pretty fast, and would probably even<br>
+<br>
+make  mistakes.   Fortunately, there is a shortcut.  You can<br>
+<br>
+say<br>
+<br>
+pppprrrr cccchhhhaaaapppp****<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+20                                        _U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s<br>
+<br>
+The **** means ``anything at all,''  so  this  translates  into<br>
+<br>
+``print  all  files whose names begin with cccchhhhaaaapppp'', listed in<br>
+<br>
+alphabetical order.<br>
+<br>
+This shorthand notation is not a property of the  pppprrrr  com-<br>
+<br>
+mand,  by the way.  It is system-wide, a service of the pro-<br>
+<br>
+gram that interprets commands (the ``shell,'' sssshhhh(1)).  Using<br>
+<br>
+that fact, you can see how to list the names of the files in<br>
+<br>
+the book:<br>
+<br>
+llllssss cccchhhhaaaapppp****<br>
+<br>
+produces<br>
+<br>
+cccchhhhaaaapppp1111....1111<br>
+cccchhhhaaaapppp1111....2222<br>
+cccchhhhaaaapppp1111....3333<br>
+............<br>
+<br>
+The **** is not limited to the last position in a filename - it<br>
+<br>
+can be anywhere and can occur several times.  Thus<br>
+<br>
+rrrrmmmm ****jjjjuuuunnnnkkkk**** ****tttteeeemmmmpppp***ves all files that contain jjjjuuuunnnnkkkk or tttteeeemmmmpppp as any   o<br>
+<br>
+their  name.   As  a special case, **** by itself matches every<br>
+<br>
+filename, so<br>
+<br>
+pppprrrr ****<br>
+<br>
+prints all your files (alphabetical order), and<br>
+<br>
+rrrrmmmm ****<br>
+<br>
+removes _a_l_l _f_i_l_e_s.  (You had better be _v_e_r_y sure that's what<br>
+<br>
+you wanted to say!)<br>
+<br>
+<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+_U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s                                        21<br>
+<br>
+The **** is not the only pattern-matching feature  available.<br>
+<br>
+Suppose  you  want to print only chapters 1 through 4 and 9.<br>
+<br>
+Then you can say<br>
+<br>
+pppprrrr cccchhhhaaaapppp[[[[11112222333344449999]]]]***[[[............]]]] means to match any of the  characters  inside  the<br>
+<br>
+brackets.   A  range of consecutive letters or digits can be<br>
+<br>
+abbreviated, so you can also do this with<br>
+<br>
+pppprrrr cccchhhhaaaapppp[[[[1111----44449999]]]]****<br>
+<br>
+Letters can also be used within brackets: [[[[aaaa----zzzz]]]] matches  any<br>
+<br>
+character in the range aaaa through zzzz.<br>
+<br>
+The ???? pattern matches any single character, so<br>
+<br>
+llllssss ????<br>
+<br>
+lists all files which have single-character names, and<br>
+<br>
+llllssss ----llll cccchhhhaaaapppp????....1111<br>
+<br>
+lists information about  the  first  file  of  each  chapter<br>
+<br>
+(cccchhhhaaaapppp1111....1111, cccchhhhaaaapppp2222....111.<br>
+<br>
+Of these niceties, **** is certainly the most useful, and you<br>
+<br>
+should  get  used  to  it.  The others are frills, but worth<br>
+<br>
+knowing.<br>
+<br>
+If you should ever have to turn off the special meaning of<br>
+<br>
+****, ????, etc., enclose the entire argument in single quotes, as<br>
+<br>
+in<br>
+<br>
+llllssss ''''????''''<br>
+<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+22                                        _U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s<br>
+<br>
+We'll see some more examples of this shortly.<br>
+<br>
+_W_h_a_t'_s _i_n _a _F_i_l_e_n_a_m_e, _C_o_n_t_i_n_u_e_d<br>
+<br>
+When you first made that file called  jjjjuuuunnnnkkkk,  how  did  the<br>
+<br>
+system  know  that there wasn't another jjjjuuuunnnnkkkk somewhere else,<br>
+<br>
+especially since the person in the next office is also read-<br>
+<br>
+ing  this  tutorial?  The answer is that generally each user<br>
+<br>
+has a private _d_i_r_e_c_t_o_r_y, which contains only the files  that<br>
+<br>
+belong  to him.  When you log in, you are ``in'' your direc-<br>
+<br>
+tory.  Unless you take special action, when you create a new<br>
+<br>
+file, it is made in the directory that you are currently in;<br>
+<br>
+this is most often your own directory, and thus the file  is<br>
+<br>
+unrelated  to  any  other  file  of the same name that might<br>
+<br>
+exist in someone else's directory.<br>
+<br>
+The set of all files is organized  into  a  (usually  big)<br>
+<br>
+tree,  with  your  files  located  several branches into the<br>
+<br>
+tree.  It is possible for you to ``walk'' around this  tree,<br>
+<br>
+and  to find any file in the system, by starting at the root<br>
+<br>
+of the tree and walking along the proper  set  of  branches.<br>
+<br>
+Conversely,  you can start where you are and walk toward the<br>
+<br>
+root.<br>
+<br>
+Let's try the latter first.  The basic tools is  the  com-<br>
+<br>
+mand  ppppwwwwdddd  (``print  working  directory''), which prints the<br>
+<br>
+name of the directory you are currently in.<br>
+<br>
+Although the details will vary according to the system you<br>
+<br>
+are on, if you give the command ppppwwwwdddd, it will print something<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+_U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s                                        23<br>
+<br>
+like<br>
+<br>
+////uuuussssrrrr////yyyyoooouuuurrrr----nnnnaaaammmmeeeeays that you are currently in the directory yyyyoooouuuurrrr----nnnnaaaameeee<br>
+<br>
+which  is in turn in the directory ////uuuussssrrrr, which is in turn in<br>
+<br>
+the root directory called by convention just  ////.   (Even  if<br>
+<br>
+it's  not called ////uuuussssrrrr on your system, you will get something<br>
+<br>
+analogous.  Make the corresponding changes and read on.)<br>
+<br>
+If you now type<br>
+<br>
+llllssss ////uuuussssrrrr////yyyyoooouuuurrrr----nnnnaaaeeee<br>
+<br>
+you should get exactly the same list of file  names  as  you<br>
+<br>
+get  from  a  plain llllssss: with no arguments, llllssss lists the con-<br>
+<br>
+tents of the current directory; given the name of  a  direc-<br>
+<br>
+tory, it lists the contents of that directory.<br>
+<br>
+Next, try<br>
+<br>
+llllssss ////uuuussssrrrr<br>
+<br>
+This should print a long series of  names,  among  which  is<br>
+<br>
+your  own  login  name yyyyoooouuuurrrr----nnnnaaaammmmeeee.  On many sysuuussssrrrr is a<br>
+<br>
+directory that contains the directories of  all  the  normal<br>
+<br>
+users of the system, like you.<br>
+<br>
+The next step is to try<br>
+<br>
+llllssss ////<br>
+<br>
+You should get a  response  something  like  this  (although<br>
+<br>
+again the details may be different):<br>
+<br>
+<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+24                                        _U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s<br>
+<br>
+<br>
+bbbbiiiinnnn<br>
+ddddeeeevvvv<br>
+eeeettttcccc<br>
+lllliiiibbbb<br>
+ttttmmmmpppp<br>
+uuuussssrrrr<br>
+<br>
+This is a collection of the basic directories of files  that<br>
+<br>
+the system knows about; we are at the root of the tree.<br>
+<br>
+Now try<br>
+<br>
+ccccaaaatttt ////uuuussssrrrr////yyyyoooouuuurrrr----nnnmmmmeeee////jjjjuuuunnnnkkkk<br>
+<br>
+(if jjjjuuuunnnnkkkk is still around in your directory).  The name<br>
+<br>
+////uuuussssrrrr////yyyyoooouuuurrrr----nnnnaaaammmmeeeejjjuuuunnnnkkkk<br>
+<br>
+is called the ppppaaaatttthhhhnnnnaaaammmmeeee of the file that you  normall<br>
+<br>
+of  as  ``junk''.   ``Pathname''  has an obvious meaning: it<br>
+<br>
+represents the full name of the path you have to follow from<br>
+<br>
+the root through the tree of directories to get to a partic-<br>
+<br>
+ular file.  It is a universal rule in the UNIX  system  that<br>
+<br>
+anywhere  you  can  use  an ordinary filename, you can use a<br>
+<br>
+pathname.<br>
+<br>
+Here is a picture which may make this clearer:<br>
+<br>
+(root)<br>
+/ | \<br>
+/  |  \<br>
+/   |   \<br>
+bin    etc    usr    dev   tmp<br>
+/ | \   / | \   / | \   / | \   / | \<br>
+/  |  \<br>
+/   |   \<br>
+adam  eve   mary<br>
+/        /   \        \<br>
+/     \       junk<br>
+junk temp<br>
+<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+_U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s                                        25<br>
+<br>
+Notice that Mary's jjjjuuuunnnnkkkk is unrelated to Eve's.<br>
+<br>
+This isn't too exciting if all the files of  interest  are<br>
+<br>
+in  your own directory, but if you work with someone else or<br>
+<br>
+on several projects concurrently, it becomes  handy  indeed.<br>
+<br>
+For example, your friends can print your book by saying<br>
+<br>
+pppprrrr ////uuuussssrrrr////yyyyoooouuuurrrr----nnnnaaaeeee////cccchhhhaaaapppp****<br>
+<br>
+Similarly, you can find out what files your neighbor has  by<br>
+<br>
+saying<br>
+<br>
+llllssss ////uuuussssrrrr////nnnneeeeiiiigggghhhhbbbbooo----nnnnaaaammmmeeee<br>
+<br>
+or make your own copy of one of his files by<br>
+<br>
+ccccpppp ////uuuussssrrrr////yyyyoooouuuurrrr----nnnneeegggghhhhbbbboooorrrr////hhhhiiiissss----ffffiiiilllle oooouuuurrrrffffiiiilllleeee<br>
+<br>
+If your neighbor doesn't want you  poking  around  in  his<br>
+<br>
+files,  or  vice  versa, privacy can be arranged.  Each file<br>
+<br>
+and directory has  read-write-execute  permissions  for  the<br>
+<br>
+owner,  a group, and everyone else, which can be set to con-<br>
+<br>
+trol access.  See llllssss(1) and  cccchhhhmmmmoooodddd(1)  for  details.   As er  of  observed  fact, most users most of the time find<br>
+<br>
+openness of more benefit than privacy.<br>
+<br>
+As a final experiment with pathnames, try<br>
+<br>
+llllssss ////bbbbiiiinnnn ////uuuussssrrrr////bbbbiiiinnnome of the names look familiar?  When you run a program,<br>
+<br>
+by  typing  its  name after the prompt character, the system<br>
+<br>
+simply looks for a file of that  name.   It  normally  looks<br>
+<br>
+first  in  your  directory  (where it typically doesn't find<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+26                                        _U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s<br>
+<br>
+it), then in ////bbbbiiiinnnn and finally in ////uuuussssrrrr////bbbbinnn.  There is nothing<br>
+<br>
+magic  about  commands like ccccaaaatttt or llllssss, except that they have<br>
+<br>
+been collected into a couple of places to be  easy  to  find<br>
+<br>
+and administer.<br>
+<br>
+What if you work regularly with  someone  else  on  common<br>
+<br>
+information in his directory?  You could just log in as your<br>
+<br>
+friend each time you want to, but you can also say ``I  want<br>
+<br>
+to  work  on his files instead of my own''.  This is done by<br>
+<br>
+changing the directory that you are currently in:<br>
+<br>
+ccccdddd ////uuuussssrrrr////yyyyoooouuuurrrr----ffffrrreeeennnndddd<br>
+<br>
+(On some systems, ccccdddd is spelled cccchhhhddddiiiirrrr.) Now when you  use name  in something like ccccaaaatttt or pppprrrr, it refers to the file<br>
+<br>
+in your friend's directory.   Changing  directories  doesn't<br>
+<br>
+affect  any  permissions  associated  with  a  file - if you<br>
+<br>
+couldn't access a file from your own directory, changing  to<br>
+<br>
+another  directory won't alter that fact.  Of course, if you<br>
+<br>
+forget what directory you're in, type<br>
+<br>
+ppppwwwwdddd<br>
+<br>
+to find out.<br>
+<br>
+It is usually convenient to arrange your own files so that<br>
+<br>
+all  the  files  related  to  one  thing  are in a directory<br>
+<br>
+separate from other projects.  For example, when  you  write<br>
+<br>
+your  book,  you might want to keep all the text in a direc-<br>
+<br>
+tory called bbbbooooooookkkk.  So make one with<br>
+<br>
+mmmmkkkkddddiiiirrrr bbbbooooooookkkk<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+_U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s                                        27<br>
+<br>
+then go to it with<br>
+<br>
+ccccdddd bbbbooooooookkkk<br>
+<br>
+then start typing  chapters.   The  book  is  now  found  in<br>
+<br>
+(presumably)<br>
+<br>
+////uuuussssrrrr////yyyyoooouuuurrrr----nnnnaaaammmmeeeebbbooooooookkkk<br>
+<br>
+To remove the directory bbbbooooooookkkk, type<br>
+<br>
+rrrrmmmm bbbbooooooookkkk////****<br>
+rrrrmmmmddddiiiirrrr bbbbooooooookkkk<br>
+<br>
+The first command removes all files from the directory;  the<br>
+<br>
+second removes the empty directory.<br>
+<br>
+You can go up one level in the tree of files by saying<br>
+<br>
+ccccdddd ........<br>
+<br>
+``........'' is the name of the parent of whatever  directory  you<br>
+<br>
+are  currently  in.  For completeness, ``....'' is an alternate<br>
+<br>
+name for the directory you are in.<br>
+<br>
+_U_s_i_n_g _F_i_l_e_s _i_n_s_t_e_a_d _o_f _t_h_e _T_e_r_m_i_n_a_l<br>
+<br>
+Most of the commands we have seen so far produce output on<br>
+<br>
+the  terminal;  some, like the editor, also take their input<br>
+<br>
+from the terminal.  It is universal in UNIX systems that the<br>
+<br>
+terminal  can  be  replaced  by a file for either or both of<br>
+<br>
+input and output.  As one example,<br>
+<br>
+llllssss<br>
+<br>
+makes a list of files on your terminal.  But if you say<br>
+<br>
+<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+28                                        _U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s<br>
+<br>
+<br>
+llllssss &gt;&gt;&gt;&gt;ffffiiiilllleeeelllliiiisssstttt<br>
+<br>
+a list of your files will be placed  in  the  file  ffffiiiilllleeeelllliiiisss<br>
+<br>
+(which  will  be  created  if  it  doesn't already exist, or<br>
+<br>
+overwritten if it does).  The symbol &gt;&gt;&gt;&gt; means ``put the  out-<br>
+<br>
+put  on  the  following file, rather than on the terminal.''<br>
+<br>
+Nothing is produced on the terminal.   As  another  example,<br>
+<br>
+you  could  combine  several files into one by capturing the<br>
+<br>
+output of ccccaaaatttt in a file:<br>
+<br>
+ccccaaaatttt ffff1111 ffff2222 ffff3333 &gt;&gt;&gt;&gt;tttteeeemmmmpp The symbol &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; operates very much like &gt;&gt;&gt;&gt; does, except  that<br>
+<br>
+it means ``add to the end of.'' That is,<br>
+<br>
+ccccaaaatttt ffff1111 ffff2222 ffff3333 &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;tttteeeemmpp<br>
+<br>
+means to concatenate ffff1111, ffff2222 and ffff3333 to the end of whatever is<br>
+<br>
+already  in  tttteeeemmmmpppp,  instead of overwriting the existing con-<br>
+<br>
+tents.  As with &gt;&gt;&gt;&gt;, if tttteeeemmmmpppp doesn't exist, it will be created<br>
+<br>
+for you.<br>
+<br>
+In a similar way, the symbol &lt;&lt;&lt;&lt; means to take the input for<br>
+<br>
+a  program from the following file, instead of from the ter-<br>
+<br>
+minal.  Thus, you could make up a script  of  commonly  used<br>
+<br>
+editing  commands  and  put  them into a file called ssssccccrrrriiiipppptttt.<br>
+<br>
+Then you can run the script on a file by saying<br>
+<br>
+eeeedddd ffffiiiilllleeee &lt;&lt;&lt;&lt;ssssccccrrrriiiipppptttt<br>
+<br>
+As another example, you can use eeeedddd to prepare  a  letter  in<br>
+<br>
+file lllleeeetttt, then send it to several people with<br>
+<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+_U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s                                        29<br>
+<br>
+<br>
+mmmmaaaaiiiillll aaaaddddaaaammmm eeeevvvveeee mmmmaaaarry jjjjooooeeee &lt;&lt;&lt;&lt;lllleeeetttt<br>
+<br>
+_P_i_p_e_s<br>
+<br>
+One of the novel contributions of the UNIX system  is  the<br>
+<br>
+idea  of a _p_i_p_e.  A pipe is simply a way to connect the out-<br>
+<br>
+put of one program to the input of another program,  so  the<br>
+<br>
+two run as a sequence of processes - a pipeline.<br>
+<br>
+For example,<br>
+<br>
+pppprrrr ffff gggg hhhh<br>
+<br>
+will print the files ffff, gggg, and hhhh, beginning each  on  a  new<br>
+<br>
+page.   Suppose  you  want  them  run together instead.  You<br>
+<br>
+could say<br>
+<br>
+ccccaaaatttt ffff gggg hhhh &gt;&gt;&gt;&gt;tttteeeemmmmpppp<br>
+pppprrrr &lt;&lt;&lt;&lt;tttteeeemmmmpppp<br>
+rrrrmmmm tttteeeemmmmpppp<br>
+<br>
+but this is more work than necessary.  Clearly what we  want<br>
+<br>
+is  to take the output of ccccaaaatttt and connect it to the input of<br>
+<br>
+pppprrrr.  So let us use a pipe:<br>
+<br>
+ccccaaaatttt ffff gggg hhhh |||| pppprrrr<br>
+<br>
+The vertical bar |||| means to take the output from ccccaaaatttt,  which<br>
+<br>
+would normally have gone to the terminal, and put it into pppprrrr<br>
+<br>
+to be neatly formatted.<br>
+<br>
+There are many other examples of pipes.  For example,<br>
+<br>
+llllssss |||| pppprrrr ----3333<br>
+<br>
+prints a list of your files in three columns.   The  program<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+30                                        _U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s<br>
+<br>
+wwwwcccc  counts  the number of lines, words and characters in its<br>
+<br>
+input,  and  as  we  saw  earlier,  wwwwhhhhoooo  prints  a  list  of<br>
+<br>
+currently-logged on people, one per line.  Thus<br>
+<br>
+wwwwhhhhoooo |||| wwwwcccc<br>
+<br>
+tells how many people are logged on.  And of course<br>
+<br>
+llllssss |||| wwwwcccc<br>
+<br>
+counts your files.<br>
+<br>
+Any program that reads from the terminal can read  from  a<br>
+<br>
+pipe  instead;  any  program that writes on the terminal can<br>
+<br>
+drive a pipe.  You can have as many elements in  a  pipeline<br>
+<br>
+as you wish.<br>
+<br>
+Many UNIX programs are written  so  that  they  will  take<br>
+<br>
+their  input  from  one  or more files if file arguments are<br>
+<br>
+given; if no arguments are given they  will  read  from  the<br>
+<br>
+terminal,  and  thus  can  be  used in pipelines.  pppprrrr is one<br>
+<br>
+example:<br>
+<br>
+pppprrrr ----3333 aaaa bbbb cccc<br>
+<br>
+prints files aaaa, bbbb and cccc in order in three columns.  But in<br>
+<br>
+ccccaaaatttt aaaa bbbb cccc |||| pppprrrr ----3333<br>
+<br>
+pppprrrr prints the information coming down the pipeline, still in<br>
+<br>
+three columns.<br>
+<br>
+_T_h_e _S_h_e_l_l<br>
+<br>
+We have already mentioned once  or  twice  the  mysterious<br>
+<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+_U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s                                        31<br>
+<br>
+``shell,'' which is in fact sssshhhh(1).  The shell is the program<br>
+<br>
+that interprets what you type as commands and arguments.  It<br>
+<br>
+also   looks  after  translating  ****,  etc.,  into  lists  of<br>
+<br>
+filenames, and &lt;&lt;&lt;&lt;, &gt;&gt;&gt;&gt;, and |||| into changes of input and  output<br>
+<br>
+streams.<br>
+<br>
+The shell has other capabilities too.   For  example,  you<br>
+<br>
+can run two programs with one command line by separating the<br>
+<br>
+commands with a semicolon; the shell  recognizes  the  semi-<br>
+<br>
+colon and breaks the line into two commands.  Thus<br>
+<br>
+ddddaaaatttteeee;;;; wwwwhhhhoooo<br>
+<br>
+does both commands before returning with a prompt character.<br>
+<br>
+You can also have more than one program running _s_i_m_u_l_t_a_n_e_-<br>
+<br>
+_o_u_s_l_y  if you wish.  For example, if you are doing something<br>
+<br>
+time-consuming, like the editor script of  an  earlier  sec-<br>
+<br>
+tion,  and  you  don't  want  to wait around for the results<br>
+<br>
+before starting something else, you can say<br>
+<br>
+eeeedddd ffffiiiilllleeee &lt;&lt;&lt;&lt;ssssccccrrrriiiipppptttt && ampersand at the end of a command line says ``start this<br>
+<br>
+command  running, then take further commands from the termi-<br>
+<br>
+nal immediately,'' that is, don't wait for it  to  complete.<br>
+<br>
+Thus the script will begin, but you can do something else at<br>
+<br>
+the same time.  Of course, to keep the output from interfer-<br>
+<br>
+ing  with  what  you're  doing  on the terminal, it would be<br>
+<br>
+better to say<br>
+<br>
+eeeedddd ffffiiiilllleeee &lt;&lt;&lt;&lt;ssssccccrrrriiiipppptttt &gt;&gt;sccccrrrriiiipppptttt....oooouuuutttt &&&&<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+32                                        _U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s<br>
+<br>
+which saves the output lines in a file called ssssccccrrrriiiipppptttt....oooutttt.<br>
+<br>
+When you initiate a command with  &&&&,  the  system  replies<br>
+<br>
+with  a  number  called the process number, which identifies<br>
+<br>
+the command in case you later want to stop it.  If  you  do,<br>
+<br>
+you can say<br>
+<br>
+kkkkiiiillllllll pppprrrroooocccceeeessssssss----nnnnuuubbbbeeeerrrr<br>
+<br>
+If you forget the process number, the command ppppssss  will  tell<br>
+<br>
+you   about  everything  you  have  running.   (If  you  are<br>
+<br>
+desperate, kkkkiiiillllllll 0000 will kill  all  your  processes.)  And  if<br>
+<br>
+you're  curious about other people, ppppssss aaaa will tell you about<br>
+<br>
+_a_l_l programs that are currently running.<br>
+<br>
+You can say<br>
+<br>
+((((ccccoooommmmmmmmaaaannnndddd----1111;;;; ccccoooommmaaaannnndddd----2222;;;; ccccoooommmmmmmmaaaannnndddd----)))) &&&&<br>
+<br>
+to start three commands in the background, or you can  start<br>
+<br>
+a background pipeline with<br>
+<br>
+ccccoooommmmmmmmaaaannnndddd----1111 |||| ccccoooommmmmmmannnndddd----2222 &&&&<br>
+<br>
+Just as you can tell the editor or some similar program to<br>
+<br>
+take its input from a file instead of from the terminal, you<br>
+<br>
+can tell the shell to read a file  to  get  commands.   (Why<br>
+<br>
+not?  The  shell,  after  all,  is  just a program, albeit a<br>
+<br>
+clever one.) For instance, suppose you want to set  tabs  on<br>
+<br>
+your terminal, and find out the date and who's on the system<br>
+<br>
+every time you log in.  Then you can put the three necessary<br>
+<br>
+commands  (ttttaaaabbbbssss,  ddddaaaatttteeee,  wwwwhhhhoooo)  intle,  let's call it<br>
+<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+_U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s                                        33<br>
+<br>
+ssssttttaaaarrrrttttuuuupppp, and then run it with<br>
+<br>
+sssshhhh ssssttttaaaarrrrttttuuuupppp<br>
+<br>
+This says to run the shell with the file ssssttttaaaarrrrttttuuuupppp  as  inpueffect is as if you had typed the contents of ssssttttaaaarrrrttttuuuupppp tetrinal.<br>
+<br>
+If this is to be a regular thing, you  can  eliminate  the<br>
+<br>
+need to type sssshhhh: simply type, once only, the command<br>
+<br>
+cccchhhhmmmmoooodddd ++++xxxx ssssttttaaaarrrrttttuuuupppthereafter you need only say<br>
+<br>
+ssssttttaaaarrrrttttuuuupppp<br>
+<br>
+to run the sequence of commands.  The cccchhhhmmmmoooodddd(1) command marks<br>
+<br>
+the  file  executable; the shell recognizes this and runs it<br>
+<br>
+as a sequence of commands.<br>
+<br>
+If you want ssssttttaaaarrrrttttuuuupppp to run automatically  every  time  y in,  create  a  file  in  your  login  directory called<br>
+<br>
+....pppprrrrooooffffiiiilllleeee, and place in it the line ssssttttaarrttttuuuupppp.  When the  shell<br>
+<br>
+first  gains  control  when  you  log  in,  it looks for the<br>
+<br>
+....pppprrrrooooffffiiiilllleeee file and does whatever commands  it  finds <br>
+<br>
+We'll get back to the shell in the section on programming.<br>
+<br>
+<br>
+_I_I_I. _D_O_C_U_M_E_N_T _P_R_E_P_A_R_A_T_I_O_N<br>
+<br>
+UNIX systems are used extensively  for  document  prepara-<br>
+<br>
+tion.   There  are  two  major formatting programs, that is,<br>
+<br>
+programs that produce a text with justified  right  margins,<br>
+<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+34                                        _U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s<br>
+<br>
+automatic page numbering and titling, automatic hyphenation,<br>
+<br>
+and the like.  nnnnrrrrooooffffffff is designed to produce output on termi-<br>
+<br>
+nals  and  line-printers.   ttttrrrrooooffffffff  (pronounced ``tee-roff'')<br>
+<br>
+instead drives a phototypesetter, which produces  very  high<br>
+<br>
+quality  output  on photographic paper.  This paper was for-<br>
+<br>
+matted with ttttrrrrooooffffffff.<br>
+<br>
+_F_o_r_m_a_t_t_i_n_g _P_a_c_k_a_g_e_s<br>
+<br>
+The basic idea of nnnnrrrrooooffffffff and ttttrrrrooooffffffff is ttext  to  be<br>
+<br>
+formatted  contains  within  it ``formatting commands'' that<br>
+<br>
+indicate in detail how the formatted text is to  look.   For<br>
+<br>
+example, there might be commands that specify how long lines<br>
+<br>
+are, whether to use single or double spacing, and what  run-<br>
+<br>
+ning titles to use on each page.<br>
+<br>
+Because nnnnrrrrooooffffffff and ttttrrrrooooffffffff are relativelyo  learn  to<br>
+<br>
+use  effectively,  several ``packages'' of canned formatting<br>
+<br>
+requests are available to let you specify  paragraphs,  run-<br>
+<br>
+ning titles, footnotes, multi-column output, and so on, with<br>
+<br>
+little effort and without having to learn nnnnrrrrooooffffffff  and  ttttrrrroffffff.<br>
+<br>
+These  packages  take  a  modest  effort  to  learn, but the<br>
+<br>
+rewards for using them are so great that  it  is  time  well<br>
+<br>
+spent.<br>
+<br>
+In this section, we will  provide  a  hasty  look  at  the<br>
+<br>
+``manuscript''  package  known  as ----mmmmssss.  Formatting requests<br>
+<br>
+typically consist of a period and  two  upper-case  letters,<br>
+<br>
+such  as  ....TTTTLLLL, which is used to introduce a title, or ....PPPPPPPP to<br>
+<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+_U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s                                        35<br>
+<br>
+begin a new paragraph.<br>
+<br>
+A document is typed so it looks something like this:<br>
+<br>
+....TTTTLLLL<br>
+ttttiiiittttlllleeee ooooffff ddddooooccccuuuummmmeeeennnt<br>
+....AAAAUUUU<br>
+aaaauuuutttthhhhoooorrrr nnnnaaaammmmeeee<br>
+....SSSSHHHH<br>
+sssseeeeccccttttiiiioooonnnn hhhheeeeaaaaddddiiiinnnnggg..PPPPPPPP<br>
+ppppaaaarrrraaaaggggrrrraaaapppphhhh ............<br>
+....PPPPPPPP<br>
+aaaannnnooootttthhhheeeerrrr ppppaaaarrrraaaaggggrrrraaahhhh ............<br>
+....SSSSHHHH<br>
+aaaannnnooootttthhhheeeerrrr sssseeeeccccttttiiiioooonnnheeeeaaaaddddiiiinnnngggg<br>
+....PPPPPPPP<br>
+eeeettttcccc....<br>
+<br>
+The lines that  begin  with  a  period  are  the  formatting<br>
+<br>
+requests.   For  example, ....PPPPPPPP calls for starting a new para-<br>
+<br>
+graph.  The precise meaning of ....PPPPPPPP depends  on  what  output<br>
+<br>
+device is being used (typesetter or terminal, for instance),<br>
+<br>
+and on what publication the document will  appear  in.   For<br>
+<br>
+example,  ----mmmmssss  normally assumes that a paragraph is preceded<br>
+<br>
+by a space (one line in nnnnrrrrooooffffffff, 1/2 line in ttttrrrroooofff),  and  the<br>
+<br>
+first  word  is indented.  These rules can be changed if you<br>
+<br>
+like, but they are changed by changing the interpretation of<br>
+<br>
+....PPPPPPPP, not by re-typing the document.<br>
+<br>
+To actually produce a document in  standard  format  using<br>
+<br>
+----mmmmssss, use the command<br>
+<br>
+ttttrrrrooooffffffff ----mmmmssss ffffiiiilllleeeessss .......<br>
+<br>
+for the typesetter, and<br>
+<br>
+nnnnrrrrooooffffffff ----mmmmssss ffffiiiilllleeeessss .......<br>
+<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+36                                        _U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s<br>
+<br>
+for a terminal.  The ----mmmmssss argument tells ttttrrrrooooffffffff and  nrrrooooffffffff  to<br>
+<br>
+use the manuscript package of formatting requests.<br>
+<br>
+There are several similar packages;  check  with  a  local<br>
+<br>
+expert  to  determine  which  ones are in common use on your<br>
+<br>
+machine.<br>
+<br>
+_S_u_p_p_o_r_t_i_n_g _T_o_o_l_s<br>
+<br>
+In addition to the basic formatters, there is  a  host  of<br>
+<br>
+supporting  programs  that  help  with document preparation.<br>
+<br>
+The list in the next few paragraphs is far from complete, so<br>
+<br>
+browse  through  the manual and check with people around you<br>
+<br>
+for other possibilities.<br>
+<br>
+eeeeqqqqnnnn and nnnneeeeqqqqnnnn let you integrate mathematics into  the  tea  document,  in  an easy-to-learn language that closely<br>
+<br>
+resembles the way you would speak it  aloud.   For  example,<br>
+<br>
+the eeeeqqqqnnnn input<br>
+<br>
+ssssuuuummmm ffffrrrroooommmm iiii====0000 ttttoooo nnnn xsssuuuubbbb iiii ~~~~====~~~~ ppppiiii oooovvvveeeerrrr2222<br>
+produces the output<br>
+<br>
+<br>
+999                         _i_=078_R78_n999 _x_i _=99 278_J9__<br>
+<br>
+9<br>
+The program ttttbbbbllll provides an analogous service for  prepar-<br>
+<br>
+ing tabular material; it does all the computations necessary<br>
+<br>
+to  align  complicated  columns  with  elements  of  varying<br>
+<br>
+widths.<br>
+<br>
+<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+_U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s                                        37<br>
+<br>
+rrrreeeeffffeeeerrrr prepares bibliographic citations from a  data  base,<br>
+<br>
+in  whatever style is defined by the formatting package.  It<br>
+<br>
+looks after all  the  details  of  numbering  references  in<br>
+<br>
+sequence,  filling  in  page and volume numbers, getting the<br>
+<br>
+author's initials and the journal name right, and so on.<br>
+<br>
+ssssppppeeeellllllll and ttttyyyyppppoooo detect  possible  spelling  m in  a<br>
+<br>
+document.   ssssppppeeeellllllll works by comparing the words in your docu-<br>
+<br>
+ment to a dictionary, printing those that  are  not  in  the<br>
+<br>
+dictionary.   It  knows  enough  about  English  spelling to<br>
+<br>
+detect plurals and the like, so it does  a  very  good  job.<br>
+<br>
+ttttyyyyppppoooo  looks  for  words  which  are  ``unusual'', and prints<br>
+<br>
+those.  Spelling mistakes tend to be more unusual, and  thus<br>
+<br>
+show up early when the most unusual words are printed first.<br>
+<br>
+ggggrrrreeeepppp looks through a set of files for lines that contain a<br>
+<br>
+particular  text  pattern  (rather like the editor's context<br>
+<br>
+search does, but on a bunch of files).  For example,<br>
+<br>
+ggggrrrreeeepppp ''''iiiinnnngggg$$$$'''' cccchhhhaaaappp*<br>
+<br>
+will find all lines that end with the  letters  iiiinnnngggg  in  the<br>
+<br>
+files  cccchhhhaaaapppp****.   (It  is almost always a good practice to put<br>
+<br>
+single quotes around the pattern you're  searching  for,  in<br>
+<br>
+case  it contains characters like **** or $$$$ that have a special<br>
+<br>
+meaning to the shell.) ggggrrrreeeepppp is often useful for finding  out<br>
+<br>
+in  which of a set of files the misspelled words detected by<br>
+<br>
+ssssppppeeeellllllll are actually located.<br>
+<br>
+ddddiiiiffffffff prints a list of the differences between  two  files,<br>
+<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+38                                        _U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s<br>
+<br>
+so  you  can compare two versions of something automatically<br>
+<br>
+(which certainly beats proofreading by hand).<br>
+<br>
+wwwwcccc counts the words, lines and  characters  in  a  set  of<br>
+<br>
+files.   ttttrrrr translates characters into other characters; for<br>
+<br>
+example it will convert upper to lower case and vice  versa.<br>
+<br>
+This translates upper into lower:<br>
+<br>
+ttttrrrr AAAA----ZZZZ aaaa----zzzz &lt;&lt;&lt;&lt;iiiinnnnppppuuuutt&gt;&gt;oooouuuuttttppppuuuutttt<br>
+<br>
+ssssoooorrrrtttt sorts files in a variety of ways; ccccrrrreeeeffff  makes<br>
+<br>
+references;  ppppttttxxxx  makes a permuted index (keyword-in-context<br>
+<br>
+listing).  sssseeeedddd provides many of the  editing  facilities  of<br>
+<br>
+eeeedddd, but can apply them to arbitrarily long inputs.  aaaawwwwkkkk pro-<br>
+<br>
+vides the ability to do both pattern  matching  and  numeric<br>
+<br>
+computations,  and  to  conveniently  process  fields within<br>
+<br>
+lines.  These programs are for more advanced users, and they<br>
+<br>
+are  not  limited to document preparation.  Put them on your<br>
+<br>
+list of things to learn about.<br>
+<br>
+Most of these programs are either independently documented<br>
+<br>
+(like  eeeeqqqqnnnn  and  ttttbbbbllll),  or  are sufficiently simple that the<br>
+<br>
+description in the  _U_N_I_X  _P_r_o_g_r_a_m_m_e_r'_s  _M_a_n_u_a_l  is  adequaanation.<br>
+<br>
+_H_i_n_t_s _f_o_r _P_r_e_p_a_r_i_n_g _D_o_c_u_m_e_n_t_s<br>
+<br>
+Most documents go through several  versions  (always  more<br>
+<br>
+than   you  expected)  before  they  are  finally  finished.<br>
+<br>
+Accordingly, you should do whatever possible to make the job<br>
+<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+_U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s                                        39<br>
+<br>
+of changing them easy.<br>
+<br>
+First, when you do the  purely  mechanical  operations  of<br>
+<br>
+typing, type so that subsequent editing will be easy.  Start<br>
+<br>
+each sentence on a new line.  Make lines  short,  and  break<br>
+<br>
+lines  at  natural  places,  such  as after commas and semi-<br>
+<br>
+colons, rather than  randomly.   Since  most  people  change<br>
+<br>
+documents  by  rewriting  phrases  and  adding, deleting and<br>
+<br>
+rearranging sentences, these precautions simplify any  edit-<br>
+<br>
+ing you have to do later.<br>
+<br>
+Keep the individual files of a  document  down  to  modest<br>
+<br>
+size,  perhaps  ten  to fifteen thousand characters.  Larger<br>
+<br>
+files edit more slowly, and of course if  you  make  a  dumb<br>
+<br>
+mistake  it's  better  to have clobbered a small file than a<br>
+<br>
+big one.  Split into files  at  natural  boundaries  in  the<br>
+<br>
+document,  for the same reasons that you start each sentence<br>
+<br>
+on a new line.<br>
+<br>
+The second aspect of making change easy is to  not  commit<br>
+<br>
+yourself to formatting details too early.  One of the advan-<br>
+<br>
+tages of formatting packages like ----mmmmssss is  that  they  permit<br>
+<br>
+you to delay decisions to the last possible moment.  Indeed,<br>
+<br>
+until a document is printed, it is not even decided  whether<br>
+<br>
+it will be typeset or put on a line printer.<br>
+<br>
+As a rule of thumb, for all but the most trivial jobs, you<br>
+<br>
+should  type  a  document in terms of a set of requests like<br>
+<br>
+....PPPPPPPP, and then define them appropriately, either by using one<br>
+<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+40                                        _U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s<br>
+<br>
+of  the canned packages (the better way) or by defining your<br>
+<br>
+own nnnnrrrrooooffffffff and ttttrrrrooooffffffff commands.  As long aave  entered<br>
+<br>
+the text in some systematic way, it can always be cleaned up<br>
+<br>
+and re-formatted by a judicious combination of editing  com-<br>
+<br>
+mands and request definitions.<br>
+<br>
+_I_V.  _P_R_O_G_R_A_M_M_I_N_G<br>
+<br>
+There will be no attempt made to teach any of the program-<br>
+<br>
+ming  languages  available  but a few words of advice are in<br>
+<br>
+order.  One of the reasons why the UNIX system is a  produc-<br>
+<br>
+tive programming environment is that there is already a rich<br>
+<br>
+set of tools  available,  and  facilities  like  pipes,  I/O<br>
+<br>
+redirection, and the capabilities of the shell often make it<br>
+<br>
+possible to do a  job  by  pasting  together  programs  that<br>
+<br>
+already exist instead of writing from scratch.<br>
+<br>
+_T_h_e _S_h_e_l_l<br>
+<br>
+The pipe mechanism lets you  fabricate  quite  complicated<br>
+<br>
+operations out of spare parts that already exist.  For exam-<br>
+<br>
+ple, the first draft of the ssssppppeeeellllllll program was (roughly)<br>
+<br>
+ccccaaaatttt ............     _c_o_l_l_e_c_t _t_h_e _f_i_l_e_s<br>
+|||| ttttrrrr ............    _p_u_t _e_a_c_h _w_o_r_d _o_n _a _nl_i_n_e<br>
+|||| ttttrrrr ............    _d_e_l_e_t_e _p_u_n_c_t_u_a_t_i_o_t_c.<br>
+|||| ssssoooorrrrtttt      _i_n_t_o _d_i_c_t_i_o_n_a_r_y _o_r_d_e||| uuuunnnniiiiqqqq      _d_i_s_c_a_r_d _d_u_p_l_i_c_a_t_e_s<br>
+|||| ccccoooommmmmmmm      _p_r_i_n_t _w_o_r_d_s _i_n _t_e_x_t<br>
+_b_u_t _n_o_t _i_n _d_i_c_t_i_o_n_a_r_y<br>
+<br>
+More pieces have been added subsequently, but  this  goes  a<br>
+<br>
+long way for such a small effort.<br>
+<br>
+<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+_U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s                                        41<br>
+<br>
+The editor can be made to do things  that  would  normally<br>
+<br>
+require  special programs on other systems.  For example, to<br>
+<br>
+list the first and last lines of each of  a  set  of  files,<br>
+<br>
+such as a book, you could laboriously type<br>
+<br>
+eeeedddd<br>
+eeee cccchhhhaaaapppp1111....1111<br>
+1111pppp<br>
+$$$$pppp<br>
+eeee cccchhhhaaaapppp1111....2222<br>
+1111pppp<br>
+$$$$pppp<br>
+etc.<br>
+<br>
+But you can do the job much more easily.  One way is to type<br>
+<br>
+llllssss cccchhhhaaaapppp**** &gt;&gt;&gt;&gt;tttteeeemmmmpppp<br>
+<br>
+to get the list of filenames into a file.   Then  edit  this<br>
+<br>
+file to make the necessary series of editing commands (using<br>
+<br>
+the global commands of eeeedddd), and write it into  ssssccccrrrriiiippppttt<br>
+<br>
+the command<br>
+<br>
+eeeedddd &lt;&lt;&lt;&lt;ssssccccrrrriiiipppptttt<br>
+<br>
+will produce the same output as the laborious  hand  typing.<br>
+<br>
+Alternately (and more easily), you can use the fact that the<br>
+<br>
+shell will perform loops, repeating a set of  commands  over<br>
+<br>
+and over again for a set of arguments:<br>
+<br>
+ffffoooorrrr iiii iiiinnnn cccchhhhaaaapppp****<br>
+ddddoooo<br>
+eeeedddd $$$$iiii &lt;&lt;&lt;&lt;ssssccccrrrriiiipppptttt<br>
+ddddoooonnnneeee<br>
+<br>
+This sets the shell variable iiii to each file  name  in  turn,<br>
+<br>
+then  does  the  command.   You can type this command at the<br>
+<br>
+terminal, or put it in a file for later execution.<br>
+<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+42                                        _U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s<br>
+<br>
+_P_r_o_g_r_a_m_m_i_n_g _t_h_e _S_h_e_l_l<br>
+<br>
+An option often overlooked by newcomers is that the  shell<br>
+<br>
+is  itself  a  programming language, with variables, control<br>
+<br>
+flow (iiiiffff----eeeellllsssseeee, wwwwhhhhiiiilllleeee, fffrrrr, ccccaaaasssseeee), subroutines, and interrupt<br>
+<br>
+handling.  Since there are many building-block programs, you<br>
+<br>
+can sometimes avoid writing a new program merely by  piecing<br>
+<br>
+together  some  of  the  building  blocks with shell command<br>
+<br>
+files.<br>
+<br>
+We will not go into any details here; examples  and  rules<br>
+<br>
+can  be found in _A_n _I_n_t_r_o_d_u_c_t_i_o_n _t_o _t_h_e _U_N_I_X _S_h_eby S. R.<br>
+<br>
+Bourne.<br>
+<br>
+_P_r_o_g_r_a_m_m_i_n_g _i_n _C<br>
+<br>
+If you are undertaking anything substantial, C is the only<br>
+<br>
+reasonable choice of programming language: everything in the<br>
+<br>
+UNIX system is tuned to it.  The system itself is written in<br>
+<br>
+C, as are most of the programs that run on it.  It is also a<br>
+<br>
+easy language to use once you get started.  C is  introduced<br>
+<br>
+and  fully  described in _T_h_e _C _P_r_o_g_r_a_m_m_i_n_g _L_a_n_g_u_a_g_e byKernighan and D. M. Ritchie (Prentice-Hall, 1978).   Several<br>
+<br>
+sections  of the manual describe the system interfaces, that<br>
+<br>
+is, how you do I/O and similar functions.   Read  _U_N_I_X  _P_r_o_-<br>
+<br>
+_g_r_a_m_m_i_n_g for more complicated things.<br>
+<br>
+Most input and output in C is best handled with the  stan-<br>
+<br>
+dard I/O library, which provides a set of I/O functions that<br>
+<br>
+exist in compatible  form  on  most  machines  that  have  C<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+_U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s                                        43<br>
+<br>
+compilers.   In  general,  it's wisest to confine the system<br>
+<br>
+interactions in a program to the facilities provided by this<br>
+<br>
+library.<br>
+<br>
+C programs that don't depend too much on special  features<br>
+<br>
+of UNIX (such as pipes) can be moved to other computers that<br>
+<br>
+have C compilers.  The list of such machines grows daily; in<br>
+<br>
+addition  to  the  original PDP-11, it currently includes at<br>
+<br>
+least Honeywell 6000, IBM 370, Interdata 8/32, Data  General<br>
+<br>
+Nova  and  Eclipse,  HP 2100, Harris /7, VAX 11/780, SEL 86,<br>
+<br>
+and Zilog Z80.  Calls to the standard I/O library will  work<br>
+<br>
+on all of these machines.<br>
+<br>
+There are a number of supporting programs that go with  C.<br>
+<br>
+lllliiiinnnntttt  checks  C programs for potential portability problems,<br>
+<br>
+and detects errors such as  mismatched  argument  types  and<br>
+<br>
+uninitialized variables.<br>
+<br>
+For larger programs (anything whose source is on more than<br>
+<br>
+one  file) mmmmaaaakkkkeeee allows you to specify the dependencies among<br>
+<br>
+the source files and the processing steps needed to  make  a<br>
+<br>
+new  version;  it then checks the times that the pieces were<br>
+<br>
+last changed and does the minimal amount of  recompiling  to<br>
+<br>
+create a consistent updated version.<br>
+<br>
+The debugger aaaaddddbbbb is useful for digging  through  the  dead<br>
+<br>
+bodies  of  C  programs,  but is rather hard to learn to use<br>
+<br>
+effectively.  The most effective  debugging  tool  is  still<br>
+<br>
+careful  thought,  coupled  with  judiciously  placed  print<br>
+<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+44                                        _U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s<br>
+<br>
+statements.<br>
+<br>
+The C compiler provides a limited instrumentation service,<br>
+<br>
+so you can find out where programs spend their time and what<br>
+<br>
+parts are worth optimizing.  Compile the routines  with  the<br>
+<br>
+----pppp  option;  after the test run, use pppprrrrooooffff to print an execu-<br>
+<br>
+tion profile.  The command ttttiiiimmmmeeee  will  give  you  the  gross<br>
+<br>
+run-time  statistics  of  a  program, but they are not super<br>
+<br>
+accurate or reproducible.<br>
+<br>
+_O_t_h_e_r _L_a_n_g_u_a_g_e_s<br>
+<br>
+If you _h_a_v_e to use Fortran, there are  two  possibilities.<br>
+<br>
+You  might  consider Ratfor, which gives you the decent con-<br>
+<br>
+trol structures and free-form input that characterize C, yet<br>
+<br>
+lets you write code that is still portable to other environ-<br>
+<br>
+ments.  Bear in mind that  UNIX  Fortran  tends  to  produce<br>
+<br>
+large  and  relatively  slow-running programs.  Furthermore,<br>
+<br>
+supporting software like aaaaddddbbbb, pppprrrrooooffff, etc., are all  virtualess  with Fortran programs.  There may also be a Fortran<br>
+<br>
+77 compiler on your system.  If so, this is a viable  alter-<br>
+<br>
+native  to Ratfor, and has the non-trivial advantage that it<br>
+<br>
+is compatible with C and related programs.  (The Ratfor pro-<br>
+<br>
+cessor and C tools can be used with Fortran 77 too.)<br>
+<br>
+If your application requires you to translate  a  language<br>
+<br>
+into a set of actions or another language, you are in effect<br>
+<br>
+building a compiler, though probably a small one.   In  that<br>
+<br>
+case,  you should be using the yyyyaaaacccccccc compiler-compiler, which<br>
+<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+_U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s                                        45<br>
+<br>
+helps you develop  a  compiler  quickly.   The  lllleeeexxxx  lexical<br>
+<br>
+analyzer  generator  does  the  same  job  for  the  simpler<br>
+<br>
+languages that can be expressed as regular expressions.   It<br>
+<br>
+can be used by itself, or as a front end to recognize inputs<br>
+<br>
+for a yyyyaaaacccccccc-based program.  Both yyyyaaaacccccccc and  lllleexx  require  some<br>
+<br>
+sophistication  to  use,  but the initial effort of learning<br>
+<br>
+them can be repaid many times over in programs that are easy<br>
+<br>
+to change later on.<br>
+<br>
+Most UNIX systems also  make  available  other  languages,<br>
+<br>
+such  as  Algol  68,  APL,  Basic, Lisp, Pascal, and Snobol.<br>
+<br>
+Whether these  are  useful  depends  largely  on  the  local<br>
+<br>
+environment:  if  someone  cares  about the language and has<br>
+<br>
+worked on it, it may be in good shape.  If not, the odds are<br>
+<br>
+strong that it will be more trouble than it's worth.<br>
+<br>
+_V.  _U_N_I_X _R_E_A_D_I_N_G _L_I_S_T<br>
+<br>
+_G_e_n_e_r_a_l:<br>
+<br>
+K. L. Thompson and D.  M.  Ritchie,  _T_h_e  _U_N_I_X  _P_r_o_g_r_a_m_m_e_r'_s<br>
+<br>
+_M_a_n_u_a_l,  Bell  Laboratories,  1978.   Lists commands, system<br>
+<br>
+routines and interfaces,  file  formats,  and  some  of  the<br>
+<br>
+maintenance   procedures.   You  can't  live  without  this,<br>
+<br>
+although you will probably only need to read section 1.<br>
+<br>
+_D_o_c_u_m_e_n_t_s _f_o_r _U_s_e _w_i_t_h _t_h_e _U_N_I_X _T_i_m_e-_sr_i_n_g _S_y_s_t_e_m.  Volume<br>
+<br>
+2  of the Programmer's Manual.  This contains more extensive<br>
+<br>
+descriptions of major commands, and tutorials and  reference<br>
+<br>
+manuals.   All  of the papers listed below are in it, as are<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+46                                        _U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s<br>
+<br>
+descriptions of most of the programs mentioned above.<br>
+<br>
+D. M. Ritchie and K. L. Thompson,  ``The  UNIX  Time-sharing<br>
+<br>
+System,''  CACM,  July 1974.  An overview of the system, for<br>
+<br>
+people interested in operating systems.   Worth  reading  by<br>
+<br>
+anyone  who  programs.  Contains a remarkable number of one-<br>
+<br>
+sentence observations on how to do things right.<br>
+<br>
+The Bell System Technical Journal (BSTJ)  Special  Issue  on<br>
+<br>
+UNIX,  July/August,  1978,  contains  many papers describing<br>
+<br>
+recent developments, and some retrospective material.<br>
+<br>
+The 2nd International  Conference  on  Software  Engineering<br>
+<br>
+(October,  1976)  contains several papers describing the use<br>
+<br>
+of the Programmer's Workbench (PWB) version of UNIX.<br>
+<br>
+_D_o_c_u_m_e_n_t _P_r_e_p_a_r_a_t_i_o_n:<br>
+<br>
+B. W. Kernighan, ``A Tutorial Introduction to the UNIX  Text<br>
+<br>
+Editor''  and  ``Advanced  Editing  on  UNIX,'' Bell Labora-<br>
+<br>
+tories, 1978.  Beginners need the introduction; the advanced<br>
+<br>
+material will help you get the most out of the editor.<br>
+<br>
+M. E. Lesk, ``Typing Documents on UNIX,'' Bell Laboratories,<br>
+<br>
+1978.   Describes  the ----mmmmssss macro package, which isolates the<br>
+<br>
+novice from the vagaries of nnnnrrrrooooffffffff and ttttrrrrooooffffff takes  care<br>
+<br>
+of  most  formatting  situations.   If this specific package<br>
+<br>
+isn't available on your system, something  similar  probably<br>
+<br>
+is.  The most likely alternative is the PWB/UNIX macro pack-<br>
+<br>
+age ----mmmmmmmm; see your local guru if you use PWB/UNIX.<br>
+<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+_U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s                                        47<br>
+<br>
+B. W. Kernighan and L. L. Cherry, ``A System for Typesetting<br>
+<br>
+Mathematics,''  Bell  Laboratories  Computing  Science Tech.<br>
+<br>
+Rep. 17.<br>
+<br>
+M. E. Lesk, ``Tbl -  A  Program  to  Format  Tables,''  Bell<br>
+<br>
+Laboratories CSTR 49, 1976.<br>
+<br>
+J. F. Ossanna,  Jr.,  ``NROFF/TROFF  User's  Manual,''  Bell<br>
+<br>
+Laboratories  CSTR  54,  1976.  ttttrrrrooooffffffff is the basic formatter<br>
+<br>
+used  by  ----mmmmssss,  eeeeqqqqnnnn  and  ttttbbbbllll.   The  referencl   is<br>
+<br>
+indispensable if you are going to write or maintain these or<br>
+<br>
+similar programs.  But start with:<br>
+<br>
+B. W. Kernighan, ``A TROFF  Tutorial,''  Bell  Laboratories,<br>
+<br>
+1976.  An attempt to unravel the intricacies of ttttrrrrooooffffffff.<br>
+<br>
+_P_r_o_g_r_a_m_m_i_n_g:<br>
+<br>
+B. W.  Kernighan  and  D.  M.  Ritchie,  _T_h_e  _C  _P_r_o_g_r_a_m_m_i_n_g<br>
+<br>
+_L_a_n_g_u_a_g_e,  Prentice-Hall,  1978.  Contains a tutorial intro-<br>
+<br>
+duction, complete discussions of all language features,  and<br>
+<br>
+the reference manual.<br>
+<br>
+B. W. Kernighan and D.  M.  Ritchie,  ``UNIX  Programming,''<br>
+<br>
+Bell  Laboratories,  1978.   Describes how to interface with<br>
+<br>
+the system from C programs: I/O calls, signals, processes.<br>
+<br>
+S. R. Bourne, ``An Introduction to the  UNIX  Shell,''  Bell<br>
+<br>
+Laboratories,  1978.   An  introduction and reference manual<br>
+<br>
+for the Version 7 shell.  Mandatory reading if you intend to<br>
+<br>
+make effective use of the programming power of this shell.<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+<br>
+48                                        _U_N_I_X _f_o_r _B_e_g_i_n_n_e_r_s<br>
+<br>
+S. C. Johnson, ``Yacc  -  Yet  Another  Compiler-Compiler,''<br>
+<br>
+Bell Laboratories CSTR 32, 1978.<br>
+<br>
+M. E. Lesk, ``Lex - A  Lexical  Analyzer  Generator,''  Bell<br>
+<br>
+Laboratories CSTR 39, 1975.<br>
+<br>
+S. C. Johnson, ``Lint, a C Program Checker,''  Bell  Labora-<br>
+<br>
+tories CSTR 65, 1977.<br>
+<br>
+S. I. Feldman, ``MAKE - A Program for  Maintaining  Computer<br>
+<br>
+Programs,'' Bell Laboratories CSTR 57, 1977.<br>
+<br>
+J. F. Maranzano and S. R. Bourne, ``A Tutorial  Introduction<br>
+<br>
+to  ADB,'' Bell Laboratories CSTR 62, 1977.  An introduction<br>
+<br>
+to a powerful but complex debugging tool.<br>
+<br>
+S. I. Feldman and P. J. Weinberger, ``A Portable Fortran  77<br>
+<br>
+Compiler,''  Bell Laboratories, 1978.  A full Fortran 77 for<br>
+<br>
+UNIX systems.<br>
+<br>
+_M_a_y _1_9_7_9<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+November 16, 1985<br>
+<br>
+<br>
+<br>
+D O C U M E N T A T I O N   M E N U<br>
+<br>
+This menu allows you to access documents about some of the<br>
+features of UNIX and this system in general.  Many of the<br>
+documents are very long. WARNING - Once the listing starts,<br>
+it will not STOP until the whole document has been listed. <br>
+It is recommended that you 'download' the document entitled<br>
+BEGIN and study it for a general background of the system.<br>
+<br>
+Size in bytes      Name of Document<br>
+-------------- -----------------<br>
+A    55330              ADVICE.doc <br>
+B    81391              BEGIN.doc <br>
+C   143449              CSH.doc <br>
+D    13599              SECURITY.doc <br>
+E    76644              SETUP.doc <br>
+F    73228              SHELL.doc <br>
+G    83376              SYNOPSIS.doc <br>
+H    68271              UNIX.doc <br>
+I    33799              UUCP_NET.doc <br>
+J    40932              U_IMPL.doc <br>
+K    ?????              List of Usenet Groups<br>
+L    88534              List of ARPANET Groups<br>
+Command (ESC to exit)? <br>
+<br>
+<br>
+					</td>
+					<td width="13" background="../../../images/t3/0rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr valign="top">
+					<td width="13" background="../../../images/t3/0cm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" background="../../../images/t3/0cm.jpg">
+						<center>
+							&nbsp;<br>
+							<span class="copyright">To the best of our knowledge, the text on this page may be freely reproduced and distributed.</span>
+							<br>&nbsp;<br>
+						</center>
+					</td>
+					<td width="13" background="../../../images/t3/0rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr valign="bottom">
+					<td width="13" height="15" background="../../../images/t3/3lm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="96%" height="15" background="../../../images/t3/3cm.jpg">
+						&nbsp;
+						<center><span class="navbotpipe"><span class="navbot"><a href="../../../#" class="navbot">About</a> | <a href="../../../#" class="navbot">Community</a> | <a href="../../../#" class="navbot">Art</a> | <a href="../../../#" class="navbot">Carnality</a> | <a href="../../../#" class="navbot">Entertainment</a> | <a href="../../../#" class="navbot">Science</a> | <a href="../../../#" class="navbot">Society</a> | <a href="../../../#" class="navbot">Technology</a></span></span></center>
+					</td>
+					<td width="13" height="15" background="../../../images/t3/3rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr>
+					<td width="13" height="17" background="../../../images/t3/3lb.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="96%" height="17" background="../../../images/t3/3cb.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="13" height="17" background="../../../images/t3/3rb.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+			</table>
+		</td>
+
+		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots -->
+		<td width="20%" align="center" valign="top">
+
+			<table width="170" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="13" height="11" background="../../../images/t3/1rt.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+				<tr>
+					<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="144" background="../../../images/t3/1cm.jpg">
+						<center><span class="hottop">Hot Topics</span></center>
+						<table border="0" cellpadding="1" cellspacing="2" width="100%" id="hot-topics-list">
+							<!-- populated client-side with 10 random real threads from the archive -->
+						</table>
+					</td>
+					<td width="13" background="../../../images/t3/1rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+				<tr>
+					<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="13" height="17" background="../../../images/t3/1rb.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+			</table>
+
+			&nbsp;
+
+			<!-- Recovered original ad images, rotated randomly client-side - nostalgia only, not live/tracking ads -->
+			<center>
+				<img id="ad-slot-mini-1" src="" alt="" border="1" style="display:none;">
+				<br>&nbsp;<br>
+				<img id="ad-slot-mini-2" src="" alt="" border="1" style="display:none;">
+			</center>
+
+		</td>
+	</tr>
+</table>
+
+<script src="../../../assets/site.js"></script>
+
+</body>
+</html>

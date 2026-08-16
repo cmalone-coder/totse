@@ -1,0 +1,1436 @@
+<html>
+<head>
+<title>totse.com | UUCP Internals FAQ (Frequently Asked Questions)</title>
+<link rel="shortcut icon" href="../../../favicon.ico">
+<link rel="stylesheet" href="../../../styles/totse3.css">
+<script>const SITE_PREFIX = "../../../";</script>
+<script src="../../../assets/ads.js"></script>
+<script src="../../../assets/hot_topics.js"></script>
+</head>
+
+<body background="../../../images/t3/bg.jpg" bgcolor="#2D3856" text="#000000" link="#FFFFFF" vlink="#FFFFFF" alink="#F5F5F5" leftmargin="5" topmargin="5">
+
+<!-- Top of page table -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="center">
+		<td width="43%" align="left">
+			<img src="../../../images/t3/logos/totse01.gif" border="0" width="358" height="43">
+		</td>
+		<td width="2%">&nbsp;</td>
+		<td width="55%" align="right">
+			<!-- Top banner ad slot - filled client-side from the recovered original ad images -->
+			<div class="bannertext"><img id="ad-slot-top" src="" alt="" border="1" style="display:none;"></div>
+		</td>
+	</tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="top">
+
+		<!-- Left side navigation tabs -->
+		<td align="right" width="157">
+			<table width="157" border="0" cellpadding="0" cellspacing="0">
+				<tr><td height="50"><img src="../../../images/t3/0.gif"></td></tr>
+			</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">About</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Community</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Art</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Carnality</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Entertainment</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Science</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Society</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/0lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/0ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" height="15" background="../../../images/t3/0lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="15" background="../../../images/t3/0cm.jpg">
+									<span class="sactive">Technology</span>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/0lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/0cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+
+		</td>
+
+		<!-- Content column -->
+		<td align="left">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+				<tr>
+					<td width="13" height="11" background="../../../images/t3/3lt.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" height="11" background="../../../images/t3/3ct.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="13" height="11" background="../../../images/t3/3rt.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<!-- Ubiquitous nav menu - placeholders for now, real targets get wired up once we rebuild these sections -->
+				<tr>
+					<td width="13" height="11" background="../../../images/t3/3lm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" height="11" background="../../../images/t3/3cm.jpg" align="right">
+						<span class="navtoppipe">
+							<a href="../../../#" class="navtop">register</a> |
+							<a href="../../../#" class="navtop">bbs</a> |
+							<a href="../../../#" class="navtop">search</a> |
+							<a href="../../../#" class="navtop">rss</a> |
+							<a href="../../../#" class="navtop">faq</a> |
+							<a href="../../../#" class="navtop">about</a>
+						</span>
+					</td>
+					<td width="13" height="11" background="../../../images/t3/3rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+				<tr>
+					<td width="13" height="11" background="../../../images/t3/3lm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" height="11" background="../../../images/t3/3cm.jpg" align="right">
+						<span class="navtoppipe">
+							<a href="../../../#" class="navtop">meet up</a> |
+							<a href="../../../#" class="navtop">add to del.icio.us</a> |
+							<a href="../../../#" class="navtop">digg it</a>
+						</span>
+					</td>
+					<td width="13" height="11" background="../../../images/t3/3rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr valign="top">
+					<td width="13" background="../../../images/t3/0cm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" height="640" background="../../../images/t3/0cm.jpg">
+<h1>UUCP Internals FAQ (Frequently Asked Questions)</h1>
+
+
+Article 3084 of comp.mail.uucp:<br>
+Xref: softwords comp.mail.uucp:3084 news.answers:2184<br>
+Path: softwords!news.UVic.CA!ubc-cs!destroyer!uunet!airs!ian<br>
+From: ian@airs.com (Ian Lance Taylor)<br>
+Newsgroups: comp.mail.uucp,news.answers<br>
+Subject: UUCP Internals Frequently Asked Questions<br>
+Keywords: UUCP, protocol, FAQ<br>
+Message-ID: &lt;uucp-internals_711880203@airs.com&gt;<br>
+Date: 23 Jul 92 08:30:11 GMT<br>
+Expires: 3 Sep 92 08:30:03 GMT<br>
+Sender: news@airs.com<br>
+Reply-To: ian@airs.com (Ian Lance Taylor)<br>
+Followup-To: comp.mail.uucp<br>
+Lines: 1132<br>
+Approved: news-answers-request@MIT.Edu<br>
+Supersedes: &lt;uucp-internals_709430249@airs.com&gt;<br>
+<br>
+Archive-name: uucp-internals<br>
+Version: $Revision: 1.6 $<br>
+Last-modified: $Date: 1992/06/24 23:58:51 $<br>
+<br>
+This article was written by Ian Lance Taylor &lt;ian@airs.com&gt; and I may<br>
+even update it periodically.  Please send me mail about suggestions<br>
+or inaccuracies.<br>
+<br>
+This article describes how the various UUCP protocols work, and<br>
+discusses some other internal UUCP issues.  It does not describe how<br>
+to configure UUCP, nor how to solve UUCP connection problems, nor how<br>
+to deal with UUCP mail.  There are currently no FAQ postings on any<br>
+of these topics, and I do not plan to write any.<br>
+<br>
+If you haven't read the news.announce.newusers articles, read them.<br>
+<br>
+This article is in digest format.  Some newsreaders will be able to<br>
+break it apart into separate articles.  Don't ask me how to do this,<br>
+though.<br>
+<br>
+This article answers the following questions.  If one of these<br>
+questions is posted to comp.mail.uucp, please send mail to the poster<br>
+referring her or him to this FAQ.  There is no reason to post a<br>
+followup, as most of us know the answer already.<br>
+<br>
+Sources<br>
+What does "alarm" mean in debugging output?<br>
+What are UUCP grades?<br>
+What is the format of a UUCP lock file?<br>
+What is the format of a UUCP X.* files?<br>
+What is the UUCP protocol?<br>
+What is the 'g' protocol?<br>
+What is the 'f' protocol?<br>
+What is the 't' protocol?<br>
+What is the 'e' protocol?<br>
+What is the 'G' protocol?<br>
+What is the 'x' protocol?<br>
+What is the 'd' protocol?<br>
+What is the 'h' protocol?<br>
+Thanks<br>
+<br>
+----------------------------------------------------------------------<br>
+<br>
+From: Sources<br>
+Subject: Sources<br>
+<br>
+I took a lot of the information from Jamie E. Hanrahan's paper in the<br>
+Fall 1990 DECUS Symposium, and from Managing UUCP and Usenet by Tim<br>
+O'Reilly and Grace Todino (with contributions by several other<br>
+people).  The latter includes most of the former, and is published by<br>
+O'Reilly & Associates, Inc.<br>
+632 Petaluma Avenua<br>
+Sebastopol, CA 95472<br>
+It is currently in its tenth edition.  The ISBN number is<br>
+0-937175-48-X.<br>
+<br>
+Some information is originally due to a Usenet article by Chuck<br>
+Wegrzyn.  The information on execution files comes partially from<br>
+Peter Honeyman.  The information on the 'g' protocol comes partially<br>
+from a paper by G.L. Chesson of Bell Laboratories, partially from<br>
+Jamie E.  Hanrahan's paper, and partially from source code by John<br>
+Gilmore.  The information on the 'f' protocol comes from the source<br>
+code by Piet Berteema.  The information on the 't' protocol comes from<br>
+the source code by Rick Adams.  The information on the 'e' protocol<br>
+comes from a Usenet article by Matthias Urlichs.<br>
+<br>
+------------------------------<br>
+<br>
+From: alarm<br>
+Subject: What does "alarm" mean in debugging output?<br>
+<br>
+The debugging output of many versions of UUCP (but not Taylor UUCP)<br>
+will include messages like<br>
+alarm 1<br>
+or<br>
+pkcget: alarm 1<br>
+<br>
+This message means that the UUCP package has timed out while waiting<br>
+for some sort of response from the remote system.  This normally<br>
+indicates some sort of connection problem.  For example, the modems<br>
+might have lost their connection, or perhaps one of the modems will<br>
+transmit the XON and XOFF characters.  It can also mean that the<br>
+packages disagree about some aspect of the UUCP protocol, although<br>
+this is less common.<br>
+<br>
+Using the information in the rest of this posting, you should be able<br>
+to figure out what type of data your UUCP was expecting to receive.<br>
+This may give some indication as to exactly what the problem is.  It<br>
+is difficult to be more specific, since there are many possiblities.<br>
+<br>
+------------------------------<br>
+<br>
+From: UUCP-grades<br>
+Subject: What are UUCP grades?<br>
+<br>
+Modern UUCP packages support grades for each command.  The grades<br>
+generally range from 'A' (the highest) to 'Z' followed by 'a' to 'z'.<br>
+Some UUCP packages also support '0' to '9' before 'A'.  Some UUCP<br>
+packages may permit any ASCII character as a grade.<br>
+<br>
+On Unix, these grades are encoded in the name of the command file.  A<br>
+command file name generally has the form<br>
+C.nnnngssss<br>
+where nnnn is the remote system name for which the command is queued,<br>
+g is a single character grade, and ssss is a four character sequence<br>
+number.  For example, a command file created for the system ``airs''<br>
+at grade 'Z' might be named<br>
+C.airsZ2551<br>
+<br>
+The remote system name will be truncated to seven characters, to<br>
+ensure that the command file name will fit in the 14 character file<br>
+name limit of the traditional Unix file system.  UUCP packages which<br>
+have no other means of distinguishing which command files are intended<br>
+for which systems thus require all systems they connect to to have<br>
+names that are unique in the first seven characters.  Some UUCP<br>
+packages use a variant of this format which truncates the system name<br>
+to six characters.  HDB and Taylor UUCP use a different spool<br>
+directory format, which allows up to fourteen characters to be used<br>
+for each system name.<br>
+<br>
+The sequence number in the command file name may be a decimal integer,<br>
+or it may be a hexadecimal integer, or it may contain any alphanumeric<br>
+character.  Different UUCP packages are different.<br>
+<br>
+I do not know how command grades are handled in non-Unix UUCP<br>
+packages.<br>
+<br>
+Modern UUCP packages allow you to restrict file transfer by grade<br>
+depending on the time of day.  Typically this is done with a line in<br>
+the Systems (or L.sys) file like this:<br>
+airs Any/Z,Any2305-0855 ...<br>
+This allows grades 'Z' and above to be transferred at any time.  Lower<br>
+grades may only be transferred at night.  I believe that this grade<br>
+restriction applies to local commands as well as to remote commands,<br>
+but I am not sure.  It may only apply if the UUCP package places the<br>
+call, not if it is called by the remote system.  Taylor UUCP can use<br>
+the ``timegrade'' and ``call-timegrade'' commands to achieve the same<br>
+effect (and supports the above format when reading Systems or L.sys).<br>
+<br>
+This sort of grade restriction is most useful if you know what grades<br>
+are being used at the remote site.  The default grades used depend on<br>
+the UUCP package.  Generally uucp and uux have different defaults.  A<br>
+particular grade can be specified with the -g option to uucp or uux.<br>
+For example, to request execution of rnews on airs with grade 'd', you<br>
+might use something like<br>
+uux -gd - airs!rnews &lt;article<br>
+<br>
+Uunet queues up mail at grade 'Z' and news at grade 'd'.  The example<br>
+above would allow mail to be received at any time, but would only<br>
+permit news to be transferred at night.<br>
+<br>
+------------------------------<br>
+<br>
+From: UUCP-lock-file<br>
+Subject: What is the format of a UUCP lock file?<br>
+<br>
+This discussion applies only to Unix.  I have no idea how UUCP locks<br>
+ports on other systems.<br>
+<br>
+UUCP creates files to lock serial ports and systems.  On most if not<br>
+all systems these same lock files are also used by cu to coordinate<br>
+access to serial ports.  On some systems getty also uses these lock<br>
+files, often under the name uugetty.<br>
+<br>
+The lock file normally contains the process ID of the locking process.<br>
+This makes it easy to determine whether a lock is still valid.  The<br>
+algorithm is to create a temporary file and then link it to the name<br>
+that must be locked.  If the link fails because a file with that name<br>
+already exists, the existing file is read to get the process ID.  If<br>
+the process still exists, the lock attempt fails.  Otherwise the lock<br>
+file is deleted and the locking algorithm is retried.<br>
+<br>
+Older UUCP packages put the lock files in the main UUCP spool<br>
+directory, /usr/spool/uucp.  HDB UUCP generally puts the lock files in<br>
+a directory of their own, usually /usr/spool/locks or /etc/locks.<br>
+<br>
+The original UUCP lock file format encodes the process ID as a four<br>
+byte binary number.  The order of the bytes is host-dependent.  HDB<br>
+UUCP stores the process ID as a ten byte ASCII decimal number, with a<br>
+trailing newline.  For example, if process 1570 holds a lock file, it<br>
+would contain the eleven characters space, space, space, space, space,<br>
+space, one, five, seven, zero, newline.  Some versions of UUCP add a<br>
+second line indicating which program created the lock (uucp, cu, or<br>
+getty/uugetty).  I have also seen a third type of UUCP lock file which<br>
+does not contain the process ID at all.<br>
+<br>
+The name of the lock file is traditionally "LCK.." followed by the<br>
+base name of the device.  For example, to lock /dev/ttyd0 the file<br>
+LCK..ttyd0 would be created.  On SCO Unix, the lock file name is<br>
+always forced to lower case even if the device name has upper case<br>
+letters.<br>
+<br>
+System V Release 4 UUCP names the lock file using the major and minor<br>
+device numbers rather than the device name.  The file is named<br>
+LK.XXX.YYY.ZZZ, where XXX, YYY and ZZZ are all three digit decimal<br>
+numbers.  XXX is the major device number of the device holding the<br>
+directory holding the device file (e.g., /dev).  YYY is the major<br>
+device number of the device file itself.  ZZZ is the minor device<br>
+number of the device file itself.  If s holds the result of passing<br>
+the device to the stat system call (e.g., stat ("/dev/ttyd0", &s)),<br>
+the following line of C code will print out the corresponding lock<br>
+file name:<br>
+printf ("LK.%03d.%03d.%03d", major (s.st_dev),<br>
+major (s.st_rdev), minor (s.st_rdev));<br>
+The advantage of this system is that even if there are several links<br>
+to the same device, they will all use the same lock file name.<br>
+<br>
+------------------------------<br>
+<br>
+From: X-file<br>
+Subject: What is the format of a UUCP X.* files?<br>
+<br>
+UUCP X.* files control program execution.  They are created by uux.<br>
+They are transferred between computers just like any other file.  The<br>
+uuxqt daemon reads them to figure out how to execute the job requested<br>
+by uux.<br>
+<br>
+An X.* file is simply a text file.  The first character of each line<br>
+is a command, and the remainder of the line supplies arguments.  The<br>
+following commands are defined:<br>
+C command<br>
+This gives the command to execute, including the program and<br>
+all arguments.  For example,<br>
+C rmail ian<br>
+U user system<br>
+This names the user who requested the command, and the system<br>
+from which the request came.<br>
+I standard-input<br>
+This names the file from which standard input is taken.  If no<br>
+standard input file is given, the standard input will probably<br>
+be attached to /dev/null.  If the standard input file is not<br>
+from the system on which the execution is to occur, it will<br>
+also appear in an F command.<br>
+O standard-output [ system ]<br>
+This names the standard output file.  The optional second<br>
+argument names the system to which the file should be sent.<br>
+If there is no second argument, the file should be created on<br>
+the executing system.<br>
+F required-file [ filename-to-use ]<br>
+The F command can appear multiple times.  Each F command names<br>
+a file which must exist before the execution can proceed.<br>
+This will usually be a file which is transferred from the<br>
+system on which uux was executed, but it can also be a file<br>
+from the local system or some other system.  If the file is<br>
+not from the local system, then the command will usually name<br>
+a file in the spool directory.  If the optional second<br>
+argument appears, then the file should be copied to the<br>
+execution directory under that name.  This is necessary for<br>
+any file other than the standard input file.  If the standard<br>
+input file is not from the local system, it will appear in<br>
+both an F command and an I command.<br>
+R requestor-address<br>
+This is the address to which mail about the job should be<br>
+sent.  It is relative to the system named in the U command.<br>
+If the R command does not appear, then mail is sent to the<br>
+user named in the U command.<br>
+Z<br>
+This command takes no arguments.  It means that a mail message<br>
+should be sent if the command failed.  This is the default<br>
+behaviour for most modern UUCP packages, and for them the Z<br>
+command does not actually do anything.<br>
+N<br>
+This command takes no arguments.  It means that no mail<br>
+message should be sent, even if the command failed.<br>
+n<br>
+This command takes no arguments.  It means that a mail message<br>
+should be sent if the command succeeded.  Normally a message<br>
+is sent only if the command failed.<br>
+B<br>
+This command takes no arguments.  It means that the standard<br>
+input should be returned with any error message.  This can be<br>
+useful in cases where the input would otherwise be lost.<br>
+e<br>
+This command takes no arguments.  It means that the command<br>
+should be processed with /bin/sh.  For some packages this is<br>
+the default anyhow.  Most packages will refuse to execute<br>
+complex commands or commands containing wildcards, because of<br>
+the security holes it opens.<br>
+E<br>
+This command takes no arguments.  It means that the command<br>
+should be processed with execve.  For some packages this is<br>
+the default anyhow.<br>
+M status-file<br>
+This command means that instead of mailing a message, the<br>
+message should be copied to the named file on the system named<br>
+by the U command.<br>
+# comment<br>
+This command is ignored, as is any other unrecognized command.  <br>
+<br>
+Here is an example.  Given the following command executed on system<br>
+test1<br>
+uux - test2!cat - test2!~ian/bar !qux '&gt;~/gorp'<br>
+(this is only an example, as most UUCP systems will not permit the cat<br>
+command to be executed) Taylor UUCP will produce the following X.<br>
+file:<br>
+U ian test1<br>
+F D.test1N003r qux<br>
+O /usr/spool/uucppublic test1<br>
+F D.test1N003s<br>
+I D.test1N003s<br>
+C cat - ~ian/bar qux<br>
+The standard input will be read into a file and then transferred to<br>
+the file D.test1N003s on system test2, and the file qux will be<br>
+transferred to D.test1N003r on system test2.  When the command is<br>
+executed, the latter file will be copied to the execution directory<br>
+under the name qux.  Note that since the file ~ian/bar is already on<br>
+the execution system, no action need be taken for it.  The standard<br>
+output will be collected in a file, then copied to the directory<br>
+/usr/spool/uucppublic on the system test1.<br>
+<br>
+------------------------------<br>
+<br>
+From: UUCP-protocol<br>
+Subject: What is the UUCP protocol?<br>
+<br>
+The UUCP protocol is a conversation between two UUCP packages.  A UUCP<br>
+conversation consists of three parts: an initial handshake, a series<br>
+of file transfer requests, and a final handshake.<br>
+<br>
+Before the initial handshake, the caller will usually have logged in<br>
+the called machine and somehow started the UUCP package there.  On<br>
+Unix this is normally done by setting the shell of the login name used<br>
+to /usr/lib/uucp/uucico.<br>
+<br>
+All messages in the initial handshake begin with a ^P (a byte with the<br>
+octal value \020) and end with a null byte (\000).  A few systems end<br>
+these messages with a line feed character (\012) instead of a null<br>
+byte; the examples below assume a null byte is being used.<br>
+<br>
+The initial handshake goes as follows.  It is begun by the called<br>
+machine.<br>
+<br>
+called: \020Shere=hostname\000<br>
+The hostname is the UUCP name of the called machine.  Older UUCP<br>
+packages do not output it, and simply send \020Shere\000.<br>
+<br>
+caller: \020Shostname options\000<br>
+The hostname is the UUCP name of the calling machine.  The<br>
+following options may appear (or there may be none):<br>
+-QSEQ<br>
+Report sequence number for this conversation.  The<br>
+sequence number is stored at both sites, and incremented<br>
+after each call.  If there is a sequence number mismatch,<br>
+something has gone wrong (somebody may have broken<br>
+security by pretending to be one of the machines) and the<br>
+call is denied.  If the sequence number changes on one of<br>
+the machines, perhaps because of an attempted breakin or<br>
+because a disk backup was restored, the sequence numbers<br>
+on the two machines must be reconciled manually.<br>
+-xLEVEL<br>
+Requests the called system to set its debugging level to<br>
+the specified value.  This is not supported by all<br>
+systems.<br>
+-pGRADE<br>
+-vgrade=GRADE<br>
+Requests the called system to only transfer files of the<br>
+specified grade or higher.  This is not supported by all<br>
+systems.  Some systems support -p, some support -vgrade=.<br>
+-R<br>
+Indicates that the calling UUCP understands how to restart<br>
+failed file transmissions.  Supported only by System V<br>
+Release 4 UUCP.<br>
+-ULIMIT<br>
+Reports the ulimit value of the calling UUCP.  The limit<br>
+is specified as a base 16 number in C notation (e.g.,<br>
+-U0x1000000).  This number is the number of 512 byte<br>
+blocks in the largest file which the calling UUCP can<br>
+create.  The called UUCP may not transfer a file larger<br>
+than this.  Supported only by System V Release 4 UUCP.<br>
+-N<br>
+Indicates that the calling UUCP understands the Taylor<br>
+UUCP size limiting extensions.  Supported only by Taylor<br>
+UUCP.<br>
+<br>
+called: \020ROK\000<br>
+There are actually several possible responses.<br>
+ROK<br>
+The calling UUCP is acceptable, and the handshake proceeds<br>
+to the protocol negotiation.  Some options may also<br>
+appear; see below.<br>
+ROKN<br>
+The calling UUCP is acceptable, it specified -N, and the<br>
+called UUCP also understands the Taylor UUCP size limiting<br>
+extensions.  Supported only by Taylor UUCP.<br>
+RLCK<br>
+The called UUCP already has a lock for the calling UUCP,<br>
+which normally indicates the two machines are already<br>
+communicating.<br>
+RCB<br>
+The called UUCP will call back.  This may be used to avoid<br>
+impostors (but only one machine out of each pair should<br>
+call back, or no conversation will ever begin).<br>
+RBADSEQ<br>
+The call sequence number is wrong (see the -Q discussion<br>
+above). <br>
+RLOGIN<br>
+The calling UUCP is using the wrong login name.<br>
+RYou are unknown to me<br>
+The calling UUCP is not known to the called UUCP, and the<br>
+called UUCP does not permit connections from unknown<br>
+systems.<br>
+If the response is ROK, the following options are supported by<br>
+System V Release 4 UUCP.<br>
+-R<br>
+The called UUCP knows how to restart failed file<br>
+transmissions.<br>
+-ULIMIT<br>
+Reports the ulimit value of the called UUCP.  The limit is<br>
+specified as a base 16 number in C notation.  This number<br>
+is the number of 512 byte blocks in the largest file which<br>
+the called UUCP can create.  The calling UUCP may not send<br>
+a file larger than this.<br>
+-xLEVEL<br>
+I'm not sure just what this means.  It may request the<br>
+calling UUCP to set its debugging level to the specified<br>
+value.<br>
+If the response is not ROK (or ROKN) both sides hang up the phone,<br>
+abandoning the call.<br>
+<br>
+called: \020Pprotocols\000<br>
+Note that the called UUCP outputs two strings in a row.  The<br>
+protocols string is a list of UUCP protocols supported by the<br>
+caller.  Each UUCP protocol has a single character name.  These<br>
+protocols are discussed in more detail later in this document.<br>
+For example, the called UUCP might send \020Pgf\000.<br>
+<br>
+caller: \020Uprotocol\000<br>
+The calling UUCP selects which protocol to use out of the<br>
+protocols offered by the called UUCP.  If there are no mutually<br>
+supported protocols, the calling UUCP sends \020UN\000 and both<br>
+sides hang up the phone.  Otherwise the calling UUCP sends<br>
+something like \020Ug\000.<br>
+<br>
+Most UUCP packages will consider each locally supported protocol in<br>
+turn and select the first one supported by the called UUCP.  With some<br>
+versions of HDB UUCP, this can be modified by giving a list of<br>
+protocols after the device name in the Devices file or the Systems<br>
+file.  For example, to select the 'e' protocol in Systems,<br>
+airs Any ACU,e ...<br>
+or in Devices,<br>
+ACU,e ttyXX ...<br>
+Taylor UUCP provides the ``protocol'' command which may be used either<br>
+for a system or a port.<br>
+<br>
+After the protocol has been selected and the initial handshake has been<br>
+completed, both sides turn on the selected protocol.  For some<br>
+protocols (notably 'g') a further handshake is done at this point.<br>
+<br>
+Each protocol supports a method for sending a command to the remote<br>
+system.  This method is used to transmit a series of commands between<br>
+the two UUCP packages.  At all times, one package is the master and<br>
+the other is the slave.  Initially, the calling UUCP is the master.<br>
+<br>
+If a protocol error occurs during the exchange of commands, both sides<br>
+move immediately to the final handshake.<br>
+<br>
+The master will send one of four commands: S, R, X or H.<br>
+<br>
+Any file name referred to below is either an absolute pathname<br>
+beginning with "/", a public directory pathname beginning with "~/", a<br>
+pathname relative to a user's home directory beginning with "~USER/",<br>
+or a spool directory file name.  File names in the spool directory are<br>
+not pathnames, but instead are converted to pathnames within the spool<br>
+directory by UUCP.  They always begin with "C." (for a command file<br>
+created by uucp or uux), "D." (for a data file created by uucp, uux or<br>
+by an execution, or received from another system for an execution), or<br>
+"X." (for an execution file created by uux or received from another<br>
+system).<br>
+<br>
+master: S FROM TO USER -OPTIONS TEMP MODE NOTIFY SIZE<br>
+The S and the - are literal characters.  This is a request by the<br>
+master to send a file to the slave.<br>
+FROM<br>
+The name of the file to send.  If the C option does not<br>
+appear in OPTIONS, the master will actually open and send<br>
+this file.  Otherwise the file has been copied to the<br>
+spool directory, where it is named TEMP.  The slave<br>
+ignores this field unless TO is a directory, in which case<br>
+the basename of FROM will be used as the file name.  If<br>
+FROM is a spool directory filename, it must be a data file<br>
+created for or by an execution, and must begin with "D.".<br>
+TO<br>
+The name to give the file on the slave.  If this field<br>
+names a directory the file is placed within that directory<br>
+with the basename of FROM.  A name ending in `/' is taken<br>
+to be a directory even if one does not already exist with<br>
+that name.  If TO begins with `X.', an execution file will<br>
+be created on the slave.  Otherwise, if TO begins with<br>
+`D.' it names a data file to be used by some execution<br>
+file.  Otherwise, TO should not be in the spool directory.<br>
+USER<br>
+The name of the user who requested the transfer.<br>
+OPTIONS<br>
+A list of options to control the transfer.  The following<br>
+options are defined (all options are single characters):<br>
+C<br>
+The file has been copied to the spool directory<br>
+(the master should use TEMP rather than FROM).<br>
+c<br>
+The file has not been copied to the spool<br>
+directory (this is the default).<br>
+d<br>
+The slave should create directories as necessary<br>
+(this is the default).<br>
+f<br>
+The slave should not create directories if<br>
+necessary, but should fail the transfer instead.<br>
+m<br>
+The master should send mail to USER when the<br>
+transfer is complete.<br>
+n<br>
+The slave should send mail to NOTIFY when the<br>
+transfer is complete.<br>
+TEMP<br>
+If the C option appears in OPTIONS, this names the file to<br>
+be sent.  Otherwise if FROM is in the spool directory,<br>
+TEMP is the same as FROM.  Otherwise TEMP is a dummy<br>
+string, normally "D.0".  After the transfer has been<br>
+succesfully completed, the master will delete the file<br>
+TEMP.<br>
+MODE<br>
+This is an octal number giving the mode of the file on<br>
+MASTER.  If the file is not in the spool directory, the<br>
+slave will always create it with mode 0666, except that if<br>
+(MODE & 0111) is not zero (the file is executable), the<br>
+slave will create the file with mode 0777.  If the file is<br>
+in the spool directory, some UUCP packages will use the<br>
+algorithm above and some will always create the file with<br>
+mode 0600.<br>
+NOTIFY<br>
+This field may not be present, and in any case is only<br>
+meaningful if the n option appears in OPTIONS.  If the n<br>
+option appears, then when the transfer is successfully<br>
+completed, the slave will send mail to NOTIFY, which must<br>
+be a legal mailing address on the slave.  If a SIZE field<br>
+will appear but the n option does not appear, NOTIFY will<br>
+always be present, typically as the string "dummy" or<br>
+simply a pair of double quotes.<br>
+SIZE<br>
+This field is only present when doing size negotiation,<br>
+either with Taylor UUCP or SVR4 UUCP.  It is the size of<br>
+the file in bytes.  SVR4 UUCP sends the size in base 16 as<br>
+0x.... while Taylor UUCP sends the size as a decimal<br>
+integer (a later version of Taylor UUCP will probably<br>
+change to the SVR4 behaviour).<br>
+<br>
+The slave then responds with an S command response.<br>
+SY START<br>
+The slave is willing to accept the file, and file transfer<br>
+begins.  The START field will only be present when using<br>
+SVR4 file restart.  It specifies the byte offset into the<br>
+file at which to start sending.  If this is a new file,<br>
+START will be 0x0.<br>
+SN2<br>
+The slave denies permission to transfer the file.  This<br>
+can mean that the destination directory may not be<br>
+accessed, or that no requests are permitted.  It implies<br>
+that the file transfer will never succeed.<br>
+SN4<br>
+The slave is unable to create the necessary temporary<br>
+file.  This implies that the file transfer might succeed<br>
+later.<br>
+SN6<br>
+This is only used by Taylor UUCP size negotiation.  It<br>
+means that the slave considers the file too large to<br>
+transfer at the moment, but it may be possible to transfer<br>
+it at some other time.<br>
+SN7<br>
+This is only used by Taylor UUCP size negotiation.  It<br>
+means that the slave considers the file too large to ever<br>
+transfer.<br>
+<br>
+If the slave responds with SY, a file transfer begins.  When the<br>
+file transfer is complete, the slave sends a C command response.<br>
+CY<br>
+The file transfer was successful.<br>
+CYM<br>
+The file transfer was successful, and the slave wishes to<br>
+become the master; the master should send an H command,<br>
+described below.<br>
+CN5<br>
+The temporary file could not be moved into the final<br>
+location.  This implies that the file transfer will never<br>
+succeed.<br>
+<br>
+After the C command response has been received (in the SY case) or<br>
+immediately (in an SN case) the master will send another command.<br>
+<br>
+master: R FROM TO USER -OPTIONS SIZE<br>
+The R and the - are literal characters.  This is a request by the<br>
+master to receive a file from the slave.  I do not know how SVR4<br>
+UUCP implements file transfer restart in this case.<br>
+FROM<br>
+This is the name of the file on the slave which the master<br>
+wishes to receive.  It must not be in the spool directory,<br>
+and it may not contain any wildcards.<br>
+TO<br>
+This is the name of the file to create on the master.  I<br>
+do not believe that it can be a directory.  It may only be<br>
+in the spool directory if this file is being requested to<br>
+support an execution either on the master or on some<br>
+system other than the slave.<br>
+USER<br>
+The name of the user who requested the transfer.<br>
+OPTIONS<br>
+A list of options to control the transfer.  The following<br>
+options are defined (all options are single characters):<br>
+d<br>
+The master should create directories as necessary<br>
+(this is the default).<br>
+f<br>
+The master should not create directories if<br>
+necessary, but should fail the transfer instead.<br>
+m<br>
+The master should send mail to USER when the<br>
+transfer is complete.<br>
+SIZE<br>
+This only appears if Taylor UUCP size negotiation is being<br>
+used.  It specifies the largest file which the master is<br>
+prepared to accept (when using SVR4 UUCP, this was<br>
+specified in the -U option during the initial handshake).<br>
+<br>
+The slave then responds with an R command response.<br>
+RY MODE<br>
+The slave is willing to send the file, and file transfer<br>
+begins.  MODE is the octal mode of the file on the slave.<br>
+The master treats this just as the slave does the MODE<br>
+argument in the send command, q.v.<br>
+RN2<br>
+The slave is not willing to send the file, either because<br>
+it is not permitted or because the file does not exist.<br>
+This implies that the file request will never succeed.<br>
+RN6<br>
+This is only used by Taylor UUCP size negotiation.  It<br>
+means that the file is too large to send, either because<br>
+of the size limit specifies by the master or because the<br>
+slave considers it too large.  The file transfer might<br>
+succeed later, or it might not (this will be cleared up in<br>
+a later release of Taylor UUCP).<br>
+<br>
+If the slave responds with RY, a file transfer begins.  When the<br>
+file transfer is complete, the master sends a C command.  The<br>
+slave pretty much ignores this, although it may log it.<br>
+CY<br>
+The file transfer was successful.<br>
+CN5<br>
+The temporary file could not be moved into the final<br>
+location.<br>
+<br>
+After the C command response has been sent (in the RY case) or<br>
+immediately (in an RN case) the master will send another command.<br>
+<br>
+master: X FROM TO USER -OPTIONS<br>
+The X and the - are literal characters.  This is a request by the<br>
+master to, in essence, execute uucp on the slave.  The slave<br>
+should execute "uucp FROM TO".<br>
+FROM<br>
+This is the name of the file or files on the slave which<br>
+the master wishes to transfer.  Any wildcards are expanded<br>
+on the slave.  If the master is requesting that the files<br>
+be transferred to itself, the request would normally<br>
+contain wildcard characters, since otherwise an `R'<br>
+command would suffice.  The master can also use this<br>
+command to request that the slave transfer files to a<br>
+third system.<br>
+TO<br>
+This is the name of the file or directory to which the<br>
+files should be transferred.  This will normally use a<br>
+UUCP name.  For example, if the master wishes to receive<br>
+the files itself, it would use "master!path".<br>
+USER<br>
+The name of the user who requested the transfer.<br>
+OPTIONS<br>
+A list of options to control the transfer.  It is not<br>
+clear which, if any, options are supported by most UUCP<br>
+packages.<br>
+<br>
+The slave then responds with an X command response.<br>
+XY<br>
+The request was accepted, and the appropriate file<br>
+transfer commands have been queued up for later<br>
+processing.<br>
+XN<br>
+The request was denied.  No particular reason is given.<br>
+<br>
+In either case, the master will then send another command.<br>
+<br>
+master: H<br>
+This is used by the master to hang up the connection.  The slave<br>
+will respond with an H command response.<br>
+HY<br>
+The slave agrees to hang up the connection.  In this case<br>
+the master sends another HY command.  In some UUCP<br>
+packages the slave will then send a third HY command.  At<br>
+this point the protocol is shut down, and the final<br>
+handshake is begun.<br>
+HN<br>
+The slave does not agree to hang up.  In this case the<br>
+master and the slave exchange roles.  The next command<br>
+will be sent by the former slave, which is the new master.<br>
+The roles may be reversed several times during a single<br>
+connection.<br>
+<br>
+After the protocol has been shut down, the final handshake is<br>
+performed.  This handshake has no real purpose, and some UUCP packages<br>
+simply drop the connection rather than do it (in fact, some will drop<br>
+the connection immediately after both sides agree to hangup, without<br>
+even closing down the protocol).<br>
+<br>
+caller: \020OOOOOO\000<br>
+called: \020OOOOOOO\000<br>
+<br>
+That is, the calling UUCP sends six O's and the called UUCP replies<br>
+with seven O's.  Some UUCP packages always send six O's.<br>
+<br>
+------------------------------<br>
+<br>
+From: UUCP-g<br>
+Subject: What is the 'g' protocol?<br>
+<br>
+The 'g' protocol is a packet based flow controlled error correcting<br>
+protocol that requires an eight bit clear connection.  It is the<br>
+original UUCP protocol, and is supported by all UUCP implementations.<br>
+Many implementations of it are only able to support small window and<br>
+packet sizes, specifically a window size of 3 and a packet size of 64<br>
+bytes, but the protocol itself can support up to a window size of 7<br>
+and a packet size of 4096 bytes.  Complaints about the inefficiency of<br>
+the 'g' protocol generally refer to specific implementations, rather<br>
+than to the correctly implemented protocol.<br>
+<br>
+The 'g' protocol was originally designed for general packet drivers,<br>
+and thus contains some features that are not used by UUCP, including<br>
+an alternate data channel and the ability to renegotiate packet and<br>
+window sizes during the communication session.<br>
+<br>
+The 'g' protocol is spoofed by many Telebit modems.  When spoofing is<br>
+in effect, each Telebit modem uses the 'g' protocol to communicate<br>
+with the attached computer, but the data between the modems is sent<br>
+using a Telebit proprietary error correcting protocol.  This allows<br>
+for very high throughput over the Telebit connection, which, because<br>
+it is half-duplex, would not normally be able to handle the 'g'<br>
+protocol very well at all.<br>
+<br>
+This discussion of the 'g' protocol explains how it works, but does<br>
+not discuss useful error handling techniques.  Some discussion of this<br>
+can be found in Jamie E. Hanrahan's paper, cited above.<br>
+<br>
+All 'g' protocol communication is done with packets.  Each packet<br>
+begins with a six byte header.  Control packets consist only of the<br>
+header.  Data packets contain additional data.<br>
+<br>
+The header is as follows:<br>
+<br>
+\020<br>
+Every packet begins with a ^P.<br>
+k (1 &lt;= k &lt;= 9)<br>
+The k value is always 9 for a control packet.  For a data<br>
+packet, the k value indicates how must data follows the six<br>
+byte header.  The amount of data is 2 ** (k + 4), where **<br>
+indicates exponentiation.  Thus a k value of 1 means 32 data<br>
+bytes and a k value of 8 means 4096 data bytes.  The k value<br>
+for a data packet must be between 1 and 8 inclusive.<br>
+checksum low byte<br>
+checksum high byte<br>
+The checksum value is described below.<br>
+control byte<br>
+The control packet indicates the type of packet, and is<br>
+described below.<br>
+xor byte<br>
+This byte is the xor of k, the checksum low byte, the checksum<br>
+high byte and the control byte (i.e., the second, third,<br>
+fourth and fifth header bytes).  It is used to ensure that the<br>
+header data is valid.<br>
+<br>
+The control byte in the header is composed of three bit fields,<br>
+referred to here as TT (two bits), XXX (three bits) and YYY (three<br>
+bits).  The control is TTXXXYYY, or (TT &lt;&lt; 6) + (XXX &lt;&lt; 3) + YYY.<br>
+<br>
+The TT field takes on the following values:<br>
+0<br>
+This is a control packet.  In this case the k byte in the<br>
+header must be 9.  The XXX field indicates the type of control<br>
+packet; these types are described below.<br>
+1<br>
+This is an alternate data channel packet.  This is not used by<br>
+UUCP.<br>
+2<br>
+This is a data packet, and the entire contents of the attached<br>
+data field (whose length is given by the k byte in the header)<br>
+are valid.  The XXX and YYY fields are described below.<br>
+3<br>
+This is a short data packet.  Let the length of the data field<br>
+(as given by the k byte in the header) be L.  Let the first<br>
+byte in the data field be B1.  If B1 is less than 128 (if the<br>
+most significant bit of B1 is 0), then there are L - B1 valid<br>
+bytes of data in the data field, beginning with the second<br>
+byte.  If B1 &gt;= 128, let B2 be the second byte in the data<br>
+field.  Then there are L - ((B1 & 0x7f) + (B2 &lt;&lt; 7)) valid<br>
+bytes of data in the data field, beginning with the third<br>
+byte.  In all cases L bytes of data are sent (and all data<br>
+bytes participate in the checksum calculation) but some of the<br>
+trailing bytes may be dropped by the receiver.   The XXX and<br>
+YYY fields are described below.<br>
+<br>
+In a data packet (short or not) the XXX field gives the sequence<br>
+number of the packet.  Thus sequence numbers can range from 0 to 7,<br>
+inclusive.  The YYY field gives the sequence number of the last<br>
+correctly received packet.<br>
+<br>
+Each communication direction uses a window which indicates how many<br>
+unacknowledged packets may be transmitted before waiting for an<br>
+acknowledgement.  The window may range from 1 to 7, and may be<br>
+different in each direction. For example, if the window is 3 and the<br>
+last packet acknowledged was packet number 6, packet numbers 7, 0 and<br>
+1 may be sent but the sender must wait for an acknowledgement before<br>
+sending packet number 2.  This acknowledgement could come as the YYY<br>
+field of a data packet or as the YYY field of a RJ or RR control<br>
+packet (described below).<br>
+<br>
+Each packet must be transmitted in order (the sender may not skip<br>
+sequence numbers).  Each packet must be acknowledged, and each packet<br>
+must be acknowledged in order.<br>
+<br>
+In a control packet, the XXX field takes on the following values:<br>
+1 CLOSE<br>
+The connection should be closed immediately.  This is<br>
+typically sent when one side has seen too many errors and<br>
+wants to give up.  It is also sent when shutting down the<br>
+protocol.  If an unexpected CLOSE packet is received, a CLOSE<br>
+packet should be sent in reply and the 'g' protocol should<br>
+halt, causing UUCP to enter the final handshake.<br>
+2 RJ or NAK<br>
+The last packet was not received correctly.  The YYY field<br>
+contains the sequence number of the last correctly received<br>
+packet.<br>
+3 SRJ<br>
+Selective reject.  The YYY field contains the sequence number<br>
+of a packet that was not received correctly, and should be<br>
+retransmitted.  This is not used by UUCP, and most<br>
+implementations will not recognize it.<br>
+4 RR or ACK<br>
+Packet acknowledgement.  The YYY field contains the sequence<br>
+number of the last correctly received packet.<br>
+5 INITC<br>
+Third initialization packet.  The YYY field contains the<br>
+maximum window size to use.<br>
+6 INITB<br>
+Second initialization packet.  The YYY field contains the<br>
+packet size to use.  It requests a size of 2 ** (YYY + 5).<br>
+Note that this is not the same coding used for the k byte in<br>
+the packet header (it is 1 less).  Most UUCP implementations<br>
+that request a packet size larger than 64 bytes can handle any<br>
+packet size up to that specified.<br>
+7 INITA<br>
+First initialization packet.  The YYY field contains the<br>
+maximum window size to use.<br>
+<br>
+The checksum of a control packet is simply 0xaaaa - the control byte.<br>
+<br>
+The checksum of a data packet is 0xaaaa - (CHECK ^ the control byte),<br>
+where ^ denotes exclusive or, and CHECK is the result of the following<br>
+routine as run on the contents of the data field (every byte in the<br>
+data field participates in the checksum, even for a short data<br>
+packet).  Below is the routine used by Taylor UUCP; it is a slightly<br>
+modified version of a routine which John Gilmore patched from G.L.<br>
+Chesson's original paper.  The z argument points to the data and the c<br>
+argument indicates how much data there is.<br>
+<br>
+int<br>
+igchecksum (z, c)<br>
+register const char *z;<br>
+register int c;<br>
+{<br>
+register unsigned int ichk1, ichk2;<br>
+<br>
+ichk1 = 0xffff;<br>
+ichk2 = 0;<br>
+<br>
+do<br>
+{<br>
+register unsigned int b;<br>
+<br>
+/* Rotate ichk1 left.  */<br>
+if ((ichk1 & 0x8000) == 0)<br>
+ichk1 &lt;&lt;= 1;<br>
+else<br>
+{<br>
+ichk1 &lt;&lt;= 1;<br>
+++ichk1;<br>
+}<br>
+<br>
+/* Add the next character to ichk1.  */<br>
+b = *z++ & 0xff;<br>
+ichk1 += b;<br>
+<br>
+/* Add ichk1 xor the character position in the buffer counting from<br>
+the back to ichk2.  */<br>
+ichk2 += ichk1 ^ c;<br>
+<br>
+/* If the character was zero, or adding it to ichk1 caused an<br>
+overflow, xor ichk2 to ichk1.  */<br>
+if (b == 0 || (ichk1 & 0xffff) &lt; b)<br>
+ichk1 ^= ichk2;<br>
+}<br>
+while (--c &gt; 0);<br>
+<br>
+return ichk1 & 0xffff;<br>
+}<br>
+<br>
+When the 'g' protocol is started, the calling UUCP sends an INITA<br>
+control packet with the window size it wishes the called UUCP to use.<br>
+The called UUCP responds with an INITA packet with the window size it<br>
+wishes the calling UUCP to use.  Pairs of INITB and INITC packets are<br>
+then similarly exchanged.  When these exchanges are completed, the<br>
+protocol is considered to have been started.<br>
+<br>
+When a UUCP package transmits a command, it sends one or more data<br>
+packets.  All the data packets will normally be complete, although<br>
+some UUCP packages may send the last one as a short packet.  The<br>
+command string is sent with a trailing null byte, to let the receiving<br>
+package know when the command is finished.  Some UUCP packages require<br>
+the last byte of the last packet sent to be null, even if the command<br>
+ends earlier in the packet.  Some packages may require all the<br>
+trailing bytes in the last packet to be null, but I have not confirmed<br>
+this.<br>
+<br>
+When a UUCP package sends a file, it will send a sequence of data<br>
+packets.  The end of the file is signalled by a short data packet<br>
+containing zero valid bytes (it will normally be preceeded by a short<br>
+data packet containing the last few bytes in the file).<br>
+<br>
+Note that the sequence numbers cover the entire communication session,<br>
+including both command and file data.<br>
+<br>
+When the protocol is shut down, each UUCP package sends a CLOSE<br>
+control packet.<br>
+<br>
+------------------------------<br>
+<br>
+From: UUCP-f<br>
+Subject: What is the 'f' protocol?<br>
+<br>
+The 'f' protocol is a seven bit protocol which checksums an entire<br>
+file at a time.  It only uses the characters between \040 and \176<br>
+(ASCII space and ~) inclusive as well as the carriage return<br>
+character.  It can be very efficient for transferring text only data,<br>
+but it is very inefficient at transferring eight bit data (such as<br>
+compressed news).  It is not flow controlled, and the checksum is<br>
+fairly insecure over large files, so using it over a serial connection<br>
+requires handshaking (XON/XOFF can be used) and error correcting<br>
+modems.  Some people think it should not be used even under those<br>
+circumstances.<br>
+<br>
+I believe the 'f' protocol originated in BSD versions of UUCP.  It was<br>
+originally intended for transmission over X.25 PAD links.<br>
+<br>
+The 'f' protocol has no startup or finish protocol.  However, both<br>
+sides typically sleep for a couple of seconds before starting up,<br>
+because they switch the terminal into XON/XOFF mode and want to allow<br>
+the changes to settle before beginning transmission.<br>
+<br>
+When a UUCP package transmits a command, it simply sends a string<br>
+terminated by a carriage return.<br>
+<br>
+When a UUCP package transmits a file, each byte b of the file is<br>
+translated according to the following table:<br>
+<br>
+0 &lt;= b &lt;=  037: 0172, b + 0100 (0100 to 0137)<br>
+040 &lt;= b &lt;= 0171:       b        ( 040 to 0171)<br>
+0172 &lt;= b &lt;= 0177: 0173, b - 0100 ( 072 to  077)<br>
+0200 &lt;= b &lt;= 0237: 0174, b - 0100 (0100 to 0137)<br>
+0240 &lt;= b &lt;= 0371: 0175, b - 0200 ( 040 to 0171)<br>
+0372 &lt;= b &lt;= 0377: 0176, b - 0300 ( 072 to  077)<br>
+<br>
+That is, a byte between \040 and \171 inclusive is transmitted as is,<br>
+and all other bytes are prefixed and modified as shown.<br>
+<br>
+When all the file data is sent, a seven byte sequence is sent: two<br>
+bytes of \176 followed by four ASCII bytes of the checksum as printed<br>
+in base 16 followed by a carriage return.  For example, if the<br>
+checksum was 0x1234, this would be sent: "\176\1761234\r".<br>
+<br>
+The checksum is initialized to 0xffff.  For each byte that is sent it<br>
+is modified as follows (where b is the byte before it has been<br>
+transformed as described above):<br>
+<br>
+/* Rotate the checksum left.  */<br>
+if ((ichk & 0x8000) == 0)<br>
+ichk &lt;&lt;= 1;<br>
+else<br>
+{<br>
+ichk &lt;&lt;= 1;<br>
+++ichk;<br>
+}<br>
+<br>
+/* Add the next byte into the checksum.  */<br>
+ichk += b;<br>
+<br>
+When the receiving UUCP sees the checksum, it compares it against its<br>
+own calculated checksum and replies with a single character followed<br>
+by a carriage return.<br>
+G<br>
+The file was received correctly.<br>
+R<br>
+The checksum did not match, and the file should be resent from<br>
+the beginning.<br>
+Q<br>
+The checksum did not match, but too many retries have occurred<br>
+and the communication session should be abandoned.<br>
+<br>
+The sending UUCP checks the returned character and acts accordingly.<br>
+<br>
+------------------------------<br>
+<br>
+From: UUCP-t<br>
+Subject: What is the 't' protocol?<br>
+<br>
+The 't' protocol is intended for TCP links.  It does no error checking<br>
+or flow control, and requires an eight bit clear channel.<br>
+<br>
+I believe the 't' protocol originated in BSD versions of UUCP.<br>
+<br>
+When a UUCP package transmits a command, it first gets the length of<br>
+the command string, C.  It then sends ((C / 512) + 1) * 512 bytes (the<br>
+smallest multiple of 512 which can hold C bytes plus a null byte)<br>
+consisting of the command string itself followed by trailing null<br>
+bytes.<br>
+<br>
+When a UUCP package sends a file, it sends it in blocks.  Each block<br>
+contains at most 1024 bytes of data.  Each block consists of four<br>
+bytes containing the amount of data in binary (most significant byte<br>
+first, the same format as used by the Unix function htonl) followed by<br>
+that amount of data.  The end of the file is signalled by a block<br>
+containing zero bytes of data.<br>
+<br>
+------------------------------<br>
+<br>
+From: UUCP-e<br>
+Subject: What is the 'e' protocol?<br>
+<br>
+The 'e' protocol is similar to the 't' protocol.  It does no flow<br>
+control or error checking and is intended for use over TCP.<br>
+<br>
+The 'e' protocol originated in versions of HDB UUCP.<br>
+<br>
+When a UUCP package transmits a command, it simply sends the command<br>
+as an ASCII string terminated by a null byte.<br>
+<br>
+When a UUCP package transmits a file, it sends the complete size of<br>
+the file as an ASCII decimal number.  The ASCII string is padded out<br>
+to 20 bytes with null bytes (i.e. if the file is 1000 bytes long, it<br>
+sends "1000\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0").  It then sends the<br>
+entire file.<br>
+<br>
+------------------------------<br>
+<br>
+From: UUCP-G<br>
+Subject: What is the 'G' protocol?<br>
+<br>
+The 'G' protocol is used by SVR4 UUCP.  It is identical to the 'g'<br>
+protocol, except that it is possible to modify the window and packet<br>
+sizes.  The SVR4 implementation of the 'g' protocol reportedly is<br>
+fixed at a packet size of 64 and a window size of 7.  I do not know<br>
+why SVR4 chose to implement a new protocol using a new letter, rather<br>
+than simply making the 'g' protocol adjustable.<br>
+<br>
+Most implementations of the 'g' protocol that accept packets larger<br>
+than 64 bytes will also accept packets smaller than whatever they<br>
+requested in the INITB packet.  The SVR4 'G' implementation is an<br>
+exception; it will only accept packets of precisely the size it<br>
+requests in the INITB packet.<br>
+<br>
+------------------------------<br>
+<br>
+From: UUCP-x<br>
+Subject: What is the 'x' protocol?<br>
+<br>
+I believe that the 'x' protocol was intended for use over X.25 virtual<br>
+circuits.  It relies on a write of zero bytes being read as zero bytes<br>
+without stopping communication.  I have heard that it does not work<br>
+correctly, and it is not clear to me that it was ever actually used.<br>
+Please correct me if I am wrong.<br>
+<br>
+------------------------------<br>
+<br>
+From: UUCP-d<br>
+Subject: What is the 'd' protocol?<br>
+<br>
+This is apparently used for DataKit connections, and relies on a write<br>
+of zero bytes being read as zero bytes, much as the 'x' protocol does.<br>
+I don't really know anything else about it.<br>
+<br>
+------------------------------<br>
+<br>
+From: UUCP-h<br>
+Subject: What is the 'h' protocol?<br>
+<br>
+This is apparently used in some places with HST modems.  It does no<br>
+error checking, and is not that different from the 't' protocol.  I<br>
+don't know the details.<br>
+<br>
+------------------------------<br>
+<br>
+From: Thanks<br>
+Subject: Thanks<br>
+<br>
+Besides the papers and information acknowledged at the top of this<br>
+article, the following people have contributed help, advice,<br>
+suggestions and information:<br>
+Earle Ake 513-429-6500 &lt;ake@Dayton.SAIC.COM&gt;<br>
+celit!billd@UCSD.EDU (Bill Davidson)<br>
+Matthew Farwell &lt;dylan@ibmpcug.co.uk&gt;<br>
+"Jonathan I. Kamens" &lt;jik@pit-manager.MIT.EDU&gt;<br>
+"David J. MacKenzie" &lt;djm@eng.umd.edu&gt;<br>
+david nugent &lt;david@csource.oz.au&gt;<br>
+Stephen.Page@prg.oxford.ac.uk<br>
+joey@tessi.UUCP (Joey Pruett)<br>
+Larry Rosenman &lt;ler@lerami.lerctr.org&gt;<br>
+Rich Salz &lt;rsalz@bbn.com&gt;<br>
+kls@ditka.Chicago.COM (Karl Swartz)<br>
+Dima Volodin &lt;dvv@hq.demos.su&gt;<br>
+jon@console.ais.org (Jon Zeeff)<br>
+<br>
+------------------------------<br>
+<br>
+End of UUCP Internals Frequently Asked Questions<br>
+******************************<br>
+-- <br>
+Ian Taylor | ian@airs.com | First to identify quote wins free e-mail message:<br>
+``It takes a man months and months to reconcile himself to a new hat.  And<br>
+just when you're preparing to send it to the jumble sale, he says, `That's<br>
+rather a nice hat you've got on, where did you get it?' ''<br>
+<br>
+<br>
+					</td>
+					<td width="13" background="../../../images/t3/0rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr valign="top">
+					<td width="13" background="../../../images/t3/0cm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" background="../../../images/t3/0cm.jpg">
+						<center>
+							&nbsp;<br>
+							<span class="copyright">To the best of our knowledge, the text on this page may be freely reproduced and distributed.</span>
+							<br>&nbsp;<br>
+						</center>
+					</td>
+					<td width="13" background="../../../images/t3/0rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr valign="bottom">
+					<td width="13" height="15" background="../../../images/t3/3lm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="96%" height="15" background="../../../images/t3/3cm.jpg">
+						&nbsp;
+						<center><span class="navbotpipe"><span class="navbot"><a href="../../../#" class="navbot">About</a> | <a href="../../../#" class="navbot">Community</a> | <a href="../../../#" class="navbot">Art</a> | <a href="../../../#" class="navbot">Carnality</a> | <a href="../../../#" class="navbot">Entertainment</a> | <a href="../../../#" class="navbot">Science</a> | <a href="../../../#" class="navbot">Society</a> | <a href="../../../#" class="navbot">Technology</a></span></span></center>
+					</td>
+					<td width="13" height="15" background="../../../images/t3/3rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr>
+					<td width="13" height="17" background="../../../images/t3/3lb.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="96%" height="17" background="../../../images/t3/3cb.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="13" height="17" background="../../../images/t3/3rb.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+			</table>
+		</td>
+
+		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots -->
+		<td width="20%" align="center" valign="top">
+
+			<table width="170" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="13" height="11" background="../../../images/t3/1rt.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+				<tr>
+					<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="144" background="../../../images/t3/1cm.jpg">
+						<center><span class="hottop">Hot Topics</span></center>
+						<table border="0" cellpadding="1" cellspacing="2" width="100%" id="hot-topics-list">
+							<!-- populated client-side with 10 random real threads from the archive -->
+						</table>
+					</td>
+					<td width="13" background="../../../images/t3/1rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+				<tr>
+					<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="13" height="17" background="../../../images/t3/1rb.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+			</table>
+
+			&nbsp;
+
+			<!-- Recovered original ad images, rotated randomly client-side - nostalgia only, not live/tracking ads -->
+			<center>
+				<img id="ad-slot-mini-1" src="" alt="" border="1" style="display:none;">
+				<br>&nbsp;<br>
+				<img id="ad-slot-mini-2" src="" alt="" border="1" style="display:none;">
+			</center>
+
+		</td>
+	</tr>
+</table>
+
+<script src="../../../assets/site.js"></script>
+
+</body>
+</html>

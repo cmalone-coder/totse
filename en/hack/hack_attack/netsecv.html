@@ -1,0 +1,1581 @@
+<html>
+<head>
+<title>totse.com | An Architectural Overview of UNIX Network Security</title>
+<link rel="shortcut icon" href="../../../favicon.ico">
+<link rel="stylesheet" href="../../../styles/totse3.css">
+<script>const SITE_PREFIX = "../../../";</script>
+<script src="../../../assets/ads.js"></script>
+<script src="../../../assets/hot_topics.js"></script>
+</head>
+
+<body background="../../../images/t3/bg.jpg" bgcolor="#2D3856" text="#000000" link="#FFFFFF" vlink="#FFFFFF" alink="#F5F5F5" leftmargin="5" topmargin="5">
+
+<!-- Top of page table -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="center">
+		<td width="43%" align="left">
+			<img src="../../../images/t3/logos/totse01.gif" border="0" width="358" height="43">
+		</td>
+		<td width="2%">&nbsp;</td>
+		<td width="55%" align="right">
+			<!-- Top banner ad slot - filled client-side from the recovered original ad images -->
+			<div class="bannertext"><img id="ad-slot-top" src="" alt="" border="1" style="display:none;"></div>
+		</td>
+	</tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="top">
+
+		<!-- Left side navigation tabs -->
+		<td align="right" width="157">
+			<table width="157" border="0" cellpadding="0" cellspacing="0">
+				<tr><td height="50"><img src="../../../images/t3/0.gif"></td></tr>
+			</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">About</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Community</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Art</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Carnality</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Entertainment</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Science</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Society</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/0lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/0ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" height="15" background="../../../images/t3/0lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="15" background="../../../images/t3/0cm.jpg">
+									<span class="sactive">Technology</span>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/0lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/0cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+
+		</td>
+
+		<!-- Content column -->
+		<td align="left">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+				<tr>
+					<td width="13" height="11" background="../../../images/t3/3lt.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" height="11" background="../../../images/t3/3ct.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="13" height="11" background="../../../images/t3/3rt.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<!-- Ubiquitous nav menu - placeholders for now, real targets get wired up once we rebuild these sections -->
+				<tr>
+					<td width="13" height="11" background="../../../images/t3/3lm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" height="11" background="../../../images/t3/3cm.jpg" align="right">
+						<span class="navtoppipe">
+							<a href="../../../#" class="navtop">register</a> |
+							<a href="../../../#" class="navtop">bbs</a> |
+							<a href="../../../#" class="navtop">search</a> |
+							<a href="../../../#" class="navtop">rss</a> |
+							<a href="../../../#" class="navtop">faq</a> |
+							<a href="../../../#" class="navtop">about</a>
+						</span>
+					</td>
+					<td width="13" height="11" background="../../../images/t3/3rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+				<tr>
+					<td width="13" height="11" background="../../../images/t3/3lm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" height="11" background="../../../images/t3/3cm.jpg" align="right">
+						<span class="navtoppipe">
+							<a href="../../../#" class="navtop">meet up</a> |
+							<a href="../../../#" class="navtop">add to del.icio.us</a> |
+							<a href="../../../#" class="navtop">digg it</a>
+						</span>
+					</td>
+					<td width="13" height="11" background="../../../images/t3/3rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr valign="top">
+					<td width="13" background="../../../images/t3/0cm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" height="640" background="../../../images/t3/0cm.jpg">
+<h1>An Architectural Overview of UNIX Network Security</h1>
+
+<div class="disclaim"><hr>
+NOTICE: TO ALL CONCERNED Certain text files and messages contained on this site deal with activities and devices which would be in violation of various Federal, State, and local laws if actually carried out or constructed. The webmasters of this site do not advocate the breaking of any law. Our text files and message bases are for informational purposes only. We recommend that you contact your local law enforcement officials before undertaking any project based upon any information obtained from this or any other web site. We do not guarantee that any of the information contained on this system is correct, workable, or factual. We are not responsible for, nor do we assume any liability for, damages resulting from the use of any information on this site. 
+<hr></div>
+
+<br>
+<br>
+An Architectural Overview of UNIX Network Security<br>
+<br>
+February 18, 1993 <br>
+<br>
+Robert B. Reinhardt<br>
+breinhar@access.digex.com <br>
+<br>
+ARINC Research Corporation<br>
+2551 Riva Road<br>
+Annapolis, MD 21401 <br>
+<br>
+<br>
+1. Introduction<br>
+<br>
+The goal of this paper is to present my concept of a UNIX network <br>
+security architecture based on the Internet connectivity model and <br>
+Firewall approach to implementing security. This paper defines <br>
+several layers of a firewall, which depict the layers of vulnerability. <br>
+This paper also provides some subjective comments on some of the <br>
+most widely known tools and methods available to protect UNIX <br>
+networks today, plus a brief discussion of the threat and the risk. <br>
+<br>
+The list of tools and methods that I present in this paper were <br>
+chosen loosely on the basis of the following: (a) My attempt to find <br>
+at least one, maybe several examples of a tool or method designed <br>
+to address a part of the architectural model (some duplication or <br>
+overlap is accepted); (b) my preference to discuss tools that are <br>
+well-known and/or part of the public domain (this is not a strict <br>
+rule, although I did not purposely seek out commercial products); <br>
+and &#169; I hoped to find tools that had a recent paper written by the <br>
+tools' author, for the reader to use as detailed reference beyond the <br>
+scope of this document. <br>
+<br>
+Nothing in this paper should be construed as a product <br>
+endorsement. I apologize in advance to the authors of these tools <br>
+and methods; since I am only presenting a brief overview, I cannot <br>
+do justice to a comprehensive description of them. I also apologize <br>
+to any authors whom I may have left out of this discussion; it was <br>
+not intentional. The reader should check the availability <br>
+information that accompanies each tool and obtain additional <br>
+information prior to proceding with any plans or implementation. <br>
+Of course, there is no warranty expressed or implied in this paper. <br>
+<br>
+<br>
+2. Risk, Threat, and Vulnerability<br>
+<br>
+This section presents a general overview of the risk and the threat <br>
+to the security of your network. These are general statements that <br>
+apply to almost every network. A complete analysis of your <br>
+network's risk, threat, and vulnerability should be done in order to <br>
+assess in detail the requirements of your own network. <br>
+<br>
+<br>
+2.1 Risk<br>
+<br>
+The risk is the possibility that an intruder may be successful in <br>
+attempting to access your local-area network via your wide-area <br>
+network connectivity. There are many possible effects of such an <br>
+occurence. In general, the possibility exists for someone to: <br>
+<br>
+<br>
+<br>
+READ ACCESS.  Read or copy information from<br>
+<br>
+your network.<br>
+<br>
+<br>
+WRITE ACCESS.  Write to or destroy data on<br>
+<br>
+your network (including planting trojan<br>
+<br>
+horses, viruses, and back-doors).<br>
+<br>
+<br>
+DENIAL OF SERVICE.  Deny normal use of your<br>
+<br>
+network resources by consuming all of your<br>
+<br>
+bandwidth, CPU, or memory.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+2.2 Threat<br>
+<br>
+The threat is anyone with the motivation to attempt to gain <br>
+unauthorized access to your network or anyone with authorized <br>
+access to your network. Therefore it is possible that the threat can <br>
+be anyone. Your vulnerability to the threat depends on several <br>
+factors such as: <br>
+<br>
+<br>
+<br>
+MOTIVATION.  How useful access to or<br>
+<br>
+destruction of your network might be to<br>
+<br>
+someone.<br>
+<br>
+<br>
+TRUST.  How well you can trust your authorized<br>
+<br>
+users and/or how well trained are your users<br>
+<br>
+to understand what is acceptable use of the<br>
+<br>
+network and what is not acceptable use,<br>
+<br>
+including the consequences of unacceptable<br>
+<br>
+use.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+2.3 Vulnerability<br>
+<br>
+Vulnerability essentially is a definition of how well protected your <br>
+network is from someone outside of your network that attempts to <br>
+gain access to it; and how well protected your network is from <br>
+someone within your network intentionally or accidently giving <br>
+away access or otherwise damaging the network. <br>
+<br>
+Motivation and Trust (see Threat, section 2.2) are two parts of this <br>
+concern that you will need to assess in your own internal audit of <br>
+security requirements and policy, later I will describe some <br>
+references that are available to help you start this process. <br>
+<br>
+The rest of this paper is a presentation of my concept of the <br>
+architectural model of UNIX network security (the focus of this <br>
+paper). This is geared toward connectivity to the Internet (or <br>
+Internet Protocol connectivity in general), employing the <br>
+FIREWALL method of reducing vulnerability to the risks and the <br>
+threat. <br>
+<br>
+<br>
+3. UNIX Network Security Architecture<br>
+<br>
+For each of the layers in the UNIX Network Security Architecture <br>
+(UNIX/NSA) model below, there is a subsection that follows that <br>
+gives a brief description of that layer and some of the most widely <br>
+used tools and methods for implementing security controls. I am <br>
+using the ISO/OSI style of model since most people in the UNIX <br>
+community are familiar with it. This architecture is specifically <br>
+based on UNIX Internet connectivity, but it is probably general <br>
+enough to apply to overall security of any network methodology. <br>
+One could argue that this model applies to network connectivity in <br>
+general, with or without the specific focus of UNIX network <br>
+security. <br>
+<br>
+<br>
+<br>
+Layer     Name                Functional Description<br>
+<br>
+<br>
+<br>
+<br>
+LAYER 7   POLICY              POLICY DEFINITION AND <br>
+DIRECTIVES<br>
+<br>
+LAYER 6   PERSONNEL           PEOPLE WHO USE <br>
+EQUIPMENT AND DATA<br>
+<br>
+LAYER 5   LAN                 COMPUTER EQUIPMENT AND <br>
+DATA ASSETS<br>
+<br>
+LAYER 4   INTERNAL-DEMARK     CONCENTRATOR - <br>
+INTERNAL CONNECT<br>
+<br>
+LAYER 3   GATEWAY             FUNCTIONS FOR OSI 7, 6, 5, 4<br>
+<br>
+LAYER 2   PACKET-FILTER       FUNCTIONS FOR OSI 3, 2, 1<br>
+<br>
+LAYER 1   EXTERNAL-DEMARK     PUBLIC ACCESS - <br>
+EXTERNAL CONNECT<br>
+<br>
+<br>
+<br>
+<br>
+The specific aim of this model is to illustrate the relationship <br>
+between the various high and low level functions that collectively <br>
+comprise a complete security program for wide-area network <br>
+connectivity. They are layered in this way to depict (a) the <br>
+FIREWALL method of implementing access controls, and (b) the <br>
+overall transitive effect of the various layers upon the adjacent <br>
+layers, lower layers, and the collective model. The following is a <br>
+general description of the layers and the nature of the relationship <br>
+between them. After this brief discussion of what each layer is, the <br>
+next section of this paper will discuss examples of common <br>
+methods and tools used to implement some of your options at each <br>
+level, or at least try to tell you where to find out how to get started. <br>
+Note that there may be some overlap between the definitions of the <br>
+various levels, this is most likely between the different layers of the <br>
+FIREWALL itself (layers 2 and 3). <br>
+<br>
+The highest layer [ 7 - POLICY ] is the umbrella that the entirety of <br>
+your security program is defined in. It is this function that defines <br>
+the policies of the organization, including the high level definition <br>
+of acceptable risk down to the low level directive of what and how <br>
+to implement equipment and procedures at the lower layers. <br>
+Without a complete, effective, and implemented policy, your <br>
+security program cannot be complete. <br>
+<br>
+The next layer [ 6 - PERSONNEL ] defines yet another veil within <br>
+the bigger umbrella covered by layer 7. The people that install, <br>
+operate, maintain, use, and can have or do otherwise have access to <br>
+your network (one way or another) are all part of this layer. This <br>
+can include people that are not in your organization, that you may <br>
+not have any administrative control over. Your policy regarding <br>
+personnel should reflect what your expectations are from your <br>
+overall security program. Once everything is defined, it is <br>
+imperitive that personnel are trained and are otherwise informed of <br>
+your policy, including what is and is not considered acceptable use <br>
+of the system. <br>
+<br>
+The local-area network layer [ 5 - LAN ] defines the equipment and <br>
+data assets that your security program is there to protect. It also <br>
+includes some of the monitor and control procedures used to <br>
+implement part of your security policy. This is the layer at which <br>
+your security program starts to become automated electronically, <br>
+within the LAN assets themselves. <br>
+<br>
+The internal demarkation layer [ 4 - INTERNAL DEMARK ] <br>
+defines the equipment and the point at which you physically <br>
+connect the LAN to the FIREWALL that provides the buffer zone <br>
+between your local- area network (LAN) and your wide-area <br>
+network (WAN) connectivity. This can take many forms such as a <br>
+network concentrator that homes both a network interface for the <br>
+FIREWALL and a network interface for the LAN segment. In this <br>
+case, the concentrator is the internal demarkation point. The <br>
+minimum requirement for this layer is that you have a single point <br>
+of disconnect if the need should arise for you to spontaneosly <br>
+separate your LAN from your WAN for any reason. <br>
+<br>
+The embedded UNIX gateway layer [ 3 - GATEWAY ] defines the <br>
+entire platform that homes the network interface coming from your <br>
+internal demark at layer 4 and the network interface going to your <br>
+packet filtering router (or other connection equipment) at layer 3. <br>
+The point of the embedded UNIX gateway is to provide <br>
+FIREWALL services (as transparent to the user or application as <br>
+possible) for all WAN services. What this really is must be defined <br>
+in your policy (refer to layer 1) and illustrates how the upper layers <br>
+overshadow or are transitive to the layers below. It is intended that <br>
+the UNIX gateway (or server) at this layer will be dedicated to this <br>
+role and not otherwise used to provide general network resources <br>
+(other than the FIREWALL services such as proxy FTP, etc.). It is <br>
+also used to implement monitor and control functions that provide <br>
+FIREWALL support for the functions that are defined by the four <br>
+upper ISO/OSI layers (1-Application, 2-Presentation, 3- Session, 4-<br>
+Transport). Depending on how this and the device in layer 2 is <br>
+implemented, some of this might be merely pass-thru to the next <br>
+level. The configuration of layers 3 and 2 should collectively <br>
+provide sufficient coverage of all 7 of the functions defined by the <br>
+ISO/OSI model. This does not mean that your FIREWALL has to <br>
+be capable of supporting everything possible that fits the OSI <br>
+model. What this does mean is that your FIREWALL should be <br>
+capable of supporting all of the functions of the OSI model that <br>
+you have implemented on your LAN/WAN connectivity. <br>
+<br>
+The packet filtering layer [ 2 - FILTER ] defines the platform that <br>
+homes the network interface coming from your gateway in layer 3 <br>
+and the network interface or other device such as synchronous or <br>
+asynchronous serial communication between your FIREWALL and <br>
+the WAN connectivity at layer 1. This layer should provide both <br>
+your physical connectivity to layer 1 and the capability to filter <br>
+inbound and outbound network datagrams (packets) based upon <br>
+some sort of criteria (what this criteria needs to be is defined in <br>
+your policy). This is typically done today by a commercial off-the- <br>
+shelf intelligent router that has these capabilities, but there are <br>
+other ways to implement this. Obviously there is OSI link-level <br>
+activity going on at several layers in this model, not exclusively this <br>
+layer. But, the point is that functionally, your security policy is <br>
+implemented at this level to protect the overall link- level access to <br>
+your LAN (or stated more generally; to separate your LAN from <br>
+your WAN connectivity). <br>
+<br>
+The external demarkation layer [ LAYER 1 ] defines the point at <br>
+which you connect to a device, telephone circuit, or other media <br>
+that you do not have direct control over within your organization. <br>
+Your policy should address this for many reasons such as the <br>
+nature and quality of the line or service itself and vulnerability to <br>
+unauthorized access. At this point (or as part of layer 2) you may <br>
+even deploy yet another device to perform point to point data link <br>
+encryption. This is not likely to improve the quality of the line, but <br>
+certainly can reduce your vulnerability to unauthorized access. You <br>
+also need to be concerned about the dissemination of things at this <br>
+level that are often considered miscellaneous, such as phone <br>
+numbers or circuit IDs.Illustration of the UNIX/NSA Model <br>
+<br>
+<br>
+<br>
+------------------------------------------------------------------<br>
+<br>
+|                             POLICY                             |<br>
+<br>
+------------------------------------------------------------------<br>
+<br>
+|<br>
+<br>
+|<br>
+<br>
+---------------------------------------------------<br>
+<br>
+|                   PERSONNEL                     |<br>
+<br>
+---------------------------------------------------<br>
+<br>
+|<br>
+<br>
+|<br>
+<br>
+---------------------------------<br>
+<br>
+|              LAN              |<br>
+<br>
+---------------------------------<br>
+<br>
+Enet |<br>
+<br>
+Enet |<br>
+<br>
+-----------------<br>
+<br>
+|  INTERNAL-D   |<br>
+<br>
+-----------------<br>
+<br>
+Enet |<br>
+<br>
+Enet |<br>
+<br>
+-----------------   UNIX server with two Ethernet interfaces and<br>
+<br>
+| GATEWAY-SERVER|   custom software and configuration to <br>
+implement<br>
+<br>
+-----------------   security policy (proxy services, auditing).<br>
+<br>
+Enet |<br>
+<br>
+Enet |<br>
+<br>
+-----------------<br>
+<br>
+| PACKET-FILTER |   cisco IGS router with access lists<br>
+<br>
+-----------------<br>
+<br>
+X.25 |<br>
+<br>
+|<br>
+<br>
+-----------------<br>
+<br>
+|   EXTERNAL-D  |     leased DID line to WAN service<br>
+<br>
+-----------------<br>
+<br>
+|<br>
+<br>
+|<br>
+<br>
++ Public Access +<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+3.1 PUBLIC or NON-PRIVATE CONNECTIVITY<br>
+<br>
+This layer of the model characterizes all external physical <br>
+connectivity to your network. This normally includes equipment <br>
+and telephone lines that you do not own or do not have control <br>
+over. The point of illustrating this is to show this part of the <br>
+connectivity as part of the overall model. At some point at this <br>
+layer, equipment that you do own or have control of will connect to <br>
+the external or public network. Your own policy and <br>
+implementation must take the dynamics of this connectivity into <br>
+account. <br>
+<br>
+<br>
+3.2 ROUTER (FIREWALL PHYSICAL LAYER)<br>
+<br>
+This layer of the model depicts the point at which your physical <br>
+connectivity and your data stream become one. Without going into <br>
+hysterics about all of what a router is and does; the point is that at <br>
+this layer, your electrical connectivity, which contains encapsulated <br>
+data in some form, becomes information. Your router will decode <br>
+the electrical signals from the physical connectivity and turn it into <br>
+packets of encapsulated data for any one of various networking <br>
+protocols. Within this packet of information is contained the <br>
+source address, destination address, protocol ID, the datagram <br>
+itself, etc. <br>
+<br>
+Many routers available today include the capability to create access <br>
+control lists (ACL) for either one or both of the outgoing and the <br>
+incoming data interfaces [1][5]. This normally includes the <br>
+capability to filter out or allow in packets based upon source <br>
+address, destination address, protocol (such as TCP, UDP, ICMP, <br>
+etc.) and specific port numbers (TCP and UDP). This provides you <br>
+the flexibility to design your own network access control policy, <br>
+enforced at the router, before access to your internal network <br>
+resources is required or granted. In this way, routers alone are often <br>
+used to provide the firewall functionality. <br>
+<br>
+While the router ACL capability offers a big advantage, it should <br>
+not be your only protection because, basically the router only <br>
+provides protection at the first three levels of the OSI model <br>
+(Physical, Data Link, and Network layers). The rest of the layers of <br>
+this firewall model discuss ways to address functional security of <br>
+the other four OSI layers (Transport, Session, Presentation, and <br>
+Application). <br>
+<br>
+Availability: I only have personal experience with CISCO routers, <br>
+however I've been told that Wellfleet and Proteon routers also have <br>
+this feature. There may be other vendors as well, but they probably <br>
+all implement it a little differently. <br>
+<br>
+<br>
+3.3 DUAL-HOMED UNIX GATEWAY SERVER (FIREWALL <br>
+LOGICAL LAYER)<br>
+<br>
+This layer of the model illustrated the point at which your various <br>
+IP packets (to and from the router) are used by the network <br>
+operating system (such as TCP/IP under UNIX) to provide the <br>
+services identified in the upper four layers of the OSI model. Of <br>
+course, this UNIX server is actually doing work at the bottom three <br>
+OSI layers also, in order to communicate with: (a) the router on one <br>
+side of the server, and (b) the local-area network on the other side <br>
+of the server. <br>
+<br>
+At this point the router is already implementing your security <br>
+policy for the bottom three OSI layers, now it's up to your dual- <br>
+homed [10] UNIX server (acting as a gateway) to implement your <br>
+security policy relating to functions of the network for the upper <br>
+four OSI layers. This can mean a lot of things. Depending on what <br>
+your security policy says you are supposed to enforce, what you do <br>
+at this point varies. The following tools and methods are example <br>
+of some of the tools and methods (functionality) available today: <br>
+<br>
+<br>
+3.3.1 TCP Wrapper<br>
+<br>
+The "TCP WRAPPER" tool [2] provides monitoring and control of <br>
+network services. Essentially, what happens is that you configure <br>
+inetd on your dual-homed gateway to run the TCP WRAPPER <br>
+software whenever certain services (ports) are connected to. <br>
+Depending on how you configure TCP WRAPPER, it will then <br>
+LOG information about the connection and then actually start the <br>
+intended SERVER program that the connection was intended for. <br>
+Since you have the source to the tool, you can modify it to do more <br>
+depending on what your needs are. For example, you may want <br>
+TCP WRAPPER to connect the user to a proxy service instead of <br>
+the actual program, then have your proxy software handle the <br>
+transaction in whatever way your security requirements demand. <br>
+<br>
+Availability: This is available from several sources, but to ensure <br>
+that you get the most recent copy that CERT has verified, you <br>
+should use anonymous FTP to retrieve it from cert.org in <br>
+~/pub/tools/tcp_wrappers/tcp_wrappers.*. <br>
+<br>
+<br>
+3.3.2 SOCKS library and sockd<br>
+<br>
+The "sockd" and "SOCKS Library" [3] provide another way to <br>
+implement a "TCP Wrapper." It is not intended to make the system <br>
+it runs on secure, but rather to centralize ("firewall") all external <br>
+internet services. The sockd process is started by inetd whenever a <br>
+connection is requested for certain services, and then only allows <br>
+connections from approved hosts (listed in a configuration file). <br>
+The sockd also will LOG information about the connection. You <br>
+can use the Socks Library to modify the client software to directly <br>
+utilize the sockd for outgoing connections also, but this is <br>
+described as very tedious and of course requires you to have the <br>
+source to those client programs. <br>
+<br>
+Availability: The socks package, which in addition to including <br>
+both the daemon and the library, has a pre-modified FTP client and <br>
+finger client; it is available via anonymous FTP from s1.gov in <br>
+~/pub as socks.tar.Z. Contact the authors for more information. <br>
+David Koblas (koblas@netcom.com) or Michelle R. Koblas <br>
+(mkoblas@nas.nasa.gov). <br>
+<br>
+<br>
+3.3.3 Kernel_Wrap for SunOS RPC via Shared Libraries<br>
+<br>
+Essentially this is a wrapper for SunOS daemons that use RPC [4], <br>
+such as portmap, ypserv, ypbind, ypupdated, mountd, pwdauthd, <br>
+etc. To utilize this, you must have SunOS 4.1 or higher and must <br>
+have the capability to rebuild your shared libraries (but, you don't <br>
+need the source to your entire system). Essentially what happens is <br>
+that you modify the function calls that the kernel uses to establish <br>
+RPC connections, such as accept(), recvfrom() and recvmsg(). Since <br>
+these calls are maintained in the shared libraries, you have access to <br>
+modify them without rewriting the kernel. <br>
+<br>
+Availability: The secured C library package to implement this is <br>
+available via anonymous FTP from eecs.nwu.edu in <br>
+~/pub/securelib. <br>
+<br>
+<br>
+3.3.4 Swatch<br>
+<br>
+Simple WATCHER [6] is really two things, it is a program used to <br>
+parse through the myriad of LOG data generated by the various <br>
+security programs, in particular "syslog." But, it's more than that. It <br>
+is fully configurable with triggers (actions), so that while it is <br>
+continuously monitoring the LOG in "real-time," it can take actions <br>
+based upon certain high-priority events that you tell it to watch for. <br>
+To get full use of this, you will need to modify your network <br>
+service daemons such as ftpd and telnetd so that enhanced logging <br>
+is added to syslog, to feed SWATCH. <br>
+<br>
+Availability: The SWATCH source and documentation is available <br>
+via anonymous FTP from sierra.stanford.edu in ~/pub/sources. <br>
+<br>
+<br>
+3.3.5 Controlled Access Point (CAP)<br>
+<br>
+This is more of a method or protocol definition than a specific <br>
+product. CAP [7] provides a network mechanism intended to <br>
+reduce the risk of: password guessing, probing for well-known <br>
+accounts with default passwords, trusted host rlogin, and password <br>
+capture by network snooping. It is really a design for a variation or <br>
+enhancement to the general firewall approach to connecting two or <br>
+more networks. In the paper describing this there is an example of <br>
+two local nets, one a secure segment with an authentication service, <br>
+and the other an unsecure segment. Both communicate with each <br>
+other via a CAP, while there is a router for communication to <br>
+public networks connected on the unsecure side of the CAP. The <br>
+CAP is essentially a router with additional functionality to detect <br>
+incoming connection requests, intercept the user authentication <br>
+process, and invoke the authentication server. <br>
+<br>
+Availability: Unknown. Contact the authors for more information. <br>
+J. David Thompson (thompsond@orvb.saic.com) and Kate Arndt <br>
+(karndt@mitre.org). <br>
+<br>
+<br>
+3.3.6 Mail Gateway<br>
+<br>
+This is more of a procedure than a software package (although there <br>
+are packages designed just to do this). I included this to maintain <br>
+continuity with what I'm trying to illustrate in this paper. This <br>
+really should be applied to all network services that require <br>
+external connectivity (meaning any communication over non-private <br>
+or non-secure channels). In the simplest implementation of this, <br>
+you configure your router to filter packets so that all mail traffic <br>
+(SMTP protocol for example) is only allowed to and from one host, <br>
+the "Mail Gateway." Likewise, your DNS and MTA software will <br>
+need to be configured for this as well. <br>
+<br>
+<br>
+3.3.7 Tty Wrapper<br>
+<br>
+This is one of my pet ideas. I have not seen something like this <br>
+around, and I'll probably never have time to develop it. But, <br>
+essentially this would be like "TCP Wrapper," only it is designed <br>
+specifically for serial communications. After that, we will need a <br>
+"Pseudo-Tty Wrapper," (something more than just filtering out the <br>
+telnet port) but that is for another day. <br>
+<br>
+<br>
+3.3.8 HSC-Gatekeeper<br>
+<br>
+The HSC-Gatekeeper from Herve' Schauer Consultants [8], is a <br>
+complete solution to both layers 1 and 2 of this firewall model. It <br>
+consists of a thorough firewall methodology and authentication <br>
+server, providing pass-thru FTP and TELNET services. The author <br>
+(Herve Schauer) noted that HSC-Gatekeeper is alone to be able to <br>
+offer fully transparent authentication for these services. I have not <br>
+had personal experience with HSC's products, so I cannot make a <br>
+conclusive statement about it other than to comment that the <br>
+description of it in HSC's paper "An Internet Gatekeeper" (available <br>
+in the USENIX Proceedings) depicts it (IMHO) as a very <br>
+comprehensive solution. <br>
+<br>
+Availability: For more information, contact Herve Schauer via e-<br>
+mail at Herve.Schauer@hsc-sec.fr. <br>
+<br>
+<br>
+3.3.9 AT&T Inet<br>
+<br>
+Since I discussed HSC's firewall solution, I thought it only fair to <br>
+mention AT&T's INET Gateway. For a complete description of <br>
+AT&T's internal solution, you should read Bill Cheswick's paper <br>
+[9] "The Design of a Secure Internet Gateway." For additional <br>
+information, contact the author via e-mail at <br>
+ches@research.att.com. I do not believe that AT&T is in the <br>
+business of selling this solution to anyone, but the paper describes <br>
+in good detail how it was done. It should provide the puritan <br>
+firewaller additional depth to the problems and possible solutions <br>
+to an Internet firewall approach. <br>
+<br>
+<br>
+3.4 COMPUTERS ON THE LOCAL-AREA NETWORK<br>
+<br>
+This layer of the model depicts the place where you you are <br>
+potentially at the greatest risk. The previous layers discussed ways <br>
+to protect access to this layer of the network. This layer includes all <br>
+of you local-area network, workstations, file servers, data bases, <br>
+and other network resources. This is also the point at which your <br>
+user community sits at their desks and use the network. <br>
+<br>
+There are several things to be concerned about here, access to this <br>
+layer in the first place notwithstanding. Just because you think you <br>
+have protected and may be monitoring access to this layer within <br>
+the previous layers, does not mean that use of computers and other <br>
+resources within your local-area network should become a free for <br>
+all. Again, this depends on what you identify in your own particular <br>
+security policy but, at this layer you should do some routine <br>
+checking for possible breaches of your firewall that would leave its <br>
+mark at this layer and pay close attention to effective password <br>
+handling, etc. This is also the layer of this model at which you want <br>
+to concern yourself with training your users, after all this is where <br>
+they can potentially make their mistakes (and harm your network). <br>
+<br>
+<br>
+3.4.1 Computer Oracle and Password System (COPS)<br>
+<br>
+COPS is a UNIX security status checker. Essentially what it does is <br>
+check various files and software configurations to see if they have <br>
+been compromised (edited to plant a trojan horse or back door), <br>
+and checks to see that files have the appropriate modes and <br>
+permissions set to maintain the integrity of your security level <br>
+(make sure that your file permissions don't leave themselves wide <br>
+open to attack/access). <br>
+<br>
+Many vendors of UNIX are now bundling a security status checker <br>
+with the OS, usually under the nomenclature of a "C2" or "trusted <br>
+system." You may still find that this package has more features than <br>
+your canned package. Compare them. <br>
+<br>
+Additional Comments: The current version of COPS (1.04) makes a <br>
+limited attempt to detect bugs that are posted in CERT advisories. <br>
+Also, it has an option to generate a limited script that can correct <br>
+various security problems that are discovered. Dan also offers a <br>
+quick hint that should easily get you started using COPS. After you <br>
+have unarchived the COPS package, perform the following steps: <br>
+'./reconfig', 'make', and './cops -v -s . - b bit_bucket'. -- There is a lot <br>
+of README documentation included if you need more help. <br>
+<br>
+Availability: COPS can be retrieved via anonymous FTP from <br>
+cert.org in ~/pub/tools/cops. <br>
+<br>
+<br>
+3.4.2 Chkacct<br>
+<br>
+Chkacct [11] is a COPS for the ordinary user. This tool is made <br>
+available to the users to run, or it is run for them once per day. It <br>
+will do an integrity check on the status of files in their own account <br>
+and then mail them the results (such as "Dear user: Your .rhosts file <br>
+is unsafe"). This package can help make your users more aware of <br>
+security controls and raise their level of participation in the <br>
+program. <br>
+<br>
+Availability: Chkacct is distributed with the COPS package (&gt;= <br>
+COPS 1.04), for additional information contact <br>
+shabby@mentor.cs.purdue.edu. <br>
+<br>
+<br>
+3.4.3 Crack<br>
+<br>
+Crack helps the security administrator identify weak passwords by <br>
+checking for various weaknesses and attempting to decrypt them. If <br>
+Crack can figure out your password, then you must choose a better <br>
+password. It is very likely that a determined intruder will be able to <br>
+get the password too (using similar techniques, or the Crack <br>
+program itself, since it is publicly available). <br>
+<br>
+Availability: Crack is available via anonymous FTP from cert.org in <br>
+~/pub/tools/crack/crack_4.1-tar.Z. <br>
+<br>
+<br>
+3.4.4 Shadow<br>
+<br>
+The shadow password suite of programs [12] replaces the normal <br>
+password control mechanisms on your system to remove the <br>
+encrypted password from the publicly readable file /etc/passwd and <br>
+hides them in a place that only this program has permission to read. <br>
+It consists of optional, configurable components, provides <br>
+password aging to force users to change their passwords once in <br>
+awhile, adds enhanced syslog logging, and can allow users to set <br>
+passwords up to a length of sixteen characters. <br>
+<br>
+Many vendors of UNIX are now bundling a shadow password suite <br>
+with the OS, usually under the nomenclature of a "C2" or "trusted <br>
+system." You may still find that this package has more features than <br>
+your canned package. Compare them. <br>
+<br>
+Availability: Shadow is available from USENET archives which <br>
+store the comp.sources.misc newsgroup. Distribution is permitted <br>
+for all non-commercial purposes. For more information contact the <br>
+author, John F. Haugh III (jfh@rpp386.cactus.org). <br>
+<br>
+<br>
+3.4.5 Passwd+<br>
+<br>
+Passwd+ is a proactive password checker [13] that replaces <br>
+/bin/passwd on your system. It is rule-based and easily <br>
+configurable. It prevents users from selecting a weak password so <br>
+that programs like "CRACK" can't guess it, and it provides <br>
+enhanced syslog logging. <br>
+<br>
+Many vendors of UNIX are now bundling a proactive password <br>
+checker with the OS, usually under the nomenclature of a "C2" or <br>
+"trusted system." You may still find that this package has more <br>
+features than your canned package. Compare them. <br>
+<br>
+Availability: Passwd+ (developed by Matt Bishop) is available via <br>
+anonymous FTP from dartmouth.edu in ~/pub/passwd+tar.Z. <br>
+<br>
+<br>
+3.4.6 Audit<br>
+<br>
+Audit is a policy-driven security checker for a heterogeneous <br>
+environment [14]. It is fully configurable so that you can set up <br>
+Audit to exactly match your site's security policy. This program <br>
+functionally does what COPS is intended to do, but does not hard-<br>
+code your policy decisions for you the way that COPS does. <br>
+<br>
+Many vendors of UNIX are now bundling an auditing subsystem <br>
+with the OS, usually under the nomenclature of a "C2" or "trusted <br>
+system." You may still find that this package has more features than <br>
+your canned package. Compare them. One particular subject to note <br>
+is that most (IMHO) vendors auditing subsystems only collect and <br>
+regurgitate tons of raw data, with no guidance and assistance for <br>
+using that information. They leave that up to you. The Audit and/or <br>
+Swatch tools are probably better. <br>
+<br>
+Availability: The final version of Audit will eventually be posted to <br>
+USENET. However, the beta release will only be made available on <br>
+a limited basis, to larger, heterogeneous sites. If your interested in <br>
+participating in the beta test, send e-mail to the auther, Bjorn <br>
+Satdeva (bjorn@sysadmin.com). <br>
+<br>
+<br>
+3.4.7 Miro<br>
+<br>
+Miro [14] is a suite of tools for specifying and checking security <br>
+contraints (like COPS and Audit), including a couple programming <br>
+languages. It is general because it is not tied to any particular OS, <br>
+and it is flexible because security administrators express site <br>
+policies via a formal specification language. It is easy to extend or <br>
+modify a policy by simply augmenting or changing the specification <br>
+of the current policy. <br>
+<br>
+Availability: Miro is the product of a large research project, and to <br>
+understand it you need more than the paragraph I've written above. <br>
+For more information about the Miro project send e-mail to <br>
+(miro@cs.cmu.edu), there is even a video available. The authors <br>
+Ph.D thesis, as well as the sources for the Miro tools, are available <br>
+via anonymous FTP from ftp.cs.cmu.edu. When you connect there, <br>
+type "cd /afs/cs/project/miro/ftp" and "get ftp-instructions"; this <br>
+will explain how to get the thesis and/or software. <br>
+<br>
+<br>
+3.5 ADDITIONAL SECURITY ENHANCEMENTS<br>
+<br>
+The tools described in firewall layers {1...4} (sections 3.1 to 3.4) <br>
+above, are what I consider part of a "base" set of tools and <br>
+functional requirements for general security administration. The <br>
+tools and methods described in this section are additional measures <br>
+that can be combined with or added to your overall security <br>
+program at any of the other levels. <br>
+<br>
+<br>
+3.5.1 One-time Password Key-Card<br>
+<br>
+Since reusable passwords can be captured and used/reused by <br>
+intruders, consider a "one-time password" scheme. One-time <br>
+passwords can be implemented using software-only solutions or <br>
+software/hardware solutions, and there are several commercial <br>
+products available. The following is an example of what CERT <br>
+uses. Each user is assigned a "Digital Pathways" key-card <br>
+(approximately $60 per user). When you enter your PIN code, it <br>
+supplies a password that is good only one time. The only other <br>
+piece to this, is software that replace the login shell on your <br>
+"firewall" server. <br>
+<br>
+Availability: The source-code for this shell is based on code from <br>
+the key card vendor and is currently not available to the public <br>
+domain via anonymous FTP. For additional information about this, <br>
+send e-mail to (cert@cert.org). <br>
+<br>
+<br>
+3.5.2 Privacy Enhanced Mail (PEM)<br>
+<br>
+PEM is a RSA-based encryption scheme that encrypts sensitive <br>
+information, but more than that it checks for message integrity and <br>
+non-repudiation of origin, so that the originator cannot deny having <br>
+sent the message. PEM is actually a protocol that is designed to <br>
+allow use of symmetric (private-key) and asymmetric (public-key) <br>
+cryptography methods. In this example, Trusted Information <br>
+Systems, Inc. (TIS) has implemented a PEM package using the <br>
+public-key technique together with the Rand MH Message <br>
+Handling System (version 6.7.2). TIS/PEM libraries [16] can be <br>
+adapted for implementation of non-mail applications as well. <br>
+<br>
+Availability: TIS/PEM is a commercially available product, for <br>
+additional information send e-mail to (pem-info@tis.com). <br>
+<br>
+<br>
+3.5.3 Kerberos<br>
+<br>
+Kerberos is a DES-based encryption scheme that encrypts sensitive <br>
+information, such as passwords, sent via the network from client <br>
+software to the server daemon process. The network services will <br>
+automatically make requests to the Kerberos server for permission <br>
+"tickets." You will need to have the source to your client/server <br>
+programs so that you can use the Kerberos libraries to build new <br>
+applications. Since Kerberos tickets are cached locally in /tmp, if <br>
+there is more than one user on a given workstation, then a <br>
+possibility for a collision exists. Kerberos also relies upon the <br>
+system time to operate, therefore it should be enhanced in the <br>
+future to include a secure time server (timed is not appropriate). <br>
+There are two versions of Kerberos, one for OSF ported by HP, and <br>
+one BSD-based developed by the author. <br>
+<br>
+Availability: Kerberos is distributed via anonymous FTP from <br>
+athena-dist.mit.edu in ~/pub/kerberos or ~/pub/kerberos5. <br>
+<br>
+<br>
+3.5.4 Private-Key Certificates<br>
+<br>
+This is not really a product, but rather a design proposal [17] that is <br>
+an alternative method to PEM for adding network security to <br>
+applications such as mail. Simply put, it uses the public-key style <br>
+of implementation with private-key cryptography. It can be adapted <br>
+to different types of applications and it is boilerplate so that you <br>
+can essentially plug-in any encryption algorithm. This is designed <br>
+so that public-key protocols no longer have to rely on public-key <br>
+encryption. <br>
+<br>
+Availability: Unknown. For more information, contact Don Davis, <br>
+at Geer Zolot Assoc., Boston, MA (formerly of Project Athena at <br>
+MIT). His paper "Network Security via Private-Key Certificates" <br>
+better describes this techique. <br>
+<br>
+<br>
+3.5.5 Multilevel Security (MLS)<br>
+<br>
+After you've done everything else (above) to make your network <br>
+secure, then MLS will probably be one of your next logical steps. <br>
+That doesn't mean you have to wait until you've done everything <br>
+else before implementing MLS, it's just (IMHO) that you would be <br>
+wasting your time to go to the n'th degree before covering the <br>
+fundamentals. However, if you are just now deciding to which <br>
+variant of the UNIX operating system to buy, consider buying an <br>
+MLS variant now. After you configure it to manage your security <br>
+policy, go back through layers {1...4} to see what you might add to <br>
+make it more secure in a networked environment. Many UNIX <br>
+vendors are now shipping or preparing to ship a MLS version. A <br>
+couple examples that immediately come to mind is SecureWare <br>
+CMW+ 2.2 (based on A/UX or SCO ODT 1.1) and AT&T USL <br>
+System V-Release 4-Version 2-Enhanced Security (SVR4.2ES). <br>
+<br>
+For additional information regarding MLS implementations within <br>
+the Department of Defense (DoD), contact Charles West at (703) <br>
+696-1891, Multilevel Security Technology Insertion Program (MLS <br>
+TIP), Defense Information Systems Agency (DISA). <br>
+<br>
+For additional information regarding SecureWare CMW+, send e-<br>
+mail to info@sware.com. For additional information regarding <br>
+AT&T USL SVR4.2ES, send e-mail to fate@usl.com. <br>
+<br>
+<br>
+3.5.6 File Encryption<br>
+<br>
+Users should get into the habit of encrypting sensitive files <br>
+whenever they are stored in a public place or transmitted via public <br>
+communication circuits. File encryption isn't bulletproof, but it is <br>
+better than clear text for sensitive information. The UNIX crypt <br>
+utility is the least secure of these tools, since it can be broken using <br>
+well-known decryption techniques. The UNIX des utility (US <br>
+export restriction apply) is more secure. It has not been known to <br>
+be broken, however DoD does not sanction its use for transmitting <br>
+classified material. A new UNIX tool PGP 2.2 is available (uses <br>
+RSA encryption), however there may be licensing issues to be <br>
+concerned with. <br>
+<br>
+<br>
+3.5.7 Secure Programming Methods<br>
+<br>
+Programmers can assist in the effort of security by reducing the <br>
+chance that a potential intruder can exploit a hole or bug that is <br>
+coded into locally developed software. There is probably a lot that <br>
+can be said about this, and their are probably many books on the <br>
+subject somewhere. But, here are some common recommendations: <br>
+(a) Never create a SETUID shell script. There are well-known <br>
+techniques used by intruders to gain access to a shell program that <br>
+is running as root; (b) List the complete file name, including the <br>
+full path in any system() or popen() call; and &#169; Since there is no <br>
+reason for users to have read access to a SETUID file (or any <br>
+exectuble for that matter), set permissions to 4711 (SETUID) or <br>
+711 (Non-SETUID). <br>
+<br>
+<br>
+3.5.8 Counterintelligence<br>
+<br>
+To extend your security program to seek out, identify, and locate <br>
+intruders; you may want to modify some of the security tools <br>
+(especially those proxy service daemons and event-driven auditors) <br>
+to trace intruders back to their source, and otherwise maintain logs <br>
+of data on intrusion attempts. This information can prove vital in <br>
+taking an offensive stance against security break-in's and can help <br>
+prosecute offenders. <br>
+<br>
+<br>
+3.5.9 Other Possibilities<br>
+<br>
+Depending on your requirements you might look into specialized <br>
+solutions such as Compartmented Mode Workstations (CMW), <br>
+end-to-end Data Link Encryption (STU-III, Motorola NES, and <br>
+XEROX XEU are examples), and TEMPEST. The NCSC <br>
+(Rainbow Series) and ITSEC specifications can help you define <br>
+what level of need you have for security and help lead you to <br>
+additional types of solutions. <br>
+<br>
+<br>
+3.6 SECURITY POLICY<br>
+<br>
+Everything discussed in layers {1...5} (sections 3.1 to 3.5) above <br>
+involve specific things you can do, tools and techniques to <br>
+implement, to address a particular area or "hole" in security. Your <br>
+SECURITY POLICY is what ties all of that together into a <br>
+cohesive and effective SECURITY PROGRAM. There are many <br>
+diverse issues to consider when formulating your policy, which <br>
+alone is one of the biggest reasons why you must have one: <br>
+<br>
+<br>
+<br>
+What are the functional requirements of your<br>
+<br>
+network?<br>
+<br>
+<br>
+How secure do you need to be?  What needs to<br>
+<br>
+be protected?<br>
+<br>
+<br>
+How will you handle incident reporting and<br>
+<br>
+prosecution?<br>
+<br>
+<br>
+What does the law require you to do?  What<br>
+<br>
+about privacy?  Since break-ins often occur<br>
+<br>
+via multiple hops on computers throughout the<br>
+<br>
+US and the rest of the world, you will need<br>
+<br>
+to consider a variation of federal, state,<br>
+<br>
+local, as well as foreign laws.<br>
+<br>
+<br>
+Make security a dedicated and deliberate<br>
+<br>
+effort.<br>
+<br>
+<br>
+User training and security awareness.<br>
+<br>
+<br>
+What is considered acceptable use for users?   <br>
+<br>
+Do the users understand what it is they are<br>
+<br>
+permitted to do and what it is they are not<br>
+<br>
+permitted to do?<br>
+<br>
+<br>
+What is considered acceptable use for system<br>
+<br>
+administration staff?  Is using Crack to test<br>
+<br>
+passwords okay?  Is giving friends outside<br>
+<br>
+the organization accounts okay?<br>
+<br>
+<br>
+Maintain a working relationship with the<br>
+<br>
+Computer Emergency Response Team (CERT) at<br>
+<br>
+Carnegie Mellon University (CMU) and your<br>
+<br>
+Forum of Incident Response and Security Teams<br>
+<br>
+(FIRST) regional representative "CERT" team.<br>
+<br>
+<br>
+PLUS a myriad of different issues too<br>
+<br>
+numerous to go  into in a summary paper.<br>
+<br>
+<br>
+<br>
+<br>
+By answering these questions you determine what packages and <br>
+methods in layers {1...5} (or their equivalent) that you want to <br>
+implement, and in what ways you want to modify or configure <br>
+them. "A security policy is a formal specification of the rules by <br>
+which people are given access to a computer and its resources." <br>
+(and to extend that to say...a network and its resources). Whatever <br>
+tools you install to help you maintain the security of your network <br>
+and monitor it, they must be configured to implement YOUR <br>
+POLICY, or else they are not doing the whole job that needs to be <br>
+done. Therefore, you must first have a POLICY. <br>
+<br>
+For additional help in the area of policy development, contact <br>
+cert@cert.org. They can direct you to useful documentation on the <br>
+subject and guide you to your FIRST regional CERT team <br>
+representative. A good starting point is Request For Comments <br>
+(RFC) 1244 "Site Security Handbook" (96 pages), which is <br>
+available via anonymous FTP from numerous RFC archive sites <br>
+(for example: nic.ddn.mil). <br>
+<br>
+<br>
+4. SUMMARY OF AVAILABILITY<br>
+<br>
+<br>
+<br>
+Section   Name           Availability<br>
+<br>
+<br>
+3.2       Router         Cisco, Wellfleet, Proteon<br>
+<br>
+3.3.1     Tcp_wrapper    cert.org:/pub/tools/tcp_wrappers<br>
+<br>
+3.3.2     Socks          s1.gov:/pub/socks.tar.Z<br>
+<br>
+3.3.3     Kernel_wrap    eecs.nwu.edu:/pub/securelib<br>
+<br>
+3.3.4     Swatch         sierra.stanford.edu:/pub/sources<br>
+<br>
+3.3.5     CAP            e-mail to thompsond@orvb.saic.com<br>
+<br>
+3.3.6     Mail Gateway<br>
+<br>
+3.3.7     Tty_wrapper<br>
+<br>
+3.3.8     HSC-Gatekeeper e-mail to Herve.Schauer@hsc-sec.fr<br>
+<br>
+3.3.9     AT&T INET      e-mail to ches@research.att.com<br>
+<br>
+3.4.1     COPS           cert.org:/pub/tools/cops<br>
+<br>
+3.4.2     Chkacct        cc.perdue.edu:/pub/chkacctv1.1.tar.Z<br>
+<br>
+3.4.3     Crack          cert.org:/pub/tools/crack/crack_4.1-tar.Z<br>
+<br>
+3.4.4     Shadow         comp.sources.misc (jfh@rpp386.cactus.org).<br>
+<br>
+3.4.5     Passwd+        dartmouth.edu:/pub/passwd+tar.Z<br>
+<br>
+3.4.6     Audit          e-mail to bjorn@sysadmin.com<br>
+<br>
+3.4.7     Miro           e-mail to miro@cs.cmu.edu<br>
+<br>
+3.5.1     Key-card       e-mail to cert@cert.org<br>
+<br>
+3.5.2     TIS/PEM        e-mail to pem-info@tis.com<br>
+<br>
+3.5.3     Kerberos       athena-dist.mit.edu:/pub/kerberos5<br>
+<br>
+3.5.4     Private-key    contact Don Davis, at Geer Zolot Assoc.<br>
+<br>
+3.5.5     MLS            contact your UNIX vendor<br>
+<br>
+3.5.6     File encrypt   contact your UNIX vendor<br>
+<br>
+3.5.7     Programming<br>
+<br>
+3.5.8     Counter-Intel<br>
+<br>
+3.5.9     Other Poss.    research and contact various vendors<br>
+<br>
+3.6       Policy         RFC 1244 and cert@cert.org<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+5. ADDITIONAL SOURCES OF INFORMATION<br>
+<br>
+There are several primary sources of information that you can tap <br>
+into (and correspond with) to keep up to date with current <br>
+happenings in the general network security and in specific the <br>
+"firewall" community. I recommend subscribing to the following <br>
+mailing lists: (a) cert-advisory-request@cert.org; (b) cert-tools- <br>
+request@cert.org, and &#169; firewalls@greatcircle.com. In addition to <br>
+that read and participate in the following USENET newsgroups: (a) <br>
+comp.security.announce (which echos the CERT advisory mailing <br>
+list); (b) comp.security.misc; &#169; alt.security (frequently dissolves <br>
+into "flame wars"); (d) comp.risks; and (e) comp.virus (almost <br>
+exclusively for discussing PC and MAC viruses). Also, you can <br>
+copy files from the CERT USENET Clipping Archive via <br>
+anonymous FTP from cert.org. <br>
+<br>
+<br>
+<br>
+CERT Contact Information:<br>
+<br>
+Emergencies:   +1 412 268-7090<br>
+<br>
+FAX:           +1 412 268-6989<br>
+<br>
+E-mail:        cert@cert.org<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+U.S. Mail:     CERT Coordination Center<br>
+<br>
+Software Engineering Institute<br>
+<br>
+Carnegie Mellon University<br>
+<br>
+4500 Fifth Avenue<br>
+<br>
+Pittsburgh, PA 15213-3890, USA<br>
+<br>
+<br>
+<br>
+<br>
+USENIX Papers are available directly from USENIX: <br>
+<br>
+The USENIX Association<br>
+2560 Ninth Street, Suite 215<br>
+Berkeley, CA 94710, USA <br>
+<br>
+<br>
+6. Acknowledgements<br>
+<br>
+The author extends thanks to several of the authors of the tools <br>
+discussed in this paper and others for providing feedback that <br>
+effected several changes in the first couple drafts of this paper. This <br>
+includes but, is not limited to the following: Ed DeHart (CERT), <br>
+Jim Ellis (CERT), David and Michelle Koblas (SOCKS), Herve <br>
+Schauer (Gatekeeper), Dan Farmer (COPS), D. Brent Chapman <br>
+(firewalls@greatcircle.com), and Matt Bishop (Editor). <br>
+<br>
+<br>
+7. References<br>
+<br>
+<br>
+<br>
+[1]  S. Carl-Mitchell and John S. Quarterman, Building Internet   <br>
+<br>
+Firewalls. UnixWorld; February, 1992; pp 93-102.<br>
+<br>
+<br>
+[2]  Wietse Venema.  TCP Wrapper: Network Monitoring, Access<br>
+<br>
+Control and Booby Traps.  USENIX Proceedings, UNIX <br>
+Security<br>
+<br>
+Symposium III; September 1992.<br>
+<br>
+<br>
+[3]  David and Michelle Koblas.  SOCKS.  USENIX Proceedings, <br>
+UNIX<br>
+<br>
+Security Symposium III; September 1992.<br>
+<br>
+<br>
+[4]  William LeFebvre.  Restricting Access to System Daemons <br>
+Under<br>
+<br>
+SunOS.  USENIX Proceedings, UNIX Security Symposium III;<br>
+<br>
+September 1992.<br>
+<br>
+<br>
+[5]  D. Brent Chapman.  Network (In)Security Through IP Packet<br>
+<br>
+Filtering.  USENIX Proceedings, UNIX Security Symposium III;<br>
+<br>
+September 1992.<br>
+<br>
+<br>
+[6]  Stephen E. Hansen and E. Todd Atkins.  Centralized System<br>
+<br>
+Monitoring with Swatch.  USENIX Proceedings, UNIX Security<br>
+<br>
+Symposium III; September 1992.<br>
+<br>
+<br>
+[7]  J. David Thompson and Kate Arndt.  A Secure Public Network<br>
+<br>
+Access Mechanism.  USENIX Proceedings, UNIX Security <br>
+Symposium<br>
+<br>
+III; September 1992.<br>
+<br>
+<br>
+[8]  Herve Schauer.  An Internet Gatekeeper.  USENIX <br>
+Proceedings,<br>
+<br>
+UNIX Security Symposium III; September 1992.<br>
+<br>
+<br>
+[9]  William Cheswick.  The Design of a Secure Internet Gateway.   <br>
+<br>
+Murray Hill, NJ:  AT&T Bell Laboratories.<br>
+<br>
+<br>
+[10] Garfinkel, Simson, and Gene Spafford.  Firewall Machines.   <br>
+<br>
+Practical UNIX Security.  Sabastopol, CA: O'Reilly and<br>
+<br>
+Associates, Inc., 1991.<br>
+<br>
+<br>
+[11] Shabbir J. Safdar.  Giving Customers the Tools to Protect<br>
+<br>
+Themselves.  USENIX Proceedings, UNIX Security Symposium <br>
+III;<br>
+<br>
+September 1992.<br>
+<br>
+<br>
+[12] John F. Haugh, II.  Introduction to the Shadow Password <br>
+Suite.   <br>
+<br>
+USENIX Proceedings, UNIX Security Symposium III; <br>
+September<br>
+<br>
+1992.<br>
+<br>
+<br>
+[13] Matt Bishop.  Anatomy of a Proactive Password Checker.  <br>
+USENIX<br>
+<br>
+Proceedings, UNIX Security Symposium III; September 1992.<br>
+<br>
+<br>
+[14] Bjorn Satdeva.  Audit: A Policy Driven Security Checker for a<br>
+<br>
+Heterogeneous Environment.  USENIX Proceedings, UNIX <br>
+Security<br>
+<br>
+Symposium III; September 1992.<br>
+<br>
+<br>
+[15] Allan Heydon and J.D. Tygar.  Specifying and Checking UNIX<br>
+<br>
+Security Constraints.  USENIX Proceedings, UNIX Security<br>
+<br>
+Symposium III; September 1992.<br>
+<br>
+<br>
+[16] James M. Galvin and David M. Balenson.  Security Aspects of <br>
+a UNIX PEM Implementation.  USENIX Proceedings, UNIX Security<br>
+<br>
+Symposium III; September 1992.<br>
+<br>
+<br>
+[17] Don Davis.  Network Security Via Private-Key Certificates.   <br>
+<br>
+USENIX Proceedings, UNIX Security Symposium III; <br>
+September<br>
+<br>
+1992.<br>
+<br>
+<br>
+<br>
+<br>
+------------------------NOTICE---DISCLAIMER------------------------<br>
+The contents of this paper do not necessarily reflect the opinions of <br>
+my employer or anyone else that I know. Nothing in this paper <br>
+should be construed as a product endorsement. No warranty is <br>
+expressed or implied. Any comments? Please send me e-mail.<br>
+------------------------------------------------------------------- <br>
+<br>
+------------------------NOTICE---COPYRIGHT-------------------------<br>
+&#169; Copyright 1992,1993 Robert B. Reinhardt. This paper may be <br>
+distributabed freely as long as the paper is not modified in any way, <br>
+includes this notice, and is provided without guarantee or warranty <br>
+expressed or implied. E-mail comments to <br>
+breinhar@access.digex.com<br>
+-------------------------------------------------------------------
+					</td>
+					<td width="13" background="../../../images/t3/0rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr valign="top">
+					<td width="13" background="../../../images/t3/0cm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" background="../../../images/t3/0cm.jpg">
+						<center>
+							&nbsp;<br>
+							<span class="copyright">To the best of our knowledge, the text on this page may be freely reproduced and distributed.</span>
+							<br>&nbsp;<br>
+						</center>
+					</td>
+					<td width="13" background="../../../images/t3/0rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr valign="bottom">
+					<td width="13" height="15" background="../../../images/t3/3lm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="96%" height="15" background="../../../images/t3/3cm.jpg">
+						&nbsp;
+						<center><span class="navbotpipe"><span class="navbot"><a href="../../../#" class="navbot">About</a> | <a href="../../../#" class="navbot">Community</a> | <a href="../../../#" class="navbot">Art</a> | <a href="../../../#" class="navbot">Carnality</a> | <a href="../../../#" class="navbot">Entertainment</a> | <a href="../../../#" class="navbot">Science</a> | <a href="../../../#" class="navbot">Society</a> | <a href="../../../#" class="navbot">Technology</a></span></span></center>
+					</td>
+					<td width="13" height="15" background="../../../images/t3/3rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr>
+					<td width="13" height="17" background="../../../images/t3/3lb.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="96%" height="17" background="../../../images/t3/3cb.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="13" height="17" background="../../../images/t3/3rb.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+			</table>
+		</td>
+
+		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots -->
+		<td width="20%" align="center" valign="top">
+
+			<table width="170" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="13" height="11" background="../../../images/t3/1rt.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+				<tr>
+					<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="144" background="../../../images/t3/1cm.jpg">
+						<center><span class="hottop">Hot Topics</span></center>
+						<table border="0" cellpadding="1" cellspacing="2" width="100%" id="hot-topics-list">
+							<!-- populated client-side with 10 random real threads from the archive -->
+						</table>
+					</td>
+					<td width="13" background="../../../images/t3/1rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+				<tr>
+					<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="13" height="17" background="../../../images/t3/1rb.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+			</table>
+
+			&nbsp;
+
+			<!-- Recovered original ad images, rotated randomly client-side - nostalgia only, not live/tracking ads -->
+			<center>
+				<img id="ad-slot-mini-1" src="" alt="" border="1" style="display:none;">
+				<br>&nbsp;<br>
+				<img id="ad-slot-mini-2" src="" alt="" border="1" style="display:none;">
+			</center>
+
+		</td>
+	</tr>
+</table>
+
+<script src="../../../assets/site.js"></script>
+
+</body>
+</html>

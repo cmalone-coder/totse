@@ -1,0 +1,1589 @@
+<html>
+<head>
+<title>totse.com | How XModem, XModem CRC, and WXModem work</title>
+<link rel="shortcut icon" href="../../../favicon.ico">
+<link rel="stylesheet" href="../../../styles/totse3.css">
+<script>const SITE_PREFIX = "../../../";</script>
+<script src="../../../assets/ads.js"></script>
+<script src="../../../assets/hot_topics.js"></script>
+</head>
+
+<body background="../../../images/t3/bg.jpg" bgcolor="#2D3856" text="#000000" link="#FFFFFF" vlink="#FFFFFF" alink="#F5F5F5" leftmargin="5" topmargin="5">
+
+<!-- Top of page table -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="center">
+		<td width="43%" align="left">
+			<img src="../../../images/t3/logos/totse01.gif" border="0" width="358" height="43">
+		</td>
+		<td width="2%">&nbsp;</td>
+		<td width="55%" align="right">
+			<!-- Top banner ad slot - filled client-side from the recovered original ad images -->
+			<div class="bannertext"><img id="ad-slot-top" src="" alt="" border="1" style="display:none;"></div>
+		</td>
+	</tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="top">
+
+		<!-- Left side navigation tabs -->
+		<td align="right" width="157">
+			<table width="157" border="0" cellpadding="0" cellspacing="0">
+				<tr><td height="50"><img src="../../../images/t3/0.gif"></td></tr>
+			</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">About</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Community</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Art</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Carnality</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Entertainment</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Science</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" background="../../../images/t3/1cm.jpg">
+									<a href="../../../#" target="_top" class="sinactive">Society</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../../images/t3/0lt.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../../images/t3/0ct.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" height="15" background="../../../images/t3/0lm.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="15" background="../../../images/t3/0cm.jpg">
+									<span class="sactive">Technology</span>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../../images/t3/0lb.jpg"><img src="../../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../../images/t3/0cb.jpg"><img src="../../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+
+		</td>
+
+		<!-- Content column -->
+		<td align="left">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+				<tr>
+					<td width="13" height="11" background="../../../images/t3/3lt.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" height="11" background="../../../images/t3/3ct.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="13" height="11" background="../../../images/t3/3rt.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<!-- Ubiquitous nav menu - placeholders for now, real targets get wired up once we rebuild these sections -->
+				<tr>
+					<td width="13" height="11" background="../../../images/t3/3lm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" height="11" background="../../../images/t3/3cm.jpg" align="right">
+						<span class="navtoppipe">
+							<a href="../../../#" class="navtop">register</a> |
+							<a href="../../../#" class="navtop">bbs</a> |
+							<a href="../../../#" class="navtop">search</a> |
+							<a href="../../../#" class="navtop">rss</a> |
+							<a href="../../../#" class="navtop">faq</a> |
+							<a href="../../../#" class="navtop">about</a>
+						</span>
+					</td>
+					<td width="13" height="11" background="../../../images/t3/3rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+				<tr>
+					<td width="13" height="11" background="../../../images/t3/3lm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" height="11" background="../../../images/t3/3cm.jpg" align="right">
+						<span class="navtoppipe">
+							<a href="../../../#" class="navtop">meet up</a> |
+							<a href="../../../#" class="navtop">add to del.icio.us</a> |
+							<a href="../../../#" class="navtop">digg it</a>
+						</span>
+					</td>
+					<td width="13" height="11" background="../../../images/t3/3rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr valign="top">
+					<td width="13" background="../../../images/t3/0cm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" height="640" background="../../../images/t3/0cm.jpg">
+<h1>How XModem, XModem CRC, and WXModem work</h1>
+
+
+9<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+Xmodem, CRC Xmodem, Wxmodem<br>
+<br>
+<br>
+File Transfer Protocols<br>
+<br>
+More..      <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+Please circulate this document anyway that you see<br>
+fit without alteration except on the page at the<br>
+end titled: "Notes and Comments".  It is requested<br>
+that anyone using these protocols within a commer-<br>
+cial product not charge for them as an option or<br>
+surcharge, but include XMODEM and its derivations<br>
+as part of the basic product.<br>
+More..      <br>
+<br>
+<br>
+<br>
+<br>
+Peter Boswell<br>
+June 20, 1986<br>
+People/Link email: TOPPER<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+Xmodem, CRC Xmodem, WXmodem<br>
+June 20, 1986                                                 Page 2<br>
+----------------------------------------------------------------------<br>
+<br>
+TABLE OF CONTENTS<br>
+More..      <br>
+<br>
+1.   PREFACE  . . . . . . . . . . . . . . . . . . . . . . . . . . .   3<br>
+<br>
+2.   INTRODUCTION . . . . . . . . . . . . . . . . . . . . . . . . .   5<br>
+<br>
+3.   TERMINOLOGY  . . . . . . . . . . . . . . . . . . . . . . . . .   6<br>
+<br>
+4.   XMODEM . . . . . . . . . . . . . . . . . . . . . . . . . . . .   7<br>
+4.1. Xmodem Hardware Level Protocol  . . . . . . . . . . . . .   7<br>
+4.2. Xmodem Initiation . . . . . . . . . . . . . . . . . . . .   7<br>
+4.3. Xmodem Data Transmission  . . . . . . . . . . . . . . . .   8<br>
+4.4. Xmodem Cancellation . . . . . . . . . . . . . . . . . . .   9<br>
+4.5. Xmodem Error Recovery and Timing  . . . . . . . . . . . .   9<br>
+<br>
+5.   CRC XMODEM . . . . . . . . . . . . . . . . . . . . . . . . . .  13<br>
+5.1. CRC Calculation Rules . . . . . . . . . . . . . . . . . .  13<br>
+5.2. CRC Xmodem Initiation . . . . . . . . . . . . . . . . . .  14<br>
+<br>
+6.   WINDOWED XMODEM (WXMODEM)  . . . . . . . . . . . . . . . . . .  15<br>
+6.2. Transparency and Flow Control Rules (Byte Level Rules)  .  16<br>
+6.3. Initial Handshake Rules . . . . . . . . . . . . . . . . .  18<br>
+More..                6.4. Window Packet Transmission Rules  . . . . . . . . . . . .  18<br>
+6.5. Notes for X.25 Hosts  . . . . . . . . . . . . . . . . . .  22<br>
+<br>
+7.   APPENDIX A - CRC CALCULATION RULES . . . . . . . . . . . . . .  23<br>
+7.1. IBM PC - 8088/8086 Data Structure . . . . . . . . . . . .  23<br>
+7.2. BASIC Implementation of Bit Shift Method  . . . . . . . .  23<br>
+7.3. BASIC Implementation of the Table Method  . . . . . . . .  26<br>
+<br>
+8.   NOTES AND COMMENTS . . . . . . . . . . . . . . . . . . . . . .  28<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+Xmodem, CRC Xmodem, WXmodem<br>
+June 20, 1986                                                 Page 3<br>
+----------------------------------------------------------------------<br>
+<br>
+1.   PREFACE<br>
+<br>
+More..           In the years that have past since Xmodem was first developed as a file<br>
+transfer protocol, many thousands of people have been involved in<br>
+finding reasonable ways to move data via asynchronous telephone commun-<br>
+ications.  I appreciate the opportunity that I have had to meet and<br>
+learn from many of these people.  There is nothing in this document<br>
+that did not actually come from someone else.  Indeed, whether it is<br>
+WXMODEM, X.PC, Synchronous dial-up X.25, SNA, ZMODEM, Blast, Kermit or<br>
+any other protocol that becomes the dominant dial-up file transfer<br>
+protocol for personal and home computers is just not important.  What<br>
+is important is that the public domain have a high speed file transfer<br>
+protocol that is reasonably popular and  commonly available for many<br>
+types of personal computers, for bulletin boards and for services such<br>
+as People/Link, Delphi, CompuServe, GEnie and The Source.<br>
+<br>
+Here are a few people that all of us should thank and I would espec-<br>
+ially like to recognize:<br>
+<br>
+Ward Christensen  Ward, a true pioneer in the microcomputer<br>
+communications area, is the author of the original Checksum<br>
+Xmodem protocol.  Thanks for reminding me to "keep it simple<br>
+stupid".<br>
+<br>
+More..                Chuck Forsberg  Chuck has edited perhaps the best work on<br>
+Xmodem and has provided both YMODEM (1K Xmodem) and ZMODEM<br>
+(Windowed YMODEM) to the public domain.  Thanks for showing<br>
+me a protocol which would deal with the X-On/X-Off problem<br>
+and reminding me that there is such a thing as a DLE char-<br>
+acter.<br>
+<br>
+Richard (Scott) McGinnis  Scott is the architect, the moving<br>
+force, for the People/Link software system.  His ideas,<br>
+comments and encouragement have been wonderful.  Wait until<br>
+you see his visual conference program for the IBM PC!<br>
+Thanks for showing me how to use a DLE.<br>
+<br>
+Gene Plantz  Gene operates a major IBM PC bulletin board in<br>
+the Chicago area and has been active in the National SYSOP<br>
+Association.  Thanks for pushing me to do something about<br>
+performance.<br>
+<br>
+In a historical perspective, there seems to be a common pattern in all<br>
+computer systems development that can shed some light on where we stand<br>
+and how we got here.  The pattern is function first, then integrity and<br>
+finally performance.<br>
+More..      <br>
+Any kind of software must first do something worthwhile.  There is no<br>
+point in being error free, or inexpensive to operate if we do not want<br>
+the function.  Back in 1977, Ward Christensen had a need to move data<br>
+<br>
+<br>
+<br>
+<br>
+Xmodem, CRC Xmodem, WXmodem<br>
+June 20, 1986                                                 Page 4<br>
+----------------------------------------------------------------------<br>
+<br>
+between microcomputers.  Within a year it became obvious that the<br>
+function Xmodem provided met a real need to many microcomputer users.<br>
+<br>
+Once we have a new function and we accept it, there is a normal desire<br>
+for the function to be correct.  No one can't count the times that new<br>
+software users have pointed out ... "that new function is super, but<br>
+the results are wrong".  The effort changes from providing new function<br>
+to providing integrity.  The development of CRC Xmodem is a clear<br>
+More..           response to the integrity phase of a service as it reduced undetected<br>
+transmission errors by many orders of magnitude.<br>
+<br>
+After the integrity has been accepted, people begin to look toward cost<br>
+and performance.  XMODEM entered this phase in 1984-1985.  Chuck<br>
+Forsberg's YMODEM is a major step in this effort providing larger<br>
+block sizes, batch mode and more.  His ZMODEM is a major step toward<br>
+making XMODEM derivative protocols work effectively with Public Data<br>
+Networks and most importantly, provides for restart of a file transfer<br>
+at the point of failure.  WXMODEM, presented here, is an alternate<br>
+solution to ZMODEM which is, hopefully, an easier solution to the most<br>
+important performance problems.<br>
+<br>
+No one really knows where XMODEM and the file transfer function will go<br>
+in the coming years.  Perhaps X.PC from Tymnet, MNP from Microcom or<br>
+Synchronous X.25 will slowly push XMODEM, et. al, into history.  I<br>
+think this will happen, but not for maybe 5 to 10 years.  Perhaps when<br>
+50% of the households outgrow the Commodore 64, or when modem manufac-<br>
+turers can provide a $50 synchronous modem we will see the beginning of<br>
+the end for XMODEM, but not today.<br>
+<br>
+More..      <br>
+<br>
+<br>
+Xmodem, CRC Xmodem, WXmodem<br>
+June 20, 1986                                                 Page 5<br>
+----------------------------------------------------------------------<br>
+<br>
+2.   INTRODUCTION<br>
+<br>
+XMODEM and its derivatives have become the primary method for file<br>
+transfer for personal computers.  Hopefully this document will help<br>
+people to understand these protocols and to implement them on their<br>
+own.  In particular, this document presents an additional XMODEM<br>
+derivation to the public domain: WXMODEM.<br>
+<br>
+Why develop another file transfer protocol?<br>
+<br>
+After working with bulletin boards, Public Data Networks such as Tymnet<br>
+and Telenet, and commercial host systems such as People/Link, Delphi,<br>
+CompuServe and others, a number of people came to believe that hobby-<br>
+ist, home and business users would benefit significantly from a new,<br>
+More..           conceptually simple file transfer protocol which would provide improved<br>
+performance and fully support the public data networks such as Tymnet,<br>
+Telenet and Datapac.<br>
+<br>
+But before WXMODEM can be presented, XMODEM and CRC XMODEM must be<br>
+described in detail.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+Xmodem, CRC Xmodem, WXmodem<br>
+June 20, 1986                                                 Page 6<br>
+----------------------------------------------------------------------<br>
+<br>
+3.   TERMINOLOGY<br>
+<br>
+I've elected to use two special terms: transmitter and receiver.  The<br>
+transmitter is the computer/software which is transmitting data packets<br>
+and receiving acknowledgement characters.  The receiver is the com-<br>
+More..           puter/software receiving the data packets and transmitting acknowledge-<br>
+ment characters.<br>
+<br>
+Here is a table of special ASCII characters that are used throughout<br>
+this paper:<br>
+<br>
+Name      Decimal        Hexadecimal    Description<br>
+<br>
+SOH          01           H001          Start Of Header<br>
+EOT          04           H004          End Of Transmission<br>
+ACK          06           H006          Acknowledge (positive)<br>
+DLE          16           H010          Data Link Escape<br>
+X-On (DC1)   17           H011          Transmit On<br>
+X-Off(DC3)   19           H013          Transmit Off<br>
+NAK          21           H015          Negative Acknowledge<br>
+SYN          22           H016          Synchronous idle<br>
+CAN          24           H018          Cancel<br>
+<br>
+<br>
+<br>
+More..      <br>
+<br>
+Xmodem, CRC Xmodem, WXmodem<br>
+June 20, 1986                                                 Page 7<br>
+----------------------------------------------------------------------<br>
+<br>
+4.   XMODEM<br>
+<br>
+Xmodem is a popular error recovery type protocol for transferring files<br>
+between computers via serial, asynchronous communications.   Before<br>
+learning more about Xmodem, it is important to hear what its author has<br>
+to say:<br>
+<br>
+"It was a quick hack I threw together, very unplanned (like<br>
+everything I do), to satisfy a personal need to communicate<br>
+with some other people.  ONLY the fact that it was done in<br>
+8/77, and that I put it in the public domain immediately,<br>
+made it become the standard that it is"....."People who<br>
+suggest I make SIGNIFICANT changes to the protocol, such as<br>
+'full duplex', 'multiple outstanding blocks', 'multiple<br>
+destinations', etc etc don't understand that the incredible<br>
+simplicity of the protocol is one of the reasons it survived<br>
+More..                to this day in as many machines and programs as it may be<br>
+found in!"a<br>
+<br>
+4.1. Xmodem Hardware Level Protocol<br>
+<br>
+The protocol is Asynchronous, 8 data bits, no parity bit, one stop<br>
+bit.  Modems which are commonly used are AT&T 103 (300 baud), AT&T<br>
+212A (1200 baud) and CCITT V.22 (2400 baud).<br>
+<br>
+Typically, the data in a file is transmitted without change (if a<br>
+7 bit machine, the left most, high order, bit is always zero)<br>
+except that CP/M and MS/DOS operating systems want a ^Z (decimal<br>
+26) to represent end-of-file.<br>
+<br>
+4.2. Xmodem Initiation<br>
+<br>
+Prior to entering the protocol, both the transmitting and receiv-<br>
+ing computer must know where to get the data (what file is to be<br>
+transmitted) and where to put the data (file to store the data or<br>
+buffer area).  In Xmodem one side of the file transmission is<br>
+always in charge (local computer), asking the other side (remote<br>
+computer) to either transmit a file or to accept a file.  Through<br>
+More..                a dialog outside of Xmodem the local computer (your PC) first<br>
+sends commands to the remote computer to select a file name<br>
+to prepare to transmit or receive a file via XMODEM.  Once this is<br>
+completed the remote computer enters the XMODEM protocol.  Now the<br>
+local computer must be told what file to transmit or receive and<br>
+it enters the XMODEM protocol, and hopefully data starts moving.<br>
+<br>
+a    Ward Christensen, quoted from a message posted on CompuServe<br>
+in 1985.  Edited by Chuck Forsberg, "X/Ymodem Protocol<br>
+Reference", unpublished, 10/20/1985.<br>
+<br>
+<br>
+<br>
+<br>
+Xmodem, CRC Xmodem, WXmodem<br>
+June 20, 1986                                                 Page 8<br>
+----------------------------------------------------------------------<br>
+<br>
+Upon entering the Xmodem protocol, the transmitting computer waits<br>
+More..                between 10 seconds and a minute to receive an NAK character from<br>
+the receiving computer.  The receiving computer is said to drive<br>
+the protocol.  The transmitter may retry any number of times.  If<br>
+any character other than a NAK or CAN is read by the transmitter,<br>
+it is ignored.  The CAN character implies cancellation of the<br>
+Xmodem file transfer and that the transmitter should leave the<br>
+Xmodem protocol.  Once the receiver has sent a NAK, it will wait<br>
+10 seconds for data to begin to arrive.  If none arrives in 10<br>
+seconds, the receiver will send another NAK and continue to repeat<br>
+10 times at which point the receiver will leave the Xmodem<br>
+protocol (typically with a super cryptic error message such as<br>
+"aborted", "NAK retry maximum exceeded").<br>
+<br>
+Transmitter                        Receiver<br>
+<br>
+[wait for one minute]         &lt;    [NAK]<br>
+<br>
+[begin block transmission]    &gt;<br>
+<br>
+4.3. Xmodem Data Transmission<br>
+<br>
+The transmitter takes the data, divides it into 128, 8 bit byte<br>
+More..                pieces and places it in an Xmodem Packet.<br>
+<br>
+The Xmodem Packet looks like this:<br>
+<br>
+[SOH] [seq] [cmpl [seq] [128 data bytes] [csum]<br>
+<br>
+SOH       Start of header character (decimal 1).<br>
+<br>
+seq       one byte sequence number which starts at 1, and<br>
+increments by one until it reaches 255 and then<br>
+wraps around to zero.<br>
+<br>
+cmpl seq  one byte 1's complement of seq.  This can be<br>
+calculated as cmpl = 255 - (255 and seq) or using<br>
+xor as cmpl = (255 and seq) xor 255.<br>
+<br>
+data      128, 8 bit bytes of data.  Note than when sending<br>
+CP/M and MS/DOS files a ^Z (decimal 26) must be<br>
+added to then end of the file.  If the last block<br>
+of data is less than 128 bytes, the Xmodem packet<br>
+must be padded with characters, usually ^Z's.<br>
+<br>
+More..                     csum      one byte sum of all of the data bytes where any<br>
+overflow or carry is discarded immediately.  For<br>
+example, if the first 3 bytes are 255, 5 and 6 the<br>
+checksum after the first 3 bytes will be 10.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+Xmodem, CRC Xmodem, WXmodem<br>
+June 20, 1986                                                 Page 9<br>
+----------------------------------------------------------------------<br>
+<br>
+Once Xmodem Initiation has completed, the transmitter sends the<br>
+first Xmodem packet and then waits.  After the receiver has the<br>
+full packet, it will compare its own checksum calculation with the<br>
+checksum that was sent by the transmitter.  If the checksums<br>
+match, the receiver will send an ACK.  If the checksums are<br>
+different, the receiver will send a NAK.<br>
+<br>
+More..                After receiving an ACK the transmitter will send the next Xmodem<br>
+packet.  If a NAK is received, the transmitter will resend the<br>
+same XMODEM packet again.<br>
+<br>
+Once the transmitter has sent the last Xmodem packet and has<br>
+received an ACK, the transmitter will send an EOT and then wait<br>
+for a final ACK from the receiver before leaving the Xmodem<br>
+protocol.  When the receiver sees an EOT instead of an SOH (the<br>
+first character the next packet), the receiver transmits an ACK<br>
+character, closes its files and leaves the Xmodem protocol.<br>
+<br>
+Let's look at a three block file transfer:<br>
+<br>
+Transmitter                                  Receiver<br>
+<br>
+&lt;&lt;&lt;&lt;&lt;          [NAK]<br>
+[SOH][001][255][...][csum]    &gt;&gt;&gt;&gt;&gt;<br>
+&lt;&lt;&lt;&lt;&lt;          [ACK]<br>
+[SOH][002][254][...][csum]    &gt;&gt;&gt;&gt;&gt;<br>
+&lt;&lt;&lt;&lt;&lt;          [ACK]<br>
+[SOH][003][253][...][csum]    &gt;&gt;&gt;&gt;&gt;<br>
+&lt;&lt;&lt;&lt;&lt;          [ACK]<br>
+More..                     [EOT]                         &gt;&gt;&gt;&gt;&gt;<br>
+&lt;&lt;&lt;&lt;&lt;          [ACK]<br>
+<br>
+Seems easy, right?  And it is, until something goes wrong.<br>
+<br>
+4.4. Xmodem Cancellation<br>
+<br>
+It has become a defacto standard that the receiver may cancel the<br>
+file transfer by sending a CAN character and then leaving the<br>
+protocol.  If the transmitter receives a CAN character when<br>
+expecting either a NAK or ACK, the transmitter is to termin-<br>
+ate and leave the protocol.  Likewise, if the receiver sees a CAN<br>
+when expecting an SOH (start of packet) it should terminate the<br>
+file transfer.  Many implementations now require two CAN char-<br>
+acters before recognizing a cancel condition.<br>
+<br>
+4.5. Xmodem Error Recovery and Timing<br>
+<br>
+Error detection and recovery are the primary purposes of the<br>
+Xmodem protocol.  The transmitter and receiver should continue to<br>
+retry until 10 errors in a row have occurred.  Some of the common<br>
+<br>
+More..      <br>
+<br>
+<br>
+<br>
+Xmodem, CRC Xmodem, WXmodem<br>
+June 20, 1986                                                 Page 10<br>
+----------------------------------------------------------------------<br>
+<br>
+error conditions are listed below:<br>
+<br>
+4.5.1.    Complement Error<br>
+<br>
+If the sequence number does not match the complement<br>
+sequence number, the packet must be discarded and a NAK<br>
+sent to the transmitter.<br>
+<br>
+4.5.2.    Duplicate packet condition<br>
+<br>
+If the sequence number is the same as the sequence<br>
+number of the last packet received, the packet should be<br>
+discarded and an ACK sent to the transmitter.<br>
+More..      <br>
+4.5.3.    Out of sequence error<br>
+<br>
+If the sequence number matches the complement sequence<br>
+number and it is neither the expected sequence number<br>
+nor the last sequence number, the receiver should send<br>
+two CAN characters and leave the Xmodem protocol<br>
+(e. g. abort the file transfer).<br>
+<br>
+4.5.4.    Receive timeout errors<br>
+<br>
+When expecting data, if 10 seconds ever pass without<br>
+receipt of a character, the receiver should send another<br>
+NAK.  This should be repeated 10 times.  Some implement-<br>
+ations will timeout after 10 seconds waiting for the<br>
+first character of a packet, SOH, and then reduce the<br>
+timeout for characters in a packet.  The timeout should<br>
+not go below 5 seconds if the protocol is to be used<br>
+with public data networks.<br>
+<br>
+4.5.5.    Transmit timeout errors<br>
+<br>
+More..                     In the original protocol, the transmitter would wait 10<br>
+seconds for an ACK, NAK or CAN and then retransmit the<br>
+last Xmodem packet as if a NAK had been received.  Most<br>
+implementations either have the transmitter wait for a<br>
+very long time (30 seconds to a minute) and then<br>
+terminate the file transfer if an ACK, NAK or CAN has<br>
+not been receive or wait about 30 seconds and retransmit<br>
+the last packet.<br>
+<br>
+4.5.6.    Packet synchronization errors<br>
+<br>
+Since extraneous characters are frequently generated<br>
+when using asynchronous communications, the receiver<br>
+should not count on receiving exactly 132 characters for<br>
+each Xmodem packet.  One algorithm for re-synchroniz-<br>
+<br>
+<br>
+<br>
+<br>
+Xmodem, CRC Xmodem, WXmodem<br>
+More..           June 20, 1986                                                 Page 11<br>
+----------------------------------------------------------------------<br>
+<br>
+ation goes as follows:<br>
+<br>
+Assume that the checksum algorithm will cause re-trans-<br>
+mission of Xmodem packets which contain extraneous<br>
+characters.<br>
+<br>
+If the character received when expecting the start of a<br>
+packet is not a SOH then ignore the character and<br>
+continue to search for a SOH.<br>
+<br>
+Once a SOH is found, assume that the next two characters<br>
+will be a valid sequence number and complement.  If they<br>
+are complements then assume that the packet has begun.<br>
+If they are not complements, continue to search for a<br>
+SOH.<br>
+<br>
+Send a NAK if a timeout occurs while attempting to<br>
+re-synchronize (e.g. continue to process timeouts as<br>
+described above).<br>
+More..      <br>
+If no re-synchronization occurs within 135 characters<br>
+then send a NAK character and retry receiving the<br>
+packet.<br>
+<br>
+4.5.7.    False EOT condition<br>
+<br>
+When the receiver sees an EOT (which was not sent by the<br>
+transmitter, but generated out of a communications error)<br>
+instead of a SOH character, the receiver assumes incorrectly<br>
+that the complete file has been transmitted.  This is<br>
+typically an unrecoverable error and it does occur especially<br>
+when the transmitting and receiving UARTs are clocked<br>
+slightly differently.  An algorithm to detect false EOT might<br>
+return a NAK for the first EOT received and only assume true<br>
+end of transmission after receiving two EOT's.<br>
+<br>
+Transmitter                   Receiver<br>
+<br>
+[last block .. ]    &gt;&gt;&gt;&gt;&gt;<br>
+&lt;&lt;&lt;&lt;&lt;     [ACK]<br>
+[EOT]               &gt;&gt;&gt;&gt;&gt;<br>
+More..                                              &lt;&lt;&lt;&lt;&lt;     [NAK]<br>
+[EOT]               &gt;&gt;&gt;&gt;&gt;<br>
+&lt;&lt;&lt;&lt;&lt;     [ACK]<br>
+<br>
+Just in case the transmitter was not prepared to resend the<br>
+EOT, it might be wise to set the timeout to about 3 seconds<br>
+and retransmit the NAK up to 3 times and then issue a warning<br>
+message but assume end of transmission.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+Xmodem, CRC Xmodem, WXmodem<br>
+June 20, 1986                                                 Page 12<br>
+----------------------------------------------------------------------<br>
+<br>
+4.5.8.    False CAN condition<br>
+<br>
+Some Xmodem implementations will terminate on a single CAN<br>
+More..                     character.  Occasionally a CAN character will be generated by<br>
+a communications error and if this occurs and is seen by the<br>
+receiver between packets or is ever seen by the transmitter,<br>
+the file transfer will be incorrectly canceled.  Many<br>
+implementations now require two CAN characters in a row<br>
+before assuming that the file transfer is to be aborted.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+Xmodem, CRC Xmodem, WXmodem<br>
+June 20, 1986                                                 Page 13<br>
+----------------------------------------------------------------------<br>
+<br>
+5.   CRC XMODEM<br>
+<br>
+CRC Xmodem is very similar to Checksum Xmodem.  The protocol initiation<br>
+has changed and the 8 bit checksum has been replaced by a 16 bit CRC.<br>
+Only theses changes are presented.<br>
+More..      <br>
+One of the earliest and most persistent problems with Xmodem were<br>
+transmission errors which were not caught by the checksum algorithm.<br>
+Assuming that there is no bias in asynchronous communications errors,<br>
+we would expect that 1 out of every 256 erroneous complete or oversized<br>
+Xmodem packets to have a valid checksum.  With the same assumption, if<br>
+the checksum were 16 bits, we would expect 1 out of every 65,536<br>
+erroneous complete or oversized packets would have a valid checksum.<br>
+<br>
+5.1. CRC Calculation Rules<br>
+<br>
+Considerable theoretical research has shown that a 16 bit cyclical<br>
+redundancy check character (CRC/16) will detect a much higher<br>
+percent of errors such that it would only allow 1 undetected<br>
+bit in error for every 10^14 bits transmitted.  That's 1 un-<br>
+detected error per 30 years of constant transmission at 1 mega-<br>
+bit per second.  However, my personal experience indicates that<br>
+something around 10^9 to 10^10 is more realistic.  Why such a vast<br>
+improvement over the checksum algorithm?  It is caused by the<br>
+unique properties that prime numbers have when being divided into<br>
+integers.  Simply stated, if an integer is divided by a prime<br>
+number, the remainder is unique.  The CRC/16 algorithm treats all<br>
+More..                1024 data bits in an Xmodem packet as an integer, multiples that<br>
+integer by 2^16 and then divides that 1040 bit number by a 17 bit<br>
+prime number.  The low order 16 bits of the remainder becomes the<br>
+16 bit CRC.<br>
+<br>
+The 17 bit prime number in CRC Xmodem is 2^16 + 2^12 + 2^5 + 1 or<br>
+65536 + 4096 + 32 + 1 = 69665.  So calculating the CRC is simple,<br>
+just multiply the 128 byte data number by 65536, divide by 69665<br>
+and the low order 16 bits of the remainder are the CRC.  The only<br>
+problem is, I've never seen a computer which has instructions to<br>
+support 130 byte integer arithmetic!  Fortunately for us, Seephan<br>
+Satchell, Satchell Evaluations, published a specification a very<br>
+efficient algorithm to calculate the CRC without either 130 byte<br>
+arithmetic or bit manipulation.  Appendix A contains the source<br>
+code, in IBM/PC BASIC, for the calculation of a CRC.<br>
+<br>
+Other methods of calculating CRC's for Xmodem involve bit level<br>
+logic. a.<br>
+<br>
+a    Chuck Forsberg, "X/Ymodem Protocol Reference", available on<br>
+many bulletin boards.<br>
+More..      <br>
+<br>
+<br>
+<br>
+Xmodem, CRC Xmodem, WXmodem<br>
+June 20, 1986                                                 Page 14<br>
+----------------------------------------------------------------------<br>
+<br>
+5.2. CRC Xmodem Initiation<br>
+<br>
+The initiation of CRC Xmodem was designed to provide for automatic<br>
+fall back to Checksum Xmodem if the transmitter does not support<br>
+the CRC version.<br>
+<br>
+The receiver requests CRC Xmodem by sending the letter C (decimal<br>
+67) instead of a NAK.  If the transmitter supports CRC Xmodem, it<br>
+will begin transmission of the first Xmodem packet upon receipt of<br>
+the C.  If the transmitter does not support CRC Xmodem, it will<br>
+ignore the C.  The receiver should timeout after 3 seconds and<br>
+repeat sending the C.  After 3 timeouts, the receiver should fall<br>
+More..                back to the checksum Xmodem protocol and send a NAK.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+Xmodem, CRC Xmodem, WXmodem<br>
+June 20, 1986                                                 Page 15<br>
+----------------------------------------------------------------------<br>
+<br>
+6.   WINDOWED XMODEM (WXMODEM)a<br>
+<br>
+First, Xmodem provided the basic file transfer function, then CRC<br>
+Xmodem improved the data integrity, now we come to WXmodem which<br>
+provides better cost/performance.<br>
+<br>
+6.1. WXmodem Design Criteria<br>
+<br>
+A few people began discussing improvements to Xmodem with me in<br>
+More..                late 1985, over time we developed the following criteria:<br>
+<br>
+6.1.1.    The protocol must be as similar as possible to the<br>
+XMODEM originally developed by Ward Christensen.<br>
+The popularity of XMODEM, I believe, is based on<br>
+its conceptual simplicity.  More software writers<br>
+are familiar with this protocol than any other.<br>
+More files are transferred everyday by this<br>
+protocol than any other asynchronous protocol.<br>
+Simplicity here implies a limited number of rules<br>
+for timing, error recovery and initiation.<br>
+<br>
+6.1.2.    The protocol must overcome the propagation delay<br>
+that is characteristic of the public data net-<br>
+works.  While the cost of long distance communi-<br>
+cation is 50 to 90% less via the public data<br>
+networks than via the public voice networks, the<br>
+propagation delays inherent in public data networks<br>
+both reduces the cost savings and increases the<br>
+aggravation that occurs while watching a computer<br>
+slowly perform a file transfer.<br>
+<br>
+More..                     6.1.3.    The protocol must overcome the flow control<br>
+problems which are characteristic in many public<br>
+data network situations.  Basically, in most<br>
+situations, the X-On and X-Off characters must<br>
+always be used for flow control and only for flow<br>
+control when using public data networks.<br>
+<br>
+6.1.4.    The protocol should improve error recovery by<br>
+simplifying the manner in which a programmer can<br>
+determine the beginning of an XMODEM block.  Since<br>
+the Start of Header character (SOH) can appear in<br>
+the data or CRC, the programmer must use a rela-<br>
+tively sophisticated method to determine if a SOH<br>
+actually represents the beginning of a XMODEM<br>
+block.<br>
+<br>
+<br>
+a    This section assumes that the reader is already familiar with<br>
+Xmodem and CRC Xmodem presented above.<br>
+<br>
+More..      <br>
+<br>
+<br>
+Xmodem, CRC Xmodem, WXmodem<br>
+June 20, 1986                                                 Page 16<br>
+----------------------------------------------------------------------<br>
+<br>
+6.2. Transparency and Flow Control Rules (Byte Level Rules)<br>
+<br>
+This protocol provides special public data network support for<br>
+non-X.25 hosts and PC-Pursuit access to bulletin boards.  In order<br>
+to accomplish this, the transmitter is not permitted to transmit<br>
+the X-On and X-Off characters in the Xmodem packets.  The reason<br>
+for this restriction is simple:<br>
+<br>
+By the very nature of X.25 public data networks, without<br>
+flow control, buffer overruns and lost data are inevit-<br>
+able from time to time at any baud rate.<br>
+<br>
+To avoid data loss public data networks must always<br>
+More..                     assume that any X-Off and X-On character is a flow<br>
+control character when supporting PC-Pursuit for<br>
+bulletin boards and when supporting non-X.25 host<br>
+systems.<br>
+<br>
+Since many non-X.25 hosts, bulletin boards and communications<br>
+programs use X-On and X-Off as flow control characters, public<br>
+data networks must support those X-Off and X-On requests at the<br>
+point of connection where the X-Off is received by the public data<br>
+network.  Otherwise, as many as several hundred characters backed<br>
+up in the network would be transmitted by the public data network<br>
+before the X-Off used for flow control reached the transmitter.<br>
+The public data network has no way to know whether an X-On/X-Off<br>
+protocol or Xmodem is operational at any point in time.  Therefore<br>
+a Xmodem packet which contains an X-Off character and no succeed-<br>
+ing X-On character will cause the public data network to stop<br>
+forwarding the ACK or NAK.<br>
+<br>
+In addition, error recovery requires sophisticated programming for<br>
+the receiver to determine the start of an XMODEM packet.  This<br>
+protocol simplifies this task by dedicating a special character as<br>
+an indicator that an XMODEM packet is about to begin.  The<br>
+More..                SYN (synch, decimal 22) character is used for this purpose.<br>
+The presence of one or more SYN characters in a data stream always<br>
+indicates that the next non SYN character is the beginning of an<br>
+XMODEM packet (e.g. SOH).<br>
+<br>
+The method used here to handle these situations is through the<br>
+insertion of the DLE character (H010, decimal 16, data link escape<br>
+character) as an indicator that the character following the DLE is<br>
+in fact a modified DLE, SYN, X-On, or X-Off character.<br>
+<br>
+Rules:<br>
+<br>
+6.2.1.    Whenever an X-On, X-Off, SYN or DLE character is<br>
+about to be transmitted as any part of an actual<br>
+<br>
+<br>
+<br>
+<br>
+Xmodem, CRC Xmodem, WXmodem<br>
+June 20, 1986                                                 Page 17<br>
+More..           ----------------------------------------------------------------------<br>
+<br>
+XMODEM packet including the CRC, the transmitter<br>
+will transmit instead a DLE character followed by<br>
+the original character which has been modified by<br>
+exclusive or'ing it with 64 to its value. 1<br>
+<br>
+6.2.2.    The inserted DLE characters are not counted in the<br>
+128 byte data length of the data portion of the<br>
+XMODEM packet.  Indeed, it would be possible to<br>
+have a packet which is physically 264 bytes in<br>
+length because the Xmodem block sequence number<br>
+(or its complement), all of the 128 data characters<br>
+and two CRC characters are all either X-On, X-Off,<br>
+SYN or DLE characters.<br>
+<br>
+6.2.3.    Neither the DLE nor the adjusted characters are<br>
+used in the CRC calculation, rather the original<br>
+character is always used in the CRC calculation.<br>
+<br>
+6.2.4.    When the receiver sees a DLE character, it does not<br>
+More..                               count it in the XMODEM block length calculation,<br>
+nor compute it in the CRC calculation but discards<br>
+it and then remembers to exclusive or the next<br>
+character with 64 and to verify that the result<br>
+character is either a DLE, SYN, X-On or X-Off (the<br>
+receiver will reject the packet unconditionally, if<br>
+not one of those four characters) and then include<br>
+the character as part of the packet.<br>
+<br>
+6.2.5.    Prior to transmission of a XMODEM packet, the<br>
+transmitter will send one or more SYN characters<br>
+(recommend two) as a positive indicator to the<br>
+receiver of the beginning of a Xmodem packet.2<br>
+<br>
+6.2.6.    Except for the character received after a DLE, the<br>
+receiver will test each incoming character to see<br>
+if it is a SYN character.  If it is, it will<br>
+discard the character and assume that the next<br>
+character will be another SYN or SOH.  If a SYN<br>
+character is received in the middle of a packet,<br>
+the receiver will NAK that packet.  The purpose of<br>
+the SYN character is to simplify recognition of the<br>
+More..                               beginning of a XMODEM packet by the receiver.  Once<br>
+an out of synch condition occurs on incoming<br>
+data, the receiver can just ignore every incoming<br>
+character until it sees a SYN.  Existing XMODEM<br>
+code which already properly deals with this<br>
+situation could just always discard any SYN<br>
+character at time of receipt with no further<br>
+action.<br>
+<br>
+<br>
+<br>
+<br>
+Xmodem, CRC Xmodem, WXmodem<br>
+June 20, 1986                                                 Page 18<br>
+----------------------------------------------------------------------<br>
+<br>
+6.2.7.    The transmitter must support flow control char-<br>
+acters (X-On, and X-Off) during transmission of<br>
+packets.  Upon receipt of an X-Off it will wait 10<br>
+More..                               seconds for an X-On and will start transmission<br>
+again after 10 seconds or an X-On is received,<br>
+whichever occurs first.  Any extraneous X-On<br>
+characters received by the transmitter will be<br>
+ignored and discarded.  (Note that this does NOT<br>
+apply to X.25 host computers which use X.25 L2 and<br>
+L3 windows for flow control.)<br>
+<br>
+6.3. Initial Handshake Rules<br>
+<br>
+An initial handshake is provided to permit the receiver to<br>
+indicate to the transmitter whether it can support checksum<br>
+Xmodem, CRC Xmodem, or Windowed Xmodem:<br>
+<br>
+6.3.1.    WXMODEM - The receiver will send a character W<br>
+(decimal 87) and wait 3 seconds for the beginning<br>
+of a Xmodem packet.  This will be repeated 3 times<br>
+and then the receiver will drop down to CRC Xmodem.<br>
+<br>
+6.3.2.    CRC XMODEM - The receiver will send a character C<br>
+(decimal 67) and wait 3 seconds for the beginning<br>
+of a Xmodem packet.  This will be repeated 3 times<br>
+More..                               and then the receiver will drop down to Checksum<br>
+Xmodem.<br>
+<br>
+6.3.3.    Checksum XMODEM -  The receivers will send a NAK<br>
+and wait up to 3 seconds for the beginning of a<br>
+Xmodem packet.  This will be repeated 4 times and<br>
+if no valid SOH is received, the receiver will<br>
+abort the file transfer request.<br>
+<br>
+6.4. Window Packet Transmission Rules<br>
+<br>
+In order to overcome the propagation delays inherent with public<br>
+data networks such as Tymnet, Telenet, Datapac, IPSS, Transpac and<br>
+dozens more, the protocol must permit the transmitter to send more<br>
+than one packet before receiving an acknowledgement from the<br>
+receiver.  The number of packets that the transmitter will send<br>
+before stopping transmission if an acknowledgement has not been<br>
+received is called the "window".  WXmodem uses a window of 4<br>
+packets for several reasons.  Most importantly, it uses a single<br>
+set of timing rules which would deal reasonably well with a wide<br>
+range of baud rates (that implied keeping the window fairly<br>
+small).  Secondly, the window sequence number is directly related<br>
+More..                to the Xmodem packet sequence number which, hopefully, will<br>
+simplify implementation of windowing.<br>
+<br>
+<br>
+<br>
+<br>
+Xmodem, CRC Xmodem, WXmodem<br>
+June 20, 1986                                                 Page 19<br>
+----------------------------------------------------------------------<br>
+<br>
+Rules:<br>
+<br>
+6.4.1.    The window is always 4 Xmodem packets.  That is,<br>
+the transmitter will send 4 unacknowledged pack-<br>
+ets.  Transmission will not cease and the time out<br>
+interval will not begin until 4 unacknowledged<br>
+packets have been transmitted.  Note that the<br>
+window may be less than 4 Xmodem packets for short<br>
+files or at end-of-file.<br>
+More..      <br>
+6.4.2.    The receiver will transmit acknowledgements in the<br>
+form:<br>
+<br>
+ACK[sequence]<br>
+<br>
+The [sequence] field is an 8 bit number where the<br>
+high order or most significant 6 bits are always<br>
+zero and the low order or least significant 2 bits<br>
+are always the same as the low order 2 bits of the<br>
+XMODEM block sequence number of the XMODEM packet<br>
+being acknowledged (value in decimal may range<br>
+from 0 to 3).<br>
+<br>
+6.4.3.    The receiver does not have to acknowledge every<br>
+packet, but must acknowledge at minimum every<br>
+fourth packet.  The transmitter will accept one<br>
+ACK[sequence] for multiple XMODEM packets.  For<br>
+example, after an unknown number of packets:<br>
+<br>
+Transmitter                             Receiver<br>
+<br>
+More..                               ....<br>
+....<br>
+....<br>
+[Block Sequence Number H0FE]<br>
+[Block Sequence Number H0FF]            ACK[H002]<br>
+[Block Sequence Number H000]            ACK[H003]<br>
+[Block Sequence Number H001]<br>
+[Block Sequence Number H002]            ACK[H001]<br>
+.....<br>
+<br>
+Since some transmitters must close the window and<br>
+cease all communications before doing disk I/O to<br>
+read more data, it is suggested that acknowledge-<br>
+ments be sent for every packet (except when the<br>
+receiver can easily determine that another packet<br>
+is already being received at the point in time that<br>
+the ACK[sequence] is about to be sent).3<br>
+<br>
+<br>
+<br>
+More..      <br>
+<br>
+Xmodem, CRC Xmodem, WXmodem<br>
+June 20, 1986                                                 Page 20<br>
+----------------------------------------------------------------------<br>
+<br>
+6.4.4.    The receiver will reject a packet (request re-<br>
+transmission) by sending:<br>
+<br>
+NAK[sequence]<br>
+<br>
+Where [sequence] is then next window sequence<br>
+number (between H000 and H003) after the [sequence]<br>
+of the last good block.  The receiver will discard<br>
+up to 3 Xmodem packets received after the NAK is<br>
+transmitted until it receives the packet with the<br>
+sequence number that had previously been nak'ed by<br>
+the receiver.  The receiver will not send a second<br>
+NAK until another packet with the same sequence<br>
+number is received which is also invalid or a<br>
+timeout has occurred.<br>
+<br>
+More..                     6.4.5.    When the transmitter receives a NAK[sequence], it<br>
+will complete transmission of any XMODEM block<br>
+currently being transmitted and then begin re-<br>
+transmission starting with the block which was<br>
+nak'ed.<br>
+<br>
+6.4.6.    The receiver will discard duplicate packets but<br>
+count them in the window for purposes of deter-<br>
+mining the maximum receive window without an ACK in<br>
+response.  For example, if the receiver gets packet<br>
+sequence number 127 four times in a row, it must<br>
+send an ACK H003 even if the receiver has previous-<br>
+ly acked that block.<br>
+<br>
+6.4.7.    The timeout intervals at various points in process-<br>
+ing are:<br>
+<br>
+Waiting for a character on receive, start of packet<br>
+not yet recognized:      15 seconds<br>
+<br>
+Waiting for a character on receive, start of packet<br>
+has been recognized:     15 seconds<br>
+More..      <br>
+Waiting for an Ack or Nak on transmit side after<br>
+the window has closed:   15 seconds4<br>
+<br>
+Waiting for an X-On after receipt of an X-Off by<br>
+the transmitter:         10 seconds<br>
+<br>
+6.4.8.    When the transmitter times out waiting for an ACK<br>
+or NAK when the window is closed (e.g. four blocks<br>
+have been transmitted), the transmitter will<br>
+retransmit the last block transmitted and wait<br>
+again.  Only after 10 consecutive timeouts have<br>
+<br>
+<br>
+<br>
+<br>
+Xmodem, CRC Xmodem, WXmodem<br>
+June 20, 1986                                                 Page 21<br>
+----------------------------------------------------------------------<br>
+<br>
+More..                               occurred will the transmitter cancel the trans-<br>
+mission.<br>
+<br>
+6.4.9.    Where possible, it is recommended that the receiver<br>
+return an ACK[sequence] for every packet or at<br>
+least 50% of the Xmodem packets.  When the receiver<br>
+must wait for the window to close (e.g. receive 4<br>
+Xmodem packets without an acknowledgement),<br>
+some performance benefit will be lost.<br>
+<br>
+If the receiver cannot overlap disk I/O and communications<br>
+I/O, the receiver can temporarily stop transmission by either:<br>
+<br>
+"Closing the window" (e.g. receiving 4 blocks without sending<br>
+an ACK[sequence]) performing the disk I/O and then sending an<br>
+ACK[sequence].<br>
+<br>
+Transmitting an X-Off followed by an X-On when the receiver<br>
+is ready to resume accepting data.  Note that the receiver<br>
+should be prepared to accept data for about a 1/4 of a second<br>
+after the X-Off is sent to cover situations where satellite<br>
+propagation delay may occur.  One possible implementation<br>
+More..                     would let the computer user set the "X-Off delay time" so<br>
+that in the normal case the X-Off delay could be set to 25<br>
+milleseconds.  A sophisticated implementation might set the<br>
+initial X-Off delay at 250 milleseconds and then reduce it<br>
+based on experience during the file transfer.<br>
+<br>
+Each approach has its advantages, but the X-Off approach will<br>
+provide the best performance in most cases especially when<br>
+using a public data network.  Note, however, that some<br>
+computers, notably the Commodore 64 and the IBM PC Jr cannot<br>
+receive communications data while writing to disk.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+Xmodem, CRC Xmodem, WXmodem<br>
+June 20, 1986                                                 Page 22<br>
+----------------------------------------------------------------------<br>
+<br>
+More..                6.5. Notes for X.25 Hosts<br>
+<br>
+Host computer systems which utilize the X.25 protocol<br>
+(examples: People/Link, Delphi, CompuServe, The Source) to<br>
+interface with the various public data networks may send special<br>
+control packets which change the manner in which the network will<br>
+communicate with the remote personal computer, bulletin board or<br>
+terminal.  For the purposes of this paper, it is assumed that the<br>
+X.25 host can already support CRC and/or Checksum Xmodem and<br>
+present only the changes for WXMODEM.<br>
+<br>
+6.5.1.    When an X.25 Host is the transmitter, it must be<br>
+sure to set the distant X.3 PAD parameters to<br>
+assure that the receiver can use X-Off/X-On for<br>
+flow control.  This is accomplished by sending a<br>
+Q-Bit command packet to set X.3 parameter 12 to a 1<br>
+prior to the initial handshake.  Note that if the<br>
+receiver cannot support WXMODEM, the X.25 Host must<br>
+send the appropriate Q-Bit packet to reset para-<br>
+meter 12 to a 0 before transmitting the first CRC<br>
+or Checksum Xmodem packet.<br>
+<br>
+More..                     6.5.2.    When an X.25 Host is the receiver and in WXMODEM<br>
+mode, it must be sure to set the distant X.3 PAD<br>
+parameters to assure that the network will use<br>
+X-Off/X-On for flow control between the network and<br>
+the transmitter to prevent its buffers from<br>
+overflowing.  This is accomplished by sending a<br>
+Q-Bit command packet to set X.3 parameter 5 to a 1<br>
+prior to the initial handshake.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+Xmodem, CRC Xmodem, WXmodem<br>
+June 20, 1986                                                 Page 23<br>
+----------------------------------------------------------------------<br>
+<br>
+7.   APPENDIX A - CRC CALCULATION RULES<br>
+<br>
+The purpose of this appendix is to give non-technical and non mathema-<br>
+More..           tical software writers a cook book approach to calculating the CRC-16<br>
+used in Xmodem.  We have half accomplished that goal.  The BASIC code<br>
+in the examples below has been tested on an IBM PC and found to work<br>
+effectively even at 9600 with compiled Basic.  Some BASIC languages do<br>
+not offer an XOR function and others do not have MKI$ and CVI functions<br>
+which simplified the movement of data between data types.  Someday we<br>
+hope to provide a Commodore C-64/C-128 implementation which simulates<br>
+XOR, but not today!<br>
+<br>
+My thanks go to Chuck Forsberg, Joe Noonan, John Byrns and Stephen<br>
+Satchell.  Without their help and public domain documents, this would<br>
+have never been possible.<br>
+<br>
+7.1. IBM PC - 8088/8086 Data Structure<br>
+<br>
+The Intel 8080 and upward has a feature, convenient only to some<br>
+electrical engineer somewhere, which places 2 byte (16) bit<br>
+integers in BYTE REVERSE order in memory.  That is, the least<br>
+significant byte is placed in memory before the most significant<br>
+byte for integer operations.  If A$ is one byte containing the<br>
+number 52 and it is assigned to I% using the ASC function, the<br>
+binary value (52) ends up in the first byte of I% and the second<br>
+More..                byte is zero.<br>
+Result<br>
+<br>
+I%=0                [x'0000']<br>
+I%=1                [x'0100']<br>
+A$="A"              [x'41']<br>
+I%=ASC(A$)          [x'4100']<br>
+B$=MKI$(I%)         [x'4100']  letter "A" then binary zero<br>
+I%=CVI(CHR$(0)+A$)  [x'0041']<br>
+A$=CHR$(65)         [x'41']<br>
+<br>
+Once this is understood, many problems with these algorithms goes<br>
+away.<br>
+<br>
+7.2. BASIC Implementation of Bit Shift Method<br>
+<br>
+The bit shift method here was converted from the "C" logic<br>
+presented in Chuck Forsberg's "Xmodem/Ymodem" protocol reference<br>
+and from an old IBM two page reference guide that Joe Noonan<br>
+carries with him in his appointment calendar!<br>
+<br>
+More..      <br>
+<br>
+<br>
+<br>
+Xmodem, CRC Xmodem, WXmodem<br>
+June 20, 1986                                                 Page 24<br>
+----------------------------------------------------------------------<br>
+<br>
+Chucks' "C" code:<br>
+<br>
+/*<br>
+* This function calculates the CRC used by the XMODEM/CRC Protocol<br>
+* The first argument is a pointer to the message block.<br>
+* The second argument is the number of bytes in the message block.<br>
+* The function returns an integer which contains the CRC.<br>
+* The low order 16 bits are the coefficients of the CRC.<br>
+*/<br>
+int calcrc(ptr, count)<br>
+char *ptr;<br>
+int count;<br>
+More..           {<br>
+int crc, i;<br>
+<br>
+crc = 0;<br>
+while (--count &gt;= 0) {<br>
+crc = crc ^ (int)*ptr++ &lt;&lt; 8;<br>
+for (i = 0; i &lt; 8; ++i)<br>
+if (crc & 0x8000)<br>
+crc = crc &lt;&lt; 1 ^ 0x1021;<br>
+else<br>
+crc = crc &lt;&lt; 1;<br>
+}<br>
+return (crc & 0xFFFF);<br>
+}<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+Xmodem, CRC Xmodem, WXmodem<br>
+More..           June 20, 1986                                                 Page 25<br>
+----------------------------------------------------------------------<br>
+<br>
+But in IBM PC BASIC, our implementation looks like:<br>
+<br>
+100 DEFINT A-Z 'DEFAULT IS TWO BYTE INTEGERS<br>
+2000 REM * V$ CONTAINS 133 CHARACTER COMPLETE XMODEM PACKET<br>
+2010 REM * CRC$ IS TWO BYTE CRC WITH MOST SIGNIFICANT BYTE FIRST<br>
+2020 CRC$=CHR$(0)+CHR$(0)                      'START AT ZERO<br>
+2030 FOR I2=4 TO 131<br>
+2040   A$=MID$(V$,I2,1)<br>
+2050   GOSUB 4000<br>
+2060 NEXT I2<br>
+2070 REM * CRC$ CONTAINS CALCULATED CRC!<br>
+<br>
+3000 IF CRC$=MID$(V$,132,2) THEN ....    'IT'S GOOD!!!<br>
+<br>
+4000 REM * CRC BITWISE CALCULATION (WHAT A JOKE!)<br>
+4010 CRCH1=ASC(LEFT$(CRC$,1)) XOR ASC(A$)<br>
+4020 CRCL1=ASC(RIGHT$(CRC$,1))<br>
+4030 FOR I3 = 0 TO 7<br>
+More..           4040   CARRY=0 : IF CRCH1 &gt; 127 THEN CARRY=-1  'IS HIGH BIT ON IN CRC?<br>
+4050   CRCH1=(CRCH1*2) AND 255                 'CRCH &lt;&lt; 1 AND 255<br>
+4060   IF CRCL1&gt;127 THEN CRCH1=CRCH1+1 'IF CRCL CARRIES THEN INCR CRCH<br>
+4070   CRCL1=(CRCL1*2) AND 255                 'CRCL &lt;&lt; 1 AND 255<br>
+4080   IF CARRY=0 THEN GOTO 4105               'IF HIGH BIT WAS ON,<br>
+4090   CRCH1=CRCH1 XOR 16                      'XOR WITH &H1021<br>
+4100   CRCL1=CRCL1 XOR 33<br>
+4110 NEXT I3<br>
+4130 CRC$=CHR$(CRCH1)+CHR$(CRCL1)<br>
+4140 RETURN 'WHEW<br>
+<br>
+That routine will execute 128 * 7 + 128 * 9 * 8 BASIC statements<br>
+for each Xmodem packet or 10112 statements per Xmodem packet!  It<br>
+will work for low baud rates in compiled BASIC, but just is too<br>
+much for interpretive BASIC.<br>
+<br>
+<br>
+<br>
+<br>
+More..      <br>
+Xmodem, CRC Xmodem, WXmodem<br>
+June 20, 1986                                                 Page 26<br>
+----------------------------------------------------------------------<br>
+<br>
+7.3. BASIC Implementation of the Table Method<br>
+<br>
+This method is based on routine M4 in Steven Satchell's paper,<br>
+"Test of CRC Routines for CRC-CCITT", but has some very signifi-<br>
+cant differences.  A table of 256 CRC's, originally calculated<br>
+with the bit shift method is used to avoid performing the bit<br>
+shift during communications.  The table contains the CRC's for<br>
+each byte value from 0 to 255 when the original CRC is zero.  The<br>
+result of this calculation is included in the DATA statements in<br>
+the code.<br>
+<br>
+The comments are intended to show what is logically happening<br>
+rather than physically.  Because of the "byte reverse" nature of<br>
+integers in the 8088, a logical shift of 8 bits to the left is a<br>
+physical shift of eight bits to the right!<br>
+<br>
+More..           200 DEFINT A-Z  'ALL INTEGERS<br>
+210 DIM CRCTB(256)<br>
+<br>
+300 GOSUB 9000 'INITIALIZE CRC TABLES<br>
+<br>
+6200 REM * CRC CALCULATION USING TABLE METHOD, V$=XMODEM PACKET<br>
+6210 CRC$=CHR$(0)+CHR$(0)                 'INITIALIZE TO ZERO<br>
+6220 FOR Q=4 TO 131<br>
+6230   CRCH1=ASC(LEFT$(CRC$,1))           'CRC &gt;&gt; 8 AND 255<br>
+6240   CRCL2=CVI(CHR$(0)+RIGHT$(CRC$,1))  'CRC &lt;&lt; 8 AND 255<br>
+6250   CRC1$=MKI$(CRCTB(CRCH1 XOR ASC(MID$(V$,Q,1))) XOR CRCL2)<br>
+6260   CRC$=RIGHT$(CRC1$,1)+LEFT$(CRC1$,1) 'SET IT BACK!<br>
+6270 NEXT Q<br>
+6280 IF CRC$ &lt;&gt; MID$(V$,N,2) THEN ....... 'GOTO ERROR ROUTINE<br>
+6290 REM * END OF CRC CALC<br>
+<br>
+9000 FOR I%=0 TO 255 ' INITIALIZE CRC TABLE<br>
+9010   READ CRCTB(I%)<br>
+9020 NEXT I%<br>
+9025 RETURN<br>
+9030 DATA 0, 4129, 8258, 12387, 16516, 20645, 24774, 28903<br>
+9040 DATA -32504,-28375,-24246,-20117,-15988,-11859,-7730,-3601<br>
+More..           9050 DATA 4657, 528, 12915, 8786, 21173, 17044, 29431, 25302<br>
+9060 DATA -27847,-31976,-19589,-23718,-11331,-15460,-3073,-7202<br>
+9070 DATA 9314, 13379, 1056, 5121, 25830, 29895, 17572, 21637<br>
+9080 DATA -23190,-19125,-31448,-27383,-6674,-2609,-14932,-10867<br>
+9090 DATA 13907, 9842, 5649, 1584, 30423, 26358, 22165, 18100<br>
+9100 DATA -18597,-22662,-26855,-30920,-2081,-6146,-10339,-14404<br>
+9110 DATA 18628, 22757, 26758, 30887, 2112, 6241, 10242, 14371<br>
+9120 DATA -13876,-9747,-5746,-1617,-30392,-26263,-22262,-18133<br>
+9130 DATA 23285, 19156, 31415, 27286, 6769, 2640, 14899, 10770<br>
+9140 DATA -9219,-13348,-1089,-5218,-25735,-29864,-17605,-21734<br>
+9150 DATA 27814, 31879, 19684, 23749, 11298, 15363, 3168, 7233<br>
+<br>
+<br>
+<br>
+<br>
+Xmodem, CRC Xmodem, WXmodem<br>
+June 20, 1986                                                 Page 27<br>
+----------------------------------------------------------------------<br>
+<br>
+9160 DATA -4690,-625,-12820,-8755,-21206,-17141,-29336,-25271<br>
+More..           9170 DATA 32407, 28342, 24277, 20212, 15891, 11826, 7761, 3696<br>
+9180 DATA -97,-4162,-8227,-12292,-16613,-20678,-24743,-28808<br>
+9190 DATA -28280,-32343,-20022,-24085,-12020,-16083,-3762,-7825<br>
+9200 DATA 4224, 161, 12482, 8419, 20484, 16421, 28742, 24679<br>
+9210 DATA -31815,-27752,-23557,-19494,-15555,-11492,-7297,-3234<br>
+9300 DATA 689, 4752, 8947, 13010, 16949, 21012, 25207, 29270<br>
+9310 DATA -18966,-23093,-27224,-31351,-2706,-6833,-10964,-15091<br>
+9320 DATA 13538, 9411, 5280, 1153, 29798, 25671, 21540, 17413<br>
+9330 DATA -22565,-18438,-30823,-26696,-6305,-2178,-14563,-10436<br>
+9340 DATA 9939, 14066, 1681, 5808, 26199, 30326, 17941, 22068<br>
+9350 DATA -9908,-13971,-1778,-5841,-26168,-30231,-18038,-22101<br>
+9360 DATA 22596, 18533, 30726, 26663, 6336, 2273, 14466, 10403<br>
+9370 DATA -13443,-9380,-5313,-1250,-29703,-25640,-21573,-17510<br>
+9380 DATA 19061, 23124, 27191, 31254, 2801, 6864, 10931, 14994<br>
+9390 DATA -722,-4849,-8852,-12979,-16982,-21109,-25112,-29239<br>
+9400 DATA 31782, 27655, 23652, 19525, 15522, 11395, 7392, 3265<br>
+9410 DATA -4321,-194,-12451,-8324,-20581,-16454,-28711,-24584<br>
+9420 DATA 28183, 32310, 20053, 24180, 11923, 16050, 3793, 7920<br>
+<br>
+This method uses 128 * 6 BASIC statements per Xmodem packet or a<br>
+miserly 768 BASIC statements per packet.  And, if you want, the<br>
+More..                code can be tightened still more.  Unfortunately, any further<br>
+tightening that we could see would eliminate most of the already<br>
+limited readability of the code.<br>
+<br>
+Xmodem, CRC Xmodem, WXmodem<br>
+June 20, 1986                                                 Page 28<br>
+----------------------------------------------------------------------<br>
+<br>
+8.   NOTES AND COMMENTS<br>
+<br>
+Please add your notes and comments here or send them to me and I'll get<br>
+them added to the current copy on People/Link.<br>
+<br>
+1.   This was originally set up to ADD 32 to the character on transmit<br>
+and SUBTRACT 32 on receive.  By using exclusive or with 64, the<br>
+logic is the same on transmit and receive.<br>
+<br>
+2.   The use of the SYN character was added at the request of several<br>
+people who have coded Xmodem routines and have struggled valiantly<br>
+to improve their error recovery routines.  Peter Boswell 6/10/86<br>
+<br>
+3.   The suggestion that ACK[sequence] be sent for every block received<br>
+More..                was added.          Peter Boswell       6/10/86<br>
+<br>
+4.   The original value for the ACK/NAK timeout was 10 seconds.  This<br>
+was changed to 15 seconds the situation where the receiver is<br>
+operating at 300 baud and using X-Off to stop receipt of characters<br>
+during disk I/O.  Peter Boswell, 6/10/86<br>
+<br>
+<br>
+You have exceeded your time limit<br>
+Goodbye<br>
+<br>
+Disconnecting...+ <br>
+<br>
+<br>
+<br>
+<br>
+					</td>
+					<td width="13" background="../../../images/t3/0rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr valign="top">
+					<td width="13" background="../../../images/t3/0cm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="97%" background="../../../images/t3/0cm.jpg">
+						<center>
+							&nbsp;<br>
+							<span class="copyright">To the best of our knowledge, the text on this page may be freely reproduced and distributed.</span>
+							<br>&nbsp;<br>
+						</center>
+					</td>
+					<td width="13" background="../../../images/t3/0rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr valign="bottom">
+					<td width="13" height="15" background="../../../images/t3/3lm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="96%" height="15" background="../../../images/t3/3cm.jpg">
+						&nbsp;
+						<center><span class="navbotpipe"><span class="navbot"><a href="../../../#" class="navbot">About</a> | <a href="../../../#" class="navbot">Community</a> | <a href="../../../#" class="navbot">Art</a> | <a href="../../../#" class="navbot">Carnality</a> | <a href="../../../#" class="navbot">Entertainment</a> | <a href="../../../#" class="navbot">Science</a> | <a href="../../../#" class="navbot">Society</a> | <a href="../../../#" class="navbot">Technology</a></span></span></center>
+					</td>
+					<td width="13" height="15" background="../../../images/t3/3rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr>
+					<td width="13" height="17" background="../../../images/t3/3lb.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="96%" height="17" background="../../../images/t3/3cb.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="13" height="17" background="../../../images/t3/3rb.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+
+			</table>
+		</td>
+
+		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots -->
+		<td width="20%" align="center" valign="top">
+
+			<table width="170" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="13" height="11" background="../../../images/t3/1lt.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="144" height="11" background="../../../images/t3/1ct.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="13" height="11" background="../../../images/t3/1rt.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+				<tr>
+					<td width="13" background="../../../images/t3/1lm.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="144" background="../../../images/t3/1cm.jpg">
+						<center><span class="hottop">Hot Topics</span></center>
+						<table border="0" cellpadding="1" cellspacing="2" width="100%" id="hot-topics-list">
+							<!-- populated client-side with 10 random real threads from the archive -->
+						</table>
+					</td>
+					<td width="13" background="../../../images/t3/1rm.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+				<tr>
+					<td width="13" height="17" background="../../../images/t3/1lb.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="144" height="17" background="../../../images/t3/1cb.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td width="13" height="17" background="../../../images/t3/1rb.jpg"><img src="../../../images/t3/0.gif"></td>
+				</tr>
+			</table>
+
+			&nbsp;
+
+			<!-- Recovered original ad images, rotated randomly client-side - nostalgia only, not live/tracking ads -->
+			<center>
+				<img id="ad-slot-mini-1" src="" alt="" border="1" style="display:none;">
+				<br>&nbsp;<br>
+				<img id="ad-slot-mini-2" src="" alt="" border="1" style="display:none;">
+			</center>
+
+		</td>
+	</tr>
+</table>
+
+<script src="../../../assets/site.js"></script>
+
+</body>
+</html>
