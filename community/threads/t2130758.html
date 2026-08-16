@@ -199,11 +199,11 @@
 					<td width="97%" height="11" background="../../images/t3/3cm.jpg" align="right">
 						<span class="navtoppipe">
 							<span class="navtop">register</span> |
-							<span class="navtop">bbs</span> |
-							<span class="navtop">search</span> |
+							<a href="../../community/index.html" class="navtop">bbs</a> |
+							<a href="../../en/search/index.html" class="navtop">search</a> |
 							<a href="../../totse.rss" class="navtop">rss</a> |
 							<a href="../../en/_faq/totse_faq.html" class="navtop">faq</a> |
-							<span class="navtop">about</span>
+							<a href="../../en/_about/index.html" class="navtop">about</a>
 						</span>
 					</td>
 					<td width="13" height="11" background="../../images/t3/3rm.jpg"><img src="../../images/t3/0.gif"></td>
@@ -228,7 +228,7 @@
 <table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
 <tr>
 	<td class="alt1" width="100%">
-		<span class="navbar">Community</span> <span class="navbar">&gt; Technology</span> <span class="navbar">&gt; Everything *NIX</span>
+		<span class="navbar"><a href="../../community/index.html">Community</a></span> <span class="navbar">&gt; <a href="../../community/forums/f144.html">Technology</a></span> <span class="navbar">&gt; <a href="../../community/forums/f184.html">Everything *NIX</a></span>
 	</td>
 </tr>
 </table>
@@ -250,83 +250,45 @@
 <tr>
 	<td class="alt1" style="padding:6px">
 		<div>
-<p>Inspired by the other thread, i found a script to change the background every hour.</p><p>The thing is, it doesn't work from cron.hourly. If i run it from the shell it works nicely, but doesn't i run it from sudo. i know its running because if put an echo in there it appears, but the background doesn't change. ive given it 700, 755 and 777 permissions, all with the same result.</p><p>heres the script,<br />
-
+<p>Inspired by the other thread, i found a script to change the background every hour.</p><p>The thing is, it doesn't work from cron.hourly. If i run it from the shell it works nicely, but doesn't i run it from sudo. i know its running because if put an echo in there it appears, but the background doesn't change. ive given it 700, 755 and 777 permissions, all with the same result.</p><p>heres the script,<br />
 <!-- BEGIN TEMPLATE: bbcode_code -->
-<div style="margin:20px; margin-top:5px">
-
-	<div class="smallfont" style="margin-bottom:2px">Code:</div>
-
-	<pre class="alt2" dir="ltr" style="
-
-		margin: 0px;
-
-		padding: 6px;
-
-		border: 1px inset;
-
-		width: 100%;
-
-		height: 466px;
-
-		text-align: left;
-
-		overflow: auto">#!/bin/bash
-
-# script: change_backgrounds.sh - bash version
-
-# version 2007.3.7
-
-# description: randomly replace gnome background with one from a directory
-
-# credits: David Loschiavo [http://www.djlosch.com], Steven Van Ingelgem
-
-# license: GPL
-
-
-
-
-
-bg_path=/usr/autoBG
-
-extensions=&quot;jpg png gif jpeg JPG GIF PNG&quot;
-
-temp_bg_list=/tmp/bg_change_list
-
-
-
-rm -f $temp_bg_list
-
-
-
-for extension in $extensions
-
-do
-
-	find $bg_path -iregex &quot;.*.$extension&quot; &gt;&gt; &quot;$temp_bg_list&quot;
-
-done
-
-
-
-cnt=`wc -l &quot;$temp_bg_list&quot; | cut -f1 -d&quot; &quot;`
-
-all_bgs=`echo \`expr $RANDOM % $cnt\``
-
-
-
-selected_bg=`head -n$all_bgs &quot;$temp_bg_list&quot; | tail -n1`
-
-
-
-logger &quot;Changed desktop to: $selected_bg&quot;
-
-
-
-gconftool-2 -t string -s /desktop/gnome/background/picture_filename &quot;$selected_bg&quot;
-
-exit 0</pre>
-
+<div style="margin:20px; margin-top:5px">
+	<div class="smallfont" style="margin-bottom:2px">Code:</div>
+	<pre class="alt2" dir="ltr" style="
+		margin: 0px;
+		padding: 6px;
+		border: 1px inset;
+		width: 100%;
+		height: 466px;
+		text-align: left;
+		overflow: auto">#!/bin/bash
+# script: change_backgrounds.sh - bash version
+# version 2007.3.7
+# description: randomly replace gnome background with one from a directory
+# credits: David Loschiavo [http://www.djlosch.com], Steven Van Ingelgem
+# license: GPL
+
+
+bg_path=/usr/autoBG
+extensions=&quot;jpg png gif jpeg JPG GIF PNG&quot;
+temp_bg_list=/tmp/bg_change_list
+
+rm -f $temp_bg_list
+
+for extension in $extensions
+do
+	find $bg_path -iregex &quot;.*.$extension&quot; &gt;&gt; &quot;$temp_bg_list&quot;
+done
+
+cnt=`wc -l &quot;$temp_bg_list&quot; | cut -f1 -d&quot; &quot;`
+all_bgs=`echo \`expr $RANDOM % $cnt\``
+
+selected_bg=`head -n$all_bgs &quot;$temp_bg_list&quot; | tail -n1`
+
+logger &quot;Changed desktop to: $selected_bg&quot;
+
+gconftool-2 -t string -s /desktop/gnome/background/picture_filename &quot;$selected_bg&quot;
+exit 0</pre>
 </div>
 <!-- END TEMPLATE: bbcode_code -->from what i gather, it is trying to work but the path /usr/autoBG is not working as it should when run by root. im not experienced enough with this to figure it out, so any advice would be great.</p>
 		</div>
@@ -393,8 +355,7 @@ GConf is userland specific. So when you sudo you are chain loading gconf as root
 <tr>
 	<td class="alt1" style="padding:6px">
 		<div>
-<p>allright, i understand the problem, it is changing a desktop on root. i havent logged in to test it, but i added <br />
-
+<p>allright, i understand the problem, it is changing a desktop on root. i havent logged in to test it, but i added <br />
 echo &quot;Changed desktop to: $selected_bg&quot;</p><p>and spits out what i expect, although the background doesn't change unless i run it from my normal user shell.</p><p>i assumed that when the system runs the cron.hourly jobs it does so from root or something?</p><p>but i don't know how to fix it.</p>
 		</div>
 	</td>
@@ -416,10 +377,8 @@ echo &quot;Changed desktop to: $selected_bg&quot;</p><p>and spits out what i exp
 <tr>
 	<td class="alt1" style="padding:6px">
 		<div>
-<p>i fiddled around with trying to switch users before i run the last command, something like <br />
-
-su raovq -c gconftool.... worked, but asked for a password each time. running in root didn't really help. chown root didn't make a difference.</p><p>so i gave up and threw the script into /usr/bin/, and used crontab to call it every hour. without any adjustments it works perfectly.</p><p>im not sure why one works and not the other, but it's all good now. ive learnt to not touch any of the cron.time folders, and stick to crontab. bit of a shame though.</p><p>edit: the background changed on the hour, as well as 17 past. i didn't delete the original cron.hourly script yet, so i guess i fixed it but the test failed. i guess ill find out in 33 minutes if it works properly.</p><p>edit2: it works properly now. the line ended up being <br />
-
+<p>i fiddled around with trying to switch users before i run the last command, something like <br />
+su raovq -c gconftool.... worked, but asked for a password each time. running in root didn't really help. chown root didn't make a difference.</p><p>so i gave up and threw the script into /usr/bin/, and used crontab to call it every hour. without any adjustments it works perfectly.</p><p>im not sure why one works and not the other, but it's all good now. ive learnt to not touch any of the cron.time folders, and stick to crontab. bit of a shame though.</p><p>edit: the background changed on the hour, as well as 17 past. i didn't delete the original cron.hourly script yet, so i guess i fixed it but the test failed. i guess ill find out in 33 minutes if it works properly.</p><p>edit2: it works properly now. the line ended up being <br />
 su  raovq -c &quot;gconftool-2 -t string -s /desktop/gnome/background/picture_filename &quot;$selected_bg&quot;&quot;</p><p>i had to make it owned by root to work without needing a password. my faith in cron.time is restored (if anyone is still following).</p>
 		</div>
 	</td>
@@ -441,38 +400,23 @@ su  raovq -c &quot;gconftool-2 -t string -s /desktop/gnome/background/picture_fi
 <tr>
 	<td class="alt1" style="padding:6px">
 		<div>
-<p><div style="margin:20px; margin-top:5px; ">
-
-	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
-
-	<table cellpadding="6" cellspacing="0" border="0" width="100%">
-
-	<tr>
-
-		<td class="alt2" style="border:1px inset">
-
-			
-
-				<div>
-
-					Originally Posted by <strong>RAOVQ</strong>
-
-					<img class="inlineimg" src="images/buttons/viewpost.gif" border="0" alt="View Post" />
-
-				</div>
-
+<p><div style="margin:20px; margin-top:5px; ">
+	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
+	<table cellpadding="6" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td class="alt2" style="border:1px inset">
+			
+				<div>
+					Originally Posted by <strong>RAOVQ</strong>
+					<img class="inlineimg" src="images/buttons/viewpost.gif" border="0" alt="View Post" />
+				</div>
 				<div style="font-style:italic">i fiddled around with trying to switch users before i run the last command, something like <br />
 su raovq -c gconftool.... worked, but asked for a password each time. running in root didn't really help. chown root didn't make a difference.</p><p>so i gave up and threw the script into /usr/bin/, and used crontab to call it every hour. without any adjustments it works perfectly.</p><p>im not sure why one works and not the other, but it's all good now. ive learnt to not touch any of the cron.time folders, and stick to crontab. bit of a shame though.</p><p>edit: the background changed on the hour, as well as 17 past. i didn't delete the original cron.hourly script yet, so i guess i fixed it but the test failed. i guess ill find out in 33 minutes if it works properly.</p><p>edit2: it works properly now. the line ended up being <br />
-su  raovq -c &quot;gconftool-2 -t string -s /desktop/gnome/background/picture_filename &quot;$selected_bg&quot;&quot;</p><p>i had to make it owned by root to work without needing a password. my faith in cron.time is restored (if anyone is still following).</div>
-
-			
-
-		</td>
-
-	</tr>
-
-	</table>
-
+su  raovq -c &quot;gconftool-2 -t string -s /desktop/gnome/background/picture_filename &quot;$selected_bg&quot;&quot;</p><p>i had to make it owned by root to work without needing a password. my faith in cron.time is restored (if anyone is still following).</div>
+			
+		</td>
+	</tr>
+	</table>
 </div>
 Ah, the wonder of Freedom: you <u><b>can</b></u> make things work.</p>
 		</div>

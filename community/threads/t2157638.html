@@ -199,11 +199,11 @@
 					<td width="97%" height="11" background="../../images/t3/3cm.jpg" align="right">
 						<span class="navtoppipe">
 							<span class="navtop">register</span> |
-							<span class="navtop">bbs</span> |
-							<span class="navtop">search</span> |
+							<a href="../../community/index.html" class="navtop">bbs</a> |
+							<a href="../../en/search/index.html" class="navtop">search</a> |
 							<a href="../../totse.rss" class="navtop">rss</a> |
 							<a href="../../en/_faq/totse_faq.html" class="navtop">faq</a> |
-							<span class="navtop">about</span>
+							<a href="../../en/_about/index.html" class="navtop">about</a>
 						</span>
 					</td>
 					<td width="13" height="11" background="../../images/t3/3rm.jpg"><img src="../../images/t3/0.gif"></td>
@@ -228,7 +228,7 @@
 <table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
 <tr>
 	<td class="alt1" width="100%">
-		<span class="navbar">Community</span> <span class="navbar">&gt; Technology</span> <span class="navbar">&gt; Everything *NIX</span>
+		<span class="navbar"><a href="../../community/index.html">Community</a></span> <span class="navbar">&gt; <a href="../../community/forums/f144.html">Technology</a></span> <span class="navbar">&gt; <a href="../../community/forums/f184.html">Everything *NIX</a></span>
 	</td>
 </tr>
 </table>
@@ -272,71 +272,41 @@
 	<td class="alt1" style="padding:6px">
 		<div>
 <p>You may have to add some additional options to the boot sequence for it to load properly.</p><p>Actually, I think in ubuntu it easier because it provides certain options on the boot menu to solve this problem. To solve it in ubuntu, select f6 for &quot;other options&quot;..and check all of these options &quot;acpi = off&quot; &quot;noapic&quot; and &quot;nolapic&quot; , a little asterisk will appear next to the selected option.</p><p>It'll work fine then, but you may have to add these options to the grub menu.list, so you don't have to keep adding them in every time.</p><p>Also, after you have installed, you may not have the f6 option and it might just try to load and then hang. If this happens do this.</p><p>When booting from the harddisk quickly press esc to enter the menu. Then select ubuntu section and press e to edit, then select the second kernel recovery and press e to edit.</p><p>and add these to the end of the boot sequence line &quot;acpi = off&quot; &quot;noapic&quot; and &quot;nolapic&quot; without the quotes.</p><p>Then it'll boot perfectly fine. You will want to add those options to /boot/grub/menu.list where it says &quot;# defoptions&quot; and &quot;# altoptions&quot;</p><p>Once you're in, start a terminal window and type this.</p><p>This will back up your original grub/menu.lst</p><p><!-- BEGIN TEMPLATE: bbcode_code -->
-<div style="margin:20px; margin-top:5px">
-
-	<div class="smallfont" style="margin-bottom:2px">Code:</div>
-
-	<pre class="alt2" dir="ltr" style="
-
-		margin: 0px;
-
-		padding: 6px;
-
-		border: 1px inset;
-
-		width: 100%;
-
-		height: 34px;
-
-		text-align: left;
-
-		overflow: auto">sudo cp /boot/grub/menu.lst /boot/grub/menu.lst.backup</pre>
-
+<div style="margin:20px; margin-top:5px">
+	<div class="smallfont" style="margin-bottom:2px">Code:</div>
+	<pre class="alt2" dir="ltr" style="
+		margin: 0px;
+		padding: 6px;
+		border: 1px inset;
+		width: 100%;
+		height: 34px;
+		text-align: left;
+		overflow: auto">sudo cp /boot/grub/menu.lst /boot/grub/menu.lst.backup</pre>
 </div>
 <!-- END TEMPLATE: bbcode_code -->This will open up grub/menu/lst in a text editor , so you can make the changes.</p><p><!-- BEGIN TEMPLATE: bbcode_code -->
-<div style="margin:20px; margin-top:5px">
-
-	<div class="smallfont" style="margin-bottom:2px">Code:</div>
-
-	<pre class="alt2" dir="ltr" style="
-
-		margin: 0px;
-
-		padding: 6px;
-
-		border: 1px inset;
-
-		width: 100%;
-
-		height: 34px;
-
-		text-align: left;
-
-		overflow: auto">gksudo gedit /boot/grub/menu.lst</pre>
-
+<div style="margin:20px; margin-top:5px">
+	<div class="smallfont" style="margin-bottom:2px">Code:</div>
+	<pre class="alt2" dir="ltr" style="
+		margin: 0px;
+		padding: 6px;
+		border: 1px inset;
+		width: 100%;
+		height: 34px;
+		text-align: left;
+		overflow: auto">gksudo gedit /boot/grub/menu.lst</pre>
 </div>
 <!-- END TEMPLATE: bbcode_code -->This just updates it after your done.<br />
 <!-- BEGIN TEMPLATE: bbcode_code -->
-<div style="margin:20px; margin-top:5px">
-
-	<div class="smallfont" style="margin-bottom:2px">Code:</div>
-
-	<pre class="alt2" dir="ltr" style="
-
-		margin: 0px;
-
-		padding: 6px;
-
-		border: 1px inset;
-
-		width: 100%;
-
-		height: 34px;
-
-		text-align: left;
-
-		overflow: auto">sudo update-grub</pre>
-
+<div style="margin:20px; margin-top:5px">
+	<div class="smallfont" style="margin-bottom:2px">Code:</div>
+	<pre class="alt2" dir="ltr" style="
+		margin: 0px;
+		padding: 6px;
+		border: 1px inset;
+		width: 100%;
+		height: 34px;
+		text-align: left;
+		overflow: auto">sudo update-grub</pre>
 </div>
 <!-- END TEMPLATE: bbcode_code --><br />
 I'm not sure how about doing it in fedora, as I haven't really used it. But I'm assuming it'll be pretty much be the same thing, and might even provide similar boot options.</p><p>Post back, to lets us know how you're getting along.</p>
@@ -423,36 +393,21 @@ Are you sure it locks up (as in hard lock, caps lock or other LEDs flashing) or 
 <tr>
 	<td class="alt1" style="padding:6px">
 		<div>
-<p><div style="margin:20px; margin-top:5px; ">
-
-	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
-
-	<table cellpadding="6" cellspacing="0" border="0" width="100%">
-
-	<tr>
-
-		<td class="alt2" style="border:1px inset">
-
-			
-
-				<div>
-
-					Originally Posted by <strong>Geek</strong>
-
-					<img class="inlineimg" src="images/buttons/viewpost.gif" border="0" alt="View Post" />
-
-				</div>
-
-				<div style="font-style:italic">Well I got everything working.</p><p>I let it freeze up, then let it sit for a while. While it was frozen up I couldn't do anything, not even change the capslock. But I noticed the clock was still going. Finally after about an hour and a half i restarted (which worked fine this time), no progress had been made on the updates. Tried again, go most of the way though before it locked up. Did it again and it managed to finish up all of the updates.</p><p>Thanks for all the help, though I would still like to know what the hell happened.</div>
-
-			
-
-		</td>
-
-	</tr>
-
-	</table>
-
+<p><div style="margin:20px; margin-top:5px; ">
+	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
+	<table cellpadding="6" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td class="alt2" style="border:1px inset">
+			
+				<div>
+					Originally Posted by <strong>Geek</strong>
+					<img class="inlineimg" src="images/buttons/viewpost.gif" border="0" alt="View Post" />
+				</div>
+				<div style="font-style:italic">Well I got everything working.</p><p>I let it freeze up, then let it sit for a while. While it was frozen up I couldn't do anything, not even change the capslock. But I noticed the clock was still going. Finally after about an hour and a half i restarted (which worked fine this time), no progress had been made on the updates. Tried again, go most of the way though before it locked up. Did it again and it managed to finish up all of the updates.</p><p>Thanks for all the help, though I would still like to know what the hell happened.</div>
+			
+		</td>
+	</tr>
+	</table>
 </div>
 Try only downloading the updates, then installing them. This should at least isolate whatever bug is there.</p>
 		</div>

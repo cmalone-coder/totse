@@ -199,11 +199,11 @@
 					<td width="97%" height="11" background="../../images/t3/3cm.jpg" align="right">
 						<span class="navtoppipe">
 							<span class="navtop">register</span> |
-							<span class="navtop">bbs</span> |
-							<span class="navtop">search</span> |
+							<a href="../../community/index.html" class="navtop">bbs</a> |
+							<a href="../../en/search/index.html" class="navtop">search</a> |
 							<a href="../../totse.rss" class="navtop">rss</a> |
 							<a href="../../en/_faq/totse_faq.html" class="navtop">faq</a> |
-							<span class="navtop">about</span>
+							<a href="../../en/_about/index.html" class="navtop">about</a>
 						</span>
 					</td>
 					<td width="13" height="11" background="../../images/t3/3rm.jpg"><img src="../../images/t3/0.gif"></td>
@@ -228,7 +228,7 @@
 <table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
 <tr>
 	<td class="alt1" width="100%">
-		<span class="navbar">Community</span> <span class="navbar">&gt; Technology</span> <span class="navbar">&gt; Everything *NIX</span>
+		<span class="navbar"><a href="../../community/index.html">Community</a></span> <span class="navbar">&gt; <a href="../../community/forums/f144.html">Technology</a></span> <span class="navbar">&gt; <a href="../../community/forums/f184.html">Everything *NIX</a></span>
 	</td>
 </tr>
 </table>
@@ -271,8 +271,7 @@
 <tr>
 	<td class="alt1" style="padding:6px">
 		<div>
-<p>What I would do is try something like this in /etc/fstab:<br />
-
+<p>What I would do is try something like this in /etc/fstab:<br />
 /dev/sdb1       /media/usb   auto user,noauto,exec,utf8,uid=&lt;UID&gt;,gid=&lt;GID&gt; 0       0</p><p>The auto option in the filesystem type field automatically detects the filesystem type, regardless if it's vfat or iso9660 so if you have a USB CDROM, this would make more sense making the mount point /media/usb or whatever you like, depending on the initial directory permissions of /mnt/usb you may also want to use fmask and dmask.</p><p>Try that see what you get.</p>
 		</div>
 	</td>
@@ -294,37 +293,22 @@
 <tr>
 	<td class="alt1" style="padding:6px">
 		<div>
-<p>If you still experience problems related to your setup or a specific configuration which you would rather have, look into: <br />
-
-http://afuse.sourceforge.net/</p><p>It is an automounter that uses FUSE, Filesystems in USErspace.</p><p>This might be slightly more flexible than what I see you having had setup above.</p><p>Also, you might look at: man mount</p><p>There are options there which will allow mount to tolerate sloppy mount options, instead of fail mounting the device completely. Now this doesn't mean that you can specify the wrong filesystem type and it will still mount it. I will have to assume the SD card has an NTFS partition and the USB device has FAT32 partition. The differences between these filesystems are much, so other than afuse I can only suggest using options for BOTH, filesystems such as NTFS mount options like uid and gid, and for vfat.</p><p>The option specifically is -s, have a look:<br />
-
+<p>If you still experience problems related to your setup or a specific configuration which you would rather have, look into: <br />
+http://afuse.sourceforge.net/</p><p>It is an automounter that uses FUSE, Filesystems in USErspace.</p><p>This might be slightly more flexible than what I see you having had setup above.</p><p>Also, you might look at: man mount</p><p>There are options there which will allow mount to tolerate sloppy mount options, instead of fail mounting the device completely. Now this doesn't mean that you can specify the wrong filesystem type and it will still mount it. I will have to assume the SD card has an NTFS partition and the USB device has FAT32 partition. The differences between these filesystems are much, so other than afuse I can only suggest using options for BOTH, filesystems such as NTFS mount options like uid and gid, and for vfat.</p><p>The option specifically is -s, have a look:<br />
 <!-- BEGIN TEMPLATE: bbcode_code -->
-<div style="margin:20px; margin-top:5px">
-
-	<div class="smallfont" style="margin-bottom:2px">Code:</div>
-
-	<pre class="alt2" dir="ltr" style="
-
-		margin: 0px;
-
-		padding: 6px;
-
-		border: 1px inset;
-
-		width: 100%;
-
-		height: 82px;
-
-		text-align: left;
-
-		overflow: auto">       -s     Tolerate  sloppy  mount  options  rather than failing. This will
-
-              ignore mount options not supported by a filesystem type. Not all
-
-              filesystems  support this option. This option exists for support
-
-              of the Linux autofs-based automounter.</pre>
-
+<div style="margin:20px; margin-top:5px">
+	<div class="smallfont" style="margin-bottom:2px">Code:</div>
+	<pre class="alt2" dir="ltr" style="
+		margin: 0px;
+		padding: 6px;
+		border: 1px inset;
+		width: 100%;
+		height: 82px;
+		text-align: left;
+		overflow: auto">       -s     Tolerate  sloppy  mount  options  rather than failing. This will
+              ignore mount options not supported by a filesystem type. Not all
+              filesystems  support this option. This option exists for support
+              of the Linux autofs-based automounter.</pre>
 </div>
 <!-- END TEMPLATE: bbcode_code -->This allows for specifying mount options for several filesystem types, but you must use auto in the filesystem type field so mount can check the superblock magic for which filesystem type it is.</p><p>Now understand Linux is flexible, the fstab is not the only way you can mount yoru filesystems. If you wanted to, you could write a very simple script to loop through different options for filesystems and filesystem types executing the script from rc.local which is in /etc/rc.d</p>
 		</div>

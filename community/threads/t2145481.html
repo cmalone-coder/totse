@@ -199,11 +199,11 @@
 					<td width="97%" height="11" background="../../images/t3/3cm.jpg" align="right">
 						<span class="navtoppipe">
 							<span class="navtop">register</span> |
-							<span class="navtop">bbs</span> |
-							<span class="navtop">search</span> |
+							<a href="../../community/index.html" class="navtop">bbs</a> |
+							<a href="../../en/search/index.html" class="navtop">search</a> |
 							<a href="../../totse.rss" class="navtop">rss</a> |
 							<a href="../../en/_faq/totse_faq.html" class="navtop">faq</a> |
-							<span class="navtop">about</span>
+							<a href="../../en/_about/index.html" class="navtop">about</a>
 						</span>
 					</td>
 					<td width="13" height="11" background="../../images/t3/3rm.jpg"><img src="../../images/t3/0.gif"></td>
@@ -228,7 +228,7 @@
 <table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
 <tr>
 	<td class="alt1" width="100%">
-		<span class="navbar">Community</span> <span class="navbar">&gt; Technology</span> <span class="navbar">&gt; Everything *NIX</span>
+		<span class="navbar"><a href="../../community/index.html">Community</a></span> <span class="navbar">&gt; <a href="../../community/forums/f144.html">Technology</a></span> <span class="navbar">&gt; <a href="../../community/forums/f184.html">Everything *NIX</a></span>
 	</td>
 </tr>
 </table>
@@ -250,20 +250,13 @@
 <tr>
 	<td class="alt1" style="padding:6px">
 		<div>
-<p>i need some help,</p><p>a pointer in the right direction. a manual online or some serious documentation. i must be blind or stupid because there is something i am not seeing? or what? fuck i don't know</p><p>ok so here's my problem.<br />
-
-i am using open frameworks, it's a c++ library, let's me do all the artsy stuff i love and it's really easy and i love using it.<br />
-
-but<br />
-
-but<br />
-
-but<br />
-
-recently, i've been experimenting with bluetooth devices and i want to push that in with open frameworks.</p><p>usually, i connect to my device through the terminal by typing &quot;hidd --search&quot; from there, if i type &quot;hcidump&quot; i get to see all the hex data data is being sent to my computer from the device.</p><p>i want the hci dump in my open frameworks application and i have no fucking clue how to make it appear. i keep getting errors left and right.</p><p>i went here: http://www.bluez.org but they have no documentation on their site.<br />
-
-even with the hcidump header file, which i downloaded from the bluez.org site, the parser.h header that contains the function i probably want: &quot;void hex_dump(int level, struct frame *frm, int num);&quot; i still can't quite get there.</p><p>i can't even compile the thing, it keeps giving me an error: <br />
-
+<p>i need some help,</p><p>a pointer in the right direction. a manual online or some serious documentation. i must be blind or stupid because there is something i am not seeing? or what? fuck i don't know</p><p>ok so here's my problem.<br />
+i am using open frameworks, it's a c++ library, let's me do all the artsy stuff i love and it's really easy and i love using it.<br />
+but<br />
+but<br />
+but<br />
+recently, i've been experimenting with bluetooth devices and i want to push that in with open frameworks.</p><p>usually, i connect to my device through the terminal by typing &quot;hidd --search&quot; from there, if i type &quot;hcidump&quot; i get to see all the hex data data is being sent to my computer from the device.</p><p>i want the hci dump in my open frameworks application and i have no fucking clue how to make it appear. i keep getting errors left and right.</p><p>i went here: http://www.bluez.org but they have no documentation on their site.<br />
+even with the hcidump header file, which i downloaded from the bluez.org site, the parser.h header that contains the function i probably want: &quot;void hex_dump(int level, struct frame *frm, int num);&quot; i still can't quite get there.</p><p>i can't even compile the thing, it keeps giving me an error: <br />
 /usr/include/hcidump/parser/parser.h|162|error: invalid conversion from ‘void*’ to ‘uint8_t*’|</p><p>what the hell does that mean?</p><p>what ever uint8, uint16 and uint32 etc, what ever they are, they are extremely problematic!!!</p><p>anyone with a tip to get hcidump through a c++ app, i would be thankful to.</p>
 		</div>
 	</td>
@@ -288,24 +281,15 @@ even with the hcidump header file, which i downloaded from the bluez.org site, t
 <p>I don't know much about bluetooth, but I think I can help with your C problems.</p><p>the data types uint8, uint16 and uint32 are unsigned integers, the numbers are the amount of bits in that type.</p><p>uint8_t      --&gt; byte  [unsigned char]<br />
 uint16_t    --&gt; word  [unsigned short]<br />
 uint32_t    --&gt; long  [unsigned long]</p><p>these types are defined in &lt;stdint.h&gt;</p><p>the error you are getting is because you cannot do an implicit conversion from a void pointer to any other pointer type in C++ without a cast, take for example:</p><p>note: malloc is a void*</p><p><!-- BEGIN TEMPLATE: bbcode_code -->
-<div style="margin:20px; margin-top:5px">
-
-	<div class="smallfont" style="margin-bottom:2px">Code:</div>
-
-	<pre class="alt2" dir="ltr" style="
-
-		margin: 0px;
-
-		padding: 6px;
-
-		border: 1px inset;
-
-		width: 100%;
-
-		height: 178px;
-
-		text-align: left;
-
+<div style="margin:20px; margin-top:5px">
+	<div class="smallfont" style="margin-bottom:2px">Code:</div>
+	<pre class="alt2" dir="ltr" style="
+		margin: 0px;
+		padding: 6px;
+		border: 1px inset;
+		width: 100%;
+		height: 178px;
+		text-align: left;
 		overflow: auto">#include &lt;stdio.h&gt;
 #include &lt;stdint.h&gt;
 #include &lt;malloc.h&gt;
@@ -315,56 +299,34 @@ int main(void)
   uint8_t *a;
   a=malloc(5);
   return 0;
-  }</pre>
-
+  }</pre>
 </div>
 <!-- END TEMPLATE: bbcode_code -->it will compile just fine under gcc, but with g++ you will receive an error:</p><p><!-- BEGIN TEMPLATE: bbcode_code -->
-<div style="margin:20px; margin-top:5px">
-
-	<div class="smallfont" style="margin-bottom:2px">Code:</div>
-
-	<pre class="alt2" dir="ltr" style="
-
-		margin: 0px;
-
-		padding: 6px;
-
-		border: 1px inset;
-
-		width: 100%;
-
-		height: 50px;
-
-		text-align: left;
-
+<div style="margin:20px; margin-top:5px">
+	<div class="smallfont" style="margin-bottom:2px">Code:</div>
+	<pre class="alt2" dir="ltr" style="
+		margin: 0px;
+		padding: 6px;
+		border: 1px inset;
+		width: 100%;
+		height: 50px;
+		text-align: left;
 		overflow: auto">test.c: In function 'int main()':
-test.c:9: error: invalid conversion from 'void*' to 'uint8_t*'</pre>
-
+test.c:9: error: invalid conversion from 'void*' to 'uint8_t*'</pre>
 </div>
-<!-- END TEMPLATE: bbcode_code -->you need a cast in c++, so just place '(uint8_t *)' in front of malloc and everything will work. it may be harder to fix in someone elses code though.</p><p>if you keep having problems, to get the output of hcidump in your C++ program you can read the input from the command with popen:</p><p>http://www.gnu.org/software/libc/man...ubprocess.html</p><p>the hcidump man page also says:</p><p><div style="margin:20px; margin-top:5px; ">
-
-	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
-
-	<table cellpadding="6" cellspacing="0" border="0" width="100%">
-
-	<tr>
-
-		<td class="alt2" style="border:1px inset">
-
-			
-
+<!-- END TEMPLATE: bbcode_code -->you need a cast in c++, so just place '(uint8_t *)' in front of malloc and everything will work. it may be harder to fix in someone elses code though.</p><p>if you keep having problems, to get the output of hcidump in your C++ program you can read the input from the command with popen:</p><p>http://www.gnu.org/software/libc/man...ubprocess.html</p><p>the hcidump man page also says:</p><p><div style="margin:20px; margin-top:5px; ">
+	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
+	<table cellpadding="6" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td class="alt2" style="border:1px inset">
+			
 				       -w &lt;file&gt;, --save-dump=&lt;file&gt;<br />
               Parse  output  is not printed to screen, instead data read from device is saved in file file.  The saved dump<br />
-              file can be subsequently parsed with option -r.
-
-			
-
-		</td>
-
-	</tr>
-
-	</table>
-
+              file can be subsequently parsed with option -r.
+			
+		</td>
+	</tr>
+	</table>
 </div>
 so you could try to execute hcidump with argument '-w /tmp/hcidump', then read from the temp file.</p>
 		</div>
@@ -410,24 +372,15 @@ thanks a lot pty, good stuff, good tips. i will read over this again when i work
 		<div>
 <p>i've been playing wit it a bit. there is something else i don't understand.</p><p>this is right after the includes<br />
 <!-- BEGIN TEMPLATE: bbcode_code -->
-<div style="margin:20px; margin-top:5px">
-
-	<div class="smallfont" style="margin-bottom:2px">Code:</div>
-
-	<pre class="alt2" dir="ltr" style="
-
-		margin: 0px;
-
-		padding: 6px;
-
-		border: 1px inset;
-
-		width: 100%;
-
-		height: 306px;
-
-		text-align: left;
-
+<div style="margin:20px; margin-top:5px">
+	<div class="smallfont" style="margin-bottom:2px">Code:</div>
+	<pre class="alt2" dir="ltr" style="
+		margin: 0px;
+		padding: 6px;
+		border: 1px inset;
+		width: 100%;
+		height: 306px;
+		text-align: left;
 		overflow: auto">struct frame {
 	void		*data;
 	uint32_t	data_len;
@@ -445,60 +398,39 @@ thanks a lot pty, good stuff, good tips. i will read over this again when i work
 	struct timeval	ts;
 	int		pppdump_fd;
 	int		audio_fd;
-};</pre>
-
+};</pre>
 </div>
 <!-- END TEMPLATE: bbcode_code -->notice *ptr</p><p>and this is the problematic code block<br />
 <!-- BEGIN TEMPLATE: bbcode_code -->
-<div style="margin:20px; margin-top:5px">
-
-	<div class="smallfont" style="margin-bottom:2px">Code:</div>
-
-	<pre class="alt2" dir="ltr" style="
-
-		margin: 0px;
-
-		padding: 6px;
-
-		border: 1px inset;
-
-		width: 100%;
-
-		height: 130px;
-
-		text-align: left;
-
+<div style="margin:20px; margin-top:5px">
+	<div class="smallfont" style="margin-bottom:2px">Code:</div>
+	<pre class="alt2" dir="ltr" style="
+		margin: 0px;
+		padding: 6px;
+		border: 1px inset;
+		width: 100%;
+		height: 130px;
+		text-align: left;
 		overflow: auto">static inline uint8_t get_u8(struct frame *frm)
 {
 	uint8_t *u8_ptr = frm-&gt;ptr;
 	frm-&gt;ptr += 1;
 	frm-&gt;len -= 1;
 	return *u8_ptr;
-}</pre>
-
+}</pre>
 </div>
 <!-- END TEMPLATE: bbcode_code -->i'd like to know what does this do:<br />
 <!-- BEGIN TEMPLATE: bbcode_code -->
-<div style="margin:20px; margin-top:5px">
-
-	<div class="smallfont" style="margin-bottom:2px">Code:</div>
-
-	<pre class="alt2" dir="ltr" style="
-
-		margin: 0px;
-
-		padding: 6px;
-
-		border: 1px inset;
-
-		width: 100%;
-
-		height: 34px;
-
-		text-align: left;
-
-		overflow: auto">frm-&gt;ptr</pre>
-
+<div style="margin:20px; margin-top:5px">
+	<div class="smallfont" style="margin-bottom:2px">Code:</div>
+	<pre class="alt2" dir="ltr" style="
+		margin: 0px;
+		padding: 6px;
+		border: 1px inset;
+		width: 100%;
+		height: 34px;
+		text-align: left;
+		overflow: auto">frm-&gt;ptr</pre>
 </div>
 <!-- END TEMPLATE: bbcode_code -->that little &quot;-&gt;&quot; i really don't understand it.</p>
 		</div>
@@ -521,58 +453,33 @@ thanks a lot pty, good stuff, good tips. i will read over this again when i work
 <tr>
 	<td class="alt1" style="padding:6px">
 		<div>
-<p><div style="margin:20px; margin-top:5px; ">
-
-	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
-
-	<table cellpadding="6" cellspacing="0" border="0" width="100%">
-
-	<tr>
-
-		<td class="alt2" style="border:1px inset">
-
-			
-
-				<div>
-
-					Originally Posted by <strong>hoaxe</strong>
-
-					<img class="inlineimg" src="images/buttons/viewpost.gif" border="0" alt="View Post" />
-
-				</div>
-
+<p><div style="margin:20px; margin-top:5px; ">
+	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
+	<table cellpadding="6" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td class="alt2" style="border:1px inset">
+			
+				<div>
+					Originally Posted by <strong>hoaxe</strong>
+					<img class="inlineimg" src="images/buttons/viewpost.gif" border="0" alt="View Post" />
+				</div>
 				<div style="font-style:italic">i'd like to know what does this do:</p><p><!-- BEGIN TEMPLATE: bbcode_code -->
-<div style="margin:20px; margin-top:5px">
-
-	<div class="smallfont" style="margin-bottom:2px">Code:</div>
-
-	<pre class="alt2" dir="ltr" style="
-
-		margin: 0px;
-
-		padding: 6px;
-
-		border: 1px inset;
-
-		width: 100%;
-
-		height: 34px;
-
-		text-align: left;
-
-		overflow: auto">frm-&gt;ptr</pre>
-
+<div style="margin:20px; margin-top:5px">
+	<div class="smallfont" style="margin-bottom:2px">Code:</div>
+	<pre class="alt2" dir="ltr" style="
+		margin: 0px;
+		padding: 6px;
+		border: 1px inset;
+		width: 100%;
+		height: 34px;
+		text-align: left;
+		overflow: auto">frm-&gt;ptr</pre>
 </div>
-<!-- END TEMPLATE: bbcode_code -->that little &quot;-&gt;&quot; i really don't understand it.</div>
-
-			
-
-		</td>
-
-	</tr>
-
-	</table>
-
+<!-- END TEMPLATE: bbcode_code -->that little &quot;-&gt;&quot; i really don't understand it.</div>
+			
+		</td>
+	</tr>
+	</table>
 </div>
 http://www.space.unibe.ch/comp_doc/c....html#pointers</p>
 		</div>
@@ -595,10 +502,8 @@ http://www.space.unibe.ch/comp_doc/c....html#pointers</p>
 <tr>
 	<td class="alt1" style="padding:6px">
 		<div>
-<p>arrghh</p><p>fuck it. i spent like half my day on it</p><p>it's trying to do arithmetic with void types. wtf! i don't know enough c++ to deal with that kind of compile error<br />
-
-and even if i do get it to compile, i will have to figure out how to get the dump going.</p><p>no, too much. i'm either too inexperienced or this is something no one has done because i can't find anything about someone using hcidump inside their own program.</p><p>moving to solution number 2, the -w option to write the data to a file.<br />
-
+<p>arrghh</p><p>fuck it. i spent like half my day on it</p><p>it's trying to do arithmetic with void types. wtf! i don't know enough c++ to deal with that kind of compile error<br />
+and even if i do get it to compile, i will have to figure out how to get the dump going.</p><p>no, too much. i'm either too inexperienced or this is something no one has done because i can't find anything about someone using hcidump inside their own program.</p><p>moving to solution number 2, the -w option to write the data to a file.<br />
 that should be easier to manage. it looks more like what i use to do with processing.org</p><p>why the fuck did i type this? it's like i hijacked my own thread and made it my project blog...</p><p>oh well</p>
 		</div>
 	</td>

@@ -199,11 +199,11 @@
 					<td width="97%" height="11" background="../../images/t3/3cm.jpg" align="right">
 						<span class="navtoppipe">
 							<span class="navtop">register</span> |
-							<span class="navtop">bbs</span> |
-							<span class="navtop">search</span> |
+							<a href="../../community/index.html" class="navtop">bbs</a> |
+							<a href="../../en/search/index.html" class="navtop">search</a> |
 							<a href="../../totse.rss" class="navtop">rss</a> |
 							<a href="../../en/_faq/totse_faq.html" class="navtop">faq</a> |
-							<span class="navtop">about</span>
+							<a href="../../en/_about/index.html" class="navtop">about</a>
 						</span>
 					</td>
 					<td width="13" height="11" background="../../images/t3/3rm.jpg"><img src="../../images/t3/0.gif"></td>
@@ -228,7 +228,7 @@
 <table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
 <tr>
 	<td class="alt1" width="100%">
-		<span class="navbar">Community</span> <span class="navbar">&gt; Technology</span> <span class="navbar">&gt; Everything *NIX</span>
+		<span class="navbar"><a href="../../community/index.html">Community</a></span> <span class="navbar">&gt; <a href="../../community/forums/f144.html">Technology</a></span> <span class="navbar">&gt; <a href="../../community/forums/f184.html">Everything *NIX</a></span>
 	</td>
 </tr>
 </table>
@@ -271,13 +271,11 @@
 <tr>
 	<td class="alt1" style="padding:6px">
 		<div>
-<p>Okay, see that last post in that thread? That's damn wrong.</p><p><b>There is always a reason. Nothing on a computer happens for &quot;no reason&quot;.</b></p><p>It's extremely unlikely that adding anything in some source code header file changed anything, and I wouldn't do that in the future. Do this:<br />
-
+<p>Okay, see that last post in that thread? That's damn wrong.</p><p><b>There is always a reason. Nothing on a computer happens for &quot;no reason&quot;.</b></p><p>It's extremely unlikely that adding anything in some source code header file changed anything, and I wouldn't do that in the future. Do this:<br />
 <ol style="list-style-type: decimal"><li>Remove the drive safely in windows and turn it off.</li>
 <li>Boot into Ubuntu and open up System&gt;Administration&gt;System log</li>
 <li>Turn on the drive and read the new log entries. Copy and paste them here and to ubuntuforums.</li>
-</ol><br />
-
+</ol><br />
 Assuming the drive is ntfs, it's probable that what's happening is that it's marked as dirty, and as such you'd have to manually mount it in Ubuntu. Note also that I doubt fdisk would list the drive, as it's an external.</p><p>Get back to us with the logs. They will either contain messages pertinent to your success, or contain errors that we can then debug.</p>
 		</div>
 	</td>
@@ -299,10 +297,8 @@ Assuming the drive is ntfs, it's probable that what's happening is that it's mar
 <tr>
 	<td class="alt1" style="padding:6px">
 		<div>
-<p>Regardless of what dmesg says, not writing off what Pr0 is saying, but if ohci-hcd.ko,uhci-hcd.ko,ehci-hcd.ko and usb-storage.ko are not loaded or are not being loaded automatically when you plug in the device, your shit will never work. If we ever get the data that Pr0 requested, we can further diagnose the problem with the system.</p><p>I'm going to guess already that:<br />
-
-#1 - HAL daemon is not running polling for devices<br />
-
+<p>Regardless of what dmesg says, not writing off what Pr0 is saying, but if ohci-hcd.ko,uhci-hcd.ko,ehci-hcd.ko and usb-storage.ko are not loaded or are not being loaded automatically when you plug in the device, your shit will never work. If we ever get the data that Pr0 requested, we can further diagnose the problem with the system.</p><p>I'm going to guess already that:<br />
+#1 - HAL daemon is not running polling for devices<br />
 #2 - The partition on the device is of one that Linux cannot read, and the poster is assuming the device in full doesn't work when plugged in.. I can only assume.</p>
 		</div>
 	</td>
@@ -324,36 +320,21 @@ Assuming the drive is ntfs, it's probable that what's happening is that it's mar
 <tr>
 	<td class="alt1" style="padding:6px">
 		<div>
-<p><div style="margin:20px; margin-top:5px; ">
-
-	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
-
-	<table cellpadding="6" cellspacing="0" border="0" width="100%">
-
-	<tr>
-
-		<td class="alt2" style="border:1px inset">
-
-			
-
-				<div>
-
-					Originally Posted by <strong>Prometheum</strong>
-
-					<img class="inlineimg" src="images/buttons/viewpost.gif" border="0" alt="View Post" />
-
-				</div>
-
-				<div style="font-style:italic">Note also that I doubt fdisk would list the drive, as it's an external.</div>
-
-			
-
-		</td>
-
-	</tr>
-
-	</table>
-
+<p><div style="margin:20px; margin-top:5px; ">
+	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
+	<table cellpadding="6" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td class="alt2" style="border:1px inset">
+			
+				<div>
+					Originally Posted by <strong>Prometheum</strong>
+					<img class="inlineimg" src="images/buttons/viewpost.gif" border="0" alt="View Post" />
+				</div>
+				<div style="font-style:italic">Note also that I doubt fdisk would list the drive, as it's an external.</div>
+			
+		</td>
+	</tr>
+	</table>
 </div>
 fdisk will list any drive, whether it has partitions or not.. and regardless if they are mounted, not CD/DVD drives.. but you get the idea.</p><p>In this case if he plugs the device in, fdisk isn't showing anything either because of permissions, say he is running fdisk as UID 500 for example, and udev created the device rwx------ for user root, he wouldn't see anything from fdisk, or the device needs to be plugged into the wall, I've seen many different configurations for external devices and sometimes it was a simple modification of udev rules that was neccessary for using the device as anyone but root.</p>
 		</div>
@@ -376,36 +357,21 @@ fdisk will list any drive, whether it has partitions or not.. and regardless if 
 <tr>
 	<td class="alt1" style="padding:6px">
 		<div>
-<p><div style="margin:20px; margin-top:5px; ">
-
-	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
-
-	<table cellpadding="6" cellspacing="0" border="0" width="100%">
-
-	<tr>
-
-		<td class="alt2" style="border:1px inset">
-
-			
-
-				<div>
-
-					Originally Posted by <strong>coroner</strong>
-
-					<img class="inlineimg" src="images/buttons/viewpost.gif" border="0" alt="View Post" />
-
-				</div>
-
-				<div style="font-style:italic">fdisk will list any drive, whether it has partitions or not.. and regardless if they are mounted, not CD/DVD drives.. but you get the idea.</p><p>In this case if he plugs the device in, fdisk isn't showing anything either because of permissions, say he is running fdisk as UID 500 for example, and udev created the device rwx------ for user root, he wouldn't see anything from fdisk, or the device needs to be plugged into the wall, I've seen many different configurations for external devices and sometimes it was a simple modification of udev rules that was neccessary for using the device as anyone but root.</div>
-
-			
-
-		</td>
-
-	</tr>
-
-	</table>
-
+<p><div style="margin:20px; margin-top:5px; ">
+	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
+	<table cellpadding="6" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td class="alt2" style="border:1px inset">
+			
+				<div>
+					Originally Posted by <strong>coroner</strong>
+					<img class="inlineimg" src="images/buttons/viewpost.gif" border="0" alt="View Post" />
+				</div>
+				<div style="font-style:italic">fdisk will list any drive, whether it has partitions or not.. and regardless if they are mounted, not CD/DVD drives.. but you get the idea.</p><p>In this case if he plugs the device in, fdisk isn't showing anything either because of permissions, say he is running fdisk as UID 500 for example, and udev created the device rwx------ for user root, he wouldn't see anything from fdisk, or the device needs to be plugged into the wall, I've seen many different configurations for external devices and sometimes it was a simple modification of udev rules that was neccessary for using the device as anyone but root.</div>
+			
+		</td>
+	</tr>
+	</table>
 </div>
 Right about that. Thanks.</p>
 		</div>

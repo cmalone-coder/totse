@@ -199,11 +199,11 @@
 					<td width="97%" height="11" background="../../images/t3/3cm.jpg" align="right">
 						<span class="navtoppipe">
 							<span class="navtop">register</span> |
-							<span class="navtop">bbs</span> |
-							<span class="navtop">search</span> |
+							<a href="../../community/index.html" class="navtop">bbs</a> |
+							<a href="../../en/search/index.html" class="navtop">search</a> |
 							<a href="../../totse.rss" class="navtop">rss</a> |
 							<a href="../../en/_faq/totse_faq.html" class="navtop">faq</a> |
-							<span class="navtop">about</span>
+							<a href="../../en/_about/index.html" class="navtop">about</a>
 						</span>
 					</td>
 					<td width="13" height="11" background="../../images/t3/3rm.jpg"><img src="../../images/t3/0.gif"></td>
@@ -228,7 +228,7 @@
 <table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
 <tr>
 	<td class="alt1" width="100%">
-		<span class="navbar">Community</span> <span class="navbar">&gt; Technology</span> <span class="navbar">&gt; Everything *NIX</span>
+		<span class="navbar"><a href="../../community/index.html">Community</a></span> <span class="navbar">&gt; <a href="../../community/forums/f144.html">Technology</a></span> <span class="navbar">&gt; <a href="../../community/forums/f184.html">Everything *NIX</a></span>
 	</td>
 </tr>
 </table>
@@ -271,45 +271,26 @@
 <tr>
 	<td class="alt1" style="padding:6px">
 		<div>
-<p><div style="margin:20px; margin-top:5px; ">
-
-	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
-
-	<table cellpadding="6" cellspacing="0" border="0" width="100%">
-
-	<tr>
-
-		<td class="alt2" style="border:1px inset">
-
-			
-
-				<div>
-
-					Originally Posted by <strong>Issue313</strong>
-
-					<img class="inlineimg" src="images/buttons/viewpost.gif" border="0" alt="View Post" />
-
-				</div>
-
-				<div style="font-style:italic">Unix generally has loads of different folders in the base directory with nonsensical names like opt, var, bin, usr etc. Each of those is further subdivided, into things like opt, etc, local, share, etc.</p><p>This probably made sense when a disk held 12 different programs, but isn't it about time we simplified the unix filesystem. I haven't counted the number of different folders on a unix distro, but it's something like 20 trillion. WTF?</div>
-
-			
-
-		</td>
-
-	</tr>
-
-	</table>
-
+<p><div style="margin:20px; margin-top:5px; ">
+	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
+	<table cellpadding="6" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td class="alt2" style="border:1px inset">
+			
+				<div>
+					Originally Posted by <strong>Issue313</strong>
+					<img class="inlineimg" src="images/buttons/viewpost.gif" border="0" alt="View Post" />
+				</div>
+				<div style="font-style:italic">Unix generally has loads of different folders in the base directory with nonsensical names like opt, var, bin, usr etc. Each of those is further subdivided, into things like opt, etc, local, share, etc.</p><p>This probably made sense when a disk held 12 different programs, but isn't it about time we simplified the unix filesystem. I haven't counted the number of different folders on a unix distro, but it's something like 20 trillion. WTF?</div>
+			
+		</td>
+	</tr>
+	</table>
 </div>
-`man hier`<br />
-
-Everything in / belongs to the system except /usr and /home (/home is sometimes a symlink to /usr/home).<br />
-
-It's that simple, everything you need is either in /usr or /home, you shouldnt touch the rest.</p><p>Some (in my opinion stupid) Unix-like OS uses the /opt directory for KDE.</p><p>You'll sometimes need to look at files in /usr/share/doc.<br />
-
-/usr/ports is where the ports tree is usually installed by default in FreeBSD.</p><p>Sometimes, you'll have to tweak configuration files in /etc, most ditro provides graphical tools that will do it for you.</p><p>In other words, forget about the filesystem, use /home/$USER to place your files.<br />
-
+`man hier`<br />
+Everything in / belongs to the system except /usr and /home (/home is sometimes a symlink to /usr/home).<br />
+It's that simple, everything you need is either in /usr or /home, you shouldnt touch the rest.</p><p>Some (in my opinion stupid) Unix-like OS uses the /opt directory for KDE.</p><p>You'll sometimes need to look at files in /usr/share/doc.<br />
+/usr/ports is where the ports tree is usually installed by default in FreeBSD.</p><p>Sometimes, you'll have to tweak configuration files in /etc, most ditro provides graphical tools that will do it for you.</p><p>In other words, forget about the filesystem, use /home/$USER to place your files.<br />
 If you want more information see the hier man page.</p>
 		</div>
 	</td>
@@ -352,8 +333,7 @@ If you want more information see the hier man page.</p>
 <tr>
 	<td class="alt1" style="padding:6px">
 		<div>
-<p>To save re-inventing the wheel, shamelessly stolen from http://www.freeos.com/articles/3102/:</p><p><b>/sbin</b> - This directory contains all the binaries that are essential to the working of the system. These include system administration as well as maintenance and hardware configuration programs. Find lilo, fdisk, init, ifconfig etc here. These are the essential programs that are required by all the users. Another directory that contains system binaries is /usr/sbin.  This directory contains other binaries of use to the system administrator.  This is where you will find the network daemons for your system along with  other binaries that only the system administrator has access to, but which are not required for system maintenance, repair etc.</p><p><b>/bin</b> - In contrast to /sbin, the bin directory contains several useful commands that are used by both the system administrator as well as non-privileged users. This directory usually contains the shells like bash, csh etc. as well as much used commands like cp, mv, rm, cat, ls. There also is /usr/bin, which contains other user binaries. These binaries on the other hand are not essential for the user. The binaries in /bin however, a user cannot do without.</p><p><b>/boot</b> - This directory contains the system.map file as well as the Linux kernel. Lilo places the boot sector backups in this directory.</p><p><b>/dev</b> - This is a very interesting directory that highlights one important characteristic of the Linux filesystem - everything is a file or a directory. Look through this directory and you should see hda1, hda2 etc, which represent the various partitions on the first master drive of the system. /dev/cdrom and /dev/fd0 represent your CDROM drive and your floppy drive. This may seem strange but it will make sense if you compare the characteristics of files to that of your hardware. Both can be read from and written to. Take /dev/dsp, for instance. This file represents your speaker device. So any data written to this file will be re directed to your speaker. Try 'cat /etc/lilo.conf &gt; /dev/dsp' and you should hear some sound on the speaker. That's the sound of your lilo.conf file! Similarly, sending data to and reading from /dev/ttyS0 ( COM 1 ) will allow you to communicate with a device attached there - your modem.</p><p><b>/etc</b> - This directory contains all the configuration files for your system. Your lilo.conf file lies in this directory as does hosts, resolv.conf and fstab. Under this directory will be X11 sub-directory which contains the  configuration files for X. More importantly, the /etc/rc.d directory contains the system startup scripts. This is a good directory to backup often. It will definitely save you a lot of re-configuration later if you re-install or lose your current installation.</p><p><b>/home</b> - Linux is a multi-user environment so each user is also assigned a specific directory which is accessible only to them and the system administrator. These are the user home directories, which can be found under /home/username. This directory also contains the user specific settings for programs like IRC, X etc.</p><p><b>/lib</b> - This contains all the shared libraries that are required by system programs. Windows equivalent to a shared library would be a DLL file.</p><p><b>/lost+found </b>- Linux should always go through a proper shutdown. Sometimes your system might crash or a power failure might take the machine down. Either way, at the next boot, a lengthy filesystem check using fsck will be done. Fsck will go through the system and try to recover any corrupt files that it finds. The result of this recovery operation will be placed in this directory. The files recovered are not likely to be complete or make much sense but there always is a chance that something worthwhile is recovered.</p><p><b>/mnt</b> - This is a generic mount point under which you mount your filesystems or devices. Mounting is the process by which you make a filesystem available to the system. After mounting your files will be accessible under the mount-point. This directory usually contains mount points or sub-directories where you mount your floppy and your CD. You can also create additional mount-points here if you want. There is no limitation to creating a mount-point anywhere on your system but convention says that you do not litter your file system with mount-points.</p><p><b>/opt</b> - This directory contains all the software and add-on packages that are not part of the default installation. Generally you will find KDE and StarOffice here. Again, this directory is not used very often as it's mostly a standard in Unix installations.</p><p><b>/proc</b> - This is a special directory on your system. We have a more detailed article on this one here.</p><p><b>/root </b>- We talked about user home directories earlier and well this one is the home directory of the user root. This is not to be confused with the system root, which is directory at the highest level in the filesystem.</p><p><b>/tmp </b>- This directory contains mostly files that are required temporarily. Many programs use this to create lock files and for temporary storage of  data. On some systems, this directory is cleared out at boot or at shutdown.</p><p><b>/usr</b> - This is one of the most important directories in the system as it contains all the user binaries. X and its supporting libraries can be found here. User programs like telnet, ftp etc are also placed here. /usr/doc contains useful system documentation. /usr/src/linux contains the source code for the Linux kernel.</p><p><b>/var</b> - This directory contains spooling data like mail and also the output from the printer daemon. The system logs are also kept here in /var/log/messages. You will also find the database for BIND in /var/named and for NIS in /var/yp.</p><p>As you can see, its actually an awesome system. it means that when a package is installed all applications know exactly where to find it. its not unusual to have an application with a dozen other packages it needs (dependencies), imagine if you had to have a copy of each one in application folder.</p><p>It also has the advantage of keeping things together, logs and config files a good example. The windows way of throwing shit and leaving it where it lands is not a good system.</p><p>To back up all your personal files and configuration for every application you use, along with bookmarks and email all you have to do is copy /home/username. When you copy that onto a new system everything will be exactly as you had it before (assuming the same apps are installed) <br />
-
+<p>To save re-inventing the wheel, shamelessly stolen from http://www.freeos.com/articles/3102/:</p><p><b>/sbin</b> - This directory contains all the binaries that are essential to the working of the system. These include system administration as well as maintenance and hardware configuration programs. Find lilo, fdisk, init, ifconfig etc here. These are the essential programs that are required by all the users. Another directory that contains system binaries is /usr/sbin.  This directory contains other binaries of use to the system administrator.  This is where you will find the network daemons for your system along with  other binaries that only the system administrator has access to, but which are not required for system maintenance, repair etc.</p><p><b>/bin</b> - In contrast to /sbin, the bin directory contains several useful commands that are used by both the system administrator as well as non-privileged users. This directory usually contains the shells like bash, csh etc. as well as much used commands like cp, mv, rm, cat, ls. There also is /usr/bin, which contains other user binaries. These binaries on the other hand are not essential for the user. The binaries in /bin however, a user cannot do without.</p><p><b>/boot</b> - This directory contains the system.map file as well as the Linux kernel. Lilo places the boot sector backups in this directory.</p><p><b>/dev</b> - This is a very interesting directory that highlights one important characteristic of the Linux filesystem - everything is a file or a directory. Look through this directory and you should see hda1, hda2 etc, which represent the various partitions on the first master drive of the system. /dev/cdrom and /dev/fd0 represent your CDROM drive and your floppy drive. This may seem strange but it will make sense if you compare the characteristics of files to that of your hardware. Both can be read from and written to. Take /dev/dsp, for instance. This file represents your speaker device. So any data written to this file will be re directed to your speaker. Try 'cat /etc/lilo.conf &gt; /dev/dsp' and you should hear some sound on the speaker. That's the sound of your lilo.conf file! Similarly, sending data to and reading from /dev/ttyS0 ( COM 1 ) will allow you to communicate with a device attached there - your modem.</p><p><b>/etc</b> - This directory contains all the configuration files for your system. Your lilo.conf file lies in this directory as does hosts, resolv.conf and fstab. Under this directory will be X11 sub-directory which contains the  configuration files for X. More importantly, the /etc/rc.d directory contains the system startup scripts. This is a good directory to backup often. It will definitely save you a lot of re-configuration later if you re-install or lose your current installation.</p><p><b>/home</b> - Linux is a multi-user environment so each user is also assigned a specific directory which is accessible only to them and the system administrator. These are the user home directories, which can be found under /home/username. This directory also contains the user specific settings for programs like IRC, X etc.</p><p><b>/lib</b> - This contains all the shared libraries that are required by system programs. Windows equivalent to a shared library would be a DLL file.</p><p><b>/lost+found </b>- Linux should always go through a proper shutdown. Sometimes your system might crash or a power failure might take the machine down. Either way, at the next boot, a lengthy filesystem check using fsck will be done. Fsck will go through the system and try to recover any corrupt files that it finds. The result of this recovery operation will be placed in this directory. The files recovered are not likely to be complete or make much sense but there always is a chance that something worthwhile is recovered.</p><p><b>/mnt</b> - This is a generic mount point under which you mount your filesystems or devices. Mounting is the process by which you make a filesystem available to the system. After mounting your files will be accessible under the mount-point. This directory usually contains mount points or sub-directories where you mount your floppy and your CD. You can also create additional mount-points here if you want. There is no limitation to creating a mount-point anywhere on your system but convention says that you do not litter your file system with mount-points.</p><p><b>/opt</b> - This directory contains all the software and add-on packages that are not part of the default installation. Generally you will find KDE and StarOffice here. Again, this directory is not used very often as it's mostly a standard in Unix installations.</p><p><b>/proc</b> - This is a special directory on your system. We have a more detailed article on this one here.</p><p><b>/root </b>- We talked about user home directories earlier and well this one is the home directory of the user root. This is not to be confused with the system root, which is directory at the highest level in the filesystem.</p><p><b>/tmp </b>- This directory contains mostly files that are required temporarily. Many programs use this to create lock files and for temporary storage of  data. On some systems, this directory is cleared out at boot or at shutdown.</p><p><b>/usr</b> - This is one of the most important directories in the system as it contains all the user binaries. X and its supporting libraries can be found here. User programs like telnet, ftp etc are also placed here. /usr/doc contains useful system documentation. /usr/src/linux contains the source code for the Linux kernel.</p><p><b>/var</b> - This directory contains spooling data like mail and also the output from the printer daemon. The system logs are also kept here in /var/log/messages. You will also find the database for BIND in /var/named and for NIS in /var/yp.</p><p>As you can see, its actually an awesome system. it means that when a package is installed all applications know exactly where to find it. its not unusual to have an application with a dozen other packages it needs (dependencies), imagine if you had to have a copy of each one in application folder.</p><p>It also has the advantage of keeping things together, logs and config files a good example. The windows way of throwing shit and leaving it where it lands is not a good system.</p><p>To back up all your personal files and configuration for every application you use, along with bookmarks and email all you have to do is copy /home/username. When you copy that onto a new system everything will be exactly as you had it before (assuming the same apps are installed) <br />
 To backup up all your stuff on a windows system is insane, you need to go to every application's folder (which are sprinkled around the disk) and decipher which files are configuration files and which are rubbish. You need to copy every one of these, track down all your working folders and copy them too. To get them working again is even more difficult. Thats not even mentioning the registry.</p><p>Once you get used to using the directory structure you will wonder how you managed to get anything done on a windows machine, and learn to get pissed off at people like google who insist on binary blob installs which goes against the rules.</p>
 		</div>
 	</td>
@@ -375,82 +355,45 @@ To backup up all your stuff on a windows system is insane, you need to go to eve
 <tr>
 	<td class="alt1" style="padding:6px">
 		<div>
-<p><div style="margin:20px; margin-top:5px; ">
-
-	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
-
-	<table cellpadding="6" cellspacing="0" border="0" width="100%">
-
-	<tr>
-
-		<td class="alt2" style="border:1px inset">
-
-			
-
-				<div>
-
-					Originally Posted by <strong>RAOVQ</strong>
-
-					<img class="inlineimg" src="images/buttons/viewpost.gif" border="0" alt="View Post" />
-
-				</div>
-
-				<div style="font-style:italic">To save re-inventing the wheel, shamelessly stolen from http://www.freeos.com/articles/3102/:</div>
-
-			
-
-		</td>
-
-	</tr>
-
-	</table>
-
+<p><div style="margin:20px; margin-top:5px; ">
+	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
+	<table cellpadding="6" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td class="alt2" style="border:1px inset">
+			
+				<div>
+					Originally Posted by <strong>RAOVQ</strong>
+					<img class="inlineimg" src="images/buttons/viewpost.gif" border="0" alt="View Post" />
+				</div>
+				<div style="font-style:italic">To save re-inventing the wheel, shamelessly stolen from http://www.freeos.com/articles/3102/:</div>
+			
+		</td>
+	</tr>
+	</table>
 </div>
-I belive this is the Linux filesystem.<br />
-
-He probably means the unix filesystem.<br />
-
-/bin /sbin /boot /dev /etc /lib are required to boot the system. They're might be more, depending on which UNIX variant.<br />
-
-See `man hier`.</p><p><div style="margin:20px; margin-top:5px; ">
-
-	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
-
-	<table cellpadding="6" cellspacing="0" border="0" width="100%">
-
-	<tr>
-
-		<td class="alt2" style="border:1px inset">
-
-			
-
-				<div>
-
-					Originally Posted by <strong>RAOVQ</strong>
-
-					<img class="inlineimg" src="images/buttons/viewpost.gif" border="0" alt="View Post" />
-
-				</div>
-
-				<div style="font-style:italic">As you can see, its actually an awesome system. it means that when a package is installed all applications know exactly where to find it. its not unusual to have an application with a dozen other packages it needs (dependencies), imagine if you had to have a copy of each one in application folder.</p><p>It also has the advantage of keeping things together, logs and config files a good example. The windows way of throwing shit and leaving it where it lands is not a good system.</p><p>To back up all your personal files and configuration for every application you use, along with bookmarks and email all you have to do is copy /home/username. When you copy that onto a new system everything will be exactly as you had it before (assuming the same apps are installed) <br />
-
-To backup up all your stuff on a windows system is insane, you need to go to every application's folder (which are sprinkled around the disk) and decipher which files are configuration files and which are rubbish. You need to copy every one of these, track down all your working folders and copy them too. To get them working again is even more difficult. Thats not even mentioning the registry.</p><p>Once you get used to using the directory structure you will wonder how you managed to get anything done on a windows machine, and learn to get pissed off at people like google who insist on binary blob installs which goes against the rules.</div>
-
-			
-
-		</td>
-
-	</tr>
-
-	</table>
-
+I belive this is the Linux filesystem.<br />
+He probably means the unix filesystem.<br />
+/bin /sbin /boot /dev /etc /lib are required to boot the system. They're might be more, depending on which UNIX variant.<br />
+See `man hier`.</p><p><div style="margin:20px; margin-top:5px; ">
+	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
+	<table cellpadding="6" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td class="alt2" style="border:1px inset">
+			
+				<div>
+					Originally Posted by <strong>RAOVQ</strong>
+					<img class="inlineimg" src="images/buttons/viewpost.gif" border="0" alt="View Post" />
+				</div>
+				<div style="font-style:italic">As you can see, its actually an awesome system. it means that when a package is installed all applications know exactly where to find it. its not unusual to have an application with a dozen other packages it needs (dependencies), imagine if you had to have a copy of each one in application folder.</p><p>It also has the advantage of keeping things together, logs and config files a good example. The windows way of throwing shit and leaving it where it lands is not a good system.</p><p>To back up all your personal files and configuration for every application you use, along with bookmarks and email all you have to do is copy /home/username. When you copy that onto a new system everything will be exactly as you had it before (assuming the same apps are installed) <br />
+To backup up all your stuff on a windows system is insane, you need to go to every application's folder (which are sprinkled around the disk) and decipher which files are configuration files and which are rubbish. You need to copy every one of these, track down all your working folders and copy them too. To get them working again is even more difficult. Thats not even mentioning the registry.</p><p>Once you get used to using the directory structure you will wonder how you managed to get anything done on a windows machine, and learn to get pissed off at people like google who insist on binary blob installs which goes against the rules.</div>
+			
+		</td>
+	</tr>
+	</table>
 </div>
-UNIX love <img src="images/smilies/smile.gif" border="0" alt="" title="Smile" class="inlineimg" />.<br />
-
-User specific config are (by unwritten convention) in a . directory in the user's home dir.<br />
-
-The filesystem differs depending on the UNIX variant.</p><p>For example, non-system config and non-user specific config files are in /usr/local/etc on FreeBSD, while most distros, they're stored in /etc too.<br />
-
+UNIX love <img src="images/smilies/smile.gif" border="0" alt="" title="Smile" class="inlineimg" />.<br />
+User specific config are (by unwritten convention) in a . directory in the user's home dir.<br />
+The filesystem differs depending on the UNIX variant.</p><p>For example, non-system config and non-user specific config files are in /usr/local/etc on FreeBSD, while most distros, they're stored in /etc too.<br />
 Solaris replaced major parts of the filesystem by an *SMF* system controlled by an SQL frontend.</p>
 		</div>
 	</td>
