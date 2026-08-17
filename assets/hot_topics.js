@@ -1,6 +1,18 @@
 // Real BBS thread titles, sourced from the actual built site output - every entry here is a page that genuinely exists.
 const HOT_TOPICS = [
   {
+    "title": "Overview of Common STIs",
+    "file": "t1503855.html"
+  },
+  {
+    "title": "Birth Control Options",
+    "file": "t1504024.html"
+  },
+  {
+    "title": "How To Get Help In Technophiliacs & Technophiles",
+    "file": "t1770537.html"
+  },
+  {
     "title": "Why try?",
     "file": "t1809668.html"
   },
@@ -4671,6 +4683,10 @@ const HOT_TOPICS = [
   {
     "title": "eins",
     "file": "t1811050.html"
+  },
+  {
+    "title": "WWWWWW5WWW8WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW",
+    "file": "t1811052.html"
   },
   {
     "title": "Need to know what religion this is?",
@@ -11829,6 +11845,14 @@ const HOT_TOPICS = [
     "file": "t1814495.html"
   },
   {
+    "title": "Green Lantern is like a dick without wings - Page 3",
+    "file": "t1889256.html"
+  },
+  {
+    "title": "Hummers more environmentaly friendly than hybrids",
+    "file": "t1982343.html"
+  },
+  {
     "title": "Finnaly I have Proof! Here you go Ressotami!",
     "file": "t1984871.html"
   },
@@ -12021,8 +12045,24 @@ const HOT_TOPICS = [
     "file": "t1988186.html"
   },
   {
+    "title": "What are you listening to right now? - Page 2",
+    "file": "t1988201.html"
+  },
+  {
+    "title": "The Official \"What Song is This?\" thread - Page 2",
+    "file": "t1988208.html"
+  },
+  {
+    "title": "Official 'jam' Thread - Page 2",
+    "file": "t1988229.html"
+  },
+  {
     "title": "MySQL errors",
     "file": "t1988375.html"
+  },
+  {
+    "title": "9/11 - Page 2",
+    "file": "t1988408.html"
   },
   {
     "title": "Hard-Wired for God?",
@@ -12129,6 +12169,10 @@ const HOT_TOPICS = [
     "file": "t1992224.html"
   },
   {
+    "title": "How to get laid, look good, have friends etc",
+    "file": "t1992243.html"
+  },
+  {
     "title": "Proof There Is No God...Well Kinda",
     "file": "t1992268.html"
   },
@@ -12147,6 +12191,10 @@ const HOT_TOPICS = [
   {
     "title": "Evolution!!!",
     "file": "t1992703.html"
+  },
+  {
+    "title": "The new totse archives - Page 3",
+    "file": "t1992864.html"
   },
   {
     "title": "Transitional fossils",
@@ -12213,6 +12261,14 @@ const HOT_TOPICS = [
     "file": "t1994899.html"
   },
   {
+    "title": "Advancing acetone peroxide as a viable explosive",
+    "file": "t1995008.html"
+  },
+  {
+    "title": "Reputation",
+    "file": "t1995037.html"
+  },
+  {
     "title": "Uncanny Similarities With Christianity",
     "file": "t1995179.html"
   },
@@ -12235,6 +12291,14 @@ const HOT_TOPICS = [
   {
     "title": "Golden Rule",
     "file": "t1996079.html"
+  },
+  {
+    "title": "A point often missed... - Page 2",
+    "file": "t1996257.html"
+  },
+  {
+    "title": "Provoke a civil war in Iraq - Page 2",
+    "file": "t1996351.html"
   },
   {
     "title": "Is it okay to steal from followers of false religions?",
@@ -12275,6 +12339,10 @@ const HOT_TOPICS = [
   {
     "title": "1 Question To God",
     "file": "t1997044.html"
+  },
+  {
+    "title": "Last album purchase?",
+    "file": "t1997182.html"
   },
   {
     "title": "are athiests satanists?",
@@ -12357,6 +12425,10 @@ const HOT_TOPICS = [
     "file": "t1999573.html"
   },
   {
+    "title": "The 'Official' ABORTION Thread (POLL)",
+    "file": "t1999597.html"
+  },
+  {
     "title": "My visit to the church of Scientology (warning: long post)",
     "file": "t1999997.html"
   },
@@ -12367,6 +12439,10 @@ const HOT_TOPICS = [
   {
     "title": "Black God?",
     "file": "t2000157.html"
+  },
+  {
+    "title": "Hydrogen cars - Page 2",
+    "file": "t2000392.html"
   },
   {
     "title": "Someone of the wiccan persuasion",
@@ -12387,6 +12463,10 @@ const HOT_TOPICS = [
   {
     "title": "creationism=evolution",
     "file": "t2000934.html"
+  },
+  {
+    "title": "Recycling a detriment? - Page 2",
+    "file": "t2001237.html"
   },
   {
     "title": "was jesus really white?",
@@ -12529,6 +12609,10 @@ const HOT_TOPICS = [
     "file": "t2006452.html"
   },
   {
+    "title": "Mauser or Enfield?",
+    "file": "t2006478.html"
+  },
+  {
     "title": "God's Love?",
     "file": "t2006940.html"
   },
@@ -12561,6 +12645,14 @@ const HOT_TOPICS = [
     "file": "t2007342.html"
   },
   {
+    "title": "Chinese Food",
+    "file": "t2007422.html"
+  },
+  {
+    "title": "Post a picture of yourself",
+    "file": "t2007432.html"
+  },
+  {
     "title": "Youtubers Have A Go",
     "file": "t2007505.html"
   },
@@ -12585,6 +12677,18 @@ const HOT_TOPICS = [
     "file": "t2007882.html"
   },
   {
+    "title": "Why isn't eugenics being taken seriously?",
+    "file": "t2008077.html"
+  },
+  {
+    "title": "Ok Canada, what are we gonna do about the gook problem?",
+    "file": "t2008204.html"
+  },
+  {
+    "title": "Canada can't do anything right (school shooting)",
+    "file": "t2008260.html"
+  },
+  {
     "title": "Does anyone here believe in astrology?",
     "file": "t2008383.html"
   },
@@ -12595,6 +12699,10 @@ const HOT_TOPICS = [
   {
     "title": "Why dont some people believe in Jesus Christ???",
     "file": "t2008425.html"
+  },
+  {
+    "title": "Demoralizing ISketch",
+    "file": "t2008563.html"
   },
   {
     "title": "Atheist resurrgence....",
@@ -12649,12 +12757,28 @@ const HOT_TOPICS = [
     "file": "t2009733.html"
   },
   {
+    "title": "The little things that annoy you in movies. - Page 2",
+    "file": "t2009906.html"
+  },
+  {
+    "title": "i got to lvl 9  /  78%",
+    "file": "t2009932.html"
+  },
+  {
+    "title": "co2 gas whats the big idea to save us all!!!",
+    "file": "t2010158.html"
+  },
+  {
     "title": "A symbol I dreamed of. Does anyone recognise it?",
     "file": "t2010267.html"
   },
   {
     "title": "Ultimate place to die.",
     "file": "t2010407.html"
+  },
+  {
+    "title": "Brining this up again: Unknown/Foreign smell(from female that is)",
+    "file": "t2010426.html"
   },
   {
     "title": "Need to a catholic perspective on genetic engineering.",
@@ -12685,12 +12809,20 @@ const HOT_TOPICS = [
     "file": "t2011790.html"
   },
   {
+    "title": "The number 7",
+    "file": "t2011797.html"
+  },
+  {
     "title": "Very Confused About My Religion",
     "file": "t2011814.html"
   },
   {
     "title": "Existance, and what it means to people.",
     "file": "t2011823.html"
+  },
+  {
+    "title": "Al Gore's Energy Use",
+    "file": "t2012554.html"
   },
   {
     "title": "What will become of the religious fundamentalists",
@@ -12723,6 +12855,14 @@ const HOT_TOPICS = [
   {
     "title": "So I had a very weird experience.",
     "file": "t2013702.html"
+  },
+  {
+    "title": "1000th thread",
+    "file": "t2013799.html"
+  },
+  {
+    "title": "More Forum Changes - Page 2",
+    "file": "t2013861.html"
   },
   {
     "title": "the only reason you shouldnt be an atheist",
@@ -12781,6 +12921,14 @@ const HOT_TOPICS = [
     "file": "t2016387.html"
   },
   {
+    "title": "Script threads",
+    "file": "t2016415.html"
+  },
+  {
+    "title": "The time 11:11 - Page 2",
+    "file": "t2016504.html"
+  },
+  {
     "title": "What makes you believe in God, or any other religion?",
     "file": "t2016621.html"
   },
@@ -12791,6 +12939,10 @@ const HOT_TOPICS = [
   {
     "title": "Moving to England",
     "file": "t2017005.html"
+  },
+  {
+    "title": "Pyro Related Random Thread (PRRT)\u00b2",
+    "file": "t2017314.html"
   },
   {
     "title": "Afterlife...?",
@@ -12807,6 +12959,10 @@ const HOT_TOPICS = [
   {
     "title": "ATTN: Christians...",
     "file": "t2017617.html"
+  },
+  {
+    "title": "Man vs Wild and Survivorman",
+    "file": "t2017671.html"
   },
   {
     "title": "What the fuck.",
@@ -12845,12 +13001,20 @@ const HOT_TOPICS = [
     "file": "t2019327.html"
   },
   {
+    "title": "Where to recycle grocery bags?",
+    "file": "t2019347.html"
+  },
+  {
     "title": "On a certain annoyance of speaking English..",
     "file": "t2019352.html"
   },
   {
     "title": "Who?",
     "file": "t2019471.html"
+  },
+  {
+    "title": "Online explosives [/not what you think]",
+    "file": "t2019747.html"
   },
   {
     "title": "Summer Solstice is tonight",
@@ -12891,6 +13055,14 @@ const HOT_TOPICS = [
   {
     "title": "I like to go with Billy Joel's philosphy(sp?)",
     "file": "t2020673.html"
+  },
+  {
+    "title": "Shitty movies that everyone loves",
+    "file": "t2020678.html"
+  },
+  {
+    "title": "training day",
+    "file": "t2020811.html"
   },
   {
     "title": "God doesn't believe in atheists",
@@ -12937,8 +13109,20 @@ const HOT_TOPICS = [
     "file": "t2022100.html"
   },
   {
+    "title": "Potassium Nitrate As A Booster?",
+    "file": "t2022113.html"
+  },
+  {
     "title": "ubuntu problem switching resolution",
     "file": "t2022156.html"
+  },
+  {
+    "title": "What's more environmentally friendly? Paper towel or hand dryer?",
+    "file": "t2022200.html"
+  },
+  {
+    "title": "Warez and Spam: No Tolerance",
+    "file": "t2022336.html"
   },
   {
     "title": "the day I met an angel",
@@ -12963,6 +13147,10 @@ const HOT_TOPICS = [
   {
     "title": "Religion..",
     "file": "t2022686.html"
+  },
+  {
+    "title": "Can a woman really cum this quick?",
+    "file": "t2022911.html"
   },
   {
     "title": "Where does it say its neccesary to go to church in the bible?",
@@ -12993,6 +13181,10 @@ const HOT_TOPICS = [
     "file": "t2023636.html"
   },
   {
+    "title": "Moderator Vote - Page 3",
+    "file": "t2023650.html"
+  },
+  {
     "title": "totse, im really confused...",
     "file": "t2023692.html"
   },
@@ -13001,12 +13193,28 @@ const HOT_TOPICS = [
     "file": "t2023713.html"
   },
   {
+    "title": "This may be a dumb question but..",
+    "file": "t2023720.html"
+  },
+  {
+    "title": "1080 Poison in NZ",
+    "file": "t2023755.html"
+  },
+  {
     "title": "Abiogenesis",
     "file": "t2023779.html"
   },
   {
+    "title": "Transformers *no spoilers* - Page 2",
+    "file": "t2023859.html"
+  },
+  {
     "title": "An Argument from reason",
     "file": "t2023877.html"
+  },
+  {
+    "title": "HA!",
+    "file": "t2023987.html"
   },
   {
     "title": "Killing Jesus with Irony!!!",
@@ -13015,6 +13223,14 @@ const HOT_TOPICS = [
   {
     "title": "Athiests as a majority",
     "file": "t2024132.html"
+  },
+  {
+    "title": "Are you kidding me, girl using my own techniques on me? - Page 2",
+    "file": "t2024193.html"
+  },
+  {
+    "title": "Zeitgeist - Page 3",
+    "file": "t2024317.html"
   },
   {
     "title": "satanists",
@@ -13027,6 +13243,10 @@ const HOT_TOPICS = [
   {
     "title": "if u believe it god ur gay",
     "file": "t2024785.html"
+  },
+  {
+    "title": "Immigrants&Black People=Native American Reincarnates?",
+    "file": "t2024918.html"
   },
   {
     "title": "Design",
@@ -13047,6 +13267,14 @@ const HOT_TOPICS = [
   {
     "title": "Do retards and the chronically dumb go to Heaven?",
     "file": "t2025534.html"
+  },
+  {
+    "title": "Your first computer - Page 2",
+    "file": "t2025539.html"
+  },
+  {
+    "title": "Campaign To Save the Environment",
+    "file": "t2025589.html"
   },
   {
     "title": "Redskin religion",
@@ -13079,6 +13307,10 @@ const HOT_TOPICS = [
   {
     "title": "Almost got caught.",
     "file": "t2026206.html"
+  },
+  {
+    "title": "Rust is gone? - Page 2",
+    "file": "t2026400.html"
   },
   {
     "title": "Making my backspace key work...",
@@ -13125,12 +13357,24 @@ const HOT_TOPICS = [
     "file": "t2027144.html"
   },
   {
+    "title": "Chinese MP3 Players - Page 2",
+    "file": "t2027330.html"
+  },
+  {
     "title": "Benefits of Heaven",
     "file": "t2027378.html"
   },
   {
+    "title": "Moderators?",
+    "file": "t2027785.html"
+  },
+  {
     "title": "Al Gore, the anti-christ?",
     "file": "t2027873.html"
+  },
+  {
+    "title": "9/11 latenight.",
+    "file": "t2027976.html"
   },
   {
     "title": "All these xian arguments",
@@ -13157,6 +13401,30 @@ const HOT_TOPICS = [
     "file": "t2028300.html"
   },
   {
+    "title": "The Bourne Ultimatum - Page 2",
+    "file": "t2028346.html"
+  },
+  {
+    "title": "OFFICIAL The Simpsons Movie Thread",
+    "file": "t2028369.html"
+  },
+  {
+    "title": "Explain this",
+    "file": "t2028462.html"
+  },
+  {
+    "title": "Cloverfield",
+    "file": "t2028565.html"
+  },
+  {
+    "title": "Best PCI express Video card for under $200? - Page 2",
+    "file": "t2028575.html"
+  },
+  {
+    "title": "Bridge to Terabithia",
+    "file": "t2028704.html"
+  },
+  {
     "title": "Can i afford my dream car?",
     "file": "t2028747.html"
   },
@@ -13177,12 +13445,28 @@ const HOT_TOPICS = [
     "file": "t2028899.html"
   },
   {
+    "title": "{@/\\/ l |@p3  |_|  /-\\/\\//-\\lly",
+    "file": "t2028934.html"
+  },
+  {
     "title": "Believing what you want.",
     "file": "t2028964.html"
   },
   {
+    "title": "Harry Potter and the Order of the Phoenix *spoilers* - Page 2",
+    "file": "t2028986.html"
+  },
+  {
     "title": "poll: how did you come to believe what you believe?",
     "file": "t2029086.html"
+  },
+  {
+    "title": "so.. i may have found acid in my sisters room?",
+    "file": "t2029095.html"
+  },
+  {
+    "title": "Bad Santa - Page 3",
+    "file": "t2029170.html"
   },
   {
     "title": "Looking for intense fighting scenes",
@@ -13191,6 +13475,18 @@ const HOT_TOPICS = [
   {
     "title": "Mithraism - another source of Christian mythology",
     "file": "t2029293.html"
+  },
+  {
+    "title": "Big Brother (UK)",
+    "file": "t2029376.html"
+  },
+  {
+    "title": "How To Blow Butane Fireballs-",
+    "file": "t2029419.html"
+  },
+  {
+    "title": "How many people have you slept with? - Page 2",
+    "file": "t2029474.html"
   },
   {
     "title": "Concrete Question",
@@ -13209,6 +13505,10 @@ const HOT_TOPICS = [
     "file": "t2029690.html"
   },
   {
+    "title": "Seeing a number EVERYWHERE",
+    "file": "t2029766.html"
+  },
+  {
     "title": "Proof that reading the OT literally is a mistake.",
     "file": "t2029773.html"
   },
@@ -13221,6 +13521,10 @@ const HOT_TOPICS = [
     "file": "t2029981.html"
   },
   {
+    "title": "Microwave plasma gun? o_0",
+    "file": "t2030079.html"
+  },
+  {
     "title": "Real or Fake? Binary.",
     "file": "t2030201.html"
   },
@@ -13229,8 +13533,20 @@ const HOT_TOPICS = [
     "file": "t2030270.html"
   },
   {
+    "title": "Wild Lettuce",
+    "file": "t2030423.html"
+  },
+  {
+    "title": "Take A Moment Out Of Your Lives To Thank The Greatest American Of All Time...",
+    "file": "t2030449.html"
+  },
+  {
     "title": "Another noob can't connect to the net....",
     "file": "t2030579.html"
+  },
+  {
+    "title": "Constuction site mayhem",
+    "file": "t2030591.html"
   },
   {
     "title": "Torrents on linux?",
@@ -13243,6 +13559,10 @@ const HOT_TOPICS = [
   {
     "title": "more Papal bull",
     "file": "t2030698.html"
+  },
+  {
+    "title": "Conspiracy theories that were later proven true",
+    "file": "t2030715.html"
   },
   {
     "title": "How to make many small, controlled explosions?",
@@ -13261,6 +13581,22 @@ const HOT_TOPICS = [
     "file": "t2030883.html"
   },
   {
+    "title": "I'm tired of people equating a 9/11 coverup with the manhattan Project.",
+    "file": "t2030890.html"
+  },
+  {
+    "title": "The Official Rewriting the Forum Description Thread. - Page 2",
+    "file": "t2030987.html"
+  },
+  {
+    "title": "So who got the new Smashing Pumpkins album?!",
+    "file": "t2031080.html"
+  },
+  {
+    "title": "How to get more rep points than you know what to do with!",
+    "file": "t2031122.html"
+  },
+  {
     "title": "potassium nitrate",
     "file": "t2031154.html"
   },
@@ -13273,6 +13609,14 @@ const HOT_TOPICS = [
     "file": "t2031204.html"
   },
   {
+    "title": "ITT: Number coincidences",
+    "file": "t2031205.html"
+  },
+  {
+    "title": "The best MP3 VBR preference when encoding audio?",
+    "file": "t2031206.html"
+  },
+  {
     "title": "Atheists Pick and Choose?",
     "file": "t2031216.html"
   },
@@ -13281,8 +13625,20 @@ const HOT_TOPICS = [
     "file": "t2031263.html"
   },
   {
+    "title": "Climate change - the truth",
+    "file": "t2031379.html"
+  },
+  {
     "title": "Guro: wtf.",
     "file": "t2031410.html"
+  },
+  {
+    "title": "Harry potter and the masons",
+    "file": "t2031423.html"
+  },
+  {
+    "title": "povidine iodine solution",
+    "file": "t2031432.html"
   },
   {
     "title": "Questionable God?",
@@ -13293,6 +13649,18 @@ const HOT_TOPICS = [
     "file": "t2031481.html"
   },
   {
+    "title": "What the government doesnt want you to know annd how to save yourself",
+    "file": "t2031485.html"
+  },
+  {
+    "title": "Grindhouse \"greatest hits\"",
+    "file": "t2031559.html"
+  },
+  {
+    "title": "What movie do you like to rewatch every couple years? - Page 2",
+    "file": "t2031594.html"
+  },
+  {
     "title": "editing in futurama?",
     "file": "t2031664.html"
   },
@@ -13301,12 +13669,32 @@ const HOT_TOPICS = [
     "file": "t2031666.html"
   },
   {
+    "title": "the world is entering a new phase",
+    "file": "t2031695.html"
+  },
+  {
+    "title": "Proportions in APAN/ANFO",
+    "file": "t2031779.html"
+  },
+  {
+    "title": "How do you transfer credit funds to the internet?",
+    "file": "t2031790.html"
+  },
+  {
     "title": "God Bless America...",
     "file": "t2031846.html"
   },
   {
     "title": "I can now see why terrorism can take hold in Islam.",
     "file": "t2031904.html"
+  },
+  {
+    "title": "Countering the regime",
+    "file": "t2031917.html"
+  },
+  {
+    "title": "Humiliation/No more friend!",
+    "file": "t2031954.html"
   },
   {
     "title": "What is your favorite breath freshener?",
@@ -13319,6 +13707,10 @@ const HOT_TOPICS = [
   {
     "title": "What are The Possibilities?",
     "file": "t2032044.html"
+  },
+  {
+    "title": "Cheap Reliable Cars",
+    "file": "t2032072.html"
   },
   {
     "title": "cable tv question",
@@ -13335,6 +13727,18 @@ const HOT_TOPICS = [
   {
     "title": "My religious beliefs, as explained to a friend on msn",
     "file": "t2032227.html"
+  },
+  {
+    "title": "New computer (need input on specs) - Page 2",
+    "file": "t2032270.html"
+  },
+  {
+    "title": "Suggest Me Anything - Page 2",
+    "file": "t2032366.html"
+  },
+  {
+    "title": "Family Guy steals from The Simpsons, two clip videos",
+    "file": "t2032426.html"
   },
   {
     "title": "How old are you?",
@@ -13361,24 +13765,72 @@ const HOT_TOPICS = [
     "file": "t2032565.html"
   },
   {
+    "title": "So i really want my girl to go on the pill. - Page 2",
+    "file": "t2032572.html"
+  },
+  {
+    "title": "thermite",
+    "file": "t2032587.html"
+  },
+  {
+    "title": "Human implantable microchip tracking devices and imunzinations",
+    "file": "t2032606.html"
+  },
+  {
     "title": "SHOOTER MOVIE ((Hollywood vs. Reality))",
     "file": "t2032608.html"
+  },
+  {
+    "title": "Stop my suicide - Page 2",
+    "file": "t2032625.html"
   },
   {
     "title": "FTP Attackers...",
     "file": "t2032637.html"
   },
   {
+    "title": "Abandoning/walking out on psycho lover. - Page 2",
+    "file": "t2032681.html"
+  },
+  {
+    "title": "Looking for some techno to listen to",
+    "file": "t2032685.html"
+  },
+  {
     "title": "how do i hide files in to jpeg",
     "file": "t2032689.html"
+  },
+  {
+    "title": "Why the NWO conspiracy is hard to prove",
+    "file": "t2032692.html"
+  },
+  {
+    "title": "The Exorcist in depth Analysis.",
+    "file": "t2032727.html"
+  },
+  {
+    "title": "Funny as a pig snorting cheese.",
+    "file": "t2032768.html"
+  },
+  {
+    "title": "Good ambient and lounge",
+    "file": "t2032786.html"
   },
   {
     "title": "A song my friend wrote",
     "file": "t2032800.html"
   },
   {
+    "title": "Laptops",
+    "file": "t2032803.html"
+  },
+  {
     "title": "Tea bags vs. Loose leaf",
     "file": "t2032810.html"
+  },
+  {
+    "title": "meet my son - Page 2",
+    "file": "t2032812.html"
   },
   {
     "title": "Must have albums/bands in your collection",
@@ -13387,6 +13839,10 @@ const HOT_TOPICS = [
   {
     "title": "uneven arms",
     "file": "t2032814.html"
+  },
+  {
+    "title": "anyone familiar with ms secure? - Page 2",
+    "file": "t2032822.html"
   },
   {
     "title": "Windows XP file sharing",
@@ -13399,6 +13855,10 @@ const HOT_TOPICS = [
   {
     "title": "Best Website Building Program???",
     "file": "t2032873.html"
+  },
+  {
+    "title": "The good girl",
+    "file": "t2032878.html"
   },
   {
     "title": "What am I doing wrong?",
@@ -13421,8 +13881,16 @@ const HOT_TOPICS = [
     "file": "t2032955.html"
   },
   {
+    "title": "Drug analysis reagent survey thingy for all of you to vote on",
+    "file": "t2032978.html"
+  },
+  {
     "title": "stock market",
     "file": "t2032982.html"
+  },
+  {
+    "title": "i know who killed me. . .",
+    "file": "t2032992.html"
   },
   {
     "title": "Radiohead fan have you listened to this...",
@@ -13433,6 +13901,10 @@ const HOT_TOPICS = [
     "file": "t2033023.html"
   },
   {
+    "title": "Matt Bellamy - The First Guitar Genius Of The 21st Century? - Page 2",
+    "file": "t2033028.html"
+  },
+  {
     "title": "the raid thread",
     "file": "t2033069.html"
   },
@@ -13441,12 +13913,24 @@ const HOT_TOPICS = [
     "file": "t2033094.html"
   },
   {
+    "title": "Setting up a proxy",
+    "file": "t2033123.html"
+  },
+  {
+    "title": "Nekkid pics (don't get excited just yet) - Page 2",
+    "file": "t2033156.html"
+  },
+  {
     "title": "Calling God 'Him'",
     "file": "t2033179.html"
   },
   {
     "title": "Welfare",
     "file": "t2033231.html"
+  },
+  {
+    "title": "Oink torrent problem",
+    "file": "t2033258.html"
   },
   {
     "title": "Mall ninja in the UK!",
@@ -13461,12 +13945,36 @@ const HOT_TOPICS = [
     "file": "t2033290.html"
   },
   {
+    "title": "funny/awkward situation - Page 2",
+    "file": "t2033296.html"
+  },
+  {
+    "title": "Girls with crazy hair",
+    "file": "t2033301.html"
+  },
+  {
+    "title": "Streetlight manifesto",
+    "file": "t2033306.html"
+  },
+  {
     "title": "HELP ME DECIDE! Which Laptop?",
     "file": "t2033325.html"
   },
   {
     "title": "solo fighting",
     "file": "t2033343.html"
+  },
+  {
+    "title": "My house is going to get blasted at tonight at 9..",
+    "file": "t2033346.html"
+  },
+  {
+    "title": "A few questions - opiate related... *REVISED* (now with less useless content!)",
+    "file": "t2033364.html"
+  },
+  {
+    "title": "This happen to anyone else?",
+    "file": "t2033368.html"
   },
   {
     "title": "War on terrorism making America less safe?",
@@ -13485,16 +13993,52 @@ const HOT_TOPICS = [
     "file": "t2033448.html"
   },
   {
+    "title": "drugs over time with girl - Page 2",
+    "file": "t2033449.html"
+  },
+  {
+    "title": "Bondage? - Page 2",
+    "file": "t2033460.html"
+  },
+  {
     "title": "Bands everyone seems to like except you.",
     "file": "t2033472.html"
+  },
+  {
+    "title": "paul gilbert plays guitar",
+    "file": "t2033481.html"
   },
   {
     "title": "SWIM got a nice surprise in the mail",
     "file": "t2033483.html"
   },
   {
+    "title": "hitting on someone while pretending to be drunk and apologising later - Page 2",
+    "file": "t2033532.html"
+  },
+  {
+    "title": "Constrictive Parents - Page 2",
+    "file": "t2033545.html"
+  },
+  {
+    "title": "to my bros in ontario",
+    "file": "t2033572.html"
+  },
+  {
+    "title": "Pesticide synth",
+    "file": "t2033590.html"
+  },
+  {
     "title": "if you go to the doctor",
     "file": "t2033593.html"
+  },
+  {
+    "title": "How do you support an artist without buying their CD?",
+    "file": "t2033600.html"
+  },
+  {
+    "title": "All the problems with modern society can be pinned to one invention. - Page 2",
+    "file": "t2033606.html"
   },
   {
     "title": "Tool",
@@ -13509,6 +14053,18 @@ const HOT_TOPICS = [
     "file": "t2033617.html"
   },
   {
+    "title": "Beginner keyboard?",
+    "file": "t2033627.html"
+  },
+  {
+    "title": "i have to find more of this",
+    "file": "t2033636.html"
+  },
+  {
+    "title": "Win98 computer registration",
+    "file": "t2033650.html"
+  },
+  {
     "title": "Teaching underage girls to masturbate...",
     "file": "t2033651.html"
   },
@@ -13517,8 +14073,16 @@ const HOT_TOPICS = [
     "file": "t2033660.html"
   },
   {
+    "title": "how am i coming along?",
+    "file": "t2033675.html"
+  },
+  {
     "title": "fapper busted out on youtube...",
     "file": "t2033688.html"
+  },
+  {
+    "title": "legalize weed?",
+    "file": "t2033702.html"
   },
   {
     "title": "Books",
@@ -13535,6 +14099,10 @@ const HOT_TOPICS = [
   {
     "title": "Celibate Pornography - a small hardcore project",
     "file": "t2033716.html"
+  },
+  {
+    "title": "My cousin OD'ed, help me identify drug.",
+    "file": "t2033731.html"
   },
   {
     "title": "LoJack on Laptops",
@@ -13577,12 +14145,28 @@ const HOT_TOPICS = [
     "file": "t2033808.html"
   },
   {
+    "title": "Pedobear",
+    "file": "t2033809.html"
+  },
+  {
+    "title": "I quit WoW! - Page 2",
+    "file": "t2033815.html"
+  },
+  {
     "title": "20 000",
     "file": "t2033818.html"
   },
   {
+    "title": "NEWSFLASH of TOTSE history in the making!",
+    "file": "t2033837.html"
+  },
+  {
     "title": "who wants to be a FRENCH millionaire?",
     "file": "t2033838.html"
+  },
+  {
+    "title": "Best Headphones",
+    "file": "t2033846.html"
   },
   {
     "title": "Does this ever happen to anyone else?!",
@@ -13597,12 +14181,20 @@ const HOT_TOPICS = [
     "file": "t2033859.html"
   },
   {
+    "title": "Emma Watson upskirt GIF",
+    "file": "t2033860.html"
+  },
+  {
     "title": "Just take it and walk out...",
     "file": "t2033866.html"
   },
   {
     "title": "Timothy Leary's 8 Circuit Brain Model",
     "file": "t2033867.html"
+  },
+  {
+    "title": "Lets draw stuff and waste this guy's server space all at once!",
+    "file": "t2033871.html"
   },
   {
     "title": "Does anyone here realize there's a difference between God and Religion?",
@@ -13617,8 +14209,16 @@ const HOT_TOPICS = [
     "file": "t2033903.html"
   },
   {
+    "title": "Metaphysicist kills spurious.",
+    "file": "t2033908.html"
+  },
+  {
     "title": "Athiesm sucks, religion sucks. I thought this would interest you....",
     "file": "t2033917.html"
+  },
+  {
+    "title": "Man or ostrich? - Page 2",
+    "file": "t2033918.html"
   },
   {
     "title": "Armchair POTUS",
@@ -13633,12 +14233,88 @@ const HOT_TOPICS = [
     "file": "t2033941.html"
   },
   {
+    "title": "Problem streaming .rm files in VLC",
+    "file": "t2033942.html"
+  },
+  {
+    "title": "is arms merchant john locke?",
+    "file": "t2033945.html"
+  },
+  {
+    "title": "best alcohol song?",
+    "file": "t2033949.html"
+  },
+  {
+    "title": "What would you do If I suddenly appeared in your home? - Page 2",
+    "file": "t2033965.html"
+  },
+  {
+    "title": "What it feels like to not be fat - Page 2",
+    "file": "t2033966.html"
+  },
+  {
     "title": "Strange pill my buddy was telling me about..",
     "file": "t2033971.html"
   },
   {
+    "title": "A good Digital Camera ($100-200)",
+    "file": "t2033973.html"
+  },
+  {
+    "title": "What Would You Do For This MONEY? - Page 2",
+    "file": "t2033978.html"
+  },
+  {
+    "title": "I Is Back!",
+    "file": "t2033984.html"
+  },
+  {
+    "title": "sharing broadband - Page 2",
+    "file": "t2033986.html"
+  },
+  {
+    "title": "I went soft....twice. Softcockitis",
+    "file": "t2033989.html"
+  },
+  {
+    "title": "Psychology test, Question # 9.",
+    "file": "t2033993.html"
+  },
+  {
     "title": "The truth about BazookaMedic",
     "file": "t2033998.html"
+  },
+  {
+    "title": "if you met someone from totse IRL",
+    "file": "t2034004.html"
+  },
+  {
+    "title": "Everyone starting out with a girl, READ THIS NOW!",
+    "file": "t2034005.html"
+  },
+  {
+    "title": "derdrache:",
+    "file": "t2034012.html"
+  },
+  {
+    "title": "How did you discover totse?",
+    "file": "t2034014.html"
+  },
+  {
+    "title": "Hello Totse ;] - Page 2",
+    "file": "t2034015.html"
+  },
+  {
+    "title": "Oh shit exam at 2:00",
+    "file": "t2034022.html"
+  },
+  {
+    "title": "Attn: Shh",
+    "file": "t2034025.html"
+  },
+  {
+    "title": "Mirror is pronounced mir-rer...",
+    "file": "t2034029.html"
   },
   {
     "title": "Help with files.",
@@ -13669,12 +14345,32 @@ const HOT_TOPICS = [
     "file": "t2034044.html"
   },
   {
+    "title": "Lean like a cholo?",
+    "file": "t2034045.html"
+  },
+  {
     "title": "A group of elitist academic smart people is sitting beside me.",
     "file": "t2034046.html"
   },
   {
+    "title": "so have you ever talked to someone from totse on the phone before?",
+    "file": "t2034047.html"
+  },
+  {
     "title": "Video Converter?",
     "file": "t2034048.html"
+  },
+  {
+    "title": "eat pee",
+    "file": "t2034052.html"
+  },
+  {
+    "title": "What Was The Last Thing You Stole?",
+    "file": "t2034060.html"
+  },
+  {
+    "title": "someone should get an HB tattoo",
+    "file": "t2034062.html"
   },
   {
     "title": "Are Atheism and Religion totally irreconciable?",
