@@ -183,12 +183,26 @@
 
 		<!-- Content column -->
 		<td align="left">
-			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<!-- table-layout:fixed makes the browser honor this row's column
+			     widths exactly instead of auto-redistributing them: with the
+			     default "auto" layout, a 13px + 97% + 13px row never sums to
+			     exactly 100% of a fluid table except at one specific width,
+			     so at any other width (all of them, on a responsive page)
+			     the browser proportionally inflates the two fixed-13px
+			     corner columns to reconcile the mismatch - stretching
+			     3lt.jpg/3rt.jpg's cells past the images' own 13px width and
+			     tiling a second, partial copy of the curve artwork into the
+			     extra space, which reads as the rounded corner being cut
+			     off. Under fixed layout this row's widths become the whole
+			     table's column template (13px / remainder / 13px) and are
+			     used verbatim at every width, so the corner cells always
+			     match their images exactly and never need to repeat. -->
+			<table width="100%" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed">
 
 				<tr>
-					<td width="13" height="11" background="../../images/t3/3lt.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="97%" height="11" background="../../images/t3/3ct.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="13" height="11" background="../../images/t3/3rt.jpg"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3lt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3ct.jpg"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3rt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
 				</tr>
 
 				<!-- Ubiquitous nav menu - only real, existing pages are hyperlinked; everything
@@ -222,1417 +236,745 @@
 
 				<tr valign="top">
 					<td width="13" background="../../images/t3/0cm.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="97%" height="640" background="../../images/t3/0cm.jpg">
-<!-- breadcrumb, login, pm info -->
-
-<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
-
-<tr>
-
-	<td class="alt1" width="100%">
-
-		
-
-			<table cellpadding="0" cellspacing="0" border="0">
-
-			<tr valign="bottom">
-
-				<td><a href="#" onclick="history.back(1); return false;"><img src="../../images/misc/navbits_start.gif" alt="Go Back" border="0" /></a></td>
-
-				<td>&nbsp;</td>
-
+					<td width="97%" height="640" background="../../images/t3/0cm.jpg" style="padding-top:6px">
+<!-- breadcrumb, login, pm info -->
+<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
+<tr>
+	<td class="alt1" width="100%">
+		
+			<table cellpadding="0" cellspacing="0" border="0">
+			<tr valign="bottom">
+				<td><a href="#" onclick="history.back(1); return false;"><img src="../../images/misc/navbits_start.gif" alt="Go Back" border="0" /></a></td>
+				<td>&nbsp;</td>
 				<td width="100%"><span class="navbar"><a href="../../community/index.html" accesskey="1">Community</a></span> <!-- BEGIN TEMPLATE: navbar_link -->
-
-
-	<span class="navbar">&gt; <a href="../../community/forums/f142.html">Society</a></span>
-
-
-
+
+	<span class="navbar">&gt; <a href="../../community/forums/f142.html">Society</a></span>
+
 
 <!-- END TEMPLATE: navbar_link --><!-- BEGIN TEMPLATE: navbar_link -->
+
+	<span class="navbar">&gt; <a href="../../community/forums/f163.html">My God Can Beat the Shit Out of Your God</a></span>
+
 
-
-	<span class="navbar">&gt; <a href="../../community/forums/f163.html">My God Can Beat the Shit Out of Your God</a></span>
-
-
-
-
-<!-- END TEMPLATE: navbar_link --></td>
-
-			</tr>
-
-			<tr>
-
+<!-- END TEMPLATE: navbar_link --></td>
+			</tr>
+			<tr>
 				<td class="navbar" style="font-size:10pt; padding-top:1px" colspan="3"><a href="../../community/threads/t1985318.html"><img class="inlineimg" src="../../images/misc/navbits_finallink_ltr.gif" alt="Reload this Page" border="0" /></a> <strong><!-- BEGIN TEMPLATE: navbar_link -->
-
-
-	 Growing more and more resentful of Christianity
-
-
-
-
-<!-- END TEMPLATE: navbar_link --></strong></td>
-
-			</tr>
-
-			</table>
-
-		
-
-	</td>
-
-
-
-	<td class="alt2" nowrap="nowrap" style="padding:0px">
-
-		<!-- login form -->
-
-		<form action="login.php?do=login" method="post" onsubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
-
-		<script type="text/javascript" src="clientscript/vbulletin_md5.js@v=372"></script>
-
-		<table cellpadding="0" cellspacing="3" border="0">
-
-		<tr>
-
-			<td class="smallfont" style="white-space: nowrap;"><label for="navbar_username">User Name</label></td>
-
-			<td><input type="text" class="bginput" style="font-size: 11px" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="User Name" onfocus="if (this.value == 'User Name') this.value = '';" /></td>
-
-			<td class="smallfont" nowrap="nowrap"><label for="cb_cookieuser_navbar"><input type="checkbox" name="cookieuser" value="1" tabindex="103" id="cb_cookieuser_navbar" accesskey="c" />Remember Me?</label></td>
-
-		</tr>
-
-		<tr>
-
-			<td class="smallfont"><label for="navbar_password">Password</label></td>
-
-			<td><input type="password" class="bginput" style="font-size: 11px" name="vb_login_password" id="navbar_password" size="10" tabindex="102" /></td>
-
-			<td><input type="submit" class="button" value="Log in" tabindex="104" title="Enter your username and password in the boxes provided to login, or click the 'register' button to create a profile for yourself." accesskey="s" /></td>
-
-		</tr>
-
-		</table>
-
-		<input type="hidden" name="s" value="" />
-
-		<input type="hidden" name="securitytoken" value="guest" />
-
-		<input type="hidden" name="do" value="login" />
-
-		<input type="hidden" name="vb_login_md5password" />
-
-		<input type="hidden" name="vb_login_md5password_utf" />
-
-		</form>
-
-		<!-- / login form -->
-
-	</td>
-
-
-
-</tr>
-
-</table>
-
-<!-- / breadcrumb, login, pm info -->
-
-
-
-<!-- nav buttons bar -->
-
-<div class="tborder" style="padding:1px; border-top-width:0px">
-
-	<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
-
-	<tr align="center">
-
-		
-
-		
-
-			<td class="vbmenu_control">Register</td>
-
-		
-
-		
-
-		<td class="vbmenu_control"><a href="../../en/_faq/totse_faq.html" accesskey="5">FAQ</a></td>
-
-		
-
-			<td class="vbmenu_control">Members List</td>
-
-		
-
-		<td class="vbmenu_control">Calendar</td>
-
-		
-
-			
-
-				
-
-				<td class="vbmenu_control">Today's Posts</td>
-
-				
-
-				<td id="navbar_search" class="vbmenu_control"><a href="../../en/search/index.html" accesskey="4" rel="nofollow">Search</a> </td>
-
-			
-
-			
-
-		
-
-		
-
-		
-
-		</tr>
-
-	</table>
-
-</div>
-
-<!-- / nav buttons bar -->
-
-
-
-<br />
-
-
-
-
-
-
-
-
-
-	<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
-
-	<tr>
-
-		<td class="alt1" width="100%"><strong>My God Can Beat the Shit Out of Your God</strong> <span class="smallfont">For discussing any and all religious viewpoints. Intolerance will not be tolerated. Keeping your sense of humor is required. Posting messages about theological paradoxes is encouraged.</span></td>
-
-	</tr>
-
-	</table>
-
-	<br />
-
-
-
-
-
-
-
-<!-- NAVBAR POPUP MENUS -->
-
-
-
-	
-
-	<!-- header quick search form -->
-
-	<div class="vbmenu_popup" id="navbar_search_menu" style="display:none" align="left">
-
-		<table cellpadding="4" cellspacing="1" border="0">
-
-		<tr>
-
-			<td class="thead">Search Forums</td>
-
-		</tr>
-
-		<tr>
-
-			<td class="vbmenu_option" title="nohilite">
-
-				<form action="search.php?do=process" method="post">
-
-
-
-					<input type="hidden" name="do" value="process" />
-
-					<input type="hidden" name="quicksearch" value="1" />
-
-					<input type="hidden" name="childforums" value="1" />
-
-					<input type="hidden" name="exactname" value="1" />
-
-					<input type="hidden" name="s" value="" />
-
-					<input type="hidden" name="securitytoken" value="guest" />
-
-					<div><input type="text" class="bginput" name="query" size="25" tabindex="1001" /><input type="submit" class="button" value="Go" tabindex="1004" /></div>
-
-					<div style="margin-top:6px">
-
-						<label for="rb_nb_sp0"><input type="radio" name="showposts" value="0" id="rb_nb_sp0" tabindex="1002" checked="checked" />Show Threads</label>
-
-						&nbsp;
-
-						<label for="rb_nb_sp1"><input type="radio" name="showposts" value="1" id="rb_nb_sp1" tabindex="1003" />Show Posts</label>
-
-					</div>
-
-				</form>
-
-			</td>
-
-		</tr>
-
-		
-
-		<tr>
-
-			<td class="vbmenu_option">Tag Search</td>
-
-		</tr>
-
-		
-
-		<tr>
-
-			<td class="vbmenu_option"><a href="../../en/search/index.html" accesskey="4" rel="nofollow">Advanced Search</a></td>
-
-		</tr>
-
-		
-
-		</table>
-
-	</div>
-
-	<!-- / header quick search form -->
-
-	
-
-
-
-	
-
-<!-- / NAVBAR POPUP MENUS -->
-
-
-
-<!-- PAGENAV POPUP -->
-
-	<div class="vbmenu_popup" id="pagenav_menu" style="display:none">
-
-		<table cellpadding="4" cellspacing="1" border="0">
-
-		<tr>
-
-			<td class="thead" nowrap="nowrap">Go to Page...</td>
-
-		</tr>
-
-		<tr>
-
-			<td class="vbmenu_option" title="nohilite">
-
-			<form action="index.php" method="get" onsubmit="return this.gotopage()" id="pagenav_form">
-
-				<input type="text" class="bginput" id="pagenav_itxt" style="font-size:11px" size="4" />
-
-				<input type="button" class="button" id="pagenav_ibtn" value="Go" />
-
-			</form>
-
-			</td>
-
-		</tr>
-
-		</table>
-
-	</div>
-
-<!-- / PAGENAV POPUP -->
-
-
-
-
-
+
+	 Growing more and more resentful of Christianity
+
+
+<!-- END TEMPLATE: navbar_link --></strong></td>
+			</tr>
+			</table>
+		
+	</td>
+
+	<td class="alt2" nowrap="nowrap" style="padding:0px">
+		<!-- login form -->
+		<form action="login.php?do=login" method="post" onsubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+		<script type="text/javascript" src="clientscript/vbulletin_md5.js@v=372"></script>
+		<table cellpadding="0" cellspacing="3" border="0">
+		<tr>
+			<td class="smallfont" style="white-space: nowrap;"><label for="navbar_username">User Name</label></td>
+			<td><input type="text" class="bginput" style="font-size: 11px" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="User Name" onfocus="if (this.value == 'User Name') this.value = '';" /></td>
+			<td class="smallfont" nowrap="nowrap"><label for="cb_cookieuser_navbar"><input type="checkbox" name="cookieuser" value="1" tabindex="103" id="cb_cookieuser_navbar" accesskey="c" />Remember Me?</label></td>
+		</tr>
+		<tr>
+			<td class="smallfont"><label for="navbar_password">Password</label></td>
+			<td><input type="password" class="bginput" style="font-size: 11px" name="vb_login_password" id="navbar_password" size="10" tabindex="102" /></td>
+			<td><input type="submit" class="button" value="Log in" tabindex="104" title="Enter your username and password in the boxes provided to login, or click the 'register' button to create a profile for yourself." accesskey="s" /></td>
+		</tr>
+		</table>
+		<input type="hidden" name="s" value="" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" name="do" value="login" />
+		<input type="hidden" name="vb_login_md5password" />
+		<input type="hidden" name="vb_login_md5password_utf" />
+		</form>
+		<!-- / login form -->
+	</td>
+
+</tr>
+</table>
+<!-- / breadcrumb, login, pm info -->
+
+<!-- nav buttons bar -->
+<div class="tborder" style="padding:1px; border-top-width:0px">
+	<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+	<tr align="center">
+		
+		
+			<td class="vbmenu_control">Register</td>
+		
+		
+		<td class="vbmenu_control"><a href="../../en/_faq/totse_faq.html" accesskey="5">FAQ</a></td>
+		
+			<td class="vbmenu_control">Members List</td>
+		
+		<td class="vbmenu_control">Calendar</td>
+		
+			
+				
+				<td class="vbmenu_control">Today's Posts</td>
+				
+				<td id="navbar_search" class="vbmenu_control"><a href="../../en/search/index.html" accesskey="4" rel="nofollow">Search</a> </td>
+			
+			
+		
+		
+		
+		</tr>
+	</table>
+</div>
+<!-- / nav buttons bar -->
+
+<br />
+
+
+
+
+	<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
+	<tr>
+		<td class="alt1" width="100%"><strong>My God Can Beat the Shit Out of Your God</strong> <span class="smallfont">For discussing any and all religious viewpoints. Intolerance will not be tolerated. Keeping your sense of humor is required. Posting messages about theological paradoxes is encouraged.</span></td>
+	</tr>
+	</table>
+	<br />
+
+
+
+<!-- NAVBAR POPUP MENUS -->
+
+	
+	<!-- header quick search form -->
+	<div class="vbmenu_popup" id="navbar_search_menu" style="display:none" align="left">
+		<table cellpadding="4" cellspacing="1" border="0">
+		<tr>
+			<td class="thead">Search Forums</td>
+		</tr>
+		<tr>
+			<td class="vbmenu_option" title="nohilite">
+				<form action="search.php?do=process" method="post">
+
+					<input type="hidden" name="do" value="process" />
+					<input type="hidden" name="quicksearch" value="1" />
+					<input type="hidden" name="childforums" value="1" />
+					<input type="hidden" name="exactname" value="1" />
+					<input type="hidden" name="s" value="" />
+					<input type="hidden" name="securitytoken" value="guest" />
+					<div><input type="text" class="bginput" name="query" size="25" tabindex="1001" /><input type="submit" class="button" value="Go" tabindex="1004" /></div>
+					<div style="margin-top:6px">
+						<label for="rb_nb_sp0"><input type="radio" name="showposts" value="0" id="rb_nb_sp0" tabindex="1002" checked="checked" />Show Threads</label>
+						&nbsp;
+						<label for="rb_nb_sp1"><input type="radio" name="showposts" value="1" id="rb_nb_sp1" tabindex="1003" />Show Posts</label>
+					</div>
+				</form>
+			</td>
+		</tr>
+		
+		<tr>
+			<td class="vbmenu_option">Tag Search</td>
+		</tr>
+		
+		<tr>
+			<td class="vbmenu_option"><a href="../../en/search/index.html" accesskey="4" rel="nofollow">Advanced Search</a></td>
+		</tr>
+		
+		</table>
+	</div>
+	<!-- / header quick search form -->
+	
+
+	
+<!-- / NAVBAR POPUP MENUS -->
+
+<!-- PAGENAV POPUP -->
+	<div class="vbmenu_popup" id="pagenav_menu" style="display:none">
+		<table cellpadding="4" cellspacing="1" border="0">
+		<tr>
+			<td class="thead" nowrap="nowrap">Go to Page...</td>
+		</tr>
+		<tr>
+			<td class="vbmenu_option" title="nohilite">
+			<form action="index.php" method="get" onsubmit="return this.gotopage()" id="pagenav_form">
+				<input type="text" class="bginput" id="pagenav_itxt" style="font-size:11px" size="4" />
+				<input type="button" class="button" id="pagenav_ibtn" value="Go" />
+			</form>
+			</td>
+		</tr>
+		</table>
+	</div>
+<!-- / PAGENAV POPUP -->
+
+
 <!-- BEGIN TEMPLATE: ad_navbar_below -->
 
 <!-- END TEMPLATE: ad_navbar_below -->
-<!-- END TEMPLATE: navbar -->
-
-
-
-
-
-
-
-
-
-
-
-<a name="poststop" id="poststop"></a>
-
-
-
-<!-- controls above postbits -->
-
-<table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom:3px">
-
-<tr valign="bottom">
-
-	
-
-		<td class="smallfont"><img src="../../images/buttons/reply.gif" alt="Reply" border="0" /></td>
-
-	
-
+<!-- END TEMPLATE: navbar -->
+
+
+
+
+
+<a name="poststop" id="poststop"></a>
+
+<!-- controls above postbits -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom:3px">
+<tr valign="bottom">
+	
+		<td class="smallfont"><img src="../../images/buttons/reply.gif" alt="Reply" border="0" /></td>
+	
 	<td align="right"><!-- BEGIN TEMPLATE: pagenav -->
-<div class="pagenav" align="right">
-
-<table class="tborder" cellpadding="3" cellspacing="1" border="0">
-
-<tr>
-
-	<td class="vbmenu_control" style="font-weight:normal">Page 1 of 3</td>
-
-	
-
-	
-
+<div class="pagenav" align="right">
+<table class="tborder" cellpadding="3" cellspacing="1" border="0">
+<tr>
+	<td class="vbmenu_control" style="font-weight:normal">Page 1 of 3</td>
+	
+	
 	<!-- BEGIN TEMPLATE: pagenav_curpage -->
-	<td class="alt2"><span class="smallfont" title="Showing results 1 to 10 of 26"><strong>1</strong></span></td>
-
+	<td class="alt2"><span class="smallfont" title="Showing results 1 to 10 of 26"><strong>1</strong></span></td>
  
 <!-- END TEMPLATE: pagenav_curpage --><!-- BEGIN TEMPLATE: pagenav_pagelink -->
 <td class="alt1"><a class="smallfont" href="../../community/threads/t1985318.html" title="Show results 11 to 20 of 26">2</a></td>
 <!-- END TEMPLATE: pagenav_pagelink --><!-- BEGIN TEMPLATE: pagenav_pagelink -->
 <td class="alt1"><a class="smallfont" href="../../community/threads/t1985318.html" title="Show results 21 to 26 of 26">3</a></td>
-<!-- END TEMPLATE: pagenav_pagelink -->
-
-	<td class="alt1"><a class="smallfont" href="../../community/threads/t1985318.html" title="Next Page - Results 11 to 20 of 26">&gt;</a></td>
-
-	
-
-	<td class="vbmenu_control" title="showthread.php?t=1985318"><a name="PageNav"></a></td>
-
-</tr>
-
-</table>
-
+<!-- END TEMPLATE: pagenav_pagelink -->
+	<td class="alt1"><a class="smallfont" href="../../community/threads/t1985318.html" title="Next Page - Results 11 to 20 of 26">&gt;</a></td>
+	
+	<td class="vbmenu_control" title="showthread.php?t=1985318"><a name="PageNav"></a></td>
+</tr>
+</table>
 </div>
-<!-- END TEMPLATE: pagenav --></td>
-
-</tr>
-
-</table>
-
-<!-- / controls above postbits -->
-
-
-
-<!-- toolbar -->
-
-<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-bottom-width:0px">
-
-<tr>
-
-	<td class="tcat" width="100%">
-
-		<div class="smallfont">
-
-		
-
-		&nbsp;
-
-		</div>
-
-	</td>
-
-	<td class="vbmenu_control" id="threadtools" nowrap="nowrap">
-
-		<a href="../../community/threads/t1985318.html" accesskey="3">Thread Tools</a>
-
-		<script type="text/javascript"> vbmenu_register("threadtools"); </script>
-
-	</td>
-
-	
-
-	
-
-	
-
-	<td class="vbmenu_control" id="displaymodes" nowrap="nowrap">
-
-		<a href="../../community/threads/t1985318.html">Display Modes</a>
-
-		<script type="text/javascript"> vbmenu_register("displaymodes"); </script>
-
-	</td>
-
-	
-
-
-
-	
-
-
-
-</tr>
-
-</table>
-
-<!-- / toolbar -->
-
-
-
-
-
-
-
-<!-- end content table -->
-
+<!-- END TEMPLATE: pagenav --></td>
+</tr>
+</table>
+<!-- / controls above postbits -->
+
+<!-- toolbar -->
+<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-bottom-width:0px">
+<tr>
+	<td class="tcat" width="100%">
+		<div class="smallfont">
+		
+		&nbsp;
+		</div>
+	</td>
+	<td class="vbmenu_control" id="threadtools" nowrap="nowrap">
+		<a href="../../community/threads/t1985318.html" accesskey="3">Thread Tools</a>
+		<script type="text/javascript"> vbmenu_register("threadtools"); </script>
+	</td>
+	
+	
+	
+	<td class="vbmenu_control" id="displaymodes" nowrap="nowrap">
+		<a href="../../community/threads/t1985318.html">Display Modes</a>
+		<script type="text/javascript"> vbmenu_register("displaymodes"); </script>
+	</td>
+	
+
+	
+
+</tr>
+</table>
+<!-- / toolbar -->
+
+
+
+<!-- end content table -->
 <!-- BEGIN TEMPLATE: spacer_close -->
-
-
-		</div>
-
-	</div>
-
-</div>
-
-
-
+
+		</div>
+	</div>
+</div>
+
 <!-- / close content container -->
-<!-- END TEMPLATE: spacer_close -->
-
-<!-- / end content table -->
-
-
-
-
-
-
-
-
-
-
-
+<!-- END TEMPLATE: spacer_close -->
+<!-- / end content table -->
+
+
+
+
+
 <div id="posts">
-<!-- post #8043791 -->
-
-
-
+<!-- post #8043791 -->
+
 	<!-- BEGIN TEMPLATE: spacer_open -->
-<!-- open content container -->
+<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 5px 0px 5px" align="left">
 
-
-
-<div align="center">
-
-	<div class="page" style="width:100%; text-align:left">
-
-		<div style="padding:0px 5px 0px 5px" align="left">
-
-
-<!-- END TEMPLATE: spacer_open -->
-
-	<div id="edit8043791" style="padding:0px 0px 6px 0px">
-
-	<!-- this is not the last post shown on the page -->
-
-
-
-
-
+<!-- END TEMPLATE: spacer_open -->
+	<div id="edit8043791" style="padding:0px 0px 6px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
 <!-- BEGIN TEMPLATE: postbit -->
-<table class="tborder" id="post8043791" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
-
-<tr>
-
-	<td class="thead" >
-
-		<div class="normal" style="float:right">
-
-			&nbsp;
-
-			#<strong>1</strong> &nbsp;
-
-			
-
-			
-
-
-
-			
-
-<img class="inlineimg" src="../../images/buttons/ignore.gif" 
-
-alt="Add Elephantitis Man to your ignore list"
-
-border="0" /> &nbsp;
-
-
-
-			
-
-			
-
-			
-
-		</div>
-
-		
-
-		<div class="normal">
-
-			<!-- status icon and date -->
-
-			<a name="post8043791"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>
-
-			
-
-				2007-03-30, 05:18
-
-			
-
-			
-
-			<!-- / status icon and date -->
-
-		</div>
-
-	</td>
-
-</tr>
-
-<tr>
-
-	<td class="alt2" style="padding:0px">
-
-		<!-- user info -->
-
-		<table cellpadding="0" cellspacing="6" border="0" width="100%">
-
-		<tr>
-
-			
-
-			<td nowrap="nowrap">
-
-			
-
-				<div id="postmenu_8043791">
-
-					
-
-					Elephantitis Man
-
+<table class="tborder" id="post8043791" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
+<tr>
+	<td class="thead" >
+		<div class="normal" style="float:right">
+			&nbsp;
+			#<strong>1</strong> &nbsp;
+			
+			
+
+			
+<img class="inlineimg" src="../../images/buttons/ignore.gif" 
+alt="Add Elephantitis Man to your ignore list"
+border="0" /> &nbsp;
+
+			
+			
+			
+		</div>
+		
+		<div class="normal">
+			<!-- status icon and date -->
+			<a name="post8043791"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>
+			
+				2007-03-30, 05:18
+			
+			
+			<!-- / status icon and date -->
+		</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding:0px">
+		<!-- user info -->
+		<table cellpadding="0" cellspacing="6" border="0" width="100%">
+		<tr>
+			
+			<td nowrap="nowrap">
+			
+				<div id="postmenu_8043791">
+					
+					Elephantitis Man
 					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->
-<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="Elephantitis Man is offline" border="0" />
+<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="Elephantitis Man is offline" border="0" />
+
 
-
-
-
-<!-- END TEMPLATE: postbit_onlinestatus -->
-
-					<script type="text/javascript"> vbmenu_register("postmenu_8043791", true); </script>
-
-					
-
-				</div>
-
-				
-
-				<div class="smallfont">Regular</div>
-
-				
-
-				
-
-			</td>
-
-			<td width="100%">&nbsp;</td>
-
-			<td valign="top" nowrap="nowrap">
-
-				
-
-				<div class="smallfont">
-
-					<!-- location -->Missouri
-
-					    
-
-					
-
-					
-
-				</div>
-
-				
-
-			</td>
-
-		</tr>
-
-		</table>
-
-		<!-- / user info -->
-
-	</td>
-
-</tr>
-
-<tr>
-
-	<td class="alt1" id="td_post_8043791">
-
-	<!-- message, attachments, sig -->
-
-	
-
-		
-
-			<!-- icon and title -->
-
-			<div class="smallfont">
-
-				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />
-
-				
-
-			</div>
-
-			<hr size="1" style="color:#E8EFF4" />
-
-			<!-- / icon and title -->
-
-		
-
-		
-
-		<!-- message -->
-
+<!-- END TEMPLATE: postbit_onlinestatus -->
+					<script type="text/javascript"> vbmenu_register("postmenu_8043791", true); </script>
+					
+				</div>
+				
+				<div class="smallfont">Regular</div>
+				
+				
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td valign="top" nowrap="nowrap">
+				
+				<div class="smallfont">
+					<!-- location -->Missouri
+					    
+					
+					
+				</div>
+				
+			</td>
+		</tr>
+		</table>
+		<!-- / user info -->
+	</td>
+</tr>
+<tr>
+	<td class="alt1" id="td_post_8043791">
+	<!-- message, attachments, sig -->
+	
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />
+				
+			</div>
+			<hr size="1" style="color:#E8EFF4" />
+			<!-- / icon and title -->
+		
+		
+		<!-- message -->
 		<div id="post_message_8043791">Lately my level of resentment for Christianity has grown alot.  I've almost gotten to the point of taking Dawkin's and other atheist scientists' advice of not even debating them, because they ignore you in the first place, and debating them only lends credence to their pathetic arguments.  Listening to Christians discuss their rubbish almost disgusts me.  I've gotten to the point that I actually lose a bit of respect for someone, right off the bat, if I find out they are Christian.  It's like, the same damn thought process as Scientology, only with more time and believers.  I feel like I have to &quot;dumb down&quot; my speech when talking to Christians about philosophy or science.  Their religion teaches them to believe &quot;as a child does&quot;, so I feel like I have to treat them like children.<br />
 <br />
-Does anyone else here feel this level of resentment or disgust (I don't know why I'm asking; I'm sure at least some people here do)?  It's not that I &quot;hate&quot; Christians.  It's just that they're like mildly retarded people, only by choice.  Like they <i>want</i> to not think.  Sorry if this seems kind of &quot;out of nowhere&quot;.  I've been on a board for homeschool alumni that is full of Christians and the constant stupidity just pushed me a little too far today.  <img border="1" width="90" height="90" alt="http://www.totse.com/bbs/mad.gif" src="../bbs/mad.gif" /></div>
-
-		<!-- / message -->
-
-	
-
-		
-
-		
-
-		
-
-		
-
-		
-
-	
-
-		<div style="margin-top: 10px" align="right">
-
-			<!-- controls -->
-
-			
-
-			
-
-			
-
-				<img src="../../images/buttons/quote.gif" alt="Reply With Quote" border="0" />
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-				
-
-			
-
-			<!-- / controls -->
-
-		</div>
-
-		
-
-	<!-- message, attachments, sig -->
-
-	
-
-	</td>
-
-</tr>
-
-</table>
-
-
-
-<!-- post 8043791 popup menu -->
-
-<div class="vbmenu_popup" id="postmenu_8043791_menu" style="display:none;">
-
-	<table cellpadding="4" cellspacing="1" border="0">
-
-	<tr>
-
-		<td class="thead">Elephantitis Man</td>
-
-	</tr>
-
-	
-
-		<tr><td class="vbmenu_option">View Public Profile</td></tr>
-
-	
-
-	
-
-	
-
-	
-
-		<tr><td class="vbmenu_option">Visit Elephantitis Man's homepage!</td></tr>
-
-	
-
-	
-
-		<tr><td class="vbmenu_option">Find all posts by Elephantitis Man</td></tr>
-
-	
-
-	
-
-	</table>
-
-</div>
-
+Does anyone else here feel this level of resentment or disgust (I don't know why I'm asking; I'm sure at least some people here do)?  It's not that I &quot;hate&quot; Christians.  It's just that they're like mildly retarded people, only by choice.  Like they <i>want</i> to not think.  Sorry if this seems kind of &quot;out of nowhere&quot;.  I've been on a board for homeschool alumni that is full of Christians and the constant stupidity just pushed me a little too far today.  <a href="../bbs/mad.gif" target="_blank"><img border="1" width="90" height="90" alt="http://www.totse.com/bbs/mad.gif" src="../bbs/mad.gif" /></a></div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+		
+	
+		<div style="margin-top: 10px" align="right">
+			<!-- controls -->
+			
+			
+			
+				<img src="../../images/buttons/quote.gif" alt="Reply With Quote" border="0" />
+			
+			
+			
+			
+			
+			
+				
+			
+			<!-- / controls -->
+		</div>
+		
+	<!-- message, attachments, sig -->
+	
+	</td>
+</tr>
+</table>
+
+<!-- post 8043791 popup menu -->
+<div class="vbmenu_popup" id="postmenu_8043791_menu" style="display:none;">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">Elephantitis Man</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option">View Public Profile</td></tr>
+	
+	
+	
+	
+		<tr><td class="vbmenu_option">Visit Elephantitis Man's homepage!</td></tr>
+	
+	
+		<tr><td class="vbmenu_option">Find all posts by Elephantitis Man</td></tr>
+	
+	
+	</table>
+</div>
 <!-- / post 8043791 popup menu -->
-<!-- END TEMPLATE: postbit -->
-
-
-
-
-
-	</div>
-
+<!-- END TEMPLATE: postbit -->
+
+
+	</div>
 	<!-- BEGIN TEMPLATE: spacer_close -->
-
-
-		</div>
-
-	</div>
-
-</div>
-
-
-
+
+		</div>
+	</div>
+</div>
+
 <!-- / close content container -->
-<!-- END TEMPLATE: spacer_close -->
-
-
-
+<!-- END TEMPLATE: spacer_close -->
+
 <!-- / post #8043791 -->
 
-<!-- post #8043792 -->
-
-
-
+<!-- post #8043792 -->
+
 	<!-- BEGIN TEMPLATE: spacer_open -->
-<!-- open content container -->
+<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 5px 0px 5px" align="left">
 
-
-
-<div align="center">
-
-	<div class="page" style="width:100%; text-align:left">
-
-		<div style="padding:0px 5px 0px 5px" align="left">
-
-
-<!-- END TEMPLATE: spacer_open -->
-
-	<div id="edit8043792" style="padding:0px 0px 6px 0px">
-
-	<!-- this is not the last post shown on the page -->
-
-
-
-
-
+<!-- END TEMPLATE: spacer_open -->
+	<div id="edit8043792" style="padding:0px 0px 6px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
 <!-- BEGIN TEMPLATE: postbit -->
-<table class="tborder" id="post8043792" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
-
-<tr>
-
-	<td class="thead" >
-
-		<div class="normal" style="float:right">
-
-			&nbsp;
-
-			#<strong>2</strong> &nbsp;
-
-			
-
-			
-
-
-
-			
-
-<img class="inlineimg" src="../../images/buttons/ignore.gif" 
-
-alt="Add chumpion to your ignore list"
-
-border="0" /> &nbsp;
-
-
-
-			
-
-			
-
-			
-
-		</div>
-
-		
-
-		<div class="normal">
-
-			<!-- status icon and date -->
-
-			<a name="post8043792"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>
-
-			
-
-				2007-03-30, 05:40
-
-			
-
-			
-
-			<!-- / status icon and date -->
-
-		</div>
-
-	</td>
-
-</tr>
-
-<tr>
-
-	<td class="alt2" style="padding:0px">
-
-		<!-- user info -->
-
-		<table cellpadding="0" cellspacing="6" border="0" width="100%">
-
-		<tr>
-
-			
-
-			<td nowrap="nowrap">
-
-			
-
-				<div id="postmenu_8043792">
-
-					
-
-					chumpion
-
+<table class="tborder" id="post8043792" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
+<tr>
+	<td class="thead" >
+		<div class="normal" style="float:right">
+			&nbsp;
+			#<strong>2</strong> &nbsp;
+			
+			
+
+			
+<img class="inlineimg" src="../../images/buttons/ignore.gif" 
+alt="Add chumpion to your ignore list"
+border="0" /> &nbsp;
+
+			
+			
+			
+		</div>
+		
+		<div class="normal">
+			<!-- status icon and date -->
+			<a name="post8043792"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>
+			
+				2007-03-30, 05:40
+			
+			
+			<!-- / status icon and date -->
+		</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding:0px">
+		<!-- user info -->
+		<table cellpadding="0" cellspacing="6" border="0" width="100%">
+		<tr>
+			
+			<td nowrap="nowrap">
+			
+				<div id="postmenu_8043792">
+					
+					chumpion
 					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->
-<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="chumpion is offline" border="0" />
+<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="chumpion is offline" border="0" />
+
 
-
-
-
-<!-- END TEMPLATE: postbit_onlinestatus -->
-
-					<script type="text/javascript"> vbmenu_register("postmenu_8043792", true); </script>
-
-					
-
-				</div>
-
-				
-
-				<div class="smallfont">Regular</div>
-
-				
-
-				
-
-			</td>
-
-			<td width="100%">&nbsp;</td>
-
-			<td valign="top" nowrap="nowrap">
-
-				
-
-				<div class="smallfont">
-
-					<!-- location -->Sydney
-
-					    
-
-					
-
-					
-
-				</div>
-
-				
-
-			</td>
-
-		</tr>
-
-		</table>
-
-		<!-- / user info -->
-
-	</td>
-
-</tr>
-
-<tr>
-
-	<td class="alt1" id="td_post_8043792">
-
-	<!-- message, attachments, sig -->
-
-	
-
-		
-
-			<!-- icon and title -->
-
-			<div class="smallfont">
-
-				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />
-
-				
-
-			</div>
-
-			<hr size="1" style="color:#E8EFF4" />
-
-			<!-- / icon and title -->
-
-		
-
-		
-
-		<!-- message -->
-
+<!-- END TEMPLATE: postbit_onlinestatus -->
+					<script type="text/javascript"> vbmenu_register("postmenu_8043792", true); </script>
+					
+				</div>
+				
+				<div class="smallfont">Regular</div>
+				
+				
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td valign="top" nowrap="nowrap">
+				
+				<div class="smallfont">
+					<!-- location -->Sydney
+					    
+					
+					
+				</div>
+				
+			</td>
+		</tr>
+		</table>
+		<!-- / user info -->
+	</td>
+</tr>
+<tr>
+	<td class="alt1" id="td_post_8043792">
+	<!-- message, attachments, sig -->
+	
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />
+				
+			</div>
+			<hr size="1" style="color:#E8EFF4" />
+			<!-- / icon and title -->
+		
+		
+		<!-- message -->
 		<div id="post_message_8043792">To my mind, religious people are people that can't think for themselves, and willingly submit to someone elses beliefs, just because it is easier than thinking for themselves.<br />
 <br />
 I genuinely pitty anyone that can't think for themselves. If I decide to talk to someone, I want to hear their views, not the view that is shoved down their throats all the time by their church.<br />
 <br />
-So no, I am not disgusted by them. I just feel sorry that they will never be able to think for themselves, and experience everything this world has to offer....</div>
-
-		<!-- / message -->
-
-	
-
-		
-
-		
-
-		
-
-		
-
-		
-
-	
-
-		<div style="margin-top: 10px" align="right">
-
-			<!-- controls -->
-
-			
-
-			
-
-			
-
-				<img src="../../images/buttons/quote.gif" alt="Reply With Quote" border="0" />
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-				
-
-			
-
-			<!-- / controls -->
-
-		</div>
-
-		
-
-	<!-- message, attachments, sig -->
-
-	
-
-	</td>
-
-</tr>
-
-</table>
-
-
-
-<!-- post 8043792 popup menu -->
-
-<div class="vbmenu_popup" id="postmenu_8043792_menu" style="display:none;">
-
-	<table cellpadding="4" cellspacing="1" border="0">
-
-	<tr>
-
-		<td class="thead">chumpion</td>
-
-	</tr>
-
-	
-
-		<tr><td class="vbmenu_option">View Public Profile</td></tr>
-
-	
-
-	
-
-	
-
-	
-
-		<tr><td class="vbmenu_option">Visit chumpion's homepage!</td></tr>
-
-	
-
-	
-
-		<tr><td class="vbmenu_option">Find all posts by chumpion</td></tr>
-
-	
-
-	
-
-	</table>
-
-</div>
-
+So no, I am not disgusted by them. I just feel sorry that they will never be able to think for themselves, and experience everything this world has to offer....</div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+		
+	
+		<div style="margin-top: 10px" align="right">
+			<!-- controls -->
+			
+			
+			
+				<img src="../../images/buttons/quote.gif" alt="Reply With Quote" border="0" />
+			
+			
+			
+			
+			
+			
+				
+			
+			<!-- / controls -->
+		</div>
+		
+	<!-- message, attachments, sig -->
+	
+	</td>
+</tr>
+</table>
+
+<!-- post 8043792 popup menu -->
+<div class="vbmenu_popup" id="postmenu_8043792_menu" style="display:none;">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">chumpion</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option">View Public Profile</td></tr>
+	
+	
+	
+	
+		<tr><td class="vbmenu_option">Visit chumpion's homepage!</td></tr>
+	
+	
+		<tr><td class="vbmenu_option">Find all posts by chumpion</td></tr>
+	
+	
+	</table>
+</div>
 <!-- / post 8043792 popup menu -->
-<!-- END TEMPLATE: postbit -->
-
-
-
-
-
-	</div>
-
+<!-- END TEMPLATE: postbit -->
+
+
+	</div>
 	<!-- BEGIN TEMPLATE: spacer_close -->
-
-
-		</div>
-
-	</div>
-
-</div>
-
-
-
+
+		</div>
+	</div>
+</div>
+
 <!-- / close content container -->
-<!-- END TEMPLATE: spacer_close -->
-
-
-
+<!-- END TEMPLATE: spacer_close -->
+
 <!-- / post #8043792 -->
 
-<!-- post #8043793 -->
-
-
-
+<!-- post #8043793 -->
+
 	<!-- BEGIN TEMPLATE: spacer_open -->
-<!-- open content container -->
+<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 5px 0px 5px" align="left">
 
-
-
-<div align="center">
-
-	<div class="page" style="width:100%; text-align:left">
-
-		<div style="padding:0px 5px 0px 5px" align="left">
-
-
-<!-- END TEMPLATE: spacer_open -->
-
-	<div id="edit8043793" style="padding:0px 0px 6px 0px">
-
-	<!-- this is not the last post shown on the page -->
-
-
-
-
-
+<!-- END TEMPLATE: spacer_open -->
+	<div id="edit8043793" style="padding:0px 0px 6px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
 <!-- BEGIN TEMPLATE: postbit -->
-<table class="tborder" id="post8043793" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
-
-<tr>
-
-	<td class="thead" >
-
-		<div class="normal" style="float:right">
-
-			&nbsp;
-
-			#<strong>3</strong> &nbsp;
-
-			
-
-			
-
-
-
-			
-
-<img class="inlineimg" src="../../images/buttons/ignore.gif" 
-
-alt="Add AngryFemme to your ignore list"
-
-border="0" /> &nbsp;
-
-
-
-			
-
-			
-
-			
-
-		</div>
-
-		
-
-		<div class="normal">
-
-			<!-- status icon and date -->
-
-			<a name="post8043793"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>
-
-			
-
-				2007-03-30, 05:50
-
-			
-
-			
-
-			<!-- / status icon and date -->
-
-		</div>
-
-	</td>
-
-</tr>
-
-<tr>
-
-	<td class="alt2" style="padding:0px">
-
-		<!-- user info -->
-
-		<table cellpadding="0" cellspacing="6" border="0" width="100%">
-
-		<tr>
-
-			
-
-			<td nowrap="nowrap">
-
-			
-
-				<div id="postmenu_8043793">
-
-					
-
-					<a class="bigusername" href="../../community/members/u160296.html">AngryFemme</a>
-
+<table class="tborder" id="post8043793" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
+<tr>
+	<td class="thead" >
+		<div class="normal" style="float:right">
+			&nbsp;
+			#<strong>3</strong> &nbsp;
+			
+			
+
+			
+<img class="inlineimg" src="../../images/buttons/ignore.gif" 
+alt="Add AngryFemme to your ignore list"
+border="0" /> &nbsp;
+
+			
+			
+			
+		</div>
+		
+		<div class="normal">
+			<!-- status icon and date -->
+			<a name="post8043793"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>
+			
+				2007-03-30, 05:50
+			
+			
+			<!-- / status icon and date -->
+		</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding:0px">
+		<!-- user info -->
+		<table cellpadding="0" cellspacing="6" border="0" width="100%">
+		<tr>
+			
+			<td nowrap="nowrap">
+			
+				<div id="postmenu_8043793">
+					
+					<a class="bigusername" href="../../community/members/u160296.html">AngryFemme</a>
 					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->
-<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="AngryFemme is offline" border="0" />
+<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="AngryFemme is offline" border="0" />
+
 
-
-
-
-<!-- END TEMPLATE: postbit_onlinestatus -->
-
-					<script type="text/javascript"> vbmenu_register("postmenu_8043793", true); </script>
-
-					
-
-				</div>
-
-				
-
-				<div class="smallfont">Moderator</div>
-
-				
-
-				
-
-			</td>
-
-			<td width="100%">&nbsp;</td>
-
-			<td valign="top" nowrap="nowrap">
-
-				
-
-				<div class="smallfont">
-
-					<!-- location -->Deep South
-
+<!-- END TEMPLATE: postbit_onlinestatus -->
+					<script type="text/javascript"> vbmenu_register("postmenu_8043793", true); </script>
+					
+				</div>
+				
+				<div class="smallfont">Moderator</div>
+				
+				
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td valign="top" nowrap="nowrap">
+				
+				<div class="smallfont">
+					<!-- location -->Deep South
 					  <!-- BEGIN TEMPLATE: im_msn -->
 <a href="#" onclick="imwindow('msn', '160296', 400, 200); return false;"><img src="../../images/misc/im_msn.gif" alt="Send a message via MSN to AngryFemme" border="0" /></a>
 <!-- END TEMPLATE: im_msn --> <!-- BEGIN TEMPLATE: im_yahoo -->
 <a href="#" onclick="imwindow('yahoo', '160296', 400, 200); return false;"><img src="../../images/misc/im_yahoo.gif" alt="Send a message via Yahoo to AngryFemme" border="0" /></a>
-<!-- END TEMPLATE: im_yahoo --> 
-
-					
-
-					
-
-				</div>
-
-				
-
-			</td>
-
-		</tr>
-
-		</table>
-
-		<!-- / user info -->
-
-	</td>
-
-</tr>
-
-<tr>
-
-	<td class="alt1" id="td_post_8043793">
-
-	<!-- message, attachments, sig -->
-
-	
-
-		
-
-			<!-- icon and title -->
-
-			<div class="smallfont">
-
-				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />
-
-				
-
-			</div>
-
-			<hr size="1" style="color:#E8EFF4" />
-
-			<!-- / icon and title -->
-
-		
-
-		
-
-		<!-- message -->
-
+<!-- END TEMPLATE: im_yahoo --> 
+					
+					
+				</div>
+				
+			</td>
+		</tr>
+		</table>
+		<!-- / user info -->
+	</td>
+</tr>
+<tr>
+	<td class="alt1" id="td_post_8043793">
+	<!-- message, attachments, sig -->
+	
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />
+				
+			</div>
+			<hr size="1" style="color:#E8EFF4" />
+			<!-- / icon and title -->
+		
+		
+		<!-- message -->
 		<div id="post_message_8043793"> <!-- BEGIN TEMPLATE: bbcode_quote -->
-<div style="margin:20px; margin-top:5px; ">
-
-	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
-
-	<table cellpadding="6" cellspacing="0" border="0" width="100%">
-
-	<tr>
-
-		<td class="alt2" style="border:1px inset">
-
-			
-
+<div style="margin:20px; margin-top:5px; ">
+	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
+	<table cellpadding="6" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td class="alt2" style="border:1px inset">
+			
 				quote:Originally posted by Elephantitis Man:<br />
 <br />
-<b>I've gotten to the point that I actually lose a bit of respect for someone, right off the bat, if I find out they are Christian. </b>
-
-			
-
-		</td>
-
-	</tr>
-
-	</table>
-
+<b>I've gotten to the point that I actually lose a bit of respect for someone, right off the bat, if I find out they are Christian. </b>
+			
+		</td>
+	</tr>
+	</table>
 </div>
 <!-- END TEMPLATE: bbcode_quote -->This is one of the few instances when I don't support the &quot;fight fire with fire&quot; adage. I've lost respect for the concept of faith entirely, but I still attempt getting through to the actual human inside the box  that is the picture of false certainty.<br />
 <br />
 I feel it's energy better spent trying to convince, and assimilate like-minded individuals into promoting a more humanistic perspective rather than shut out people entirely. Shutting out that huge of a percentage of the world would be difficult to do, even in theory.<br />
 <br />
  <!-- BEGIN TEMPLATE: bbcode_quote -->
-<div style="margin:20px; margin-top:5px; ">
-
-	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
-
-	<table cellpadding="6" cellspacing="0" border="0" width="100%">
-
-	<tr>
-
-		<td class="alt2" style="border:1px inset">
-
-			
-
+<div style="margin:20px; margin-top:5px; ">
+	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
+	<table cellpadding="6" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td class="alt2" style="border:1px inset">
+			
 				quote: <b><br />
 <br />
-Does anyone else here feel this level of resentment or disgust (I don't know why I'm asking; I'm sure at least some people here do)? It's not that I &quot;hate&quot; Christians. It's just that they're like mildly retarded people, only by choice. Like they want to not think. Sorry if this seems kind of &quot;out of nowhere&quot;. I've been on a board for homeschool alumni that is full of Christians and the constant stupidity just pushed me a little too far today. </b>
-
-			
-
-		</td>
-
-	</tr>
-
-	</table>
-
+Does anyone else here feel this level of resentment or disgust (I don't know why I'm asking; I'm sure at least some people here do)? It's not that I &quot;hate&quot; Christians. It's just that they're like mildly retarded people, only by choice. Like they want to not think. Sorry if this seems kind of &quot;out of nowhere&quot;. I've been on a board for homeschool alumni that is full of Christians and the constant stupidity just pushed me a little too far today. </b>
+			
+		</td>
+	</tr>
+	</table>
 </div>
 <!-- END TEMPLATE: bbcode_quote -->Try understanding that their emotional investment is so great in their faith, that it's like having a cataract on the part of the brain that helps you identify with people. That simile is not supposed to insinuate that they're stupid or ignorant, but that they're clouded in judgement because of their deep-seated attachment to it. <br />
 <br />
@@ -1642,743 +984,396 @@ How humanity has come this far without recognizing as a whole how much having a 
 <br />
 <br />
 <br />
-</div>
-
-		<!-- / message -->
-
-	
-
-		
-
-		
-
-		
-
-		
-
-		
-
-	
-
-		<div style="margin-top: 10px" align="right">
-
-			<!-- controls -->
-
-			
-
-			
-
-			
-
-				<img src="../../images/buttons/quote.gif" alt="Reply With Quote" border="0" />
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-				
-
-			
-
-			<!-- / controls -->
-
-		</div>
-
-		
-
-	<!-- message, attachments, sig -->
-
-	
-
-	</td>
-
-</tr>
-
-</table>
-
-
-
-<!-- post 8043793 popup menu -->
-
-<div class="vbmenu_popup" id="postmenu_8043793_menu" style="display:none;">
-
-	<table cellpadding="4" cellspacing="1" border="0">
-
-	<tr>
-
-		<td class="thead">AngryFemme</td>
-
-	</tr>
-
-	
-
-		<tr><td class="vbmenu_option"><a href="../../community/members/u160296.html">View Public Profile</a></td></tr>
-
-	
-
-	
-
-	
-
-	
-
-	
-
-		<tr><td class="vbmenu_option">Find all posts by AngryFemme</td></tr>
-
-	
-
-	
-
-	</table>
-
-</div>
-
+</div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+		
+	
+		<div style="margin-top: 10px" align="right">
+			<!-- controls -->
+			
+			
+			
+				<img src="../../images/buttons/quote.gif" alt="Reply With Quote" border="0" />
+			
+			
+			
+			
+			
+			
+				
+			
+			<!-- / controls -->
+		</div>
+		
+	<!-- message, attachments, sig -->
+	
+	</td>
+</tr>
+</table>
+
+<!-- post 8043793 popup menu -->
+<div class="vbmenu_popup" id="postmenu_8043793_menu" style="display:none;">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">AngryFemme</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="../../community/members/u160296.html">View Public Profile</a></td></tr>
+	
+	
+	
+	
+	
+		<tr><td class="vbmenu_option">Find all posts by AngryFemme</td></tr>
+	
+	
+	</table>
+</div>
 <!-- / post 8043793 popup menu -->
-<!-- END TEMPLATE: postbit -->
-
-
-
-
-
-	</div>
-
+<!-- END TEMPLATE: postbit -->
+
+
+	</div>
 	<!-- BEGIN TEMPLATE: spacer_close -->
-
-
-		</div>
-
-	</div>
-
-</div>
-
-
-
+
+		</div>
+	</div>
+</div>
+
 <!-- / close content container -->
-<!-- END TEMPLATE: spacer_close -->
-
-
-
+<!-- END TEMPLATE: spacer_close -->
+
 <!-- / post #8043793 -->
 
-<!-- post #8043794 -->
-
-
-
+<!-- post #8043794 -->
+
 	<!-- BEGIN TEMPLATE: spacer_open -->
-<!-- open content container -->
+<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 5px 0px 5px" align="left">
 
-
-
-<div align="center">
-
-	<div class="page" style="width:100%; text-align:left">
-
-		<div style="padding:0px 5px 0px 5px" align="left">
-
-
-<!-- END TEMPLATE: spacer_open -->
-
-	<div id="edit8043794" style="padding:0px 0px 6px 0px">
-
-	<!-- this is not the last post shown on the page -->
-
-
-
-
-
+<!-- END TEMPLATE: spacer_open -->
+	<div id="edit8043794" style="padding:0px 0px 6px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
 <!-- BEGIN TEMPLATE: postbit -->
-<table class="tborder" id="post8043794" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
-
-<tr>
-
-	<td class="thead" >
-
-		<div class="normal" style="float:right">
-
-			&nbsp;
-
-			#<strong>4</strong> &nbsp;
-
-			
-
-			
-
-
-
-			
-
-<img class="inlineimg" src="../../images/buttons/ignore.gif" 
-
-alt="Add Elephantitis Man to your ignore list"
-
-border="0" /> &nbsp;
-
-
-
-			
-
-			
-
-			
-
-		</div>
-
-		
-
-		<div class="normal">
-
-			<!-- status icon and date -->
-
-			<a name="post8043794"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>
-
-			
-
-				2007-03-30, 06:09
-
-			
-
-			
-
-			<!-- / status icon and date -->
-
-		</div>
-
-	</td>
-
-</tr>
-
-<tr>
-
-	<td class="alt2" style="padding:0px">
-
-		<!-- user info -->
-
-		<table cellpadding="0" cellspacing="6" border="0" width="100%">
-
-		<tr>
-
-			
-
-			<td nowrap="nowrap">
-
-			
-
-				<div id="postmenu_8043794">
-
-					
-
-					Elephantitis Man
-
+<table class="tborder" id="post8043794" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
+<tr>
+	<td class="thead" >
+		<div class="normal" style="float:right">
+			&nbsp;
+			#<strong>4</strong> &nbsp;
+			
+			
+
+			
+<img class="inlineimg" src="../../images/buttons/ignore.gif" 
+alt="Add Elephantitis Man to your ignore list"
+border="0" /> &nbsp;
+
+			
+			
+			
+		</div>
+		
+		<div class="normal">
+			<!-- status icon and date -->
+			<a name="post8043794"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>
+			
+				2007-03-30, 06:09
+			
+			
+			<!-- / status icon and date -->
+		</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding:0px">
+		<!-- user info -->
+		<table cellpadding="0" cellspacing="6" border="0" width="100%">
+		<tr>
+			
+			<td nowrap="nowrap">
+			
+				<div id="postmenu_8043794">
+					
+					Elephantitis Man
 					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->
-<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="Elephantitis Man is offline" border="0" />
+<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="Elephantitis Man is offline" border="0" />
+
 
-
-
-
-<!-- END TEMPLATE: postbit_onlinestatus -->
-
-					<script type="text/javascript"> vbmenu_register("postmenu_8043794", true); </script>
-
-					
-
-				</div>
-
-				
-
-				<div class="smallfont">Regular</div>
-
-				
-
-				
-
-			</td>
-
-			<td width="100%">&nbsp;</td>
-
-			<td valign="top" nowrap="nowrap">
-
-				
-
-				<div class="smallfont">
-
-					<!-- location -->Missouri
-
-					    
-
-					
-
-					
-
-				</div>
-
-				
-
-			</td>
-
-		</tr>
-
-		</table>
-
-		<!-- / user info -->
-
-	</td>
-
-</tr>
-
-<tr>
-
-	<td class="alt1" id="td_post_8043794">
-
-	<!-- message, attachments, sig -->
-
-	
-
-		
-
-			<!-- icon and title -->
-
-			<div class="smallfont">
-
-				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />
-
-				
-
-			</div>
-
-			<hr size="1" style="color:#E8EFF4" />
-
-			<!-- / icon and title -->
-
-		
-
-		
-
-		<!-- message -->
-
+<!-- END TEMPLATE: postbit_onlinestatus -->
+					<script type="text/javascript"> vbmenu_register("postmenu_8043794", true); </script>
+					
+				</div>
+				
+				<div class="smallfont">Regular</div>
+				
+				
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td valign="top" nowrap="nowrap">
+				
+				<div class="smallfont">
+					<!-- location -->Missouri
+					    
+					
+					
+				</div>
+				
+			</td>
+		</tr>
+		</table>
+		<!-- / user info -->
+	</td>
+</tr>
+<tr>
+	<td class="alt1" id="td_post_8043794">
+	<!-- message, attachments, sig -->
+	
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />
+				
+			</div>
+			<hr size="1" style="color:#E8EFF4" />
+			<!-- / icon and title -->
+		
+		
+		<!-- message -->
 		<div id="post_message_8043794"> <!-- BEGIN TEMPLATE: bbcode_quote -->
-<div style="margin:20px; margin-top:5px; ">
-
-	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
-
-	<table cellpadding="6" cellspacing="0" border="0" width="100%">
-
-	<tr>
-
-		<td class="alt2" style="border:1px inset">
-
-			
-
+<div style="margin:20px; margin-top:5px; ">
+	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
+	<table cellpadding="6" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td class="alt2" style="border:1px inset">
+			
 				quote:Originally posted by AngryFemme:<br />
 <br />
 <b> How humanity has come this far without recognizing as a whole how much having a religious faith impedes both personal and social growth is beyond me.<br />
 <br />
-</b>
-
-			
-
-		</td>
-
-	</tr>
-
-	</table>
-
+</b>
+			
+		</td>
+	</tr>
+	</table>
 </div>
 <!-- END TEMPLATE: bbcode_quote -->I agree.  I think the reason I carry less sympathy than you is that I used to be a Christian (for about 15 years of my life).  It's like, after I finally &quot;snapped out of it&quot;, I really want to just grab Christians and shout &quot;Wake the fuck up!&quot; (figuratively speaking, of course).  I was as Christian as anyone could be.  I don't know if anyone on here remembers, but I used to debate atheists on this very board about a year ago.  I can even remember the thread that started my journey to deconversion.  It was a thread by someone entitle &quot;Who are some of your favorite atheist speakers?&quot;.  Someone posted a link to a debate between Dan Barker (an apostate minister) and some dude on a Christian radio show.  Intrigued at the idea of a deconverted minister of 20 years, I listened and my adventure in freethought began.<br />
 <br />
-I just wish I could find that &quot;sweetspot&quot; in everyone.  It took some particular argument, a particular verbage, for it to finally begin to &quot;click&quot; and for the hamster to start running in my head.  After trying alot, it seems like most Christians have no such &quot;sweetspot&quot;.  I've tried arguments of every angle on different kinds of Christians and to no avail.  Is it just me?  Do some people not have a capacity for reason?  If they do, they <i>have</i> to have a point at which they can &quot;click&quot;, and understand the lunacy of their current beliefs.  Why is it so hard to find?!  <img border="1" width="90" height="90" alt="http://www.totse.com/bbs/mad.gif" src="../bbs/mad.gif" /> <img border="1" width="90" height="90" alt="http://www.totse.com/bbs/frown.gif" src="../bbs/frown.gif" /><br />
+I just wish I could find that &quot;sweetspot&quot; in everyone.  It took some particular argument, a particular verbage, for it to finally begin to &quot;click&quot; and for the hamster to start running in my head.  After trying alot, it seems like most Christians have no such &quot;sweetspot&quot;.  I've tried arguments of every angle on different kinds of Christians and to no avail.  Is it just me?  Do some people not have a capacity for reason?  If they do, they <i>have</i> to have a point at which they can &quot;click&quot;, and understand the lunacy of their current beliefs.  Why is it so hard to find?!  <a href="../bbs/mad.gif" target="_blank"><img border="1" width="90" height="90" alt="http://www.totse.com/bbs/mad.gif" src="../bbs/mad.gif" /></a> <a href="../bbs/frown.gif" target="_blank"><img border="1" width="90" height="90" alt="http://www.totse.com/bbs/frown.gif" src="../bbs/frown.gif" /></a><br />
 <br />
-I don't spend much time talking to moderates.  I live in the Bible Belt, and nearly every Christian I know is a fundie or borderline fundie.  If you've never been in such an environment, I can say that it really gets to you.</div>
-
-		<!-- / message -->
-
-	
-
-		
-
-		
-
-		
-
-		
-
-		
-
-	
-
-		<div style="margin-top: 10px" align="right">
-
-			<!-- controls -->
-
-			
-
-			
-
-			
-
-				<img src="../../images/buttons/quote.gif" alt="Reply With Quote" border="0" />
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-				
-
-			
-
-			<!-- / controls -->
-
-		</div>
-
-		
-
-	<!-- message, attachments, sig -->
-
-	
-
-	</td>
-
-</tr>
-
-</table>
-
-
-
-<!-- post 8043794 popup menu -->
-
-<div class="vbmenu_popup" id="postmenu_8043794_menu" style="display:none;">
-
-	<table cellpadding="4" cellspacing="1" border="0">
-
-	<tr>
-
-		<td class="thead">Elephantitis Man</td>
-
-	</tr>
-
-	
-
-		<tr><td class="vbmenu_option">View Public Profile</td></tr>
-
-	
-
-	
-
-	
-
-	
-
-		<tr><td class="vbmenu_option">Visit Elephantitis Man's homepage!</td></tr>
-
-	
-
-	
-
-		<tr><td class="vbmenu_option">Find all posts by Elephantitis Man</td></tr>
-
-	
-
-	
-
-	</table>
-
-</div>
-
+I don't spend much time talking to moderates.  I live in the Bible Belt, and nearly every Christian I know is a fundie or borderline fundie.  If you've never been in such an environment, I can say that it really gets to you.</div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+		
+	
+		<div style="margin-top: 10px" align="right">
+			<!-- controls -->
+			
+			
+			
+				<img src="../../images/buttons/quote.gif" alt="Reply With Quote" border="0" />
+			
+			
+			
+			
+			
+			
+				
+			
+			<!-- / controls -->
+		</div>
+		
+	<!-- message, attachments, sig -->
+	
+	</td>
+</tr>
+</table>
+
+<!-- post 8043794 popup menu -->
+<div class="vbmenu_popup" id="postmenu_8043794_menu" style="display:none;">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">Elephantitis Man</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option">View Public Profile</td></tr>
+	
+	
+	
+	
+		<tr><td class="vbmenu_option">Visit Elephantitis Man's homepage!</td></tr>
+	
+	
+		<tr><td class="vbmenu_option">Find all posts by Elephantitis Man</td></tr>
+	
+	
+	</table>
+</div>
 <!-- / post 8043794 popup menu -->
-<!-- END TEMPLATE: postbit -->
-
-
-
-
-
-	</div>
-
+<!-- END TEMPLATE: postbit -->
+
+
+	</div>
 	<!-- BEGIN TEMPLATE: spacer_close -->
-
-
-		</div>
-
-	</div>
-
-</div>
-
-
-
+
+		</div>
+	</div>
+</div>
+
 <!-- / close content container -->
-<!-- END TEMPLATE: spacer_close -->
-
-
-
+<!-- END TEMPLATE: spacer_close -->
+
 <!-- / post #8043794 -->
 
-<!-- post #8043795 -->
-
-
-
+<!-- post #8043795 -->
+
 	<!-- BEGIN TEMPLATE: spacer_open -->
-<!-- open content container -->
+<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 5px 0px 5px" align="left">
 
-
-
-<div align="center">
-
-	<div class="page" style="width:100%; text-align:left">
-
-		<div style="padding:0px 5px 0px 5px" align="left">
-
-
-<!-- END TEMPLATE: spacer_open -->
-
-	<div id="edit8043795" style="padding:0px 0px 6px 0px">
-
-	<!-- this is not the last post shown on the page -->
-
-
-
-
-
+<!-- END TEMPLATE: spacer_open -->
+	<div id="edit8043795" style="padding:0px 0px 6px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
 <!-- BEGIN TEMPLATE: postbit -->
-<table class="tborder" id="post8043795" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
-
-<tr>
-
-	<td class="thead" >
-
-		<div class="normal" style="float:right">
-
-			&nbsp;
-
-			#<strong>5</strong> &nbsp;
-
-			
-
-			
-
-
-
-			
-
-<img class="inlineimg" src="../../images/buttons/ignore.gif" 
-
-alt="Add AngryFemme to your ignore list"
-
-border="0" /> &nbsp;
-
-
-
-			
-
-			
-
-			
-
-		</div>
-
-		
-
-		<div class="normal">
-
-			<!-- status icon and date -->
-
-			<a name="post8043795"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>
-
-			
-
-				2007-03-30, 06:33
-
-			
-
-			
-
-			<!-- / status icon and date -->
-
-		</div>
-
-	</td>
-
-</tr>
-
-<tr>
-
-	<td class="alt2" style="padding:0px">
-
-		<!-- user info -->
-
-		<table cellpadding="0" cellspacing="6" border="0" width="100%">
-
-		<tr>
-
-			
-
-			<td nowrap="nowrap">
-
-			
-
-				<div id="postmenu_8043795">
-
-					
-
-					<a class="bigusername" href="../../community/members/u160296.html">AngryFemme</a>
-
+<table class="tborder" id="post8043795" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
+<tr>
+	<td class="thead" >
+		<div class="normal" style="float:right">
+			&nbsp;
+			#<strong>5</strong> &nbsp;
+			
+			
+
+			
+<img class="inlineimg" src="../../images/buttons/ignore.gif" 
+alt="Add AngryFemme to your ignore list"
+border="0" /> &nbsp;
+
+			
+			
+			
+		</div>
+		
+		<div class="normal">
+			<!-- status icon and date -->
+			<a name="post8043795"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>
+			
+				2007-03-30, 06:33
+			
+			
+			<!-- / status icon and date -->
+		</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding:0px">
+		<!-- user info -->
+		<table cellpadding="0" cellspacing="6" border="0" width="100%">
+		<tr>
+			
+			<td nowrap="nowrap">
+			
+				<div id="postmenu_8043795">
+					
+					<a class="bigusername" href="../../community/members/u160296.html">AngryFemme</a>
 					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->
-<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="AngryFemme is offline" border="0" />
+<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="AngryFemme is offline" border="0" />
+
 
-
-
-
-<!-- END TEMPLATE: postbit_onlinestatus -->
-
-					<script type="text/javascript"> vbmenu_register("postmenu_8043795", true); </script>
-
-					
-
-				</div>
-
-				
-
-				<div class="smallfont">Moderator</div>
-
-				
-
-				
-
-			</td>
-
-			<td width="100%">&nbsp;</td>
-
-			<td valign="top" nowrap="nowrap">
-
-				
-
-				<div class="smallfont">
-
-					<!-- location -->Deep South
-
+<!-- END TEMPLATE: postbit_onlinestatus -->
+					<script type="text/javascript"> vbmenu_register("postmenu_8043795", true); </script>
+					
+				</div>
+				
+				<div class="smallfont">Moderator</div>
+				
+				
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td valign="top" nowrap="nowrap">
+				
+				<div class="smallfont">
+					<!-- location -->Deep South
 					  <!-- BEGIN TEMPLATE: im_msn -->
 <a href="#" onclick="imwindow('msn', '160296', 400, 200); return false;"><img src="../../images/misc/im_msn.gif" alt="Send a message via MSN to AngryFemme" border="0" /></a>
 <!-- END TEMPLATE: im_msn --> <!-- BEGIN TEMPLATE: im_yahoo -->
 <a href="#" onclick="imwindow('yahoo', '160296', 400, 200); return false;"><img src="../../images/misc/im_yahoo.gif" alt="Send a message via Yahoo to AngryFemme" border="0" /></a>
-<!-- END TEMPLATE: im_yahoo --> 
-
-					
-
-					
-
-				</div>
-
-				
-
-			</td>
-
-		</tr>
-
-		</table>
-
-		<!-- / user info -->
-
-	</td>
-
-</tr>
-
-<tr>
-
-	<td class="alt1" id="td_post_8043795">
-
-	<!-- message, attachments, sig -->
-
-	
-
-		
-
-			<!-- icon and title -->
-
-			<div class="smallfont">
-
-				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />
-
-				
-
-			</div>
-
-			<hr size="1" style="color:#E8EFF4" />
-
-			<!-- / icon and title -->
-
-		
-
-		
-
-		<!-- message -->
-
+<!-- END TEMPLATE: im_yahoo --> 
+					
+					
+				</div>
+				
+			</td>
+		</tr>
+		</table>
+		<!-- / user info -->
+	</td>
+</tr>
+<tr>
+	<td class="alt1" id="td_post_8043795">
+	<!-- message, attachments, sig -->
+	
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />
+				
+			</div>
+			<hr size="1" style="color:#E8EFF4" />
+			<!-- / icon and title -->
+		
+		
+		<!-- message -->
 		<div id="post_message_8043795">  <!-- BEGIN TEMPLATE: bbcode_quote -->
-<div style="margin:20px; margin-top:5px; ">
-
-	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
-
-	<table cellpadding="6" cellspacing="0" border="0" width="100%">
-
-	<tr>
-
-		<td class="alt2" style="border:1px inset">
-
-			
-
+<div style="margin:20px; margin-top:5px; ">
+	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
+	<table cellpadding="6" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td class="alt2" style="border:1px inset">
+			
 				quote:Originally posted by Elephantitis Man:<br />
 <br />
-<b> I agree.  I think the reason I carry less sympathy than you is that I used to be a Christian (for about 15 years of my life). </b>
-
-			
-
-		</td>
-
-	</tr>
-
-	</table>
-
+<b> I agree.  I think the reason I carry less sympathy than you is that I used to be a Christian (for about 15 years of my life). </b>
+			
+		</td>
+	</tr>
+	</table>
 </div>
 <!-- END TEMPLATE: bbcode_quote -->And I, for about the exact same time, except that I don't count the infant/toddler years when that kinda stuff just doesn't cohere to the mind. <br />
 <br />
   <!-- BEGIN TEMPLATE: bbcode_quote -->
-<div style="margin:20px; margin-top:5px; ">
-
-	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
-
-	<table cellpadding="6" cellspacing="0" border="0" width="100%">
-
-	<tr>
-
-		<td class="alt2" style="border:1px inset">
-
-			
-
+<div style="margin:20px; margin-top:5px; ">
+	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
+	<table cellpadding="6" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td class="alt2" style="border:1px inset">
+			
 				quote: <b><br />
 <br />
-I live in the Bible Belt, and nearly every Christian I know is a fundie or borderline fundie.  If you've never been in such an environment, I can say that it really gets to you.</b>
-
-			
-
-		</td>
-
-	</tr>
-
-	</table>
-
+I live in the Bible Belt, and nearly every Christian I know is a fundie or borderline fundie.  If you've never been in such an environment, I can say that it really gets to you.</b>
+			
+		</td>
+	</tr>
+	</table>
 </div>
 <!-- END TEMPLATE: bbcode_quote -->I can vouch for this ^  It runs deep in the south. <br />
 <br />
@@ -2390,2526 +1385,1380 @@ I like using &quot;The Ugly Baby Syndrome&quot; to remind me to keep my perspect
 <br />
 <br />
 <br />
-[This message has been edited by AngryFemme (edited 03-30-2007).]</div>
-
-		<!-- / message -->
-
-	
-
-		
-
-		
-
-		
-
-		
-
-		
-
-	
-
-		<div style="margin-top: 10px" align="right">
-
-			<!-- controls -->
-
-			
-
-			
-
-			
-
-				<img src="../../images/buttons/quote.gif" alt="Reply With Quote" border="0" />
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-				
-
-			
-
-			<!-- / controls -->
-
-		</div>
-
-		
-
-	<!-- message, attachments, sig -->
-
-	
-
-	</td>
-
-</tr>
-
-</table>
-
-
-
-<!-- post 8043795 popup menu -->
-
-<div class="vbmenu_popup" id="postmenu_8043795_menu" style="display:none;">
-
-	<table cellpadding="4" cellspacing="1" border="0">
-
-	<tr>
-
-		<td class="thead">AngryFemme</td>
-
-	</tr>
-
-	
-
-		<tr><td class="vbmenu_option"><a href="../../community/members/u160296.html">View Public Profile</a></td></tr>
-
-	
-
-	
-
-	
-
-	
-
-	
-
-		<tr><td class="vbmenu_option">Find all posts by AngryFemme</td></tr>
-
-	
-
-	
-
-	</table>
-
-</div>
-
+[This message has been edited by AngryFemme (edited 03-30-2007).]</div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+		
+	
+		<div style="margin-top: 10px" align="right">
+			<!-- controls -->
+			
+			
+			
+				<img src="../../images/buttons/quote.gif" alt="Reply With Quote" border="0" />
+			
+			
+			
+			
+			
+			
+				
+			
+			<!-- / controls -->
+		</div>
+		
+	<!-- message, attachments, sig -->
+	
+	</td>
+</tr>
+</table>
+
+<!-- post 8043795 popup menu -->
+<div class="vbmenu_popup" id="postmenu_8043795_menu" style="display:none;">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">AngryFemme</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="../../community/members/u160296.html">View Public Profile</a></td></tr>
+	
+	
+	
+	
+	
+		<tr><td class="vbmenu_option">Find all posts by AngryFemme</td></tr>
+	
+	
+	</table>
+</div>
 <!-- / post 8043795 popup menu -->
-<!-- END TEMPLATE: postbit -->
-
-
-
-
-
-	</div>
-
+<!-- END TEMPLATE: postbit -->
+
+
+	</div>
 	<!-- BEGIN TEMPLATE: spacer_close -->
-
-
-		</div>
-
-	</div>
-
-</div>
-
-
-
+
+		</div>
+	</div>
+</div>
+
 <!-- / close content container -->
-<!-- END TEMPLATE: spacer_close -->
-
-
-
+<!-- END TEMPLATE: spacer_close -->
+
 <!-- / post #8043795 -->
 
-<!-- post #8043796 -->
-
-
-
+<!-- post #8043796 -->
+
 	<!-- BEGIN TEMPLATE: spacer_open -->
-<!-- open content container -->
+<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 5px 0px 5px" align="left">
 
-
-
-<div align="center">
-
-	<div class="page" style="width:100%; text-align:left">
-
-		<div style="padding:0px 5px 0px 5px" align="left">
-
-
-<!-- END TEMPLATE: spacer_open -->
-
-	<div id="edit8043796" style="padding:0px 0px 6px 0px">
-
-	<!-- this is not the last post shown on the page -->
-
-
-
-
-
+<!-- END TEMPLATE: spacer_open -->
+	<div id="edit8043796" style="padding:0px 0px 6px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
 <!-- BEGIN TEMPLATE: postbit -->
-<table class="tborder" id="post8043796" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
-
-<tr>
-
-	<td class="thead" >
-
-		<div class="normal" style="float:right">
-
-			&nbsp;
-
-			#<strong>6</strong> &nbsp;
-
-			
-
-			
-
-
-
-			
-
-<img class="inlineimg" src="../../images/buttons/ignore.gif" 
-
-alt="Add inuteroteen to your ignore list"
-
-border="0" /> &nbsp;
-
-
-
-			
-
-			
-
-			
-
-		</div>
-
-		
-
-		<div class="normal">
-
-			<!-- status icon and date -->
-
-			<a name="post8043796"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>
-
-			
-
-				2007-03-30, 06:45
-
-			
-
-			
-
-			<!-- / status icon and date -->
-
-		</div>
-
-	</td>
-
-</tr>
-
-<tr>
-
-	<td class="alt2" style="padding:0px">
-
-		<!-- user info -->
-
-		<table cellpadding="0" cellspacing="6" border="0" width="100%">
-
-		<tr>
-
-			
-
-			<td nowrap="nowrap">
-
-			
-
-				<div id="postmenu_8043796">
-
-					
-
-					inuteroteen
-
+<table class="tborder" id="post8043796" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
+<tr>
+	<td class="thead" >
+		<div class="normal" style="float:right">
+			&nbsp;
+			#<strong>6</strong> &nbsp;
+			
+			
+
+			
+<img class="inlineimg" src="../../images/buttons/ignore.gif" 
+alt="Add inuteroteen to your ignore list"
+border="0" /> &nbsp;
+
+			
+			
+			
+		</div>
+		
+		<div class="normal">
+			<!-- status icon and date -->
+			<a name="post8043796"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>
+			
+				2007-03-30, 06:45
+			
+			
+			<!-- / status icon and date -->
+		</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding:0px">
+		<!-- user info -->
+		<table cellpadding="0" cellspacing="6" border="0" width="100%">
+		<tr>
+			
+			<td nowrap="nowrap">
+			
+				<div id="postmenu_8043796">
+					
+					inuteroteen
 					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->
-<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="inuteroteen is offline" border="0" />
+<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="inuteroteen is offline" border="0" />
+
 
-
-
-
-<!-- END TEMPLATE: postbit_onlinestatus -->
-
-					<script type="text/javascript"> vbmenu_register("postmenu_8043796", true); </script>
-
-					
-
-				</div>
-
-				
-
-				<div class="smallfont">Regular</div>
-
-				
-
-				
-
-			</td>
-
-			<td width="100%">&nbsp;</td>
-
-			<td valign="top" nowrap="nowrap">
-
-				
-
-				<div class="smallfont">
-
-					<!-- location -->Virginia USA
-
+<!-- END TEMPLATE: postbit_onlinestatus -->
+					<script type="text/javascript"> vbmenu_register("postmenu_8043796", true); </script>
+					
+				</div>
+				
+				<div class="smallfont">Regular</div>
+				
+				
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td valign="top" nowrap="nowrap">
+				
+				<div class="smallfont">
+					<!-- location -->Virginia USA
 					 <!-- BEGIN TEMPLATE: im_aim -->
 <a href="#" onclick="imwindow('aim', '149881', 400, 200); return false;"><img src="../../images/misc/im_aim.gif" alt="Send a message via AIM to inuteroteen" border="0" /></a>
-<!-- END TEMPLATE: im_aim -->   
-
-					
-
-					
-
-				</div>
-
-				
-
-			</td>
-
-		</tr>
-
-		</table>
-
-		<!-- / user info -->
-
-	</td>
-
-</tr>
-
-<tr>
-
-	<td class="alt1" id="td_post_8043796">
-
-	<!-- message, attachments, sig -->
-
-	
-
-		
-
-			<!-- icon and title -->
-
-			<div class="smallfont">
-
-				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />
-
-				
-
-			</div>
-
-			<hr size="1" style="color:#E8EFF4" />
-
-			<!-- / icon and title -->
-
-		
-
-		
-
-		<!-- message -->
-
+<!-- END TEMPLATE: im_aim -->   
+					
+					
+				</div>
+				
+			</td>
+		</tr>
+		</table>
+		<!-- / user info -->
+	</td>
+</tr>
+<tr>
+	<td class="alt1" id="td_post_8043796">
+	<!-- message, attachments, sig -->
+	
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />
+				
+			</div>
+			<hr size="1" style="color:#E8EFF4" />
+			<!-- / icon and title -->
+		
+		
+		<!-- message -->
 		<div id="post_message_8043796">For most of my life I have been in a Christian environment.  I made it through Boy Scouts sidestepping religion, even in my Eagle Board of Revue.  I don't flat out try to argue or convince Christians, I give them little interesting tidbits of info.  Like today my dad called me and asked if I was coming home for Easter.  I told him I could celebrate the Pagan Spring Fertility holiday here at school.  <br />
 <br />
-I would absolutely demolish some fundies in my English class last semester.  We often had debates when we were writing arguments.  Everything for their points came from the bible.  I berated them because they ate pork and wore wool cotton blends.  During the abortion debate I had them stumbling and backpedaling.  I quoted the verse in numbers that equates a fetus's life to a fine.  Also I asked them why aren't they so morally opposed to bestiality.  Why shouldn't we dole out the death penalty for it because thats what is warranted in the bible.  When they were speechless and uttering unrecognizable words made me realize that I want to become a lawyer.</div>
-
-		<!-- / message -->
-
-	
-
-		
-
-		
-
-		
-
-		
-
-		
-
-	
-
-		<div style="margin-top: 10px" align="right">
-
-			<!-- controls -->
-
-			
-
-			
-
-			
-
-				<img src="../../images/buttons/quote.gif" alt="Reply With Quote" border="0" />
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-				
-
-			
-
-			<!-- / controls -->
-
-		</div>
-
-		
-
-	<!-- message, attachments, sig -->
-
-	
-
-	</td>
-
-</tr>
-
-</table>
-
-
-
-<!-- post 8043796 popup menu -->
-
-<div class="vbmenu_popup" id="postmenu_8043796_menu" style="display:none;">
-
-	<table cellpadding="4" cellspacing="1" border="0">
-
-	<tr>
-
-		<td class="thead">inuteroteen</td>
-
-	</tr>
-
-	
-
-		<tr><td class="vbmenu_option">View Public Profile</td></tr>
-
-	
-
-	
-
-	
-
-	
-
-		<tr><td class="vbmenu_option">Visit inuteroteen's homepage!</td></tr>
-
-	
-
-	
-
-		<tr><td class="vbmenu_option">Find all posts by inuteroteen</td></tr>
-
-	
-
-	
-
-	</table>
-
-</div>
-
+I would absolutely demolish some fundies in my English class last semester.  We often had debates when we were writing arguments.  Everything for their points came from the bible.  I berated them because they ate pork and wore wool cotton blends.  During the abortion debate I had them stumbling and backpedaling.  I quoted the verse in numbers that equates a fetus's life to a fine.  Also I asked them why aren't they so morally opposed to bestiality.  Why shouldn't we dole out the death penalty for it because thats what is warranted in the bible.  When they were speechless and uttering unrecognizable words made me realize that I want to become a lawyer.</div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+		
+	
+		<div style="margin-top: 10px" align="right">
+			<!-- controls -->
+			
+			
+			
+				<img src="../../images/buttons/quote.gif" alt="Reply With Quote" border="0" />
+			
+			
+			
+			
+			
+			
+				
+			
+			<!-- / controls -->
+		</div>
+		
+	<!-- message, attachments, sig -->
+	
+	</td>
+</tr>
+</table>
+
+<!-- post 8043796 popup menu -->
+<div class="vbmenu_popup" id="postmenu_8043796_menu" style="display:none;">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">inuteroteen</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option">View Public Profile</td></tr>
+	
+	
+	
+	
+		<tr><td class="vbmenu_option">Visit inuteroteen's homepage!</td></tr>
+	
+	
+		<tr><td class="vbmenu_option">Find all posts by inuteroteen</td></tr>
+	
+	
+	</table>
+</div>
 <!-- / post 8043796 popup menu -->
-<!-- END TEMPLATE: postbit -->
-
-
-
-
-
-	</div>
-
+<!-- END TEMPLATE: postbit -->
+
+
+	</div>
 	<!-- BEGIN TEMPLATE: spacer_close -->
-
-
-		</div>
-
-	</div>
-
-</div>
-
-
-
+
+		</div>
+	</div>
+</div>
+
 <!-- / close content container -->
-<!-- END TEMPLATE: spacer_close -->
-
-
-
+<!-- END TEMPLATE: spacer_close -->
+
 <!-- / post #8043796 -->
 
-<!-- post #8043797 -->
-
-
-
+<!-- post #8043797 -->
+
 	<!-- BEGIN TEMPLATE: spacer_open -->
-<!-- open content container -->
+<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 5px 0px 5px" align="left">
 
-
-
-<div align="center">
-
-	<div class="page" style="width:100%; text-align:left">
-
-		<div style="padding:0px 5px 0px 5px" align="left">
-
-
-<!-- END TEMPLATE: spacer_open -->
-
-	<div id="edit8043797" style="padding:0px 0px 6px 0px">
-
-	<!-- this is not the last post shown on the page -->
-
-
-
-
-
+<!-- END TEMPLATE: spacer_open -->
+	<div id="edit8043797" style="padding:0px 0px 6px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
 <!-- BEGIN TEMPLATE: postbit -->
-<table class="tborder" id="post8043797" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
-
-<tr>
-
-	<td class="thead" >
-
-		<div class="normal" style="float:right">
-
-			&nbsp;
-
-			#<strong>7</strong> &nbsp;
-
-			
-
-			
-
-
-
-			
-
-<img class="inlineimg" src="../../images/buttons/ignore.gif" 
-
-alt="Add Blades of Hate to your ignore list"
-
-border="0" /> &nbsp;
-
-
-
-			
-
-			
-
-			
-
-		</div>
-
-		
-
-		<div class="normal">
-
-			<!-- status icon and date -->
-
-			<a name="post8043797"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>
-
-			
-
-				2007-03-30, 07:28
-
-			
-
-			
-
-			<!-- / status icon and date -->
-
-		</div>
-
-	</td>
-
-</tr>
-
-<tr>
-
-	<td class="alt2" style="padding:0px">
-
-		<!-- user info -->
-
-		<table cellpadding="0" cellspacing="6" border="0" width="100%">
-
-		<tr>
-
-			
-
-			<td nowrap="nowrap">
-
-			
-
-				<div id="postmenu_8043797">
-
-					
-
-					Blades of Hate
-
+<table class="tborder" id="post8043797" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
+<tr>
+	<td class="thead" >
+		<div class="normal" style="float:right">
+			&nbsp;
+			#<strong>7</strong> &nbsp;
+			
+			
+
+			
+<img class="inlineimg" src="../../images/buttons/ignore.gif" 
+alt="Add Blades of Hate to your ignore list"
+border="0" /> &nbsp;
+
+			
+			
+			
+		</div>
+		
+		<div class="normal">
+			<!-- status icon and date -->
+			<a name="post8043797"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>
+			
+				2007-03-30, 07:28
+			
+			
+			<!-- / status icon and date -->
+		</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding:0px">
+		<!-- user info -->
+		<table cellpadding="0" cellspacing="6" border="0" width="100%">
+		<tr>
+			
+			<td nowrap="nowrap">
+			
+				<div id="postmenu_8043797">
+					
+					Blades of Hate
 					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->
-<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="Blades of Hate is offline" border="0" />
+<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="Blades of Hate is offline" border="0" />
+
 
-
-
-
-<!-- END TEMPLATE: postbit_onlinestatus -->
-
-					<script type="text/javascript"> vbmenu_register("postmenu_8043797", true); </script>
-
-					
-
-				</div>
-
-				
-
-				<div class="smallfont">Regular</div>
-
-				
-
-				
-
-			</td>
-
-			<td width="100%">&nbsp;</td>
-
-			<td valign="top" nowrap="nowrap">
-
-				
-
-				<div class="smallfont">
-
-					<!-- location -->bakersfield
-
-					    
-
-					
-
-					
-
-				</div>
-
-				
-
-			</td>
-
-		</tr>
-
-		</table>
-
-		<!-- / user info -->
-
-	</td>
-
-</tr>
-
-<tr>
-
-	<td class="alt1" id="td_post_8043797">
-
-	<!-- message, attachments, sig -->
-
-	
-
-		
-
-			<!-- icon and title -->
-
-			<div class="smallfont">
-
-				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />
-
-				
-
-			</div>
-
-			<hr size="1" style="color:#E8EFF4" />
-
-			<!-- / icon and title -->
-
-		
-
-		
-
-		<!-- message -->
-
+<!-- END TEMPLATE: postbit_onlinestatus -->
+					<script type="text/javascript"> vbmenu_register("postmenu_8043797", true); </script>
+					
+				</div>
+				
+				<div class="smallfont">Regular</div>
+				
+				
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td valign="top" nowrap="nowrap">
+				
+				<div class="smallfont">
+					<!-- location -->bakersfield
+					    
+					
+					
+				</div>
+				
+			</td>
+		</tr>
+		</table>
+		<!-- / user info -->
+	</td>
+</tr>
+<tr>
+	<td class="alt1" id="td_post_8043797">
+	<!-- message, attachments, sig -->
+	
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />
+				
+			</div>
+			<hr size="1" style="color:#E8EFF4" />
+			<!-- / icon and title -->
+		
+		
+		<!-- message -->
 		<div id="post_message_8043797">I do.<br />
 <br />
 It saddens me when i first talk to people and they say (real perky-like)  &quot;Oh ya totally im a christian.&quot;<br />
 <br />
-I just kinda shrug and feel that they're just lost to a system where teh child believes what the parents say and they never had a chance to think for themselves.</div>
-
-		<!-- / message -->
-
-	
-
-		
-
-		
-
-		
-
-		
-
-		
-
-	
-
-		<div style="margin-top: 10px" align="right">
-
-			<!-- controls -->
-
-			
-
-			
-
-			
-
-				<img src="../../images/buttons/quote.gif" alt="Reply With Quote" border="0" />
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-				
-
-			
-
-			<!-- / controls -->
-
-		</div>
-
-		
-
-	<!-- message, attachments, sig -->
-
-	
-
-	</td>
-
-</tr>
-
-</table>
-
-
-
-<!-- post 8043797 popup menu -->
-
-<div class="vbmenu_popup" id="postmenu_8043797_menu" style="display:none;">
-
-	<table cellpadding="4" cellspacing="1" border="0">
-
-	<tr>
-
-		<td class="thead">Blades of Hate</td>
-
-	</tr>
-
-	
-
-		<tr><td class="vbmenu_option">View Public Profile</td></tr>
-
-	
-
-	
-
-	
-
-	
-
-	
-
-		<tr><td class="vbmenu_option">Find all posts by Blades of Hate</td></tr>
-
-	
-
-	
-
-	</table>
-
-</div>
-
+I just kinda shrug and feel that they're just lost to a system where teh child believes what the parents say and they never had a chance to think for themselves.</div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+		
+	
+		<div style="margin-top: 10px" align="right">
+			<!-- controls -->
+			
+			
+			
+				<img src="../../images/buttons/quote.gif" alt="Reply With Quote" border="0" />
+			
+			
+			
+			
+			
+			
+				
+			
+			<!-- / controls -->
+		</div>
+		
+	<!-- message, attachments, sig -->
+	
+	</td>
+</tr>
+</table>
+
+<!-- post 8043797 popup menu -->
+<div class="vbmenu_popup" id="postmenu_8043797_menu" style="display:none;">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">Blades of Hate</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option">View Public Profile</td></tr>
+	
+	
+	
+	
+	
+		<tr><td class="vbmenu_option">Find all posts by Blades of Hate</td></tr>
+	
+	
+	</table>
+</div>
 <!-- / post 8043797 popup menu -->
-<!-- END TEMPLATE: postbit -->
-
-
-
-
-
-	</div>
-
+<!-- END TEMPLATE: postbit -->
+
+
+	</div>
 	<!-- BEGIN TEMPLATE: spacer_close -->
-
-
-		</div>
-
-	</div>
-
-</div>
-
-
-
+
+		</div>
+	</div>
+</div>
+
 <!-- / close content container -->
-<!-- END TEMPLATE: spacer_close -->
-
-
-
+<!-- END TEMPLATE: spacer_close -->
+
 <!-- / post #8043797 -->
 
-<!-- post #8043798 -->
-
-
-
+<!-- post #8043798 -->
+
 	<!-- BEGIN TEMPLATE: spacer_open -->
-<!-- open content container -->
+<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 5px 0px 5px" align="left">
 
-
-
-<div align="center">
-
-	<div class="page" style="width:100%; text-align:left">
-
-		<div style="padding:0px 5px 0px 5px" align="left">
-
-
-<!-- END TEMPLATE: spacer_open -->
-
-	<div id="edit8043798" style="padding:0px 0px 6px 0px">
-
-	<!-- this is not the last post shown on the page -->
-
-
-
-
-
+<!-- END TEMPLATE: spacer_open -->
+	<div id="edit8043798" style="padding:0px 0px 6px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
 <!-- BEGIN TEMPLATE: postbit -->
-<table class="tborder" id="post8043798" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
-
-<tr>
-
-	<td class="thead" >
-
-		<div class="normal" style="float:right">
-
-			&nbsp;
-
-			#<strong>8</strong> &nbsp;
-
-			
-
-			
-
-
-
-			
-
-<img class="inlineimg" src="../../images/buttons/ignore.gif" 
-
-alt="Add Hexadecimal to your ignore list"
-
-border="0" /> &nbsp;
-
-
-
-			
-
-			
-
-			
-
-		</div>
-
-		
-
-		<div class="normal">
-
-			<!-- status icon and date -->
-
-			<a name="post8043798"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>
-
-			
-
-				2007-03-30, 07:42
-
-			
-
-			
-
-			<!-- / status icon and date -->
-
-		</div>
-
-	</td>
-
-</tr>
-
-<tr>
-
-	<td class="alt2" style="padding:0px">
-
-		<!-- user info -->
-
-		<table cellpadding="0" cellspacing="6" border="0" width="100%">
-
-		<tr>
-
-			
-
-			<td nowrap="nowrap">
-
-			
-
-				<div id="postmenu_8043798">
-
-					
-
-					<a class="bigusername" href="../../community/members/u158479.html">Hexadecimal</a>
-
+<table class="tborder" id="post8043798" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
+<tr>
+	<td class="thead" >
+		<div class="normal" style="float:right">
+			&nbsp;
+			#<strong>8</strong> &nbsp;
+			
+			
+
+			
+<img class="inlineimg" src="../../images/buttons/ignore.gif" 
+alt="Add Hexadecimal to your ignore list"
+border="0" /> &nbsp;
+
+			
+			
+			
+		</div>
+		
+		<div class="normal">
+			<!-- status icon and date -->
+			<a name="post8043798"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>
+			
+				2007-03-30, 07:42
+			
+			
+			<!-- / status icon and date -->
+		</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding:0px">
+		<!-- user info -->
+		<table cellpadding="0" cellspacing="6" border="0" width="100%">
+		<tr>
+			
+			<td nowrap="nowrap">
+			
+				<div id="postmenu_8043798">
+					
+					<a class="bigusername" href="../../community/members/u158479.html">Hexadecimal</a>
 					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->
-<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="Hexadecimal is offline" border="0" />
+<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="Hexadecimal is offline" border="0" />
+
 
-
-
-
-<!-- END TEMPLATE: postbit_onlinestatus -->
-
-					<script type="text/javascript"> vbmenu_register("postmenu_8043798", true); </script>
-
-					
-
-				</div>
-
-				
-
-				<div class="smallfont">Regular</div>
-
-				
-
-				
-
-			</td>
-
-			<td width="100%">&nbsp;</td>
-
-			<td valign="top" nowrap="nowrap">
-
-				
-
-				<div class="smallfont">
-
-					<!-- location -->Rockford, IL
-
-					    
-
-					
-
-					
-
-				</div>
-
-				
-
-			</td>
-
-		</tr>
-
-		</table>
-
-		<!-- / user info -->
-
-	</td>
-
-</tr>
-
-<tr>
-
-	<td class="alt1" id="td_post_8043798">
-
-	<!-- message, attachments, sig -->
-
-	
-
-		
-
-			<!-- icon and title -->
-
-			<div class="smallfont">
-
-				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />
-
-				
-
-			</div>
-
-			<hr size="1" style="color:#E8EFF4" />
-
-			<!-- / icon and title -->
-
-		
-
-		
-
-		<!-- message -->
-
+<!-- END TEMPLATE: postbit_onlinestatus -->
+					<script type="text/javascript"> vbmenu_register("postmenu_8043798", true); </script>
+					
+				</div>
+				
+				<div class="smallfont">Regular</div>
+				
+				
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td valign="top" nowrap="nowrap">
+				
+				<div class="smallfont">
+					<!-- location -->Rockford, IL
+					    
+					
+					
+				</div>
+				
+			</td>
+		</tr>
+		</table>
+		<!-- / user info -->
+	</td>
+</tr>
+<tr>
+	<td class="alt1" id="td_post_8043798">
+	<!-- message, attachments, sig -->
+	
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />
+				
+			</div>
+			<hr size="1" style="color:#E8EFF4" />
+			<!-- / icon and title -->
+		
+		
+		<!-- message -->
 		<div id="post_message_8043798">I see theology the same way I do narcissism: a method of self-preservation. This world has billions of people aching for death and too fucking afraid to kill themselves. They ask themselves 'Why does nothing scare me more than anything that's real?' and they come up with 'Because God wants me to live.'<br />
 <br />
 Fuck you. God doesn't ask shit of you except birth and death...this sacrifice shit, prayer, meditation, and anything else you think your God demands of you is total bullshit. It's YOU that demands it, because you suffered some fucking trauma and couldn't stand up to it using your god-given abilities, you had to make up some crazy shit about divine purpose and so on...get over it.<br />
 <br />
 ^<br />
 <br />
-my view, of course. Ignore it if you want.</div>
-
-		<!-- / message -->
-
-	
-
-		
-
-		
-
-		
-
-		
-
-		
-
-	
-
-		<div style="margin-top: 10px" align="right">
-
-			<!-- controls -->
-
-			
-
-			
-
-			
-
-				<img src="../../images/buttons/quote.gif" alt="Reply With Quote" border="0" />
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-				
-
-			
-
-			<!-- / controls -->
-
-		</div>
-
-		
-
-	<!-- message, attachments, sig -->
-
-	
-
-	</td>
-
-</tr>
-
-</table>
-
-
-
-<!-- post 8043798 popup menu -->
-
-<div class="vbmenu_popup" id="postmenu_8043798_menu" style="display:none;">
-
-	<table cellpadding="4" cellspacing="1" border="0">
-
-	<tr>
-
-		<td class="thead">Hexadecimal</td>
-
-	</tr>
-
-	
-
-		<tr><td class="vbmenu_option"><a href="../../community/members/u158479.html">View Public Profile</a></td></tr>
-
-	
-
-	
-
-	
-
-	
-
-	
-
-		<tr><td class="vbmenu_option">Find all posts by Hexadecimal</td></tr>
-
-	
-
-	
-
-	</table>
-
-</div>
-
+my view, of course. Ignore it if you want.</div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+		
+	
+		<div style="margin-top: 10px" align="right">
+			<!-- controls -->
+			
+			
+			
+				<img src="../../images/buttons/quote.gif" alt="Reply With Quote" border="0" />
+			
+			
+			
+			
+			
+			
+				
+			
+			<!-- / controls -->
+		</div>
+		
+	<!-- message, attachments, sig -->
+	
+	</td>
+</tr>
+</table>
+
+<!-- post 8043798 popup menu -->
+<div class="vbmenu_popup" id="postmenu_8043798_menu" style="display:none;">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">Hexadecimal</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="../../community/members/u158479.html">View Public Profile</a></td></tr>
+	
+	
+	
+	
+	
+		<tr><td class="vbmenu_option">Find all posts by Hexadecimal</td></tr>
+	
+	
+	</table>
+</div>
 <!-- / post 8043798 popup menu -->
-<!-- END TEMPLATE: postbit -->
-
-
-
-
-
-	</div>
-
+<!-- END TEMPLATE: postbit -->
+
+
+	</div>
 	<!-- BEGIN TEMPLATE: spacer_close -->
-
-
-		</div>
-
-	</div>
-
-</div>
-
-
-
+
+		</div>
+	</div>
+</div>
+
 <!-- / close content container -->
-<!-- END TEMPLATE: spacer_close -->
-
-
-
+<!-- END TEMPLATE: spacer_close -->
+
 <!-- / post #8043798 -->
 
-<!-- post #8050419 -->
-
-
-
+<!-- post #8050419 -->
+
 	<!-- BEGIN TEMPLATE: spacer_open -->
-<!-- open content container -->
+<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 5px 0px 5px" align="left">
 
-
-
-<div align="center">
-
-	<div class="page" style="width:100%; text-align:left">
-
-		<div style="padding:0px 5px 0px 5px" align="left">
-
-
-<!-- END TEMPLATE: spacer_open -->
-
-	<div id="edit8050419" style="padding:0px 0px 6px 0px">
-
-	<!-- this is not the last post shown on the page -->
-
-
-
-
-
+<!-- END TEMPLATE: spacer_open -->
+	<div id="edit8050419" style="padding:0px 0px 6px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
 <!-- BEGIN TEMPLATE: postbit -->
-<table class="tborder" id="post8050419" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
-
-<tr>
-
-	<td class="thead" >
-
-		<div class="normal" style="float:right">
-
-			&nbsp;
-
-			#<strong>9</strong> &nbsp;
-
-			
-
-			
-
-
-
-			
-
-<img class="inlineimg" src="../../images/buttons/ignore.gif" 
-
-alt="Add Punk_Rocker_22 to your ignore list"
-
-border="0" /> &nbsp;
-
-
-
-			
-
-			
-
-			
-
-		</div>
-
-		
-
-		<div class="normal">
-
-			<!-- status icon and date -->
-
-			<a name="post8050419"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>
-
-			
-
-				2007-03-30, 18:40
-
-			
-
-			
-
-			<!-- / status icon and date -->
-
-		</div>
-
-	</td>
-
-</tr>
-
-<tr>
-
-	<td class="alt2" style="padding:0px">
-
-		<!-- user info -->
-
-		<table cellpadding="0" cellspacing="6" border="0" width="100%">
-
-		<tr>
-
-			
-
-			<td nowrap="nowrap">
-
-			
-
-				<div id="postmenu_8050419">
-
-					
-
-					<a class="bigusername" href="../../community/members/u215985.html">Punk_Rocker_22</a>
-
+<table class="tborder" id="post8050419" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
+<tr>
+	<td class="thead" >
+		<div class="normal" style="float:right">
+			&nbsp;
+			#<strong>9</strong> &nbsp;
+			
+			
+
+			
+<img class="inlineimg" src="../../images/buttons/ignore.gif" 
+alt="Add Punk_Rocker_22 to your ignore list"
+border="0" /> &nbsp;
+
+			
+			
+			
+		</div>
+		
+		<div class="normal">
+			<!-- status icon and date -->
+			<a name="post8050419"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>
+			
+				2007-03-30, 18:40
+			
+			
+			<!-- / status icon and date -->
+		</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding:0px">
+		<!-- user info -->
+		<table cellpadding="0" cellspacing="6" border="0" width="100%">
+		<tr>
+			
+			<td nowrap="nowrap">
+			
+				<div id="postmenu_8050419">
+					
+					<a class="bigusername" href="../../community/members/u215985.html">Punk_Rocker_22</a>
 					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->
-<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="Punk_Rocker_22 is offline" border="0" />
+<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="Punk_Rocker_22 is offline" border="0" />
+
 
-
-
-
-<!-- END TEMPLATE: postbit_onlinestatus -->
-
-					<script type="text/javascript"> vbmenu_register("postmenu_8050419", true); </script>
-
-					
-
-				</div>
-
-				
-
-				<div class="smallfont">Regular</div>
-
-				
-
-				
-
-			</td>
-
-			<td width="100%">&nbsp;</td>
-
-			<td valign="top" nowrap="nowrap">
-
-				
-
-				<div class="smallfont">
-
-					<!-- location -->
-
-					    
-
-					
-
-					
-
-				</div>
-
-				
-
-			</td>
-
-		</tr>
-
-		</table>
-
-		<!-- / user info -->
-
-	</td>
-
-</tr>
-
-<tr>
-
-	<td class="alt1" id="td_post_8050419">
-
-	<!-- message, attachments, sig -->
-
-	
-
-		
-
-			<!-- icon and title -->
-
-			<div class="smallfont">
-
-				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />
-
-				
-
-			</div>
-
-			<hr size="1" style="color:#E8EFF4" />
-
-			<!-- / icon and title -->
-
-		
-
-		
-
-		<!-- message -->
-
+<!-- END TEMPLATE: postbit_onlinestatus -->
+					<script type="text/javascript"> vbmenu_register("postmenu_8050419", true); </script>
+					
+				</div>
+				
+				<div class="smallfont">Regular</div>
+				
+				
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td valign="top" nowrap="nowrap">
+				
+				<div class="smallfont">
+					<!-- location -->
+					    
+					
+					
+				</div>
+				
+			</td>
+		</tr>
+		</table>
+		<!-- / user info -->
+	</td>
+</tr>
+<tr>
+	<td class="alt1" id="td_post_8050419">
+	<!-- message, attachments, sig -->
+	
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />
+				
+			</div>
+			<hr size="1" style="color:#E8EFF4" />
+			<!-- / icon and title -->
+		
+		
+		<!-- message -->
 		<div id="post_message_8050419"> <!-- BEGIN TEMPLATE: bbcode_quote -->
-<div style="margin:20px; margin-top:5px; ">
-
-	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
-
-	<table cellpadding="6" cellspacing="0" border="0" width="100%">
-
-	<tr>
-
-		<td class="alt2" style="border:1px inset">
-
-			
-
+<div style="margin:20px; margin-top:5px; ">
+	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
+	<table cellpadding="6" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td class="alt2" style="border:1px inset">
+			
 				quote:Originally posted by Elephantitis Man:<br />
 <br />
-<b>I've gotten to the point that I actually lose a bit of respect for someone, right off the bat, if I find out they are Christian.</b>
-
-			
-
-		</td>
-
-	</tr>
-
-	</table>
-
+<b>I've gotten to the point that I actually lose a bit of respect for someone, right off the bat, if I find out they are Christian.</b>
+			
+		</td>
+	</tr>
+	</table>
 </div>
 <!-- END TEMPLATE: bbcode_quote -->Exactlly.<br />
 <br />
  <!-- BEGIN TEMPLATE: bbcode_quote -->
-<div style="margin:20px; margin-top:5px; ">
-
-	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
-
-	<table cellpadding="6" cellspacing="0" border="0" width="100%">
-
-	<tr>
-
-		<td class="alt2" style="border:1px inset">
-
-			
-
+<div style="margin:20px; margin-top:5px; ">
+	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
+	<table cellpadding="6" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td class="alt2" style="border:1px inset">
+			
 				quote:Originally posted by Elephantitis Man:<br />
 <br />
-<b>I don't flat out try to argue or convince Christians, I give them little interesting tidbits of info. Like today my dad called me and asked if I was coming home for Easter. I told him I could celebrate the Pagan Spring Fertility holiday here at school.</b>
-
-			
-
-		</td>
-
-	</tr>
-
-	</table>
-
+<b>I don't flat out try to argue or convince Christians, I give them little interesting tidbits of info. Like today my dad called me and asked if I was coming home for Easter. I told him I could celebrate the Pagan Spring Fertility holiday here at school.</b>
+			
+		</td>
+	</tr>
+	</table>
 </div>
-<!-- END TEMPLATE: bbcode_quote -->Its normally the best way to get through to them. They'll listen to little tidbits, but completly block you out during a debate.</div>
-
-		<!-- / message -->
-
-	
-
-		
-
-		
-
-		
-
-		
-
-		
-
-	
-
-		<div style="margin-top: 10px" align="right">
-
-			<!-- controls -->
-
-			
-
-			
-
-			
-
-				<img src="../../images/buttons/quote.gif" alt="Reply With Quote" border="0" />
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-				
-
-			
-
-			<!-- / controls -->
-
-		</div>
-
-		
-
-	<!-- message, attachments, sig -->
-
-	
-
-	</td>
-
-</tr>
-
-</table>
-
-
-
-<!-- post 8050419 popup menu -->
-
-<div class="vbmenu_popup" id="postmenu_8050419_menu" style="display:none;">
-
-	<table cellpadding="4" cellspacing="1" border="0">
-
-	<tr>
-
-		<td class="thead">Punk_Rocker_22</td>
-
-	</tr>
-
-	
-
-		<tr><td class="vbmenu_option"><a href="../../community/members/u215985.html">View Public Profile</a></td></tr>
-
-	
-
-	
-
-	
-
-	
-
-	
-
-		<tr><td class="vbmenu_option">Find all posts by Punk_Rocker_22</td></tr>
-
-	
-
-	
-
-	</table>
-
-</div>
-
+<!-- END TEMPLATE: bbcode_quote -->Its normally the best way to get through to them. They'll listen to little tidbits, but completly block you out during a debate.</div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+		
+	
+		<div style="margin-top: 10px" align="right">
+			<!-- controls -->
+			
+			
+			
+				<img src="../../images/buttons/quote.gif" alt="Reply With Quote" border="0" />
+			
+			
+			
+			
+			
+			
+				
+			
+			<!-- / controls -->
+		</div>
+		
+	<!-- message, attachments, sig -->
+	
+	</td>
+</tr>
+</table>
+
+<!-- post 8050419 popup menu -->
+<div class="vbmenu_popup" id="postmenu_8050419_menu" style="display:none;">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">Punk_Rocker_22</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="../../community/members/u215985.html">View Public Profile</a></td></tr>
+	
+	
+	
+	
+	
+		<tr><td class="vbmenu_option">Find all posts by Punk_Rocker_22</td></tr>
+	
+	
+	</table>
+</div>
 <!-- / post 8050419 popup menu -->
-<!-- END TEMPLATE: postbit -->
-
-
-
-
-
-	</div>
-
+<!-- END TEMPLATE: postbit -->
+
+
+	</div>
 	<!-- BEGIN TEMPLATE: spacer_close -->
-
-
-		</div>
-
-	</div>
-
-</div>
-
-
-
+
+		</div>
+	</div>
+</div>
+
 <!-- / close content container -->
-<!-- END TEMPLATE: spacer_close -->
-
-
-
+<!-- END TEMPLATE: spacer_close -->
+
 <!-- / post #8050419 -->
 
-<!-- post #8050420 -->
-
-
-
+<!-- post #8050420 -->
+
 	<!-- BEGIN TEMPLATE: spacer_open -->
-<!-- open content container -->
+<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 5px 0px 5px" align="left">
 
-
-
-<div align="center">
-
-	<div class="page" style="width:100%; text-align:left">
-
-		<div style="padding:0px 5px 0px 5px" align="left">
-
-
-<!-- END TEMPLATE: spacer_open -->
-
-	<div id="edit8050420" style="padding:0px 0px 6px 0px">
-
-	
-
-
-
-
-
+<!-- END TEMPLATE: spacer_open -->
+	<div id="edit8050420" style="padding:0px 0px 6px 0px">
+	
+
+
 <!-- BEGIN TEMPLATE: postbit -->
-<table class="tborder" id="post8050420" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
-
-<tr>
-
-	<td class="thead" >
-
-		<div class="normal" style="float:right">
-
-			&nbsp;
-
-			#<strong>10</strong> &nbsp;
-
-			
-
-			
-
-
-
-			
-
-<img class="inlineimg" src="../../images/buttons/ignore.gif" 
-
-alt="Add Hare_Geist to your ignore list"
-
-border="0" /> &nbsp;
-
-
-
-			
-
-			
-
-			
-
-		</div>
-
-		
-
-		<div class="normal">
-
-			<!-- status icon and date -->
-
-			<a name="post8050420"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>
-
-			
-
-				2007-03-30, 18:45
-
-			
-
-			
-
-			<!-- / status icon and date -->
-
-		</div>
-
-	</td>
-
-</tr>
-
-<tr>
-
-	<td class="alt2" style="padding:0px">
-
-		<!-- user info -->
-
-		<table cellpadding="0" cellspacing="6" border="0" width="100%">
-
-		<tr>
-
-			
-
-			<td nowrap="nowrap">
-
-			
-
-				<div id="postmenu_8050420">
-
-					
-
-					<a class="bigusername" href="../../community/members/u208228.html">Hare_Geist</a>
-
+<table class="tborder" id="post8050420" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
+<tr>
+	<td class="thead" >
+		<div class="normal" style="float:right">
+			&nbsp;
+			#<strong>10</strong> &nbsp;
+			
+			
+
+			
+<img class="inlineimg" src="../../images/buttons/ignore.gif" 
+alt="Add Hare_Geist to your ignore list"
+border="0" /> &nbsp;
+
+			
+			
+			
+		</div>
+		
+		<div class="normal">
+			<!-- status icon and date -->
+			<a name="post8050420"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>
+			
+				2007-03-30, 18:45
+			
+			
+			<!-- / status icon and date -->
+		</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding:0px">
+		<!-- user info -->
+		<table cellpadding="0" cellspacing="6" border="0" width="100%">
+		<tr>
+			
+			<td nowrap="nowrap">
+			
+				<div id="postmenu_8050420">
+					
+					<a class="bigusername" href="../../community/members/u208228.html">Hare_Geist</a>
 					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->
-<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="Hare_Geist is offline" border="0" />
+<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="Hare_Geist is offline" border="0" />
+
 
-
-
-
-<!-- END TEMPLATE: postbit_onlinestatus -->
-
-					<script type="text/javascript"> vbmenu_register("postmenu_8050420", true); </script>
-
-					
-
-				</div>
-
-				
-
-				<div class="smallfont">Moderator</div>
-
-				
-
-				
-
-			</td>
-
-			<td width="100%">&nbsp;</td>
-
-			<td valign="top" nowrap="nowrap">
-
-				
-
-				<div class="smallfont">
-
-					<!-- location -->
-
-					    
-
-					
-
-					
-
-				</div>
-
-				
-
-			</td>
-
-		</tr>
-
-		</table>
-
-		<!-- / user info -->
-
-	</td>
-
-</tr>
-
-<tr>
-
-	<td class="alt1" id="td_post_8050420">
-
-	<!-- message, attachments, sig -->
-
-	
-
-		
-
-			<!-- icon and title -->
-
-			<div class="smallfont">
-
-				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />
-
-				
-
-			</div>
-
-			<hr size="1" style="color:#E8EFF4" />
-
-			<!-- / icon and title -->
-
-		
-
-		
-
-		<!-- message -->
-
+<!-- END TEMPLATE: postbit_onlinestatus -->
+					<script type="text/javascript"> vbmenu_register("postmenu_8050420", true); </script>
+					
+				</div>
+				
+				<div class="smallfont">Moderator</div>
+				
+				
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td valign="top" nowrap="nowrap">
+				
+				<div class="smallfont">
+					<!-- location -->
+					    
+					
+					
+				</div>
+				
+			</td>
+		</tr>
+		</table>
+		<!-- / user info -->
+	</td>
+</tr>
+<tr>
+	<td class="alt1" id="td_post_8050420">
+	<!-- message, attachments, sig -->
+	
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />
+				
+			</div>
+			<hr size="1" style="color:#E8EFF4" />
+			<!-- / icon and title -->
+		
+		
+		<!-- message -->
 		<div id="post_message_8050420">I both hate and am grateful towards Christianity. I hate it for being such a tremendous lie that I was indoctrinated with at such a young age, yet I'm grateful towards it since it was breaking its chains that caused be to begin asking questions and get interested in philosophy.<br />
 <br />
-Amor Fati and all that.</div>
-
-		<!-- / message -->
-
-	
-
-		
-
-		
-
-		
-
-		
-
-		
-
-	
-
-		<div style="margin-top: 10px" align="right">
-
-			<!-- controls -->
-
-			
-
-			
-
-			
-
-				<img src="../../images/buttons/quote.gif" alt="Reply With Quote" border="0" />
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-				
-
-			
-
-			<!-- / controls -->
-
-		</div>
-
-		
-
-	<!-- message, attachments, sig -->
-
-	
-
-	</td>
-
-</tr>
-
-</table>
-
-
-
-<!-- post 8050420 popup menu -->
-
-<div class="vbmenu_popup" id="postmenu_8050420_menu" style="display:none;">
-
-	<table cellpadding="4" cellspacing="1" border="0">
-
-	<tr>
-
-		<td class="thead">Hare_Geist</td>
-
-	</tr>
-
-	
-
-		<tr><td class="vbmenu_option"><a href="../../community/members/u208228.html">View Public Profile</a></td></tr>
-
-	
-
-	
-
-	
-
-	
-
-		<tr><td class="vbmenu_option">Visit Hare_Geist's homepage!</td></tr>
-
-	
-
-	
-
-		<tr><td class="vbmenu_option">Find all posts by Hare_Geist</td></tr>
-
-	
-
-	
-
-	</table>
-
-</div>
-
+Amor Fati and all that.</div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+		
+	
+		<div style="margin-top: 10px" align="right">
+			<!-- controls -->
+			
+			
+			
+				<img src="../../images/buttons/quote.gif" alt="Reply With Quote" border="0" />
+			
+			
+			
+			
+			
+			
+				
+			
+			<!-- / controls -->
+		</div>
+		
+	<!-- message, attachments, sig -->
+	
+	</td>
+</tr>
+</table>
+
+<!-- post 8050420 popup menu -->
+<div class="vbmenu_popup" id="postmenu_8050420_menu" style="display:none;">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">Hare_Geist</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="../../community/members/u208228.html">View Public Profile</a></td></tr>
+	
+	
+	
+	
+		<tr><td class="vbmenu_option">Visit Hare_Geist's homepage!</td></tr>
+	
+	
+		<tr><td class="vbmenu_option">Find all posts by Hare_Geist</td></tr>
+	
+	
+	</table>
+</div>
 <!-- / post 8050420 popup menu -->
-<!-- END TEMPLATE: postbit -->
-
-
-
-
-
-	</div>
-
+<!-- END TEMPLATE: postbit -->
+
+
+	</div>
 	<!-- BEGIN TEMPLATE: spacer_close -->
-
-
-		</div>
-
-	</div>
-
-</div>
-
-
-
+
+		</div>
+	</div>
+</div>
+
 <!-- / close content container -->
-<!-- END TEMPLATE: spacer_close -->
-
-
-
+<!-- END TEMPLATE: spacer_close -->
+
 <!-- / post #8050420 -->
-<div id="lastpost"></div></div>
-
-
-
-<!-- start content table -->
-
+<div id="lastpost"></div></div>
+
+<!-- start content table -->
 <!-- BEGIN TEMPLATE: spacer_open -->
-<!-- open content container -->
+<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 5px 0px 5px" align="left">
 
-
-
-<div align="center">
-
-	<div class="page" style="width:100%; text-align:left">
-
-		<div style="padding:0px 5px 0px 5px" align="left">
-
-
-<!-- END TEMPLATE: spacer_open -->
-
-<!-- / start content table -->
-
-
-
-<!-- controls below postbits -->
-
-<table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-top:-3px">
-
-<tr valign="top">
-
-	
-
-		<td class="smallfont"><img src="../../images/buttons/reply.gif" alt="Reply" border="0" /></td>
-
-	
-
-	
-
+<!-- END TEMPLATE: spacer_open -->
+<!-- / start content table -->
+
+<!-- controls below postbits -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-top:-3px">
+<tr valign="top">
+	
+		<td class="smallfont"><img src="../../images/buttons/reply.gif" alt="Reply" border="0" /></td>
+	
+	
 		<td align="right"><!-- BEGIN TEMPLATE: pagenav -->
-<div class="pagenav" align="right">
-
-<table class="tborder" cellpadding="3" cellspacing="1" border="0">
-
-<tr>
-
-	<td class="vbmenu_control" style="font-weight:normal">Page 1 of 3</td>
-
-	
-
-	
-
+<div class="pagenav" align="right">
+<table class="tborder" cellpadding="3" cellspacing="1" border="0">
+<tr>
+	<td class="vbmenu_control" style="font-weight:normal">Page 1 of 3</td>
+	
+	
 	<!-- BEGIN TEMPLATE: pagenav_curpage -->
-	<td class="alt2"><span class="smallfont" title="Showing results 1 to 10 of 26"><strong>1</strong></span></td>
-
+	<td class="alt2"><span class="smallfont" title="Showing results 1 to 10 of 26"><strong>1</strong></span></td>
  
 <!-- END TEMPLATE: pagenav_curpage --><!-- BEGIN TEMPLATE: pagenav_pagelink -->
 <td class="alt1"><a class="smallfont" href="../../community/threads/t1985318.html" title="Show results 11 to 20 of 26">2</a></td>
 <!-- END TEMPLATE: pagenav_pagelink --><!-- BEGIN TEMPLATE: pagenav_pagelink -->
 <td class="alt1"><a class="smallfont" href="../../community/threads/t1985318.html" title="Show results 21 to 26 of 26">3</a></td>
-<!-- END TEMPLATE: pagenav_pagelink -->
-
-	<td class="alt1"><a class="smallfont" href="../../community/threads/t1985318.html" title="Next Page - Results 11 to 20 of 26">&gt;</a></td>
-
-	
-
-	<td class="vbmenu_control" title="showthread.php?t=1985318"><a name="PageNav"></a></td>
-
-</tr>
-
-</table>
-
+<!-- END TEMPLATE: pagenav_pagelink -->
+	<td class="alt1"><a class="smallfont" href="../../community/threads/t1985318.html" title="Next Page - Results 11 to 20 of 26">&gt;</a></td>
+	
+	<td class="vbmenu_control" title="showthread.php?t=1985318"><a name="PageNav"></a></td>
+</tr>
+</table>
 </div>
-<!-- END TEMPLATE: pagenav -->
-
-		
-
-		</td>
-
-	
-
-</tr>
-
-</table>
-
-<!-- / controls below postbits -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- END TEMPLATE: pagenav -->
+		
+		</td>
+	
+</tr>
+</table>
+<!-- / controls below postbits -->
+
+
+
+
+
+
+
 <!-- BEGIN TEMPLATE: ad_showthread_beforeqr -->
 
-<!-- END TEMPLATE: ad_showthread_beforeqr -->
-
-
-
-
-
-<!-- lightbox scripts -->
-
-	<script type="text/javascript" src="clientscript/vbulletin_lightbox.js@v=372"></script>
-
-	<script type="text/javascript">
-
-	<!--
-
-	vBulletin.register_control("vB_Lightbox_Container", "posts", 1);
-
-	//-->
-
-	</script>
-
-<!-- / lightbox scripts -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- next / previous links -->
-
-	<br />
-
-	<div class="smallfont" align="center">
-
-		<strong>&laquo;</strong>
-
-			<a href="../../community/threads/t1985318.html" rel="nofollow">Previous Thread</a>
-
-			|
-
-			<a href="../../community/threads/t1985318.html" rel="nofollow">Next Thread</a>
-
-		<strong>&raquo;</strong>
-
-	</div>
-
-<!-- / next / previous links -->
-
-
-
-
-
-
-
-
-
-
-
-<!-- popup menu contents -->
-
-<br />
-
-
-
-<!-- thread tools menu -->
-
-<div class="vbmenu_popup" id="threadtools_menu" style="display:none">
-
-<form action="postings.php?t=1985318&amp;pollid=" method="post" name="threadadminform">
-
-	<table cellpadding="4" cellspacing="1" border="0">
-
-	<tr>
-
-		<td class="thead">Thread Tools<a name="goto_threadtools"></a></td>
-
-	</tr>
-
-	<tr>
-
-		<td class="vbmenu_option"><img class="inlineimg" src="../../images/buttons/printer.gif" alt="Show Printable Version" /> Show Printable Version</td>
-
-	</tr>
-
-	<tr>
-
-		<td class="vbmenu_option"><img class="inlineimg" src="../../images/buttons/sendtofriend.gif" alt="Email this Page" /> Email this Page</td>
-
-	</tr>
-
-	
-
-	
-
-	
-
-	</table>
-
-</form>
-
-</div>
-
-<!-- / thread tools menu -->
-
-
-
-<!-- **************************************************** -->
-
-
-
-<!-- thread display mode menu -->
-
-<div class="vbmenu_popup" id="displaymodes_menu" style="display:none">
-
-	<table cellpadding="4" cellspacing="1" border="0">
-
-	<tr>
-
-		<td class="thead">Display Modes<a name="goto_displaymodes"></a></td>
-
-	</tr>
-
-	<tr>
-
-	
-
-		<td class="vbmenu_option" title="nohilite"><img class="inlineimg" src="../../images/buttons/mode_linear.gif" alt="Linear Mode" /> <strong>Linear Mode</strong></td>
-
-	
-
-	</tr>
-
-	<tr>
-
-	
-
-		<td class="vbmenu_option"><img class="inlineimg" src="../../images/buttons/mode_hybrid.gif" alt="Hybrid Mode" /> Switch to Hybrid Mode</td>
-
-	
-
-	</tr>
-
-	<tr>
-
-	
-
-		<td class="vbmenu_option"><img class="inlineimg" src="../../images/buttons/mode_threaded.gif" alt="Threaded Mode" /> Switch to Threaded Mode</td>
-
-	
-
-	</tr>
-
-	</table>
-
-</div>
-
-<!-- / thread display mode menu -->
-
-
-
-<!-- **************************************************** -->
-
-
-
-
-
-
-
-<!-- **************************************************** -->
-
-
-
-
-
-
-
-<!-- / popup menu contents -->
-
-
-
-
-
-<!-- forum rules and admin links -->
-
-<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
-
-<tr valign="bottom">
-
-	<td width="100%" valign="top">
-
+<!-- END TEMPLATE: ad_showthread_beforeqr -->
+
+
+<!-- lightbox scripts -->
+	<script type="text/javascript" src="clientscript/vbulletin_lightbox.js@v=372"></script>
+	<script type="text/javascript">
+	<!--
+	vBulletin.register_control("vB_Lightbox_Container", "posts", 1);
+	//-->
+	</script>
+<!-- / lightbox scripts -->
+
+
+
+
+
+
+
+
+
+
+<!-- next / previous links -->
+	<br />
+	<div class="smallfont" align="center">
+		<strong>&laquo;</strong>
+			<a href="../../community/threads/t1985318.html" rel="nofollow">Previous Thread</a>
+			|
+			<a href="../../community/threads/t1985318.html" rel="nofollow">Next Thread</a>
+		<strong>&raquo;</strong>
+	</div>
+<!-- / next / previous links -->
+
+
+
+
+
+<!-- popup menu contents -->
+<br />
+
+<!-- thread tools menu -->
+<div class="vbmenu_popup" id="threadtools_menu" style="display:none">
+<form action="postings.php?t=1985318&amp;pollid=" method="post" name="threadadminform">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">Thread Tools<a name="goto_threadtools"></a></td>
+	</tr>
+	<tr>
+		<td class="vbmenu_option"><img class="inlineimg" src="../../images/buttons/printer.gif" alt="Show Printable Version" /> Show Printable Version</td>
+	</tr>
+	<tr>
+		<td class="vbmenu_option"><img class="inlineimg" src="../../images/buttons/sendtofriend.gif" alt="Email this Page" /> Email this Page</td>
+	</tr>
+	
+	
+	
+	</table>
+</form>
+</div>
+<!-- / thread tools menu -->
+
+<!-- **************************************************** -->
+
+<!-- thread display mode menu -->
+<div class="vbmenu_popup" id="displaymodes_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">Display Modes<a name="goto_displaymodes"></a></td>
+	</tr>
+	<tr>
+	
+		<td class="vbmenu_option" title="nohilite"><img class="inlineimg" src="../../images/buttons/mode_linear.gif" alt="Linear Mode" /> <strong>Linear Mode</strong></td>
+	
+	</tr>
+	<tr>
+	
+		<td class="vbmenu_option"><img class="inlineimg" src="../../images/buttons/mode_hybrid.gif" alt="Hybrid Mode" /> Switch to Hybrid Mode</td>
+	
+	</tr>
+	<tr>
+	
+		<td class="vbmenu_option"><img class="inlineimg" src="../../images/buttons/mode_threaded.gif" alt="Threaded Mode" /> Switch to Threaded Mode</td>
+	
+	</tr>
+	</table>
+</div>
+<!-- / thread display mode menu -->
+
+<!-- **************************************************** -->
+
+
+
+<!-- **************************************************** -->
+
+
+
+<!-- / popup menu contents -->
+
+
+<!-- forum rules and admin links -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+<tr valign="bottom">
+	<td width="100%" valign="top">
 		<!-- BEGIN TEMPLATE: forumrules -->
-<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="210">
-
-<thead>
-
-<tr>
-
-	<td class="thead">
-
-		<a style="float:right" href="#top" onclick="return toggle_collapse('forumrules')"><img id="collapseimg_forumrules" src="../../images/buttons/collapse_thead.gif" alt="" border="0" /></a>
-
-		Posting Rules
-
-	</td>
-
-</tr>
-
-</thead>
-
-<tbody id="collapseobj_forumrules" style="">
-
-<tr>
-
-	<td class="alt1" nowrap="nowrap"><div class="smallfont">
-
-		
-
-		<div>You <strong>may not</strong> post new threads</div>
-
-		<div>You <strong>may not</strong> post replies</div>
-
-		<div>You <strong>may not</strong> post attachments</div>
-
-		<div>You <strong>may not</strong> edit your posts</div>
-
-		<hr />
-
-		
-
-		<div>BB code is <strong>On</strong></div>
-
-		<div>Smilies are <strong>On</strong></div>
-
-		<div>[IMG] code is <strong>Off</strong></div>
-
-		<div>HTML code is <strong>Off</strong></div>
-
-	</div></td>
-
-</tr>
-
-</tbody>
-
+<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="210">
+<thead>
+<tr>
+	<td class="thead">
+		<a style="float:right" href="#top" onclick="return toggle_collapse('forumrules')"><img id="collapseimg_forumrules" src="../../images/buttons/collapse_thead.gif" alt="" border="0" /></a>
+		Posting Rules
+	</td>
+</tr>
+</thead>
+<tbody id="collapseobj_forumrules" style="">
+<tr>
+	<td class="alt1" nowrap="nowrap"><div class="smallfont">
+		
+		<div>You <strong>may not</strong> post new threads</div>
+		<div>You <strong>may not</strong> post replies</div>
+		<div>You <strong>may not</strong> post attachments</div>
+		<div>You <strong>may not</strong> edit your posts</div>
+		<hr />
+		
+		<div><a href="../../community/bbcode.html" target="_blank">BB code</a> is <strong>On</strong></div>
+		<div><a href="../../community/showsmilies.html" target="_blank">Smilies</a> are <strong>On</strong></div>
+		<div><a href="../../community/bbcode.html#imgcode" target="_blank">[IMG]</a> code is <strong>Off</strong></div>
+		<div>HTML code is <strong>Off</strong></div>
+	</div></td>
+</tr>
+</tbody>
 </table>
-<!-- END TEMPLATE: forumrules -->
-
-	</td>
-
-	<td class="smallfont" align="right">
-
-		<table cellpadding="0" cellspacing="0" border="0">
-
-		
-
-		<tr>
-
-			<td>
-
+<!-- END TEMPLATE: forumrules -->
+	</td>
+	<td class="smallfont" align="right">
+		<table cellpadding="0" cellspacing="0" border="0">
+		
+		<tr>
+			<td>
 			<!-- BEGIN TEMPLATE: forumjump -->
-<div class="smallfont" style="text-align:left; white-space:nowrap">
-
-	<form action="forumdisplay.php" method="get">
-
-	<input type="hidden" name="s" value="" />
-
-	<input type="hidden" name="daysprune" value="" />
-
-	<strong>Forum Jump</strong><br />
-
-	<select name="f" onchange="this.form.submit();">
-
-		<optgroup label="Site Areas">
-
-			<option value="cp" >User Control Panel</option>
-
-			<option value="pm" >Private Messages</option>
-
-			<option value="subs" >Subscriptions</option>
-
-			<option value="wol" >Who's Online</option>
-
-			<option value="search" >Search Forums</option>
-
-			<option value="home" >Forums Home</option>
-
-		</optgroup>
-
-		
-
-		<optgroup label="Forums">
-
+<div class="smallfont" style="text-align:left; white-space:nowrap">
+	<form action="forumdisplay.php" method="get">
+	<input type="hidden" name="s" value="" />
+	<input type="hidden" name="daysprune" value="" />
+	<strong>Forum Jump</strong><br />
+	<select name="f" onchange="this.form.submit();">
+		<optgroup label="Site Areas">
+			<option value="cp" >User Control Panel</option>
+			<option value="pm" >Private Messages</option>
+			<option value="subs" >Subscriptions</option>
+			<option value="wol" >Who's Online</option>
+			<option value="search" >Search Forums</option>
+			<option value="home" >Forums Home</option>
+		</optgroup>
+		
+		<optgroup label="Forums">
 		<!-- BEGIN TEMPLATE: option -->
-<option value="141" class="fjdpth0" > About</option>
+<option value="141" class="fjdpth0" > About</option>
 
-
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="149" class="fjdpth1" >&nbsp; &nbsp;  News of the Temple</option>
-
+<option value="149" class="fjdpth1" >&nbsp; &nbsp;  News of the Temple</option>
 
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="188" class="fjdpth1" >&nbsp; &nbsp;  Help and Suggestions</option>
+<option value="188" class="fjdpth1" >&nbsp; &nbsp;  Help and Suggestions</option>
 
-
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="145" class="fjdpth0" > Art</option>
-
+<option value="145" class="fjdpth0" > Art</option>
 
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="175" class="fjdpth1" >&nbsp; &nbsp;  Printed Matter</option>
+<option value="175" class="fjdpth1" >&nbsp; &nbsp;  Printed Matter</option>
 
-
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="166" class="fjdpth1" >&nbsp; &nbsp;  Vogon Poetry - The Worst in The Universe</option>
-
+<option value="166" class="fjdpth1" >&nbsp; &nbsp;  Vogon Poetry - The Worst in The Universe</option>
 
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="182" class="fjdpth1" >&nbsp; &nbsp;  Art and Design</option>
+<option value="182" class="fjdpth1" >&nbsp; &nbsp;  Art and Design</option>
 
-
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="191" class="fjdpth1" >&nbsp; &nbsp;  Set the Style</option>
-
+<option value="191" class="fjdpth1" >&nbsp; &nbsp;  Set the Style</option>
 
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="143" class="fjdpth0" > Ego</option>
+<option value="143" class="fjdpth0" > Ego</option>
 
-
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="153" class="fjdpth1" >&nbsp; &nbsp;  Better Living Through Chemistry</option>
-
+<option value="153" class="fjdpth1" >&nbsp; &nbsp;  Better Living Through Chemistry</option>
 
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="152" class="fjdpth1" >&nbsp; &nbsp;  Sex and Affection</option>
+<option value="152" class="fjdpth1" >&nbsp; &nbsp;  Sex and Affection</option>
 
-
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="155" class="fjdpth1" >&nbsp; &nbsp;  Bad Ideas</option>
-
+<option value="155" class="fjdpth1" >&nbsp; &nbsp;  Bad Ideas</option>
 
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="176" class="fjdpth1" >&nbsp; &nbsp;  Oral Indulgences</option>
+<option value="176" class="fjdpth1" >&nbsp; &nbsp;  Oral Indulgences</option>
 
-
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="183" class="fjdpth1" >&nbsp; &nbsp;  Money Money Money...</option>
-
+<option value="183" class="fjdpth1" >&nbsp; &nbsp;  Money Money Money...</option>
 
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="210" class="fjdpth0" > Ego</option>
+<option value="210" class="fjdpth0" > Ego</option>
 
-
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="151" class="fjdpth1" >&nbsp; &nbsp;  Spurious Generalities</option>
+<option value="151" class="fjdpth1" >&nbsp; &nbsp;  Spurious Generalities</option>
 
-
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="213" class="fjdpth1" >&nbsp; &nbsp;  Half Baked</option>
-
+<option value="213" class="fjdpth1" >&nbsp; &nbsp;  Half Baked</option>
 
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="157" class="fjdpth1" >&nbsp; &nbsp;  Bitch and Moan</option>
+<option value="157" class="fjdpth1" >&nbsp; &nbsp;  Bitch and Moan</option>
 
-
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="180" class="fjdpth1" >&nbsp; &nbsp;  Reinvent Yourself</option>
-
+<option value="180" class="fjdpth1" >&nbsp; &nbsp;  Reinvent Yourself</option>
 
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="189" class="fjdpth1" >&nbsp; &nbsp;  Headshrinkers</option>
+<option value="189" class="fjdpth1" >&nbsp; &nbsp;  Headshrinkers</option>
 
-
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="147" class="fjdpth0" > Entertainment</option>
-
+<option value="147" class="fjdpth0" > Entertainment</option>
 
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="161" class="fjdpth1" >&nbsp; &nbsp;  I Found it on the Web</option>
+<option value="161" class="fjdpth1" >&nbsp; &nbsp;  I Found it on the Web</option>
 
-
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="201" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  I Need to Find it on the Web</option>
-
+<option value="201" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  I Need to Find it on the Web</option>
 
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="203" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Flesh Art</option>
+<option value="203" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Flesh Art</option>
 
-
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="154" class="fjdpth1" >&nbsp; &nbsp;  ... and Rock and Roll</option>
-
+<option value="154" class="fjdpth1" >&nbsp; &nbsp;  ... and Rock and Roll</option>
 
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="165" class="fjdpth1" >&nbsp; &nbsp;  Games People Play</option>
+<option value="165" class="fjdpth1" >&nbsp; &nbsp;  Games People Play</option>
 
-
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="202" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  The Game Vault</option>
-
+<option value="202" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  The Game Vault</option>
 
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="158" class="fjdpth1" >&nbsp; &nbsp;  Moving Pictures</option>
+<option value="158" class="fjdpth1" >&nbsp; &nbsp;  Moving Pictures</option>
 
-
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="169" class="fjdpth1" >&nbsp; &nbsp;  Anime</option>
-
+<option value="169" class="fjdpth1" >&nbsp; &nbsp;  Anime</option>
 
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="164" class="fjdpth1" >&nbsp; &nbsp;  Go Team!</option>
+<option value="164" class="fjdpth1" >&nbsp; &nbsp;  Go Team!</option>
 
-
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="148" class="fjdpth0" > Nature</option>
-
+<option value="148" class="fjdpth0" > Nature</option>
 
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="185" class="fjdpth1" >&nbsp; &nbsp;  Noah's Ark</option>
+<option value="185" class="fjdpth1" >&nbsp; &nbsp;  Noah's Ark</option>
 
-
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="150" class="fjdpth1" >&nbsp; &nbsp;  Green Planet</option>
+<option value="150" class="fjdpth1" >&nbsp; &nbsp;  Green Planet</option>
 
-
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="186" class="fjdpth1" >&nbsp; &nbsp;  The Great Outdoors</option>
-
+<option value="186" class="fjdpth1" >&nbsp; &nbsp;  The Great Outdoors</option>
 
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="193" class="fjdpth1" >&nbsp; &nbsp;  Clean Tech</option>
+<option value="193" class="fjdpth1" >&nbsp; &nbsp;  Clean Tech</option>
 
-
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="146" class="fjdpth0" > Science</option>
-
+<option value="146" class="fjdpth0" > Science</option>
 
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="167" class="fjdpth1" >&nbsp; &nbsp;  Backyard Ballistics</option>
+<option value="167" class="fjdpth1" >&nbsp; &nbsp;  Backyard Ballistics</option>
 
-
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="174" class="fjdpth1" >&nbsp; &nbsp;  Laboratory Tips</option>
-
+<option value="174" class="fjdpth1" >&nbsp; &nbsp;  Laboratory Tips</option>
 
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="173" class="fjdpth1" >&nbsp; &nbsp;  Mad Scientists</option>
+<option value="173" class="fjdpth1" >&nbsp; &nbsp;  Mad Scientists</option>
 
-
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="190" class="fjdpth1" >&nbsp; &nbsp;  Science of the Damned</option>
-
+<option value="190" class="fjdpth1" >&nbsp; &nbsp;  Science of the Damned</option>
 
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="142" class="fjdpth0" > Society</option>
+<option value="142" class="fjdpth0" > Society</option>
 
-
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="162" class="fjdpth1" >&nbsp; &nbsp;  Politics: Left, Right, and Center</option>
-
+<option value="162" class="fjdpth1" >&nbsp; &nbsp;  Politics: Left, Right, and Center</option>
 
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="163" class="fjsel" selected="selected">&nbsp; &nbsp;  My God Can Beat the Shit Out of Your God</option>
+<option value="163" class="fjsel" selected="selected">&nbsp; &nbsp;  My God Can Beat the Shit Out of Your God</option>
 
-
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="170" class="fjdpth1" >&nbsp; &nbsp;  Weapons and Combat</option>
-
+<option value="170" class="fjdpth1" >&nbsp; &nbsp;  Weapons and Combat</option>
 
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="179" class="fjdpth1" >&nbsp; &nbsp;  Oh the Humanities!</option>
+<option value="179" class="fjdpth1" >&nbsp; &nbsp;  Oh the Humanities!</option>
 
-
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="156" class="fjdpth1" >&nbsp; &nbsp;  Conspiracy!</option>
-
+<option value="156" class="fjdpth1" >&nbsp; &nbsp;  Conspiracy!</option>
 
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="177" class="fjdpth1" >&nbsp; &nbsp;  Travellers Travails</option>
+<option value="177" class="fjdpth1" >&nbsp; &nbsp;  Travellers Travails</option>
 
-
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="181" class="fjdpth1" >&nbsp; &nbsp;  Cunning Linguists</option>
-
+<option value="181" class="fjdpth1" >&nbsp; &nbsp;  Cunning Linguists</option>
 
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="199" class="fjdpth1" >&nbsp; &nbsp;  News of the World</option>
+<option value="199" class="fjdpth1" >&nbsp; &nbsp;  News of the World</option>
 
-
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="192" class="fjdpth1" >&nbsp; &nbsp;  Old School, New School, Fool School</option>
+<option value="192" class="fjdpth1" >&nbsp; &nbsp;  Old School, New School, Fool School</option>
 
-
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="205" class="fjdpth1" >&nbsp; &nbsp;  I Am The Law!</option>
-
+<option value="205" class="fjdpth1" >&nbsp; &nbsp;  I Am The Law!</option>
 
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="214" class="fjdpth1" >&nbsp; &nbsp;  Together We Serve</option>
+<option value="214" class="fjdpth1" >&nbsp; &nbsp;  Together We Serve</option>
 
-
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="144" class="fjdpth0" > Technology</option>
-
+<option value="144" class="fjdpth0" > Technology</option>
 
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="159" class="fjdpth1" >&nbsp; &nbsp;  Technophiliacs &amp; Technophiles</option>
+<option value="159" class="fjdpth1" >&nbsp; &nbsp;  Technophiliacs &amp; Technophiles</option>
 
-
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="200" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Hello World!</option>
-
+<option value="200" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Hello World!</option>
 
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="197" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Cellular Mods</option>
+<option value="197" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Cellular Mods</option>
 
-
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="160" class="fjdpth1" >&nbsp; &nbsp;  Network (in)Security</option>
-
+<option value="160" class="fjdpth1" >&nbsp; &nbsp;  Network (in)Security</option>
 
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="172" class="fjdpth1" >&nbsp; &nbsp;  Gearheads</option>
+<option value="172" class="fjdpth1" >&nbsp; &nbsp;  Gearheads</option>
 
-
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="168" class="fjdpth1" >&nbsp; &nbsp;  DIY</option>
-
+<option value="168" class="fjdpth1" >&nbsp; &nbsp;  DIY</option>
 
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="171" class="fjdpth1" >&nbsp; &nbsp;  Radio Free Amerika</option>
+<option value="171" class="fjdpth1" >&nbsp; &nbsp;  Radio Free Amerika</option>
 
-
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="184" class="fjdpth1" >&nbsp; &nbsp;  Everything *NIX</option>
-
+<option value="184" class="fjdpth1" >&nbsp; &nbsp;  Everything *NIX</option>
 
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="195" class="fjdpth1" >&nbsp; &nbsp;  Cult of Mac</option>
+<option value="195" class="fjdpth1" >&nbsp; &nbsp;  Cult of Mac</option>
 
-
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="194" class="fjdpth1" >&nbsp; &nbsp;  It came from Redmond</option>
-
+<option value="194" class="fjdpth1" >&nbsp; &nbsp;  It came from Redmond</option>
 
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="211" class="fjdpth0" > ...</option>
+<option value="211" class="fjdpth0" > ...</option>
 
-
 <!-- END TEMPLATE: option --><!-- BEGIN TEMPLATE: option -->
-<option value="212" class="fjdpth1" >&nbsp; &nbsp;  Not in MY Forum</option>
-
-
-<!-- END TEMPLATE: option -->
-
-		</optgroup>
-
-		
+<option value="212" class="fjdpth1" >&nbsp; &nbsp;  Not in MY Forum</option>
 
+<!-- END TEMPLATE: option -->
+		</optgroup>
+		
 	</select><!-- BEGIN TEMPLATE: gobutton -->
 <input type="submit" class="button" value="Go"  />
-<!-- END TEMPLATE: gobutton -->
-
-	</form>
-
+<!-- END TEMPLATE: gobutton -->
+	</form>
 </div>
-<!-- END TEMPLATE: forumjump -->
-
-			</td>
-
-		</tr>
-
-		</table>
-
-	</td>
-
-</tr>
-
-</table>
-
-<!-- /forum rules and admin links -->
-
-
-
-<br />
-
-
-
-
-
-
-
+<!-- END TEMPLATE: forumjump -->
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+</table>
+<!-- /forum rules and admin links -->
+
+<br />
+
+
+
 
 					</td>
 					<td width="13" background="../../images/t3/0rm.jpg"><img src="../../images/t3/0.gif"></td>
@@ -4948,8 +2797,10 @@ Amor Fati and all that.</div>
 			</table>
 		</td>
 
-		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots -->
-		<td width="20%" align="center" valign="top">
+		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots.
+		     min-width keeps this fluid 20% column from ever squeezing narrower
+		     than the fixed-170px table it holds, at any viewport width. -->
+		<td width="20%" align="center" valign="top" style="min-width:190px">
 
 			<table width="170" border="0" cellpadding="0" cellspacing="0">
 				<tr>

@@ -183,12 +183,26 @@
 
 		<!-- Content column -->
 		<td align="left">
-			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<!-- table-layout:fixed makes the browser honor this row's column
+			     widths exactly instead of auto-redistributing them: with the
+			     default "auto" layout, a 13px + 97% + 13px row never sums to
+			     exactly 100% of a fluid table except at one specific width,
+			     so at any other width (all of them, on a responsive page)
+			     the browser proportionally inflates the two fixed-13px
+			     corner columns to reconcile the mismatch - stretching
+			     3lt.jpg/3rt.jpg's cells past the images' own 13px width and
+			     tiling a second, partial copy of the curve artwork into the
+			     extra space, which reads as the rounded corner being cut
+			     off. Under fixed layout this row's widths become the whole
+			     table's column template (13px / remainder / 13px) and are
+			     used verbatim at every width, so the corner cells always
+			     match their images exactly and never need to repeat. -->
+			<table width="100%" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed">
 
 				<tr>
-					<td width="13" height="11" background="../../images/t3/3lt.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="97%" height="11" background="../../images/t3/3ct.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="13" height="11" background="../../images/t3/3rt.jpg"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3lt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3ct.jpg"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3rt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
 				</tr>
 
 				<!-- Ubiquitous nav menu - only real, existing pages are hyperlinked; everything
@@ -222,7 +236,7 @@
 
 				<tr valign="top">
 					<td width="13" background="../../images/t3/0cm.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="97%" height="640" background="../../images/t3/0cm.jpg">
+					<td width="97%" height="640" background="../../images/t3/0cm.jpg" style="padding-top:6px">
 <!-- breadcrumb, login, pm info -->
 <table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
 <tr>
@@ -470,45 +484,7 @@ var highlightwords = "";
 //-->
 </script>
 <script type="text/javascript" src="clientscript/vbulletin_thrdpostlist.js@v=372"></script>
-<script type="text/javascript">
-<!--
-// initialize some variables
-var curpostid = 6076319;
-var quickreply = false;
 
-// cached posts (no page reload required to view)
-pd[6076319] = '<!-- BEGIN TEMPLATE: postbit_wrapper -->\n<!-- post #6076319 -->\r\n\r\n	<!-- BEGIN TEMPLATE: spacer_open -->\n<!-- open content container -->\r\n\r\n<div align="center">\r\n	<div class="page" style="width:100%; text-align:left">\r\n		<div style="padding:0px 5px 0px 5px" align="left">\r\n\n<!-- END TEMPLATE: spacer_open -->\r\n	<div id="edit6076319" style="padding:0px 0px 6px 0px">\r\n	<!-- this is not the last post shown on the page -->\r\n\r\n\r\n<!-- BEGIN TEMPLATE: postbit -->\n<table class="tborder" id="post6076319" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">\r\n<tr>\r\n	<td class="thead" >\r\n		<div class="normal" style="float:right">\r\n			&nbsp;\r\n			#<strong>1</strong> &nbsp;\r\n			\r\n			\r\n\r\n			\r\n<img class="inlineimg" src="../../images/buttons/ignore.gif" \r\nalt="Add diehard993 to your ignore list"\r\nborder="0" /> &nbsp;\r\n\r\n			\r\n			\r\n			\r\n		</div>\r\n		\r\n		<div class="normal">\r\n			<!-- status icon and date -->\r\n			<a name="post6076319"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>\r\n			\r\n				2004-04-18, 01:56\r\n			\r\n			\r\n			<!-- / status icon and date -->\r\n		</div>\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt2" style="padding:0px">\r\n		<!-- user info -->\r\n		<table cellpadding="0" cellspacing="6" border="0" width="100%">\r\n		<tr>\r\n			\r\n			<td nowrap="nowrap">\r\n			\r\n				<div id="postmenu_6076319">\r\n					\r\n					diehard993\r\n					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->\n<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="diehard993 is offline" border="0" />\r\n\r\n\n<!-- END TEMPLATE: postbit_onlinestatus -->\r\n					<script type="text/javascript"> vbmenu_register("postmenu_6076319", true); <\/scr' + 'ipt>\r\n					\r\n				</div>\r\n				\r\n				<div class="smallfont">Regular</div>\r\n				\r\n				\r\n			</td>\r\n			<td width="100%">&nbsp;</td>\r\n			<td valign="top" nowrap="nowrap">\r\n				\r\n				<div class="smallfont">\r\n					<!-- location -->Somewhere in the British Commonwealth\r\n					    \r\n					\r\n					\r\n				</div>\r\n				\r\n			</td>\r\n		</tr>\r\n		</table>\r\n		<!-- / user info -->\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt1" id="td_post_6076319">\r\n	<!-- message, attachments, sig -->\r\n	\r\n		\r\n			<!-- icon and title -->\r\n			<div class="smallfont">\r\n				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />\r\n				\r\n			</div>\r\n			<hr size="1" style="color:#E8EFF4" />\r\n			<!-- / icon and title -->\r\n		\r\n		\r\n		<!-- message -->\r\n		<div id="post_message_6076319">like Protestant, Babtist, methodist, etc.<br />\n<br />\n</div>\r\n		<!-- / message -->\r\n	\r\n		\r\n		\r\n		\r\n		\r\n		\r\n	\r\n		<div style="margin-top: 10px" align="right">\r\n			<!-- controls -->\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n				\r\n			\r\n			<!-- / controls -->\r\n		</div>\r\n		\r\n	<!-- message, attachments, sig -->\r\n	\r\n	</td>\r\n</tr>\r\n</table>\r\n\r\n<!-- post 6076319 popup menu -->\r\n<div class="vbmenu_popup" id="postmenu_6076319_menu" style="display:none;">\r\n	<table cellpadding="4" cellspacing="1" border="0">\r\n	<tr>\r\n		<td class="thead">diehard993</td>\r\n	</tr>\r\n	\r\n		<tr><td class="vbmenu_option">View Public Profile</td></tr>\r\n	\r\n	\r\n	\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Find all posts by diehard993</td></tr>\r\n	\r\n	\r\n	</table>\r\n</div>\r\n<!-- / post 6076319 popup menu -->\n<!-- END TEMPLATE: postbit -->\r\n\r\n\r\n	</div>\r\n	<!-- BEGIN TEMPLATE: spacer_close -->\n\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n<!-- / close content container -->\n<!-- END TEMPLATE: spacer_close -->\r\n\r\n<!-- / post #6076319 -->\n<!-- END TEMPLATE: postbit_wrapper -->';
-pd[6076320] = '<!-- BEGIN TEMPLATE: postbit_wrapper -->\n<!-- post #6076320 -->\r\n\r\n	<!-- BEGIN TEMPLATE: spacer_open -->\n<!-- open content container -->\r\n\r\n<div align="center">\r\n	<div class="page" style="width:100%; text-align:left">\r\n		<div style="padding:0px 5px 0px 5px" align="left">\r\n\n<!-- END TEMPLATE: spacer_open -->\r\n	<div id="edit6076320" style="padding:0px 0px 6px 0px">\r\n	<!-- this is not the last post shown on the page -->\r\n\r\n\r\n<!-- BEGIN TEMPLATE: postbit -->\n<table class="tborder" id="post6076320" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">\r\n<tr>\r\n	<td class="thead" >\r\n		<div class="normal" style="float:right">\r\n			&nbsp;\r\n			#<strong>2</strong> &nbsp;\r\n			\r\n			\r\n\r\n			\r\n<img class="inlineimg" src="../../images/buttons/ignore.gif" \r\nalt="Add ashesofzen to your ignore list"\r\nborder="0" /> &nbsp;\r\n\r\n			\r\n			\r\n			\r\n		</div>\r\n		\r\n		<div class="normal">\r\n			<!-- status icon and date -->\r\n			<a name="post6076320"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>\r\n			\r\n				2004-04-18, 02:00\r\n			\r\n			\r\n			<!-- / status icon and date -->\r\n		</div>\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt2" style="padding:0px">\r\n		<!-- user info -->\r\n		<table cellpadding="0" cellspacing="6" border="0" width="100%">\r\n		<tr>\r\n			\r\n			<td nowrap="nowrap">\r\n			\r\n				<div id="postmenu_6076320">\r\n					\r\n					ashesofzen\r\n					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->\n<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="ashesofzen is offline" border="0" />\r\n\r\n\n<!-- END TEMPLATE: postbit_onlinestatus -->\r\n					<script type="text/javascript"> vbmenu_register("postmenu_6076320", true); <\/scr' + 'ipt>\r\n					\r\n				</div>\r\n				\r\n				<div class="smallfont">Regular</div>\r\n				\r\n				\r\n			</td>\r\n			<td width="100%">&nbsp;</td>\r\n			<td valign="top" nowrap="nowrap">\r\n				\r\n				<div class="smallfont">\r\n					<!-- location -->Ventura, CA\r\n					    \r\n					\r\n					\r\n				</div>\r\n				\r\n			</td>\r\n		</tr>\r\n		</table>\r\n		<!-- / user info -->\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt1" id="td_post_6076320">\r\n	<!-- message, attachments, sig -->\r\n	\r\n		\r\n			<!-- icon and title -->\r\n			<div class="smallfont">\r\n				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />\r\n				\r\n			</div>\r\n			<hr size="1" style="color:#E8EFF4" />\r\n			<!-- / icon and title -->\r\n		\r\n		\r\n		<!-- message -->\r\n		<div id="post_message_6076320">Doctrine, mostly.</div>\r\n		<!-- / message -->\r\n	\r\n		\r\n		\r\n		\r\n		\r\n		\r\n	\r\n		<div style="margin-top: 10px" align="right">\r\n			<!-- controls -->\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n				\r\n			\r\n			<!-- / controls -->\r\n		</div>\r\n		\r\n	<!-- message, attachments, sig -->\r\n	\r\n	</td>\r\n</tr>\r\n</table>\r\n\r\n<!-- post 6076320 popup menu -->\r\n<div class="vbmenu_popup" id="postmenu_6076320_menu" style="display:none;">\r\n	<table cellpadding="4" cellspacing="1" border="0">\r\n	<tr>\r\n		<td class="thead">ashesofzen</td>\r\n	</tr>\r\n	\r\n		<tr><td class="vbmenu_option">View Public Profile</td></tr>\r\n	\r\n	\r\n	\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Find all posts by ashesofzen</td></tr>\r\n	\r\n	\r\n	</table>\r\n</div>\r\n<!-- / post 6076320 popup menu -->\n<!-- END TEMPLATE: postbit -->\r\n\r\n\r\n	</div>\r\n	<!-- BEGIN TEMPLATE: spacer_close -->\n\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n<!-- / close content container -->\n<!-- END TEMPLATE: spacer_close -->\r\n\r\n<!-- / post #6076320 -->\n<!-- END TEMPLATE: postbit_wrapper -->';
-pd[6076321] = '<!-- BEGIN TEMPLATE: postbit_wrapper -->\n<!-- post #6076321 -->\r\n\r\n	<!-- BEGIN TEMPLATE: spacer_open -->\n<!-- open content container -->\r\n\r\n<div align="center">\r\n	<div class="page" style="width:100%; text-align:left">\r\n		<div style="padding:0px 5px 0px 5px" align="left">\r\n\n<!-- END TEMPLATE: spacer_open -->\r\n	<div id="edit6076321" style="padding:0px 0px 6px 0px">\r\n	<!-- this is not the last post shown on the page -->\r\n\r\n\r\n<!-- BEGIN TEMPLATE: postbit -->\n<table class="tborder" id="post6076321" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">\r\n<tr>\r\n	<td class="thead" >\r\n		<div class="normal" style="float:right">\r\n			&nbsp;\r\n			#<strong>3</strong> &nbsp;\r\n			\r\n			\r\n\r\n			\r\n<img class="inlineimg" src="../../images/buttons/ignore.gif" \r\nalt="Add Hexadecimal to your ignore list"\r\nborder="0" /> &nbsp;\r\n\r\n			\r\n			\r\n			\r\n		</div>\r\n		\r\n		<div class="normal">\r\n			<!-- status icon and date -->\r\n			<a name="post6076321"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>\r\n			\r\n				2004-04-18, 02:20\r\n			\r\n			\r\n			<!-- / status icon and date -->\r\n		</div>\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt2" style="padding:0px">\r\n		<!-- user info -->\r\n		<table cellpadding="0" cellspacing="6" border="0" width="100%">\r\n		<tr>\r\n			\r\n			<td nowrap="nowrap">\r\n			\r\n				<div id="postmenu_6076321">\r\n					\r\n					<a class="bigusername" href="../../community/members/u158479.html">Hexadecimal</a>\r\n					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->\n<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="Hexadecimal is offline" border="0" />\r\n\r\n\n<!-- END TEMPLATE: postbit_onlinestatus -->\r\n					<script type="text/javascript"> vbmenu_register("postmenu_6076321", true); <\/scr' + 'ipt>\r\n					\r\n				</div>\r\n				\r\n				<div class="smallfont">Regular</div>\r\n				\r\n				\r\n			</td>\r\n			<td width="100%">&nbsp;</td>\r\n			<td valign="top" nowrap="nowrap">\r\n				\r\n				<div class="smallfont">\r\n					<!-- location -->Rockford, IL\r\n					    \r\n					\r\n					\r\n				</div>\r\n				\r\n			</td>\r\n		</tr>\r\n		</table>\r\n		<!-- / user info -->\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt1" id="td_post_6076321">\r\n	<!-- message, attachments, sig -->\r\n	\r\n		\r\n			<!-- icon and title -->\r\n			<div class="smallfont">\r\n				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />\r\n				\r\n			</div>\r\n			<hr size="1" style="color:#E8EFF4" />\r\n			<!-- / icon and title -->\r\n		\r\n		\r\n		<!-- message -->\r\n		<div id="post_message_6076321">Yes, doctrine...especially between the Protestant subgroups and the Catholics.</div>\r\n		<!-- / message -->\r\n	\r\n		\r\n		\r\n		\r\n		\r\n		\r\n	\r\n		<div style="margin-top: 10px" align="right">\r\n			<!-- controls -->\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n				\r\n			\r\n			<!-- / controls -->\r\n		</div>\r\n		\r\n	<!-- message, attachments, sig -->\r\n	\r\n	</td>\r\n</tr>\r\n</table>\r\n\r\n<!-- post 6076321 popup menu -->\r\n<div class="vbmenu_popup" id="postmenu_6076321_menu" style="display:none;">\r\n	<table cellpadding="4" cellspacing="1" border="0">\r\n	<tr>\r\n		<td class="thead">Hexadecimal</td>\r\n	</tr>\r\n	\r\n		<tr><td class="vbmenu_option"><a href="../../community/members/u158479.html">View Public Profile</a></td></tr>\r\n	\r\n	\r\n	\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Find all posts by Hexadecimal</td></tr>\r\n	\r\n	\r\n	</table>\r\n</div>\r\n<!-- / post 6076321 popup menu -->\n<!-- END TEMPLATE: postbit -->\r\n\r\n\r\n	</div>\r\n	<!-- BEGIN TEMPLATE: spacer_close -->\n\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n<!-- / close content container -->\n<!-- END TEMPLATE: spacer_close -->\r\n\r\n<!-- / post #6076321 -->\n<!-- END TEMPLATE: postbit_wrapper -->';
-pd[6076322] = '<!-- BEGIN TEMPLATE: postbit_wrapper -->\n<!-- post #6076322 -->\r\n\r\n	<!-- BEGIN TEMPLATE: spacer_open -->\n<!-- open content container -->\r\n\r\n<div align="center">\r\n	<div class="page" style="width:100%; text-align:left">\r\n		<div style="padding:0px 5px 0px 5px" align="left">\r\n\n<!-- END TEMPLATE: spacer_open -->\r\n	<div id="edit6076322" style="padding:0px 0px 6px 0px">\r\n	<!-- this is not the last post shown on the page -->\r\n\r\n\r\n<!-- BEGIN TEMPLATE: postbit -->\n<table class="tborder" id="post6076322" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">\r\n<tr>\r\n	<td class="thead" >\r\n		<div class="normal" style="float:right">\r\n			&nbsp;\r\n			#<strong>4</strong> &nbsp;\r\n			\r\n			\r\n\r\n			\r\n<img class="inlineimg" src="../../images/buttons/ignore.gif" \r\nalt="Add ashesofzen to your ignore list"\r\nborder="0" /> &nbsp;\r\n\r\n			\r\n			\r\n			\r\n		</div>\r\n		\r\n		<div class="normal">\r\n			<!-- status icon and date -->\r\n			<a name="post6076322"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>\r\n			\r\n				2004-04-18, 02:32\r\n			\r\n			\r\n			<!-- / status icon and date -->\r\n		</div>\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt2" style="padding:0px">\r\n		<!-- user info -->\r\n		<table cellpadding="0" cellspacing="6" border="0" width="100%">\r\n		<tr>\r\n			\r\n			<td nowrap="nowrap">\r\n			\r\n				<div id="postmenu_6076322">\r\n					\r\n					ashesofzen\r\n					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->\n<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="ashesofzen is offline" border="0" />\r\n\r\n\n<!-- END TEMPLATE: postbit_onlinestatus -->\r\n					<script type="text/javascript"> vbmenu_register("postmenu_6076322", true); <\/scr' + 'ipt>\r\n					\r\n				</div>\r\n				\r\n				<div class="smallfont">Regular</div>\r\n				\r\n				\r\n			</td>\r\n			<td width="100%">&nbsp;</td>\r\n			<td valign="top" nowrap="nowrap">\r\n				\r\n				<div class="smallfont">\r\n					<!-- location -->Ventura, CA\r\n					    \r\n					\r\n					\r\n				</div>\r\n				\r\n			</td>\r\n		</tr>\r\n		</table>\r\n		<!-- / user info -->\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt1" id="td_post_6076322">\r\n	<!-- message, attachments, sig -->\r\n	\r\n		\r\n			<!-- icon and title -->\r\n			<div class="smallfont">\r\n				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />\r\n				\r\n			</div>\r\n			<hr size="1" style="color:#E8EFF4" />\r\n			<!-- / icon and title -->\r\n		\r\n		\r\n		<!-- message -->\r\n		<div id="post_message_6076322">O, but think of all the wonderful <i>history</i> we\'ve gotten from those various conflicts!<br />\n<br />\n&amp;lt;/cynicism&amp;gt;</div>\r\n		<!-- / message -->\r\n	\r\n		\r\n		\r\n		\r\n		\r\n		\r\n	\r\n		<div style="margin-top: 10px" align="right">\r\n			<!-- controls -->\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n				\r\n			\r\n			<!-- / controls -->\r\n		</div>\r\n		\r\n	<!-- message, attachments, sig -->\r\n	\r\n	</td>\r\n</tr>\r\n</table>\r\n\r\n<!-- post 6076322 popup menu -->\r\n<div class="vbmenu_popup" id="postmenu_6076322_menu" style="display:none;">\r\n	<table cellpadding="4" cellspacing="1" border="0">\r\n	<tr>\r\n		<td class="thead">ashesofzen</td>\r\n	</tr>\r\n	\r\n		<tr><td class="vbmenu_option">View Public Profile</td></tr>\r\n	\r\n	\r\n	\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Find all posts by ashesofzen</td></tr>\r\n	\r\n	\r\n	</table>\r\n</div>\r\n<!-- / post 6076322 popup menu -->\n<!-- END TEMPLATE: postbit -->\r\n\r\n\r\n	</div>\r\n	<!-- BEGIN TEMPLATE: spacer_close -->\n\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n<!-- / close content container -->\n<!-- END TEMPLATE: spacer_close -->\r\n\r\n<!-- / post #6076322 -->\n<!-- END TEMPLATE: postbit_wrapper -->';
-pd[6076323] = '<!-- BEGIN TEMPLATE: postbit_wrapper -->\n<!-- post #6076323 -->\r\n\r\n	<!-- BEGIN TEMPLATE: spacer_open -->\n<!-- open content container -->\r\n\r\n<div align="center">\r\n	<div class="page" style="width:100%; text-align:left">\r\n		<div style="padding:0px 5px 0px 5px" align="left">\r\n\n<!-- END TEMPLATE: spacer_open -->\r\n	<div id="edit6076323" style="padding:0px 0px 6px 0px">\r\n	<!-- this is not the last post shown on the page -->\r\n\r\n\r\n<!-- BEGIN TEMPLATE: postbit -->\n<table class="tborder" id="post6076323" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">\r\n<tr>\r\n	<td class="thead" >\r\n		<div class="normal" style="float:right">\r\n			&nbsp;\r\n			#<strong>5</strong> &nbsp;\r\n			\r\n			\r\n\r\n			\r\n<img class="inlineimg" src="../../images/buttons/ignore.gif" \r\nalt="Add theBishop to your ignore list"\r\nborder="0" /> &nbsp;\r\n\r\n			\r\n			\r\n			\r\n		</div>\r\n		\r\n		<div class="normal">\r\n			<!-- status icon and date -->\r\n			<a name="post6076323"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>\r\n			\r\n				2004-04-18, 04:06\r\n			\r\n			\r\n			<!-- / status icon and date -->\r\n		</div>\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt2" style="padding:0px">\r\n		<!-- user info -->\r\n		<table cellpadding="0" cellspacing="6" border="0" width="100%">\r\n		<tr>\r\n			\r\n			<td nowrap="nowrap">\r\n			\r\n				<div id="postmenu_6076323">\r\n					\r\n					theBishop\r\n					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->\n<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="theBishop is offline" border="0" />\r\n\r\n\n<!-- END TEMPLATE: postbit_onlinestatus -->\r\n					<script type="text/javascript"> vbmenu_register("postmenu_6076323", true); <\/scr' + 'ipt>\r\n					\r\n				</div>\r\n				\r\n				<div class="smallfont">Regular</div>\r\n				\r\n				\r\n			</td>\r\n			<td width="100%">&nbsp;</td>\r\n			<td valign="top" nowrap="nowrap">\r\n				\r\n				<div class="smallfont">\r\n					<!-- location -->\r\n					    \r\n					\r\n					\r\n				</div>\r\n				\r\n			</td>\r\n		</tr>\r\n		</table>\r\n		<!-- / user info -->\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt1" id="td_post_6076323">\r\n	<!-- message, attachments, sig -->\r\n	\r\n		\r\n			<!-- icon and title -->\r\n			<div class="smallfont">\r\n				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />\r\n				\r\n			</div>\r\n			<hr size="1" style="color:#E8EFF4" />\r\n			<!-- / icon and title -->\r\n		\r\n		\r\n		<!-- message -->\r\n		<div id="post_message_6076323">Catholics, Lutherens, and Anglicans have similar worship methods, but Catholics and the other two have fundemental disagreements with interpretations of the bible.  Basically, all the sects are divided because of either the desire to worship in a different way or differences in how they believe the bible is saying.<br />\n<br />\nSome of the things that people will say range from somewhat trivial to pretty major:<br />\n<br />\nCatholic: When you take communion, you are eating the body and blood of Christ.<br />\n<br />\nProtestant: We take communion as a symbol of rememberance.  Obviously we are eating crackers and grapefruit.<br />\n<br />\nCatholics: When you die with unresolved sin, you go to purgatory<br />\n<br />\nProtestant:  There is no mention of Purgatory in the bible, therefore it does not exist.<br />\n<br />\nCatholics: Sex is an act strictly for procreation, therefore all forms of birth control are forms of abortion.<br />\n<br />\nProtestant: Sex is a gift from God reserved for married people.  While having sex outside of marriage is a sin, a married couple can, and should have sex as often as they\'d like.<br />\n<br />\nThere\'s some examples, i hope that helps.<br />\n<br />\ntheBishop</div>\r\n		<!-- / message -->\r\n	\r\n		\r\n		\r\n		\r\n		\r\n		\r\n	\r\n		<div style="margin-top: 10px" align="right">\r\n			<!-- controls -->\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n				\r\n			\r\n			<!-- / controls -->\r\n		</div>\r\n		\r\n	<!-- message, attachments, sig -->\r\n	\r\n	</td>\r\n</tr>\r\n</table>\r\n\r\n<!-- post 6076323 popup menu -->\r\n<div class="vbmenu_popup" id="postmenu_6076323_menu" style="display:none;">\r\n	<table cellpadding="4" cellspacing="1" border="0">\r\n	<tr>\r\n		<td class="thead">theBishop</td>\r\n	</tr>\r\n	\r\n		<tr><td class="vbmenu_option">View Public Profile</td></tr>\r\n	\r\n	\r\n	\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Find all posts by theBishop</td></tr>\r\n	\r\n	\r\n	</table>\r\n</div>\r\n<!-- / post 6076323 popup menu -->\n<!-- END TEMPLATE: postbit -->\r\n\r\n\r\n	</div>\r\n	<!-- BEGIN TEMPLATE: spacer_close -->\n\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n<!-- / close content container -->\n<!-- END TEMPLATE: spacer_close -->\r\n\r\n<!-- / post #6076323 -->\n<!-- END TEMPLATE: postbit_wrapper -->';
-pd[6076324] = '<!-- BEGIN TEMPLATE: postbit_wrapper -->\n<!-- post #6076324 -->\r\n\r\n	<!-- BEGIN TEMPLATE: spacer_open -->\n<!-- open content container -->\r\n\r\n<div align="center">\r\n	<div class="page" style="width:100%; text-align:left">\r\n		<div style="padding:0px 5px 0px 5px" align="left">\r\n\n<!-- END TEMPLATE: spacer_open -->\r\n	<div id="edit6076324" style="padding:0px 0px 6px 0px">\r\n	<!-- this is not the last post shown on the page -->\r\n\r\n\r\n<!-- BEGIN TEMPLATE: postbit -->\n<table class="tborder" id="post6076324" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">\r\n<tr>\r\n	<td class="thead" >\r\n		<div class="normal" style="float:right">\r\n			&nbsp;\r\n			#<strong>6</strong> &nbsp;\r\n			\r\n			\r\n\r\n			\r\n<img class="inlineimg" src="../../images/buttons/ignore.gif" \r\nalt="Add Mike Dogg to your ignore list"\r\nborder="0" /> &nbsp;\r\n\r\n			\r\n			\r\n			\r\n		</div>\r\n		\r\n		<div class="normal">\r\n			<!-- status icon and date -->\r\n			<a name="post6076324"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>\r\n			\r\n				2004-04-18, 13:06\r\n			\r\n			\r\n			<!-- / status icon and date -->\r\n		</div>\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt2" style="padding:0px">\r\n		<!-- user info -->\r\n		<table cellpadding="0" cellspacing="6" border="0" width="100%">\r\n		<tr>\r\n			\r\n			<td nowrap="nowrap">\r\n			\r\n				<div id="postmenu_6076324">\r\n					\r\n					Mike Dogg\r\n					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->\n<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="Mike Dogg is offline" border="0" />\r\n\r\n\n<!-- END TEMPLATE: postbit_onlinestatus -->\r\n					<script type="text/javascript"> vbmenu_register("postmenu_6076324", true); <\/scr' + 'ipt>\r\n					\r\n				</div>\r\n				\r\n				<div class="smallfont">Regular</div>\r\n				\r\n				\r\n			</td>\r\n			<td width="100%">&nbsp;</td>\r\n			<td valign="top" nowrap="nowrap">\r\n				\r\n				<div class="smallfont">\r\n					<!-- location -->NZ\r\n					    \r\n					\r\n					\r\n				</div>\r\n				\r\n			</td>\r\n		</tr>\r\n		</table>\r\n		<!-- / user info -->\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt1" id="td_post_6076324">\r\n	<!-- message, attachments, sig -->\r\n	\r\n		\r\n			<!-- icon and title -->\r\n			<div class="smallfont">\r\n				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />\r\n				\r\n			</div>\r\n			<hr size="1" style="color:#E8EFF4" />\r\n			<!-- / icon and title -->\r\n		\r\n		\r\n		<!-- message -->\r\n		<div id="post_message_6076324">The differences are many.<br />\n<br />\nThe irrationality, fear and obscurantist worldview are universal.<br />\n<br />\nBut perhaps Christian fundamentalism, as exemplified by the religious right, is the primary example for this conclusion.</div>\r\n		<!-- / message -->\r\n	\r\n		\r\n		\r\n		\r\n		\r\n		\r\n	\r\n		<div style="margin-top: 10px" align="right">\r\n			<!-- controls -->\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n				\r\n			\r\n			<!-- / controls -->\r\n		</div>\r\n		\r\n	<!-- message, attachments, sig -->\r\n	\r\n	</td>\r\n</tr>\r\n</table>\r\n\r\n<!-- post 6076324 popup menu -->\r\n<div class="vbmenu_popup" id="postmenu_6076324_menu" style="display:none;">\r\n	<table cellpadding="4" cellspacing="1" border="0">\r\n	<tr>\r\n		<td class="thead">Mike Dogg</td>\r\n	</tr>\r\n	\r\n		<tr><td class="vbmenu_option">View Public Profile</td></tr>\r\n	\r\n	\r\n	\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Find all posts by Mike Dogg</td></tr>\r\n	\r\n	\r\n	</table>\r\n</div>\r\n<!-- / post 6076324 popup menu -->\n<!-- END TEMPLATE: postbit -->\r\n\r\n\r\n	</div>\r\n	<!-- BEGIN TEMPLATE: spacer_close -->\n\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n<!-- / close content container -->\n<!-- END TEMPLATE: spacer_close -->\r\n\r\n<!-- / post #6076324 -->\n<!-- END TEMPLATE: postbit_wrapper -->';
-pd[6076325] = '<!-- BEGIN TEMPLATE: postbit_wrapper -->\n<!-- post #6076325 -->\r\n\r\n	<!-- BEGIN TEMPLATE: spacer_open -->\n<!-- open content container -->\r\n\r\n<div align="center">\r\n	<div class="page" style="width:100%; text-align:left">\r\n		<div style="padding:0px 5px 0px 5px" align="left">\r\n\n<!-- END TEMPLATE: spacer_open -->\r\n	<div id="edit6076325" style="padding:0px 0px 6px 0px">\r\n	<!-- this is not the last post shown on the page -->\r\n\r\n\r\n<!-- BEGIN TEMPLATE: postbit -->\n<table class="tborder" id="post6076325" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">\r\n<tr>\r\n	<td class="thead" >\r\n		<div class="normal" style="float:right">\r\n			&nbsp;\r\n			#<strong>7</strong> &nbsp;\r\n			\r\n			\r\n\r\n			\r\n<img class="inlineimg" src="../../images/buttons/ignore.gif" \r\nalt="Add theBishop to your ignore list"\r\nborder="0" /> &nbsp;\r\n\r\n			\r\n			\r\n			\r\n		</div>\r\n		\r\n		<div class="normal">\r\n			<!-- status icon and date -->\r\n			<a name="post6076325"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>\r\n			\r\n				2004-04-18, 13:52\r\n			\r\n			\r\n			<!-- / status icon and date -->\r\n		</div>\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt2" style="padding:0px">\r\n		<!-- user info -->\r\n		<table cellpadding="0" cellspacing="6" border="0" width="100%">\r\n		<tr>\r\n			\r\n			<td nowrap="nowrap">\r\n			\r\n				<div id="postmenu_6076325">\r\n					\r\n					theBishop\r\n					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->\n<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="theBishop is offline" border="0" />\r\n\r\n\n<!-- END TEMPLATE: postbit_onlinestatus -->\r\n					<script type="text/javascript"> vbmenu_register("postmenu_6076325", true); <\/scr' + 'ipt>\r\n					\r\n				</div>\r\n				\r\n				<div class="smallfont">Regular</div>\r\n				\r\n				\r\n			</td>\r\n			<td width="100%">&nbsp;</td>\r\n			<td valign="top" nowrap="nowrap">\r\n				\r\n				<div class="smallfont">\r\n					<!-- location -->\r\n					    \r\n					\r\n					\r\n				</div>\r\n				\r\n			</td>\r\n		</tr>\r\n		</table>\r\n		<!-- / user info -->\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt1" id="td_post_6076325">\r\n	<!-- message, attachments, sig -->\r\n	\r\n		\r\n			<!-- icon and title -->\r\n			<div class="smallfont">\r\n				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />\r\n				\r\n			</div>\r\n			<hr size="1" style="color:#E8EFF4" />\r\n			<!-- / icon and title -->\r\n		\r\n		\r\n		<!-- message -->\r\n		<div id="post_message_6076325">What the hell are you talking about...?</div>\r\n		<!-- / message -->\r\n	\r\n		\r\n		\r\n		\r\n		\r\n		\r\n	\r\n		<div style="margin-top: 10px" align="right">\r\n			<!-- controls -->\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n				\r\n			\r\n			<!-- / controls -->\r\n		</div>\r\n		\r\n	<!-- message, attachments, sig -->\r\n	\r\n	</td>\r\n</tr>\r\n</table>\r\n\r\n<!-- post 6076325 popup menu -->\r\n<div class="vbmenu_popup" id="postmenu_6076325_menu" style="display:none;">\r\n	<table cellpadding="4" cellspacing="1" border="0">\r\n	<tr>\r\n		<td class="thead">theBishop</td>\r\n	</tr>\r\n	\r\n		<tr><td class="vbmenu_option">View Public Profile</td></tr>\r\n	\r\n	\r\n	\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Find all posts by theBishop</td></tr>\r\n	\r\n	\r\n	</table>\r\n</div>\r\n<!-- / post 6076325 popup menu -->\n<!-- END TEMPLATE: postbit -->\r\n\r\n\r\n	</div>\r\n	<!-- BEGIN TEMPLATE: spacer_close -->\n\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n<!-- / close content container -->\n<!-- END TEMPLATE: spacer_close -->\r\n\r\n<!-- / post #6076325 -->\n<!-- END TEMPLATE: postbit_wrapper -->';
-pd[6076326] = '<!-- BEGIN TEMPLATE: postbit_wrapper -->\n<!-- post #6076326 -->\r\n\r\n	<!-- BEGIN TEMPLATE: spacer_open -->\n<!-- open content container -->\r\n\r\n<div align="center">\r\n	<div class="page" style="width:100%; text-align:left">\r\n		<div style="padding:0px 5px 0px 5px" align="left">\r\n\n<!-- END TEMPLATE: spacer_open -->\r\n	<div id="edit6076326" style="padding:0px 0px 6px 0px">\r\n	<!-- this is not the last post shown on the page -->\r\n\r\n\r\n<!-- BEGIN TEMPLATE: postbit -->\n<table class="tborder" id="post6076326" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">\r\n<tr>\r\n	<td class="thead" >\r\n		<div class="normal" style="float:right">\r\n			&nbsp;\r\n			#<strong>8</strong> &nbsp;\r\n			\r\n			\r\n\r\n			\r\n<img class="inlineimg" src="../../images/buttons/ignore.gif" \r\nalt="Add ashesofzen to your ignore list"\r\nborder="0" /> &nbsp;\r\n\r\n			\r\n			\r\n			\r\n		</div>\r\n		\r\n		<div class="normal">\r\n			<!-- status icon and date -->\r\n			<a name="post6076326"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>\r\n			\r\n				2004-04-18, 15:18\r\n			\r\n			\r\n			<!-- / status icon and date -->\r\n		</div>\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt2" style="padding:0px">\r\n		<!-- user info -->\r\n		<table cellpadding="0" cellspacing="6" border="0" width="100%">\r\n		<tr>\r\n			\r\n			<td nowrap="nowrap">\r\n			\r\n				<div id="postmenu_6076326">\r\n					\r\n					ashesofzen\r\n					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->\n<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="ashesofzen is offline" border="0" />\r\n\r\n\n<!-- END TEMPLATE: postbit_onlinestatus -->\r\n					<script type="text/javascript"> vbmenu_register("postmenu_6076326", true); <\/scr' + 'ipt>\r\n					\r\n				</div>\r\n				\r\n				<div class="smallfont">Regular</div>\r\n				\r\n				\r\n			</td>\r\n			<td width="100%">&nbsp;</td>\r\n			<td valign="top" nowrap="nowrap">\r\n				\r\n				<div class="smallfont">\r\n					<!-- location -->Ventura, CA\r\n					    \r\n					\r\n					\r\n				</div>\r\n				\r\n			</td>\r\n		</tr>\r\n		</table>\r\n		<!-- / user info -->\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt1" id="td_post_6076326">\r\n	<!-- message, attachments, sig -->\r\n	\r\n		\r\n			<!-- icon and title -->\r\n			<div class="smallfont">\r\n				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />\r\n				\r\n			</div>\r\n			<hr size="1" style="color:#E8EFF4" />\r\n			<!-- / icon and title -->\r\n		\r\n		\r\n		<!-- message -->\r\n		<div id="post_message_6076326">He likes to sound like he understands the psychological differences of the various Christian groups.<br />\n<br />\nWhether or not he actually <i>does</i> is something I\'ll leave up to everyone else to decide.</div>\r\n		<!-- / message -->\r\n	\r\n		\r\n		\r\n		\r\n		\r\n		\r\n	\r\n		<div style="margin-top: 10px" align="right">\r\n			<!-- controls -->\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n				\r\n			\r\n			<!-- / controls -->\r\n		</div>\r\n		\r\n	<!-- message, attachments, sig -->\r\n	\r\n	</td>\r\n</tr>\r\n</table>\r\n\r\n<!-- post 6076326 popup menu -->\r\n<div class="vbmenu_popup" id="postmenu_6076326_menu" style="display:none;">\r\n	<table cellpadding="4" cellspacing="1" border="0">\r\n	<tr>\r\n		<td class="thead">ashesofzen</td>\r\n	</tr>\r\n	\r\n		<tr><td class="vbmenu_option">View Public Profile</td></tr>\r\n	\r\n	\r\n	\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Find all posts by ashesofzen</td></tr>\r\n	\r\n	\r\n	</table>\r\n</div>\r\n<!-- / post 6076326 popup menu -->\n<!-- END TEMPLATE: postbit -->\r\n\r\n\r\n	</div>\r\n	<!-- BEGIN TEMPLATE: spacer_close -->\n\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n<!-- / close content container -->\n<!-- END TEMPLATE: spacer_close -->\r\n\r\n<!-- / post #6076326 -->\n<!-- END TEMPLATE: postbit_wrapper -->';
-pd[6076327] = '<!-- BEGIN TEMPLATE: postbit_wrapper -->\n<!-- post #6076327 -->\r\n\r\n	<!-- BEGIN TEMPLATE: spacer_open -->\n<!-- open content container -->\r\n\r\n<div align="center">\r\n	<div class="page" style="width:100%; text-align:left">\r\n		<div style="padding:0px 5px 0px 5px" align="left">\r\n\n<!-- END TEMPLATE: spacer_open -->\r\n	<div id="edit6076327" style="padding:0px 0px 6px 0px">\r\n	<!-- this is not the last post shown on the page -->\r\n\r\n\r\n<!-- BEGIN TEMPLATE: postbit -->\n<table class="tborder" id="post6076327" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">\r\n<tr>\r\n	<td class="thead" >\r\n		<div class="normal" style="float:right">\r\n			&nbsp;\r\n			#<strong>9</strong> &nbsp;\r\n			\r\n			\r\n\r\n			\r\n<img class="inlineimg" src="../../images/buttons/ignore.gif" \r\nalt="Add Hexadecimal to your ignore list"\r\nborder="0" /> &nbsp;\r\n\r\n			\r\n			\r\n			\r\n		</div>\r\n		\r\n		<div class="normal">\r\n			<!-- status icon and date -->\r\n			<a name="post6076327"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>\r\n			\r\n				2004-04-18, 20:14\r\n			\r\n			\r\n			<!-- / status icon and date -->\r\n		</div>\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt2" style="padding:0px">\r\n		<!-- user info -->\r\n		<table cellpadding="0" cellspacing="6" border="0" width="100%">\r\n		<tr>\r\n			\r\n			<td nowrap="nowrap">\r\n			\r\n				<div id="postmenu_6076327">\r\n					\r\n					<a class="bigusername" href="../../community/members/u158479.html">Hexadecimal</a>\r\n					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->\n<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="Hexadecimal is offline" border="0" />\r\n\r\n\n<!-- END TEMPLATE: postbit_onlinestatus -->\r\n					<script type="text/javascript"> vbmenu_register("postmenu_6076327", true); <\/scr' + 'ipt>\r\n					\r\n				</div>\r\n				\r\n				<div class="smallfont">Regular</div>\r\n				\r\n				\r\n			</td>\r\n			<td width="100%">&nbsp;</td>\r\n			<td valign="top" nowrap="nowrap">\r\n				\r\n				<div class="smallfont">\r\n					<!-- location -->Rockford, IL\r\n					    \r\n					\r\n					\r\n				</div>\r\n				\r\n			</td>\r\n		</tr>\r\n		</table>\r\n		<!-- / user info -->\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt1" id="td_post_6076327">\r\n	<!-- message, attachments, sig -->\r\n	\r\n		\r\n			<!-- icon and title -->\r\n			<div class="smallfont">\r\n				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />\r\n				\r\n			</div>\r\n			<hr size="1" style="color:#E8EFF4" />\r\n			<!-- / icon and title -->\r\n		\r\n		\r\n		<!-- message -->\r\n		<div id="post_message_6076327">What I find funny is that oft-times Protestant sects teach that Catholics aren\'t Christian, and occasionally, Catholics teach that protestants aren\'t Christian.<br />\n<br />\nChristianity is dying, it has broken into countless petty arguements over interpretations of a book. With no unity it\'s going to fall apart. Logic can\'t hurt them, many are either brainwashed into thinking the entire Bible is factual, while others consider anything that can be shown to be false a parable, so they are immune to logic; however, any structured system falls apart if every group is fighting with every other group.</div>\r\n		<!-- / message -->\r\n	\r\n		\r\n		\r\n		\r\n		\r\n		\r\n	\r\n		<div style="margin-top: 10px" align="right">\r\n			<!-- controls -->\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n				\r\n			\r\n			<!-- / controls -->\r\n		</div>\r\n		\r\n	<!-- message, attachments, sig -->\r\n	\r\n	</td>\r\n</tr>\r\n</table>\r\n\r\n<!-- post 6076327 popup menu -->\r\n<div class="vbmenu_popup" id="postmenu_6076327_menu" style="display:none;">\r\n	<table cellpadding="4" cellspacing="1" border="0">\r\n	<tr>\r\n		<td class="thead">Hexadecimal</td>\r\n	</tr>\r\n	\r\n		<tr><td class="vbmenu_option"><a href="../../community/members/u158479.html">View Public Profile</a></td></tr>\r\n	\r\n	\r\n	\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Find all posts by Hexadecimal</td></tr>\r\n	\r\n	\r\n	</table>\r\n</div>\r\n<!-- / post 6076327 popup menu -->\n<!-- END TEMPLATE: postbit -->\r\n\r\n\r\n	</div>\r\n	<!-- BEGIN TEMPLATE: spacer_close -->\n\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n<!-- / close content container -->\n<!-- END TEMPLATE: spacer_close -->\r\n\r\n<!-- / post #6076327 -->\n<!-- END TEMPLATE: postbit_wrapper -->';
-
-// next/previous post info
-pn[6076319] = "6076327,6076320";
-pn[0] = ",6076319";
-pn[6076320] = "6076319,6076321";
-pn[6076321] = "6076320,6076322";
-pn[6076322] = "6076321,6076323";
-pn[6076323] = "6076322,6076324";
-pn[6076324] = "6076323,6076325";
-pn[6076325] = "6076324,6076326";
-pn[6076326] = "6076325,6076327";
-pn[6076327] = "6076326,6076319";
-
-// cached usernames
-pu[0] = guestphrase;
-pu[214688] = "diehard993";
-pu[158905] = "ashesofzen";
-pu[158479] = "Hexadecimal";
-pu[159312] = "theBishop";
-pu[205803] = "Mike Dogg";
-
-// -->
-</script>
 
 <!-- BEGIN TEMPLATE: spacer_open -->
 <!-- open content container -->
@@ -518,44 +494,6 @@ pu[205803] = "Mike Dogg";
 		<div style="padding:0px 5px 0px 5px" align="left">
 
 <!-- END TEMPLATE: spacer_open -->
-
-<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-top-width:0px; margin-bottom:6px">
-<tr>
-	<td class="alt2">
-	<div style="height:150px; width:100%; overflow:auto; border:2px inset; padding: 0px; text-align:left;" class="alt1" id="links">
-		<div class="smallfont">
-		<!-- start post links -->
-<script type="text/javascript">
-<!--
-writeLink(6076319, 0, 0, 214688, "", "<i>like Protestant, Babtist,...</i>", "2004-04-18", "01:56", 0);
-  writeLink(6076320, 0, 0, 158905, "T", "<i>Doctrine, mostly.</i>", "2004-04-18", "02:00", 0);
-  writeLink(6076321, 0, 0, 158479, "T", "<i>Yes, doctrine...especially...</i>", "2004-04-18", "02:20", 0);
-  writeLink(6076322, 0, 0, 158905, "T", "<i>O, but think of all the...</i>", "2004-04-18", "02:32", 0);
-  writeLink(6076323, 0, 0, 159312, "T", "<i>Catholics, Lutherens, and...</i>", "2004-04-18", "04:06", 0);
-  writeLink(6076324, 0, 0, 205803, "T", "<i>The differences are many. \n...</i>", "2004-04-18", "13:06", 0);
-  writeLink(6076325, 0, 0, 159312, "T", "<i>What the hell are you talking...</i>", "2004-04-18", "13:52", 0);
-  writeLink(6076326, 0, 0, 158905, "T", "<i>He likes to sound like he...</i>", "2004-04-18", "15:18", 0);
-  writeLink(6076327, 0, 0, 158479, "L", "<i>What I find funny is that...</i>", "2004-04-18", "20:14", 0);
-
-//-->
-</script>
-		<!-- end post links -->
-		</div>
-	</div>
-	</td>
-</tr>
-
-<tr>
-	<td class="tfoot" align="center"><div class="smallfont">
-		Prev
-		<img class="inlineimg" src="../../images/buttons/sortdesc.gif" alt="Previous Post" border="0" />
-		&nbsp;
-		<img class="inlineimg" src="../../images/buttons/sortasc.gif" alt="Next Post" border="0" />
-		Next
-	</div></td>
-</tr>
-
-</table>
 
 <!-- BEGIN TEMPLATE: spacer_close -->
 
@@ -799,7 +737,7 @@ border="0" /> &nbsp;
 
 
 <!-- END TEMPLATE: postbit_onlinestatus -->
-					<script type="text/javascript"> vbmenu_register("postmenu_6076320", true); <\/scr' + 'ipt>
+					<script type="text/javascript"> vbmenu_register("postmenu_6076320", true); </script>
 					
 				</div>
 				
@@ -963,7 +901,7 @@ border="0" /> &nbsp;
 
 
 <!-- END TEMPLATE: postbit_onlinestatus -->
-					<script type="text/javascript"> vbmenu_register("postmenu_6076321", true); <\/scr' + 'ipt>
+					<script type="text/javascript"> vbmenu_register("postmenu_6076321", true); </script>
 					
 				</div>
 				
@@ -1127,7 +1065,7 @@ border="0" /> &nbsp;
 
 
 <!-- END TEMPLATE: postbit_onlinestatus -->
-					<script type="text/javascript"> vbmenu_register("postmenu_6076322", true); <\/scr' + 'ipt>
+					<script type="text/javascript"> vbmenu_register("postmenu_6076322", true); </script>
 					
 				</div>
 				
@@ -1293,7 +1231,7 @@ border="0" /> &nbsp;
 
 
 <!-- END TEMPLATE: postbit_onlinestatus -->
-					<script type="text/javascript"> vbmenu_register("postmenu_6076323", true); <\/scr' + 'ipt>
+					<script type="text/javascript"> vbmenu_register("postmenu_6076323", true); </script>
 					
 				</div>
 				
@@ -1475,7 +1413,7 @@ border="0" /> &nbsp;
 
 
 <!-- END TEMPLATE: postbit_onlinestatus -->
-					<script type="text/javascript"> vbmenu_register("postmenu_6076324", true); <\/scr' + 'ipt>
+					<script type="text/javascript"> vbmenu_register("postmenu_6076324", true); </script>
 					
 				</div>
 				
@@ -1643,7 +1581,7 @@ border="0" /> &nbsp;
 
 
 <!-- END TEMPLATE: postbit_onlinestatus -->
-					<script type="text/javascript"> vbmenu_register("postmenu_6076325", true); <\/scr' + 'ipt>
+					<script type="text/javascript"> vbmenu_register("postmenu_6076325", true); </script>
 					
 				</div>
 				
@@ -1807,7 +1745,7 @@ border="0" /> &nbsp;
 
 
 <!-- END TEMPLATE: postbit_onlinestatus -->
-					<script type="text/javascript"> vbmenu_register("postmenu_6076326", true); <\/scr' + 'ipt>
+					<script type="text/javascript"> vbmenu_register("postmenu_6076326", true); </script>
 					
 				</div>
 				
@@ -1973,7 +1911,7 @@ border="0" /> &nbsp;
 
 
 <!-- END TEMPLATE: postbit_onlinestatus -->
-					<script type="text/javascript"> vbmenu_register("postmenu_6076327", true); <\/scr' + 'ipt>
+					<script type="text/javascript"> vbmenu_register("postmenu_6076327", true); </script>
 					
 				</div>
 				
@@ -2231,9 +2169,9 @@ Christianity is dying, it has broken into countless petty arguements over interp
 		<div>You <strong>may not</strong> edit your posts</div>
 		<hr />
 		
-		<div>BB code is <strong>On</strong></div>
-		<div>Smilies are <strong>On</strong></div>
-		<div>[IMG] code is <strong>Off</strong></div>
+		<div><a href="../../community/bbcode.html" target="_blank">BB code</a> is <strong>On</strong></div>
+		<div><a href="../../community/showsmilies.html" target="_blank">Smilies</a> are <strong>On</strong></div>
+		<div><a href="../../community/bbcode.html#imgcode" target="_blank">[IMG]</a> code is <strong>Off</strong></div>
 		<div>HTML code is <strong>Off</strong></div>
 	</div></td>
 </tr>
@@ -2517,8 +2455,10 @@ Christianity is dying, it has broken into countless petty arguements over interp
 			</table>
 		</td>
 
-		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots -->
-		<td width="20%" align="center" valign="top">
+		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots.
+		     min-width keeps this fluid 20% column from ever squeezing narrower
+		     than the fixed-170px table it holds, at any viewport width. -->
+		<td width="20%" align="center" valign="top" style="min-width:190px">
 
 			<table width="170" border="0" cellpadding="0" cellspacing="0">
 				<tr>

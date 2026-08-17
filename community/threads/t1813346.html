@@ -183,12 +183,26 @@
 
 		<!-- Content column -->
 		<td align="left">
-			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<!-- table-layout:fixed makes the browser honor this row's column
+			     widths exactly instead of auto-redistributing them: with the
+			     default "auto" layout, a 13px + 97% + 13px row never sums to
+			     exactly 100% of a fluid table except at one specific width,
+			     so at any other width (all of them, on a responsive page)
+			     the browser proportionally inflates the two fixed-13px
+			     corner columns to reconcile the mismatch - stretching
+			     3lt.jpg/3rt.jpg's cells past the images' own 13px width and
+			     tiling a second, partial copy of the curve artwork into the
+			     extra space, which reads as the rounded corner being cut
+			     off. Under fixed layout this row's widths become the whole
+			     table's column template (13px / remainder / 13px) and are
+			     used verbatim at every width, so the corner cells always
+			     match their images exactly and never need to repeat. -->
+			<table width="100%" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed">
 
 				<tr>
-					<td width="13" height="11" background="../../images/t3/3lt.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="97%" height="11" background="../../images/t3/3ct.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="13" height="11" background="../../images/t3/3rt.jpg"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3lt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3ct.jpg"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3rt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
 				</tr>
 
 				<!-- Ubiquitous nav menu - only real, existing pages are hyperlinked; everything
@@ -222,7 +236,7 @@
 
 				<tr valign="top">
 					<td width="13" background="../../images/t3/0cm.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="97%" height="640" background="../../images/t3/0cm.jpg">
+					<td width="97%" height="640" background="../../images/t3/0cm.jpg" style="padding-top:6px">
 <!-- breadcrumb, login, pm info -->
 <table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
 <tr>
@@ -470,33 +484,7 @@ var highlightwords = "";
 //-->
 </script>
 <script type="text/javascript" src="clientscript/vbulletin_thrdpostlist.js@v=372"></script>
-<script type="text/javascript">
-<!--
-// initialize some variables
-var curpostid = 6133135;
-var quickreply = false;
 
-// cached posts (no page reload required to view)
-pd[6133135] = '<!-- BEGIN TEMPLATE: postbit_wrapper -->\n<!-- post #6133135 -->\r\n\r\n	<!-- BEGIN TEMPLATE: spacer_open -->\n<!-- open content container -->\r\n\r\n<div align="center">\r\n	<div class="page" style="width:100%; text-align:left">\r\n		<div style="padding:0px 5px 0px 5px" align="left">\r\n\n<!-- END TEMPLATE: spacer_open -->\r\n	<div id="edit6133135" style="padding:0px 0px 6px 0px">\r\n	<!-- this is not the last post shown on the page -->\r\n\r\n\r\n<!-- BEGIN TEMPLATE: postbit -->\n<table class="tborder" id="post6133135" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">\r\n<tr>\r\n	<td class="thead" >\r\n		<div class="normal" style="float:right">\r\n			&nbsp;\r\n			#<strong>1</strong> &nbsp;\r\n			\r\n			\r\n\r\n			\r\n<img class="inlineimg" src="../../images/buttons/ignore.gif" \r\nalt="Add Masta Thief to your ignore list"\r\nborder="0" /> &nbsp;\r\n\r\n			\r\n			\r\n			\r\n		</div>\r\n		\r\n		<div class="normal">\r\n			<!-- status icon and date -->\r\n			<a name="post6133135"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>\r\n			\r\n				2006-05-18, 21:15\r\n			\r\n			\r\n			<!-- / status icon and date -->\r\n		</div>\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt2" style="padding:0px">\r\n		<!-- user info -->\r\n		<table cellpadding="0" cellspacing="6" border="0" width="100%">\r\n		<tr>\r\n			\r\n			<td nowrap="nowrap">\r\n			\r\n				<div id="postmenu_6133135">\r\n					\r\n					Masta Thief\r\n					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->\n<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="Masta Thief is offline" border="0" />\r\n\r\n\n<!-- END TEMPLATE: postbit_onlinestatus -->\r\n					<script type="text/javascript"> vbmenu_register("postmenu_6133135", true); <\/scr' + 'ipt>\r\n					\r\n				</div>\r\n				\r\n				<div class="smallfont">Regular</div>\r\n				\r\n				\r\n			</td>\r\n			<td width="100%">&nbsp;</td>\r\n			<td valign="top" nowrap="nowrap">\r\n				\r\n				<div class="smallfont">\r\n					<!-- location -->\r\n					    \r\n					\r\n					\r\n				</div>\r\n				\r\n			</td>\r\n		</tr>\r\n		</table>\r\n		<!-- / user info -->\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt1" id="td_post_6133135">\r\n	<!-- message, attachments, sig -->\r\n	\r\n		\r\n			<!-- icon and title -->\r\n			<div class="smallfont">\r\n				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />\r\n				\r\n			</div>\r\n			<hr size="1" style="color:#E8EFF4" />\r\n			<!-- / icon and title -->\r\n		\r\n		\r\n		<!-- message -->\r\n		<div id="post_message_6133135">In the subject of the Christian hijacking Myths they said many of the stories in the bible were stolen from other myths and tales and i had to think about it for a while before i could come up with a answer but heres what i got. Ok back in the older times people  were suppose to be able to pull off miracles which some people interprited as magic but in the bible it said once Jesus died there was no more need for miracles which is why no one can do magic any more, anyways heres where my point comes in a few people back then could predict the future and see things others people couldn\'t see so what if those people saw visions that would later happen in jesus\' story and mis interpreted it, since none of theres could have no evidence they were right and we do thats probably how they thought it up and in the bible it says what ever god does the devel will create the oppisite or mirror it in his own way(somthing like that) the devel could have made those people see that because he knew they would mis interprit it and distract people from god. Any ways thats my theory it might sound confusing to you but im not sure if i was able to get it out 100% right.<br />\n<br />\n[This message has been edited by Masta Thief (edited 05-18-2006).]</div>\r\n		<!-- / message -->\r\n	\r\n		\r\n		\r\n		\r\n		\r\n		\r\n	\r\n		<div style="margin-top: 10px" align="right">\r\n			<!-- controls -->\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n				\r\n			\r\n			<!-- / controls -->\r\n		</div>\r\n		\r\n	<!-- message, attachments, sig -->\r\n	\r\n	</td>\r\n</tr>\r\n</table>\r\n\r\n<!-- post 6133135 popup menu -->\r\n<div class="vbmenu_popup" id="postmenu_6133135_menu" style="display:none;">\r\n	<table cellpadding="4" cellspacing="1" border="0">\r\n	<tr>\r\n		<td class="thead">Masta Thief</td>\r\n	</tr>\r\n	\r\n		<tr><td class="vbmenu_option">View Public Profile</td></tr>\r\n	\r\n	\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Visit Masta Thief\'s homepage!</td></tr>\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Find all posts by Masta Thief</td></tr>\r\n	\r\n	\r\n	</table>\r\n</div>\r\n<!-- / post 6133135 popup menu -->\n<!-- END TEMPLATE: postbit -->\r\n\r\n\r\n	</div>\r\n	<!-- BEGIN TEMPLATE: spacer_close -->\n\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n<!-- / close content container -->\n<!-- END TEMPLATE: spacer_close -->\r\n\r\n<!-- / post #6133135 -->\n<!-- END TEMPLATE: postbit_wrapper -->';
-pd[6133136] = '<!-- BEGIN TEMPLATE: postbit_wrapper -->\n<!-- post #6133136 -->\r\n\r\n	<!-- BEGIN TEMPLATE: spacer_open -->\n<!-- open content container -->\r\n\r\n<div align="center">\r\n	<div class="page" style="width:100%; text-align:left">\r\n		<div style="padding:0px 5px 0px 5px" align="left">\r\n\n<!-- END TEMPLATE: spacer_open -->\r\n	<div id="edit6133136" style="padding:0px 0px 6px 0px">\r\n	<!-- this is not the last post shown on the page -->\r\n\r\n\r\n<!-- BEGIN TEMPLATE: postbit -->\n<table class="tborder" id="post6133136" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">\r\n<tr>\r\n	<td class="thead" >\r\n		<div class="normal" style="float:right">\r\n			&nbsp;\r\n			#<strong>2</strong> &nbsp;\r\n			\r\n			\r\n\r\n			\r\n<img class="inlineimg" src="../../images/buttons/ignore.gif" \r\nalt="Add Masta Thief to your ignore list"\r\nborder="0" /> &nbsp;\r\n\r\n			\r\n			\r\n			\r\n		</div>\r\n		\r\n		<div class="normal">\r\n			<!-- status icon and date -->\r\n			<a name="post6133136"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>\r\n			\r\n				2006-05-18, 21:43\r\n			\r\n			\r\n			<!-- / status icon and date -->\r\n		</div>\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt2" style="padding:0px">\r\n		<!-- user info -->\r\n		<table cellpadding="0" cellspacing="6" border="0" width="100%">\r\n		<tr>\r\n			\r\n			<td nowrap="nowrap">\r\n			\r\n				<div id="postmenu_6133136">\r\n					\r\n					Masta Thief\r\n					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->\n<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="Masta Thief is offline" border="0" />\r\n\r\n\n<!-- END TEMPLATE: postbit_onlinestatus -->\r\n					<script type="text/javascript"> vbmenu_register("postmenu_6133136", true); <\/scr' + 'ipt>\r\n					\r\n				</div>\r\n				\r\n				<div class="smallfont">Regular</div>\r\n				\r\n				\r\n			</td>\r\n			<td width="100%">&nbsp;</td>\r\n			<td valign="top" nowrap="nowrap">\r\n				\r\n				<div class="smallfont">\r\n					<!-- location -->\r\n					    \r\n					\r\n					\r\n				</div>\r\n				\r\n			</td>\r\n		</tr>\r\n		</table>\r\n		<!-- / user info -->\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt1" id="td_post_6133136">\r\n	<!-- message, attachments, sig -->\r\n	\r\n		\r\n			<!-- icon and title -->\r\n			<div class="smallfont">\r\n				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />\r\n				\r\n			</div>\r\n			<hr size="1" style="color:#E8EFF4" />\r\n			<!-- / icon and title -->\r\n		\r\n		\r\n		<!-- message -->\r\n		<div id="post_message_6133136">O yea when i said the &quot;can see things&quot; part i never explained that so ya i think that some one saw the angels and so the egiptians made it as one of there gods or w/e so theres what i mean by the misinterpertation <br />\n<br />\n[This message has been edited by Masta Thief (edited 05-18-2006).]</div>\r\n		<!-- / message -->\r\n	\r\n		\r\n		\r\n		\r\n		\r\n		\r\n	\r\n		<div style="margin-top: 10px" align="right">\r\n			<!-- controls -->\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n				\r\n			\r\n			<!-- / controls -->\r\n		</div>\r\n		\r\n	<!-- message, attachments, sig -->\r\n	\r\n	</td>\r\n</tr>\r\n</table>\r\n\r\n<!-- post 6133136 popup menu -->\r\n<div class="vbmenu_popup" id="postmenu_6133136_menu" style="display:none;">\r\n	<table cellpadding="4" cellspacing="1" border="0">\r\n	<tr>\r\n		<td class="thead">Masta Thief</td>\r\n	</tr>\r\n	\r\n		<tr><td class="vbmenu_option">View Public Profile</td></tr>\r\n	\r\n	\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Visit Masta Thief\'s homepage!</td></tr>\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Find all posts by Masta Thief</td></tr>\r\n	\r\n	\r\n	</table>\r\n</div>\r\n<!-- / post 6133136 popup menu -->\n<!-- END TEMPLATE: postbit -->\r\n\r\n\r\n	</div>\r\n	<!-- BEGIN TEMPLATE: spacer_close -->\n\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n<!-- / close content container -->\n<!-- END TEMPLATE: spacer_close -->\r\n\r\n<!-- / post #6133136 -->\n<!-- END TEMPLATE: postbit_wrapper -->';
-pd[6133137] = '<!-- BEGIN TEMPLATE: postbit_wrapper -->\n<!-- post #6133137 -->\r\n\r\n	<!-- BEGIN TEMPLATE: spacer_open -->\n<!-- open content container -->\r\n\r\n<div align="center">\r\n	<div class="page" style="width:100%; text-align:left">\r\n		<div style="padding:0px 5px 0px 5px" align="left">\r\n\n<!-- END TEMPLATE: spacer_open -->\r\n	<div id="edit6133137" style="padding:0px 0px 6px 0px">\r\n	<!-- this is not the last post shown on the page -->\r\n\r\n\r\n<!-- BEGIN TEMPLATE: postbit -->\n<table class="tborder" id="post6133137" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">\r\n<tr>\r\n	<td class="thead" >\r\n		<div class="normal" style="float:right">\r\n			&nbsp;\r\n			#<strong>3</strong> &nbsp;\r\n			\r\n			\r\n\r\n			\r\n<img class="inlineimg" src="../../images/buttons/ignore.gif" \r\nalt="Add Adrenochrome to your ignore list"\r\nborder="0" /> &nbsp;\r\n\r\n			\r\n			\r\n			\r\n		</div>\r\n		\r\n		<div class="normal">\r\n			<!-- status icon and date -->\r\n			<a name="post6133137"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>\r\n			\r\n				2006-05-18, 22:40\r\n			\r\n			\r\n			<!-- / status icon and date -->\r\n		</div>\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt2" style="padding:0px">\r\n		<!-- user info -->\r\n		<table cellpadding="0" cellspacing="6" border="0" width="100%">\r\n		<tr>\r\n			\r\n			<td nowrap="nowrap">\r\n			\r\n				<div id="postmenu_6133137">\r\n					\r\n					Adrenochrome\r\n					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->\n<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="Adrenochrome is offline" border="0" />\r\n\r\n\n<!-- END TEMPLATE: postbit_onlinestatus -->\r\n					<script type="text/javascript"> vbmenu_register("postmenu_6133137", true); <\/scr' + 'ipt>\r\n					\r\n				</div>\r\n				\r\n				<div class="smallfont">Regular</div>\r\n				\r\n				\r\n			</td>\r\n			<td width="100%">&nbsp;</td>\r\n			<td valign="top" nowrap="nowrap">\r\n				\r\n				<div class="smallfont">\r\n					<!-- location -->\r\n					    \r\n					\r\n					\r\n				</div>\r\n				\r\n			</td>\r\n		</tr>\r\n		</table>\r\n		<!-- / user info -->\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt1" id="td_post_6133137">\r\n	<!-- message, attachments, sig -->\r\n	\r\n		\r\n			<!-- icon and title -->\r\n			<div class="smallfont">\r\n				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />\r\n				\r\n			</div>\r\n			<hr size="1" style="color:#E8EFF4" />\r\n			<!-- / icon and title -->\r\n		\r\n		\r\n		<!-- message -->\r\n		<div id="post_message_6133137">Isn’t it more likely that they’re just stories passed down from generation to generation, that the Jews stole? Ever heard of Occam’s Razor? Seriously, how can you people come up with such crazy, illogical ideas and believe them?<br />\n<br />\n</div>\r\n		<!-- / message -->\r\n	\r\n		\r\n		\r\n		\r\n		\r\n		\r\n	\r\n		<div style="margin-top: 10px" align="right">\r\n			<!-- controls -->\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n				\r\n			\r\n			<!-- / controls -->\r\n		</div>\r\n		\r\n	<!-- message, attachments, sig -->\r\n	\r\n	</td>\r\n</tr>\r\n</table>\r\n\r\n<!-- post 6133137 popup menu -->\r\n<div class="vbmenu_popup" id="postmenu_6133137_menu" style="display:none;">\r\n	<table cellpadding="4" cellspacing="1" border="0">\r\n	<tr>\r\n		<td class="thead">Adrenochrome</td>\r\n	</tr>\r\n	\r\n		<tr><td class="vbmenu_option">View Public Profile</td></tr>\r\n	\r\n	\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Visit Adrenochrome\'s homepage!</td></tr>\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Find all posts by Adrenochrome</td></tr>\r\n	\r\n	\r\n	</table>\r\n</div>\r\n<!-- / post 6133137 popup menu -->\n<!-- END TEMPLATE: postbit -->\r\n\r\n\r\n	</div>\r\n	<!-- BEGIN TEMPLATE: spacer_close -->\n\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n<!-- / close content container -->\n<!-- END TEMPLATE: spacer_close -->\r\n\r\n<!-- / post #6133137 -->\n<!-- END TEMPLATE: postbit_wrapper -->';
-pd[6133138] = '<!-- BEGIN TEMPLATE: postbit_wrapper -->\n<!-- post #6133138 -->\r\n\r\n	<!-- BEGIN TEMPLATE: spacer_open -->\n<!-- open content container -->\r\n\r\n<div align="center">\r\n	<div class="page" style="width:100%; text-align:left">\r\n		<div style="padding:0px 5px 0px 5px" align="left">\r\n\n<!-- END TEMPLATE: spacer_open -->\r\n	<div id="edit6133138" style="padding:0px 0px 6px 0px">\r\n	<!-- this is not the last post shown on the page -->\r\n\r\n\r\n<!-- BEGIN TEMPLATE: postbit -->\n<table class="tborder" id="post6133138" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">\r\n<tr>\r\n	<td class="thead" >\r\n		<div class="normal" style="float:right">\r\n			&nbsp;\r\n			#<strong>4</strong> &nbsp;\r\n			\r\n			\r\n\r\n			\r\n<img class="inlineimg" src="../../images/buttons/ignore.gif" \r\nalt="Add Real.PUA to your ignore list"\r\nborder="0" /> &nbsp;\r\n\r\n			\r\n			\r\n			\r\n		</div>\r\n		\r\n		<div class="normal">\r\n			<!-- status icon and date -->\r\n			<a name="post6133138"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>\r\n			\r\n				2006-05-19, 18:30\r\n			\r\n			\r\n			<!-- / status icon and date -->\r\n		</div>\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt2" style="padding:0px">\r\n		<!-- user info -->\r\n		<table cellpadding="0" cellspacing="6" border="0" width="100%">\r\n		<tr>\r\n			\r\n			<td nowrap="nowrap">\r\n			\r\n				<div id="postmenu_6133138">\r\n					\r\n					<a class="bigusername" href="../../community/members/u177836.html">Real.PUA</a>\r\n					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->\n<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="Real.PUA is offline" border="0" />\r\n\r\n\n<!-- END TEMPLATE: postbit_onlinestatus -->\r\n					<script type="text/javascript"> vbmenu_register("postmenu_6133138", true); <\/scr' + 'ipt>\r\n					\r\n				</div>\r\n				\r\n				<div class="smallfont">Regular</div>\r\n				\r\n				\r\n			</td>\r\n			<td width="100%">&nbsp;</td>\r\n			<td valign="top" nowrap="nowrap">\r\n				\r\n				<div class="smallfont">\r\n					<!-- location -->Cuntville\r\n					    \r\n					\r\n					\r\n				</div>\r\n				\r\n			</td>\r\n		</tr>\r\n		</table>\r\n		<!-- / user info -->\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt1" id="td_post_6133138">\r\n	<!-- message, attachments, sig -->\r\n	\r\n		\r\n			<!-- icon and title -->\r\n			<div class="smallfont">\r\n				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />\r\n				\r\n			</div>\r\n			<hr size="1" style="color:#E8EFF4" />\r\n			<!-- / icon and title -->\r\n		\r\n		\r\n		<!-- message -->\r\n		<div id="post_message_6133138"> <!-- BEGIN TEMPLATE: bbcode_quote -->\n<div style="margin:20px; margin-top:5px; ">\r\n	<div class="smallfont" style="margin-bottom:2px">Quote:</div>\r\n	<table cellpadding="6" cellspacing="0" border="0" width="100%">\r\n	<tr>\r\n		<td class="alt2" style="border:1px inset">\r\n			\r\n				quote:Originally posted by Adrenochrome:<br />\n<br />\n<b>Seriously, how can you people come up with such crazy, illogical ideas and believe them?</b>\r\n			\r\n		</td>\r\n	</tr>\r\n	</table>\r\n</div>\n<!-- END TEMPLATE: bbcode_quote -->Infected.</div>\r\n		<!-- / message -->\r\n	\r\n		\r\n		\r\n		\r\n		\r\n		\r\n	\r\n		<div style="margin-top: 10px" align="right">\r\n			<!-- controls -->\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n				\r\n			\r\n			<!-- / controls -->\r\n		</div>\r\n		\r\n	<!-- message, attachments, sig -->\r\n	\r\n	</td>\r\n</tr>\r\n</table>\r\n\r\n<!-- post 6133138 popup menu -->\r\n<div class="vbmenu_popup" id="postmenu_6133138_menu" style="display:none;">\r\n	<table cellpadding="4" cellspacing="1" border="0">\r\n	<tr>\r\n		<td class="thead">Real.PUA</td>\r\n	</tr>\r\n	\r\n		<tr><td class="vbmenu_option"><a href="../../community/members/u177836.html">View Public Profile</a></td></tr>\r\n	\r\n	\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Visit Real.PUA\'s homepage!</td></tr>\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Find all posts by Real.PUA</td></tr>\r\n	\r\n	\r\n	</table>\r\n</div>\r\n<!-- / post 6133138 popup menu -->\n<!-- END TEMPLATE: postbit -->\r\n\r\n\r\n	</div>\r\n	<!-- BEGIN TEMPLATE: spacer_close -->\n\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n<!-- / close content container -->\n<!-- END TEMPLATE: spacer_close -->\r\n\r\n<!-- / post #6133138 -->\n<!-- END TEMPLATE: postbit_wrapper -->';
-
-// next/previous post info
-pn[6133135] = "6133138,6133136";
-pn[0] = ",6133135";
-pn[6133136] = "6133135,6133137";
-pn[6133137] = "6133136,6133138";
-pn[6133138] = "6133137,6133135";
-
-// cached usernames
-pu[0] = guestphrase;
-pu[168876] = "Masta Thief";
-pu[184344] = "Adrenochrome";
-pu[177836] = "real.pua";
-
-// -->
-</script>
 
 <!-- BEGIN TEMPLATE: spacer_open -->
 <!-- open content container -->
@@ -506,39 +494,6 @@ pu[177836] = "real.pua";
 		<div style="padding:0px 5px 0px 5px" align="left">
 
 <!-- END TEMPLATE: spacer_open -->
-
-<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-top-width:0px; margin-bottom:6px">
-<tr>
-	<td class="alt2">
-	<div style="height:150px; width:100%; overflow:auto; border:2px inset; padding: 0px; text-align:left;" class="alt1" id="links">
-		<div class="smallfont">
-		<!-- start post links -->
-<script type="text/javascript">
-<!--
-writeLink(6133135, 0, 0, 168876, "", "<i>In the subject of the...</i>", "2006-05-18", "21:15", 0);
-  writeLink(6133136, 0, 0, 168876, "T", "<i>O yea when i said the &quot;can...</i>", "2006-05-18", "21:43", 0);
-  writeLink(6133137, 0, 0, 184344, "T", "<i>Isn’t it more likely that...</i>", "2006-05-18", "22:40", 0);
-  writeLink(6133138, 0, 0, 177836, "L", "<i>Infected.</i>", "2006-05-19", "18:30", 0);
-
-//-->
-</script>
-		<!-- end post links -->
-		</div>
-	</div>
-	</td>
-</tr>
-
-<tr>
-	<td class="tfoot" align="center"><div class="smallfont">
-		Prev
-		<img class="inlineimg" src="../../images/buttons/sortdesc.gif" alt="Previous Post" border="0" />
-		&nbsp;
-		<img class="inlineimg" src="../../images/buttons/sortasc.gif" alt="Next Post" border="0" />
-		Next
-	</div></td>
-</tr>
-
-</table>
 
 <!-- BEGIN TEMPLATE: spacer_close -->
 
@@ -784,7 +739,7 @@ border="0" /> &nbsp;
 
 
 <!-- END TEMPLATE: postbit_onlinestatus -->
-					<script type="text/javascript"> vbmenu_register("postmenu_6133136", true); <\/scr' + 'ipt>
+					<script type="text/javascript"> vbmenu_register("postmenu_6133136", true); </script>
 					
 				</div>
 				
@@ -952,7 +907,7 @@ border="0" /> &nbsp;
 
 
 <!-- END TEMPLATE: postbit_onlinestatus -->
-					<script type="text/javascript"> vbmenu_register("postmenu_6133137", true); <\/scr' + 'ipt>
+					<script type="text/javascript"> vbmenu_register("postmenu_6133137", true); </script>
 					
 				</div>
 				
@@ -1120,7 +1075,7 @@ border="0" /> &nbsp;
 
 
 <!-- END TEMPLATE: postbit_onlinestatus -->
-					<script type="text/javascript"> vbmenu_register("postmenu_6133138", true); <\/scr' + 'ipt>
+					<script type="text/javascript"> vbmenu_register("postmenu_6133138", true); </script>
 					
 				</div>
 				
@@ -1393,9 +1348,9 @@ border="0" /> &nbsp;
 		<div>You <strong>may not</strong> edit your posts</div>
 		<hr />
 		
-		<div>BB code is <strong>On</strong></div>
-		<div>Smilies are <strong>On</strong></div>
-		<div>[IMG] code is <strong>Off</strong></div>
+		<div><a href="../../community/bbcode.html" target="_blank">BB code</a> is <strong>On</strong></div>
+		<div><a href="../../community/showsmilies.html" target="_blank">Smilies</a> are <strong>On</strong></div>
+		<div><a href="../../community/bbcode.html#imgcode" target="_blank">[IMG]</a> code is <strong>Off</strong></div>
 		<div>HTML code is <strong>Off</strong></div>
 	</div></td>
 </tr>
@@ -1679,8 +1634,10 @@ border="0" /> &nbsp;
 			</table>
 		</td>
 
-		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots -->
-		<td width="20%" align="center" valign="top">
+		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots.
+		     min-width keeps this fluid 20% column from ever squeezing narrower
+		     than the fixed-170px table it holds, at any viewport width. -->
+		<td width="20%" align="center" valign="top" style="min-width:190px">
 
 			<table width="170" border="0" cellpadding="0" cellspacing="0">
 				<tr>

@@ -183,12 +183,26 @@
 
 		<!-- Content column -->
 		<td align="left">
-			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<!-- table-layout:fixed makes the browser honor this row's column
+			     widths exactly instead of auto-redistributing them: with the
+			     default "auto" layout, a 13px + 97% + 13px row never sums to
+			     exactly 100% of a fluid table except at one specific width,
+			     so at any other width (all of them, on a responsive page)
+			     the browser proportionally inflates the two fixed-13px
+			     corner columns to reconcile the mismatch - stretching
+			     3lt.jpg/3rt.jpg's cells past the images' own 13px width and
+			     tiling a second, partial copy of the curve artwork into the
+			     extra space, which reads as the rounded corner being cut
+			     off. Under fixed layout this row's widths become the whole
+			     table's column template (13px / remainder / 13px) and are
+			     used verbatim at every width, so the corner cells always
+			     match their images exactly and never need to repeat. -->
+			<table width="100%" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed">
 
 				<tr>
-					<td width="13" height="11" background="../../images/t3/3lt.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="97%" height="11" background="../../images/t3/3ct.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="13" height="11" background="../../images/t3/3rt.jpg"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3lt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3ct.jpg"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3rt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
 				</tr>
 
 				<!-- Ubiquitous nav menu - only real, existing pages are hyperlinked; everything
@@ -222,7 +236,7 @@
 
 				<tr valign="top">
 					<td width="13" background="../../images/t3/0cm.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="97%" height="640" background="../../images/t3/0cm.jpg">
+					<td width="97%" height="640" background="../../images/t3/0cm.jpg" style="padding-top:6px">
 <!-- breadcrumb, login, pm info -->
 <table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
 <tr>
@@ -470,33 +484,7 @@ var highlightwords = "";
 //-->
 </script>
 <script type="text/javascript" src="clientscript/vbulletin_thrdpostlist.js@v=372"></script>
-<script type="text/javascript">
-<!--
-// initialize some variables
-var curpostid = 8208132;
-var quickreply = false;
 
-// cached posts (no page reload required to view)
-pd[8208132] = '<!-- BEGIN TEMPLATE: postbit_wrapper -->\n<!-- post #8208132 -->\r\n\r\n	<!-- BEGIN TEMPLATE: spacer_open -->\n<!-- open content container -->\r\n\r\n<div align="center">\r\n	<div class="page" style="width:100%; text-align:left">\r\n		<div style="padding:0px 5px 0px 5px" align="left">\r\n\n<!-- END TEMPLATE: spacer_open -->\r\n	<div id="edit8208132" style="padding:0px 0px 6px 0px">\r\n	<!-- this is not the last post shown on the page -->\r\n\r\n\r\n<!-- BEGIN TEMPLATE: postbit -->\n<table class="tborder" id="post8208132" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">\r\n<tr>\r\n	<td class="thead" >\r\n		<div class="normal" style="float:right">\r\n			&nbsp;\r\n			#<strong>1</strong> &nbsp;\r\n			\r\n			\r\n\r\n			\r\n<img class="inlineimg" src="../../images/buttons/ignore.gif" \r\nalt="Add Lou Reed to your ignore list"\r\nborder="0" /> &nbsp;\r\n\r\n			\r\n			\r\n			\r\n		</div>\r\n		\r\n		<div class="normal">\r\n			<!-- status icon and date -->\r\n			<a name="post8208132"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>\r\n			\r\n				2007-04-26, 11:12\r\n			\r\n			\r\n			<!-- / status icon and date -->\r\n		</div>\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt2" style="padding:0px">\r\n		<!-- user info -->\r\n		<table cellpadding="0" cellspacing="6" border="0" width="100%">\r\n		<tr>\r\n			\r\n			<td nowrap="nowrap">\r\n			\r\n				<div id="postmenu_8208132">\r\n					\r\n					Lou Reed\r\n					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->\n<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="Lou Reed is offline" border="0" />\r\n\r\n\n<!-- END TEMPLATE: postbit_onlinestatus -->\r\n					<script type="text/javascript"> vbmenu_register("postmenu_8208132", true); <\/scr' + 'ipt>\r\n					\r\n				</div>\r\n				\r\n				<div class="smallfont">Regular</div>\r\n				\r\n				\r\n			</td>\r\n			<td width="100%">&nbsp;</td>\r\n			<td valign="top" nowrap="nowrap">\r\n				\r\n				<div class="smallfont">\r\n					<!-- location -->\r\n					    \r\n					\r\n					\r\n				</div>\r\n				\r\n			</td>\r\n		</tr>\r\n		</table>\r\n		<!-- / user info -->\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt1" id="td_post_8208132">\r\n	<!-- message, attachments, sig -->\r\n	\r\n		\r\n			<!-- icon and title -->\r\n			<div class="smallfont">\r\n				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />\r\n				<strong>Life possible on new planet</strong>\r\n			</div>\r\n			<hr size="1" style="color:#E8EFF4" />\r\n			<!-- / icon and title -->\r\n		\r\n		\r\n		<!-- message -->\r\n		<div id="post_message_8208132">is it?</div>\r\n		<!-- / message -->\r\n	\r\n		\r\n		\r\n		\r\n		\r\n		\r\n		<!-- edit note -->\r\n			<div class="smallfont">			<hr size="1" style="color:#E8EFF4" />\r\n				<em>\r\n				Last edited by Lou Reed; 2008-06-27 at <span class="time">15:26</span>.\r\n				\r\n				</em>\r\n			</div>\r\n		<!-- / edit note -->\r\n		\r\n	\r\n		<div style="margin-top: 10px" align="right">\r\n			<!-- controls -->\r\n			\r\n			\r\n			\r\n				<img src="../../images/buttons/quote.gif" alt="Reply With Quote" border="0" />\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n				\r\n			\r\n			<!-- / controls -->\r\n		</div>\r\n		\r\n	<!-- message, attachments, sig -->\r\n	\r\n	</td>\r\n</tr>\r\n</table>\r\n\r\n<!-- post 8208132 popup menu -->\r\n<div class="vbmenu_popup" id="postmenu_8208132_menu" style="display:none;">\r\n	<table cellpadding="4" cellspacing="1" border="0">\r\n	<tr>\r\n		<td class="thead">Lou Reed</td>\r\n	</tr>\r\n	\r\n		<tr><td class="vbmenu_option">View Public Profile</td></tr>\r\n	\r\n	\r\n	\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Find all posts by Lou Reed</td></tr>\r\n	\r\n	\r\n	</table>\r\n</div>\r\n<!-- / post 8208132 popup menu -->\n<!-- END TEMPLATE: postbit -->\r\n\r\n\r\n	</div>\r\n	<!-- BEGIN TEMPLATE: spacer_close -->\n\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n<!-- / close content container -->\n<!-- END TEMPLATE: spacer_close -->\r\n\r\n<!-- / post #8208132 -->\n<!-- END TEMPLATE: postbit_wrapper -->';
-pd[8208273] = '<!-- BEGIN TEMPLATE: postbit_wrapper -->\n<!-- post #8208273 -->\r\n\r\n	<!-- BEGIN TEMPLATE: spacer_open -->\n<!-- open content container -->\r\n\r\n<div align="center">\r\n	<div class="page" style="width:100%; text-align:left">\r\n		<div style="padding:0px 5px 0px 5px" align="left">\r\n\n<!-- END TEMPLATE: spacer_open -->\r\n	<div id="edit8208273" style="padding:0px 0px 6px 0px">\r\n	<!-- this is not the last post shown on the page -->\r\n\r\n\r\n<!-- BEGIN TEMPLATE: postbit -->\n<table class="tborder" id="post8208273" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">\r\n<tr>\r\n	<td class="thead" >\r\n		<div class="normal" style="float:right">\r\n			&nbsp;\r\n			#<strong>2</strong> &nbsp;\r\n			\r\n			\r\n\r\n			\r\n<img class="inlineimg" src="../../images/buttons/ignore.gif" \r\nalt="Add Pilsu to your ignore list"\r\nborder="0" /> &nbsp;\r\n\r\n			\r\n			\r\n			\r\n		</div>\r\n		\r\n		<div class="normal">\r\n			<!-- status icon and date -->\r\n			<a name="post8208273"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>\r\n			\r\n				2007-04-26, 12:36\r\n			\r\n			\r\n			<!-- / status icon and date -->\r\n		</div>\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt2" style="padding:0px">\r\n		<!-- user info -->\r\n		<table cellpadding="0" cellspacing="6" border="0" width="100%">\r\n		<tr>\r\n			\r\n			<td nowrap="nowrap">\r\n			\r\n				<div id="postmenu_8208273">\r\n					\r\n					Pilsu\r\n					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->\n<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="Pilsu is offline" border="0" />\r\n\r\n\n<!-- END TEMPLATE: postbit_onlinestatus -->\r\n					<script type="text/javascript"> vbmenu_register("postmenu_8208273", true); <\/scr' + 'ipt>\r\n					\r\n				</div>\r\n				\r\n				<div class="smallfont">Regular</div>\r\n				\r\n				\r\n			</td>\r\n			<td width="100%">&nbsp;</td>\r\n			<td valign="top" nowrap="nowrap">\r\n				\r\n				<div class="smallfont">\r\n					<!-- location -->Finland\r\n					    \r\n					\r\n					\r\n				</div>\r\n				\r\n			</td>\r\n		</tr>\r\n		</table>\r\n		<!-- / user info -->\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt1" id="td_post_8208273">\r\n	<!-- message, attachments, sig -->\r\n	\r\n		\r\n			<!-- icon and title -->\r\n			<div class="smallfont">\r\n				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />\r\n				<strong>Re: Life possible on new planet</strong>\r\n			</div>\r\n			<hr size="1" style="color:#E8EFF4" />\r\n			<!-- / icon and title -->\r\n		\r\n		\r\n		<!-- message -->\r\n		<div id="post_message_8208273">Go away, this has nothing to do with the forum. I\'ve seen morons spam it everywhere lately without realizing MARS is considered fucking habitable by the criteria. God\'s not up to anything until they actually find life so fuck you</div>\r\n		<!-- / message -->\r\n	\r\n		\r\n		\r\n		\r\n		\r\n		\r\n	\r\n		<div style="margin-top: 10px" align="right">\r\n			<!-- controls -->\r\n			\r\n			\r\n			\r\n				<img src="../../images/buttons/quote.gif" alt="Reply With Quote" border="0" />\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n				\r\n			\r\n			<!-- / controls -->\r\n		</div>\r\n		\r\n	<!-- message, attachments, sig -->\r\n	\r\n	</td>\r\n</tr>\r\n</table>\r\n\r\n<!-- post 8208273 popup menu -->\r\n<div class="vbmenu_popup" id="postmenu_8208273_menu" style="display:none;">\r\n	<table cellpadding="4" cellspacing="1" border="0">\r\n	<tr>\r\n		<td class="thead">Pilsu</td>\r\n	</tr>\r\n	\r\n		<tr><td class="vbmenu_option">View Public Profile</td></tr>\r\n	\r\n	\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Visit Pilsu\'s homepage!</td></tr>\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Find all posts by Pilsu</td></tr>\r\n	\r\n	\r\n	</table>\r\n</div>\r\n<!-- / post 8208273 popup menu -->\n<!-- END TEMPLATE: postbit -->\r\n\r\n\r\n	</div>\r\n	<!-- BEGIN TEMPLATE: spacer_close -->\n\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n<!-- / close content container -->\n<!-- END TEMPLATE: spacer_close -->\r\n\r\n<!-- / post #8208273 -->\n<!-- END TEMPLATE: postbit_wrapper -->';
-pd[8209265] = '<!-- BEGIN TEMPLATE: postbit_wrapper -->\n<!-- post #8209265 -->\r\n\r\n	<!-- BEGIN TEMPLATE: spacer_open -->\n<!-- open content container -->\r\n\r\n<div align="center">\r\n	<div class="page" style="width:100%; text-align:left">\r\n		<div style="padding:0px 5px 0px 5px" align="left">\r\n\n<!-- END TEMPLATE: spacer_open -->\r\n	<div id="edit8209265" style="padding:0px 0px 6px 0px">\r\n	<!-- this is not the last post shown on the page -->\r\n\r\n\r\n<!-- BEGIN TEMPLATE: postbit -->\n<table class="tborder" id="post8209265" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">\r\n<tr>\r\n	<td class="thead" >\r\n		<div class="normal" style="float:right">\r\n			&nbsp;\r\n			#<strong>3</strong> &nbsp;\r\n			\r\n			\r\n\r\n			\r\n<img class="inlineimg" src="../../images/buttons/ignore.gif" \r\nalt="Add mvpena to your ignore list"\r\nborder="0" /> &nbsp;\r\n\r\n			\r\n			\r\n			\r\n		</div>\r\n		\r\n		<div class="normal">\r\n			<!-- status icon and date -->\r\n			<a name="post8209265"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>\r\n			\r\n				2007-04-26, 18:25\r\n			\r\n			\r\n			<!-- / status icon and date -->\r\n		</div>\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt2" style="padding:0px">\r\n		<!-- user info -->\r\n		<table cellpadding="0" cellspacing="6" border="0" width="100%">\r\n		<tr>\r\n			\r\n			<td nowrap="nowrap">\r\n			\r\n				<div id="postmenu_8209265">\r\n					\r\n					<a class="bigusername" href="../../community/members/u139854.html">mvpena</a>\r\n					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->\n<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="mvpena is offline" border="0" />\r\n\r\n\n<!-- END TEMPLATE: postbit_onlinestatus -->\r\n					<script type="text/javascript"> vbmenu_register("postmenu_8209265", true); <\/scr' + 'ipt>\r\n					\r\n				</div>\r\n				\r\n				<div class="smallfont">Regular</div>\r\n				\r\n				\r\n			</td>\r\n			<td width="100%">&nbsp;</td>\r\n			<td valign="top" nowrap="nowrap">\r\n				\r\n				<div class="smallfont">\r\n					<!-- location -->Alameda, CA\r\n					    \r\n					\r\n					\r\n				</div>\r\n				\r\n			</td>\r\n		</tr>\r\n		</table>\r\n		<!-- / user info -->\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt1" id="td_post_8209265">\r\n	<!-- message, attachments, sig -->\r\n	\r\n		\r\n			<!-- icon and title -->\r\n			<div class="smallfont">\r\n				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />\r\n				<strong>Re: Life possible on new planet</strong>\r\n			</div>\r\n			<hr size="1" style="color:#E8EFF4" />\r\n			<!-- / icon and title -->\r\n		\r\n		\r\n		<!-- message -->\r\n		<div id="post_message_8209265">ZOMG... T3H MOREMENZ W3RE RYTE!! <img src="../../images/smilies/eek.gif" border="0" alt="" title="EEK!" class="inlineimg" /></div>\r\n		<!-- / message -->\r\n	\r\n		\r\n		\r\n		\r\n		\r\n		\r\n	\r\n		<div style="margin-top: 10px" align="right">\r\n			<!-- controls -->\r\n			\r\n			\r\n			\r\n				<img src="../../images/buttons/quote.gif" alt="Reply With Quote" border="0" />\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n				\r\n			\r\n			<!-- / controls -->\r\n		</div>\r\n		\r\n	<!-- message, attachments, sig -->\r\n	\r\n	</td>\r\n</tr>\r\n</table>\r\n\r\n<!-- post 8209265 popup menu -->\r\n<div class="vbmenu_popup" id="postmenu_8209265_menu" style="display:none;">\r\n	<table cellpadding="4" cellspacing="1" border="0">\r\n	<tr>\r\n		<td class="thead">mvpena</td>\r\n	</tr>\r\n	\r\n		<tr><td class="vbmenu_option"><a href="../../community/members/u139854.html">View Public Profile</a></td></tr>\r\n	\r\n	\r\n	\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Find all posts by mvpena</td></tr>\r\n	\r\n	\r\n	</table>\r\n</div>\r\n<!-- / post 8209265 popup menu -->\n<!-- END TEMPLATE: postbit -->\r\n\r\n\r\n	</div>\r\n	<!-- BEGIN TEMPLATE: spacer_close -->\n\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n<!-- / close content container -->\n<!-- END TEMPLATE: spacer_close -->\r\n\r\n<!-- / post #8209265 -->\n<!-- END TEMPLATE: postbit_wrapper -->';
-pd[8213436] = '<!-- BEGIN TEMPLATE: postbit_wrapper -->\n<!-- post #8213436 -->\r\n\r\n	<!-- BEGIN TEMPLATE: spacer_open -->\n<!-- open content container -->\r\n\r\n<div align="center">\r\n	<div class="page" style="width:100%; text-align:left">\r\n		<div style="padding:0px 5px 0px 5px" align="left">\r\n\n<!-- END TEMPLATE: spacer_open -->\r\n	<div id="edit8213436" style="padding:0px 0px 6px 0px">\r\n	<!-- this is not the last post shown on the page -->\r\n\r\n\r\n<!-- BEGIN TEMPLATE: postbit -->\n<table class="tborder" id="post8213436" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">\r\n<tr>\r\n	<td class="thead" >\r\n		<div class="normal" style="float:right">\r\n			&nbsp;\r\n			#<strong>4</strong> &nbsp;\r\n			\r\n			\r\n\r\n			\r\n<img class="inlineimg" src="../../images/buttons/ignore.gif" \r\nalt="Add Lou Reed to your ignore list"\r\nborder="0" /> &nbsp;\r\n\r\n			\r\n			\r\n			\r\n		</div>\r\n		\r\n		<div class="normal">\r\n			<!-- status icon and date -->\r\n			<a name="post8213436"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>\r\n			\r\n				2007-04-27, 13:24\r\n			\r\n			\r\n			<!-- / status icon and date -->\r\n		</div>\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt2" style="padding:0px">\r\n		<!-- user info -->\r\n		<table cellpadding="0" cellspacing="6" border="0" width="100%">\r\n		<tr>\r\n			\r\n			<td nowrap="nowrap">\r\n			\r\n				<div id="postmenu_8213436">\r\n					\r\n					Lou Reed\r\n					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->\n<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="Lou Reed is offline" border="0" />\r\n\r\n\n<!-- END TEMPLATE: postbit_onlinestatus -->\r\n					<script type="text/javascript"> vbmenu_register("postmenu_8213436", true); <\/scr' + 'ipt>\r\n					\r\n				</div>\r\n				\r\n				<div class="smallfont">Regular</div>\r\n				\r\n				\r\n			</td>\r\n			<td width="100%">&nbsp;</td>\r\n			<td valign="top" nowrap="nowrap">\r\n				\r\n				<div class="smallfont">\r\n					<!-- location -->\r\n					    \r\n					\r\n					\r\n				</div>\r\n				\r\n			</td>\r\n		</tr>\r\n		</table>\r\n		<!-- / user info -->\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt1" id="td_post_8213436">\r\n	<!-- message, attachments, sig -->\r\n	\r\n		\r\n			<!-- icon and title -->\r\n			<div class="smallfont">\r\n				<img class="inlineimg" src="../../images/icons/icon9.gif" alt="Unhappy" border="0" />\r\n				<strong>Re: Life possible on new planet</strong>\r\n			</div>\r\n			<hr size="1" style="color:#E8EFF4" />\r\n			<!-- / icon and title -->\r\n		\r\n		\r\n		<!-- message -->\r\n		<div id="post_message_8213436">http:showthread.php@t=1998863<br />\r\n<br />\r\n<br />\r\n<br />\r\n<br />\r\nSuppose God exists,<br />\r\n<br />\r\n<br />\r\n<br />\r\n<br />\r\nTHese are posts of relitive significance<br />\r\n<br />\r\n<br />\r\n<br />\r\n------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br />\r\n<br />\r\n<br />\r\n<br />\r\n<br />\r\n<br />\r\nMerlinman 2005<br />\r\n<br />\r\n<br />\r\n<br />\r\nTime isn\'t, IMO, the FOURTH dimension, it\'s the EXTRA dimension.<br />\r\n<br />\r\nThe whole scenario with a 2d land, and a sphere moving through it seems wrong to me. Something about it. I dunno what changes a circle would undergo in it\'s &quot;life,&quot; as in, in relation to humans changing from babes to elderlies. <br />\r\n<br />\r\nIf we were 2d, then we\'d say the thrid dimension was time. We wouldn\'t be able to envision a sphere because there is no up and down in a land like that. A circle\'s 3d equivalent would look like an elongated oval, right? Or like a windsock thingie, with a small curved side, and a long curved side.<br />\r\n<br />\r\ngosh did that make sense?<br />\r\n<br />\r\n<br />\r\n<br />\r\n------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br />\r\n<br />\r\n<br />\r\n<br />\r\n<br />\r\n<br />\r\n<br />\r\nTime may be used as a measurement:<br />\r\n<br />\r\n&quot;It took ten minutes to walk from Mac Donalds to Big Mac&quot;<br />\r\n<br />\r\nAlso;<br />\r\n<br />\r\nhttp://en.wikipedia.org/wiki/Time <br />\r\n<br />\r\nthis explains that such is a measurement properly.<br />\r\n<br />\r\nYou may consider that time has nothing to do with religion or God. Maybe, time is the unwritten spaces that make the universe so;<br />\r\n<br />\r\n&quot;The earth takes three hundred and sixty five days to cirlce the sun.&quot;<br />\r\n<br />\r\nand so forth.... <br />\r\n<br />\r\n<br />\r\n<br />\r\n<br />\r\n<br />\r\n<br />\r\n<br />\r\n<br />\r\n<br />\r\n------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br />\r\n<br />\r\n<br />\r\n<br />\r\n<br />\r\nshape and form:<br />\r\n<br />\r\nIs an object stationary?<br />\r\n<br />\r\nIs it alive?<br />\r\n<br />\r\n<br />\r\n<br />\r\nQuote<br />\r\n<br />\r\nMerlinman2005:<br />\r\n<br />\r\nThe whole scenario with a 2d land, and a sphere moving through it seems wrong to me. Something about it. I dunno what changes a circle would undergo in it\'s &quot;life,&quot; as in, in relation to humans changing from babes to elderlies. <br />\r\n<br />\r\nIf we were 2d, then we\'d say the thrid dimension was time. We wouldn\'t be able to envision a sphere because there is no up and down in a land like that. A circle\'s 3d equivalent would look like an elongated oval, right? Or like a windsock thingie, with a small curved side, and a long curved side.<br />\r\n<br />\r\n<br />\r\n<br />\r\nTime itself is used as a calculative. It is a measurement; a tool.<br />\r\n<br />\r\nIf you are to calculate the measurement of form:<br />\r\n<br />\r\nif you are to suggest a fourth dimension in reality one can suggest that as there is movement, there is a calculable figure or shape to which is also a seminal shape, parallel to this shape and can be inverted if you take into account direction of one point (\'O\'-dimension) or of four points i.e.,<br />\r\n<br />\r\n--------------------------------------------<br />\r\n<br />\r\na square: <br />\r\n<br />\r\nfour points of equal distance and each side parrallel to on either direction. At the centre is O.<br />\r\n<br />\r\n<br />\r\n<br />\r\n<br />\r\n<br />\r\nTime is used in the following calculation:<br />\r\n<br />\r\nIt is suggested that as there is a point O, in order to for this to initiate.<br />\r\n<br />\r\nA structure built on form in the reality around us. More exact calculation is required for a fourth and fifth dimension, the suggested creation of that which is physically improbable.<br />\r\n<br />\r\n<br />\r\n<br />\r\n<br />\r\n<br />\r\n<br />\r\n<br />\r\n------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br />\r\n<br />\r\n<br />\r\n<br />\r\n<br />\r\nCan God create a rock so heavy that even he himself can not lift it?<br />\r\n<br />\r\nI remember the last time this was posted. One user posted something about segmenting the questions into two parts.<br />\r\n<br />\r\n<br />\r\n<br />\r\n<br />\r\n<br />\r\nIf there is God,<br />\r\n<br />\r\nand if he were to attempt such a thing, <br />\r\n<br />\r\nit would require its placement in physical form.<br />\r\n<br />\r\nThe answer is yes<br />\r\n<br />\r\n<br />\r\n<br />\r\n------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br />\r\n<br />\r\n<br />\r\n<br />\r\nIn theory an object may be created as such, however under the presumtion that God can do so a whole new structure would need to be created.<br />\r\n<br />\r\nIn the event of event horizon, <br />\r\n<br />\r\nthe collapsing of structure is not physical or elemental but partical and in theory requires a time trigger understood as<br />\r\n<br />\r\na The metric tensor<br />\r\n<br />\r\nThe metric tensor is a central object in general relativity that describes the local geometry of spacetime (as a result of solving the Einstein field equation???). Using approximation, the metric can also be thought of as representing the \'gravitational potential\'. <br />\r\n<br />\r\nThe metric is a symmetric tensor and is an important mathematical tool. As well as being used to raise and lower tensor indices, it also generates the connections which are used to construct the geodesic equations of a /motion...<br />\r\n<br />\r\nIts theory until it happens/<br />\r\n<br />\r\nit would require time measurement to achieve a required invariant. <br />\r\n<br />\r\nIn the occurance of <br />\r\n<br />\r\ntime A - the invention of such structure<br />\r\n<br />\r\ntime B - in the event of such mass that<br />\r\n<br />\r\nB time(a stone of mass and structure that it is the whole form in place occurring between A and C in time <br />\r\n<br />\r\ntime C - you dont need God to do it <br />\r\n<br />\r\n<br />\r\n<br />\r\nYou could probably throw another one on for good measure...<br />\r\n<br />\r\nyou know,<br />\r\n<br />\r\nmake sure...<br />\r\n<br />\r\n<br />\r\n<br />\r\n<br />\r\n<br />\r\n<br />\r\n------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br />\r\n<br />\r\n<br />\r\n<br />\r\n<br />\r\n[b]In theory an object may be created as such, however under the presumtion that God can do so a whole new structure would need to be created.<br />\r\n<br />\r\n<br />\r\n------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br />\r\n<br />\r\n<br />\r\n<br />\r\n<br />\r\nTwisted ferret<br />\r\n<br />\r\nQuote: <br />\r\nquote:Originally posted by Merlinman2005:<br />\r\n<br />\r\nOh and did I only use nouns there? I didn\'t notice. I could\'ve gone with &quot;honest a help,&quot; or &quot;Grow a yellow.&quot; Nonsensical things that He should still be able to do if he\'s expected to do this rock thing. <br />\r\n<br />\r\nYou consistantly seem to think that if you can fufill the details of an argument, you are correct. You\'re just splitting hairs again. After Image\'s main point is not that you can\'t use nouns as verbs; it\'s that your supposed refutations are using the English language wrong. &quot;Grow a help&quot; uses a verb (help) as a noun; it\'s equally as wrong as using a noun as a verb. Your &quot;answer&quot; here doesn\'t change anything.<br />\r\n<br />\r\nThe rock paradox is perfectly understandable, and not nonscensical at all. It\'s asking: Can an omnipotent being defy its own omnipotence? Can an omnipotent being do the illogical? Yes or no. It is far from meaningless, and is easily answerable. &quot;Can God grow a help&quot;, however, is without meaning. It is not a contradiction of logic. It is not dealing with an error in logic, as the rock question is; it is dealing with an error in the English language. They are completely different subjects, completely different forms. The rock question is about a contradiction in logic; please tell me where the contradiction in logic is in growing a help. There is none, because growing a help isn\'t illogical - it\'s nonscensical.<br />\r\n<br />\r\nIf God could do the illogical, it doesn\'t mean that he could grow a help - growing a help has nothing to do with logic, and everything to do with language.</div>\r\n		<!-- / message -->\r\n	\r\n		\r\n		\r\n		\r\n		\r\n		\r\n	\r\n		<div style="margin-top: 10px" align="right">\r\n			<!-- controls -->\r\n			\r\n			\r\n			\r\n				<img src="../../images/buttons/quote.gif" alt="Reply With Quote" border="0" />\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n				\r\n			\r\n			<!-- / controls -->\r\n		</div>\r\n		\r\n	<!-- message, attachments, sig -->\r\n	\r\n	</td>\r\n</tr>\r\n</table>\r\n\r\n<!-- post 8213436 popup menu -->\r\n<div class="vbmenu_popup" id="postmenu_8213436_menu" style="display:none;">\r\n	<table cellpadding="4" cellspacing="1" border="0">\r\n	<tr>\r\n		<td class="thead">Lou Reed</td>\r\n	</tr>\r\n	\r\n		<tr><td class="vbmenu_option">View Public Profile</td></tr>\r\n	\r\n	\r\n	\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Find all posts by Lou Reed</td></tr>\r\n	\r\n	\r\n	</table>\r\n</div>\r\n<!-- / post 8213436 popup menu -->\n<!-- END TEMPLATE: postbit -->\r\n\r\n\r\n	</div>\r\n	<!-- BEGIN TEMPLATE: spacer_close -->\n\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n<!-- / close content container -->\n<!-- END TEMPLATE: spacer_close -->\r\n\r\n<!-- / post #8213436 -->\n<!-- END TEMPLATE: postbit_wrapper -->';
-
-// next/previous post info
-pn[8208132] = "8213436,8208273";
-pn[0] = ",8208132";
-pn[8208273] = "8208132,8209265";
-pn[8209265] = "8208273,8213436";
-pn[8213436] = "8209265,8208132";
-
-// cached usernames
-pu[0] = guestphrase;
-pu[191682] = "Lou Reed";
-pu[152605] = "Pilsu";
-pu[139854] = "mvpena";
-
-// -->
-</script>
 
 <!-- BEGIN TEMPLATE: spacer_open -->
 <!-- open content container -->
@@ -506,39 +494,6 @@ pu[139854] = "mvpena";
 		<div style="padding:0px 5px 0px 5px" align="left">
 
 <!-- END TEMPLATE: spacer_open -->
-
-<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-top-width:0px; margin-bottom:6px">
-<tr>
-	<td class="alt2">
-	<div style="height:150px; width:100%; overflow:auto; border:2px inset; padding: 0px; text-align:left;" class="alt1" id="links">
-		<div class="smallfont">
-		<!-- start post links -->
-<script type="text/javascript">
-<!--
-writeLink(8208132, 0, 0, 191682, "", "Life possible on new planet", "2007-04-26", "11:12", 0);
-  writeLink(8208273, 0, 0, 152605, "L", "Re: Life possible on new...", "2007-04-26", "12:36", 0);
-    writeLink(8209265, 0, 0, 139854, "1,L", "Re: Life possible on new...", "2007-04-26", "18:25", 0);
-      writeLink(8213436, 0, 0, 191682, "2,L", "Re: Life possible on new...", "2007-04-27", "13:24", 0);
-
-//-->
-</script>
-		<!-- end post links -->
-		</div>
-	</div>
-	</td>
-</tr>
-
-<tr>
-	<td class="tfoot" align="center"><div class="smallfont">
-		Prev
-		<img class="inlineimg" src="../../images/buttons/sortdesc.gif" alt="Previous Post" border="0" />
-		&nbsp;
-		<img class="inlineimg" src="../../images/buttons/sortasc.gif" alt="Next Post" border="0" />
-		Next
-	</div></td>
-</tr>
-
-</table>
 
 <!-- BEGIN TEMPLATE: spacer_close -->
 
@@ -791,7 +746,7 @@ border="0" /> &nbsp;
 
 
 <!-- END TEMPLATE: postbit_onlinestatus -->
-					<script type="text/javascript"> vbmenu_register("postmenu_8208273", true); <\/scr' + 'ipt>
+					<script type="text/javascript"> vbmenu_register("postmenu_8208273", true); </script>
 					
 				</div>
 				
@@ -959,7 +914,7 @@ border="0" /> &nbsp;
 
 
 <!-- END TEMPLATE: postbit_onlinestatus -->
-					<script type="text/javascript"> vbmenu_register("postmenu_8209265", true); <\/scr' + 'ipt>
+					<script type="text/javascript"> vbmenu_register("postmenu_8209265", true); </script>
 					
 				</div>
 				
@@ -1125,7 +1080,7 @@ border="0" /> &nbsp;
 
 
 <!-- END TEMPLATE: postbit_onlinestatus -->
-					<script type="text/javascript"> vbmenu_register("postmenu_8213436", true); <\/scr' + 'ipt>
+					<script type="text/javascript"> vbmenu_register("postmenu_8213436", true); </script>
 					
 				</div>
 				
@@ -1589,9 +1544,9 @@ If God could do the illogical, it doesn't mean that he could grow a help - growi
 		<div>You <strong>may not</strong> edit your posts</div>
 		<hr />
 		
-		<div>BB code is <strong>On</strong></div>
-		<div>Smilies are <strong>On</strong></div>
-		<div>[IMG] code is <strong>Off</strong></div>
+		<div><a href="../../community/bbcode.html" target="_blank">BB code</a> is <strong>On</strong></div>
+		<div><a href="../../community/showsmilies.html" target="_blank">Smilies</a> are <strong>On</strong></div>
+		<div><a href="../../community/bbcode.html#imgcode" target="_blank">[IMG]</a> code is <strong>Off</strong></div>
 		<div>HTML code is <strong>Off</strong></div>
 	</div></td>
 </tr>
@@ -1875,8 +1830,10 @@ If God could do the illogical, it doesn't mean that he could grow a help - growi
 			</table>
 		</td>
 
-		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots -->
-		<td width="20%" align="center" valign="top">
+		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots.
+		     min-width keeps this fluid 20% column from ever squeezing narrower
+		     than the fixed-170px table it holds, at any viewport width. -->
+		<td width="20%" align="center" valign="top" style="min-width:190px">
 
 			<table width="170" border="0" cellpadding="0" cellspacing="0">
 				<tr>

@@ -183,12 +183,26 @@
 
 		<!-- Content column -->
 		<td align="left">
-			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<!-- table-layout:fixed makes the browser honor this row's column
+			     widths exactly instead of auto-redistributing them: with the
+			     default "auto" layout, a 13px + 97% + 13px row never sums to
+			     exactly 100% of a fluid table except at one specific width,
+			     so at any other width (all of them, on a responsive page)
+			     the browser proportionally inflates the two fixed-13px
+			     corner columns to reconcile the mismatch - stretching
+			     3lt.jpg/3rt.jpg's cells past the images' own 13px width and
+			     tiling a second, partial copy of the curve artwork into the
+			     extra space, which reads as the rounded corner being cut
+			     off. Under fixed layout this row's widths become the whole
+			     table's column template (13px / remainder / 13px) and are
+			     used verbatim at every width, so the corner cells always
+			     match their images exactly and never need to repeat. -->
+			<table width="100%" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed">
 
 				<tr>
-					<td width="13" height="11" background="../../images/t3/3lt.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="97%" height="11" background="../../images/t3/3ct.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="13" height="11" background="../../images/t3/3rt.jpg"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3lt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3ct.jpg"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3rt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
 				</tr>
 
 				<!-- Ubiquitous nav menu - only real, existing pages are hyperlinked; everything
@@ -222,7 +236,7 @@
 
 				<tr valign="top">
 					<td width="13" background="../../images/t3/0cm.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="97%" height="640" background="../../images/t3/0cm.jpg">
+					<td width="97%" height="640" background="../../images/t3/0cm.jpg" style="padding-top:6px">
 <!-- breadcrumb, login, pm info -->
 <table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
 <tr>
@@ -470,25 +484,7 @@ var highlightwords = "";
 //-->
 </script>
 <script type="text/javascript" src="clientscript/vbulletin_thrdpostlist.js@v=372"></script>
-<script type="text/javascript">
-<!--
-// initialize some variables
-var curpostid = 6140519;
-var quickreply = false;
 
-// cached posts (no page reload required to view)
-pd[6140519] = '<!-- BEGIN TEMPLATE: postbit_wrapper -->\n<!-- post #6140519 -->\r\n\r\n	<!-- BEGIN TEMPLATE: spacer_open -->\n<!-- open content container -->\r\n\r\n<div align="center">\r\n	<div class="page" style="width:100%; text-align:left">\r\n		<div style="padding:0px 5px 0px 5px" align="left">\r\n\n<!-- END TEMPLATE: spacer_open -->\r\n	<div id="edit6140519" style="padding:0px 0px 6px 0px">\r\n	<!-- this is not the last post shown on the page -->\r\n\r\n\r\n<!-- BEGIN TEMPLATE: postbit -->\n<table class="tborder" id="post6140519" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">\r\n<tr>\r\n	<td class="thead" >\r\n		<div class="normal" style="float:right">\r\n			&nbsp;\r\n			#<strong>1</strong> &nbsp;\r\n			\r\n			\r\n\r\n			\r\n<img class="inlineimg" src="../../images/buttons/ignore.gif" \r\nalt="Add MisiuOni to your ignore list"\r\nborder="0" /> &nbsp;\r\n\r\n			\r\n			\r\n			\r\n		</div>\r\n		\r\n		<div class="normal">\r\n			<!-- status icon and date -->\r\n			<a name="post6140519"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>\r\n			\r\n				2006-08-12, 18:16\r\n			\r\n			\r\n			<!-- / status icon and date -->\r\n		</div>\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt2" style="padding:0px">\r\n		<!-- user info -->\r\n		<table cellpadding="0" cellspacing="6" border="0" width="100%">\r\n		<tr>\r\n			\r\n			<td nowrap="nowrap">\r\n			\r\n				<div id="postmenu_6140519">\r\n					\r\n					MisiuOni\r\n					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->\n<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="MisiuOni is offline" border="0" />\r\n\r\n\n<!-- END TEMPLATE: postbit_onlinestatus -->\r\n					<script type="text/javascript"> vbmenu_register("postmenu_6140519", true); <\/scr' + 'ipt>\r\n					\r\n				</div>\r\n				\r\n				<div class="smallfont">Regular</div>\r\n				\r\n				\r\n			</td>\r\n			<td width="100%">&nbsp;</td>\r\n			<td valign="top" nowrap="nowrap">\r\n				\r\n				<div class="smallfont">\r\n					<!-- location -->New York New York USA\r\n					    \r\n					\r\n					\r\n				</div>\r\n				\r\n			</td>\r\n		</tr>\r\n		</table>\r\n		<!-- / user info -->\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt1" id="td_post_6140519">\r\n	<!-- message, attachments, sig -->\r\n	\r\n		\r\n			<!-- icon and title -->\r\n			<div class="smallfont">\r\n				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />\r\n				\r\n			</div>\r\n			<hr size="1" style="color:#E8EFF4" />\r\n			<!-- / icon and title -->\r\n		\r\n		\r\n		<!-- message -->\r\n		<div id="post_message_6140519">I had to write this for a class - thought I\'d post it here:<br />\n<br />\n            Almost every society has a concept of something intrinsically human that is can not be seen. Everybody seems to attack this idea in a different light. Whether it\'s Ahmad Ahsa\'I explaining a semi-complex system involving a divine transformation, David Gordon White\'s explanation of resurrection into the source, or, finally, how Kristofer Schipper tells us the Tao describes the systems which govern our inner bodies, each writer attempts in some way to explain what those of us who live in the Judeo-Christian influenced world has come to call the soul.<br />\n<br />\n            We begin in the same way as the examples above, with an essay from Ahmad Ahsa\'I. In his text, titled &quot;Physiology of the Resurrection Body,&quot; he initially outlines that there is a body of flesh, that he calls the jasad, and there is a body &quot;undefined,&quot; that he calls jism.  In his own words, the jasad &quot;is obviously used … as the antithesis of \'Spirit,\' whereas the word jism … has a much more general meaning …&quot;<br />\n<br />\n            After this explanation, he tells that each &quot;human being possesses two jasad and two jism.&quot; Our first jasad (or body of flesh) is made up of elements that decay and rot (&quot;… this flesh, is like a garment that a man puts on and later casts off again ;&quot;). Ahsa\'I stresses that the body has &quot;neither enjoyment nor suffering; it is subject neither to fidelity nor to rebellion.&quot; Simply put, our fleshly body is nothing but a mask with which to cover ourselves.<br />\n<br />\n            He next illustrates the qualities of the second jasad. Ahsa\'I tells us, after the body has decayed and returned to its original elements, the Imam Ja\'far Sadiq says &quot;the \'body of celestial flesh\' survives and retains its perfect \'shape.\' &quot; Further on, Ahsa\'I exclaims the &quot;this body … is the reality of the human being which, without increase or decrease, survives \'in the tomb\' after the body of flesh made of terrestrial elements … have been separated from it and dissolved … When it is thus decomposed and destroyed, there is finally nothing of it to be found, so that some people affirm that the human being is annihilated.&quot; However, this absence of presence only applies to the first jasad (once again, the body of terrestrial flesh).<br />\n<br />\n            The two types of jism are the astral subtle body and the supracelestial archetypal body. The first jism is the body &quot;in which the Spirit departs from its body of terrestrial flesh.&quot; The second jism is the celestial body into which the first jism is transformed into through the great resurrection.<br />\n<br />\n            According to White, there are two orders of being (&quot;… man in the world and the gods in heaven …&quot;) which can be linked through a sacrifice to bridge &quot;the human world order and divine cosmic order.&quot; Termed the adhiyajna, anything concerning the sacrifice and the link that was created upon it, acquired an &quot;ontological status&quot; (meaning to create investigations into what it means to exist within this world and the next).<br />\n<br />\n            This sacrifice and it\'s vessel [1] is termed the &quot;body of enjoyment&quot; and is &quot;an%20elaboration%20on%20the%20subtle%20body,%20i.e.,%20the \'living being\' that … mediates between the eternal but wholly intangible soul and the gross body …&quot; What White tells us, is that the subtle body is separate from the soul, but is bound to it regardless.<br />\n<br />\n            In Schipper\'s Taoist Body, he begins by telling us &quot;for the Taoist master, the true gods are found within himself.&quot; So he begins by telling us that within is a body that contains the deities which we normally don\'t see. These so-called gods reside within us and there are &quot;thousands of different systems&quot; to control them, reducing their roles from gods to workers. These gods-turned-workers are kept against their will in our bodies, and follow a &quot;sixty-day (sexagenary) cycle,&quot; in which different gods act differently. For example, there are two kinds of gods within us: hun (the heavenly souls) and the p\'o (the correspondent opposite &quot;evil&quot; soul). The most troublesome time for us in our bodies is apparently day 57 of our sixty day cycles, because that is the day that &quot;they cause us to get nearer to death and dissolution.&quot; Contrarily, the p\'o attack with the cycles of the moon: &quot;the nights of the first, the fifteenth, and the last day of the moon are the times when the p\'o go roaming, steeping in corruption and filth.&quot;<br />\n<br />\n            Through what Schipper has told us of the different entities that reside within us (according to the Tao), our [subtle] bodies are mere kingdoms/countries. Each part of our subtle body is ruled by a different deity ( hun or p\'o), which gives us an uneasy juxtaposition of heaven and earth in a single vessel (our bodies, subtle and physical).<br />\n<br />\n            In each of the traditions introduced, there is a concept of a subtle body. Many would look at these words and think that this was a discussion of the soul. This is completely wrong. In Islam, the subtle body is the link the vessel in which the Spirit travels to the ethereal realm, while the Spirit is the essence a person ( i.e.: what makes Bobby, Bobby). Hinduism explains that the subtle body is a tool that is used to communicate and link the ethereal (kingdom of the gods) to the physical (kingdom of man). Finally, the Tao describes the subtle body is the kingdom of the gods that is within ourselves. The similarities include the inability to physically see these subtle bodies, and a separation from the actual soul of human being. The ideal of the subtle body seems as intrinsic to human nature as the mystic experience. These texts have shown us that the true link to the gods/spiritual realm is not our soul, but this subtle body. It is the subtle body that works as a bond to the divine, not our souls: our souls are the essence of our being – our respective identities – but only individually; the subtle body is the mechanism which allows us to interact with other Spirits. </div>\r\n		<!-- / message -->\r\n	\r\n		\r\n		\r\n		\r\n		\r\n		\r\n	\r\n		<div style="margin-top: 10px" align="right">\r\n			<!-- controls -->\r\n			\r\n			\r\n			\r\n				<img src="../../images/buttons/quote.gif" alt="Reply With Quote" border="0" />\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n				\r\n			\r\n			<!-- / controls -->\r\n		</div>\r\n		\r\n	<!-- message, attachments, sig -->\r\n	\r\n	</td>\r\n</tr>\r\n</table>\r\n\r\n<!-- post 6140519 popup menu -->\r\n<div class="vbmenu_popup" id="postmenu_6140519_menu" style="display:none;">\r\n	<table cellpadding="4" cellspacing="1" border="0">\r\n	<tr>\r\n		<td class="thead">MisiuOni</td>\r\n	</tr>\r\n	\r\n		<tr><td class="vbmenu_option">View Public Profile</td></tr>\r\n	\r\n	\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Visit MisiuOni\'s homepage!</td></tr>\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Find all posts by MisiuOni</td></tr>\r\n	\r\n	\r\n	</table>\r\n</div>\r\n<!-- / post 6140519 popup menu -->\n<!-- END TEMPLATE: postbit -->\r\n\r\n\r\n	</div>\r\n	<!-- BEGIN TEMPLATE: spacer_close -->\n\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n<!-- / close content container -->\n<!-- END TEMPLATE: spacer_close -->\r\n\r\n<!-- / post #6140519 -->\n<!-- END TEMPLATE: postbit_wrapper -->';
-
-// next/previous post info
-pn[6140519] = "6140519,6140519";
-pn[0] = ",6140519";
-
-// cached usernames
-pu[0] = guestphrase;
-pu[203459] = "MisiuOni";
-
-// -->
-</script>
 
 <!-- BEGIN TEMPLATE: spacer_open -->
 <!-- open content container -->
@@ -498,36 +494,6 @@ pu[203459] = "MisiuOni";
 		<div style="padding:0px 5px 0px 5px" align="left">
 
 <!-- END TEMPLATE: spacer_open -->
-
-<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-top-width:0px; margin-bottom:6px">
-<tr>
-	<td class="alt2">
-	<div style="height:150px; width:100%; overflow:auto; border:2px inset; padding: 0px; text-align:left;" class="alt1" id="links">
-		<div class="smallfont">
-		<!-- start post links -->
-<script type="text/javascript">
-<!--
-writeLink(6140519, 0, 0, 203459, "", "<i>I had to write this for a...</i>", "2006-08-12", "18:16", 0);
-
-//-->
-</script>
-		<!-- end post links -->
-		</div>
-	</div>
-	</td>
-</tr>
-
-<tr>
-	<td class="tfoot" align="center"><div class="smallfont">
-		Prev
-		<img class="inlineimg" src="../../images/buttons/sortdesc.gif" alt="Previous Post" border="0" />
-		&nbsp;
-		<img class="inlineimg" src="../../images/buttons/sortasc.gif" alt="Next Post" border="0" />
-		Next
-	</div></td>
-</tr>
-
-</table>
 
 <!-- BEGIN TEMPLATE: spacer_close -->
 
@@ -885,9 +851,9 @@ border="0" /> &nbsp;
 		<div>You <strong>may not</strong> edit your posts</div>
 		<hr />
 		
-		<div>BB code is <strong>On</strong></div>
-		<div>Smilies are <strong>On</strong></div>
-		<div>[IMG] code is <strong>Off</strong></div>
+		<div><a href="../../community/bbcode.html" target="_blank">BB code</a> is <strong>On</strong></div>
+		<div><a href="../../community/showsmilies.html" target="_blank">Smilies</a> are <strong>On</strong></div>
+		<div><a href="../../community/bbcode.html#imgcode" target="_blank">[IMG]</a> code is <strong>Off</strong></div>
 		<div>HTML code is <strong>Off</strong></div>
 	</div></td>
 </tr>
@@ -1171,8 +1137,10 @@ border="0" /> &nbsp;
 			</table>
 		</td>
 
-		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots -->
-		<td width="20%" align="center" valign="top">
+		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots.
+		     min-width keeps this fluid 20% column from ever squeezing narrower
+		     than the fixed-170px table it holds, at any viewport width. -->
+		<td width="20%" align="center" valign="top" style="min-width:190px">
 
 			<table width="170" border="0" cellpadding="0" cellspacing="0">
 				<tr>

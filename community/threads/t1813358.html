@@ -183,12 +183,26 @@
 
 		<!-- Content column -->
 		<td align="left">
-			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<!-- table-layout:fixed makes the browser honor this row's column
+			     widths exactly instead of auto-redistributing them: with the
+			     default "auto" layout, a 13px + 97% + 13px row never sums to
+			     exactly 100% of a fluid table except at one specific width,
+			     so at any other width (all of them, on a responsive page)
+			     the browser proportionally inflates the two fixed-13px
+			     corner columns to reconcile the mismatch - stretching
+			     3lt.jpg/3rt.jpg's cells past the images' own 13px width and
+			     tiling a second, partial copy of the curve artwork into the
+			     extra space, which reads as the rounded corner being cut
+			     off. Under fixed layout this row's widths become the whole
+			     table's column template (13px / remainder / 13px) and are
+			     used verbatim at every width, so the corner cells always
+			     match their images exactly and never need to repeat. -->
+			<table width="100%" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed">
 
 				<tr>
-					<td width="13" height="11" background="../../images/t3/3lt.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="97%" height="11" background="../../images/t3/3ct.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="13" height="11" background="../../images/t3/3rt.jpg"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3lt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3ct.jpg"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3rt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
 				</tr>
 
 				<!-- Ubiquitous nav menu - only real, existing pages are hyperlinked; everything
@@ -222,7 +236,7 @@
 
 				<tr valign="top">
 					<td width="13" background="../../images/t3/0cm.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="97%" height="640" background="../../images/t3/0cm.jpg">
+					<td width="97%" height="640" background="../../images/t3/0cm.jpg" style="padding-top:6px">
 <!-- breadcrumb, login, pm info -->
 <table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
 <tr>
@@ -470,28 +484,7 @@ var highlightwords = "";
 //-->
 </script>
 <script type="text/javascript" src="clientscript/vbulletin_thrdpostlist.js@v=372"></script>
-<script type="text/javascript">
-<!--
-// initialize some variables
-var curpostid = 6133440;
-var quickreply = false;
 
-// cached posts (no page reload required to view)
-pd[6133440] = '<!-- BEGIN TEMPLATE: postbit_wrapper -->\n<!-- post #6133440 -->\r\n\r\n	<!-- BEGIN TEMPLATE: spacer_open -->\n<!-- open content container -->\r\n\r\n<div align="center">\r\n	<div class="page" style="width:100%; text-align:left">\r\n		<div style="padding:0px 5px 0px 5px" align="left">\r\n\n<!-- END TEMPLATE: spacer_open -->\r\n	<div id="edit6133440" style="padding:0px 0px 6px 0px">\r\n	<!-- this is not the last post shown on the page -->\r\n\r\n\r\n<!-- BEGIN TEMPLATE: postbit -->\n<table class="tborder" id="post6133440" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">\r\n<tr>\r\n	<td class="thead" >\r\n		<div class="normal" style="float:right">\r\n			&nbsp;\r\n			#<strong>1</strong> &nbsp;\r\n			\r\n			\r\n\r\n			\r\n<img class="inlineimg" src="../../images/buttons/ignore.gif" \r\nalt="Add cac0 to your ignore list"\r\nborder="0" /> &nbsp;\r\n\r\n			\r\n			\r\n			\r\n		</div>\r\n		\r\n		<div class="normal">\r\n			<!-- status icon and date -->\r\n			<a name="post6133440"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>\r\n			\r\n				2006-05-21, 07:50\r\n			\r\n			\r\n			<!-- / status icon and date -->\r\n		</div>\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt2" style="padding:0px">\r\n		<!-- user info -->\r\n		<table cellpadding="0" cellspacing="6" border="0" width="100%">\r\n		<tr>\r\n			\r\n			<td nowrap="nowrap">\r\n			\r\n				<div id="postmenu_6133440">\r\n					\r\n					cac0\r\n					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->\n<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="cac0 is offline" border="0" />\r\n\r\n\n<!-- END TEMPLATE: postbit_onlinestatus -->\r\n					<script type="text/javascript"> vbmenu_register("postmenu_6133440", true); <\/scr' + 'ipt>\r\n					\r\n				</div>\r\n				\r\n				<div class="smallfont">Regular</div>\r\n				\r\n				\r\n			</td>\r\n			<td width="100%">&nbsp;</td>\r\n			<td valign="top" nowrap="nowrap">\r\n				\r\n				<div class="smallfont">\r\n					<!-- location -->STAB! STAB!\r\n					    \r\n					\r\n					\r\n				</div>\r\n				\r\n			</td>\r\n		</tr>\r\n		</table>\r\n		<!-- / user info -->\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt1" id="td_post_6133440">\r\n	<!-- message, attachments, sig -->\r\n	\r\n		\r\n			<!-- icon and title -->\r\n			<div class="smallfont">\r\n				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />\r\n				\r\n			</div>\r\n			<hr size="1" style="color:#E8EFF4" />\r\n			<!-- / icon and title -->\r\n		\r\n		\r\n		<!-- message -->\r\n		<div id="post_message_6133440">Can someone explain to me what the point of God\'s covenant with Abraham was and why it is important? <br />\n<br />\n[This message has been edited by cac0 (edited 05-21-2006).]</div>\r\n		<!-- / message -->\r\n	\r\n		\r\n		\r\n		\r\n		\r\n		\r\n	\r\n		<div style="margin-top: 10px" align="right">\r\n			<!-- controls -->\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n				\r\n			\r\n			<!-- / controls -->\r\n		</div>\r\n		\r\n	<!-- message, attachments, sig -->\r\n	\r\n	</td>\r\n</tr>\r\n</table>\r\n\r\n<!-- post 6133440 popup menu -->\r\n<div class="vbmenu_popup" id="postmenu_6133440_menu" style="display:none;">\r\n	<table cellpadding="4" cellspacing="1" border="0">\r\n	<tr>\r\n		<td class="thead">cac0</td>\r\n	</tr>\r\n	\r\n		<tr><td class="vbmenu_option">View Public Profile</td></tr>\r\n	\r\n	\r\n	\r\n	\r\n		<tr><td class="vbmenu_option"><a href="../../community/index.html">Visit cac0\'s homepage!</a></td></tr>\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Find all posts by cac0</td></tr>\r\n	\r\n	\r\n	</table>\r\n</div>\r\n<!-- / post 6133440 popup menu -->\n<!-- END TEMPLATE: postbit -->\r\n\r\n\r\n	</div>\r\n	<!-- BEGIN TEMPLATE: spacer_close -->\n\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n<!-- / close content container -->\n<!-- END TEMPLATE: spacer_close -->\r\n\r\n<!-- / post #6133440 -->\n<!-- END TEMPLATE: postbit_wrapper -->';
-pd[6133441] = '<!-- BEGIN TEMPLATE: postbit_wrapper -->\n<!-- post #6133441 -->\r\n\r\n	<!-- BEGIN TEMPLATE: spacer_open -->\n<!-- open content container -->\r\n\r\n<div align="center">\r\n	<div class="page" style="width:100%; text-align:left">\r\n		<div style="padding:0px 5px 0px 5px" align="left">\r\n\n<!-- END TEMPLATE: spacer_open -->\r\n	<div id="edit6133441" style="padding:0px 0px 6px 0px">\r\n	<!-- this is not the last post shown on the page -->\r\n\r\n\r\n<!-- BEGIN TEMPLATE: postbit -->\n<table class="tborder" id="post6133441" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">\r\n<tr>\r\n	<td class="thead" >\r\n		<div class="normal" style="float:right">\r\n			&nbsp;\r\n			#<strong>2</strong> &nbsp;\r\n			\r\n			\r\n\r\n			\r\n<img class="inlineimg" src="../../images/buttons/ignore.gif" \r\nalt="Add Abrahim to your ignore list"\r\nborder="0" /> &nbsp;\r\n\r\n			\r\n			\r\n			\r\n		</div>\r\n		\r\n		<div class="normal">\r\n			<!-- status icon and date -->\r\n			<a name="post6133441"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>\r\n			\r\n				2006-05-21, 09:23\r\n			\r\n			\r\n			<!-- / status icon and date -->\r\n		</div>\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt2" style="padding:0px">\r\n		<!-- user info -->\r\n		<table cellpadding="0" cellspacing="6" border="0" width="100%">\r\n		<tr>\r\n			\r\n			<td nowrap="nowrap">\r\n			\r\n				<div id="postmenu_6133441">\r\n					\r\n					Abrahim\r\n					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->\n<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="Abrahim is offline" border="0" />\r\n\r\n\n<!-- END TEMPLATE: postbit_onlinestatus -->\r\n					<script type="text/javascript"> vbmenu_register("postmenu_6133441", true); <\/scr' + 'ipt>\r\n					\r\n				</div>\r\n				\r\n				<div class="smallfont">Regular</div>\r\n				\r\n				\r\n			</td>\r\n			<td width="100%">&nbsp;</td>\r\n			<td valign="top" nowrap="nowrap">\r\n				\r\n				<div class="smallfont">\r\n					<!-- location -->Hawaii\r\n					    \r\n					\r\n					\r\n				</div>\r\n				\r\n			</td>\r\n		</tr>\r\n		</table>\r\n		<!-- / user info -->\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt1" id="td_post_6133441">\r\n	<!-- message, attachments, sig -->\r\n	\r\n		\r\n			<!-- icon and title -->\r\n			<div class="smallfont">\r\n				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />\r\n				\r\n			</div>\r\n			<hr size="1" style="color:#E8EFF4" />\r\n			<!-- / icon and title -->\r\n		\r\n		\r\n		<!-- message -->\r\n		<div id="post_message_6133441">FROM THE BIBLE<br />\n<br />\nTable 2.B &quot;Covenant&quot; in Genesis and Exodus<br />\n<br />\nEra Reference Text (RSV) (In Reference to Abraham)<br />\n<br />\nGenesis <br />\n<br />\nAbraham 15:18  On that day the LORD made a covenant with Abram, saying, &quot;To your descendants I give this land, from the river of Egypt to the great river, the river Euphrates, <br />\n<br />\nAbraham 17:2  And I will make my covenant between me and you, and will multiply you exceedingly.&quot; <br />\n<br />\nAbraham 17:4  &quot;Behold, my covenant is with you, and you shall be the father of a multitude of nations. <br />\n<br />\nAbraham 17:7  And I will establish my covenant between me and you and your descendants after you throughout their generations for an everlasting covenant, to be God to you and to your descendants after you. <br />\n<br />\nAbraham 17:9  And God said to Abraham, &quot;As for you, you shall keep my covenant, you and your descendants after you throughout their generations. <br />\n<br />\nAbraham 17:10  This is my covenant, which you shall keep, between me and you and your descendants after you: Every male among you shall be circumcised. <br />\n<br />\nAbraham 17:11  You shall be circumcised in the flesh of your foreskins, and it shall be a sign of the covenant between me and you. <br />\n<br />\nAbraham 17:13  both he that is born in your house and he that is bought with your money, shall be circumcised. So shall my covenant be in your flesh an everlasting covenant. <br />\n<br />\nAbraham 17:14  Any uncircumcised male who is not circumcised in the flesh of his foreskin shall be cut off from his people; he has broken my covenant.&quot; <br />\n<br />\nAbraham 17:19  God said, &quot;No, but Sarah your wife shall bear you a son, and you shall call his name Isaac. I will establish my covenant with him as an everlasting covenant for his descendants after him. <br />\n<br />\nAbraham 17:21  But I will establish my covenant with Isaac, whom Sarah shall bear to you at this season next year.&quot; <br />\n<br />\nAbraham 21:27  So Abraham took sheep and oxen and gave them to Abimelech, and the two men made a covenant. <br />\n<br />\nAbraham 21:32  So they made a covenant at Beersheba. Then Abimelech and Phicol the commander of his army rose up and returned to the land of the Philistines. <br />\n<br />\nJacob 26:28  They said, &quot;We see plainly that the LORD is with you; so we say, let there be an oath between you and us, and let us make a covenant with you, <br />\n<br />\nJacob 31:44  Come now, let us make a covenant, you and I; and let it be a witness between you and me.&quot; <br />\n<br />\nExodus <br />\n<br />\nExodus 2:24  And God heard their groaning, and God remembered his covenant with Abraham, with Isaac, and with Jacob. <br />\n<br />\nExodus 6:4  I also established my covenant with them, to give them the land of Canaan, the land in which they dwelt as sojourners. <br />\n<br />\nExodus 6:5  Moreover I have heard the groaning of the people of Israel whom the Egyptians hold in bondaand I have remembered my covenant. <br />\n<br />\nSinai 19:5  Now therefore, if you will obey my voice and keep my covenant, you shall be my own possession among all peoples; for all the earth is mine, <br />\n<br />\nSinai 23:32  You shall make no covenant with them or with their gods. <br />\n<br />\nSinai 24:7  Then he took the book of the covenant, and read it in the hearing of the people; and they said, &quot;All that the LORD has spoken we will do, and we will be obedient.&quot; <br />\n<br />\nSinai 24:8  And Moses took the blood and threw it upon the people, and said, &quot;Behold the blood of the covenant which the LORD has made with you in accordance with all these words.&quot; <br />\n<br />\nSinai 31:16  Therefore the people of Israel shall keep the sabbath, observing the sabbath throughout their generations, as a perpetual covenant. <br />\n<br />\nSinai 34:10  And he said, &quot;Behold, I make a covenant. Before all your people I will do marvels, such as have not been wrought in all the earth or in any nation; and all the people among whom you are shall see the work of the LORD; for it is a terrible thing that I will do with you. <br />\n<br />\nSinai 34:12  Take heed to yourself, lest you make a covenant with the inhabitants of the land whither you go, lest it become a snare in the midst of you. <br />\n<br />\nSinai 34:15  lest you make a covenant with the inhabitants of the land, and when they play the harlot after their gods and sacrifice to their gods and one invites you, you eat of his sacrifice, <br />\n<br />\nSinai 34:27  And the LORD said to Moses, &quot;Write these words; in accordance with these words I have made a covenant with you and with Israel.&quot; <br />\n<br />\nSinai 34:28  And he was there with the LORD forty days and forty nights; he neither ate bread nor drank water. And he wrote upon the tables the words of the covenant, the ten commandments. </div>\r\n		<!-- / message -->\r\n	\r\n		\r\n		\r\n		\r\n		\r\n		\r\n	\r\n		<div style="margin-top: 10px" align="right">\r\n			<!-- controls -->\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n				\r\n			\r\n			<!-- / controls -->\r\n		</div>\r\n		\r\n	<!-- message, attachments, sig -->\r\n	\r\n	</td>\r\n</tr>\r\n</table>\r\n\r\n<!-- post 6133441 popup menu -->\r\n<div class="vbmenu_popup" id="postmenu_6133441_menu" style="display:none;">\r\n	<table cellpadding="4" cellspacing="1" border="0">\r\n	<tr>\r\n		<td class="thead">Abrahim</td>\r\n	</tr>\r\n	\r\n		<tr><td class="vbmenu_option">View Public Profile</td></tr>\r\n	\r\n	\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Visit Abrahim\'s homepage!</td></tr>\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Find all posts by Abrahim</td></tr>\r\n	\r\n	\r\n	</table>\r\n</div>\r\n<!-- / post 6133441 popup menu -->\n<!-- END TEMPLATE: postbit -->\r\n\r\n\r\n	</div>\r\n	<!-- BEGIN TEMPLATE: spacer_close -->\n\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n<!-- / close content container -->\n<!-- END TEMPLATE: spacer_close -->\r\n\r\n<!-- / post #6133441 -->\n<!-- END TEMPLATE: postbit_wrapper -->';
-
-// next/previous post info
-pn[6133440] = "6133441,6133441";
-pn[0] = ",6133440";
-pn[6133441] = "6133440,6133440";
-
-// cached usernames
-pu[0] = guestphrase;
-pu[156211] = "cac0";
-pu[193693] = "Abrahim";
-
-// -->
-</script>
 
 <!-- BEGIN TEMPLATE: spacer_open -->
 <!-- open content container -->
@@ -501,37 +494,6 @@ pu[193693] = "Abrahim";
 		<div style="padding:0px 5px 0px 5px" align="left">
 
 <!-- END TEMPLATE: spacer_open -->
-
-<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-top-width:0px; margin-bottom:6px">
-<tr>
-	<td class="alt2">
-	<div style="height:150px; width:100%; overflow:auto; border:2px inset; padding: 0px; text-align:left;" class="alt1" id="links">
-		<div class="smallfont">
-		<!-- start post links -->
-<script type="text/javascript">
-<!--
-writeLink(6133440, 0, 0, 156211, "", "<i>Can someone explain to me...</i>", "2006-05-21", "07:50", 0);
-  writeLink(6133441, 0, 0, 193693, "L", "<i>FROM THE BIBLE \n \nTable 2.B...</i>", "2006-05-21", "09:23", 0);
-
-//-->
-</script>
-		<!-- end post links -->
-		</div>
-	</div>
-	</td>
-</tr>
-
-<tr>
-	<td class="tfoot" align="center"><div class="smallfont">
-		Prev
-		<img class="inlineimg" src="../../images/buttons/sortdesc.gif" alt="Previous Post" border="0" />
-		&nbsp;
-		<img class="inlineimg" src="../../images/buttons/sortasc.gif" alt="Next Post" border="0" />
-		Next
-	</div></td>
-</tr>
-
-</table>
 
 <!-- BEGIN TEMPLATE: spacer_close -->
 
@@ -777,7 +739,7 @@ border="0" /> &nbsp;
 
 
 <!-- END TEMPLATE: postbit_onlinestatus -->
-					<script type="text/javascript"> vbmenu_register("postmenu_6133441", true); <\/scr' + 'ipt>
+					<script type="text/javascript"> vbmenu_register("postmenu_6133441", true); </script>
 					
 				</div>
 				
@@ -1099,9 +1061,9 @@ Sinai 34:28  And he was there with the LORD forty days and forty nights; he neit
 		<div>You <strong>may not</strong> edit your posts</div>
 		<hr />
 		
-		<div>BB code is <strong>On</strong></div>
-		<div>Smilies are <strong>On</strong></div>
-		<div>[IMG] code is <strong>Off</strong></div>
+		<div><a href="../../community/bbcode.html" target="_blank">BB code</a> is <strong>On</strong></div>
+		<div><a href="../../community/showsmilies.html" target="_blank">Smilies</a> are <strong>On</strong></div>
+		<div><a href="../../community/bbcode.html#imgcode" target="_blank">[IMG]</a> code is <strong>Off</strong></div>
 		<div>HTML code is <strong>Off</strong></div>
 	</div></td>
 </tr>
@@ -1385,8 +1347,10 @@ Sinai 34:28  And he was there with the LORD forty days and forty nights; he neit
 			</table>
 		</td>
 
-		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots -->
-		<td width="20%" align="center" valign="top">
+		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots.
+		     min-width keeps this fluid 20% column from ever squeezing narrower
+		     than the fixed-170px table it holds, at any viewport width. -->
+		<td width="20%" align="center" valign="top" style="min-width:190px">
 
 			<table width="170" border="0" cellpadding="0" cellspacing="0">
 				<tr>

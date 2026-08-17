@@ -188,12 +188,26 @@
 
 		<!-- Content column -->
 		<td align="left">
-			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<!-- table-layout:fixed makes the browser honor this row's column
+			     widths exactly instead of auto-redistributing them: with the
+			     default "auto" layout, a 13px + 97% + 13px row never sums to
+			     exactly 100% of a fluid table except at one specific width,
+			     so at any other width (all of them, on a responsive page)
+			     the browser proportionally inflates the two fixed-13px
+			     corner columns to reconcile the mismatch - stretching
+			     3lt.jpg/3rt.jpg's cells past the images' own 13px width and
+			     tiling a second, partial copy of the curve artwork into the
+			     extra space, which reads as the rounded corner being cut
+			     off. Under fixed layout this row's widths become the whole
+			     table's column template (13px / remainder / 13px) and are
+			     used verbatim at every width, so the corner cells always
+			     match their images exactly and never need to repeat. -->
+			<table width="100%" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed">
 
 				<tr>
-					<td width="13" height="11" background="../../../images/t3/3lt.jpg"><img src="../../../images/t3/0.gif"></td>
-					<td width="97%" height="11" background="../../../images/t3/3ct.jpg"><img src="../../../images/t3/0.gif"></td>
-					<td width="13" height="11" background="../../../images/t3/3rt.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td height="11" background="../../../images/t3/3lt.jpg" style="width:13px"><img src="../../../images/t3/0.gif"></td>
+					<td height="11" background="../../../images/t3/3ct.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td height="11" background="../../../images/t3/3rt.jpg" style="width:13px"><img src="../../../images/t3/0.gif"></td>
 				</tr>
 
 				<!-- Ubiquitous nav menu - only real, existing pages are hyperlinked; everything
@@ -227,7 +241,7 @@
 
 				<tr valign="top">
 					<td width="13" background="../../../images/t3/0cm.jpg"><img src="../../../images/t3/0.gif"></td>
-					<td width="97%" height="640" background="../../../images/t3/0cm.jpg">
+					<td width="97%" height="640" background="../../../images/t3/0cm.jpg" style="padding-top:6px">
 <h1>Scams and Rip-offs</h1>
 
 <div class="disclaim"><hr>
@@ -305,8 +319,7 @@ The best way to avoid being scammed is to know how to scam.
 			<td width="3%" align="center" valign="middle"><a href="atifraud.html"><img src="../../../images/bullets/article_bullet.gif" border="0"></a></td>
 			<td width="97%" align="left" valign="middle" class="linktitle" colspan="2"><a href="atifraud.html" class="linktitle">ATM Fraud</a></td>
 		</tr>
-		<tr valign="top"><td>&nbsp;</td><td width="100%" colspan="2" class="linkdesc">Automatic Teller Fraud is not a particularly easy scam to pull off, as it
-
+		<tr valign="top"><td>&nbsp;</td><td width="100%" colspan="2" class="linkdesc">Automatic Teller Fraud is not a particularly easy scam to pull off, as it
 requires  either advanced hacking techniques (TRW or banks) or serious balls (trashing a private residence or outright breaking & entering), but it can net a thief up to $500 a day.</td>
 		</tr>
 		<tr valign="middle">
@@ -397,12 +410,9 @@ requires  either advanced hacking techniques (TRW or banks) or serious balls (tr
 			<td width="3%" align="center" valign="middle"><a href="autoscam.html"><img src="../../../images/bullets/article_bullet.gif" border="0"></a></td>
 			<td width="97%" align="left" valign="middle" class="linktitle" colspan="2"><a href="autoscam.html" class="linktitle">Auto Repair Scams: An Investigation</a></td>
 		</tr>
-		<tr valign="top"><td>&nbsp;</td><td width="100%" colspan="2" class="linkdesc">Are Americans getting a square deal for the $65 billion they spend each year
-
-to maintain their cars?  To find out, a 1984 Oldsmobile Cutlass Ciera sedan
-
-(one of the biggest-selling U.S. cars that year) with 20,000 miles on the
-
+		<tr valign="top"><td>&nbsp;</td><td width="100%" colspan="2" class="linkdesc">Are Americans getting a square deal for the $65 billion they spend each year
+to maintain their cars?  To find out, a 1984 Oldsmobile Cutlass Ciera sedan
+(one of the biggest-selling U.S. cars that year) with 20,000 miles on the
 odometer was used.</td>
 		</tr>
 		<tr valign="middle">
@@ -857,8 +867,8 @@ odometer was used.</td>
 			<td width="97%" align="left" valign="middle" class="linktitle" colspan="2"><a href="postage.html" class="linktitle">Free postage</a></td>
 		</tr>
 		<tr valign="middle">
-			<td width="3%" align="center" valign="middle"><img src="../../../images/bullets/article_bullet.gif" border="0"></td>
-			<td width="97%" align="left" valign="middle" class="linktitle" colspan="2">Free postage (from TAP)</td>
+			<td width="3%" align="center" valign="middle"><a href="postages.html"><img src="../../../images/bullets/article_bullet.gif" border="0"></a></td>
+			<td width="97%" align="left" valign="middle" class="linktitle" colspan="2"><a href="postages.html" class="linktitle">Free postage (from TAP)</a></td>
 		</tr>
 		<tr valign="middle">
 			<td width="3%" align="center" valign="middle"><a href="freegame.html"><img src="../../../images/bullets/article_bullet.gif" border="0"></a></td>
@@ -869,16 +879,11 @@ odometer was used.</td>
 			<td width="62%" align="left" valign="middle" class="linktitle"><a href="billbord.html" class="linktitle">Fun with Billboards</a></td>
 			<td width="35%" align="right" valign="middle" class="linkauthor">by David Foreman</td>
 		</tr>
-		<tr valign="top"><td>&nbsp;</td><td width="100%" colspan="2" class="linkdesc">It is important to remove billboards.  It is also important not to get
-
-caught (so we can remove more billboards).  I have always felt that burning
-
-billboards (particularly in desert situations) is most effective.  But it is
-
-somewhat "revealing" when a 50 foot high sign explodes in front of your very
-
-eyes, and those of who-knows who else, lighting up everything around for half
-
+		<tr valign="top"><td>&nbsp;</td><td width="100%" colspan="2" class="linkdesc">It is important to remove billboards.  It is also important not to get
+caught (so we can remove more billboards).  I have always felt that burning
+billboards (particularly in desert situations) is most effective.  But it is
+somewhat "revealing" when a 50 foot high sign explodes in front of your very
+eyes, and those of who-knows who else, lighting up everything around for half
 a mile.  But there's a solution...</td>
 		</tr>
 		<tr valign="middle">
@@ -1034,10 +1039,8 @@ a mile.  But there's a solution...</td>
 			<td width="62%" align="left" valign="middle" class="linktitle"><a href="163080.html" class="linktitle">How to Blackmail Someone</a></td>
 			<td width="35%" align="right" valign="middle" class="linkauthor">by Zapata</td>
 		</tr>
-		<tr valign="top"><td>&nbsp;</td><td width="100%" colspan="2" class="linkdesc">The difficult thing about blackmail is how to get the 
-
-money in a safe way. I have found one. It works for 
-
+		<tr valign="top"><td>&nbsp;</td><td width="100%" colspan="2" class="linkdesc">The difficult thing about blackmail is how to get the 
+money in a safe way. I have found one. It works for 
 sure.</td>
 		</tr>
 		<tr valign="middle">
@@ -1135,10 +1138,8 @@ sure.</td>
 			<td width="3%" align="center" valign="middle"><a href="robbank.html"><img src="../../../images/bullets/article_bullet.gif" border="0"></a></td>
 			<td width="97%" align="left" valign="middle" class="linktitle" colspan="2"><a href="robbank.html" class="linktitle">How to Rob a Bank</a></td>
 		</tr>
-		<tr valign="top"><td>&nbsp;</td><td width="100%" colspan="2" class="linkdesc">Well, now.  You say that you want to go and rob a bank, eh?  You say that you
-
-need easy money, eh?  This entertaining little text file will give you
-
+		<tr valign="top"><td>&nbsp;</td><td width="100%" colspan="2" class="linkdesc">Well, now.  You say that you want to go and rob a bank, eh?  You say that you
+need easy money, eh?  This entertaining little text file will give you
 information and tips about how to easily rob a bank, and get away with it.</td>
 		</tr>
 		<tr valign="middle">
@@ -1244,8 +1245,8 @@ information and tips about how to easily rob a bank, and get away with it.</td>
 			<td width="97%" align="left" valign="middle" class="linktitle" colspan="2"><a href="opencars.html" class="linktitle">How to open cars</a></td>
 		</tr>
 		<tr valign="middle">
-			<td width="3%" align="center" valign="middle"><img src="../../../images/bullets/article_bullet.gif" border="0"></td>
-			<td width="97%" align="left" valign="middle" class="linktitle" colspan="2">How to rip off BMG Music Club</td>
+			<td width="3%" align="center" valign="middle"><a href="bmgscam.html"><img src="../../../images/bullets/article_bullet.gif" border="0"></a></td>
+			<td width="97%" align="left" valign="middle" class="linktitle" colspan="2"><a href="bmgscam.html" class="linktitle">How to rip off BMG Music Club</a></td>
 		</tr>
 		<tr valign="middle">
 			<td width="3%" align="center" valign="middle"><a href="mailrip.html"><img src="../../../images/bullets/article_bullet.gif" border="0"></a></td>
@@ -1579,8 +1580,8 @@ information and tips about how to easily rob a bank, and get away with it.</td>
 			<td width="97%" align="left" valign="middle" class="linktitle" colspan="2"><a href="privpsyc.html" class="linktitle">Private Psychiatric Hospitals (the U.S. Health car</a></td>
 		</tr>
 		<tr valign="middle">
-			<td width="3%" align="center" valign="middle"><img src="../../../images/bullets/article_bullet.gif" border="0"></td>
-			<td width="97%" align="left" valign="middle" class="linktitle" colspan="2">Procurement Directory</td>
+			<td width="3%" align="center" valign="middle"><a href="getstuff.html"><img src="../../../images/bullets/article_bullet.gif" border="0"></a></td>
+			<td width="97%" align="left" valign="middle" class="linktitle" colspan="2"><a href="getstuff.html" class="linktitle">Procurement Directory</a></td>
 		</tr>
 		<tr valign="middle">
 			<td width="3%" align="center" valign="middle"><a href="stars.html"><img src="../../../images/bullets/article_bullet.gif" border="0"></a></td>
@@ -1699,18 +1700,12 @@ information and tips about how to easily rob a bank, and get away with it.</td>
 			<td width="3%" align="center" valign="middle"><a href="mail1.html"><img src="../../../images/bullets/article_bullet.gif" border="0"></a></td>
 			<td width="97%" align="left" valign="middle" class="linktitle" colspan="2"><a href="mail1.html" class="linktitle">Secrets of the US Post Office</a></td>
 		</tr>
-		<tr valign="top"><td>&nbsp;</td><td width="100%" colspan="2" class="linkdesc">Postal chiselers used to mail letters unstamped in the knowledge that they
-
-would be delievered anyway--postage due to the recipient.  You had to be a real
-
-cheapskate to mail personal letters this way, but many people did it on bill
-
-payments.  So the post office changed its policy.  It stopped delivering
-
-letters without stamps.  A letter with a stamp--even a one-cent stamp--is
-
-delivered (postage due if need be).  A letter with no stamp is returned to the
-
+		<tr valign="top"><td>&nbsp;</td><td width="100%" colspan="2" class="linkdesc">Postal chiselers used to mail letters unstamped in the knowledge that they
+would be delievered anyway--postage due to the recipient.  You had to be a real
+cheapskate to mail personal letters this way, but many people did it on bill
+payments.  So the post office changed its policy.  It stopped delivering
+letters without stamps.  A letter with a stamp--even a one-cent stamp--is
+delivered (postage due if need be).  A letter with no stamp is returned to the
 sender.</td>
 		</tr>
 		<tr valign="middle">
@@ -2076,8 +2071,10 @@ sender.</td>
 			</table>
 		</td>
 
-		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots -->
-		<td width="20%" align="center" valign="top">
+		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots.
+		     min-width keeps this fluid 20% column from ever squeezing narrower
+		     than the fixed-170px table it holds, at any viewport width. -->
+		<td width="20%" align="center" valign="top" style="min-width:190px">
 
 			<table width="170" border="0" cellpadding="0" cellspacing="0">
 				<tr>

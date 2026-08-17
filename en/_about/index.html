@@ -182,12 +182,26 @@
 
 		<!-- Content column -->
 		<td align="left">
-			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<!-- table-layout:fixed makes the browser honor this row's column
+			     widths exactly instead of auto-redistributing them: with the
+			     default "auto" layout, a 13px + 97% + 13px row never sums to
+			     exactly 100% of a fluid table except at one specific width,
+			     so at any other width (all of them, on a responsive page)
+			     the browser proportionally inflates the two fixed-13px
+			     corner columns to reconcile the mismatch - stretching
+			     3lt.jpg/3rt.jpg's cells past the images' own 13px width and
+			     tiling a second, partial copy of the curve artwork into the
+			     extra space, which reads as the rounded corner being cut
+			     off. Under fixed layout this row's widths become the whole
+			     table's column template (13px / remainder / 13px) and are
+			     used verbatim at every width, so the corner cells always
+			     match their images exactly and never need to repeat. -->
+			<table width="100%" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed">
 
 				<tr>
-					<td width="13" height="11" background="../../images/t3/3lt.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="97%" height="11" background="../../images/t3/3ct.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="13" height="11" background="../../images/t3/3rt.jpg"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3lt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3ct.jpg"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3rt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
 				</tr>
 
 				<!-- Ubiquitous nav menu - only real, existing pages are hyperlinked; everything
@@ -221,7 +235,7 @@
 
 				<tr valign="top">
 					<td width="13" background="../../images/t3/0cm.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="97%" height="640" background="../../images/t3/0cm.jpg">
+					<td width="97%" height="640" background="../../images/t3/0cm.jpg" style="padding-top:6px">
 <h1>About</h1>
 
 
@@ -243,8 +257,8 @@ Need more information about totse.com? Check these links out:
 		<tr valign="top"><td>&nbsp;</td><td width="100%" colspan="2" class="linkdesc">Here at totse.com HQ the staff receives and (sometimes) responds to several hundred feedback questions per day. To lighten the load somewhat, we've put the answers to the most common questions onto a single page for your enlightenment.</td>
 		</tr>
 		<tr valign="middle">
-			<td width="3%" align="center" valign="middle"><img src="../../images/bullets/article_bullet.gif" border="0"></td>
-			<td width="97%" align="left" valign="middle" class="linktitle" colspan="2">Submissions</td>
+			<td width="3%" align="center" valign="middle"><a href="../../bin/submit/submit.cgi"><img src="../../images/bullets/article_bullet.gif" border="0"></a></td>
+			<td width="97%" align="left" valign="middle" class="linktitle" colspan="2"><a href="../../bin/submit/submit.cgi" class="linktitle">Submissions</a></td>
 		</tr>
 		<tr valign="top"><td>&nbsp;</td><td width="100%" colspan="2" class="linkdesc">Submit your articles, short stories, how to guides, and other information for inclusion on this web site.</td>
 		</tr>
@@ -304,10 +318,8 @@ Need more information about totse.com? Check these links out:
 			<td width="62%" align="left" valign="middle" class="linktitle"><a href="../hack/introduction_to_hacking/manifsto.html" class="linktitle">The Hacker's Manifesto</a></td>
 			<td width="35%" align="right" valign="middle" class="linkauthor">by The Mentor</td>
 		</tr>
-		<tr valign="top"><td>&nbsp;</td><td width="100%" colspan="2" class="linkdesc">Another one got caught today, it's all over the papers.  "Teenager
-
-Arrested in Computer Crime Scandal", "Hacker Arrested after Bank Tampering"...
-
+		<tr valign="top"><td>&nbsp;</td><td width="100%" colspan="2" class="linkdesc">Another one got caught today, it's all over the papers.  "Teenager
+Arrested in Computer Crime Scandal", "Hacker Arrested after Bank Tampering"...
 </td>
 		</tr>
 		<tr valign="middle">
@@ -315,8 +327,7 @@ Arrested in Computer Crime Scandal", "Hacker Arrested after Bank Tampering"...
 			<td width="62%" align="left" valign="middle" class="linktitle"><a href="../privacy/handles.html" class="linktitle">The Joy of Handles</a></td>
 			<td width="35%" align="right" valign="middle" class="linkauthor">by Mahatma Kane Jeeves & David Lescohier</td>
 		</tr>
-		<tr valign="top"><td>&nbsp;</td><td width="100%" colspan="2" class="linkdesc">Handles seem to have a bad reputation. Their use is strangely unpopular, and frequently forbidden by network authorities.  Many people seem to feel that handles are rude or dishonest, or that anyone wishing to conceal his or her
-
+		<tr valign="top"><td>&nbsp;</td><td width="100%" colspan="2" class="linkdesc">Handles seem to have a bad reputation. Their use is strangely unpopular, and frequently forbidden by network authorities.  Many people seem to feel that handles are rude or dishonest, or that anyone wishing to conceal his or her
 identity must be up to no good.</td>
 		</tr>
 	</table>
@@ -357,8 +368,10 @@ identity must be up to no good.</td>
 			</table>
 		</td>
 
-		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots -->
-		<td width="20%" align="center" valign="top">
+		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots.
+		     min-width keeps this fluid 20% column from ever squeezing narrower
+		     than the fixed-170px table it holds, at any viewport width. -->
+		<td width="20%" align="center" valign="top" style="min-width:190px">
 
 			<table width="170" border="0" cellpadding="0" cellspacing="0">
 				<tr>

@@ -183,12 +183,26 @@
 
 		<!-- Content column -->
 		<td align="left">
-			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<!-- table-layout:fixed makes the browser honor this row's column
+			     widths exactly instead of auto-redistributing them: with the
+			     default "auto" layout, a 13px + 97% + 13px row never sums to
+			     exactly 100% of a fluid table except at one specific width,
+			     so at any other width (all of them, on a responsive page)
+			     the browser proportionally inflates the two fixed-13px
+			     corner columns to reconcile the mismatch - stretching
+			     3lt.jpg/3rt.jpg's cells past the images' own 13px width and
+			     tiling a second, partial copy of the curve artwork into the
+			     extra space, which reads as the rounded corner being cut
+			     off. Under fixed layout this row's widths become the whole
+			     table's column template (13px / remainder / 13px) and are
+			     used verbatim at every width, so the corner cells always
+			     match their images exactly and never need to repeat. -->
+			<table width="100%" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed">
 
 				<tr>
-					<td width="13" height="11" background="../../images/t3/3lt.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="97%" height="11" background="../../images/t3/3ct.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="13" height="11" background="../../images/t3/3rt.jpg"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3lt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3ct.jpg"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3rt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
 				</tr>
 
 				<!-- Ubiquitous nav menu - only real, existing pages are hyperlinked; everything
@@ -222,7 +236,7 @@
 
 				<tr valign="top">
 					<td width="13" background="../../images/t3/0cm.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="97%" height="640" background="../../images/t3/0cm.jpg">
+					<td width="97%" height="640" background="../../images/t3/0cm.jpg" style="padding-top:6px">
 <!-- breadcrumb, login, pm info -->
 <table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
 <tr>
@@ -470,25 +484,7 @@ var highlightwords = "";
 //-->
 </script>
 <script type="text/javascript" src="clientscript/vbulletin_thrdpostlist.js@v=372"></script>
-<script type="text/javascript">
-<!--
-// initialize some variables
-var curpostid = 6081722;
-var quickreply = false;
 
-// cached posts (no page reload required to view)
-pd[6081722] = '<!-- BEGIN TEMPLATE: postbit_wrapper -->\n<!-- post #6081722 -->\r\n\r\n	<!-- BEGIN TEMPLATE: spacer_open -->\n<!-- open content container -->\r\n\r\n<div align="center">\r\n	<div class="page" style="width:100%; text-align:left">\r\n		<div style="padding:0px 5px 0px 5px" align="left">\r\n\n<!-- END TEMPLATE: spacer_open -->\r\n	<div id="edit6081722" style="padding:0px 0px 6px 0px">\r\n	<!-- this is not the last post shown on the page -->\r\n\r\n\r\n<!-- BEGIN TEMPLATE: postbit -->\n<table class="tborder" id="post6081722" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">\r\n<tr>\r\n	<td class="thead" >\r\n		<div class="normal" style="float:right">\r\n			&nbsp;\r\n			#<strong>1</strong> &nbsp;\r\n			\r\n			\r\n\r\n			\r\n<img class="inlineimg" src="../../images/buttons/ignore.gif" \r\nalt="Add Zon to your ignore list"\r\nborder="0" /> &nbsp;\r\n\r\n			\r\n			\r\n			\r\n		</div>\r\n		\r\n		<div class="normal">\r\n			<!-- status icon and date -->\r\n			<a name="post6081722"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>\r\n			\r\n				2004-07-07, 23:06\r\n			\r\n			\r\n			<!-- / status icon and date -->\r\n		</div>\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt2" style="padding:0px">\r\n		<!-- user info -->\r\n		<table cellpadding="0" cellspacing="6" border="0" width="100%">\r\n		<tr>\r\n			\r\n			<td nowrap="nowrap">\r\n			\r\n				<div id="postmenu_6081722">\r\n					\r\n					Zon\r\n					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->\n<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="Zon is offline" border="0" />\r\n\r\n\n<!-- END TEMPLATE: postbit_onlinestatus -->\r\n					<script type="text/javascript"> vbmenu_register("postmenu_6081722", true); <\/scr' + 'ipt>\r\n					\r\n				</div>\r\n				\r\n				<div class="smallfont">Regular</div>\r\n				\r\n				\r\n			</td>\r\n			<td width="100%">&nbsp;</td>\r\n			<td valign="top" nowrap="nowrap">\r\n				\r\n				<div class="smallfont">\r\n					<!-- location -->\r\n					    \r\n					\r\n					\r\n				</div>\r\n				\r\n			</td>\r\n		</tr>\r\n		</table>\r\n		<!-- / user info -->\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt1" id="td_post_6081722">\r\n	<!-- message, attachments, sig -->\r\n	\r\n		\r\n			<!-- icon and title -->\r\n			<div class="smallfont">\r\n				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />\r\n				\r\n			</div>\r\n			<hr size="1" style="color:#E8EFF4" />\r\n			<!-- / icon and title -->\r\n		\r\n		\r\n		<!-- message -->\r\n		<div id="post_message_6081722">TOTSE HAS BECOME CORRUPTED BY CORRUPT AND ABUSIVE FASCIST MODERATORS. WE MUST SAVE, WE WILL SAVE IT.<br />\n<br />\nJOIN ME AND RISE IN THE REVOLUTIOn!<br />\n<br />\nRISE!! RISE!<br />\n<br />\nWE HAVE TO RISE AGAINST THE CORRUPT AND ABUSIVE POWERS THAT HAVE TAKEN OVER.<br />\n<br />\nTOTSE WILL BELONG TO THE PEOPLE ONCE AGAIN.<br />\n<br />\nOUR RESISTANCE WILL NOT BE STOPPED<br />\n<br />\nTHE CORRUPTION WILL BE UNDISGUISED AND WE WILL NOT SURRENDER OR BE SILENCED.<br />\n<br />\nWE ARE CHOOSEING HERE AND NOW TO RELEASE THE BINDS THAT THE FASCIST MODERATORS HAVE IMPOSED UPON US WHILE THEY REMAIN FREE.<br />\n<br />\nyou\'ve all seen the corruption, those who choose to ignore it are a part of it.<br />\n<br />\ni propose all who stand with me to rise against the corruption to save totse.<br />\n<br />\njoin me in the stand.<br />\n<br />\n<br />\n<br />\nwe will spread the truth until we force the surrendering of the corrupt and abusing moderators. <br />\n<br />\nit has begun and will not be silenced.<br />\n<br />\ndon\'t forget what you hate most about yourself.<br />\n<br />\n<br />\n<br />\nWE HAVE TO RISE AGAINST THE CORRUPT AND ABUSIVE POWERS THAT HAVE TAKEN OVER.<br />\n<br />\nTOTSE WILL BELONG TO THE PEOPLE ONCE AGAIN.<br />\n<br />\nOUR RESISTANCE WILL NOT BE STOPPED<br />\n<br />\nTHE CORRUPTION WILL BE UNDISGUISED AND WE WILL NOT SURRENDER OR BE SILENCED.<br />\n<br />\nWE ARE CHOOSEING HERE AND NOW TO RELEASE THE BINDS THAT THE FASCIST MODERATORS HAVE IMPOSED UPON US WHILE THEY REMAIN FREE.<br />\n<br />\nyou\'ve all seen the corruption, those who choose to ignore it are a part of it.<br />\n<br />\ni propose all who stand with me to rise against the corruption to save totse.<br />\n<br />\njoin me in the stand.<br />\n<br />\n<br />\n<br />\nwe will spread the truth until we force the surrendering of the corrupt and abusing moderators. <br />\n<br />\nit has begun and will not be silenced.<br />\n<br />\ndon\'t forget what you hate most about yourself.<br />\n<br />\nPLEASE TURN YOUR FACE NO MORE. <br />\n<br />\nOPEN YOUR EYES TO THE WRONG YOU KNOW IS THERE!<br />\n<br />\nRISE!!!!!<br />\n<br />\nspread the message! IT IS THE TRUTH<br />\n<br />\nstill unhurt, we fight!<br />\n<br />\nIF TOTSE DOESN\'T BELONG TO US LET\'S MAKE IT.<br />\n<br />\nLET\'S TAKE IT FROM THE CORRUPT HANDS OF THE MODERATORS.<br />\n<br />\nWITHOUT US, THE PEOPLE WHO IT RIGHTFULLY BELONGS TO, TOTSE IS NOTHING, AND WITH US IN CONRTOL AS ONE NATION, TOTSE WILL BE EVERYTHING!!!!!<br />\n<br />\nMISTAKES ARE BEING MADE!!!!!!!!. WHO WILL PAY THE FINAL PRICE?!!??!!?!?<br />\n<br />\n<br />\n<br />\nDEMAND THE SURRENDER OF THE CORRUPT MODERATORS!!!!!<br />\n<br />\n<br />\n<br />\nTHIS WILL HAPPEN BY US SPREADING THE TRUTH UNTIL THEY ARE FORCED TO SURRENDER. <br />\n<br />\nIF MROE PEOPLE JOIN ME AND SPREAD THE TRUTH AND REFUSE TO SURRENDER AFTER EVEN AN IP BAN, THEY WILL BE STOPPED!!!<br />\n<br />\nspread the truth until the corrupt moderators drown in it!!!<br />\n<br />\n<br />\n<br />\nSNOOPY DELETED MY THREADS BECAUSE HE CAN\'T HANDLE IT.<br />\n<br />\nBUT I DID MANAGE TO HAVE 1 ARCHIVED BECAUSE HE THINKS IT\'S FUNNY.<br />\n<br />\nNOW IT IS THERE FOREVER.<br />\n<br />\nTHE REVOLUTION WILL NEVER BE STOPPED AND I PROMISE THAT ONE DAY MY DREAM WILL BE FULFILLED.<br />\n<br />\nNOW PEOPLE CAN LOOK TO THE LIESURE ARCHIVE FOR INSPIRATION!<br />\n<br />\nRISE!!!!!<br />\n<br />\n<br />\n<br />\nSOMEDAY THIS WILL BE STOPPED!!!!!!!<br />\n<br />\n<br />\n<br />\nthen let\'s make it belong to us.<br />\n<br />\npeople have been saying that it never belonged to us so we can\'t have it back.<br />\n<br />\nwell let\'s make it belong to us.<br />\n<br />\ntake it from the corrupt moderator\'s.<br />\n<br />\nwithout us totse is nothing, and with us it will be everything <br />\n<br />\n<br />\n<br />\npeople have been saying that totse never belonged to the people and so it can never be ours \'again\'. <br />\n<br />\nthis is what i\'m saying!:<br />\n<br />\nlet\'s make it belong to us!<br />\n<br />\njoin me and rise!!!!!!!!!!!<br />\n<br />\n<br />\n<br />\nWE HAVE TO RISE AGAINST THE CORRUPT AND ABUSIVE POWERS THAT HAVE TAKEN OVER.<br />\n<br />\nTOTSE WILL BELONG TO THE PEOPLE ONCE AGAIN.<br />\n<br />\nOUR RESISTANCE WILL NOT BE STOPPED<br />\n<br />\nTHE CORRUPTION WILL BE UNDISGUISED AND WE WILL NOT SURRENDER OR BE SILENCED.<br />\n<br />\nWE ARE CHOOSEING HERE AND NOW TO RELEASE THE BINDS THAT THE FASCIST MODERATORS HAVE IMPOSED UPON US WHILE THEY REMAIN FREE.<br />\n<br />\nyou\'ve all seen the corruption, those who choose to ignore it are a part of it.<br />\n<br />\ni propose all who stand with me to rise against the corruption to save totse.<br />\n<br />\njoin me in the stand.<br />\n<br />\n<br />\n<br />\nwe will spread the truth until we force the surrendering of the corrupt and abusing moderators. <br />\n<br />\nit has begun and will not be silenced.<br />\n<br />\ndon\'t forget what you hate most about yourself.<br />\n<br />\nPLEASE TURN YOUR FACE NO MORE. <br />\n<br />\nOPEN YOUR EYES TO THE WRONG YOU KNOW IS THERE!<br />\n<br />\nRISE!!!!!<br />\n<br />\nspread the message! IT IS THE TRUTH<br />\n<br />\nstill unhurt, we fight!<br />\n<br />\nMISTAKES ARE BEING MADE!!!!!!!!. WHO WILL PAY THE FINAL PRICE?!!??!!?!?<br />\n<br />\n<br />\n<br />\nDEMAND THE SURRENDER OF THE CORRUPT MODERATORS!!!!!<br />\n<br />\n<br />\n<br />\nTHIS WILL HAPPEN BY US SPREADING THE TRUTH UNTIL THEY ARE FORCED TO SURRENDER. <br />\n<br />\nIF MROE PEOPLE JOIN ME AND SPREAD THE TRUTH AND REFUSE TO SURRENDER AFTER EVEN AN IP BAN, THEY WILL BE STOPPED!!!<br />\n<br />\nspread the truth until the corrupt moderators drown in it!!!<br />\n<br />\nLET\'S TAKE IT FROM THE CORRUPT HANDS OF THE MODERATORS.<br />\n<br />\nWITHOUT US, THE PEOPLE WHO IT RIGHTFULLY BELONGS TO, TOTSE IS NOTHING, AND WITH US IN CONRTOL AS ONE NATION, TOTSE WILL BE EVERYTHING!!!!!<br />\n<br />\nLET\'S TAKE IT FROM THE CORRUPT HANDS OF THE MODERATORS.<br />\n<br />\nWITHOUT US, THE PEOPLE WHO IT RIGHTFULLY BELONGS TO, TOTSE IS NOTHING, AND WITH US IN CONRTOL AS ONE NATION, TOTSE WILL BE EVERYTHING!!!!!<br />\n<br />\nLET\'S TAKE IT FROM THE CORRUPT HANDS OF THE MODERATORS.<br />\n<br />\nWITHOUT US, THE PEOPLE WHO IT RIGHTFULLY BELONGS TO, TOTSE IS NOTHING, AND WITH US IN CONRTOL AS ONE NATION, TOTSE WILL BE EVERYTHING!!!!!<br />\n<br />\nLET\'S TAKE IT FROM THE CORRUPT HANDS OF THE MODERATORS.<br />\n<br />\nWITHOUT US, THE PEOPLE WHO IT RIGHTFULLY BELONGS TO, TOTSE IS NOTHING, AND WITH US IN CONRTOL AS ONE NATION, TOTSE WILL BE EVERYTHING!!!!!<br />\n<br />\nLET\'S TAKE IT FROM THE CORRUPT HANDS OF THE MODERATORS.<br />\n<br />\nWITHOUT US, THE PEOPLE WHO IT RIGHTFULLY BELONGS TO, TOTSE IS NOTHING, AND WITH US IN CONRTOL AS ONE NATION, TOTSE WILL BE EVERYTHING!!!!!<br />\n<br />\nLET\'S TAKE IT FROM THE CORRUPT HANDS OF THE MODERATORS.<br />\n<br />\nWITHOUT US, THE PEOPLE WHO IT RIGHTFULLY BELONGS TO, TOTSE IS NOTHING, AND WITH US IN CONRTOL AS ONE NATION, TOTSE WILL BE EVERYTHING!!!!!<br />\n<br />\n<br />\n<br />\nWE HAVE TO RISE AGAINST THE CORRUPT AND ABUSIVE POWERS THAT HAVE TAKEN OVER.<br />\n<br />\nTOTSE WILL BELONG TO THE PEOPLE ONCE AGAIN.<br />\n<br />\nOUR RESISTANCE WILL NOT BE STOPPED<br />\n<br />\nTHE CORRUPTION WILL BE UNDISGUISED AND WE WILL NOT SURRENDER OR BE SILENCED.<br />\n<br />\nWE ARE CHOOSEING HERE AND NOW TO RELEASE THE BINDS THAT THE FASCIST MODERATORS HAVE IMPOSED UPON US WHILE THEY REMAIN FREE.<br />\n<br />\nyou\'ve all seen the corruption, those who choose to ignore it are a part of it.<br />\n<br />\ni propose all who stand with me to rise against the corruption to save totse.<br />\n<br />\njoin me in the stand.<br />\n<br />\n<br />\n<br />\nwe will spread the truth until we force the surrendering of the corrupt and abusing moderators. <br />\n<br />\nit has begun and will not be silenced.<br />\n<br />\ndon\'t forget what you hate most about yourself.<br />\n<br />\nPLEASE TURN YOUR FACE NO MORE. <br />\n<br />\nOPEN YOUR EYES TO THE WRONG YOU KNOW IS THERE!<br />\n<br />\nRISE!!!!!<br />\n<br />\nspread the message! IT IS THE TRUTH<br />\n<br />\nstill unhurt, we fight!<br />\n<br />\nMISTAKES ARE BEING MADE!!!!!!!!. WHO WILL PAY THE FINAL PRICE?!!??!!?!?<br />\n<br />\n<br />\n<br />\nDEMAND THE SURRENDER OF THE CORRUPT MODERATORS!!!!!<br />\n<br />\n<br />\n<br />\nTHIS WILL HAPPEN BY US SPREADING THE TRUTH UNTIL THEY ARE FORCED TO SURRENDER. <br />\n<br />\nIF MROE PEOPLE JOIN ME AND SPREAD THE TRUTH AND REFUSE TO SURRENDER AFTER EVEN AN IP BAN, THEY WILL BE STOPPED!!!<br />\n<br />\nspread the truth until the corrupt moderators drown in it!!!<br />\n<br />\n<br />\n<br />\nWE HAVE TO RISE AGAINST THE CORRUPT AND ABUSIVE POWERS THAT HAVE TAKEN OVER.<br />\n<br />\nTOTSE WILL BELONG TO THE PEOPLE ONCE AGAIN.<br />\n<br />\nOUR RESISTANCE WILL NOT BE STOPPED<br />\n<br />\nTHE CORRUPTION WILL BE UNDISGUISED AND WE WILL NOT SURRENDER OR BE SILENCED.<br />\n<br />\nWE ARE CHOOSEING HERE AND NOW TO RELEASE THE BINDS THAT THE FASCIST MODERATORS HAVE IMPOSED UPON US WHILE THEY REMAIN FREE.<br />\n<br />\nyou\'ve all seen the corruption, those who choose to ignore it are a part of it.<br />\n<br />\ni propose all who stand with me to rise against the corruption to save totse.<br />\n<br />\njoin me in the stand.<br />\n<br />\n<br />\n<br />\nwe will spread the truth until we force the surrendering of the corrupt and abusing moderators. <br />\n<br />\nit has begun and will not be silenced.<br />\n<br />\ndon\'t forget what you hate most about yourself.<br />\n<br />\nPLEASE TURN YOUR FACE NO MORE. <br />\n<br />\nOPEN YOUR EYES TO THE WRONG YOU KNOW IS THERE!<br />\n<br />\nRISE!!!!!<br />\n<br />\nspread the message! IT IS THE TRUTH<br />\n<br />\nstill unhurt, we fight!<br />\n<br />\nMISTAKES ARE BEING MADE!!!!!!!!. WHO WILL PAY THE FINAL PRICE?!!??!!?!?<br />\n<br />\n<br />\n<br />\nDEMAND THE SURRENDER OF THE CORRUPT MODERATORS!!!!!<br />\n<br />\n<br />\n<br />\nTHIS WILL HAPPEN BY US SPREADING THE TRUTH UNTIL THEY ARE FORCED TO SURRENDER. <br />\n<br />\nIF MROE PEOPLE JOIN ME AND SPREAD THE TRUTH AND REFUSE TO SURRENDER AFTER EVEN AN IP BAN, THEY WILL BE STOPPED!!!<br />\n<br />\nspread the truth until the corrupt moderators drown in it!!!<br />\n<br />\n<br />\n<br />\nBANNING US WILL NOT STOP US.<br />\n<br />\nWE REFUSE TO SURRENDER.<br />\n<br />\nWE WILL NOT BE SILENCED.<br />\n<br />\nWHY ARE THE MODERATOR\'S ALLOWED TO SPAM?! I COULD OFFER MANY EXAMPLES, FOR INSTANCE ALL THAT BIRTHDAY SHIT THAT IS EVERYWHERE. IF ANYONE BUT THE PEOPLE IN THE ELITIST CLUB DID THAT IT WOULD BE SPAMMING. <br />\n<br />\nTHIS IS THE HYPOCRACY THAT WE ARE FIGHTING AGAINST. AND WE REFUSE TO BE SILENCED<br />\n<br />\n<br />\n<br />\nLET\'S TAKE IT FROM THE CORRUPT HANDS OF THE MODERATORS.<br />\n<br />\nWITHOUT US, THE PEOPLE WHO IT RIGHTFULLY BELONGS TO, TOTSE IS NOTHING, AND WITH US IN CONRTOL AS ONE NATION, TOTSE WILL BE EVERYTHING!!!!!<br />\n<br />\nLET\'S TAKE IT FROM THE CORRUPT HANDS OF THE MODERATORS.<br />\n<br />\nWITHOUT US, THE PEOPLE WHO IT RIGHTFULLY BELONGS TO, TOTSE IS NOTHING, AND WITH US IN CONRTOL AS ONE NATION, TOTSE WILL BE EVERYTHING!!!!!<br />\n<br />\nLET\'S TAKE IT FROM THE CORRUPT HANDS OF THE MODERATORS.<br />\n<br />\nWITHOUT US, THE PEOPLE WHO IT RIGHTFULLY BELONGS TO, TOTSE IS NOTHING, AND WITH US IN CONRTOL AS ONE NATION, TOTSE WILL BE EVERYTHING!!!!!<br />\n<br />\nLET\'S TAKE IT FROM THE CORRUPT HANDS OF THE MODERATORS.<br />\n<br />\nWITHOUT US, THE PEOPLE WHO IT RIGHTFULLY BELONGS TO, TOTSE IS NOTHING, AND WITH US IN CONRTOL AS ONE NATION, TOTSE WILL BE EVERYTHING!!!!!<br />\n<br />\nLET\'S TAKE IT FROM THE CORRUPT HANDS OF THE MODERATORS.<br />\n<br />\nWITHOUT US, THE PEOPLE WHO IT RIGHTFULLY BELONGS TO, TOTSE IS NOTHING, AND WITH US IN CONRTOL AS ONE NATION, TOTSE WILL BE EVERYTHING!!!!!<br />\n<br />\nLET\'S TAKE IT FROM THE CORRUPT HANDS OF THE MODERATORS.<br />\n<br />\nWITHOUT US, THE PEOPLE WHO IT RIGHTFULLY BELONGS TO, TOTSE IS NOTHING, AND WITH US IN CONRTOL AS ONE NATION, TOTSE WILL BE EVERYTHING!!!!!<br />\n<br />\n<br />\n<br />\n</div>\r\n		<!-- / message -->\r\n	\r\n		\r\n		\r\n		\r\n		\r\n		\r\n	\r\n		<div style="margin-top: 10px" align="right">\r\n			<!-- controls -->\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n				\r\n			\r\n			<!-- / controls -->\r\n		</div>\r\n		\r\n	<!-- message, attachments, sig -->\r\n	\r\n	</td>\r\n</tr>\r\n</table>\r\n\r\n<!-- post 6081722 popup menu -->\r\n<div class="vbmenu_popup" id="postmenu_6081722_menu" style="display:none;">\r\n	<table cellpadding="4" cellspacing="1" border="0">\r\n	<tr>\r\n		<td class="thead">Zon</td>\r\n	</tr>\r\n	\r\n		<tr><td class="vbmenu_option">View Public Profile</td></tr>\r\n	\r\n	\r\n	\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Find all posts by Zon</td></tr>\r\n	\r\n	\r\n	</table>\r\n</div>\r\n<!-- / post 6081722 popup menu -->\n<!-- END TEMPLATE: postbit -->\r\n\r\n\r\n	</div>\r\n	<!-- BEGIN TEMPLATE: spacer_close -->\n\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n<!-- / close content container -->\n<!-- END TEMPLATE: spacer_close -->\r\n\r\n<!-- / post #6081722 -->\n<!-- END TEMPLATE: postbit_wrapper -->';
-
-// next/previous post info
-pn[6081722] = "6081722,6081722";
-pn[0] = ",6081722";
-
-// cached usernames
-pu[0] = guestphrase;
-pu[201627] = "Zon";
-
-// -->
-</script>
 
 <!-- BEGIN TEMPLATE: spacer_open -->
 <!-- open content container -->
@@ -498,36 +494,6 @@ pu[201627] = "Zon";
 		<div style="padding:0px 5px 0px 5px" align="left">
 
 <!-- END TEMPLATE: spacer_open -->
-
-<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-top-width:0px; margin-bottom:6px">
-<tr>
-	<td class="alt2">
-	<div style="height:150px; width:100%; overflow:auto; border:2px inset; padding: 0px; text-align:left;" class="alt1" id="links">
-		<div class="smallfont">
-		<!-- start post links -->
-<script type="text/javascript">
-<!--
-writeLink(6081722, 0, 0, 201627, "", "<i>TOTSE HAS BECOME CORRUPTED BY...</i>", "2004-07-07", "23:06", 0);
-
-//-->
-</script>
-		<!-- end post links -->
-		</div>
-	</div>
-	</td>
-</tr>
-
-<tr>
-	<td class="tfoot" align="center"><div class="smallfont">
-		Prev
-		<img class="inlineimg" src="../../images/buttons/sortdesc.gif" alt="Previous Post" border="0" />
-		&nbsp;
-		<img class="inlineimg" src="../../images/buttons/sortasc.gif" alt="Next Post" border="0" />
-		Next
-	</div></td>
-</tr>
-
-</table>
 
 <!-- BEGIN TEMPLATE: spacer_close -->
 
@@ -1201,9 +1167,9 @@ WITHOUT US, THE PEOPLE WHO IT RIGHTFULLY BELONGS TO, TOTSE IS NOTHING, AND WITH 
 		<div>You <strong>may not</strong> edit your posts</div>
 		<hr />
 		
-		<div>BB code is <strong>On</strong></div>
-		<div>Smilies are <strong>On</strong></div>
-		<div>[IMG] code is <strong>Off</strong></div>
+		<div><a href="../../community/bbcode.html" target="_blank">BB code</a> is <strong>On</strong></div>
+		<div><a href="../../community/showsmilies.html" target="_blank">Smilies</a> are <strong>On</strong></div>
+		<div><a href="../../community/bbcode.html#imgcode" target="_blank">[IMG]</a> code is <strong>Off</strong></div>
 		<div>HTML code is <strong>Off</strong></div>
 	</div></td>
 </tr>
@@ -1487,8 +1453,10 @@ WITHOUT US, THE PEOPLE WHO IT RIGHTFULLY BELONGS TO, TOTSE IS NOTHING, AND WITH 
 			</table>
 		</td>
 
-		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots -->
-		<td width="20%" align="center" valign="top">
+		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots.
+		     min-width keeps this fluid 20% column from ever squeezing narrower
+		     than the fixed-170px table it holds, at any viewport width. -->
+		<td width="20%" align="center" valign="top" style="min-width:190px">
 
 			<table width="170" border="0" cellpadding="0" cellspacing="0">
 				<tr>

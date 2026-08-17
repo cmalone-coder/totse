@@ -183,12 +183,26 @@
 
 		<!-- Content column -->
 		<td align="left">
-			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<!-- table-layout:fixed makes the browser honor this row's column
+			     widths exactly instead of auto-redistributing them: with the
+			     default "auto" layout, a 13px + 97% + 13px row never sums to
+			     exactly 100% of a fluid table except at one specific width,
+			     so at any other width (all of them, on a responsive page)
+			     the browser proportionally inflates the two fixed-13px
+			     corner columns to reconcile the mismatch - stretching
+			     3lt.jpg/3rt.jpg's cells past the images' own 13px width and
+			     tiling a second, partial copy of the curve artwork into the
+			     extra space, which reads as the rounded corner being cut
+			     off. Under fixed layout this row's widths become the whole
+			     table's column template (13px / remainder / 13px) and are
+			     used verbatim at every width, so the corner cells always
+			     match their images exactly and never need to repeat. -->
+			<table width="100%" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed">
 
 				<tr>
-					<td width="13" height="11" background="../../images/t3/3lt.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="97%" height="11" background="../../images/t3/3ct.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="13" height="11" background="../../images/t3/3rt.jpg"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3lt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3ct.jpg"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3rt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
 				</tr>
 
 				<!-- Ubiquitous nav menu - only real, existing pages are hyperlinked; everything
@@ -222,7 +236,7 @@
 
 				<tr valign="top">
 					<td width="13" background="../../images/t3/0cm.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="97%" height="640" background="../../images/t3/0cm.jpg">
+					<td width="97%" height="640" background="../../images/t3/0cm.jpg" style="padding-top:6px">
 <!-- breadcrumb, login, pm info -->
 <table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
 <tr>
@@ -526,44 +540,6 @@ pu[219184] = "uio3q";
 		<div style="padding:0px 5px 0px 5px" align="left">
 
 <!-- END TEMPLATE: spacer_open -->
-
-<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-top-width:0px; margin-bottom:6px">
-<tr>
-	<td class="alt2">
-	<div style="height:150px; width:100%; overflow:auto; border:2px inset; padding: 0px; text-align:left;" class="alt1" id="links">
-		<div class="smallfont">
-		<!-- start post links -->
-<script type="text/javascript">
-<!--
-writeLink(10082189, 0, 0, 147935, "", "Big Bang is Best Evidence of...", "2008-06-12", "20:44", 1);
-  writeLink(10082526, 0, 0, 165587, "T", "Re: Big Bang is Best Evidence...", "2008-06-12", "22:15", 1);
-    writeLink(10082878, 0, 0, 147935, "I,L", "Re: Big Bang is Best Evidence...", "2008-06-13", "00:03", 1);
-  writeLink(10083141, 0, 0, 203929, "T", "Re: Big Bang is Best Evidence...", "2008-06-13", "01:12", 1);
-    writeLink(10083334, 0, 0, 147935, "I,L", "Re: Big Bang is Best Evidence...", "2008-06-13", "01:54", 1);
-      writeLink(10083451, 0, 0, 161250, "I,1,T", "Re: Big Bang is Best Evidence...", "2008-06-13", "02:23", 1);
-        writeLink(10083462, 0, 0, 160296, "I,1,I,T", "Re: Big Bang is Best Evidence...", "2008-06-13", "02:25", 1);
-        writeLink(10083536, 0, 0, 147935, "I,1,I,L", "Re: Big Bang is Best Evidence...", "2008-06-13", "02:45", 1);
-      writeLink(10083464, 0, 0, 203929, "I,1,T", "Re: Big Bang is Best Evidence...", "2008-06-13", "02:26", 1);
-      writeLink(10091686, 0, 0, 207287, "I,1,L", "Re: Big Bang is Best Evidence...", "2008-06-15", "15:31", 1);
-        writeLink(10094044, 0, 0, 147935, "I,2,T", "Re: Big Bang is Best Evidence...", "2008-06-16", "03:39", 1);
-          writeLink(10094184, 0, 0, 0, "I,2,I,L", "", "more", "", 1);
-        writeLink(10132616, 0, 0, 168291, "I,2,L", "Re: Big Bang is Best Evidence...", "2008-06-25", "22:09", 1);
-          writeLink(10133299, 0, 0, 0, "I,3,L", "", "more", "", 1);
-  writeLink(10103303, 0, 0, 208929, "T", "Re: Big Bang is Best Evidence...", "2008-06-18", "14:30", 1);
-    writeLink(10103678, 0, 0, 147935, "I,L", "Re: Big Bang is Best Evidence...", "2008-06-18", "16:49", 1);
-      writeLink(10103812, 0, 0, 208929, "I,1,L", "Re: Big Bang is Best Evidence...", "2008-06-18", "17:39", 1);
-  writeLink(10151214, 0, 0, 147492, "T", "Re: Big Bang is Best Evidence...", "2008-07-01", "07:48", 1);
-  writeLink(10177071, 0, 0, 219184, "L", "Re: Big Bang is Best Evidence...", "2008-07-06", "21:46", 1);
-
-//-->
-</script>
-		<!-- end post links -->
-		</div>
-	</div>
-	</td>
-</tr>
-
-</table>
 
 <!-- BEGIN TEMPLATE: spacer_close -->
 
@@ -2618,9 +2594,9 @@ border="0" /> &nbsp;
 		<div>You <strong>may not</strong> edit your posts</div>
 		<hr />
 		
-		<div>BB code is <strong>On</strong></div>
-		<div>Smilies are <strong>On</strong></div>
-		<div>[IMG] code is <strong>Off</strong></div>
+		<div><a href="../../community/bbcode.html" target="_blank">BB code</a> is <strong>On</strong></div>
+		<div><a href="../../community/showsmilies.html" target="_blank">Smilies</a> are <strong>On</strong></div>
+		<div><a href="../../community/bbcode.html#imgcode" target="_blank">[IMG]</a> code is <strong>Off</strong></div>
 		<div>HTML code is <strong>Off</strong></div>
 	</div></td>
 </tr>
@@ -2904,8 +2880,10 @@ border="0" /> &nbsp;
 			</table>
 		</td>
 
-		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots -->
-		<td width="20%" align="center" valign="top">
+		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots.
+		     min-width keeps this fluid 20% column from ever squeezing narrower
+		     than the fixed-170px table it holds, at any viewport width. -->
+		<td width="20%" align="center" valign="top" style="min-width:190px">
 
 			<table width="170" border="0" cellpadding="0" cellspacing="0">
 				<tr>

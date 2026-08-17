@@ -183,12 +183,26 @@
 
 		<!-- Content column -->
 		<td align="left">
-			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<!-- table-layout:fixed makes the browser honor this row's column
+			     widths exactly instead of auto-redistributing them: with the
+			     default "auto" layout, a 13px + 97% + 13px row never sums to
+			     exactly 100% of a fluid table except at one specific width,
+			     so at any other width (all of them, on a responsive page)
+			     the browser proportionally inflates the two fixed-13px
+			     corner columns to reconcile the mismatch - stretching
+			     3lt.jpg/3rt.jpg's cells past the images' own 13px width and
+			     tiling a second, partial copy of the curve artwork into the
+			     extra space, which reads as the rounded corner being cut
+			     off. Under fixed layout this row's widths become the whole
+			     table's column template (13px / remainder / 13px) and are
+			     used verbatim at every width, so the corner cells always
+			     match their images exactly and never need to repeat. -->
+			<table width="100%" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed">
 
 				<tr>
-					<td width="13" height="11" background="../../images/t3/3lt.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="97%" height="11" background="../../images/t3/3ct.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="13" height="11" background="../../images/t3/3rt.jpg"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3lt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3ct.jpg"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3rt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
 				</tr>
 
 				<!-- Ubiquitous nav menu - only real, existing pages are hyperlinked; everything
@@ -222,7 +236,7 @@
 
 				<tr valign="top">
 					<td width="13" background="../../images/t3/0cm.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="97%" height="640" background="../../images/t3/0cm.jpg">
+					<td width="97%" height="640" background="../../images/t3/0cm.jpg" style="padding-top:6px">
 <!-- breadcrumb, login, pm info -->
 <table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
 <tr>
@@ -521,40 +535,6 @@ pu[168291] = "godfather89";
 		<div style="padding:0px 5px 0px 5px" align="left">
 
 <!-- END TEMPLATE: spacer_open -->
-
-<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-top-width:0px; margin-bottom:6px">
-<tr>
-	<td class="alt2">
-	<div style="height:150px; width:100%; overflow:auto; border:2px inset; padding: 0px; text-align:left;" class="alt1" id="links">
-		<div class="smallfont">
-		<!-- start post links -->
-<script type="text/javascript">
-<!--
-writeLink(10785529, 0, 0, 183872, "", "World Peace", "2008-12-09", "09:08", 1);
-  writeLink(10787427, 0, 0, 194258, "T", "Re: World Peace", "2008-12-09", "19:35", 1);
-    writeLink(10787645, 0, 0, 183872, "I,L", "Re: World Peace", "2008-12-09", "20:14", 1);
-      writeLink(10791190, 0, 0, 165587, "I,1,L", "Re: World Peace", "2008-12-10", "12:17", 1);
-        writeLink(10796011, 0, 0, 183872, "I,2,L", "Re: World Peace", "2008-12-11", "11:44", 1);
-          writeLink(10799280, 0, 0, 0, "I,3,L", "", "more", "", 1);
-  writeLink(10802066, 0, 0, 193669, "L", "Re: World Peace", "2008-12-12", "18:26", 1);
-    writeLink(10808940, 0, 0, 183872, "1,T", "Re: World Peace", "2008-12-14", "12:22", 1);
-      writeLink(10809029, 0, 0, 226151, "1,I,L", "Re: World Peace", "2008-12-14", "13:28", 1);
-        writeLink(10823576, 0, 0, 183872, "1,I,1,T", "Re: World Peace", "2008-12-17", "23:08", 1);
-        writeLink(10846850, 0, 0, 168291, "1,I,1,L", "Re: World Peace", "2008-12-23", "17:20", 1);
-    writeLink(10823698, 0, 0, 181124, "1,L", "Re: World Peace", "2008-12-17", "23:32", 1);
-      writeLink(10823799, 0, 0, 158479, "2,L", "Re: World Peace", "2008-12-17", "23:51", 1);
-        writeLink(10823805, 0, 0, 181124, "3,T", "Re: World Peace", "2008-12-17", "23:52", 1);
-        writeLink(10826536, 0, 0, 183872, "3,L", "Re: World Peace", "2008-12-18", "13:01", 1);
-
-//-->
-</script>
-		<!-- end post links -->
-		</div>
-	</div>
-	</td>
-</tr>
-
-</table>
 
 <!-- BEGIN TEMPLATE: spacer_close -->
 
@@ -2652,9 +2632,9 @@ in a way we are the cause of and solution to all of our problems, or at least th
 		<div>You <strong>may not</strong> edit your posts</div>
 		<hr />
 		
-		<div>BB code is <strong>On</strong></div>
-		<div>Smilies are <strong>On</strong></div>
-		<div>[IMG] code is <strong>Off</strong></div>
+		<div><a href="../../community/bbcode.html" target="_blank">BB code</a> is <strong>On</strong></div>
+		<div><a href="../../community/showsmilies.html" target="_blank">Smilies</a> are <strong>On</strong></div>
+		<div><a href="../../community/bbcode.html#imgcode" target="_blank">[IMG]</a> code is <strong>Off</strong></div>
 		<div>HTML code is <strong>Off</strong></div>
 	</div></td>
 </tr>
@@ -2938,8 +2918,10 @@ in a way we are the cause of and solution to all of our problems, or at least th
 			</table>
 		</td>
 
-		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots -->
-		<td width="20%" align="center" valign="top">
+		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots.
+		     min-width keeps this fluid 20% column from ever squeezing narrower
+		     than the fixed-170px table it holds, at any viewport width. -->
+		<td width="20%" align="center" valign="top" style="min-width:190px">
 
 			<table width="170" border="0" cellpadding="0" cellspacing="0">
 				<tr>

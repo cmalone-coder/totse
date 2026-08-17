@@ -192,12 +192,26 @@
 
 		<!-- Content column -->
 		<td align="left">
-			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<!-- table-layout:fixed makes the browser honor this row's column
+			     widths exactly instead of auto-redistributing them: with the
+			     default "auto" layout, a 13px + 97% + 13px row never sums to
+			     exactly 100% of a fluid table except at one specific width,
+			     so at any other width (all of them, on a responsive page)
+			     the browser proportionally inflates the two fixed-13px
+			     corner columns to reconcile the mismatch - stretching
+			     3lt.jpg/3rt.jpg's cells past the images' own 13px width and
+			     tiling a second, partial copy of the curve artwork into the
+			     extra space, which reads as the rounded corner being cut
+			     off. Under fixed layout this row's widths become the whole
+			     table's column template (13px / remainder / 13px) and are
+			     used verbatim at every width, so the corner cells always
+			     match their images exactly and never need to repeat. -->
+			<table width="100%" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed">
 
 				<tr>
-					<td width="13" height="11" background="../../../images/t3/3lt.jpg"><img src="../../../images/t3/0.gif"></td>
-					<td width="97%" height="11" background="../../../images/t3/3ct.jpg"><img src="../../../images/t3/0.gif"></td>
-					<td width="13" height="11" background="../../../images/t3/3rt.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td height="11" background="../../../images/t3/3lt.jpg" style="width:13px"><img src="../../../images/t3/0.gif"></td>
+					<td height="11" background="../../../images/t3/3ct.jpg"><img src="../../../images/t3/0.gif"></td>
+					<td height="11" background="../../../images/t3/3rt.jpg" style="width:13px"><img src="../../../images/t3/0.gif"></td>
 				</tr>
 
 				<!-- Ubiquitous nav menu - only real, existing pages are hyperlinked; everything
@@ -231,7 +245,7 @@
 
 				<tr valign="top">
 					<td width="13" background="../../../images/t3/0cm.jpg"><img src="../../../images/t3/0.gif"></td>
-					<td width="97%" height="640" background="../../../images/t3/0cm.jpg">
+					<td width="97%" height="640" background="../../../images/t3/0cm.jpg" style="padding-top:6px">
 <h1>Making Money</h1>
 
 
@@ -369,18 +383,12 @@
 			<td width="62%" align="left" valign="middle" class="linktitle"><a href="switch.html" class="linktitle">Doin' the Credit Card Shuffle</a></td>
 			<td width="35%" align="right" valign="middle" class="linkauthor">by David Horowitz</td>
 		</tr>
-		<tr valign="top"><td>&nbsp;</td><td width="100%" colspan="2" class="linkdesc">If you have good credit and one or more major credit  cards,
-
-you're a potential player in the game of shuffling  credit balances
-
-from one card to another. To get in the game,  simply answer any of the
-
-offers you've probably received in  the mail from banks and other
-
-credit-card issuers. If you  don't have their cards, the banks will
-
-send you one. All you  have to do is transfer your balance from your
-
+		<tr valign="top"><td>&nbsp;</td><td width="100%" colspan="2" class="linkdesc">If you have good credit and one or more major credit  cards,
+you're a potential player in the game of shuffling  credit balances
+from one card to another. To get in the game,  simply answer any of the
+offers you've probably received in  the mail from banks and other
+credit-card issuers. If you  don't have their cards, the banks will
+send you one. All you  have to do is transfer your balance from your
 other cards to  the new one.</td>
 		</tr>
 		<tr valign="middle">
@@ -545,8 +553,7 @@ other cards to  the new one.</td>
 			<td width="3%" align="center" valign="middle"><a href="busplan.html"><img src="../../../images/bullets/article_bullet.gif" border="0"></a></td>
 			<td width="97%" align="left" valign="middle" class="linktitle" colspan="2"><a href="busplan.html" class="linktitle">How to Properly Write a Business Plan</a></td>
 		</tr>
-		<tr valign="top"><td>&nbsp;</td><td width="100%" colspan="2" class="linkdesc">The business plan should be written in two sections.  The section 
-
+		<tr valign="top"><td>&nbsp;</td><td width="100%" colspan="2" class="linkdesc">The business plan should be written in two sections.  The section 
 1 should be exactly ten pages.  Here's what they should cover...</td>
 		</tr>
 		<tr valign="middle">
@@ -976,8 +983,8 @@ other cards to  the new one.</td>
 			<td width="97%" align="left" valign="middle" class="linktitle" colspan="2"><a href="ch07.html" class="linktitle">Other Tax Havens in the United States</a></td>
 		</tr>
 		<tr valign="middle">
-			<td width="3%" align="center" valign="middle"><img src="../../../images/bullets/article_bullet.gif" border="0"></td>
-			<td width="97%" align="left" valign="middle" class="linktitle" colspan="2">Overcome poor credit with a secured credit card</td>
+			<td width="3%" align="center" valign="middle"><a href="ch16.html"><img src="../../../images/bullets/article_bullet.gif" border="0"></a></td>
+			<td width="97%" align="left" valign="middle" class="linktitle" colspan="2"><a href="ch16.html" class="linktitle">Overcome poor credit with a secured credit card</a></td>
 		</tr>
 		<tr valign="middle">
 			<td width="3%" align="center" valign="middle"><a href="cdwtrx.html"><img src="../../../images/bullets/article_bullet.gif" border="0"></a></td>
@@ -1206,8 +1213,8 @@ other cards to  the new one.</td>
 			<td width="97%" align="left" valign="middle" class="linktitle" colspan="2"><a href="uplastic.html" class="linktitle">Using Plastic - a Young Adult's Guide to Credit Ca</a></td>
 		</tr>
 		<tr valign="middle">
-			<td width="3%" align="center" valign="middle"><img src="../../../images/bullets/article_bullet.gif" border="0"></td>
-			<td width="97%" align="left" valign="middle" class="linktitle" colspan="2">Using annutities for tax deferral</td>
+			<td width="3%" align="center" valign="middle"><a href="ch26.html"><img src="../../../images/bullets/article_bullet.gif" border="0"></a></td>
+			<td width="97%" align="left" valign="middle" class="linktitle" colspan="2"><a href="ch26.html" class="linktitle">Using annutities for tax deferral</a></td>
 		</tr>
 		<tr valign="middle">
 			<td width="3%" align="center" valign="middle"><a href="utilcrdt.html"><img src="../../../images/bullets/article_bullet.gif" border="0"></a></td>
@@ -1283,8 +1290,10 @@ other cards to  the new one.</td>
 			</table>
 		</td>
 
-		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots -->
-		<td width="20%" align="center" valign="top">
+		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots.
+		     min-width keeps this fluid 20% column from ever squeezing narrower
+		     than the fixed-170px table it holds, at any viewport width. -->
+		<td width="20%" align="center" valign="top" style="min-width:190px">
 
 			<table width="170" border="0" cellpadding="0" cellspacing="0">
 				<tr>

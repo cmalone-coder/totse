@@ -183,12 +183,26 @@
 
 		<!-- Content column -->
 		<td align="left">
-			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<!-- table-layout:fixed makes the browser honor this row's column
+			     widths exactly instead of auto-redistributing them: with the
+			     default "auto" layout, a 13px + 97% + 13px row never sums to
+			     exactly 100% of a fluid table except at one specific width,
+			     so at any other width (all of them, on a responsive page)
+			     the browser proportionally inflates the two fixed-13px
+			     corner columns to reconcile the mismatch - stretching
+			     3lt.jpg/3rt.jpg's cells past the images' own 13px width and
+			     tiling a second, partial copy of the curve artwork into the
+			     extra space, which reads as the rounded corner being cut
+			     off. Under fixed layout this row's widths become the whole
+			     table's column template (13px / remainder / 13px) and are
+			     used verbatim at every width, so the corner cells always
+			     match their images exactly and never need to repeat. -->
+			<table width="100%" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed">
 
 				<tr>
-					<td width="13" height="11" background="../../images/t3/3lt.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="97%" height="11" background="../../images/t3/3ct.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="13" height="11" background="../../images/t3/3rt.jpg"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3lt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3ct.jpg"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3rt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
 				</tr>
 
 				<!-- Ubiquitous nav menu - only real, existing pages are hyperlinked; everything
@@ -222,7 +236,7 @@
 
 				<tr valign="top">
 					<td width="13" background="../../images/t3/0cm.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="97%" height="640" background="../../images/t3/0cm.jpg">
+					<td width="97%" height="640" background="../../images/t3/0cm.jpg" style="padding-top:6px">
 <!-- breadcrumb, login, pm info -->
 <table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
 <tr>
@@ -470,25 +484,7 @@ var highlightwords = "";
 //-->
 </script>
 <script type="text/javascript" src="clientscript/vbulletin_thrdpostlist.js@v=372"></script>
-<script type="text/javascript">
-<!--
-// initialize some variables
-var curpostid = 10220397;
-var quickreply = false;
 
-// cached posts (no page reload required to view)
-pd[10220397] = '<!-- BEGIN TEMPLATE: postbit_wrapper -->\n<!-- post #10220397 -->\r\n\r\n	<!-- BEGIN TEMPLATE: spacer_open -->\n<!-- open content container -->\r\n\r\n<div align="center">\r\n	<div class="page" style="width:100%; text-align:left">\r\n		<div style="padding:0px 5px 0px 5px" align="left">\r\n\n<!-- END TEMPLATE: spacer_open -->\r\n	<div id="edit10220397" style="padding:0px 0px 6px 0px">\r\n	<!-- this is not the last post shown on the page -->\r\n\r\n\r\n<!-- BEGIN TEMPLATE: postbit -->\n<table class="tborder" id="post10220397" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">\r\n<tr>\r\n	<td class="thead" >\r\n		<div class="normal" style="float:right">\r\n			&nbsp;\r\n			#<strong>1</strong> &nbsp;\r\n			\r\n			\r\n\r\n			\r\n<img class="inlineimg" src="../../images/buttons/ignore.gif" \r\nalt="Add ArmsMerchant to your ignore list"\r\nborder="0" /> &nbsp;\r\n\r\n			\r\n			\r\n			\r\n		</div>\r\n		\r\n		<div class="normal">\r\n			<!-- status icon and date -->\r\n			<a name="post10220397"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>\r\n			\r\n				2008-07-14, 19:17\r\n			\r\n			\r\n			<!-- / status icon and date -->\r\n		</div>\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt2" style="padding:0px">\r\n		<!-- user info -->\r\n		<table cellpadding="0" cellspacing="6" border="0" width="100%">\r\n		<tr>\r\n			\r\n			<td nowrap="nowrap">\r\n			\r\n				<div id="postmenu_10220397">\r\n					\r\n					<a class="bigusername" href="../../community/members/u194258.html">ArmsMerchant</a>\r\n					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->\n<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="ArmsMerchant is offline" border="0" />\r\n\r\n\n<!-- END TEMPLATE: postbit_onlinestatus -->\r\n					<script type="text/javascript"> vbmenu_register("postmenu_10220397", true); <\/scr' + 'ipt>\r\n					\r\n				</div>\r\n				\r\n				<div class="smallfont">Moderator</div>\r\n				\r\n				\r\n			</td>\r\n			<td width="100%">&nbsp;</td>\r\n			<td valign="top" nowrap="nowrap">\r\n				\r\n				<div class="smallfont">\r\n					<!-- location -->Wasilla,  Alaska\r\n					    \r\n					\r\n					\r\n				</div>\r\n				\r\n			</td>\r\n		</tr>\r\n		</table>\r\n		<!-- / user info -->\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt1" id="td_post_10220397">\r\n	<!-- message, attachments, sig -->\r\n	\r\n		\r\n			<!-- icon and title -->\r\n			<div class="smallfont">\r\n				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />\r\n				<strong>please read before posting, mark II</strong>\r\n			</div>\r\n			<hr size="1" style="color:#E8EFF4" />\r\n			<!-- / icon and title -->\r\n		\r\n		\r\n		<!-- message -->\r\n		<div id="post_message_10220397">You may have already noticed that part of the forum description here reads: &quot;Intolerance will not be tolerated.&quot; &quot;Intolerance&quot; includes not only religious bigotry (gratuitous religon-bashing), but also personal insult, obscenity, and racial and sexual slurs. While both the header and the forum title may be more than a bit tongue-in-cheek, there is a modicum of decency AngryFemme &amp; I expect to maintain here in order to keep this forum worthy of belonging in the semi-esteemed Society section. There is a reason this forum was not positioned between Spurious Generalities and Half Baked -- and we strive to keep the integrity of this forum at a high enough level to appeal to those who have a genuine interest in contributing on a regular basis with thought-provoking, worthwhile discussion.<br />\r\n<br />\r\nDue to the subject matter, feelings will run high. Strong opinions may be expressed, and are encouraged - but as forum moderators who are dedicated to making this a place where serious discussion can be held, we ask that posters here use some discretion and show some consideration for those of us with more delicate sensibilities. While some of you may feel that you cannot express your opinions regarding religion without the use of gutter language, religious bigotry, personal insult, obscenities and 150-word diatribes on why the Pope Smokes Dope, try to remember that this is somewhat of a diverse forum that is rather passionate about the spiritual revelations discussed here. As you comment on those whose spiritual revelations are not parallel to your own - try to take into account that in turn, you will be judged by your peers for the style of debate you choose to challenge them with. &quot;Free speech&quot; is allowed, but don\'t expect to be taken seriously if your responses are meant only to insult, slander or belittle the OP without offering up any coherent discussion of your own.<br />\r\n<br />\r\nWe are dealing here with issues that humanity has dealt with since the dawn of reason--questions such as Who am I ? Where did I come from? What is the meaning and purpose of my life? Where do I go when I die? Both religion and spirituality--they are by no means synonymous-- have sought answers to these questions, as we do now. Contributing to this forum with your own opinions regarding religion and spirituality is encouraged. Constantly chiming in with one-liner insults, content-free blabber or incessant grade-school foolishness that depicts Jesus\' crucifixion as an animated .gif file with porn music playing in the background will only serve to illustrate your lack of good taste, creativity and cleverness. In other words, it won\'t be received well by either the moderators or the patrons. In short, we kindly ask that you take that shit elsewhere, where it will be more appreciated.<br />\r\n<br />\r\nBut regardless of whether one posts here from an acadamic standpoint or as a cri du coeur, it is my hope that we will post in such as way that reflects our greatest and grandest conceptions of ourselves. It is AF\'s hope that we simply think before we post. Humor is welcome, and most always lightens up the tone of a heated discussion - but constant heckling without contributing to discussion is just completely unnecessary and frowned upon by both members and moderators alike.<br />\r\n<br />\r\nDeepak Chopra has said &quot;There can be no more important task in our life than to get in touch with our own inner self, the source of all Being.&quot; <br />\r\n<br />\r\nJesus said much the same thing -- &quot;The kingdom of God is within you.&quot; <br />\r\n<br />\r\nJohn Lennon said &quot;All you need is love.&quot;<br />\r\n<br />\r\nGroucho Marx said &quot;You\'re only as old as the woman you feel.&quot; <br />\r\n<br />\r\nMark Twain said &quot;I am quite sure now that often, very often, in matters concerning religion and politics a man\'s reasoning powers are not above the monkey\'s.&quot; <br />\r\n<br />\r\nReligious or not - let us strive here to post as considerate human beings, and not banana-toting primates just looking for a chuckle.<br />\r\n__________________<br />\r\n&quot;If asked why we should strive to know God, my answer would be selfish: I want to be a creator. This is the ultimate promise of spirituality, that you can become the author of your own existence, the maker of personal destiny.&quot; -- D.C.</div>\r\n		<!-- / message -->\r\n	\r\n		\r\n		\r\n		\r\n		<!-- sig -->\r\n			<div>\r\n				__________________<br />\r\n				&quot;Love is infallible; it has no errors, for all errors are the want of love.&quot; -- William Law<br />\r\n&quot;The astrolabe of the mysteries of God is Love.&quot; -- Rumi\r\n			</div>\r\n		<!-- / sig -->\r\n		\r\n		\r\n		\r\n		<!-- edit note -->\r\n			<div class="smallfont">			<hr size="1" style="color:#E8EFF4" />\r\n				<em>\r\n				Last edited by ArmsMerchant; 2008-07-14 at <span class="time">19:31</span>.\r\n				\r\n				</em>\r\n			</div>\r\n		<!-- / edit note -->\r\n		\r\n	\r\n		<div style="margin-top: 10px" align="right">\r\n			<!-- controls -->\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n				\r\n			\r\n			<!-- / controls -->\r\n		</div>\r\n		\r\n	<!-- message, attachments, sig -->\r\n	\r\n	</td>\r\n</tr>\r\n</table>\r\n\r\n<!-- post 10220397 popup menu -->\r\n<div class="vbmenu_popup" id="postmenu_10220397_menu" style="display:none;">\r\n	<table cellpadding="4" cellspacing="1" border="0">\r\n	<tr>\r\n		<td class="thead">ArmsMerchant</td>\r\n	</tr>\r\n	\r\n		<tr><td class="vbmenu_option"><a href="../../community/members/u194258.html">View Public Profile</a></td></tr>\r\n	\r\n	\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Visit ArmsMerchant\'s homepage!</td></tr>\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Find all posts by ArmsMerchant</td></tr>\r\n	\r\n	\r\n	</table>\r\n</div>\r\n<!-- / post 10220397 popup menu -->\n<!-- END TEMPLATE: postbit -->\r\n\r\n\r\n	</div>\r\n	<!-- BEGIN TEMPLATE: spacer_close -->\n\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n<!-- / close content container -->\n<!-- END TEMPLATE: spacer_close -->\r\n\r\n<!-- / post #10220397 -->\n<!-- END TEMPLATE: postbit_wrapper -->';
-
-// next/previous post info
-pn[10220397] = "10220397,10220397";
-pn[0] = ",10220397";
-
-// cached usernames
-pu[0] = guestphrase;
-pu[194258] = "ArmsMerchant";
-
-// -->
-</script>
 
 <!-- BEGIN TEMPLATE: spacer_open -->
 <!-- open content container -->
@@ -498,36 +494,6 @@ pu[194258] = "ArmsMerchant";
 		<div style="padding:0px 5px 0px 5px" align="left">
 
 <!-- END TEMPLATE: spacer_open -->
-
-<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-top-width:0px; margin-bottom:6px">
-<tr>
-	<td class="alt2">
-	<div style="height:150px; width:100%; overflow:auto; border:2px inset; padding: 0px; text-align:left;" class="alt1" id="links">
-		<div class="smallfont">
-		<!-- start post links -->
-<script type="text/javascript">
-<!--
-writeLink(10220397, 0, 0, 194258, "", "please read before posting,...", "2008-07-14", "19:17", 0);
-
-//-->
-</script>
-		<!-- end post links -->
-		</div>
-	</div>
-	</td>
-</tr>
-
-<tr>
-	<td class="tfoot" align="center"><div class="smallfont">
-		Prev
-		<img class="inlineimg" src="../../images/buttons/sortdesc.gif" alt="Previous Post" border="0" />
-		&nbsp;
-		<img class="inlineimg" src="../../images/buttons/sortasc.gif" alt="Next Post" border="0" />
-		Next
-	</div></td>
-</tr>
-
-</table>
 
 <!-- BEGIN TEMPLATE: spacer_close -->
 
@@ -900,9 +866,9 @@ __________________<br />
 		<div>You <strong>may not</strong> edit your posts</div>
 		<hr />
 		
-		<div>BB code is <strong>On</strong></div>
-		<div>Smilies are <strong>On</strong></div>
-		<div>[IMG] code is <strong>Off</strong></div>
+		<div><a href="../../community/bbcode.html" target="_blank">BB code</a> is <strong>On</strong></div>
+		<div><a href="../../community/showsmilies.html" target="_blank">Smilies</a> are <strong>On</strong></div>
+		<div><a href="../../community/bbcode.html#imgcode" target="_blank">[IMG]</a> code is <strong>Off</strong></div>
 		<div>HTML code is <strong>Off</strong></div>
 	</div></td>
 </tr>
@@ -1186,8 +1152,10 @@ __________________<br />
 			</table>
 		</td>
 
-		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots -->
-		<td width="20%" align="center" valign="top">
+		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots.
+		     min-width keeps this fluid 20% column from ever squeezing narrower
+		     than the fixed-170px table it holds, at any viewport width. -->
+		<td width="20%" align="center" valign="top" style="min-width:190px">
 
 			<table width="170" border="0" cellpadding="0" cellspacing="0">
 				<tr>

@@ -183,12 +183,26 @@
 
 		<!-- Content column -->
 		<td align="left">
-			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<!-- table-layout:fixed makes the browser honor this row's column
+			     widths exactly instead of auto-redistributing them: with the
+			     default "auto" layout, a 13px + 97% + 13px row never sums to
+			     exactly 100% of a fluid table except at one specific width,
+			     so at any other width (all of them, on a responsive page)
+			     the browser proportionally inflates the two fixed-13px
+			     corner columns to reconcile the mismatch - stretching
+			     3lt.jpg/3rt.jpg's cells past the images' own 13px width and
+			     tiling a second, partial copy of the curve artwork into the
+			     extra space, which reads as the rounded corner being cut
+			     off. Under fixed layout this row's widths become the whole
+			     table's column template (13px / remainder / 13px) and are
+			     used verbatim at every width, so the corner cells always
+			     match their images exactly and never need to repeat. -->
+			<table width="100%" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed">
 
 				<tr>
-					<td width="13" height="11" background="../../images/t3/3lt.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="97%" height="11" background="../../images/t3/3ct.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="13" height="11" background="../../images/t3/3rt.jpg"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3lt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3ct.jpg"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3rt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
 				</tr>
 
 				<!-- Ubiquitous nav menu - only real, existing pages are hyperlinked; everything
@@ -222,7 +236,7 @@
 
 				<tr valign="top">
 					<td width="13" background="../../images/t3/0cm.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="97%" height="640" background="../../images/t3/0cm.jpg">
+					<td width="97%" height="640" background="../../images/t3/0cm.jpg" style="padding-top:6px">
 <!-- breadcrumb, login, pm info -->
 <table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
 <tr>
@@ -470,27 +484,7 @@ var highlightwords = "";
 //-->
 </script>
 <script type="text/javascript" src="clientscript/vbulletin_thrdpostlist.js@v=372"></script>
-<script type="text/javascript">
-<!--
-// initialize some variables
-var curpostid = 8544713;
-var quickreply = false;
 
-// cached posts (no page reload required to view)
-pd[8544713] = '<!-- BEGIN TEMPLATE: postbit_wrapper -->\n<!-- post #8544713 -->\r\n\r\n	<!-- BEGIN TEMPLATE: spacer_open -->\n<!-- open content container -->\r\n\r\n<div align="center">\r\n	<div class="page" style="width:100%; text-align:left">\r\n		<div style="padding:0px 5px 0px 5px" align="left">\r\n\n<!-- END TEMPLATE: spacer_open -->\r\n	<div id="edit8544713" style="padding:0px 0px 6px 0px">\r\n	<!-- this is not the last post shown on the page -->\r\n\r\n\r\n<!-- BEGIN TEMPLATE: postbit -->\n<table class="tborder" id="post8544713" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">\r\n<tr>\r\n	<td class="thead" >\r\n		<div class="normal" style="float:right">\r\n			&nbsp;\r\n			#<strong>1</strong> &nbsp;\r\n			\r\n			\r\n\r\n			\r\n<img class="inlineimg" src="../../images/buttons/ignore.gif" \r\nalt="Add Dendrin to your ignore list"\r\nborder="0" /> &nbsp;\r\n\r\n			\r\n			\r\n			\r\n		</div>\r\n		\r\n		<div class="normal">\r\n			<!-- status icon and date -->\r\n			<a name="post8544713"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>\r\n			\r\n				2007-06-29, 02:36\r\n			\r\n			\r\n			<!-- / status icon and date -->\r\n		</div>\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt2" style="padding:0px">\r\n		<!-- user info -->\r\n		<table cellpadding="0" cellspacing="6" border="0" width="100%">\r\n		<tr>\r\n			\r\n			<td nowrap="nowrap">\r\n			\r\n				<div id="postmenu_8544713">\r\n					\r\n					Dendrin\r\n					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->\n<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="Dendrin is offline" border="0" />\r\n\r\n\n<!-- END TEMPLATE: postbit_onlinestatus -->\r\n					<script type="text/javascript"> vbmenu_register("postmenu_8544713", true); <\/scr' + 'ipt>\r\n					\r\n				</div>\r\n				\r\n				<div class="smallfont">Regular</div>\r\n				\r\n				\r\n			</td>\r\n			<td width="100%">&nbsp;</td>\r\n			<td valign="top" nowrap="nowrap">\r\n				\r\n				<div class="smallfont">\r\n					<!-- location -->Long Beach  CA  USA\r\n					<!-- BEGIN TEMPLATE: im_icq -->\n<a href="#" onclick="imwindow(\'icq\', \'191961\', 500, 450); return false;"><img src="../../images/misc/im_icq.gif" alt="Send a message via ICQ to Dendrin" border="0" /></a>\n<!-- END TEMPLATE: im_icq -->    \r\n					\r\n					\r\n				</div>\r\n				\r\n			</td>\r\n		</tr>\r\n		</table>\r\n		<!-- / user info -->\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt1" id="td_post_8544713">\r\n	<!-- message, attachments, sig -->\r\n	\r\n		\r\n			<!-- icon and title -->\r\n			<div class="smallfont">\r\n				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />\r\n				<strong>Dope POV of christianity</strong>\r\n			</div>\r\n			<hr size="1" style="color:#E8EFF4" />\r\n			<!-- / icon and title -->\r\n		\r\n		\r\n		<!-- message -->\r\n		<div id="post_message_8544713">I had a strange idea which devoped into a rant and I  inadvertently posted to SG in a moment of idiocy. I make no effort to correct anything. I\'ve spent all my energy on this epic thesis of fucktarded theology.<br />\r\n Included are both previous threads.<br />\r\n<br />\r\nWell I\'m here doing nothing getting fucked up as usual.<br />\r\nand I developed a theory while showering the filth of work and old dope off me. Here goes.<br />\r\n<br />\r\nMy new theory is drugs are the Devil\'s Get Well Soon Hallmark card complete with wrapped and ribboned gift to humanity after the whole Eden business.....Like...&quot;Sorry I fucked off your program...kinda like Oprah buying the whole audience new cars. But in a guilty &quot;I fucked up somehow&quot; kinda way. But at least he didn\'t didn\'t cross God and gets his liver torn out eternally like a certain former employee of God\'s. (see Prometheus)<br />\r\n<br />\r\nSecond part of said theory is that God got butthurt and mad and added the addictive/psychological/physiological destructive part to drugs....out of spite naturally.<br />\r\n<br />\r\nThird part: The Devil is actually your well-meaning friend. But his rival...aforementioned &quot;God&quot; is always cramping his style and lacing his gifts to humanity...<br />\r\n<br />\r\nKnowledge.....Death came with it....like a total vindictive chick/Indian Giver he took back his housewarming gift to Adam and Eve for their new crib: Eden and then sued them for undue stress and unlawful residence and loss of income for his prime real estate &quot;Garden of Eden.&quot;<br />\r\n<br />\r\nDrugs.....overall damage to your health both physically and mentally. Not to mention addiction and deterioration of both lifestyle and sanity...I have a sneaking suspicion he also made them hard or nigh impossible to obtain. All these effects rise on orders of magnitude with the amount of pleasure derived from that particular drug.<br />\r\n<br />\r\nSex.....you get unwanted kids and buttloads of pain and discomfort for the chick all through the pregnancy. And then there\'s also the menstrual cycle in said discomfort...And of course STDs for both parties involved.<br />\r\n<br />\r\nStrong leaders that come once a generation to unite and reform the world....God turns them to insane and murderous dictators either before or after assuming power what with genocidal regimes....wholesale slaughter and whatnot....<br />\r\n<br />\r\nThat\'s my idea. Any thoughts,questions...additions,criticism...accusat  ions of madness?</div>\r\n		<!-- / message -->\r\n	\r\n		\r\n		\r\n		\r\n		\r\n		\r\n	\r\n		<div style="margin-top: 10px" align="right">\r\n			<!-- controls -->\r\n			\r\n			\r\n			\r\n				<img src="../../images/buttons/quote.gif" alt="Reply With Quote" border="0" />\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n				\r\n			\r\n			<!-- / controls -->\r\n		</div>\r\n		\r\n	<!-- message, attachments, sig -->\r\n	\r\n	</td>\r\n</tr>\r\n</table>\r\n\r\n<!-- post 8544713 popup menu -->\r\n<div class="vbmenu_popup" id="postmenu_8544713_menu" style="display:none;">\r\n	<table cellpadding="4" cellspacing="1" border="0">\r\n	<tr>\r\n		<td class="thead">Dendrin</td>\r\n	</tr>\r\n	\r\n		<tr><td class="vbmenu_option">View Public Profile</td></tr>\r\n	\r\n	\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Visit Dendrin\'s homepage!</td></tr>\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Find all posts by Dendrin</td></tr>\r\n	\r\n	\r\n	</table>\r\n</div>\r\n<!-- / post 8544713 popup menu -->\n<!-- END TEMPLATE: postbit -->\r\n\r\n\r\n	</div>\r\n	<!-- BEGIN TEMPLATE: spacer_close -->\n\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n<!-- / close content container -->\n<!-- END TEMPLATE: spacer_close -->\r\n\r\n<!-- / post #8544713 -->\n<!-- END TEMPLATE: postbit_wrapper -->';
-pd[8544721] = '<!-- BEGIN TEMPLATE: postbit_wrapper -->\n<!-- post #8544721 -->\r\n\r\n	<!-- BEGIN TEMPLATE: spacer_open -->\n<!-- open content container -->\r\n\r\n<div align="center">\r\n	<div class="page" style="width:100%; text-align:left">\r\n		<div style="padding:0px 5px 0px 5px" align="left">\r\n\n<!-- END TEMPLATE: spacer_open -->\r\n	<div id="edit8544721" style="padding:0px 0px 6px 0px">\r\n	<!-- this is not the last post shown on the page -->\r\n\r\n\r\n<!-- BEGIN TEMPLATE: postbit -->\n<table class="tborder" id="post8544721" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">\r\n<tr>\r\n	<td class="thead" >\r\n		<div class="normal" style="float:right">\r\n			&nbsp;\r\n			#<strong>2</strong> &nbsp;\r\n			\r\n			\r\n\r\n			\r\n<img class="inlineimg" src="../../images/buttons/ignore.gif" \r\nalt="Add Dendrin to your ignore list"\r\nborder="0" /> &nbsp;\r\n\r\n			\r\n			\r\n			\r\n		</div>\r\n		\r\n		<div class="normal">\r\n			<!-- status icon and date -->\r\n			<a name="post8544721"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>\r\n			\r\n				2007-06-29, 02:38\r\n			\r\n			\r\n			<!-- / status icon and date -->\r\n		</div>\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt2" style="padding:0px">\r\n		<!-- user info -->\r\n		<table cellpadding="0" cellspacing="6" border="0" width="100%">\r\n		<tr>\r\n			\r\n			<td nowrap="nowrap">\r\n			\r\n				<div id="postmenu_8544721">\r\n					\r\n					Dendrin\r\n					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->\n<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="Dendrin is offline" border="0" />\r\n\r\n\n<!-- END TEMPLATE: postbit_onlinestatus -->\r\n					<script type="text/javascript"> vbmenu_register("postmenu_8544721", true); <\/scr' + 'ipt>\r\n					\r\n				</div>\r\n				\r\n				<div class="smallfont">Regular</div>\r\n				\r\n				\r\n			</td>\r\n			<td width="100%">&nbsp;</td>\r\n			<td valign="top" nowrap="nowrap">\r\n				\r\n				<div class="smallfont">\r\n					<!-- location -->Long Beach  CA  USA\r\n					<!-- BEGIN TEMPLATE: im_icq -->\n<a href="#" onclick="imwindow(\'icq\', \'191961\', 500, 450); return false;"><img src="../../images/misc/im_icq.gif" alt="Send a message via ICQ to Dendrin" border="0" /></a>\n<!-- END TEMPLATE: im_icq -->    \r\n					\r\n					\r\n				</div>\r\n				\r\n			</td>\r\n		</tr>\r\n		</table>\r\n		<!-- / user info -->\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt1" id="td_post_8544721">\r\n	<!-- message, attachments, sig -->\r\n	\r\n		\r\n			<!-- icon and title -->\r\n			<div class="smallfont">\r\n				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />\r\n				<strong>Re: Dope POV of christianity</strong>\r\n			</div>\r\n			<hr size="1" style="color:#E8EFF4" />\r\n			<!-- / icon and title -->\r\n		\r\n		\r\n		<!-- message -->\r\n		<div id="post_message_8544721">This was conceived when I went off-tangent in the midst of my last theory This is my condensed telling of the main event\'s concerning our origins and current state of existence.<br />\r\n<br />\r\nThe Devil is really your gregarious older party-animal buddy who\'s always there to cheer you up and laugh. (I think he had a part in the invention of the Internet)<br />\r\nGod and the Devil were half-brothers who always stuck together growing up. But fell out over some dispute about who was to be the executor of Dad\'s estate. [(He didn\'t specify or stipulate anything) (The Universe)] after he left it to them in his will. The Devil said &quot;Fuck it, I\'m not fighting over this shit!&quot; and split from their late father\'s googol-numbered bed/bath mansion coming with pool and 54 1/2 square light-year plot equipped with all the finest amenities and toys and room for expansion and house guests complete with a few million white-robed servants with wings to respond to the residing master at a moment\'s notice. So The Devil left along with his contingent of loyal servants and bought a pad in some rank apartments his Dad left solely to him. They were part of the absentee slumlord tenements his Dad used to accumulate his wealth on the way up. So The Devil renovated them and in doing so befriended all the oppressed proletariats and former servants who immediately began helping to beautify the place into a palace of Bacchanalian Excess and Royal Splendor....<br />\r\nIt was shitty location though being in the bowels of a tiny obnoxious little planet swarming with foul insects and lumbering beasts. So God in a moment of rare misguided affection invited the Devil back at no questions asked if he would be hired on as his personal head butler. The Devil naturally said &quot;Fuck You.&quot; and they have never spoken since. (The Job Pamphlet was a propaganda piece made by God using his dwindling inheritance and disgruntled starving servants) God has since blown all his money on more servants, PR (Miracles and smiting) in trying to downplay his earlier financial disaster of an R&amp;D project he codenamed Genesis.<br />\r\nHis mansion of former beauty is now a shambling wreck of squalor and filth and starving sqautters that he can no longer have employed under his corporation as &quot;Cleaning Services&quot;. He now spends his days attempting make everyone feel as miserable and pathetic as He. He also no longer owns his creation it has since been foreclosed on and it was auctioned off at a pittance to his now successful self-made brother. This of course was no source of rage and impotence for the once wealthy God. His corporation has since filed for Chapter 11 Bankruptcy about 3000 years ago. he waited the period of 700 years and created a new fictious business name with his remaining funding. He still occasionally pawns some of his furniture and not-so-very-valuables to meddle in some way with Humanity.For tax purposes he usually hires to his corporation &quot;Consultants&quot; more commonly known as &quot;Prophets&quot;. Which ironically he gains none of the homonym.(profits) He uses these prophets to instill guilt doubt and strife into the world preaching a life of abstinence and aceticism. He also meddles by the other methods I mention in the sister-thread of this one.<br />\r\n<br />\r\nP.S. The Devil has since dealt God his commeupance by offering him a position as the Head Chamber Pot Emptier<br />\r\n( This was still in The Dark Ages when he bought Earth as a Fixer-upper so Chamber pots were the Devil\'s option when he last renovated it.) Recently the Devil has been supposedly sighted in a &quot;vision&quot; trolling God\'s IRC Chan on an advanced version of Internet Chat Relay available only to deities currently on a monthly charge basis. A free shareware version should be coming out soon. The seer of this vision also said God was a tard and fell for the goatse link. Furthermore he states that his Myspace is shitty and all his friends are webcam pr0n spammers. and that IRL God is a scrawny emo kid with a high-pitched voice due to a hormone imbalance. <br />\r\n<br />\r\nNote from the author: While GOD IS omnipotent and omnipresent (at least to us). certain legalities keep him from smiting us as before (No money and not owning us anymore). Plus he really only uses his omnipresence to fap to dudes showering and various other homosexual/voyeuristic activities. So talk shit all you like.<br />\r\n<br />\r\nFin</div>\r\n		<!-- / message -->\r\n	\r\n		\r\n		\r\n		\r\n		\r\n		\r\n		<!-- edit note -->\r\n			<div class="smallfont">			<hr size="1" style="color:#E8EFF4" />\r\n				<em>\r\n				Last edited by Dendrin; 2007-06-29 at <span class="time">03:02</span>.\r\n				\r\n				</em>\r\n			</div>\r\n		<!-- / edit note -->\r\n		\r\n	\r\n		<div style="margin-top: 10px" align="right">\r\n			<!-- controls -->\r\n			\r\n			\r\n			\r\n				<img src="../../images/buttons/quote.gif" alt="Reply With Quote" border="0" />\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n				\r\n			\r\n			<!-- / controls -->\r\n		</div>\r\n		\r\n	<!-- message, attachments, sig -->\r\n	\r\n	</td>\r\n</tr>\r\n</table>\r\n\r\n<!-- post 8544721 popup menu -->\r\n<div class="vbmenu_popup" id="postmenu_8544721_menu" style="display:none;">\r\n	<table cellpadding="4" cellspacing="1" border="0">\r\n	<tr>\r\n		<td class="thead">Dendrin</td>\r\n	</tr>\r\n	\r\n		<tr><td class="vbmenu_option">View Public Profile</td></tr>\r\n	\r\n	\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Visit Dendrin\'s homepage!</td></tr>\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Find all posts by Dendrin</td></tr>\r\n	\r\n	\r\n	</table>\r\n</div>\r\n<!-- / post 8544721 popup menu -->\n<!-- END TEMPLATE: postbit -->\r\n\r\n\r\n	</div>\r\n	<!-- BEGIN TEMPLATE: spacer_close -->\n\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n<!-- / close content container -->\n<!-- END TEMPLATE: spacer_close -->\r\n\r\n<!-- / post #8544721 -->\n<!-- END TEMPLATE: postbit_wrapper -->';
-
-// next/previous post info
-pn[8544713] = "8544721,8544721";
-pn[0] = ",8544713";
-pn[8544721] = "8544713,8544713";
-
-// cached usernames
-pu[0] = guestphrase;
-pu[191961] = "Dendrin";
-
-// -->
-</script>
 
 <!-- BEGIN TEMPLATE: spacer_open -->
 <!-- open content container -->
@@ -500,37 +494,6 @@ pu[191961] = "Dendrin";
 		<div style="padding:0px 5px 0px 5px" align="left">
 
 <!-- END TEMPLATE: spacer_open -->
-
-<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-top-width:0px; margin-bottom:6px">
-<tr>
-	<td class="alt2">
-	<div style="height:150px; width:100%; overflow:auto; border:2px inset; padding: 0px; text-align:left;" class="alt1" id="links">
-		<div class="smallfont">
-		<!-- start post links -->
-<script type="text/javascript">
-<!--
-writeLink(8544713, 0, 0, 191961, "", "Dope POV of christianity", "2007-06-29", "02:36", 0);
-  writeLink(8544721, 0, 0, 191961, "L", "Re: Dope POV of christianity", "2007-06-29", "02:38", 0);
-
-//-->
-</script>
-		<!-- end post links -->
-		</div>
-	</div>
-	</td>
-</tr>
-
-<tr>
-	<td class="tfoot" align="center"><div class="smallfont">
-		Prev
-		<img class="inlineimg" src="../../images/buttons/sortdesc.gif" alt="Previous Post" border="0" />
-		&nbsp;
-		<img class="inlineimg" src="../../images/buttons/sortasc.gif" alt="Next Post" border="0" />
-		Next
-	</div></td>
-</tr>
-
-</table>
 
 <!-- BEGIN TEMPLATE: spacer_close -->
 
@@ -798,7 +761,7 @@ border="0" /> &nbsp;
 
 
 <!-- END TEMPLATE: postbit_onlinestatus -->
-					<script type="text/javascript"> vbmenu_register("postmenu_8544721", true); <\/scr' + 'ipt>
+					<script type="text/javascript"> vbmenu_register("postmenu_8544721", true); </script>
 					
 				</div>
 				
@@ -1081,9 +1044,9 @@ Fin</div>
 		<div>You <strong>may not</strong> edit your posts</div>
 		<hr />
 		
-		<div>BB code is <strong>On</strong></div>
-		<div>Smilies are <strong>On</strong></div>
-		<div>[IMG] code is <strong>Off</strong></div>
+		<div><a href="../../community/bbcode.html" target="_blank">BB code</a> is <strong>On</strong></div>
+		<div><a href="../../community/showsmilies.html" target="_blank">Smilies</a> are <strong>On</strong></div>
+		<div><a href="../../community/bbcode.html#imgcode" target="_blank">[IMG]</a> code is <strong>Off</strong></div>
 		<div>HTML code is <strong>Off</strong></div>
 	</div></td>
 </tr>
@@ -1367,8 +1330,10 @@ Fin</div>
 			</table>
 		</td>
 
-		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots -->
-		<td width="20%" align="center" valign="top">
+		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots.
+		     min-width keeps this fluid 20% column from ever squeezing narrower
+		     than the fixed-170px table it holds, at any viewport width. -->
+		<td width="20%" align="center" valign="top" style="min-width:190px">
 
 			<table width="170" border="0" cellpadding="0" cellspacing="0">
 				<tr>

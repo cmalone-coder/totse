@@ -183,12 +183,26 @@
 
 		<!-- Content column -->
 		<td align="left">
-			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<!-- table-layout:fixed makes the browser honor this row's column
+			     widths exactly instead of auto-redistributing them: with the
+			     default "auto" layout, a 13px + 97% + 13px row never sums to
+			     exactly 100% of a fluid table except at one specific width,
+			     so at any other width (all of them, on a responsive page)
+			     the browser proportionally inflates the two fixed-13px
+			     corner columns to reconcile the mismatch - stretching
+			     3lt.jpg/3rt.jpg's cells past the images' own 13px width and
+			     tiling a second, partial copy of the curve artwork into the
+			     extra space, which reads as the rounded corner being cut
+			     off. Under fixed layout this row's widths become the whole
+			     table's column template (13px / remainder / 13px) and are
+			     used verbatim at every width, so the corner cells always
+			     match their images exactly and never need to repeat. -->
+			<table width="100%" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed">
 
 				<tr>
-					<td width="13" height="11" background="../../images/t3/3lt.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="97%" height="11" background="../../images/t3/3ct.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="13" height="11" background="../../images/t3/3rt.jpg"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3lt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3ct.jpg"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3rt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
 				</tr>
 
 				<!-- Ubiquitous nav menu - only real, existing pages are hyperlinked; everything
@@ -222,7 +236,7 @@
 
 				<tr valign="top">
 					<td width="13" background="../../images/t3/0cm.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="97%" height="640" background="../../images/t3/0cm.jpg">
+					<td width="97%" height="640" background="../../images/t3/0cm.jpg" style="padding-top:6px">
 <!-- breadcrumb, login, pm info -->
 <table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
 <tr>
@@ -470,31 +484,7 @@ var highlightwords = "";
 //-->
 </script>
 <script type="text/javascript" src="clientscript/vbulletin_thrdpostlist.js@v=372"></script>
-<script type="text/javascript">
-<!--
-// initialize some variables
-var curpostid = 10604807;
-var quickreply = false;
 
-// cached posts (no page reload required to view)
-pd[10604807] = '<!-- BEGIN TEMPLATE: postbit_wrapper -->\n<!-- post #10604807 -->\r\n\r\n	<!-- BEGIN TEMPLATE: spacer_open -->\n<!-- open content container -->\r\n\r\n<div align="center">\r\n	<div class="page" style="width:100%; text-align:left">\r\n		<div style="padding:0px 5px 0px 5px" align="left">\r\n\n<!-- END TEMPLATE: spacer_open -->\r\n	<div id="edit10604807" style="padding:0px 0px 6px 0px">\r\n	<!-- this is not the last post shown on the page -->\r\n\r\n\r\n<!-- BEGIN TEMPLATE: postbit -->\n<table class="tborder" id="post10604807" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">\r\n<tr>\r\n	<td class="thead" >\r\n		<div class="normal" style="float:right">\r\n			&nbsp;\r\n			#<strong>1</strong> &nbsp;\r\n			\r\n			\r\n\r\n			\r\n<img class="inlineimg" src="../../images/buttons/ignore.gif" \r\nalt="Add Monde to your ignore list"\r\nborder="0" /> &nbsp;\r\n\r\n			\r\n			\r\n			\r\n		</div>\r\n		\r\n		<div class="normal">\r\n			<!-- status icon and date -->\r\n			<a name="post10604807"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>\r\n			\r\n				2008-10-25, 04:26\r\n			\r\n			\r\n			<!-- / status icon and date -->\r\n		</div>\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt2" style="padding:0px">\r\n		<!-- user info -->\r\n		<table cellpadding="0" cellspacing="6" border="0" width="100%">\r\n		<tr>\r\n			\r\n			<td nowrap="nowrap">\r\n			\r\n				<div id="postmenu_10604807">\r\n					\r\n					Monde\r\n					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->\n<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="Monde is offline" border="0" />\r\n\r\n\n<!-- END TEMPLATE: postbit_onlinestatus -->\r\n					<script type="text/javascript"> vbmenu_register("postmenu_10604807", true); <\/scr' + 'ipt>\r\n					\r\n				</div>\r\n				\r\n				<div class="smallfont">Regular</div>\r\n				\r\n				\r\n			</td>\r\n			<td width="100%">&nbsp;</td>\r\n			<td valign="top" nowrap="nowrap">\r\n				\r\n				<div class="smallfont">\r\n					<!-- location -->\r\n					    \r\n					\r\n					\r\n				</div>\r\n				\r\n			</td>\r\n		</tr>\r\n		</table>\r\n		<!-- / user info -->\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt1" id="td_post_10604807">\r\n	<!-- message, attachments, sig -->\r\n	\r\n		\r\n			<!-- icon and title -->\r\n			<div class="smallfont">\r\n				<img class="inlineimg" src="../../images/icons/icon10.gif" alt="Talking" border="0" />\r\n				<strong>Paean to Pharmakopos</strong>\r\n			</div>\r\n			<hr size="1" style="color:#E8EFF4" />\r\n			<!-- / icon and title -->\r\n		\r\n		\r\n		<!-- message -->\r\n		<div id="post_message_10604807">/ inhale /<br />\r\n<br />\r\nPharmakopos, O Woman of Substance, Goddess of Psychotropia, the Medicine Girl who always comes back, I thank thee for this Weed, and for the Other Things that I shall not mention with exactitude, for I must be Discreet.<br />\r\n<br />\r\nYou could beat the crap out of all Gods if You wanted to, but most of the time, You are a lover, not a fighter. When You DO have to fight, though, people, look out, You\'ll wail on Your enemies like a scrum-line of chop-sockying Trinitys with a handful of Kalis thrown in to keep You from getting bored.  <br />\r\n<br />\r\nThough it be true that You do reserve this wrath for Your most-loathed foes and these be the undercover narcs, these be the dealers who burn their customers instead of their splifs. <br />\r\n<br />\r\nAnd woe unto the douchebag who would find humour in dosing people with psychoactives without their knowledge for You would fucking kill idiots like that in a heartbeat. <br />\r\n<br />\r\nPharmakopos, You do love ME, but those who would cross You by doing that which offends You most--<i>supporting the asinine views of the anti-drug zealots by associating Your gifts with IDIOCY </i>- then their asses shall be grass, and You shall be smoking it.<br />\r\n<br />\r\nYou could beat the crap out of all Gods if You wanted to, but You have other things to do.<br />\r\n<br />\r\nYou are the angel who brings Good Drugs to Good People, who seek and seek but who cannot find, and go out of their minds as they be unable to go out of their minds...You bring Light to the dark backwater places, bring colour to the drab strip-mall zones, and You float over the walls of the Gated Communities. You wander out across the dead towns strewn across a country that\'s teetering on several different brinks at once. And you bring with You your Basket of Goodies, and hand them out, according to a logic we are all too crude to fathom.<br />\r\n<br />\r\nYou are the Divine Horticulturist, You are the Farmer of Minds. You tend Your Victory Gardens with a love that brings tears to Jah\'s eyes along with the pinkness of corneas, Your signature upon our faces. You shoo away the ravening bugs and scare off the hungry Gophers and the Deer so Your plants can get through their perilous seedlinghood. You see that the Boys stay over Here and the Girls stay over There and since we know how hard that is to deal with, You must do some special Mojo upon the plants to make them put up with this shit.<br />\r\n<br />\r\nYou hover in Your Holy Test Kitchens to help the cooks get the recipes right, makes sure the phosphorus is red and the ephedra\'s not too pseudo- and see that the mushrooms in the soup are the right kind of mushrooms and not the kind that will make us stop breathing.<br />\r\n<br />\r\nIt is Your Will that the special chambers of the Test Kitchens where they make the LSD stay as pristine as the clean-rooms in the Nanotechnology Institutes...for that one is most delicate of all and its isomers break down to rat poison if someone merely Looks At Them The Wrong Way, and for this I thank thee effusively for amongst Your gifts it is that one that be Most Special of all.<br />\r\n<br />\r\nYou quell the quibbling over asinine trivia during the sacred Mixings and Drainings, making certain that You keeps Your distance from the tweaks stirring the meth-broth, for You know that if they get too close to You at this time, they will be distracted and talkative as magpies, and so won\'t measure properly the Chemicals, and count out properly the Time.<br />\r\n<br />\r\nYou travel all over the planet to visit Your martyrs, who rot in the world\'s prisons, to afford them little tastes of Your joy.<br />\r\n<br />\r\nYou comes like Florence Nightengale to the terminally ill, the cancerous, the poor wretches wracked with HIV, the sufferers of a million nameless syndromes given names only in the past 15 years, and You reach out and ask that they hand over their pain to You, and You take it far away from them.<br />\r\n<br />\r\nAnd lo! though the unfathomably leviathan Corporations have again and again shackled You to themselves, You are a wily Goddess and  find ways to get free of their influence when You need to.<br />\r\n<br />\r\nO Pharmakopos, you are an Enigma, beloved Goddess of Psychotropia...shunning Your adherent who needs You, who cries out and screams for you, but when that adherent finally turns away and gives up the chase, You turn around and smile upon that person.  <br />\r\n<br />\r\nYou have no patience with the needy, yet some among Your gifts are compelling. So much so, in the case of the Poppy, that ithe situation will always seem to involve need eventually, and inevitably.  Did some other jealous God poison the Poppy out of spite, and make the flower that is the Eraser of Pain to carry its own with it, to negate its gift? Thus so it must be, for there be no malice in You; it is our joy You would see, and so our need makes You ill.<br />\r\n<br />\r\nI rue whatever spurned God smeared You in this manner, but You forgave long ago.<br />\r\n<br />\r\nAnd yet still, You are the one who is blamed when people talk of evil, and You unwittingly arouse such fear in those who spurn Your gifts even though You would never think to force these gifts upon anyone. But still they chase You across every corner of the earth, and besmirch thy Name with lies and hatred, and fling muck at thy hemp-waistskirts. <br />\r\n<br />\r\nBut I should not pity you, Pharmakopos, for You need it not, and You want it not, and they can make all the noise they want about how You would assassinate Youth,  and they can churn out TV spots, which would dare to compare you to a hot oily Frying-Pan, lurking around corners with intent to sizzle away the newly-hatched eggs of our brains. But we understand you wish not to wreck our brains: You only want to serve them Breakfast, in the form of the <i>Cozy</i> and the <i>Thrill</i>, each according to their time. <br />\r\n<br />\r\nAnd though You be vilified, smeared and smudged with these attacks upon Your Reputation, it doth change You not at all.<br />\r\n<br />\r\nFor still You will love us, so long as we do not pull at Your skirts and beg for a taste, in the deadness of a 4am alley in any large City or small Burb. But instead, partake of Your fruits as You present them to us, and when You know best to give it to us. <br />\r\n<br />\r\nFor You can see what we cannot of our own minds, even though thanks to some of these fruits we\'ve seen a whole lot more of them than most people. <br />\r\n<br />\r\nYou have done so many delicate things, to cause these fruits to grow, and so You have earned some faith and trust.  I shall offer the patience and deference You ask of me, with nary a fuss when You are absent--You always come back eventually.<br />\r\n<br />\r\nMay You always have Your motley crew of adorers, and may we will always have Your gifts.<br />\r\n<br />\r\n/ exhale /<br />\r\n<br />\r\n<img src="../../images/smilies/tongue.gif" border="0" alt="" title="Stick Out Tongue" class="inlineimg" /></div>\r\n		<!-- / message -->\r\n	\r\n		\r\n		\r\n		\r\n		\r\n		\r\n	\r\n		<div style="margin-top: 10px" align="right">\r\n			<!-- controls -->\r\n			\r\n			\r\n			\r\n				<img src="../../images/buttons/quote.gif" alt="Reply With Quote" border="0" />\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n				\r\n			\r\n			<!-- / controls -->\r\n		</div>\r\n		\r\n	<!-- message, attachments, sig -->\r\n	\r\n	</td>\r\n</tr>\r\n</table>\r\n\r\n<!-- post 10604807 popup menu -->\r\n<div class="vbmenu_popup" id="postmenu_10604807_menu" style="display:none;">\r\n	<table cellpadding="4" cellspacing="1" border="0">\r\n	<tr>\r\n		<td class="thead">Monde</td>\r\n	</tr>\r\n	\r\n		<tr><td class="vbmenu_option">View Public Profile</td></tr>\r\n	\r\n	\r\n	\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Find all posts by Monde</td></tr>\r\n	\r\n	\r\n	</table>\r\n</div>\r\n<!-- / post 10604807 popup menu -->\n<!-- END TEMPLATE: postbit -->\r\n\r\n\r\n	</div>\r\n	<!-- BEGIN TEMPLATE: spacer_close -->\n\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n<!-- / close content container -->\n<!-- END TEMPLATE: spacer_close -->\r\n\r\n<!-- / post #10604807 -->\n<!-- END TEMPLATE: postbit_wrapper -->';
-pd[10613219] = '<!-- BEGIN TEMPLATE: postbit_wrapper -->\n<!-- post #10613219 -->\r\n\r\n	<!-- BEGIN TEMPLATE: spacer_open -->\n<!-- open content container -->\r\n\r\n<div align="center">\r\n	<div class="page" style="width:100%; text-align:left">\r\n		<div style="padding:0px 5px 0px 5px" align="left">\r\n\n<!-- END TEMPLATE: spacer_open -->\r\n	<div id="edit10613219" style="padding:0px 0px 6px 0px">\r\n	<!-- this is not the last post shown on the page -->\r\n\r\n\r\n<!-- BEGIN TEMPLATE: postbit -->\n<table class="tborder" id="post10613219" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">\r\n<tr>\r\n	<td class="thead" >\r\n		<div class="normal" style="float:right">\r\n			&nbsp;\r\n			#<strong>2</strong> &nbsp;\r\n			\r\n			\r\n\r\n			\r\n<img class="inlineimg" src="../../images/buttons/ignore.gif" \r\nalt="Add Obbe to your ignore list"\r\nborder="0" /> &nbsp;\r\n\r\n			\r\n			\r\n			\r\n		</div>\r\n		\r\n		<div class="normal">\r\n			<!-- status icon and date -->\r\n			<a name="post10613219"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>\r\n			\r\n				2008-10-27, 14:41\r\n			\r\n			\r\n			<!-- / status icon and date -->\r\n		</div>\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt2" style="padding:0px">\r\n		<!-- user info -->\r\n		<table cellpadding="0" cellspacing="6" border="0" width="100%">\r\n		<tr>\r\n			\r\n			<td nowrap="nowrap">\r\n			\r\n				<div id="postmenu_10613219">\r\n					\r\n					<a class="bigusername" href="../../community/members/u193669.html">Obbe</a>\r\n					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->\n<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="Obbe is offline" border="0" />\r\n\r\n\n<!-- END TEMPLATE: postbit_onlinestatus -->\r\n					<script type="text/javascript"> vbmenu_register("postmenu_10613219", true); <\/scr' + 'ipt>\r\n					\r\n				</div>\r\n				\r\n				<div class="smallfont">Regular</div>\r\n				\r\n				\r\n			</td>\r\n			<td width="100%">&nbsp;</td>\r\n			<td valign="top" nowrap="nowrap">\r\n				\r\n				<div class="smallfont">\r\n					<!-- location -->San Lorenzo\r\n					    \r\n					\r\n					\r\n				</div>\r\n				\r\n			</td>\r\n		</tr>\r\n		</table>\r\n		<!-- / user info -->\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt1" id="td_post_10613219">\r\n	<!-- message, attachments, sig -->\r\n	\r\n		\r\n			<!-- icon and title -->\r\n			<div class="smallfont">\r\n				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />\r\n				<strong>Re: Paean to Pharmakopos</strong>\r\n			</div>\r\n			<hr size="1" style="color:#E8EFF4" />\r\n			<!-- / icon and title -->\r\n		\r\n		\r\n		<!-- message -->\r\n		<div id="post_message_10613219">I give an <b>A</b> for effort.<br />\n<br />\nI give a <b>C-</b> for making the anthropomorphic \'God\' of drugs boring.</div>\r\n		<!-- / message -->\r\n	\r\n		\r\n		\r\n		\r\n		\r\n		\r\n	\r\n		<div style="margin-top: 10px" align="right">\r\n			<!-- controls -->\r\n			\r\n			\r\n			\r\n				<img src="../../images/buttons/quote.gif" alt="Reply With Quote" border="0" />\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n				\r\n			\r\n			<!-- / controls -->\r\n		</div>\r\n		\r\n	<!-- message, attachments, sig -->\r\n	\r\n	</td>\r\n</tr>\r\n</table>\r\n\r\n<!-- post 10613219 popup menu -->\r\n<div class="vbmenu_popup" id="postmenu_10613219_menu" style="display:none;">\r\n	<table cellpadding="4" cellspacing="1" border="0">\r\n	<tr>\r\n		<td class="thead">Obbe</td>\r\n	</tr>\r\n	\r\n		<tr><td class="vbmenu_option"><a href="../../community/members/u193669.html">View Public Profile</a></td></tr>\r\n	\r\n	\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Visit Obbe\'s homepage!</td></tr>\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Find all posts by Obbe</td></tr>\r\n	\r\n	\r\n	</table>\r\n</div>\r\n<!-- / post 10613219 popup menu -->\n<!-- END TEMPLATE: postbit -->\r\n\r\n\r\n	</div>\r\n	<!-- BEGIN TEMPLATE: spacer_close -->\n\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n<!-- / close content container -->\n<!-- END TEMPLATE: spacer_close -->\r\n\r\n<!-- / post #10613219 -->\n<!-- END TEMPLATE: postbit_wrapper -->';
-pd[10614174] = '<!-- BEGIN TEMPLATE: postbit_wrapper -->\n<!-- post #10614174 -->\r\n\r\n	<!-- BEGIN TEMPLATE: spacer_open -->\n<!-- open content container -->\r\n\r\n<div align="center">\r\n	<div class="page" style="width:100%; text-align:left">\r\n		<div style="padding:0px 5px 0px 5px" align="left">\r\n\n<!-- END TEMPLATE: spacer_open -->\r\n	<div id="edit10614174" style="padding:0px 0px 6px 0px">\r\n	<!-- this is not the last post shown on the page -->\r\n\r\n\r\n<!-- BEGIN TEMPLATE: postbit -->\n<table class="tborder" id="post10614174" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">\r\n<tr>\r\n	<td class="thead" >\r\n		<div class="normal" style="float:right">\r\n			&nbsp;\r\n			#<strong>3</strong> &nbsp;\r\n			\r\n			\r\n\r\n			\r\n<img class="inlineimg" src="../../images/buttons/ignore.gif" \r\nalt="Add ArmsMerchant to your ignore list"\r\nborder="0" /> &nbsp;\r\n\r\n			\r\n			\r\n			\r\n		</div>\r\n		\r\n		<div class="normal">\r\n			<!-- status icon and date -->\r\n			<a name="post10614174"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>\r\n			\r\n				2008-10-27, 19:51\r\n			\r\n			\r\n			<!-- / status icon and date -->\r\n		</div>\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt2" style="padding:0px">\r\n		<!-- user info -->\r\n		<table cellpadding="0" cellspacing="6" border="0" width="100%">\r\n		<tr>\r\n			\r\n			<td nowrap="nowrap">\r\n			\r\n				<div id="postmenu_10614174">\r\n					\r\n					<a class="bigusername" href="../../community/members/u194258.html">ArmsMerchant</a>\r\n					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->\n<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="ArmsMerchant is offline" border="0" />\r\n\r\n\n<!-- END TEMPLATE: postbit_onlinestatus -->\r\n					<script type="text/javascript"> vbmenu_register("postmenu_10614174", true); <\/scr' + 'ipt>\r\n					\r\n				</div>\r\n				\r\n				<div class="smallfont">Moderator</div>\r\n				\r\n				\r\n			</td>\r\n			<td width="100%">&nbsp;</td>\r\n			<td valign="top" nowrap="nowrap">\r\n				\r\n				<div class="smallfont">\r\n					<!-- location -->Wasilla,  Alaska\r\n					    \r\n					\r\n					\r\n				</div>\r\n				\r\n			</td>\r\n		</tr>\r\n		</table>\r\n		<!-- / user info -->\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt1" id="td_post_10614174">\r\n	<!-- message, attachments, sig -->\r\n	\r\n		\r\n			<!-- icon and title -->\r\n			<div class="smallfont">\r\n				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />\r\n				<strong>Re: Paean to Pharmakopos</strong>\r\n			</div>\r\n			<hr size="1" style="color:#E8EFF4" />\r\n			<!-- / icon and title -->\r\n		\r\n		\r\n		<!-- message -->\r\n		<div id="post_message_10614174">Rarely in totse history has someone written so much about so little.</div>\r\n		<!-- / message -->\r\n	\r\n		\r\n		\r\n		\r\n		<!-- sig -->\r\n			<div>\r\n				__________________<br />\r\n				&quot;Love is infallible; it has no errors, for all errors are the want of love.&quot; -- William Law<br />\r\n&quot;The astrolabe of the mysteries of God is Love.&quot; -- Rumi\r\n			</div>\r\n		<!-- / sig -->\r\n		\r\n		\r\n		\r\n	\r\n		<div style="margin-top: 10px" align="right">\r\n			<!-- controls -->\r\n			\r\n			\r\n			\r\n				<img src="../../images/buttons/quote.gif" alt="Reply With Quote" border="0" />\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n				\r\n			\r\n			<!-- / controls -->\r\n		</div>\r\n		\r\n	<!-- message, attachments, sig -->\r\n	\r\n	</td>\r\n</tr>\r\n</table>\r\n\r\n<!-- post 10614174 popup menu -->\r\n<div class="vbmenu_popup" id="postmenu_10614174_menu" style="display:none;">\r\n	<table cellpadding="4" cellspacing="1" border="0">\r\n	<tr>\r\n		<td class="thead">ArmsMerchant</td>\r\n	</tr>\r\n	\r\n		<tr><td class="vbmenu_option"><a href="../../community/members/u194258.html">View Public Profile</a></td></tr>\r\n	\r\n	\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Visit ArmsMerchant\'s homepage!</td></tr>\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Find all posts by ArmsMerchant</td></tr>\r\n	\r\n	\r\n	</table>\r\n</div>\r\n<!-- / post 10614174 popup menu -->\n<!-- END TEMPLATE: postbit -->\r\n\r\n\r\n	</div>\r\n	<!-- BEGIN TEMPLATE: spacer_close -->\n\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n<!-- / close content container -->\n<!-- END TEMPLATE: spacer_close -->\r\n\r\n<!-- / post #10614174 -->\n<!-- END TEMPLATE: postbit_wrapper -->';
-
-// next/previous post info
-pn[10604807] = "10614174,10613219";
-pn[0] = ",10604807";
-pn[10613219] = "10604807,10614174";
-pn[10614174] = "10613219,10604807";
-
-// cached usernames
-pu[0] = guestphrase;
-pu[229644] = "Monde";
-pu[193669] = "Obbe";
-pu[194258] = "ArmsMerchant";
-
-// -->
-</script>
 
 <!-- BEGIN TEMPLATE: spacer_open -->
 <!-- open content container -->
@@ -504,38 +494,6 @@ pu[194258] = "ArmsMerchant";
 		<div style="padding:0px 5px 0px 5px" align="left">
 
 <!-- END TEMPLATE: spacer_open -->
-
-<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-top-width:0px; margin-bottom:6px">
-<tr>
-	<td class="alt2">
-	<div style="height:150px; width:100%; overflow:auto; border:2px inset; padding: 0px; text-align:left;" class="alt1" id="links">
-		<div class="smallfont">
-		<!-- start post links -->
-<script type="text/javascript">
-<!--
-writeLink(10604807, 0, 0, 229644, "", "Paean to Pharmakopos", "2008-10-25", "04:26", 0);
-  writeLink(10613219, 0, 0, 193669, "L", "Re: Paean to Pharmakopos", "2008-10-27", "14:41", 0);
-    writeLink(10614174, 0, 0, 194258, "1,L", "Re: Paean to Pharmakopos", "2008-10-27", "19:51", 0);
-
-//-->
-</script>
-		<!-- end post links -->
-		</div>
-	</div>
-	</td>
-</tr>
-
-<tr>
-	<td class="tfoot" align="center"><div class="smallfont">
-		Prev
-		<img class="inlineimg" src="../../images/buttons/sortdesc.gif" alt="Previous Post" border="0" />
-		&nbsp;
-		<img class="inlineimg" src="../../images/buttons/sortasc.gif" alt="Next Post" border="0" />
-		Next
-	</div></td>
-</tr>
-
-</table>
 
 <!-- BEGIN TEMPLATE: spacer_close -->
 
@@ -831,7 +789,7 @@ border="0" /> &nbsp;
 
 
 <!-- END TEMPLATE: postbit_onlinestatus -->
-					<script type="text/javascript"> vbmenu_register("postmenu_10613219", true); <\/scr' + 'ipt>
+					<script type="text/javascript"> vbmenu_register("postmenu_10613219", true); </script>
 					
 				</div>
 				
@@ -1001,7 +959,7 @@ border="0" /> &nbsp;
 
 
 <!-- END TEMPLATE: postbit_onlinestatus -->
-					<script type="text/javascript"> vbmenu_register("postmenu_10614174", true); <\/scr' + 'ipt>
+					<script type="text/javascript"> vbmenu_register("postmenu_10614174", true); </script>
 					
 				</div>
 				
@@ -1296,9 +1254,9 @@ religion
 		<div>You <strong>may not</strong> edit your posts</div>
 		<hr />
 		
-		<div>BB code is <strong>On</strong></div>
-		<div>Smilies are <strong>On</strong></div>
-		<div>[IMG] code is <strong>Off</strong></div>
+		<div><a href="../../community/bbcode.html" target="_blank">BB code</a> is <strong>On</strong></div>
+		<div><a href="../../community/showsmilies.html" target="_blank">Smilies</a> are <strong>On</strong></div>
+		<div><a href="../../community/bbcode.html#imgcode" target="_blank">[IMG]</a> code is <strong>Off</strong></div>
 		<div>HTML code is <strong>Off</strong></div>
 	</div></td>
 </tr>
@@ -1582,8 +1540,10 @@ religion
 			</table>
 		</td>
 
-		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots -->
-		<td width="20%" align="center" valign="top">
+		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots.
+		     min-width keeps this fluid 20% column from ever squeezing narrower
+		     than the fixed-170px table it holds, at any viewport width. -->
+		<td width="20%" align="center" valign="top" style="min-width:190px">
 
 			<table width="170" border="0" cellpadding="0" cellspacing="0">
 				<tr>

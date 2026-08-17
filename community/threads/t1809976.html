@@ -183,12 +183,26 @@
 
 		<!-- Content column -->
 		<td align="left">
-			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<!-- table-layout:fixed makes the browser honor this row's column
+			     widths exactly instead of auto-redistributing them: with the
+			     default "auto" layout, a 13px + 97% + 13px row never sums to
+			     exactly 100% of a fluid table except at one specific width,
+			     so at any other width (all of them, on a responsive page)
+			     the browser proportionally inflates the two fixed-13px
+			     corner columns to reconcile the mismatch - stretching
+			     3lt.jpg/3rt.jpg's cells past the images' own 13px width and
+			     tiling a second, partial copy of the curve artwork into the
+			     extra space, which reads as the rounded corner being cut
+			     off. Under fixed layout this row's widths become the whole
+			     table's column template (13px / remainder / 13px) and are
+			     used verbatim at every width, so the corner cells always
+			     match their images exactly and never need to repeat. -->
+			<table width="100%" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed">
 
 				<tr>
-					<td width="13" height="11" background="../../images/t3/3lt.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="97%" height="11" background="../../images/t3/3ct.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="13" height="11" background="../../images/t3/3rt.jpg"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3lt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3ct.jpg"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3rt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
 				</tr>
 
 				<!-- Ubiquitous nav menu - only real, existing pages are hyperlinked; everything
@@ -222,7 +236,7 @@
 
 				<tr valign="top">
 					<td width="13" background="../../images/t3/0cm.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="97%" height="640" background="../../images/t3/0cm.jpg">
+					<td width="97%" height="640" background="../../images/t3/0cm.jpg" style="padding-top:6px">
 <!-- breadcrumb, login, pm info -->
 <table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
 <tr>
@@ -470,25 +484,7 @@ var highlightwords = "";
 //-->
 </script>
 <script type="text/javascript" src="clientscript/vbulletin_thrdpostlist.js@v=372"></script>
-<script type="text/javascript">
-<!--
-// initialize some variables
-var curpostid = 6069671;
-var quickreply = false;
 
-// cached posts (no page reload required to view)
-pd[6069671] = '<!-- BEGIN TEMPLATE: postbit_wrapper -->\n<!-- post #6069671 -->\r\n\r\n	<!-- BEGIN TEMPLATE: spacer_open -->\n<!-- open content container -->\r\n\r\n<div align="center">\r\n	<div class="page" style="width:100%; text-align:left">\r\n		<div style="padding:0px 5px 0px 5px" align="left">\r\n\n<!-- END TEMPLATE: spacer_open -->\r\n	<div id="edit6069671" style="padding:0px 0px 6px 0px">\r\n	<!-- this is not the last post shown on the page -->\r\n\r\n\r\n<!-- BEGIN TEMPLATE: postbit -->\n<table class="tborder" id="post6069671" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">\r\n<tr>\r\n	<td class="thead" >\r\n		<div class="normal" style="float:right">\r\n			&nbsp;\r\n			#<strong>1</strong> &nbsp;\r\n			\r\n			\r\n\r\n			\r\n<img class="inlineimg" src="../../images/buttons/ignore.gif" \r\nalt="Add eBlip to your ignore list"\r\nborder="0" /> &nbsp;\r\n\r\n			\r\n			\r\n			\r\n		</div>\r\n		\r\n		<div class="normal">\r\n			<!-- status icon and date -->\r\n			<a name="post6069671"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>\r\n			\r\n				2003-09-12, 06:12\r\n			\r\n			\r\n			<!-- / status icon and date -->\r\n		</div>\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt2" style="padding:0px">\r\n		<!-- user info -->\r\n		<table cellpadding="0" cellspacing="6" border="0" width="100%">\r\n		<tr>\r\n			\r\n			<td nowrap="nowrap">\r\n			\r\n				<div id="postmenu_6069671">\r\n					\r\n					<a class="bigusername" href="../../community/members/u169564.html">eBlip</a>\r\n					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->\n<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="eBlip is offline" border="0" />\r\n\r\n\n<!-- END TEMPLATE: postbit_onlinestatus -->\r\n					<script type="text/javascript"> vbmenu_register("postmenu_6069671", true); <\/scr' + 'ipt>\r\n					\r\n				</div>\r\n				\r\n				<div class="smallfont">Regular</div>\r\n				\r\n				\r\n			</td>\r\n			<td width="100%">&nbsp;</td>\r\n			<td valign="top" nowrap="nowrap">\r\n				\r\n				<div class="smallfont">\r\n					<!-- location -->\r\n					    \r\n					\r\n					\r\n				</div>\r\n				\r\n			</td>\r\n		</tr>\r\n		</table>\r\n		<!-- / user info -->\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt1" id="td_post_6069671">\r\n	<!-- message, attachments, sig -->\r\n	\r\n		\r\n			<!-- icon and title -->\r\n			<div class="smallfont">\r\n				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />\r\n				\r\n			</div>\r\n			<hr size="1" style="color:#E8EFF4" />\r\n			<!-- / icon and title -->\r\n		\r\n		\r\n		<!-- message -->\r\n		<div id="post_message_6069671">YAMA is part of raja yoga is about achieving salvation as a human being.....giving total and utter contentment and peace of mind....<br />\n<br />\nthere are 8 limbs to raja yoga......the first being YAMA (self restraint)<br />\n<br />\nhere i just mention 2 points of self restraint of which there are several.....and see if you think it makes sense..<br />\n<br />\nsome of the yamas are ....non killing, non violence,  truthfulness, non stealing, contenance, and non covetousness..<br />\n<br />\njust to show you the meaning of the above phrases, to a yoga man....<br />\n<br />\ncompared to a typical christian who obeys the 10 commandments......<br />\n<br />\nin the 10 commandments .....it says thou shalt not kill...<br />\n<br />\nthis is how a yoga man interprets non killing<br />\n<br />\nit means not doing an action with the intention of harming any living being(in thought word and deed).<br />\n<br />\nthe intention to inflict injury on anther arises out of greed, anger, envy and attachment. these are the main roots of violence...therefore a follower of non killing must give up avarice, anger, envy, attachment and desires. this practice means controlling the mind...<br />\n<br />\nviolence can be either committed caused, or approved by the man, or he instigates someone else to committ it....<br />\n<br />\nin all cases the man is guilty of the sin of inflicting injury upon another...<br />\n<br />\none may cause injury or misery to another unknowingly and unintentionally by some act...<br />\n<br />\nsuch an act would tantamount to an act of violence...<br />\n<br />\nthere are a number of acts of violence that a yoga man must not do ....so it is important for him to be very cautious and alert, so that he does not inflict or cause to inflict or approve of injury to another knowingly or unknowingly by thought word or deed.<br />\n<br />\nonce he has achieved this...the most cruel men animals or beasts give up their violence towards this person..<br />\n<br />\non entering the vacinity of such a person the vibrations of peace and love eminating from him are so powerful that one is bound to be influenced by them.<br />\n<br />\nso you can imagine the social and spiritual value of non violence..<br />\n<br />\ni personally believe jesus was such a person..i know in the bible he is said to have eaten fish....but i believe that in the presence of such people as jesus ghandi and mother theresa .....you will feel the love and peace.....ghandi was virtually a hindu ....mother theresa a catholic i think, and jesus....well i wont even go into that one.....all different religions....yet they all have this in common.....<br />\n<br />\nmaybe following religion is better practiced through actions such as the above.....maybe not.....<br />\n<br />\nits up to you how you want to live your life, that is entirely your opinion ...and i respect it.<br />\n<br />\n<br />\n<br />\nALSO in the 10 commandments it says thou shalt not steal.....<br />\n<br />\nthis is how a yoga man interprets non stealing<br />\n<br />\nto a yoga man, all acts of taking and desiring to take come under stealing.<br />\n<br />\nThere are three types of stealing….stealing for oneself…causing stealing …and approving of stealing….in any sense whatsoever.<br />\n<br />\nAttachment greed and anger are the roots of stealing.<br />\n<br />\nNumerous are the ways and means and types of stealing, but all these come under 2 main types……..physical stealing, and mental stealing.<br />\n<br />\nA yoga man must understand that non stealing in reality means non desire by thought word or deed for any others things….<br />\n<br />\nWhen a person is fully established in non stealing it is thought that great wealth comes to them.<br />\n<br />\nA quick story.<br />\n<br />\n2 guys went out to the jungle one day to collect fire wood.<br />\n<br />\nThe wife gave them some food to eat when they got hungry.<br />\n<br />\nThey kept all the food in one bag and mr a. carried it.<br />\n<br />\nWhile they were collecting wood there was a strong storm of wind and they were separated while seeking a shelter.<br />\n<br />\nMuch time passed .<br />\n<br />\nMr a got hungry but would not eat in the absence of his friend..<br />\n<br />\nHe waited but all in vain as the storm continued.<br />\n<br />\nArguments and counter arguments rose in his mind, whether or not to eat his share in the absence of mr .b<br />\n<br />\nHe thought that under the circumstances there was no breach of trust or moral conduct if he ate his share in the absence of mr b.<br />\n<br />\nSo he ate his share.<br />\n<br />\nTime passed.<br />\n<br />\nHe did not see any chance of mr b’s return soon.<br />\n<br />\nHis appetite started troubling him again, and then there was a tussle going on in his head, whether he should eat mr.b’s share or not to satisfy his hunger, as eating the share would surely be theft.<br />\n<br />\nEventually his desire to pacify his hunger grew so strong that it coined arguments in his favour, and so he ate mr. B’s share, thinking that by the time the storm was over they would find each other and head off home anyway, and mr b would say, of course it is ok you ate my share.<br />\n<br />\nSince mr a. consumed his friend s share without his permission it was an act of stealing, for which it is said that he had to suffer in his life , by passing his days in utter poverty.<br />\n<br />\nby the way ……a yoga man classes…the intake of any kind of drug as stealing….stealing the health away from his own body….so all intoxicants are out…. <br />\n<br />\n<br />\n<br />\nMaybe if we all took the commandment of thou shalt not steal and thou shalt not kill so seriously……..the world would be a better place…..<br />\n<br />\nWhat do you think ?<br />\n<br />\nI myself am guilty of all the above ……..but I shall bear it in mind for my future actions…….<br />\n<br />\nSurely behaving in this way …..is the strongest form of prayer .<br />\n<br />\nStronger than getting down on ones knees and praying….<br />\n<br />\nStronger than giving 10 pounds a week to charity….<br />\n<br />\nStronger than going to church on Sundays .<br />\n<br />\nStronger than reading books.<br />\n<br />\nMaybe not……<br />\n<br />\nI know its not going to happen, but just picture a world where noone takes drugs…where noone steals and respect is shown to all forms of life.<br />\n<br />\nThere would be no religious violence …….no wars ……..no extinctions…..no rat race…<br />\n<br />\nSurely this is true religion..<br />\n<br />\nMaybe not….<br />\n<br />\n<br />\n<br />\n[This message has been edited by eBlip (edited 09-12-2003).]</div>\r\n		<!-- / message -->\r\n	\r\n		\r\n		\r\n		\r\n		\r\n		\r\n	\r\n		<div style="margin-top: 10px" align="right">\r\n			<!-- controls -->\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n				\r\n			\r\n			<!-- / controls -->\r\n		</div>\r\n		\r\n	<!-- message, attachments, sig -->\r\n	\r\n	</td>\r\n</tr>\r\n</table>\r\n\r\n<!-- post 6069671 popup menu -->\r\n<div class="vbmenu_popup" id="postmenu_6069671_menu" style="display:none;">\r\n	<table cellpadding="4" cellspacing="1" border="0">\r\n	<tr>\r\n		<td class="thead">eBlip</td>\r\n	</tr>\r\n	\r\n		<tr><td class="vbmenu_option"><a href="../../community/members/u169564.html">View Public Profile</a></td></tr>\r\n	\r\n	\r\n	\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Find all posts by eBlip</td></tr>\r\n	\r\n	\r\n	</table>\r\n</div>\r\n<!-- / post 6069671 popup menu -->\n<!-- END TEMPLATE: postbit -->\r\n\r\n\r\n	</div>\r\n	<!-- BEGIN TEMPLATE: spacer_close -->\n\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n<!-- / close content container -->\n<!-- END TEMPLATE: spacer_close -->\r\n\r\n<!-- / post #6069671 -->\n<!-- END TEMPLATE: postbit_wrapper -->';
-
-// next/previous post info
-pn[6069671] = "6069671,6069671";
-pn[0] = ",6069671";
-
-// cached usernames
-pu[0] = guestphrase;
-pu[169564] = "eBlip";
-
-// -->
-</script>
 
 <!-- BEGIN TEMPLATE: spacer_open -->
 <!-- open content container -->
@@ -498,36 +494,6 @@ pu[169564] = "eBlip";
 		<div style="padding:0px 5px 0px 5px" align="left">
 
 <!-- END TEMPLATE: spacer_open -->
-
-<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-top-width:0px; margin-bottom:6px">
-<tr>
-	<td class="alt2">
-	<div style="height:150px; width:100%; overflow:auto; border:2px inset; padding: 0px; text-align:left;" class="alt1" id="links">
-		<div class="smallfont">
-		<!-- start post links -->
-<script type="text/javascript">
-<!--
-writeLink(6069671, 0, 0, 169564, "", "<i>YAMA is part of raja yoga is...</i>", "2003-09-12", "06:12", 0);
-
-//-->
-</script>
-		<!-- end post links -->
-		</div>
-	</div>
-	</td>
-</tr>
-
-<tr>
-	<td class="tfoot" align="center"><div class="smallfont">
-		Prev
-		<img class="inlineimg" src="../../images/buttons/sortdesc.gif" alt="Previous Post" border="0" />
-		&nbsp;
-		<img class="inlineimg" src="../../images/buttons/sortasc.gif" alt="Next Post" border="0" />
-		Next
-	</div></td>
-</tr>
-
-</table>
 
 <!-- BEGIN TEMPLATE: spacer_close -->
 
@@ -985,9 +951,9 @@ Maybe not….<br />
 		<div>You <strong>may not</strong> edit your posts</div>
 		<hr />
 		
-		<div>BB code is <strong>On</strong></div>
-		<div>Smilies are <strong>On</strong></div>
-		<div>[IMG] code is <strong>Off</strong></div>
+		<div><a href="../../community/bbcode.html" target="_blank">BB code</a> is <strong>On</strong></div>
+		<div><a href="../../community/showsmilies.html" target="_blank">Smilies</a> are <strong>On</strong></div>
+		<div><a href="../../community/bbcode.html#imgcode" target="_blank">[IMG]</a> code is <strong>Off</strong></div>
 		<div>HTML code is <strong>Off</strong></div>
 	</div></td>
 </tr>
@@ -1271,8 +1237,10 @@ Maybe not….<br />
 			</table>
 		</td>
 
-		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots -->
-		<td width="20%" align="center" valign="top">
+		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots.
+		     min-width keeps this fluid 20% column from ever squeezing narrower
+		     than the fixed-170px table it holds, at any viewport width. -->
+		<td width="20%" align="center" valign="top" style="min-width:190px">
 
 			<table width="170" border="0" cellpadding="0" cellspacing="0">
 				<tr>

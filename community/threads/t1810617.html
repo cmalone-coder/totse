@@ -183,12 +183,26 @@
 
 		<!-- Content column -->
 		<td align="left">
-			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<!-- table-layout:fixed makes the browser honor this row's column
+			     widths exactly instead of auto-redistributing them: with the
+			     default "auto" layout, a 13px + 97% + 13px row never sums to
+			     exactly 100% of a fluid table except at one specific width,
+			     so at any other width (all of them, on a responsive page)
+			     the browser proportionally inflates the two fixed-13px
+			     corner columns to reconcile the mismatch - stretching
+			     3lt.jpg/3rt.jpg's cells past the images' own 13px width and
+			     tiling a second, partial copy of the curve artwork into the
+			     extra space, which reads as the rounded corner being cut
+			     off. Under fixed layout this row's widths become the whole
+			     table's column template (13px / remainder / 13px) and are
+			     used verbatim at every width, so the corner cells always
+			     match their images exactly and never need to repeat. -->
+			<table width="100%" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed">
 
 				<tr>
-					<td width="13" height="11" background="../../images/t3/3lt.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="97%" height="11" background="../../images/t3/3ct.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="13" height="11" background="../../images/t3/3rt.jpg"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3lt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3ct.jpg"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3rt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
 				</tr>
 
 				<!-- Ubiquitous nav menu - only real, existing pages are hyperlinked; everything
@@ -222,7 +236,7 @@
 
 				<tr valign="top">
 					<td width="13" background="../../images/t3/0cm.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="97%" height="640" background="../../images/t3/0cm.jpg">
+					<td width="97%" height="640" background="../../images/t3/0cm.jpg" style="padding-top:6px">
 <!-- breadcrumb, login, pm info -->
 <table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
 <tr>
@@ -470,30 +484,7 @@ var highlightwords = "";
 //-->
 </script>
 <script type="text/javascript" src="clientscript/vbulletin_thrdpostlist.js@v=372"></script>
-<script type="text/javascript">
-<!--
-// initialize some variables
-var curpostid = 6080470;
-var quickreply = false;
 
-// cached posts (no page reload required to view)
-pd[6080470] = '<!-- BEGIN TEMPLATE: postbit_wrapper -->\n<!-- post #6080470 -->\r\n\r\n	<!-- BEGIN TEMPLATE: spacer_open -->\n<!-- open content container -->\r\n\r\n<div align="center">\r\n	<div class="page" style="width:100%; text-align:left">\r\n		<div style="padding:0px 5px 0px 5px" align="left">\r\n\n<!-- END TEMPLATE: spacer_open -->\r\n	<div id="edit6080470" style="padding:0px 0px 6px 0px">\r\n	<!-- this is not the last post shown on the page -->\r\n\r\n\r\n<!-- BEGIN TEMPLATE: postbit -->\n<table class="tborder" id="post6080470" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">\r\n<tr>\r\n	<td class="thead" >\r\n		<div class="normal" style="float:right">\r\n			&nbsp;\r\n			#<strong>1</strong> &nbsp;\r\n			\r\n			\r\n\r\n			\r\n<img class="inlineimg" src="../../images/buttons/ignore.gif" \r\nalt="Add Digital_Savior to your ignore list"\r\nborder="0" /> &nbsp;\r\n\r\n			\r\n			\r\n			\r\n		</div>\r\n		\r\n		<div class="normal">\r\n			<!-- status icon and date -->\r\n			<a name="post6080470"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>\r\n			\r\n				2004-06-18, 20:05\r\n			\r\n			\r\n			<!-- / status icon and date -->\r\n		</div>\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt2" style="padding:0px">\r\n		<!-- user info -->\r\n		<table cellpadding="0" cellspacing="6" border="0" width="100%">\r\n		<tr>\r\n			\r\n			<td nowrap="nowrap">\r\n			\r\n				<div id="postmenu_6080470">\r\n					\r\n					<a class="bigusername" href="../../community/members/u214508.html">Digital_Savior</a>\r\n					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->\n<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="Digital_Savior is offline" border="0" />\r\n\r\n\n<!-- END TEMPLATE: postbit_onlinestatus -->\r\n					<script type="text/javascript"> vbmenu_register("postmenu_6080470", true); <\/scr' + 'ipt>\r\n					\r\n				</div>\r\n				\r\n				<div class="smallfont">Regular</div>\r\n				\r\n				\r\n			</td>\r\n			<td width="100%">&nbsp;</td>\r\n			<td valign="top" nowrap="nowrap">\r\n				\r\n				<div class="smallfont">\r\n					<!-- location -->.:six degrees of synesthesia:.\r\n					    \r\n					\r\n					\r\n				</div>\r\n				\r\n			</td>\r\n		</tr>\r\n		</table>\r\n		<!-- / user info -->\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt1" id="td_post_6080470">\r\n	<!-- message, attachments, sig -->\r\n	\r\n		\r\n			<!-- icon and title -->\r\n			<div class="smallfont">\r\n				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />\r\n				\r\n			</div>\r\n			<hr size="1" style="color:#E8EFF4" />\r\n			<!-- / icon and title -->\r\n		\r\n		\r\n		<!-- message -->\r\n		<div id="post_message_6080470">2 Peter, Chapter 1<br />\n<br />\n18 And this voice which came from heaven we heard, when we were with him in the holy mount.<br />\n<br />\n19 We have also a more sure word of prophecy; whereunto ye do well that ye take heed, as unto a light that shineth in a dark place, until the day dawn, and the day star arise in your hearts:<br />\n<br />\n20 Knowing this first, that no prophecy of the scripture is of any private interpretation.<br />\n<br />\n21 For the prophecy came not in old time by the will of man: but holy men of God spake as they were moved by the Holy Ghost.<br />\n<br />\n<br />\n<br />\n---------------------------------------<br />\n<br />\nThe term &quot;sola Scriptura&quot; or &quot;the Bible alone&quot; is a short phrase that represents the simple truth that there is only one special revelation from God that man possesses today, the written Scriptures or the Bible. Scripture states this concept repeatedly and emphatically. The very phrase &quot;It is written&quot; means exclusively transcribed, and not hearsay. The command to believe what is written means to believe only the pure word of God. What is at stake before the All Holy God is His incorruptible truth.<br />\n<br />\nIn the very last commandment in the Bible God resolutely tells us not to add to nor take away from His Word.<br />\n<br />\n&quot;For I testify unto every man that heareth the words of the prophecy of this book: If any man shall add unto these things, God shall add unto him the plagues that are written in this book: And if any man shall take away from the words of the book of this prophecy, God shall take away his part out of the Book of Life, and out of the holy city, and from the things which are written in this book&quot;<br />\n<br />\n        -Revelation 22:18-19<br />\n<br />\nHis Word is absolutely sufficient in itself. (Psalm 119:160)<br />\n<br />\n   <br />\n<br />\nThe Biblical message breathed out by God is revelation in written form. (2 Timothy 3:15-16). The Biblical claim is that what God has inspired was His written word (2 Peter 1:20-21). When the Lord Jesus Christ said, &quot;the Scripture cannot be broken&quot; (John 10:35), He was speaking of God\'s written word. The events, actions, commandments, and truths from God are given to us in propositional form, i.e. logical, written sentences. God\'s declaration in Scripture is that it and it alone, is this final authority in all matters of faith and morals.<br />\n<br />\nThus there is only one written source from God, and there is only one basis of truth for the Lord\'s people in the Church.<br />\n<br />\nAffirmed by Jesus Christ<br />\n<br />\nThe Lord Jesus Christ, Himself, identified truth with the written Word. In His great high priestly prayer, He said, &quot;Sanctify them through thy truth: thy word is truth.&quot; This was consistent with the declarations right through the Old Testament in which the Holy Spirit continually proclaims that the revelation from God is truth, as for example Psalm 119:142, &quot;thy law is truth.&quot; There is no source other than Scripture alone to which such a statement applies. That source alone, the Holy Scripture, is the believer\'s standard of truth.<br />\n<br />\nIn the New Testament, it is the written word of God and that alone to which the Lord Jesus Christ and His apostles refer as the final authority. In the temptation, the Lord Jesus three times resisted Satan, saying, &quot;It is written&quot; as for example, in Matthew 4:4, &quot;he answered and said, It is written, Man shall not live by bread alone, but by every word that proceedeth out of the mouth of God.&quot; In stating &quot;It is written,&quot; the Lord used the exact same phrase that is used in the Holy Bible forty six times. The persistence of the repeated phrase underlines its importance. The Lord\'s total acceptance of the authority of the Old Testament is evident in His words found in Matthew 5:17-18:<br />\n<br />\n&quot;Think not that I came to destroy the law or the prophets: I am not come to destroy but to fulfill. For verily, I say unto you, Till heaven and earth pass, one jot or one tittle shall in no wise pass from the law till all be fulfilled.&quot; <br />\n<br />\nOther sources of authority condemned<br />\n<br />\nPeople often attempt to give human traditions higher authority than God\'s Word. This was true of the Jews of Jesus\' day. In refuting the errors of the Sadducees, the Scripture records the Lord saying, &quot;Ye do err, not knowing the Scriptures nor the power of God&quot; (Matthew 22:29). Christ Jesus continually castigated and rebuked the Pharisees because they made their traditions on a par with the Word of God--corrupting the very basis of truth by equating their traditions with God\'s Word. So He declared to them in Mark 7:13 &quot;You are making the word of God of none effect through your tradition, which ye have delivered: and many such things do ye.&quot; Since Scripture alone is inspired, it alone is the ultimate authority and it alone is the final judge of Tradition.<br />\n<br />\nThe Word of the Lord says as a commandment in Proverbs 30:5-6:<br />\n<br />\n&quot;Every word of God is pure: he is a shield unto them that put their trust in him. Add thou not unto his words, lest he reprove thee, and thou be found a liar.&quot; <br />\n<br />\nGod commands that we are not to add to His Word: this command shows emphatically that it is God\'s Word alone that is pure and uncontaminated.<br />\n<br />\nAligned with Proverbs, the Lord\'s strong, clear declaration in Isaiah 8:20 is: &quot;To the law and to the testimony: if they speak not according to this word, it is because there is no light in them.&quot; The truth is this: since God\'s written word alone is inspired, it and it alone is the sole rule of faith. It cannot be otherwise.<br />\n<br />\nHow is Scripture to be accurately interpreted?<br />\n<br />\nThe principle of &quot;sola Scriptura&quot; is basic to accurate interpretation of Scripture. Psalm 36:9 explains, &quot;For with thee is the fountain of life; in thy light we see light.&quot; God\'s truth is seen in the light of God\'s truth. The Apostle Paul said the same thing, &quot;Which things also we speak, not in the words which man\'s wisdom teacheth but which the Holy Ghost teacheth, comparing spiritual things with spiritual&quot; (I Corinthians 2:13). It is precisely in the light which God\'s truth sheds, that His truth is seen. (Cp. John 3:18-21, II Corinthians 4:3-7).<br />\n<br />\nThe Apostle Peter, under the inspiration of the Holy Spirit, declares, &quot;knowing this first, that no prophecy of Scripture is of any private interpretation. For prophecy came not in old time by the will of man: but holy men of God spoke as they were moved by the Holy Ghost&quot; (2 Peter 1:20-21). Logically then, Peter makes it very clear that in order to maintain the purity of Holy God\'s written word, the source of interpretation must be from the same pure source as the origin of the Scripture itself.<br />\n<br />\nScripture can only be understood correctly in the light of Scripture, since it alone is uncorrupted. It is only with the Holy Spirit\'s light that Scripture can be comprehended correctly. The Holy Spirit causes those who are the Lord\'s to understand Scripture (John 14:16-17, 26). Since the Spirit does this by Scripture, obviously, it is in accord with the principle that Scripture itself is the infallible rule of interpretation of its own truth &quot;it is the Spirit that beareth witness, because the Spirit is truth&quot; (I John 5:6).<br />\n<br />\nIf you want to be true to God in this important matter, follow His instruction, &quot;Turn you at my reproof: behold, I will pour out my spirit unto you, I will make known my words unto you&quot; (Proverbs 1:23). If you are yearning for truth in the attitude of Psalm 51:17 &quot;with a broken and a contrite heart&quot;, the Lord God will not despise you. He will reveal to the basic foundation where the Lord Christ Jesus stood, as did the apostles.<br />\n<br />\nIs Scripture alone adequate, or do we need more?<br />\n<br />\nThe total sufficiency of Scripture is declared by the Apostle Paul, &quot;All scripture is given by inspiration of God, and is profitable for doctrine, for reproof, for correction, for instruction in righteousness: That the man of God may be perfect, thoroughly furnished unto all good works.&quot; -2 Timothy 3:16-17<br />\n<br />\nFor final truth and authority, all that we need is the Scripture.<br />\n<br />\nWhat about the claim that sola Scriptura is not possible?<br />\n<br />\nIn an attempt to justify traditions as being of equal or higher authority than Scripture, an appeal is often made to the very last verse in John\'s gospel, &quot;And there are also many other things which Jesus did, the which, if they should be written every one, I suppose that even the world itself could not contain the books that should be written. Amen.&quot; -John 21:25<br />\n<br />\nOf course, there were many deeds and sayings of the Lord not recorded in Scripture. Nonetheless, Scripture is the authoritative record that Holy God has given His people. We do not have a single sentence that is authoritatively from the Lord, outside of what is in the written word. To appeal to a tradition for authority when Holy God did not give it is futile. The idea that somehow sayings and events from the Lord have been recorded in tradition is simply not true.<br />\n<br />\nAnother attempt to justify tradition, is the statement that the early church did not have the New Testament. The Apostle Peter speaks about the writings of the Apostle Paul when he states,<br />\n<br />\n&quot;...even as our beloved brother Paul also according to the wisdom given unto him hath written unto you; As also in all his epistles, speaking in them of these things; in which are some things hard to be understood, which they that are unlearned and unstable wrest, as they do also the other scriptures, unto their own destruction.&quot; -2 Peter 3:15-16<br />\n<br />\nPeter also declares that he was writing so that the believers could remember what he said. So he wrote, &quot;Wherefore I will not be negligent to put you always in remembrance of these things, though ye know them, and be established in the present truth&quot; (2 Peter 1:12).<br />\n<br />\nFrom the earliest days of Christianity, a substantial part of the New Testament was available. Under the inspiration of the Lord, the Apostle Paul commands his letters to be read in other churches besides those to which they were sent. This clearly shows that the written word of God was being circulated even as the Apostles lived. The Lord\'s command to believe what is written has always been something that the believers could obey and did obey. In this matter we must have the humility commanded in the Scripture not to think above what is written. &quot;...that ye might learn in us not to think of men above that which is written, that no one of you be puffed up for one against another&quot; (1 Corinthians 4:6).<br />\n<br />\nTruth, God\'s Word, and our love for Him<br />\n<br />\nThe Lord brings the topic of truth to bear on our love for Him. This again underscores its importance. &quot;Jesus answered and said to him, If a man love me, he will keep my words: and my Father will love him, and we will come unto him, and make our abode with him. He that loveth me not keepeth not my sayings; and the word which ye hear is not mine, but the Father\'s which sent Me&quot; (John 14:23-24). And then again &quot;Heaven and earth will pass away, but my words shall not pass away&quot; (Matthew 24:35).<br />\n<br />\nThe Lord himself looked to the authority of the Scriptures alone, as did His apostles after Him. They confirmed the very message of the Old Testament. &quot;The law of the LORD is perfect&quot; (Psalm 19:7). The believer is to be true to the way of the Lord, holding alone to what is written: &quot;Thy Word is truth.&quot;</div>\r\n		<!-- / message -->\r\n	\r\n		\r\n		\r\n		\r\n		\r\n		\r\n	\r\n		<div style="margin-top: 10px" align="right">\r\n			<!-- controls -->\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n				\r\n			\r\n			<!-- / controls -->\r\n		</div>\r\n		\r\n	<!-- message, attachments, sig -->\r\n	\r\n	</td>\r\n</tr>\r\n</table>\r\n\r\n<!-- post 6080470 popup menu -->\r\n<div class="vbmenu_popup" id="postmenu_6080470_menu" style="display:none;">\r\n	<table cellpadding="4" cellspacing="1" border="0">\r\n	<tr>\r\n		<td class="thead">Digital_Savior</td>\r\n	</tr>\r\n	\r\n		<tr><td class="vbmenu_option"><a href="../../community/members/u214508.html">View Public Profile</a></td></tr>\r\n	\r\n	\r\n	\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Find all posts by Digital_Savior</td></tr>\r\n	\r\n	\r\n	</table>\r\n</div>\r\n<!-- / post 6080470 popup menu -->\n<!-- END TEMPLATE: postbit -->\r\n\r\n\r\n	</div>\r\n	<!-- BEGIN TEMPLATE: spacer_close -->\n\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n<!-- / close content container -->\n<!-- END TEMPLATE: spacer_close -->\r\n\r\n<!-- / post #6080470 -->\n<!-- END TEMPLATE: postbit_wrapper -->';
-pd[6080471] = '<!-- BEGIN TEMPLATE: postbit_wrapper -->\n<!-- post #6080471 -->\r\n\r\n	<!-- BEGIN TEMPLATE: spacer_open -->\n<!-- open content container -->\r\n\r\n<div align="center">\r\n	<div class="page" style="width:100%; text-align:left">\r\n		<div style="padding:0px 5px 0px 5px" align="left">\r\n\n<!-- END TEMPLATE: spacer_open -->\r\n	<div id="edit6080471" style="padding:0px 0px 6px 0px">\r\n	<!-- this is not the last post shown on the page -->\r\n\r\n\r\n<!-- BEGIN TEMPLATE: postbit -->\n<table class="tborder" id="post6080471" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">\r\n<tr>\r\n	<td class="thead" >\r\n		<div class="normal" style="float:right">\r\n			&nbsp;\r\n			#<strong>2</strong> &nbsp;\r\n			\r\n			\r\n\r\n			\r\n<img class="inlineimg" src="../../images/buttons/ignore.gif" \r\nalt="Add Digital_Savior to your ignore list"\r\nborder="0" /> &nbsp;\r\n\r\n			\r\n			\r\n			\r\n		</div>\r\n		\r\n		<div class="normal">\r\n			<!-- status icon and date -->\r\n			<a name="post6080471"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>\r\n			\r\n				2004-06-19, 01:14\r\n			\r\n			\r\n			<!-- / status icon and date -->\r\n		</div>\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt2" style="padding:0px">\r\n		<!-- user info -->\r\n		<table cellpadding="0" cellspacing="6" border="0" width="100%">\r\n		<tr>\r\n			\r\n			<td nowrap="nowrap">\r\n			\r\n				<div id="postmenu_6080471">\r\n					\r\n					<a class="bigusername" href="../../community/members/u214508.html">Digital_Savior</a>\r\n					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->\n<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="Digital_Savior is offline" border="0" />\r\n\r\n\n<!-- END TEMPLATE: postbit_onlinestatus -->\r\n					<script type="text/javascript"> vbmenu_register("postmenu_6080471", true); <\/scr' + 'ipt>\r\n					\r\n				</div>\r\n				\r\n				<div class="smallfont">Regular</div>\r\n				\r\n				\r\n			</td>\r\n			<td width="100%">&nbsp;</td>\r\n			<td valign="top" nowrap="nowrap">\r\n				\r\n				<div class="smallfont">\r\n					<!-- location -->.:six degrees of synesthesia:.\r\n					    \r\n					\r\n					\r\n				</div>\r\n				\r\n			</td>\r\n		</tr>\r\n		</table>\r\n		<!-- / user info -->\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt1" id="td_post_6080471">\r\n	<!-- message, attachments, sig -->\r\n	\r\n		\r\n			<!-- icon and title -->\r\n			<div class="smallfont">\r\n				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />\r\n				\r\n			</div>\r\n			<hr size="1" style="color:#E8EFF4" />\r\n			<!-- / icon and title -->\r\n		\r\n		\r\n		<!-- message -->\r\n		<div id="post_message_6080471">*bounce*</div>\r\n		<!-- / message -->\r\n	\r\n		\r\n		\r\n		\r\n		\r\n		\r\n	\r\n		<div style="margin-top: 10px" align="right">\r\n			<!-- controls -->\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n				\r\n			\r\n			<!-- / controls -->\r\n		</div>\r\n		\r\n	<!-- message, attachments, sig -->\r\n	\r\n	</td>\r\n</tr>\r\n</table>\r\n\r\n<!-- post 6080471 popup menu -->\r\n<div class="vbmenu_popup" id="postmenu_6080471_menu" style="display:none;">\r\n	<table cellpadding="4" cellspacing="1" border="0">\r\n	<tr>\r\n		<td class="thead">Digital_Savior</td>\r\n	</tr>\r\n	\r\n		<tr><td class="vbmenu_option"><a href="../../community/members/u214508.html">View Public Profile</a></td></tr>\r\n	\r\n	\r\n	\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Find all posts by Digital_Savior</td></tr>\r\n	\r\n	\r\n	</table>\r\n</div>\r\n<!-- / post 6080471 popup menu -->\n<!-- END TEMPLATE: postbit -->\r\n\r\n\r\n	</div>\r\n	<!-- BEGIN TEMPLATE: spacer_close -->\n\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n<!-- / close content container -->\n<!-- END TEMPLATE: spacer_close -->\r\n\r\n<!-- / post #6080471 -->\n<!-- END TEMPLATE: postbit_wrapper -->';
-pd[6080472] = '<!-- BEGIN TEMPLATE: postbit_wrapper -->\n<!-- post #6080472 -->\r\n\r\n	<!-- BEGIN TEMPLATE: spacer_open -->\n<!-- open content container -->\r\n\r\n<div align="center">\r\n	<div class="page" style="width:100%; text-align:left">\r\n		<div style="padding:0px 5px 0px 5px" align="left">\r\n\n<!-- END TEMPLATE: spacer_open -->\r\n	<div id="edit6080472" style="padding:0px 0px 6px 0px">\r\n	<!-- this is not the last post shown on the page -->\r\n\r\n\r\n<!-- BEGIN TEMPLATE: postbit -->\n<table class="tborder" id="post6080472" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">\r\n<tr>\r\n	<td class="thead" >\r\n		<div class="normal" style="float:right">\r\n			&nbsp;\r\n			#<strong>3</strong> &nbsp;\r\n			\r\n			\r\n\r\n			\r\n<img class="inlineimg" src="../../images/buttons/ignore.gif" \r\nalt="Add 4Sight to your ignore list"\r\nborder="0" /> &nbsp;\r\n\r\n			\r\n			\r\n			\r\n		</div>\r\n		\r\n		<div class="normal">\r\n			<!-- status icon and date -->\r\n			<a name="post6080472"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>\r\n			\r\n				2004-06-19, 03:24\r\n			\r\n			\r\n			<!-- / status icon and date -->\r\n		</div>\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt2" style="padding:0px">\r\n		<!-- user info -->\r\n		<table cellpadding="0" cellspacing="6" border="0" width="100%">\r\n		<tr>\r\n			\r\n			<td nowrap="nowrap">\r\n			\r\n				<div id="postmenu_6080472">\r\n					\r\n					4Sight\r\n					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->\n<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="4Sight is offline" border="0" />\r\n\r\n\n<!-- END TEMPLATE: postbit_onlinestatus -->\r\n					<script type="text/javascript"> vbmenu_register("postmenu_6080472", true); <\/scr' + 'ipt>\r\n					\r\n				</div>\r\n				\r\n				<div class="smallfont">Regular</div>\r\n				\r\n				\r\n			</td>\r\n			<td width="100%">&nbsp;</td>\r\n			<td valign="top" nowrap="nowrap">\r\n				\r\n				<div class="smallfont">\r\n					<!-- location -->\r\n					    \r\n					\r\n					\r\n				</div>\r\n				\r\n			</td>\r\n		</tr>\r\n		</table>\r\n		<!-- / user info -->\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt1" id="td_post_6080472">\r\n	<!-- message, attachments, sig -->\r\n	\r\n		\r\n			<!-- icon and title -->\r\n			<div class="smallfont">\r\n				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />\r\n				\r\n			</div>\r\n			<hr size="1" style="color:#E8EFF4" />\r\n			<!-- / icon and title -->\r\n		\r\n		\r\n		<!-- message -->\r\n		<div id="post_message_6080472">Where\'s the fucking mod of this forum? Ban this fucking douchebag.</div>\r\n		<!-- / message -->\r\n	\r\n		\r\n		\r\n		\r\n		\r\n		\r\n	\r\n		<div style="margin-top: 10px" align="right">\r\n			<!-- controls -->\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n				\r\n			\r\n			<!-- / controls -->\r\n		</div>\r\n		\r\n	<!-- message, attachments, sig -->\r\n	\r\n	</td>\r\n</tr>\r\n</table>\r\n\r\n<!-- post 6080472 popup menu -->\r\n<div class="vbmenu_popup" id="postmenu_6080472_menu" style="display:none;">\r\n	<table cellpadding="4" cellspacing="1" border="0">\r\n	<tr>\r\n		<td class="thead">4Sight</td>\r\n	</tr>\r\n	\r\n		<tr><td class="vbmenu_option">View Public Profile</td></tr>\r\n	\r\n	\r\n	\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Find all posts by 4Sight</td></tr>\r\n	\r\n	\r\n	</table>\r\n</div>\r\n<!-- / post 6080472 popup menu -->\n<!-- END TEMPLATE: postbit -->\r\n\r\n\r\n	</div>\r\n	<!-- BEGIN TEMPLATE: spacer_close -->\n\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n<!-- / close content container -->\n<!-- END TEMPLATE: spacer_close -->\r\n\r\n<!-- / post #6080472 -->\n<!-- END TEMPLATE: postbit_wrapper -->';
-
-// next/previous post info
-pn[6080470] = "6080472,6080471";
-pn[0] = ",6080470";
-pn[6080471] = "6080470,6080472";
-pn[6080472] = "6080471,6080470";
-
-// cached usernames
-pu[0] = guestphrase;
-pu[214508] = "Digital_Savior";
-pu[136209] = "4Sight";
-
-// -->
-</script>
 
 <!-- BEGIN TEMPLATE: spacer_open -->
 <!-- open content container -->
@@ -503,38 +494,6 @@ pu[136209] = "4Sight";
 		<div style="padding:0px 5px 0px 5px" align="left">
 
 <!-- END TEMPLATE: spacer_open -->
-
-<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-top-width:0px; margin-bottom:6px">
-<tr>
-	<td class="alt2">
-	<div style="height:150px; width:100%; overflow:auto; border:2px inset; padding: 0px; text-align:left;" class="alt1" id="links">
-		<div class="smallfont">
-		<!-- start post links -->
-<script type="text/javascript">
-<!--
-writeLink(6080470, 0, 0, 214508, "", "<i>2 Peter, Chapter 1 \n \n18 And...</i>", "2004-06-18", "20:05", 0);
-  writeLink(6080471, 0, 0, 214508, "T", "<i>*bounce*</i>", "2004-06-19", "01:14", 0);
-  writeLink(6080472, 0, 0, 136209, "L", "<i>Where's the fucking mod of...</i>", "2004-06-19", "03:24", 0);
-
-//-->
-</script>
-		<!-- end post links -->
-		</div>
-	</div>
-	</td>
-</tr>
-
-<tr>
-	<td class="tfoot" align="center"><div class="smallfont">
-		Prev
-		<img class="inlineimg" src="../../images/buttons/sortdesc.gif" alt="Previous Post" border="0" />
-		&nbsp;
-		<img class="inlineimg" src="../../images/buttons/sortasc.gif" alt="Next Post" border="0" />
-		Next
-	</div></td>
-</tr>
-
-</table>
 
 <!-- BEGIN TEMPLATE: spacer_close -->
 
@@ -860,7 +819,7 @@ border="0" /> &nbsp;
 
 
 <!-- END TEMPLATE: postbit_onlinestatus -->
-					<script type="text/javascript"> vbmenu_register("postmenu_6080471", true); <\/scr' + 'ipt>
+					<script type="text/javascript"> vbmenu_register("postmenu_6080471", true); </script>
 					
 				</div>
 				
@@ -1024,7 +983,7 @@ border="0" /> &nbsp;
 
 
 <!-- END TEMPLATE: postbit_onlinestatus -->
-					<script type="text/javascript"> vbmenu_register("postmenu_6080472", true); <\/scr' + 'ipt>
+					<script type="text/javascript"> vbmenu_register("postmenu_6080472", true); </script>
 					
 				</div>
 				
@@ -1280,9 +1239,9 @@ border="0" /> &nbsp;
 		<div>You <strong>may not</strong> edit your posts</div>
 		<hr />
 		
-		<div>BB code is <strong>On</strong></div>
-		<div>Smilies are <strong>On</strong></div>
-		<div>[IMG] code is <strong>Off</strong></div>
+		<div><a href="../../community/bbcode.html" target="_blank">BB code</a> is <strong>On</strong></div>
+		<div><a href="../../community/showsmilies.html" target="_blank">Smilies</a> are <strong>On</strong></div>
+		<div><a href="../../community/bbcode.html#imgcode" target="_blank">[IMG]</a> code is <strong>Off</strong></div>
 		<div>HTML code is <strong>Off</strong></div>
 	</div></td>
 </tr>
@@ -1566,8 +1525,10 @@ border="0" /> &nbsp;
 			</table>
 		</td>
 
-		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots -->
-		<td width="20%" align="center" valign="top">
+		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots.
+		     min-width keeps this fluid 20% column from ever squeezing narrower
+		     than the fixed-170px table it holds, at any viewport width. -->
+		<td width="20%" align="center" valign="top" style="min-width:190px">
 
 			<table width="170" border="0" cellpadding="0" cellspacing="0">
 				<tr>

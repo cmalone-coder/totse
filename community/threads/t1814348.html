@@ -183,12 +183,26 @@
 
 		<!-- Content column -->
 		<td align="left">
-			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<!-- table-layout:fixed makes the browser honor this row's column
+			     widths exactly instead of auto-redistributing them: with the
+			     default "auto" layout, a 13px + 97% + 13px row never sums to
+			     exactly 100% of a fluid table except at one specific width,
+			     so at any other width (all of them, on a responsive page)
+			     the browser proportionally inflates the two fixed-13px
+			     corner columns to reconcile the mismatch - stretching
+			     3lt.jpg/3rt.jpg's cells past the images' own 13px width and
+			     tiling a second, partial copy of the curve artwork into the
+			     extra space, which reads as the rounded corner being cut
+			     off. Under fixed layout this row's widths become the whole
+			     table's column template (13px / remainder / 13px) and are
+			     used verbatim at every width, so the corner cells always
+			     match their images exactly and never need to repeat. -->
+			<table width="100%" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed">
 
 				<tr>
-					<td width="13" height="11" background="../../images/t3/3lt.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="97%" height="11" background="../../images/t3/3ct.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="13" height="11" background="../../images/t3/3rt.jpg"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3lt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3ct.jpg"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3rt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
 				</tr>
 
 				<!-- Ubiquitous nav menu - only real, existing pages are hyperlinked; everything
@@ -222,7 +236,7 @@
 
 				<tr valign="top">
 					<td width="13" background="../../images/t3/0cm.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="97%" height="640" background="../../images/t3/0cm.jpg">
+					<td width="97%" height="640" background="../../images/t3/0cm.jpg" style="padding-top:6px">
 <!-- breadcrumb, login, pm info -->
 <table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
 <tr>
@@ -470,28 +484,7 @@ var highlightwords = "";
 //-->
 </script>
 <script type="text/javascript" src="clientscript/vbulletin_thrdpostlist.js@v=372"></script>
-<script type="text/javascript">
-<!--
-// initialize some variables
-var curpostid = 6153809;
-var quickreply = false;
 
-// cached posts (no page reload required to view)
-pd[6153809] = '<!-- BEGIN TEMPLATE: postbit_wrapper -->\n<!-- post #6153809 -->\r\n\r\n	<!-- BEGIN TEMPLATE: spacer_open -->\n<!-- open content container -->\r\n\r\n<div align="center">\r\n	<div class="page" style="width:100%; text-align:left">\r\n		<div style="padding:0px 5px 0px 5px" align="left">\r\n\n<!-- END TEMPLATE: spacer_open -->\r\n	<div id="edit6153809" style="padding:0px 0px 6px 0px">\r\n	<!-- this is not the last post shown on the page -->\r\n\r\n\r\n<!-- BEGIN TEMPLATE: postbit -->\n<table class="tborder" id="post6153809" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">\r\n<tr>\r\n	<td class="thead" >\r\n		<div class="normal" style="float:right">\r\n			&nbsp;\r\n			#<strong>1</strong> &nbsp;\r\n			\r\n			\r\n\r\n			\r\n<img class="inlineimg" src="../../images/buttons/ignore.gif" \r\nalt="Add CrazyJ32 to your ignore list"\r\nborder="0" /> &nbsp;\r\n\r\n			\r\n			\r\n			\r\n		</div>\r\n		\r\n		<div class="normal">\r\n			<!-- status icon and date -->\r\n			<a name="post6153809"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>\r\n			\r\n				2007-01-18, 09:35\r\n			\r\n			\r\n			<!-- / status icon and date -->\r\n		</div>\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt2" style="padding:0px">\r\n		<!-- user info -->\r\n		<table cellpadding="0" cellspacing="6" border="0" width="100%">\r\n		<tr>\r\n			\r\n			<td nowrap="nowrap">\r\n			\r\n				<div id="postmenu_6153809">\r\n					\r\n					CrazyJ32\r\n					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->\n<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="CrazyJ32 is offline" border="0" />\r\n\r\n\n<!-- END TEMPLATE: postbit_onlinestatus -->\r\n					<script type="text/javascript"> vbmenu_register("postmenu_6153809", true); <\/scr' + 'ipt>\r\n					\r\n				</div>\r\n				\r\n				<div class="smallfont">Regular</div>\r\n				\r\n				\r\n			</td>\r\n			<td width="100%">&nbsp;</td>\r\n			<td valign="top" nowrap="nowrap">\r\n				\r\n				<div class="smallfont">\r\n					<!-- location -->\r\n					    \r\n					\r\n					\r\n				</div>\r\n				\r\n			</td>\r\n		</tr>\r\n		</table>\r\n		<!-- / user info -->\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt1" id="td_post_6153809">\r\n	<!-- message, attachments, sig -->\r\n	\r\n		\r\n			<!-- icon and title -->\r\n			<div class="smallfont">\r\n				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />\r\n				\r\n			</div>\r\n			<hr size="1" style="color:#E8EFF4" />\r\n			<!-- / icon and title -->\r\n		\r\n		\r\n		<!-- message -->\r\n		<div id="post_message_6153809"><b>’Veiled Threat’</b><br />\n<br />\nBy Olivier Guitta <br />\n<br />\nThe atrocious treatment of women in the Arab world is well-known, but people are much less aware of the plight of some European Muslim women. <b>The increasing degradation of Muslim women in Europe is largely due to the work of the Wahhabi and Muslim Brotherhood propaganda over the last 15 years.</b><br />\n<br />\nIn European countries, some Muslims --especially the younger generation -- are faced with an identity crisis. They do not feel Western even though they were born in the West and are European citizens. But they do not feel Arab either. So they choose a new nationality: Islamist.<br />\n<br />\nIndeed, in some areas and regarding some issues, European Muslim women are no better off than their Arab Muslim counterparts. Here are just some examples of the abuse suffered by some European Muslim women: <br />\n<br />\n*  Forced to wear the hijab, i.e. headscarf<br />\n<br />\n*  Forced to marry someone according to the family\'s will<br />\n<br />\n*  Must undergo excision &quot;procedure&quot;<br />\n<br />\n*  Gang rapes for not &quot;respecting&quot; Islam<br />\n<br />\n*  Killed by a relative because for &quot;dishonoring&quot; the name of the family.<br />\n<br />\n <br />\n<br />\n<b>Most Muslim French women who wear the hijab are forced to do so by their family or because of pressure from the community.</b> In many testimonies young women have stated that they were wearing it not to be &quot;bothered&quot; by the men in their community. There were multiple cases in the suburbs of Paris of gang rapes of women who were too &quot;Westernized&quot;.<br />\n<br />\n <br />\n<br />\nIn a book entitled <i>Wed By Force</i> (Oh Editions, Paris, May 2004), Leila -- the author could not reveal her last name -- tells of her own nightmarish existence. She was raped by one of her brothers when she was quite young and did not tell anyone -- even her mother -- because she would have not been believed. She was regularly beaten up by her father because she was a little rebellious. She just wanted to behave like a girl her age but it was impossible because otherwise she would ruin the family\'s reputation. Like her other Muslim friends, she had to respect the law of silence. She also depicts how her family chose a husband for her. He was 15 years older than she and she does not know him. You may guess that Leila lives in Saudi Arabia but she lives in the suburbs of Paris in 2005. She is a French citizen born in France of Moroccan parents. Unfortunately, Leila is not alone. <b>Statistics do not lie: each year, in France, 50,000 women are wed against their will.</b> <br />\n<br />\n <br />\n<br />\n<b>But this is not the worst of it, because sometimes death is the punishment.</b><br />\n<br />\nIndeed the number of &quot;honor crimes&quot; - where women are attacked by relatives for &quot;shaming&quot; the family name -- has increased alarmingly in Europe in the past year. <br />\n<br />\nFor instance, according to the German TV Station ARD, ten &quot;honor crimes&quot; have been committed in Germany since summer 2004. A horrible recent one has scandalized German opinion. <b>A Turkish Muslim woman, a 23-year-old mother of one, was gunned down at a Berlin bus stop. The presumed culprits are three of her brothers who repeatedly threatened her.<br />\n<br />\nFor them, she led an &quot;un-Islamic&quot; life because <i>she had stopped wearing the hijab</i> and was outgoing.</b> On top of this horrific murder, the reactions among some Turks living in Germany are disgusting. For instance, a male student of Turkish origin at a high school located near the scene of the crime, said, &quot;She deserved what she got -- the whore lived like a German.&quot;  <br />\n<br />\n <br />\n<br />\nAnother country where &quot;honor crimes&quot; have been rising and publicized is the Netherlands. In the past weeks, three &quot;honor crimes&quot; have been committed. A Dutch politician of Somali descent, Ayaan Hirsi Ali, has been very vocal on the issue. Hirsi Ali co-wrote with Theo Van Gogh the documentary critical of Islam, over which Van Gogh was brutally murdered by a Moroccan Islamist. She now lives in hiding, protected by bodyguards because of the numerous death treats she received, including one from Van Gogh\'s killer. <br />\n<br />\nShe explains that most times the killers in honor crimes are the youngest males in the family, often minors. Indeed because they face a lesser jail sentence, it is quite convenient for the family. Therefore, Hirsi Ali suggests that the whole family be judged for the crime, at least for complicity. Also according to her, &quot;honor crimes&quot; should be included in a new Dutch anti-terrorist law. <br />\n<br />\n <br />\n<br />\nDo not think for a moment this only happens in Europe. In April 2004, in Scottsville, NY, a Turkish immigrant savagely murdered his wife and nearly killed his daughters because they had been molested by his brother. He allegedly told investigators that: &quot;I was concerned that my family\'s honor was taken&quot;. <br />\n<br />\n <br />\n<br />\nThe spread of Radical Islam in the West is not only a question of large-scale terrorism but also of everyday life or sometimes everyday death.<br />\n<br />\nsource<br />\n<br />\n<br />\n<br />\n[This message has been edited by CrazyJ32 (edited 01-18-2007).]</div>\r\n		<!-- / message -->\r\n	\r\n		\r\n		\r\n		\r\n		\r\n		\r\n	\r\n		<div style="margin-top: 10px" align="right">\r\n			<!-- controls -->\r\n			\r\n			\r\n			\r\n				<img src="../../images/buttons/quote.gif" alt="Reply With Quote" border="0" />\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n				\r\n			\r\n			<!-- / controls -->\r\n		</div>\r\n		\r\n	<!-- message, attachments, sig -->\r\n	\r\n	</td>\r\n</tr>\r\n</table>\r\n\r\n<!-- post 6153809 popup menu -->\r\n<div class="vbmenu_popup" id="postmenu_6153809_menu" style="display:none;">\r\n	<table cellpadding="4" cellspacing="1" border="0">\r\n	<tr>\r\n		<td class="thead">CrazyJ32</td>\r\n	</tr>\r\n	\r\n		<tr><td class="vbmenu_option">View Public Profile</td></tr>\r\n	\r\n	\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Visit CrazyJ32\'s homepage!</td></tr>\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Find all posts by CrazyJ32</td></tr>\r\n	\r\n	\r\n	</table>\r\n</div>\r\n<!-- / post 6153809 popup menu -->\n<!-- END TEMPLATE: postbit -->\r\n\r\n\r\n	</div>\r\n	<!-- BEGIN TEMPLATE: spacer_close -->\n\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n<!-- / close content container -->\n<!-- END TEMPLATE: spacer_close -->\r\n\r\n<!-- / post #6153809 -->\n<!-- END TEMPLATE: postbit_wrapper -->';
-pd[6153810] = '<!-- BEGIN TEMPLATE: postbit_wrapper -->\n<!-- post #6153810 -->\r\n\r\n	<!-- BEGIN TEMPLATE: spacer_open -->\n<!-- open content container -->\r\n\r\n<div align="center">\r\n	<div class="page" style="width:100%; text-align:left">\r\n		<div style="padding:0px 5px 0px 5px" align="left">\r\n\n<!-- END TEMPLATE: spacer_open -->\r\n	<div id="edit6153810" style="padding:0px 0px 6px 0px">\r\n	<!-- this is not the last post shown on the page -->\r\n\r\n\r\n<!-- BEGIN TEMPLATE: postbit -->\n<table class="tborder" id="post6153810" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">\r\n<tr>\r\n	<td class="thead" >\r\n		<div class="normal" style="float:right">\r\n			&nbsp;\r\n			#<strong>2</strong> &nbsp;\r\n			\r\n			\r\n\r\n			\r\n<img class="inlineimg" src="../../images/buttons/ignore.gif" \r\nalt="Add Gorcrow to your ignore list"\r\nborder="0" /> &nbsp;\r\n\r\n			\r\n			\r\n			\r\n		</div>\r\n		\r\n		<div class="normal">\r\n			<!-- status icon and date -->\r\n			<a name="post6153810"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>\r\n			\r\n				2007-01-18, 17:34\r\n			\r\n			\r\n			<!-- / status icon and date -->\r\n		</div>\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt2" style="padding:0px">\r\n		<!-- user info -->\r\n		<table cellpadding="0" cellspacing="6" border="0" width="100%">\r\n		<tr>\r\n			\r\n			<td nowrap="nowrap">\r\n			\r\n				<div id="postmenu_6153810">\r\n					\r\n					Gorcrow\r\n					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->\n<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="Gorcrow is offline" border="0" />\r\n\r\n\n<!-- END TEMPLATE: postbit_onlinestatus -->\r\n					<script type="text/javascript"> vbmenu_register("postmenu_6153810", true); <\/scr' + 'ipt>\r\n					\r\n				</div>\r\n				\r\n				<div class="smallfont">Regular</div>\r\n				\r\n				\r\n			</td>\r\n			<td width="100%">&nbsp;</td>\r\n			<td valign="top" nowrap="nowrap">\r\n				\r\n				<div class="smallfont">\r\n					<!-- location -->Puerto Rico\r\n					    \r\n					\r\n					\r\n				</div>\r\n				\r\n			</td>\r\n		</tr>\r\n		</table>\r\n		<!-- / user info -->\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt1" id="td_post_6153810">\r\n	<!-- message, attachments, sig -->\r\n	\r\n		\r\n			<!-- icon and title -->\r\n			<div class="smallfont">\r\n				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />\r\n				\r\n			</div>\r\n			<hr size="1" style="color:#E8EFF4" />\r\n			<!-- / icon and title -->\r\n		\r\n		\r\n		<!-- message -->\r\n		<div id="post_message_6153810">Fact: Religious extremists kill people.</div>\r\n		<!-- / message -->\r\n	\r\n		\r\n		\r\n		\r\n		\r\n		\r\n	\r\n		<div style="margin-top: 10px" align="right">\r\n			<!-- controls -->\r\n			\r\n			\r\n			\r\n				<img src="../../images/buttons/quote.gif" alt="Reply With Quote" border="0" />\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n				\r\n			\r\n			<!-- / controls -->\r\n		</div>\r\n		\r\n	<!-- message, attachments, sig -->\r\n	\r\n	</td>\r\n</tr>\r\n</table>\r\n\r\n<!-- post 6153810 popup menu -->\r\n<div class="vbmenu_popup" id="postmenu_6153810_menu" style="display:none;">\r\n	<table cellpadding="4" cellspacing="1" border="0">\r\n	<tr>\r\n		<td class="thead">Gorcrow</td>\r\n	</tr>\r\n	\r\n		<tr><td class="vbmenu_option">View Public Profile</td></tr>\r\n	\r\n	\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Visit Gorcrow\'s homepage!</td></tr>\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Find all posts by Gorcrow</td></tr>\r\n	\r\n	\r\n	</table>\r\n</div>\r\n<!-- / post 6153810 popup menu -->\n<!-- END TEMPLATE: postbit -->\r\n\r\n\r\n	</div>\r\n	<!-- BEGIN TEMPLATE: spacer_close -->\n\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n<!-- / close content container -->\n<!-- END TEMPLATE: spacer_close -->\r\n\r\n<!-- / post #6153810 -->\n<!-- END TEMPLATE: postbit_wrapper -->';
-
-// next/previous post info
-pn[6153809] = "6153810,6153810";
-pn[0] = ",6153809";
-pn[6153810] = "6153809,6153809";
-
-// cached usernames
-pu[0] = guestphrase;
-pu[147217] = "CrazyJ32";
-pu[145839] = "Gorcrow";
-
-// -->
-</script>
 
 <!-- BEGIN TEMPLATE: spacer_open -->
 <!-- open content container -->
@@ -501,37 +494,6 @@ pu[145839] = "Gorcrow";
 		<div style="padding:0px 5px 0px 5px" align="left">
 
 <!-- END TEMPLATE: spacer_open -->
-
-<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-top-width:0px; margin-bottom:6px">
-<tr>
-	<td class="alt2">
-	<div style="height:150px; width:100%; overflow:auto; border:2px inset; padding: 0px; text-align:left;" class="alt1" id="links">
-		<div class="smallfont">
-		<!-- start post links -->
-<script type="text/javascript">
-<!--
-writeLink(6153809, 0, 0, 147217, "", "<i>’Veiled Threat’ \n \nBy Olivier...</i>", "2007-01-18", "09:35", 0);
-  writeLink(6153810, 0, 0, 145839, "L", "<i>Fact: Religious extremists...</i>", "2007-01-18", "17:34", 0);
-
-//-->
-</script>
-		<!-- end post links -->
-		</div>
-	</div>
-	</td>
-</tr>
-
-<tr>
-	<td class="tfoot" align="center"><div class="smallfont">
-		Prev
-		<img class="inlineimg" src="../../images/buttons/sortdesc.gif" alt="Previous Post" border="0" />
-		&nbsp;
-		<img class="inlineimg" src="../../images/buttons/sortasc.gif" alt="Next Post" border="0" />
-		Next
-	</div></td>
-</tr>
-
-</table>
 
 <!-- BEGIN TEMPLATE: spacer_close -->
 
@@ -833,7 +795,7 @@ border="0" /> &nbsp;
 
 
 <!-- END TEMPLATE: postbit_onlinestatus -->
-					<script type="text/javascript"> vbmenu_register("postmenu_6153810", true); <\/scr' + 'ipt>
+					<script type="text/javascript"> vbmenu_register("postmenu_6153810", true); </script>
 					
 				</div>
 				
@@ -1093,9 +1055,9 @@ border="0" /> &nbsp;
 		<div>You <strong>may not</strong> edit your posts</div>
 		<hr />
 		
-		<div>BB code is <strong>On</strong></div>
-		<div>Smilies are <strong>On</strong></div>
-		<div>[IMG] code is <strong>Off</strong></div>
+		<div><a href="../../community/bbcode.html" target="_blank">BB code</a> is <strong>On</strong></div>
+		<div><a href="../../community/showsmilies.html" target="_blank">Smilies</a> are <strong>On</strong></div>
+		<div><a href="../../community/bbcode.html#imgcode" target="_blank">[IMG]</a> code is <strong>Off</strong></div>
 		<div>HTML code is <strong>Off</strong></div>
 	</div></td>
 </tr>
@@ -1379,8 +1341,10 @@ border="0" /> &nbsp;
 			</table>
 		</td>
 
-		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots -->
-		<td width="20%" align="center" valign="top">
+		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots.
+		     min-width keeps this fluid 20% column from ever squeezing narrower
+		     than the fixed-170px table it holds, at any viewport width. -->
+		<td width="20%" align="center" valign="top" style="min-width:190px">
 
 			<table width="170" border="0" cellpadding="0" cellspacing="0">
 				<tr>

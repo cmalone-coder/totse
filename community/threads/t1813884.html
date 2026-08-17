@@ -183,12 +183,26 @@
 
 		<!-- Content column -->
 		<td align="left">
-			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<!-- table-layout:fixed makes the browser honor this row's column
+			     widths exactly instead of auto-redistributing them: with the
+			     default "auto" layout, a 13px + 97% + 13px row never sums to
+			     exactly 100% of a fluid table except at one specific width,
+			     so at any other width (all of them, on a responsive page)
+			     the browser proportionally inflates the two fixed-13px
+			     corner columns to reconcile the mismatch - stretching
+			     3lt.jpg/3rt.jpg's cells past the images' own 13px width and
+			     tiling a second, partial copy of the curve artwork into the
+			     extra space, which reads as the rounded corner being cut
+			     off. Under fixed layout this row's widths become the whole
+			     table's column template (13px / remainder / 13px) and are
+			     used verbatim at every width, so the corner cells always
+			     match their images exactly and never need to repeat. -->
+			<table width="100%" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed">
 
 				<tr>
-					<td width="13" height="11" background="../../images/t3/3lt.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="97%" height="11" background="../../images/t3/3ct.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="13" height="11" background="../../images/t3/3rt.jpg"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3lt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3ct.jpg"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3rt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
 				</tr>
 
 				<!-- Ubiquitous nav menu - only real, existing pages are hyperlinked; everything
@@ -222,7 +236,7 @@
 
 				<tr valign="top">
 					<td width="13" background="../../images/t3/0cm.jpg"><img src="../../images/t3/0.gif"></td>
-					<td width="97%" height="640" background="../../images/t3/0cm.jpg">
+					<td width="97%" height="640" background="../../images/t3/0cm.jpg" style="padding-top:6px">
 <!-- breadcrumb, login, pm info -->
 <table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
 <tr>
@@ -470,25 +484,7 @@ var highlightwords = "";
 //-->
 </script>
 <script type="text/javascript" src="clientscript/vbulletin_thrdpostlist.js@v=372"></script>
-<script type="text/javascript">
-<!--
-// initialize some variables
-var curpostid = 6144482;
-var quickreply = false;
 
-// cached posts (no page reload required to view)
-pd[6144482] = '<!-- BEGIN TEMPLATE: postbit_wrapper -->\n<!-- post #6144482 -->\r\n\r\n	<!-- BEGIN TEMPLATE: spacer_open -->\n<!-- open content container -->\r\n\r\n<div align="center">\r\n	<div class="page" style="width:100%; text-align:left">\r\n		<div style="padding:0px 5px 0px 5px" align="left">\r\n\n<!-- END TEMPLATE: spacer_open -->\r\n	<div id="edit6144482" style="padding:0px 0px 6px 0px">\r\n	<!-- this is not the last post shown on the page -->\r\n\r\n\r\n<!-- BEGIN TEMPLATE: postbit -->\n<table class="tborder" id="post6144482" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">\r\n<tr>\r\n	<td class="thead" >\r\n		<div class="normal" style="float:right">\r\n			&nbsp;\r\n			#<strong>1</strong> &nbsp;\r\n			\r\n			\r\n\r\n			\r\n<img class="inlineimg" src="../../images/buttons/ignore.gif" \r\nalt="Add philthemn to your ignore list"\r\nborder="0" /> &nbsp;\r\n\r\n			\r\n			\r\n			\r\n		</div>\r\n		\r\n		<div class="normal">\r\n			<!-- status icon and date -->\r\n			<a name="post6144482"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /></a>\r\n			\r\n				2006-09-26, 20:07\r\n			\r\n			\r\n			<!-- / status icon and date -->\r\n		</div>\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt2" style="padding:0px">\r\n		<!-- user info -->\r\n		<table cellpadding="0" cellspacing="6" border="0" width="100%">\r\n		<tr>\r\n			\r\n			<td nowrap="nowrap">\r\n			\r\n				<div id="postmenu_6144482">\r\n					\r\n					philthemn\r\n					<!-- BEGIN TEMPLATE: postbit_onlinestatus -->\n<img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="philthemn is offline" border="0" />\r\n\r\n\n<!-- END TEMPLATE: postbit_onlinestatus -->\r\n					<script type="text/javascript"> vbmenu_register("postmenu_6144482", true); <\/scr' + 'ipt>\r\n					\r\n				</div>\r\n				\r\n				<div class="smallfont">Regular</div>\r\n				\r\n				\r\n			</td>\r\n			<td width="100%">&nbsp;</td>\r\n			<td valign="top" nowrap="nowrap">\r\n				\r\n				<div class="smallfont">\r\n					<!-- location -->England\r\n					    \r\n					\r\n					\r\n				</div>\r\n				\r\n			</td>\r\n		</tr>\r\n		</table>\r\n		<!-- / user info -->\r\n	</td>\r\n</tr>\r\n<tr>\r\n	<td class="alt1" id="td_post_6144482">\r\n	<!-- message, attachments, sig -->\r\n	\r\n		\r\n			<!-- icon and title -->\r\n			<div class="smallfont">\r\n				<img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" />\r\n				\r\n			</div>\r\n			<hr size="1" style="color:#E8EFF4" />\r\n			<!-- / icon and title -->\r\n		\r\n		\r\n		<!-- message -->\r\n		<div id="post_message_6144482">To believe what we desire leaves all belief devoid of meaning. Religions throughout the world do just that; they escape logic and science, and embrace the natural desire to live in a death-free and just universe. But this is a doctrine based around desires, and not observation.<br />\n<br />\nThe truth is that when we allow ourselves to believe in religion, we accept a world-view based thousands of years ago when most of the main religions formed, before the advancement of science. Why believe The Bible when we reject the scientific ideas of this time? Nobody today is preaching that the world is flat, but yet we continue to argue that we will be sent to Hell if we sin.<br />\n<br />\n We may say that our religious beliefs are based in modern day experience; from paranormal experiences. This, however, is only through a lack of scientific knowledge, as most of the so-called ‘paranormal’ can be explained with current science, i.e. lucid dreams, hallucinations, hypnosis, neuroscience, all these things can explain supernatural experiences that have fooled many into following religion.<br />\n<br />\nNear death experiences are an example of this; many people believe that they see themselves entering heaven or seeing light at the end of a tunnel, but what we fail to see is that chemicals released in the brain at these times are typically pain killing opaites, and these chemicals also cause hallucinations at high doses. Also, it is culture that predicts the vision you see, not divine intervention; what is conditioned in media and folklore to happen as we die is what will be visualised in such states. <br />\n<br />\nIn essence, when you accept religion, you must reject many of strongest scientific theories. Evolution entirely contradicts the foundations of Christianity – how can God have created man, as in Genesis, if in fact we have evolved over millions of years from basic sea creatures? Religion also contradicts any archaeological finds before 5000 years ago; a time in which creationism dictates was before the universe even began. Along with these, religion generally reputes the Big Bang theory and most of frontier physics, and neuroscience, claiming we exist as a soul, and not a collection of physical neurons.<br />\n<br />\nThe soul is essential for what is the most widely held religious fact,in one way or another; the idea of life after death. This argument is hard to knock down because of our inability to experience such events, but I will try. To say that we will exist after death means that you must believe in a soul – some sort of disassociation from our body. This soul must contain our consciousness and personality, to take us as people to the afterlife. To say that these human aspects are within the soul means that they cannot be a part of the physical human brain, as this is subject to decay and entropy, and its cessation to function would mean death in its truest form. So it follows that personality and consciousness exist in a non-physical, non-chemical form then chemical substances such as that of alcohol would have no effect on them. Of course, we know to the contrary, alcohol has a definite effect on our physical brain chemistry, which alters our consciousness, perception, and personality. Therefore we must conclude that our consciousness exists solely in physical form and is subject to the entropy that, as mentioned before, will cause a true death.<br />\n<br />\nOne of the most frustrating things about religion is that its members will change the nature of their religion to fit with current science. They will argue that Genesis was metaphorical if evolutionary theory is thrown at them, and that God didn’t create the world in seven days, that too was a metaphor; God existed to create the Big Bang. This constant avoidance of debunking is an insult to logic – religion must stand to be criticised and stick to its original terms just as a scientific paper does, otherwise it loses any respectability it has.<br />\n<br />\nI believe that religion has come about for a reason. Survival. As we evolved consciousness, the awareness of our own death, and other scientific questions, answerable at the time, caused a strong distraction and had a negative effect on survival and reproduction. As so, those who created ideological systems of a ‘greater being’ survived better, and passed on their genes, and their beliefs. Now, religion has become redundant as a tool to explain, and science has taken its place.<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n[This message has been edited by philthemn (edited 09-26-2006).]</div>\r\n		<!-- / message -->\r\n	\r\n		\r\n		\r\n		\r\n		\r\n		\r\n	\r\n		<div style="margin-top: 10px" align="right">\r\n			<!-- controls -->\r\n			\r\n			\r\n			\r\n				<img src="../../images/buttons/quote.gif" alt="Reply With Quote" border="0" />\r\n			\r\n			\r\n			\r\n			\r\n			\r\n			\r\n				\r\n			\r\n			<!-- / controls -->\r\n		</div>\r\n		\r\n	<!-- message, attachments, sig -->\r\n	\r\n	</td>\r\n</tr>\r\n</table>\r\n\r\n<!-- post 6144482 popup menu -->\r\n<div class="vbmenu_popup" id="postmenu_6144482_menu" style="display:none;">\r\n	<table cellpadding="4" cellspacing="1" border="0">\r\n	<tr>\r\n		<td class="thead">philthemn</td>\r\n	</tr>\r\n	\r\n		<tr><td class="vbmenu_option">View Public Profile</td></tr>\r\n	\r\n	\r\n	\r\n	\r\n	\r\n		<tr><td class="vbmenu_option">Find all posts by philthemn</td></tr>\r\n	\r\n	\r\n	</table>\r\n</div>\r\n<!-- / post 6144482 popup menu -->\n<!-- END TEMPLATE: postbit -->\r\n\r\n\r\n	</div>\r\n	<!-- BEGIN TEMPLATE: spacer_close -->\n\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n<!-- / close content container -->\n<!-- END TEMPLATE: spacer_close -->\r\n\r\n<!-- / post #6144482 -->\n<!-- END TEMPLATE: postbit_wrapper -->';
-
-// next/previous post info
-pn[6144482] = "6144482,6144482";
-pn[0] = ",6144482";
-
-// cached usernames
-pu[0] = guestphrase;
-pu[156038] = "philthemn";
-
-// -->
-</script>
 
 <!-- BEGIN TEMPLATE: spacer_open -->
 <!-- open content container -->
@@ -498,36 +494,6 @@ pu[156038] = "philthemn";
 		<div style="padding:0px 5px 0px 5px" align="left">
 
 <!-- END TEMPLATE: spacer_open -->
-
-<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-top-width:0px; margin-bottom:6px">
-<tr>
-	<td class="alt2">
-	<div style="height:150px; width:100%; overflow:auto; border:2px inset; padding: 0px; text-align:left;" class="alt1" id="links">
-		<div class="smallfont">
-		<!-- start post links -->
-<script type="text/javascript">
-<!--
-writeLink(6144482, 0, 0, 156038, "", "<i>To believe what we desire...</i>", "2006-09-26", "20:07", 0);
-
-//-->
-</script>
-		<!-- end post links -->
-		</div>
-	</div>
-	</td>
-</tr>
-
-<tr>
-	<td class="tfoot" align="center"><div class="smallfont">
-		Prev
-		<img class="inlineimg" src="../../images/buttons/sortdesc.gif" alt="Previous Post" border="0" />
-		&nbsp;
-		<img class="inlineimg" src="../../images/buttons/sortasc.gif" alt="Next Post" border="0" />
-		Next
-	</div></td>
-</tr>
-
-</table>
 
 <!-- BEGIN TEMPLATE: spacer_close -->
 
@@ -883,9 +849,9 @@ I believe that religion has come about for a reason. Survival. As we evolved con
 		<div>You <strong>may not</strong> edit your posts</div>
 		<hr />
 		
-		<div>BB code is <strong>On</strong></div>
-		<div>Smilies are <strong>On</strong></div>
-		<div>[IMG] code is <strong>Off</strong></div>
+		<div><a href="../../community/bbcode.html" target="_blank">BB code</a> is <strong>On</strong></div>
+		<div><a href="../../community/showsmilies.html" target="_blank">Smilies</a> are <strong>On</strong></div>
+		<div><a href="../../community/bbcode.html#imgcode" target="_blank">[IMG]</a> code is <strong>Off</strong></div>
 		<div>HTML code is <strong>Off</strong></div>
 	</div></td>
 </tr>
@@ -1169,8 +1135,10 @@ I believe that religion has come about for a reason. Survival. As we evolved con
 			</table>
 		</td>
 
-		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots -->
-		<td width="20%" align="center" valign="top">
+		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots.
+		     min-width keeps this fluid 20% column from ever squeezing narrower
+		     than the fixed-170px table it holds, at any viewport width. -->
+		<td width="20%" align="center" valign="top" style="min-width:190px">
 
 			<table width="170" border="0" cellpadding="0" cellspacing="0">
 				<tr>
