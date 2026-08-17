@@ -3,6 +3,7 @@
 // client-side for nostalgia only - not tracking, not live ads.
 const RECOVERED_BANNERS = [
   "images/banners/MAPS_Banner_v2.gif",
+  "images/banners/bad_craziness.gif",
   "images/banners/csdp1.jpg",
   "images/banners/drcnet1.gif",
   "images/banners/ibogaine.jpg",
@@ -21,7 +22,8 @@ const RECOVERED_BANNERS = [
   "images/banners/t_shirt_hell_08.gif",
   "images/banners/t_shirt_hell_09.gif",
   "images/banners/t_shirt_hell_10.gif",
-  "images/banners/t_shirt_hell_11.gif"
+  "images/banners/t_shirt_hell_11.gif",
+  "images/banners/viagra.gif"
 ];
 const RECOVERED_MINIBANNERS = [
   "images/minibanners/FPPPswag.jpg",
@@ -36,6 +38,8 @@ const RECOVERED_MINIBANNERS = [
   "images/minibanners/drugwarfacts3.jpg",
   "images/minibanners/famm1.jpg",
   "images/minibanners/help_stop_aids.jpg",
+  "images/minibanners/legal_cannabis_hemp_store.jpg",
+  "images/minibanners/live365_radio_free_totse.jpg",
   "images/minibanners/november1.gif",
   "images/minibanners/pigdog.gif",
   "images/minibanners/protect_live_music.jpg",
