@@ -1,0 +1,1434 @@
+<html>
+<head>
+<title>totse.com | Setting up  a caller id spoof in Asterisk open source PBX - Community</title>
+<link rel="shortcut icon" href="../../favicon.ico">
+<link rel="stylesheet" href="../../styles/vbulletin.css">
+<link rel="stylesheet" href="../../styles/totse3.css">
+<script>const SITE_PREFIX = "../../";</script>
+<script src="../../assets/banners.js"></script>
+<script src="../../assets/hot_topics.js"></script>
+</head>
+
+<body background="../../images/t3/bg.jpg" bgcolor="#2D3856" text="#000000" link="#FFFFFF" vlink="#FFFFFF" alink="#F5F5F5" leftmargin="5" topmargin="5">
+
+<!-- Top of page table -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="center">
+		<td width="43%" align="left">
+			<a href="../../index.html"><img src="../../images/t3/logos/totse01.gif" border="0" width="358" height="43"></a>
+		</td>
+		<td width="2%">&nbsp;</td>
+		<td width="55%" align="right">
+			<!-- Top banner slot - filled client-side from the recovered original banner images -->
+			<div class="bannertext"><img id="banner-slot-top" src="" alt="" border="1" style="display:none;"></div>
+		</td>
+	</tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="top">
+
+		<!-- Left side navigation tabs -->
+		<td align="right" width="157">
+			<table width="157" border="0" cellpadding="0" cellspacing="0">
+				<tr><td height="50"><img src="../../images/t3/0.gif"></td></tr>
+			</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../images/t3/1lt.jpg"><img src="../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../images/t3/1ct.jpg"><img src="../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../images/t3/1lm.jpg"><img src="../../images/t3/0.gif"></td>
+								<td width="144" background="../../images/t3/1cm.jpg">
+									<a href="../../en/_about/index.html" target="_top" class="sinactive">About</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../images/t3/1lb.jpg"><img src="../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../images/t3/1cb.jpg"><img src="../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../images/t3/0lt.jpg"><img src="../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../images/t3/0ct.jpg"><img src="../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" height="15" background="../../images/t3/0lm.jpg"><img src="../../images/t3/0.gif"></td>
+								<td width="144" height="15" background="../../images/t3/0cm.jpg">
+									<span class="sactive">Community</span>
+									
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../images/t3/0lb.jpg"><img src="../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../images/t3/0cb.jpg"><img src="../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../images/t3/1lt.jpg"><img src="../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../images/t3/1ct.jpg"><img src="../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../images/t3/1lm.jpg"><img src="../../images/t3/0.gif"></td>
+								<td width="144" background="../../images/t3/1cm.jpg">
+									<a href="../../en/bad_ideas/index.html" target="_top" class="sinactive">Bad Ideas</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../images/t3/1lb.jpg"><img src="../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../images/t3/1cb.jpg"><img src="../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../images/t3/1lt.jpg"><img src="../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../images/t3/1ct.jpg"><img src="../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../images/t3/1lm.jpg"><img src="../../images/t3/0.gif"></td>
+								<td width="144" background="../../images/t3/1cm.jpg">
+									<a href="../../en/drugs/index.html" target="_top" class="sinactive">Drugs</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../images/t3/1lb.jpg"><img src="../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../images/t3/1cb.jpg"><img src="../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../images/t3/1lt.jpg"><img src="../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../images/t3/1ct.jpg"><img src="../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../images/t3/1lm.jpg"><img src="../../images/t3/0.gif"></td>
+								<td width="144" background="../../images/t3/1cm.jpg">
+									<a href="../../en/ego/index.html" target="_top" class="sinactive">Ego</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../images/t3/1lb.jpg"><img src="../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../images/t3/1cb.jpg"><img src="../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../images/t3/1lt.jpg"><img src="../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../images/t3/1ct.jpg"><img src="../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../images/t3/1lm.jpg"><img src="../../images/t3/0.gif"></td>
+								<td width="144" background="../../images/t3/1cm.jpg">
+									<a href="../../en/erotica_home/index.html" target="_top" class="sinactive">Erotica</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../images/t3/1lb.jpg"><img src="../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../images/t3/1cb.jpg"><img src="../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../images/t3/1lt.jpg"><img src="../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../images/t3/1ct.jpg"><img src="../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../images/t3/1lm.jpg"><img src="../../images/t3/0.gif"></td>
+								<td width="144" background="../../images/t3/1cm.jpg">
+									<a href="../../en/fringe/index.html" target="_top" class="sinactive">Fringe</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../images/t3/1lb.jpg"><img src="../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../images/t3/1cb.jpg"><img src="../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../images/t3/1lt.jpg"><img src="../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../images/t3/1ct.jpg"><img src="../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../images/t3/1lm.jpg"><img src="../../images/t3/0.gif"></td>
+								<td width="144" background="../../images/t3/1cm.jpg">
+									<a href="../../en/society/index.html" target="_top" class="sinactive">Society</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../images/t3/1lb.jpg"><img src="../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../images/t3/1cb.jpg"><img src="../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+						<table width="157" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="13" height="11" background="../../images/t3/1lt.jpg"><img src="../../images/t3/0.gif"></td>
+								<td width="144" height="11" background="../../images/t3/1ct.jpg"><img src="../../images/t3/0.gif"></td>
+							</tr>
+							<tr>
+								<td width="13" background="../../images/t3/1lm.jpg"><img src="../../images/t3/0.gif"></td>
+								<td width="144" background="../../images/t3/1cm.jpg">
+									<a href="../../en/technology/index.html" target="_top" class="sinactive">Technology</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="13" height="17" background="../../images/t3/1lb.jpg"><img src="../../images/t3/0.gif"></td>
+								<td width="144" height="17" background="../../images/t3/1cb.jpg"><img src="../../images/t3/0.gif"></td>
+							</tr>
+						</table>
+
+		</td>
+
+		<!-- Content column -->
+		<td align="left">
+			<!-- table-layout:fixed makes the browser honor this row's column
+			     widths exactly instead of auto-redistributing them: with the
+			     default "auto" layout, a 13px + 97% + 13px row never sums to
+			     exactly 100% of a fluid table except at one specific width,
+			     so at any other width (all of them, on a responsive page)
+			     the browser proportionally inflates the two fixed-13px
+			     corner columns to reconcile the mismatch - stretching
+			     3lt.jpg/3rt.jpg's cells past the images' own 13px width and
+			     tiling a second, partial copy of the curve artwork into the
+			     extra space, which reads as the rounded corner being cut
+			     off. Under fixed layout this row's widths become the whole
+			     table's column template (13px / remainder / 13px) and are
+			     used verbatim at every width, so the corner cells always
+			     match their images exactly and never need to repeat. -->
+			<table width="100%" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed">
+
+				<tr>
+					<td height="11" background="../../images/t3/3lt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3ct.jpg"><img src="../../images/t3/0.gif"></td>
+					<td height="11" background="../../images/t3/3rt.jpg" style="width:13px"><img src="../../images/t3/0.gif"></td>
+				</tr>
+
+				<!-- Ubiquitous nav menu - only real, existing pages are hyperlinked; everything
+				     else (functionality that can't exist in a static rebuild, like search/register,
+				     or sections not built yet, like a BBS home page) renders as plain text -->
+				<tr>
+					<td width="13" height="11" background="../../images/t3/3lm.jpg"><img src="../../images/t3/0.gif"></td>
+					<td width="97%" height="11" background="../../images/t3/3cm.jpg" align="right">
+						<span class="navtoppipe">
+							<span class="navtop">register</span> |
+							<a href="../../community/index.html" class="navtop">bbs</a> |
+							<a href="../../en/search/index.html" class="navtop">search</a> |
+							<a href="../../totse.rss" class="navtop">rss</a> |
+							<a href="../../en/_faq/totse_faq.html" class="navtop">faq</a> |
+							<a href="../../en/_about/index.html" class="navtop">about</a>
+						</span>
+					</td>
+					<td width="13" height="11" background="../../images/t3/3rm.jpg"><img src="../../images/t3/0.gif"></td>
+				</tr>
+				<tr>
+					<td width="13" height="11" background="../../images/t3/3lm.jpg"><img src="../../images/t3/0.gif"></td>
+					<td width="97%" height="11" background="../../images/t3/3cm.jpg" align="right">
+						<span class="navtoppipe">
+							<a href="../../en/meetup/default.htm" class="navtop">meet up</a> |
+							<span class="navtop">add to del.icio.us</span> |
+							<span class="navtop">digg it</span>
+						</span>
+					</td>
+					<td width="13" height="11" background="../../images/t3/3rm.jpg"><img src="../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr valign="top">
+					<td width="13" background="../../images/t3/0cm.jpg"><img src="../../images/t3/0.gif"></td>
+					<td width="97%" height="640" background="../../images/t3/0cm.jpg" style="padding-top:6px">
+<!-- breadcrumb, login, pm info -->
+<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
+<tr>
+	<td class="alt1" width="100%">
+		
+			<table cellpadding="0" cellspacing="0" border="0">
+			<tr valign="bottom">
+				<td><a href="#" onclick="history.back(1); return false;"><img src="../../images/misc/navbits_start.gif" alt="Go Back" border="0" /></a></td>
+				<td>&nbsp;</td>
+				<td width="100%"><span class="navbar">Community</span> <!-- BEGIN TEMPLATE: navbar_link -->
+
+	<span class="navbar">&gt; <a href="../../community/forums/f144.html">Technology</a></span>
+
+
+<!-- END TEMPLATE: navbar_link --><!-- BEGIN TEMPLATE: navbar_link -->
+
+	<span class="navbar">&gt; <a href="../../community/forums/f160.html">Network (in)Security</a></span>
+
+
+<!-- END TEMPLATE: navbar_link --></td>
+			</tr>
+			<tr>
+				<td class="navbar" style="font-size:10pt; padding-top:1px" colspan="3"><a href="../../community/threads/t2172319.html"><img class="inlineimg" src="../../images/misc/navbits_finallink_ltr.gif" alt="Reload this Page" border="0" /></a> <strong><!-- BEGIN TEMPLATE: navbar_link --> Setting up  a caller id spoof in Asterisk open source PBX
+
+<!-- END TEMPLATE: navbar_link --></strong></td>
+			</tr>
+			</table>			
+		
+	</td>	
+	
+	
+		
+		<td class="alt2" nowrap="nowrap" style="padding:0px">
+			
+		<!-- login form -->
+		<form action="login.php?do=login" method="post" onsubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+		<script type="text/javascript" src="clientscript/vbulletin_md5.js@v=367"></script>
+		<table cellpadding="0" cellspacing="3" border="0">
+		<tr>
+			<td class="smallfont"><label for="navbar_username">User Name</label></td>
+			<td><input type="text" class="bginput" style="font-size: 11px" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="User Name" onfocus="if (this.value == 'User Name') this.value = '';" /></td>
+			<td class="smallfont" colspan="2" nowrap="nowrap"><label for="cb_cookieuser_navbar"><input type="checkbox" name="cookieuser" value="1" tabindex="103" id="cb_cookieuser_navbar" accesskey="c" />Remember Me?</label></td>
+		</tr>
+		<tr>
+			<td class="smallfont"><label for="navbar_password">Password</label></td>
+			<td><input type="password" class="bginput" style="font-size: 11px" name="vb_login_password" id="navbar_password" size="10" tabindex="102" /></td>
+			<td><input type="submit" class="button" value="Log in" tabindex="104" title="Enter your username and password in the boxes provided to login, or click the 'register' button to create a profile for yourself." accesskey="s" /></td>
+		</tr>
+		</table>
+		<input type="hidden" name="s" value="0f5eb513583665ff860f632262625e20" />
+		<input type="hidden" name="do" value="login" />		
+		<input type="hidden" name="vb_login_md5password" />
+		<input type="hidden" name="vb_login_md5password_utf" />
+		</form>
+		<!-- / login form -->
+			
+		</td>
+		
+		
+	
+</tr>
+</table>
+<!-- / breadcrumb, login, pm info -->
+
+<!-- nav buttons bar -->
+<div align="center">
+	<table class="tborder" cellpadding="6" cellspacing="0" border="0" width="100%" align="center" style="border-top-width:0px">
+	<tr align="center">
+		
+		
+		
+		<td class="vbmenu_control">FAQ</td>
+		<td class="vbmenu_control">Members List</td>
+		<td class="vbmenu_control">Calendar</td>
+				
+			
+				<td class="vbmenu_control">Search</td>
+				
+				<td class="vbmenu_control">Today's Posts</td>
+				
+			
+			<td class="vbmenu_control">Mark Forums Read</td>
+						
+		
+		
+		
+	</tr>
+	</table>
+</div>
+<!-- / nav buttons bar -->
+
+<br />
+
+	<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
+	<tr>
+		<td class="alt1" width="100%"><strong>Network (in)Security</strong> <span class="smallfont">Interesting hacks and cracks. Info on firewalls, TCP/IP, encryption, networks, and security. The ins and outs of the phone system, caller services, how things work, what's illegal and what's not, cellular phones, beepers, telephony legislation, the PUC, ISDN, taps, who's listening, and switches. Talking about phones, hacking systems, technical advice, and such is completely LEGAL in the United States -- it's covered by the First Amendment. What's illegal is conspiracy to commit a crime. So if you say something like &quot;Meet me at 2am so we can crack a can&quot; or &quot;I changed my cell phone's number myself&quot; you are criminally liable. Stating &quot;You can crack a can by doing thus-and-so&quot; or &quot;If you wanted to change a cell phone's number, you could do it like so&quot; is perfectly OK. Posting passwords, calling card numbers, or credit card numbers is forbidden on this network. Posting such info will get you booted off the net.</span></td>
+	</tr>
+	</table>
+	<br />
+
+
+
+<!-- END TEMPLATE: navbar -->
+
+
+
+
+
+<a name="poststop" id="poststop"></a>
+
+<!-- controls above postbits -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom:3px">
+<tr valign="bottom">
+	
+		<td class="smallfont"><img src="../../images/buttons/reply.gif" alt="Reply" border="0" /></td>
+	
+	<td align="right"><!-- BEGIN TEMPLATE: pagenav -->
+<div class="pagenav" align="right">
+<table class="tborder" cellpadding="3" cellspacing="1" border="0">
+<tr>
+	<td class="vbmenu_control" style="font-weight:normal">Page 1 of 2</td>
+	
+	
+	<!-- BEGIN TEMPLATE: pagenav_curpage -->
+	<td class="alt2"><span class="smallfont" title="Showing results 1 to 10 of 20"><strong>1</strong></span></td>
+ 
+<!-- END TEMPLATE: pagenav_curpage --><!-- BEGIN TEMPLATE: pagenav_pagelink -->
+<td class="alt1"><a class="smallfont" href="../../community/threads/t2172319.html" title="Show results 11 to 20 of 20">2</a></td>
+<!-- END TEMPLATE: pagenav_pagelink -->
+	<td class="alt1"><a class="smallfont" href="../../community/threads/t2172319.html" title="Next Page - Results 11 to 20 of 20">&gt;</a></td>
+	
+	
+</tr>
+</table>
+</div>
+<!-- END TEMPLATE: pagenav --></td>
+</tr>
+</table>
+<!-- / controls above postbits -->
+
+<!-- toolbar -->
+<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-bottom-width:0px">
+<tr>
+	<td class="tcat" width="100%">
+		<div class="smallfont">
+		
+		&nbsp;
+		</div>
+	</td>
+	<td class="vbmenu_control" id="threadtools" nowrap="nowrap">
+		<a href="#goto_threadtools">Thread Tools</a>
+		
+	</td>
+	
+	
+	
+	<td class="vbmenu_control" id="displaymodes" nowrap="nowrap">
+		<a href="#goto_displaymodes">Display Modes</a>
+		
+	</td>
+	
+	
+	
+	
+</tr>
+</table>
+<!-- / toolbar -->
+
+
+
+<!-- end content table -->
+<!-- BEGIN TEMPLATE: spacer_close -->
+
+		</div>	
+	</div>
+</div>
+
+<!-- / close content container -->
+<!-- END TEMPLATE: spacer_close -->
+<!-- / end content table -->
+
+
+
+
+
+<div id="posts">
+<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="margin-bottom:2px">
+<tr>
+	<td class="thead">
+		<div class="normal" style="float:right">&nbsp;#<strong>1</strong>&nbsp;</div>
+		<div class="normal"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /> 2008-11-11, 11:38</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding:0px">
+		<table cellpadding="0" cellspacing="6" border="0" width="100%">
+		<tr>
+			<td nowrap="nowrap">
+				<div><a class="bigusername" href="../../community/members/u162862.html">warweed12</a> <img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="warweed12 is offline" border="0" /></div>
+				<div class="smallfont">Moderator</div>
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td valign="top" nowrap="nowrap">
+				<div class="smallfont">directly over the center of th</div>
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td class="alt1" style="padding:6px">
+		<div class="smallfont"><img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" /> <strong>Setting up  a caller id spoof in Asterisk open source PBX</strong></div>
+		<hr size="1" style="color:#E8EFF4" />
+		<div>Well i know some of you liek to dabble in the phreaking area i know i did for a long time just thought i would toss out a snippet of code i wrote a long while back for spoofing caller IDs in the open source PBX known as Asterisk i used Vitelity.net as my main sip/iax provider and as a back up i also reccomend link2voip.com i know the owners of both and both are awesome people<br />
+hopefully this is usful to some one out there :)<br />
+<br />
+<br />
+;Old Extension to go into the spoof<br />
+;================================================= =============<br />
+exten =&gt; 265,1,Authenticate(5905)<br />
+exten =&gt; 265,2,Goto(ani-spoof,500,1)<br />
+<br />
+[ani-spoof]<br />
+;We enter here, make sure that that file exists please!<br />
+exten =&gt; 500,1,background(/var/lib/asterisk/sounds/ivr/enternumbertospoof)<br />
+exten =&gt; 500,2,Waitexten(5)<br />
+exten =&gt; 500,3,Hangup()<br />
+<br />
+;Someone then enters a 10 digit number to spoof as, <br />
+;we then set the ANI using the SetCIDNum function with the 'a' flag set<br />
+exten =&gt; _NXXNXXXXXX,1,Playback(/var/lib/asterisk/sounds/ivr/thankyou)<br />
+exten =&gt; _NXXNXXXXXX,2,SetCIDnum(${EXTEN},a)<br />
+exten =&gt; _NXXNXXXXXX,3,DISA(no-password,ani-spoof)<br />
+<br />
+;then at the DISA dial tone the person enters the 11 digit number to call, (10 digit no. plus 1)<br />
+exten =&gt; _1NXXNXXXXXX,1,Playback(/var/lib/asterisk/sounds/ivr/pleasewait)<br />
+exten =&gt; _1NXXNXXXXXX,2,Dial(SIP/AccountNumber/${EXTEN},50)<br />
+exten =&gt; _1NXXNXXXXXX,3,Congestion()<br />
+<br />
+exten=&gt;i,1,playback(invalid)<br />
+exten=&gt;i,2,goto(500,1)<br />
+<br />
+<br />
+You can also manually set a hard CID when making out bound from a certain extentions via <br />
+<br />
+<br />
+exten =&gt; _NXXXXXX,1,Set(CALLERID(num)=7806666666)<br />
+exten =&gt; _NXXXXXX,2,Dial(SIP/accountnumber/1780${EXTEN},50)<br />
+exten =&gt; _NXXXXXX,3,Congestion()<br />
+<br />
+<br />
+or you can set 3 digit cid's same way<br />
+<br />
+exten =&gt; _NXXXXXX,1,Set(CALLERID(num)=911)<br />
+exten =&gt; _NXXXXXX,2,Dial(SIP/accountnumber/1780${EXTEN},50)<br />
+exten =&gt; _NXXXXXX,3,Congestion()<br />
+<br />
+<br />
+to impliment set a extention that goes to a sub in your dial plan in extentions.conf<br />
+<br />
+like so<br />
+<br />
+in your inbound sub ie [INBOUND]<br />
+<br />
+<br />
+<br />
+exten =&gt; 265,2,Goto(outbound,1)<br />
+<br />
+[outbound]<br />
+exten =&gt; _NXXXXXX,1,Set(CALLERID(num)=7806666666)<br />
+exten =&gt; _NXXXXXX,2,Dial(SIP/accountnumber/1780${EXTEN},50)<br />
+exten =&gt; _NXXXXXX,3,Congestion()<br />
+<br />
+<br />
+or if you want to dial nothing but 10 digit numbers<br />
+<br />
+exten =&gt; _1NXXNXXXXXX,1,Set(CALLERID(num)=7806666666)<br />
+exten =&gt; _1NXXNXXXXXX,2,Dial(SIP/accountnumber/${EXTEN},50)<br />
+exten =&gt; _1NXXNXXXXXX,3,Congestion()<br />
+<br />
+<br />
+Cheers and hope you have just as much fun as i do making prank calls world wide and call people from there own numbers and such <br />
+<br />
+oh and also a word of advice if you call a ATT wireless customer from there own number and they do not pick up it goes directly into there VM ;) <br />
+<br />
+-warweed</div>
+	</td>
+</tr>
+</table>
+<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="margin-bottom:2px">
+<tr>
+	<td class="thead">
+		<div class="normal" style="float:right">&nbsp;#<strong>2</strong>&nbsp;</div>
+		<div class="normal"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /> 2008-11-12, 06:35</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding:0px">
+		<table cellpadding="0" cellspacing="6" border="0" width="100%">
+		<tr>
+			<td nowrap="nowrap">
+				<div><span class="bigusername">redjoker</span> <img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="redjoker is offline" border="0" /></div>
+				<div class="smallfont">Regular</div>
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td valign="top" nowrap="nowrap">
+				
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td class="alt1" style="padding:6px">
+		<div class="smallfont"><img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" /> <strong>Re: Setting up  a caller id spoof in Asterisk open source PBX</strong></div>
+		<hr size="1" style="color:#E8EFF4" />
+		<div>Oh fuck yes! Finally an interesting topic. Thanks for the share. I've never actually gotten around to using Asterisk but it has always been really interesting to me. Did you go with NuFone?</div>
+	</td>
+</tr>
+</table>
+<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="margin-bottom:2px">
+<tr>
+	<td class="thead">
+		<div class="normal" style="float:right">&nbsp;#<strong>3</strong>&nbsp;</div>
+		<div class="normal"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /> 2008-11-12, 07:15</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding:0px">
+		<table cellpadding="0" cellspacing="6" border="0" width="100%">
+		<tr>
+			<td nowrap="nowrap">
+				<div><a class="bigusername" href="../../community/members/u162862.html">warweed12</a> <img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="warweed12 is offline" border="0" /></div>
+				<div class="smallfont">Moderator</div>
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td valign="top" nowrap="nowrap">
+				<div class="smallfont">directly over the center of th</div>
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td class="alt1" style="padding:6px">
+		<div class="smallfont"><img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" /> <strong>Re: Setting up  a caller id spoof in Asterisk open source PBX</strong></div>
+		<hr size="1" style="color:#E8EFF4" />
+		<div>Naw i used a Combination i had a old P2 running debian running asterisk on it then i used Vitelity for there international voip service and i used link2voip for there local service and i used freeworlddialup for there toll free services .. i had like 4 SPA-1001 sipura phone adapters and 2 wifi based mobile phones <br />
+<br />
+ but yeah i had run several asterisk based PBX's over the time so if you need suport setting up dial plans or need debugging support let me know</div>
+	</td>
+</tr>
+</table>
+<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="margin-bottom:2px">
+<tr>
+	<td class="thead">
+		<div class="normal" style="float:right">&nbsp;#<strong>4</strong>&nbsp;</div>
+		<div class="normal"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /> 2008-11-12, 08:56</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding:0px">
+		<table cellpadding="0" cellspacing="6" border="0" width="100%">
+		<tr>
+			<td nowrap="nowrap">
+				<div><span class="bigusername">redjoker</span> <img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="redjoker is offline" border="0" /></div>
+				<div class="smallfont">Regular</div>
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td valign="top" nowrap="nowrap">
+				
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td class="alt1" style="padding:6px">
+		<div class="smallfont"><img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" /> <strong>Re: Setting up  a caller id spoof in Asterisk open source PBX</strong></div>
+		<hr size="1" style="color:#E8EFF4" />
+		<div>Thanks for the offer man. When I ever have a need and get off my ass then I'll start to fux wid it. I've been going over the manual again so I'm pretty confident I'll be able to set it up within an hour if when I need to.</div>
+	</td>
+</tr>
+</table>
+<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="margin-bottom:2px">
+<tr>
+	<td class="thead">
+		<div class="normal" style="float:right">&nbsp;#<strong>5</strong>&nbsp;</div>
+		<div class="normal"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /> 2008-11-12, 09:51</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding:0px">
+		<table cellpadding="0" cellspacing="6" border="0" width="100%">
+		<tr>
+			<td nowrap="nowrap">
+				<div><a class="bigusername" href="../../community/members/u162862.html">warweed12</a> <img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="warweed12 is offline" border="0" /></div>
+				<div class="smallfont">Moderator</div>
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td valign="top" nowrap="nowrap">
+				<div class="smallfont">directly over the center of th</div>
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td class="alt1" style="padding:6px">
+		<div class="smallfont"><img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" /> <strong>Re: Setting up  a caller id spoof in Asterisk open source PBX</strong></div>
+		<hr size="1" style="color:#E8EFF4" />
+		<div>dial plans are the easier parts it php agi scripting and peering that can be a pain espcially secure network peering<br />
+<br />
+right now im running a small private vpn with a secure asterisk server over it so that this certain group can contact each other and each person has a local provider or tie in so that if we ring the computer with no responce it tries a mobile and ect.. <br />
+<br />
+but we have fucked with voice req and text to speech ect.. <br />
+<br />
+call flooding ie spooling in calls lol one day we called every verizon pay phone in the north dakota international airport <br />
+<br />
+there is so many fun things to do with asterisk such as listening to music controling computers turning off and on computers get server info and control servers ect...<br />
+<br />
+the amount of things you can do is only limited to your coding ability</div>
+	</td>
+</tr>
+</table>
+<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="margin-bottom:2px">
+<tr>
+	<td class="thead">
+		<div class="normal" style="float:right">&nbsp;#<strong>6</strong>&nbsp;</div>
+		<div class="normal"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /> 2008-11-12, 12:04</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding:0px">
+		<table cellpadding="0" cellspacing="6" border="0" width="100%">
+		<tr>
+			<td nowrap="nowrap">
+				<div><span class="bigusername">redjoker</span> <img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="redjoker is offline" border="0" /></div>
+				<div class="smallfont">Regular</div>
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td valign="top" nowrap="nowrap">
+				
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td class="alt1" style="padding:6px">
+		<div class="smallfont"><img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" /> <strong>Re: Setting up  a caller id spoof in Asterisk open source PBX</strong></div>
+		<hr size="1" style="color:#E8EFF4" />
+		<div>I'm glad you've found a calling in phreaking. You seem to know your shit when it comes to this stuff. Any good resources you'd like to share with the class? I've only dabbled in this field, but I would really like to get some more juicy info on the subject.</div>
+	</td>
+</tr>
+</table>
+<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="margin-bottom:2px">
+<tr>
+	<td class="thead">
+		<div class="normal" style="float:right">&nbsp;#<strong>7</strong>&nbsp;</div>
+		<div class="normal"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /> 2008-11-12, 20:19</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding:0px">
+		<table cellpadding="0" cellspacing="6" border="0" width="100%">
+		<tr>
+			<td nowrap="nowrap">
+				<div><a class="bigusername" href="../../community/members/u162862.html">warweed12</a> <img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="warweed12 is offline" border="0" /></div>
+				<div class="smallfont">Moderator</div>
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td valign="top" nowrap="nowrap">
+				<div class="smallfont">directly over the center of th</div>
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td class="alt1" style="padding:6px">
+		<div class="smallfont"><img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" /> <strong>Re: Setting up  a caller id spoof in Asterisk open source PBX</strong></div>
+		<hr size="1" style="color:#E8EFF4" />
+		<div>well new age phreaking is kinda a personal thing and is shared usally between one another in the &quot;scene&quot;<br />
+<br />
+<br />
+but what do you want to know and i will try and share with you my knowledge <br />
+<br />
+also http://www.hackcanada.com/canadian/zines/k_1ine/<br />
+<br />
+some of the k-1ine issues have more uptodate article but after a close friend and fellow phreaker in our community committed suicide we stopped publishing k-1ine with the final tribute article on 4/20/08</div>
+	</td>
+</tr>
+</table>
+<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="margin-bottom:2px">
+<tr>
+	<td class="thead">
+		<div class="normal" style="float:right">&nbsp;#<strong>8</strong>&nbsp;</div>
+		<div class="normal"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /> 2008-11-12, 20:32</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding:0px">
+		<table cellpadding="0" cellspacing="6" border="0" width="100%">
+		<tr>
+			<td nowrap="nowrap">
+				<div><a class="bigusername" href="../../community/members/u162862.html">warweed12</a> <img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="warweed12 is offline" border="0" /></div>
+				<div class="smallfont">Moderator</div>
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td valign="top" nowrap="nowrap">
+				<div class="smallfont">directly over the center of th</div>
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td class="alt1" style="padding:6px">
+		<div class="smallfont"><img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" /> <strong>Re: Setting up  a caller id spoof in Asterisk open source PBX</strong></div>
+		<hr size="1" style="color:#E8EFF4" />
+		<div>I'm glad you've found a calling in phreaking. You seem to know your shit when it comes to this stuff. Any good resources you'd like to share with the class? I've only dabbled in this field, but I would really like to get some more juicy info on the subject.<br />
+also as true with the 80's <br />
+<br />
+dumpster dive dumpster dive dumpster dive .. <br />
+i sneak under telco fences and grab what ever i can shreaded paper bags of paper (no organics) and toss em over or under the fences if i can goto a remotle location go through stuff usally i go for anythign with hand written notes memo's larger grouped stacked papers books manuals ect.. <br />
+<br />
+you can and will find ALOT of stuff most days<br />
+<br />
+some days nothing .. :)<br />
+<br />
+i have found all sorts of test numbers :)<br />
+<br />
+<br />
+Also wardialing is another fun past time ... I have a apartment atm. and most people know that either your phone box is in the laundry / utility room or it is outside eitherway there easy to get into .. <br />
+<br />
+with soem quick bridging and disconnecting  you can use who ever in the buildings you wants phone line :)<br />
+<br />
+i usally see who comes and goes from the building and who works ect.. so i war dial using there lines with a auto dialer like toneloc till i know about when there coming home and then i go disconnect my bridge and goto to the next person ect... <br />
+<br />
+in about 10,000 toll free number blocks your bound to find probally over 100-1000 intresting numbers<br />
+<br />
+and 200 of them are going to be worth dialing <br />
+<br />
+i will post a sample of some of the stuff you could find but for privacy block out most the numbers</div>
+	</td>
+</tr>
+</table>
+<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="margin-bottom:2px">
+<tr>
+	<td class="thead">
+		<div class="normal" style="float:right">&nbsp;#<strong>9</strong>&nbsp;</div>
+		<div class="normal"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /> 2008-11-12, 20:37</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding:0px">
+		<table cellpadding="0" cellspacing="6" border="0" width="100%">
+		<tr>
+			<td nowrap="nowrap">
+				<div><a class="bigusername" href="../../community/members/u162862.html">warweed12</a> <img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="warweed12 is offline" border="0" /></div>
+				<div class="smallfont">Moderator</div>
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td valign="top" nowrap="nowrap">
+				<div class="smallfont">directly over the center of th</div>
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td class="alt1" style="padding:6px">
+		<div class="smallfont"><img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" /> <strong>Re: Setting up  a caller id spoof in Asterisk open source PBX</strong></div>
+		<hr size="1" style="color:#E8EFF4" />
+		<div>Some idea's on were to get started scanning ;)<br />
+<br />
+<br />
+MILITARY/GOVERNMENT-------------------------------------------------------------------<br />
+<br />
+<br />
+___ GENERAL ___<br />
+<br />
+202.456        Al Gore - Presidential Candidate<br />
+703.545.          Air Force, Department of (USA) - Information<br />
+202.433.        Anacostia Naval Station<br />
+301.981.        Andrews Air Force Base Operator<br />
+613.996.        Canadian Consulate (for calls originating in the USA)<br />
+800.267.        Canadian Consulate (for calls originating in Canada)<br />
+202.456.        Council to the President<br />
+703.607.        DISA Global Headquarters - Duty Officer Phone<br />
+703.607.        Defense Information System Agency Personell Locator<br />
+301.227.        Defense Mapping Agency TTY<br />
+800.468.        Defense Reutilization and Marketing Service<br />
+703.325.        Defense Security Service HQ (Field Office)<br />
+202.647.        Department of the State<br />
+202.647.        Department of the State<br />
+202.622.        Department of the Treasury<br />
+202.622.        Department of the Treasury<br />
+614.692.        DoD Network Information Center Helpdesk<br />
+800.365.        DoD Network Information Center Helpdesk<br />
+212.384.        FBI<br />
+202.418.        FCC Switchboard<br />
+800.688.        Federal Information Center<br />
+800.688.             Federal Government Info line<br />
+202.632.        Federal Communications Commission<br />
+888.CALL        Federal Communications Commission<br />
+800.358.        FEMA Map Service Center<br />
+800.462.        FEMA Nationwide Disaster Assistance<br />
+800.879.        FEMA Temporary Recruitment for Disaster Area<br />
+804.633.        Fort A.P. Hill Directorate of Human Resources<br />
+804.633.        Fort A.P. Hill Directorate of Morale, Welfare and Recreation<br />
+<br />
+804.633.        Fort A.P. Hill Directorate of Training, Mobilization, and Security<br />
+<br />
+804.633.        Fort A.P. Hill Game Check Station<br />
+804.633.        Fort A.P. Hill Public Affairs<br />
+703.524.        Fort Meyers Officers Club<br />
+703.696.        Fort Meyers Library<br />
+703.696.        Fort Meyers Officers Club Pool<br />
+703.351.          Fort Meyers Armed Forces Bank<br />
+703.818.        GETS Test Line<br />
+800.818.        GETS User Assistance Helpline<br />
+710.NCS.        Government Emergency Telephone System Dial-In<br />
+800.829.        Internal Revenue Service Main<br />
+800.829.        Internal Revenue Service Forms and Booklets<br />
+800.829.        Internal Revenus Service Criminal Investigations<br />
+719.721.        Joint National Integration Center (JNIC) High-Performance Computing<br />
+719.721.        JNIC User Services/ Helpdesk<br />
+719.721.        JNIC Visitor Control Voice ext 8253<br />
+301.744.        JITC Washington Ops. (DSN 354-2602)<br />
+520.538.        JITC Fort Huachuca (DSN 879-5000)<br />
+520.538.        JITC Fort Huachuca Visitor Support Center (DSN 879-5429)<br />
+520.538.        JITC Phone Hotline (DSN 879-5482)<br />
+520.538.        JITC Office of the Commander<br />
+202.45            Vice President, Immediate Office<br />
+202.45            White House Cheif of Staff<br />
+202.45            White House Comment Line<br />
+202.45            White House Operating Status Notification Line<br />
+202.45            White House Personell Officer<br />
+202.25                 White House Switchboard<br />
+202.45                 White House Situation Room<br />
+202.45               White House Visitor Office Information<br />
+703.54               White Oak Naval Ordanance Labratory<br />
+505.67               White Sands Missle Range<br />
+710.99               That odd 710 number that did the thing with the sherrif that one time.<br />
+some ones i do not mind giving out ;) thou some may not be working anymore i know some do <br />
+<br />
+727.551.9889         elevator phone<br />
+810.732.9037         elevator fone<br />
+860.563.6571         elevator fone<br />
+810.732.9037         elevator<br />
+860.563.6571         elevator<br />
+401.863.71xx        80+ elevator phones in Brown University College<br />
+  <br />
+<br />
+Fucking with people in elevators is a great pastime :)<br />
+<br />
+also always remember optivert meaning go through your operator covertly <br />
+so instead of directly dialing a number press '0' from your home phone and when the operator comes on say hi i am having troubles dialing a number was wondering if you might be able to assist me they more then likly will say sure whats the number please just give them the number and they will put it thorugh rather then using your caller ID and your ANI and your callback it will be theres but still billed to you</div>
+	</td>
+</tr>
+</table>
+<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="margin-bottom:2px">
+<tr>
+	<td class="thead">
+		<div class="normal" style="float:right">&nbsp;#<strong>10</strong>&nbsp;</div>
+		<div class="normal"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /> 2008-11-17, 09:06</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding:0px">
+		<table cellpadding="0" cellspacing="6" border="0" width="100%">
+		<tr>
+			<td nowrap="nowrap">
+				<div><a class="bigusername" href="../../community/members/u162862.html">warweed12</a> <img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="warweed12 is offline" border="0" /></div>
+				<div class="smallfont">Moderator</div>
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td valign="top" nowrap="nowrap">
+				<div class="smallfont">directly over the center of th</div>
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td class="alt1" style="padding:6px">
+		<div class="smallfont"><img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" /> <strong>Re: Setting up  a caller id spoof in Asterisk open source PBX</strong></div>
+		<hr size="1" style="color:#E8EFF4" />
+		<div>im suprised more people are not intrested in war dialing / phreaking anymore pfft if only you guys knew what your missing / could do lol<br />
+<br />
+<br />
+<br />
+provider confrence calling company confrences with outdialing features both local and international voicemail hacking broadcasting jumping all over the planet lol there is no limit what you can find hell i found number were you could call in and get sensor data on a local power substation and run diagnostic tests lol<br />
+<br />
+or numbers that control mainframes lol</div>
+	</td>
+</tr>
+</table>
+<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="margin-bottom:2px">
+<tr>
+	<td class="thead">
+		<div class="normal" style="float:right">&nbsp;#<strong>11</strong>&nbsp;</div>
+		<div class="normal"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /> 2008-11-17, 16:10</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding:0px">
+		<table cellpadding="0" cellspacing="6" border="0" width="100%">
+		<tr>
+			<td nowrap="nowrap">
+				<div><a class="bigusername" href="../../community/members/u229951.html">Expl0itz</a> <img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="Expl0itz is offline" border="0" /></div>
+				<div class="smallfont">Moderator</div>
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td valign="top" nowrap="nowrap">
+				<div class="smallfont">The fiber optic lines</div>
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td class="alt1" style="padding:6px">
+		<div class="smallfont"><img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" /> <strong>Re: Setting up  a caller id spoof in Asterisk open source PBX</strong></div>
+		<hr size="1" style="color:#E8EFF4" />
+		<div>im suprised more people are not intrested in war dialing / phreaking anymore pfft if only you guys knew what your missing / could do lol<br />
+<br />
+<br />
+<br />
+provider confrence calling company confrences with outdialing features both local and international voicemail hacking broadcasting jumping all over the planet lol there is no limit what you can find hell i found number were you could call in and get sensor data on a local power substation and run diagnostic tests lol<br />
+<br />
+or numbers that control mainframes lol<br />
+<br />
+Well, we really don't have any pros here anymore. Except for you though as it seems. Maybe, if you have time, you can get us all started. Shit. I would LOVE to start learning more about phreaking. It's interesting as fuck.</div>
+	</td>
+</tr>
+</table>
+<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="margin-bottom:2px">
+<tr>
+	<td class="thead">
+		<div class="normal" style="float:right">&nbsp;#<strong>12</strong>&nbsp;</div>
+		<div class="normal"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /> 2008-11-17, 16:15</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding:0px">
+		<table cellpadding="0" cellspacing="6" border="0" width="100%">
+		<tr>
+			<td nowrap="nowrap">
+				<div><span class="bigusername">Influx</span> <img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="Influx is offline" border="0" /></div>
+				<div class="smallfont">Regular</div>
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td valign="top" nowrap="nowrap">
+				
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td class="alt1" style="padding:6px">
+		<div class="smallfont"><img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" /> <strong>Re: Setting up  a caller id spoof in Asterisk open source PBX</strong></div>
+		<hr size="1" style="color:#E8EFF4" />
+		<div>im suprised more people are not intrested in war dialing / phreaking anymore pfft if only you guys knew what your missing / could do lol<br />
+<br />
+<br />
+<br />
+provider confrence calling company confrences with outdialing features both local and international voicemail hacking broadcasting jumping all over the planet lol there is no limit what you can find hell i found number were you could call in and get sensor data on a local power substation and run diagnostic tests lol<br />
+<br />
+or numbers that control mainframes lol<br />
+<br />
+<br />
+I'm extremely fascinated by phreaking and the experience of exploring the telephone system. I'm only 18 and have recently in the past years started to read up about this. Learning how to do things is essentially impossible unless you have someone to teach and show you. I understand that being able to hear each specific click and tone in order to determine where you are or what you've just passed is really amazing. Though, it takes a while to be able to get to that point without fault.<br />
+<br />
+I don't know where to start.<br />
+<br />
+So far I just like calling interesting numbers, hearing or talking to whoever picks up or whatever picks up.<br />
+<br />
+Question: Is there a way to get inside of a PBX of say some random company, then somehow spoof your way into the system and dial out using their lines? Of course, you're calling from your outside line, payphone, home phone, whatever it may be.<br />
+<br />
+I read a lot of 2600 btw. And the Best of 2600. &gt;.&gt; I'm more of a computer hacker, hardware hacking is my fun. Exploring places too, dumpster diving, etc. I recently learn how to spoof your ANI from a nice little article in that book :)<br />
+<br />
+Btw: That number, about the substation... do explain more..</div>
+	</td>
+</tr>
+</table>
+<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="margin-bottom:2px">
+<tr>
+	<td class="thead">
+		<div class="normal" style="float:right">&nbsp;#<strong>13</strong>&nbsp;</div>
+		<div class="normal"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /> 2008-11-17, 19:06</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding:0px">
+		<table cellpadding="0" cellspacing="6" border="0" width="100%">
+		<tr>
+			<td nowrap="nowrap">
+				<div><a class="bigusername" href="../../community/members/u162862.html">warweed12</a> <img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="warweed12 is offline" border="0" /></div>
+				<div class="smallfont">Moderator</div>
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td valign="top" nowrap="nowrap">
+				<div class="smallfont">directly over the center of th</div>
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td class="alt1" style="padding:6px">
+		<div class="smallfont"><img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" /> <strong>Re: Setting up  a caller id spoof in Asterisk open source PBX</strong></div>
+		<hr size="1" style="color:#E8EFF4" />
+		<div>of course there are ways to &quot;hack your way&quot; into a companys PBX most companys now use newer nortel or 3com hardware PBX's i would start by reading more into those ;) :) and setup and configureing <br />
+<br />
+start scanning for companys 1800 numbers when you find a company alot of times they have employee directorys or mailboxes usally when you get to some ones VM if you mash * or # it will ask you for a login to check VM this is were i usally check first .. you can hack vm's and you can hand scan VM's i like the old skool method of hand scanning personally<br />
+<br />
+once you reach a vm login on newer pbx's they defualt 3 trys then the system hangs up on you <br />
+<br />
+try the extention number as the login first and then the password as a extention<br />
+<br />
+alot of times companys will setup VM's in bulk so they have unused VM's in there platfform <br />
+<br />
+in the case of the company i first broke i found a vm on the system that was not in use that was defualt the ext. for user and ext. for password and the admin had sent out vm broadcasts with the companys new confrence extention and password .. in this case it was ext. 260 was the confrence and at the time no password (till a company member dropped in on a bunch of phreakers) lol and noticed there bill sky rocketed to a couple thousand because of international calls lol you can also use old dos programs to &quot;war dial&quot; a pbx and to find extentions in that pbx i personally like toneloc for this <br />
+<br />
+thou i like http://www.sandstorm.net/products/phonesweep/screenshots.php<br />
+<br />
+sandstorms phonesweep to but you require certain hardware to use this software :P<br />
+<br />
+i will write a bit more on the subject later<br />
+<br />
+the cool thing about toneloc is it can detect modem's and fax machines i like modems ;) for obvious reasons mainly because most modems now adays are some computer that has been sitting in the companys closet for years well forgotten about and if the most insecure part of a whole network ;)</div>
+	</td>
+</tr>
+</table>
+<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="margin-bottom:2px">
+<tr>
+	<td class="thead">
+		<div class="normal" style="float:right">&nbsp;#<strong>14</strong>&nbsp;</div>
+		<div class="normal"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /> 2008-11-18, 01:47</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding:0px">
+		<table cellpadding="0" cellspacing="6" border="0" width="100%">
+		<tr>
+			<td nowrap="nowrap">
+				<div><span class="bigusername">Influx</span> <img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="Influx is offline" border="0" /></div>
+				<div class="smallfont">Regular</div>
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td valign="top" nowrap="nowrap">
+				
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td class="alt1" style="padding:6px">
+		<div class="smallfont"><img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" /> <strong>Re: Setting up  a caller id spoof in Asterisk open source PBX</strong></div>
+		<hr size="1" style="color:#E8EFF4" />
+		<div>most modems now adays are some computer that has been sitting in the companys closet for years well forgotten about and if the most insecure part of a whole network <br />
+<br />
+That makes me LoL. It's always some old forgotten thing that ends up being the way in.<br />
+<br />
+Hey its old, why bother care about it? :P <br />
+<br />
+But yet they don't know.<br />
+<br />
+<br />
+And thanks for the tips. I've called some 1800 numbers, its neat, going through prompts, trying out random extensions to see who I can reach and then pretending to be someone who I'm not. Such as an security expert from Bell &gt;.&gt; :)<br />
+<br />
+I'm gunna try that VM trick later on. See what I can find.<br />
+<br />
+<br />
+What were you up to during the Ma Bell days, Warweed?</div>
+	</td>
+</tr>
+</table>
+<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="margin-bottom:2px">
+<tr>
+	<td class="thead">
+		<div class="normal" style="float:right">&nbsp;#<strong>15</strong>&nbsp;</div>
+		<div class="normal"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /> 2008-11-18, 05:08</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding:0px">
+		<table cellpadding="0" cellspacing="6" border="0" width="100%">
+		<tr>
+			<td nowrap="nowrap">
+				<div><a class="bigusername" href="../../community/members/u162862.html">warweed12</a> <img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="warweed12 is offline" border="0" /></div>
+				<div class="smallfont">Moderator</div>
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td valign="top" nowrap="nowrap">
+				<div class="smallfont">directly over the center of th</div>
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td class="alt1" style="padding:6px">
+		<div class="smallfont"><img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" /> <strong>Re: Setting up  a caller id spoof in Asterisk open source PBX</strong></div>
+		<hr size="1" style="color:#E8EFF4" />
+		<div>If only i was allowed to tell you some of the things i found and things i have done with phone networks ;) lets put it this way there is ALWAYS a way into everything<br />
+<br />
+you know those little apartment door entry things look a little somthing like this http://www.mircom.com/images/tas/mus-1000s_lg.jpg<br />
+<br />
+there called mircoms and like most products the rely on 2 things ... one that there programmers are good and there are no problems and two the end user is a redtarded hill billy<br />
+<br />
+so like most companys they do somthing stupid they put in a back door code something to allow that red neck hillbilly who wrote his password down on a match book and lost it in a drunken gang bang to get back into his buildings admin panel to re program the damn thing to the right phone number or right extention ... <br />
+<br />
+well do yourself a favour if you don't sound like a underage idiot find yourself a mircom and find it on the product page and call there tech and be that drunken hill billy ;) get yourself the back door codes trust me it ain't hard just ask them what to do if you lost your code .. <br />
+<br />
+then go back to your mircom and login add yourself a extention 666 that dials your phone and press 9 when your phone rings ... and your in ... <br />
+<br />
+or better yet my friends ;) find out what carrier that number is that the mircom dials from and setup another extention to call that carrier and setup a confrence under that name (which the line will be registered to the buildings name or bussiness that owns the apartment) then laugh when your at home and have a way to call anyware you want ... <br />
+<br />
+or how about this ... use mircom to setup a ext. to call 900 numbers and get pin logins by billing to the number your calling from ;)<br />
+<br />
+see my trend lol <br />
+<br />
+there is a Million and one things you can do :P</div>
+	</td>
+</tr>
+</table>
+<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="margin-bottom:2px">
+<tr>
+	<td class="thead">
+		<div class="normal" style="float:right">&nbsp;#<strong>16</strong>&nbsp;</div>
+		<div class="normal"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /> 2008-11-18, 05:10</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding:0px">
+		<table cellpadding="0" cellspacing="6" border="0" width="100%">
+		<tr>
+			<td nowrap="nowrap">
+				<div><a class="bigusername" href="../../community/members/u162862.html">warweed12</a> <img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="warweed12 is offline" border="0" /></div>
+				<div class="smallfont">Moderator</div>
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td valign="top" nowrap="nowrap">
+				<div class="smallfont">directly over the center of th</div>
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td class="alt1" style="padding:6px">
+		<div class="smallfont"><img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" /> <strong>Re: Setting up  a caller id spoof in Asterisk open source PBX</strong></div>
+		<hr size="1" style="color:#E8EFF4" />
+		<div>Exploitz would you mind if i made just a &quot;phreaking thread&quot; and you merged  this thread into it ? it seems like there are people intrested in the subject but nothings catchign there eyes :P</div>
+	</td>
+</tr>
+</table>
+<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="margin-bottom:2px">
+<tr>
+	<td class="thead">
+		<div class="normal" style="float:right">&nbsp;#<strong>17</strong>&nbsp;</div>
+		<div class="normal"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /> 2008-11-18, 07:16</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding:0px">
+		<table cellpadding="0" cellspacing="6" border="0" width="100%">
+		<tr>
+			<td nowrap="nowrap">
+				<div><a class="bigusername" href="../../community/members/u162862.html">warweed12</a> <img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="warweed12 is offline" border="0" /></div>
+				<div class="smallfont">Moderator</div>
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td valign="top" nowrap="nowrap">
+				<div class="smallfont">directly over the center of th</div>
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td class="alt1" style="padding:6px">
+		<div class="smallfont"><img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" /> <strong>Re: Setting up  a caller id spoof in Asterisk open source PBX</strong></div>
+		<hr size="1" style="color:#E8EFF4" />
+		<div>Here is a good tutorial on the use of toneloc <br />
+http://www.textfiles.com/hacking/tl-user.txt<br />
+<br />
+i know i know it's on textfiles but it is not badly written :P</div>
+	</td>
+</tr>
+</table>
+<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="margin-bottom:2px">
+<tr>
+	<td class="thead">
+		<div class="normal" style="float:right">&nbsp;#<strong>18</strong>&nbsp;</div>
+		<div class="normal"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /> 2008-11-18, 10:25</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding:0px">
+		<table cellpadding="0" cellspacing="6" border="0" width="100%">
+		<tr>
+			<td nowrap="nowrap">
+				<div><span class="bigusername">redjoker</span> <img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="redjoker is offline" border="0" /></div>
+				<div class="smallfont">Regular</div>
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td valign="top" nowrap="nowrap">
+				
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td class="alt1" style="padding:6px">
+		<div class="smallfont"><img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" /> <strong>Re: Setting up  a caller id spoof in Asterisk open source PBX</strong></div>
+		<hr size="1" style="color:#E8EFF4" />
+		<div>...there called mircoms and like most products the rely on 2 things ... one that there programmers are good and there are no problems and two the end user is a redtarded hill billy<br />
+<br />
+so like most companys they do somthing stupid they put in a back door code something...<br />
+<br />
+This is very true for many things. ATMs to name one.</div>
+	</td>
+</tr>
+</table>
+<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="margin-bottom:2px">
+<tr>
+	<td class="thead">
+		<div class="normal" style="float:right">&nbsp;#<strong>19</strong>&nbsp;</div>
+		<div class="normal"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /> 2008-11-18, 14:14</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding:0px">
+		<table cellpadding="0" cellspacing="6" border="0" width="100%">
+		<tr>
+			<td nowrap="nowrap">
+				<div><span class="bigusername">Influx</span> <img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="Influx is offline" border="0" /></div>
+				<div class="smallfont">Regular</div>
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td valign="top" nowrap="nowrap">
+				
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td class="alt1" style="padding:6px">
+		<div class="smallfont"><img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" /> <strong>Re: Setting up  a caller id spoof in Asterisk open source PBX</strong></div>
+		<hr size="1" style="color:#E8EFF4" />
+		<div>you know those little apartment door entry things look a little somthing like this<br />
+<br />
+when I was younger I had lived in an apartment building. Beside mine was a buildin which had old people living in it, every floor, every apartment.<br />
+<br />
+I used to go over, dial a random number and pretend to be a cable technician working on the lines in the area. We had construction around very often, so, this ploy worked usually. My voice was still that of a kid, with a little vocal alteration, I was usually able to trick the old folks and get inside the building quite easy. The addition of the poor quality connection made it even easier.<br />
+<br />
+You could say that the intercoms had cameras, but this building was similar to mine - other than the architecture. Same intercom system, so I knew for a fact that there was no camera systems through the buildings coax.<br />
+<br />
+I'd never really go inside considering nothing of interest was in there, but the joy of being able to do that was enough for me.<br />
+<br />
+<br />
+And yes! Phreaking thread =D<br />
+<br />
+<br />
+If only i was allowed to tell you some of the things i found and things i have done with phone networks  lets put it this way there is ALWAYS a way into everything<br />
+<br />
+I'd be interested in hearing you out, if we could talk in private or something. I enjoy reading and listening to stories from the major phreaking era. If not, it's quite alright.</div>
+	</td>
+</tr>
+</table>
+<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="margin-bottom:2px">
+<tr>
+	<td class="thead">
+		<div class="normal" style="float:right">&nbsp;#<strong>20</strong>&nbsp;</div>
+		<div class="normal"><img class="inlineimg" src="../../images/statusicon/post_old.gif" alt="Old" border="0" /> 2008-11-19, 06:43</div>
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="padding:0px">
+		<table cellpadding="0" cellspacing="6" border="0" width="100%">
+		<tr>
+			<td nowrap="nowrap">
+				<div><a class="bigusername" href="../../community/members/u162862.html">warweed12</a> <img class="inlineimg" src="../../images/statusicon/user_offline.gif" alt="warweed12 is offline" border="0" /></div>
+				<div class="smallfont">Moderator</div>
+			</td>
+			<td width="100%">&nbsp;</td>
+			<td valign="top" nowrap="nowrap">
+				<div class="smallfont">directly over the center of th</div>
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td class="alt1" style="padding:6px">
+		<div class="smallfont"><img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" /> <strong>Re: Setting up  a caller id spoof in Asterisk open source PBX</strong></div>
+		<hr size="1" style="color:#E8EFF4" />
+		<div>msn : warweed12 @ hotmail dot com<br />
+<br />
+is the only real way to get ahold of me until such time as i complete writing my secure chat program</div>
+	</td>
+</tr>
+</table>
+</div>
+					</td>
+					<td width="13" background="../../images/t3/0rm.jpg"><img src="../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr valign="top">
+					<td width="13" background="../../images/t3/0cm.jpg"><img src="../../images/t3/0.gif"></td>
+					<td width="97%" background="../../images/t3/0cm.jpg">
+						<center>
+							&nbsp;<br>
+							<span class="copyright">To the best of our knowledge, the text on this page may be freely reproduced and distributed.</span>
+							<br>&nbsp;<br>
+							<img src="../../images/secure/secure2.gif" border="0"><br>
+							<a href="../../en/_about/cert.html" class="counter">totse.com certificate signatures</a>
+							<br>&nbsp;<br>
+						</center>
+					</td>
+					<td width="13" background="../../images/t3/0rm.jpg"><img src="../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr valign="bottom">
+					<td width="13" height="15" background="../../images/t3/3lm.jpg"><img src="../../images/t3/0.gif"></td>
+					<td width="96%" height="15" background="../../images/t3/3cm.jpg">
+						&nbsp;
+						<center><span class="navbotpipe"><span class="navbot"><a href="../../en/_about/index.html" class="navbot">About</a> | <a href="../../en/community/index.html" class="navbot">Community</a> | <a href="../../en/bad_ideas/index.html" class="navbot">Bad Ideas</a> | <a href="../../en/drugs/index.html" class="navbot">Drugs</a> | <a href="../../en/ego/index.html" class="navbot">Ego</a> | <a href="../../en/erotica_home/index.html" class="navbot">Erotica</a> | <a href="../../en/fringe/index.html" class="navbot">Fringe</a> | <a href="../../en/society/index.html" class="navbot">Society</a> | <a href="../../en/technology/index.html" class="navbot">Technology</a></span></span></center>
+					</td>
+					<td width="13" height="15" background="../../images/t3/3rm.jpg"><img src="../../images/t3/0.gif"></td>
+				</tr>
+
+				<tr>
+					<td width="13" height="17" background="../../images/t3/3lb.jpg"><img src="../../images/t3/0.gif"></td>
+					<td width="96%" height="17" background="../../images/t3/3cb.jpg"><img src="../../images/t3/0.gif"></td>
+					<td width="13" height="17" background="../../images/t3/3rb.jpg"><img src="../../images/t3/0.gif"></td>
+				</tr>
+
+			</table>
+		</td>
+
+		<!-- Right sidebar: Hot Topics (real random threads, JS-populated) + ad slots.
+		     min-width keeps this fluid 20% column from ever squeezing narrower
+		     than the fixed-170px table it holds, at any viewport width. -->
+		<td width="20%" align="center" valign="top" style="min-width:190px">
+
+			<table width="170" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="13" height="11" background="../../images/t3/1lt.jpg"><img src="../../images/t3/0.gif"></td>
+					<td width="144" height="11" background="../../images/t3/1ct.jpg"><img src="../../images/t3/0.gif"></td>
+					<td width="13" height="11" background="../../images/t3/1rt.jpg"><img src="../../images/t3/0.gif"></td>
+				</tr>
+				<tr>
+					<td width="13" background="../../images/t3/1lm.jpg"><img src="../../images/t3/0.gif"></td>
+					<td width="144" background="../../images/t3/1cm.jpg">
+						<center><span class="hottop">Hot Topics</span></center>
+						<table border="0" cellpadding="1" cellspacing="2" width="100%" id="hot-topics-list">
+							<!-- populated client-side with 10 random real threads from the archive -->
+						</table>
+					</td>
+					<td width="13" background="../../images/t3/1rm.jpg"><img src="../../images/t3/0.gif"></td>
+				</tr>
+				<tr>
+					<td width="13" height="17" background="../../images/t3/1lb.jpg"><img src="../../images/t3/0.gif"></td>
+					<td width="144" height="17" background="../../images/t3/1cb.jpg"><img src="../../images/t3/0.gif"></td>
+					<td width="13" height="17" background="../../images/t3/1rb.jpg"><img src="../../images/t3/0.gif"></td>
+				</tr>
+			</table>
+
+			&nbsp;
+
+			<!-- Recovered original banner images, rotated randomly client-side - nostalgia only, not live/tracking ads -->
+			<center>
+				<img id="banner-slot-mini-1" src="" alt="" border="1" style="display:none;">
+				<br>&nbsp;<br>
+				<img id="banner-slot-mini-2" src="" alt="" border="1" style="display:none;">
+			</center>
+
+		</td>
+	</tr>
+</table>
+
+<script src="../../assets/site.js"></script>
+
+</body>
+</html>
