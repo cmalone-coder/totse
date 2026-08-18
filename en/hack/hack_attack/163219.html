@@ -6,6 +6,7 @@
 <script>const SITE_PREFIX = "../../../";</script>
 <script src="../../../assets/banners.js"></script>
 <script src="../../../assets/hot_topics.js"></script>
+<script data-goatcounter="https://taipanenigma.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 
 <body background="../../../images/t3/bg.jpg" bgcolor="#2D3856" text="#000000" link="#FFFFFF" vlink="#FFFFFF" alink="#F5F5F5" leftmargin="5" topmargin="5">
@@ -253,407 +254,808 @@
 NOTICE: TO ALL CONCERNED Certain text files and messages contained on this site deal with activities and devices which would be in violation of various Federal, State, and local laws if actually carried out or constructed. The webmasters of this site do not advocate the breaking of any law. Our text files and message bases are for informational purposes only. We recommend that you contact your local law enforcement officials before undertaking any project based upon any information obtained from this or any other web site. We do not guarantee that any of the information contained on this system is correct, workable, or factual. We are not responsible for, nor do we assume any liability for, damages resulting from the use of any information on this site. 
 <hr></div>
 
-<ol>
-<li>Install Windows NT on a clean hard disk (use Fdisk to remove all
-partitions.) Make sure the version is the 128bit US version. Make sure you
-use NTFS on all partitions.</li>
-<li>Install the latest service pack (currently version 6a) 128bit version</li>
-<li>Implement the System Key and strong encryption of the password database by
-running C:\WINNT\SYSKEY.EXE. Also enforce use of a Floppy System Key for boot
-up if deemed necessary.</li>
-<li>Install and run Passprop.exe from the NT Resource Kit to enforce strong
-passwords and Administrator account lockout.</li>
-<li>Remove the Serial port devices under Control Panel | Ports</li>
-<li>Remove the LPT port under Control Panel | Devices</li>
-<li>Remove or disable the Parallel and Parport device drivers</li>
-<li>Implement a Hardware Power On password.</li>
-</ol>
-
-<p>Implement the following file level security:</p>
-<b><u>
-<p>FILE PERMISSIONS:</p>
-</u></b>
-
-<table CELLSPACING="0" BORDER="0" CELLPADDING="7" WIDTH="100%">
-  <tr>
-    <td WIDTH="50%" VALIGN="TOP">
-      <p><b><u>Directory</u></b>
-    </td>
-    <td WIDTH="50%" VALIGN="TOP">
-      <p><b><u>Permissions</u></b>
-    </td>
-  </tr>
-  <tr>
-    <td WIDTH="50%" VALIGN="TOP">
-      <p>\ (this is the root directory C:\)</td>
-    <td WIDTH="50%" VALIGN="TOP"><b>
-      <p>Administrators:</b> Full Control<br>
-      <b>System: </b>Full Control<br>
-      <b>Authenticated Users:</b> Read</td>
-  </tr>
-  <tr>
-    <td WIDTH="50%" VALIGN="TOP">&nbsp;</td>
-    <td WIDTH="50%" VALIGN="TOP">&nbsp;</td>
-  </tr>
-  <tr>
-    <td WIDTH="50%" VALIGN="TOP">
-      <p>\Boot.ini<br>
-      \Ntdetect.com<br>
-      \Ntldr<br>
-      </td>
-    <td WIDTH="50%" VALIGN="TOP"><b>
-      <p>Administrators:</b> Full Control<br>
-      <b>System:</b> Full Control<br>
-      <b>Authenticated Users:</b> Read</td>
-  </tr>
-  <tr>
-    <td WIDTH="50%" VALIGN="TOP">&nbsp;</td>
-    <td WIDTH="50%" VALIGN="TOP">&nbsp;</td>
-  </tr>
-  <tr>
-    <td WIDTH="50%" VALIGN="TOP">
-      <p>\Autoexec.bat<br>
-      \Config.sys</td>
-    <td WIDTH="50%" VALIGN="TOP"><b>
-      <p>Administrators:</b> Full Control<br>
-      <b>System:</b> Full Control<br>
-      <b>Power Users:</b> Change<br>
-      <b>Authenticated Users:</b> Read</td>
-  </tr>
-  <tr>
-    <td WIDTH="50%" VALIGN="TOP">
-      <p>\TEMP</td>
-    <td WIDTH="50%" VALIGN="TOP"><b>
-      <p>Administrators:</b> Full Control<br>
-      <b>Creator Owner: </b>Full Control<br>
-      <b>System:</b> Full Control<br>
-      <b>Power Users:</b> Change<br>
-      <b>Authenticated Users:</b> Special Directory Access-Read, Write, Execute,
-      Special File Access: None</td>
-  </tr>
-  <tr>
-    <td WIDTH="50%" VALIGN="TOP">&nbsp;</td>
-    <td WIDTH="50%" VALIGN="TOP">&nbsp;</td>
-  </tr>
-  <tr>
-    <td WIDTH="50%" VALIGN="TOP">
-      <p>\WINNT and all subdirectories</td>
-    <td WIDTH="50%" VALIGN="TOP"><b>
-      <p>Administrators:</b> Full Control<br>
-      <b>Creator Owner: </b>Full Control<br>
-      <b>Authenticated Users:</b> Read, Execute</td>
-  </tr>
-  <tr>
-    <td WIDTH="50%" VALIGN="TOP">&nbsp;</td>
-    <td WIDTH="50%" VALIGN="TOP">&nbsp;</td>
-  </tr>
-  <tr>
-    <td WIDTH="50%" VALIGN="TOP">
-      <p>\WINNT\Repair</td>
-    <td WIDTH="50%" VALIGN="TOP"><b>
-      <p>Administrators:</b> Full Control</td>
-  </tr>
-  <tr>
-    <td WIDTH="50%" VALIGN="TOP">&nbsp;</td>
-    <td WIDTH="50%" VALIGN="TOP">&nbsp;</td>
-  </tr>
-  <tr>
-    <td WIDTH="50%" VALIGN="TOP">
-      <p>\WINNT\System32\config</td>
-    <td WIDTH="50%" VALIGN="TOP"><b>
-      <p>Administrators:</b> Full Control<br>
-      <b>Creator Owner: </b>Full Control<b><br>
-      System:</b> Full Control<br>
-      <b>Power Users:</b> Change<br>
-      <b>Authenticated Users:</b> List</td>
-  </tr>
-  <tr>
-    <td WIDTH="50%" VALIGN="TOP">&nbsp;</td>
-    <td WIDTH="50%" VALIGN="TOP">&nbsp;</td>
-  </tr>
-  <tr>
-    <td WIDTH="50%" VALIGN="TOP">
-      <p>\WINNT\System32\spool</td>
-    <td WIDTH="50%" VALIGN="TOP"><b>
-      <p>Administrators:</b> Full Control<br>
-      <b>Creator Owner: </b>Full Control<br>
-      <b>System:</b> Full Control<br>
-      <b>Power Users:</b> Change<br>
-      <b>Authenticated Users:</b> Read</td>
-  </tr>
-  <tr>
-    <td WIDTH="50%" VALIGN="TOP">&nbsp;</td>
-    <td WIDTH="50%" VALIGN="TOP">&nbsp;</td>
-  </tr>
-  <tr>
-    <td WIDTH="50%" VALIGN="TOP">
-      <p>\WINNT\Cookies<br>
-      \WINNT\Forms<br>
-      \WINNT\History<br>
-      \WINNT\OCCache<br>
-      \WINNT\Profiles<br>
-      \WINNT\Sendto<br>
-      \WINNT\Temporary Internet Files<br>
-      \WINNT\Downloaded Program Files</td>
-    <td WIDTH="50%" VALIGN="TOP"><b>
-      <p>Administrators:</b> Full Control<br>
-      <b>Creator Owner:</b> Full Control<br>
-      <b>Authenticated Users:</b> Special Directory Access:<br>
-      -Read, Write, Execute, Special File Access: None<br>
-      <b>System:</b> Full Control</td>
-  </tr>
-</table>
-
-<b><u>
-<p>Services:</p>
-</u></b>
-
-<p>Disable or remove the following Services:</p>
-
-<ul>
-<li>Alerter</li>
-<li>Clipbook Server</li>
-<li>Computer Browser</li>
-<li>DHCP Client</li>
-<li>Directory Replicator</li>
-<li>Messenger</li>
-<li>Remote Procedure Call Locator</li>
-<li>SNMP Trap Service</li>
-<li>Spooler (Make sure print directly to printer is checked in the Printer
-Properties box)</li>
-<li>TCP/IP NetBIOS helper</li>
-<li>Telephony Service</li>
-</ul>
-
-<b><u>
-<p>Protocols:</p>
-</u></b>
-
-<ul>
-<li>Make Sure only TCP/IP is loaded.</li>
-<li>Under the TCP/IP Properties Advanced setting, Make sure security is enabled
-and disable all unnecessary ports.</li>
-<li>Disable the NetBIOS Interface, Server and Workstation services from the WINS
-client in the bindings.</li>
-</ul>
-
-<b><u>
-<p>Policies:</p>
-</u></b>
-<p>Under User Manager | Policies | Accounts</p>
-<ol>
-  <li>Rename the Administrator and lock it out.</li>
-  <li>Create a new account with full administrative privileges.</li>
-  <li>Utilize the following account restrictions:</li>
-</ol>
-<blockquote>
-  <blockquote>
-    <ul>
-      <li>Password expires in 30 days</li>
-      <li>Minimum password length 10 characters</li>
-      <li>Account lockout after 5 attempts.</li>
-      <li>Reset count after 30 minutes.</li>
-      <li>Account lockout forever</li>
-      <li>User must login to change password</li>
-      <li>Allow changes in 1 day</li>
-      <li>Remember last 5 passwords</li>
-    </ul>
-    </blockquote>
-  </blockquote>
-  <p>Under User Manager | Policies | User Rights:</p>
-  <ol>
-    <li>Remove all user access to the computer from the Network</li>
-    <li>Only Authenticated Users can bypass transverse checking</li>
-    <li>Remove all user access to Force Shutdown from a remote system</li>
-    <li>Logon Locally is restricted to Authenticated Users and Administrators
-    (remove all other access)</li>
-    <li>Shutdown the system is restricted to Authenticated Users and
-    Administrators</li>
-</ol>
-
-<p>Under User Manager | Policies | Audit</p>
-<p>Audit the following events:</p>
-
-<ul>
-<li>Logon and Logoff Success and Failure</li>
-<li>File and Object access Failure</li>
-<li>User and group Management Success and Failure</li>
-<li>Security policy Changes Success and Failure</li>
-<li>Restart, Shutdown and System Failure</li>
-</ul>
-
-<b><u>
-<p>The Registry:</p>
-</u>
-<p>Display legal Notices at logon by editing the following keys:</p>
-</b>
-<p>HKEY_LOCAL_MACHINE\Software\Microsoft\WindowsNT\CurrentVersion\Winlogon</p>
-<ul>
-<li>Key name: LegalNoticeCaption</li>
-<li>Data Type: REG_SZ</li>
-<li>Value: Legal Notice!</li>
-</ul>
-
-<p>HKEY_LOCAL_MACHINE\Software\Microsoft\WindowsNT\CurrentVersion\Winlogon</p>
-<ul>
-<li>Key name: LegalNoticeText</li>
-<li>Data Type: REG_SZ</li>
-<li>Value: This system is for authorized users only! Unauthorized use is subject
-to prosecution. All activity on this machine is being logged.</li>
-</ul>
-
-<b>
-<p>Hide the name of the last user to logon:</p>
-</b>
-<p>HKEY_LOCAL_MACHINE\Software\Microsoft\WindowsNT\CurrentVersion\Winlogon</p>
-<ul>
-<li>Key name: DontDisplayLastUserName</li>
-<li>Data Type: REG_SZ</li>
-<li>Value: 1</li>
-</ul>
-
-<b>
-<p>Restrict Anonymous Access to the Registry</p>
-</b>
-<p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\LSA</p>
-<ul>
-<li>Key Name: RestrictAnonymous</li>
-<li>Data Type: REG_DWORD</li>
-<li>Value: 1</li>
-</ul>
-
-<p>Also create the following key:</p>
-<p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\SecurePipeServers\winreg</p>
-<b>
-<p>Enable SMB signing</p>
-</b>
-<p>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Rdr\Parameters</p>
-<p>Add the following two keys:</p>
-
-<ul>
-<li>Key Name: EnableSecuritySignature</li>
-<li>Data Type: REG_DWORD</li>
-<li>Value: 1</li>
-</ul>
-
-<ul>
-<li>Key Name: RequireSecuritySignature</li>
-<li>Data Type: REG_DWORD</li>
-<li>Value: 1</li>
-</ul>
-
-<b>
-<p>Hide the machine in Network Neighborhood</p>
-</b>
-<p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters</p>
-<ul>
-<li>Key Name: Hidden</li>
-<li>Data Type: REG_DWORD</li>
-<li>Value: 1</li>
-</ul>
-
-<b>
-<p>Disable Default Admin Shares </b>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters</p>
-<ul>
-<li>Key Name: EnableSharedNetDrives</li>
-<li>Data Type: REG_DWORD</li>
-<li>Value: 0</li>
-</ul>
-
-<p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters</p>
-<ul>
-<li>Key Name: AutoAdminWKS</li>
-<li>Data Type: REG_DWORD</li>
-<li>Value: 0</li>
-</ul>
-
-<b>
-<p>Disable LanMan Password Hash support</p>
-</b>
-<p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa</p>
-<ul>
-<li>Key Name: LMCompatibilityLevel</li>
-<li>Data Type: REG_DWORD</li>
-<li>Value: 2</li>
-</ul>
-
-<b>
-<p>Erase Pagefile on Clean Shutdown</p>
-</b>
-<p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory
-Management</p>
-<ul>
-<li>Key Name: ClearPageFileAtShutdown</li>
-<li>Data Type: REG_DWORD</li>
-<li>Value: 1</li>
-</ul>
-<b>
-<p>Allocate Floppies and CD-ROMs</p>
-</b>
-<p>Create the following keys:</p>
-<p>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\Winlogon</p>
-<ul>
-<li>Key Name: AllocateFloppies</li>
-<li>Data Type: REG_SZ</li>
-<li>Value: 1</li>
-</ul>
-
-<p>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\Winlogon</p>
-<ul>
-<li>Key Name: AllocateCDRoms</li>
-<li>Data Type: REG_SZ</li>
-<li>Value: 1</li>
-</ul>
-
-<b>
-<p>Disable AutoRun on CDs</p>
-</b>
-<p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Cdrom</p>
-<ul>
-<li>Key Name: Autorun</li>
-<li>Data Type: REG_DWORD</li>
-<li>Value: 0</li>
-</ul>
-
-<b>
-<p>Enable Full Privilege Auditing</p>
-</b>
-<p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa</p>
-<ul>
-<li>Key Name: FullPrivilegeAuditing</li>
-<li>Data Type: REG_BINARY</li>
-<li>Value: 1</li>
-</ul>
-
-<b>
-<p>Restrict Event Log Access</p>
-</b>
-<p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\Application</p>
-<ul>
-<li>Key Name: RestrictGuestAccess</li>
-<li>Data Type: REG_DWORD</li>
-<li>Value: 1</li>
-</ul>
-
-<p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\Security</p>
-<ul>
-<li>Key Name: RestrictGuestAccess</li>
-<li>Data Type: REG_DWORD</li>
-<li>Value: 1</li>
-</ul>
-
-<p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\System</p>
-<ul>
-<li>Key Name: RestrictGuestAccess</li>
-<li>Data Type: REG_DWORD</li>
-<li>Value: 1</li>
-</ul>
-
-<b><u>
-<p>Double Checking:</p>
-<ol>
-</u></b>
-<li>Run the C2 Level Configuration tool from the Resource Kit and implement all recommendations except removing Network Services, Files System security and Halt on Audit Failure. Make sure OS2 and Posix subsystems are removed.</li>
+<ol>
+
+<li>Install Windows NT on a clean hard disk (use Fdisk to remove all
+
+partitions.) Make sure the version is the 128bit US version. Make sure you
+
+use NTFS on all partitions.</li>
+
+<li>Install the latest service pack (currently version 6a) 128bit version</li>
+
+<li>Implement the System Key and strong encryption of the password database by
+
+running C:\WINNT\SYSKEY.EXE. Also enforce use of a Floppy System Key for boot
+
+up if deemed necessary.</li>
+
+<li>Install and run Passprop.exe from the NT Resource Kit to enforce strong
+
+passwords and Administrator account lockout.</li>
+
+<li>Remove the Serial port devices under Control Panel | Ports</li>
+
+<li>Remove the LPT port under Control Panel | Devices</li>
+
+<li>Remove or disable the Parallel and Parport device drivers</li>
+
+<li>Implement a Hardware Power On password.</li>
+
+</ol>
+
+
+
+<p>Implement the following file level security:</p>
+
+<b><u>
+
+<p>FILE PERMISSIONS:</p>
+
+</u></b>
+
+
+
+<table CELLSPACING="0" BORDER="0" CELLPADDING="7" WIDTH="100%">
+
+  <tr>
+
+    <td WIDTH="50%" VALIGN="TOP">
+
+      <p><b><u>Directory</u></b>
+
+    </td>
+
+    <td WIDTH="50%" VALIGN="TOP">
+
+      <p><b><u>Permissions</u></b>
+
+    </td>
+
+  </tr>
+
+  <tr>
+
+    <td WIDTH="50%" VALIGN="TOP">
+
+      <p>\ (this is the root directory C:\)</td>
+
+    <td WIDTH="50%" VALIGN="TOP"><b>
+
+      <p>Administrators:</b> Full Control<br>
+
+      <b>System: </b>Full Control<br>
+
+      <b>Authenticated Users:</b> Read</td>
+
+  </tr>
+
+  <tr>
+
+    <td WIDTH="50%" VALIGN="TOP">&nbsp;</td>
+
+    <td WIDTH="50%" VALIGN="TOP">&nbsp;</td>
+
+  </tr>
+
+  <tr>
+
+    <td WIDTH="50%" VALIGN="TOP">
+
+      <p>\Boot.ini<br>
+
+      \Ntdetect.com<br>
+
+      \Ntldr<br>
+
+      </td>
+
+    <td WIDTH="50%" VALIGN="TOP"><b>
+
+      <p>Administrators:</b> Full Control<br>
+
+      <b>System:</b> Full Control<br>
+
+      <b>Authenticated Users:</b> Read</td>
+
+  </tr>
+
+  <tr>
+
+    <td WIDTH="50%" VALIGN="TOP">&nbsp;</td>
+
+    <td WIDTH="50%" VALIGN="TOP">&nbsp;</td>
+
+  </tr>
+
+  <tr>
+
+    <td WIDTH="50%" VALIGN="TOP">
+
+      <p>\Autoexec.bat<br>
+
+      \Config.sys</td>
+
+    <td WIDTH="50%" VALIGN="TOP"><b>
+
+      <p>Administrators:</b> Full Control<br>
+
+      <b>System:</b> Full Control<br>
+
+      <b>Power Users:</b> Change<br>
+
+      <b>Authenticated Users:</b> Read</td>
+
+  </tr>
+
+  <tr>
+
+    <td WIDTH="50%" VALIGN="TOP">
+
+      <p>\TEMP</td>
+
+    <td WIDTH="50%" VALIGN="TOP"><b>
+
+      <p>Administrators:</b> Full Control<br>
+
+      <b>Creator Owner: </b>Full Control<br>
+
+      <b>System:</b> Full Control<br>
+
+      <b>Power Users:</b> Change<br>
+
+      <b>Authenticated Users:</b> Special Directory Access-Read, Write, Execute,
+
+      Special File Access: None</td>
+
+  </tr>
+
+  <tr>
+
+    <td WIDTH="50%" VALIGN="TOP">&nbsp;</td>
+
+    <td WIDTH="50%" VALIGN="TOP">&nbsp;</td>
+
+  </tr>
+
+  <tr>
+
+    <td WIDTH="50%" VALIGN="TOP">
+
+      <p>\WINNT and all subdirectories</td>
+
+    <td WIDTH="50%" VALIGN="TOP"><b>
+
+      <p>Administrators:</b> Full Control<br>
+
+      <b>Creator Owner: </b>Full Control<br>
+
+      <b>Authenticated Users:</b> Read, Execute</td>
+
+  </tr>
+
+  <tr>
+
+    <td WIDTH="50%" VALIGN="TOP">&nbsp;</td>
+
+    <td WIDTH="50%" VALIGN="TOP">&nbsp;</td>
+
+  </tr>
+
+  <tr>
+
+    <td WIDTH="50%" VALIGN="TOP">
+
+      <p>\WINNT\Repair</td>
+
+    <td WIDTH="50%" VALIGN="TOP"><b>
+
+      <p>Administrators:</b> Full Control</td>
+
+  </tr>
+
+  <tr>
+
+    <td WIDTH="50%" VALIGN="TOP">&nbsp;</td>
+
+    <td WIDTH="50%" VALIGN="TOP">&nbsp;</td>
+
+  </tr>
+
+  <tr>
+
+    <td WIDTH="50%" VALIGN="TOP">
+
+      <p>\WINNT\System32\config</td>
+
+    <td WIDTH="50%" VALIGN="TOP"><b>
+
+      <p>Administrators:</b> Full Control<br>
+
+      <b>Creator Owner: </b>Full Control<b><br>
+
+      System:</b> Full Control<br>
+
+      <b>Power Users:</b> Change<br>
+
+      <b>Authenticated Users:</b> List</td>
+
+  </tr>
+
+  <tr>
+
+    <td WIDTH="50%" VALIGN="TOP">&nbsp;</td>
+
+    <td WIDTH="50%" VALIGN="TOP">&nbsp;</td>
+
+  </tr>
+
+  <tr>
+
+    <td WIDTH="50%" VALIGN="TOP">
+
+      <p>\WINNT\System32\spool</td>
+
+    <td WIDTH="50%" VALIGN="TOP"><b>
+
+      <p>Administrators:</b> Full Control<br>
+
+      <b>Creator Owner: </b>Full Control<br>
+
+      <b>System:</b> Full Control<br>
+
+      <b>Power Users:</b> Change<br>
+
+      <b>Authenticated Users:</b> Read</td>
+
+  </tr>
+
+  <tr>
+
+    <td WIDTH="50%" VALIGN="TOP">&nbsp;</td>
+
+    <td WIDTH="50%" VALIGN="TOP">&nbsp;</td>
+
+  </tr>
+
+  <tr>
+
+    <td WIDTH="50%" VALIGN="TOP">
+
+      <p>\WINNT\Cookies<br>
+
+      \WINNT\Forms<br>
+
+      \WINNT\History<br>
+
+      \WINNT\OCCache<br>
+
+      \WINNT\Profiles<br>
+
+      \WINNT\Sendto<br>
+
+      \WINNT\Temporary Internet Files<br>
+
+      \WINNT\Downloaded Program Files</td>
+
+    <td WIDTH="50%" VALIGN="TOP"><b>
+
+      <p>Administrators:</b> Full Control<br>
+
+      <b>Creator Owner:</b> Full Control<br>
+
+      <b>Authenticated Users:</b> Special Directory Access:<br>
+
+      -Read, Write, Execute, Special File Access: None<br>
+
+      <b>System:</b> Full Control</td>
+
+  </tr>
+
+</table>
+
+
+
+<b><u>
+
+<p>Services:</p>
+
+</u></b>
+
+
+
+<p>Disable or remove the following Services:</p>
+
+
+
+<ul>
+
+<li>Alerter</li>
+
+<li>Clipbook Server</li>
+
+<li>Computer Browser</li>
+
+<li>DHCP Client</li>
+
+<li>Directory Replicator</li>
+
+<li>Messenger</li>
+
+<li>Remote Procedure Call Locator</li>
+
+<li>SNMP Trap Service</li>
+
+<li>Spooler (Make sure print directly to printer is checked in the Printer
+
+Properties box)</li>
+
+<li>TCP/IP NetBIOS helper</li>
+
+<li>Telephony Service</li>
+
+</ul>
+
+
+
+<b><u>
+
+<p>Protocols:</p>
+
+</u></b>
+
+
+
+<ul>
+
+<li>Make Sure only TCP/IP is loaded.</li>
+
+<li>Under the TCP/IP Properties Advanced setting, Make sure security is enabled
+
+and disable all unnecessary ports.</li>
+
+<li>Disable the NetBIOS Interface, Server and Workstation services from the WINS
+
+client in the bindings.</li>
+
+</ul>
+
+
+
+<b><u>
+
+<p>Policies:</p>
+
+</u></b>
+
+<p>Under User Manager | Policies | Accounts</p>
+
+<ol>
+
+  <li>Rename the Administrator and lock it out.</li>
+
+  <li>Create a new account with full administrative privileges.</li>
+
+  <li>Utilize the following account restrictions:</li>
+
+</ol>
+
+<blockquote>
+
+  <blockquote>
+
+    <ul>
+
+      <li>Password expires in 30 days</li>
+
+      <li>Minimum password length 10 characters</li>
+
+      <li>Account lockout after 5 attempts.</li>
+
+      <li>Reset count after 30 minutes.</li>
+
+      <li>Account lockout forever</li>
+
+      <li>User must login to change password</li>
+
+      <li>Allow changes in 1 day</li>
+
+      <li>Remember last 5 passwords</li>
+
+    </ul>
+
+    </blockquote>
+
+  </blockquote>
+
+  <p>Under User Manager | Policies | User Rights:</p>
+
+  <ol>
+
+    <li>Remove all user access to the computer from the Network</li>
+
+    <li>Only Authenticated Users can bypass transverse checking</li>
+
+    <li>Remove all user access to Force Shutdown from a remote system</li>
+
+    <li>Logon Locally is restricted to Authenticated Users and Administrators
+
+    (remove all other access)</li>
+
+    <li>Shutdown the system is restricted to Authenticated Users and
+
+    Administrators</li>
+
+</ol>
+
+
+
+<p>Under User Manager | Policies | Audit</p>
+
+<p>Audit the following events:</p>
+
+
+
+<ul>
+
+<li>Logon and Logoff Success and Failure</li>
+
+<li>File and Object access Failure</li>
+
+<li>User and group Management Success and Failure</li>
+
+<li>Security policy Changes Success and Failure</li>
+
+<li>Restart, Shutdown and System Failure</li>
+
+</ul>
+
+
+
+<b><u>
+
+<p>The Registry:</p>
+
+</u>
+
+<p>Display legal Notices at logon by editing the following keys:</p>
+
+</b>
+
+<p>HKEY_LOCAL_MACHINE\Software\Microsoft\WindowsNT\CurrentVersion\Winlogon</p>
+
+<ul>
+
+<li>Key name: LegalNoticeCaption</li>
+
+<li>Data Type: REG_SZ</li>
+
+<li>Value: Legal Notice!</li>
+
+</ul>
+
+
+
+<p>HKEY_LOCAL_MACHINE\Software\Microsoft\WindowsNT\CurrentVersion\Winlogon</p>
+
+<ul>
+
+<li>Key name: LegalNoticeText</li>
+
+<li>Data Type: REG_SZ</li>
+
+<li>Value: This system is for authorized users only! Unauthorized use is subject
+
+to prosecution. All activity on this machine is being logged.</li>
+
+</ul>
+
+
+
+<b>
+
+<p>Hide the name of the last user to logon:</p>
+
+</b>
+
+<p>HKEY_LOCAL_MACHINE\Software\Microsoft\WindowsNT\CurrentVersion\Winlogon</p>
+
+<ul>
+
+<li>Key name: DontDisplayLastUserName</li>
+
+<li>Data Type: REG_SZ</li>
+
+<li>Value: 1</li>
+
+</ul>
+
+
+
+<b>
+
+<p>Restrict Anonymous Access to the Registry</p>
+
+</b>
+
+<p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\LSA</p>
+
+<ul>
+
+<li>Key Name: RestrictAnonymous</li>
+
+<li>Data Type: REG_DWORD</li>
+
+<li>Value: 1</li>
+
+</ul>
+
+
+
+<p>Also create the following key:</p>
+
+<p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\SecurePipeServers\winreg</p>
+
+<b>
+
+<p>Enable SMB signing</p>
+
+</b>
+
+<p>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Rdr\Parameters</p>
+
+<p>Add the following two keys:</p>
+
+
+
+<ul>
+
+<li>Key Name: EnableSecuritySignature</li>
+
+<li>Data Type: REG_DWORD</li>
+
+<li>Value: 1</li>
+
+</ul>
+
+
+
+<ul>
+
+<li>Key Name: RequireSecuritySignature</li>
+
+<li>Data Type: REG_DWORD</li>
+
+<li>Value: 1</li>
+
+</ul>
+
+
+
+<b>
+
+<p>Hide the machine in Network Neighborhood</p>
+
+</b>
+
+<p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters</p>
+
+<ul>
+
+<li>Key Name: Hidden</li>
+
+<li>Data Type: REG_DWORD</li>
+
+<li>Value: 1</li>
+
+</ul>
+
+
+
+<b>
+
+<p>Disable Default Admin Shares </b>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters</p>
+
+<ul>
+
+<li>Key Name: EnableSharedNetDrives</li>
+
+<li>Data Type: REG_DWORD</li>
+
+<li>Value: 0</li>
+
+</ul>
+
+
+
+<p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters</p>
+
+<ul>
+
+<li>Key Name: AutoAdminWKS</li>
+
+<li>Data Type: REG_DWORD</li>
+
+<li>Value: 0</li>
+
+</ul>
+
+
+
+<b>
+
+<p>Disable LanMan Password Hash support</p>
+
+</b>
+
+<p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa</p>
+
+<ul>
+
+<li>Key Name: LMCompatibilityLevel</li>
+
+<li>Data Type: REG_DWORD</li>
+
+<li>Value: 2</li>
+
+</ul>
+
+
+
+<b>
+
+<p>Erase Pagefile on Clean Shutdown</p>
+
+</b>
+
+<p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory
+
+Management</p>
+
+<ul>
+
+<li>Key Name: ClearPageFileAtShutdown</li>
+
+<li>Data Type: REG_DWORD</li>
+
+<li>Value: 1</li>
+
+</ul>
+
+<b>
+
+<p>Allocate Floppies and CD-ROMs</p>
+
+</b>
+
+<p>Create the following keys:</p>
+
+<p>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\Winlogon</p>
+
+<ul>
+
+<li>Key Name: AllocateFloppies</li>
+
+<li>Data Type: REG_SZ</li>
+
+<li>Value: 1</li>
+
+</ul>
+
+
+
+<p>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\Winlogon</p>
+
+<ul>
+
+<li>Key Name: AllocateCDRoms</li>
+
+<li>Data Type: REG_SZ</li>
+
+<li>Value: 1</li>
+
+</ul>
+
+
+
+<b>
+
+<p>Disable AutoRun on CDs</p>
+
+</b>
+
+<p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Cdrom</p>
+
+<ul>
+
+<li>Key Name: Autorun</li>
+
+<li>Data Type: REG_DWORD</li>
+
+<li>Value: 0</li>
+
+</ul>
+
+
+
+<b>
+
+<p>Enable Full Privilege Auditing</p>
+
+</b>
+
+<p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa</p>
+
+<ul>
+
+<li>Key Name: FullPrivilegeAuditing</li>
+
+<li>Data Type: REG_BINARY</li>
+
+<li>Value: 1</li>
+
+</ul>
+
+
+
+<b>
+
+<p>Restrict Event Log Access</p>
+
+</b>
+
+<p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\Application</p>
+
+<ul>
+
+<li>Key Name: RestrictGuestAccess</li>
+
+<li>Data Type: REG_DWORD</li>
+
+<li>Value: 1</li>
+
+</ul>
+
+
+
+<p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\Security</p>
+
+<ul>
+
+<li>Key Name: RestrictGuestAccess</li>
+
+<li>Data Type: REG_DWORD</li>
+
+<li>Value: 1</li>
+
+</ul>
+
+
+
+<p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\System</p>
+
+<ul>
+
+<li>Key Name: RestrictGuestAccess</li>
+
+<li>Data Type: REG_DWORD</li>
+
+<li>Value: 1</li>
+
+</ul>
+
+
+
+<b><u>
+
+<p>Double Checking:</p>
+
+<ol>
+
+</u></b>
+
+<li>Run the C2 Level Configuration tool from the Resource Kit and implement all recommendations except removing Network Services, Files System security and Halt on Audit Failure. Make sure OS2 and Posix subsystems are removed.</li>
+
 </ol>
 					</td>
 					<td width="13" background="../../../images/t3/0rm.jpg"><img src="../../../images/t3/0.gif"></td>
