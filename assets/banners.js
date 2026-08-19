@@ -5,6 +5,15 @@ const RECOVERED_BANNERS = [
   "images/banners/10522701.png",
   "images/banners/468x60_general.swf",
   "images/banners/6c2bca15d2f5c0475a555c6c6ec0c8252db4d5ea.gif",
+  "images/banners/adc_abuse_ban2.gif",
+  "images/banners/adc_ddp_ban1.gif",
+  "images/banners/adc_dum_ban1.gif",
+  "images/banners/adc_dv_ban1.gif",
+  "images/banners/adc_father_ban1.gif",
+  "images/banners/adc_father_ban2.gif",
+  "images/banners/adc_math_ban2.gif",
+  "images/banners/adc_organ_ban1.gif",
+  "images/banners/adc_uncf_ban1.gif",
   "images/banners/bad_craziness.gif",
   "images/banners/boobs4bourbonst.jpg",
   "images/banners/bovine13.gif",
@@ -52,6 +61,7 @@ const RECOVERED_BANNERS = [
   "images/banners/t_shirt_hell_11.gif",
   "images/banners/totsead1-.gif",
   "images/banners/totsead1.gif",
+  "images/banners/totsead1_1999.gif",
   "images/banners/totsead2.gif",
   "images/banners/totsead3.gif",
   "images/banners/totsead7.gif",
@@ -61,6 +71,7 @@ const RECOVERED_BANNERS = [
   "images/banners/vmc_satellite_06.gif"
 ];
 const RECOVERED_MINIBANNERS = [
+  "images/minibanners/120dvd.gif",
   "images/minibanners/70easier151.gif",
   "images/minibanners/adbrite-logo.gif",
   "images/minibanners/addict_in_the_family.jpg",
