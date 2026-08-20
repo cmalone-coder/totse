@@ -257,7 +257,6 @@ const RECOVERED_MINIBANNERS = [
   "images/minibanners/ratbush-3.gif",
   "images/minibanners/real_reform_ny.gif",
   "images/minibanners/Reload2_a.jpg",
-  "images/minibanners/sex_positions_mini_01.gif",
   "images/minibanners/the_alliance_ct.jpg",
   "images/minibanners/throat.jpg",
   "images/minibanners/tshirthell_affiliates.gif",
