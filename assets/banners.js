@@ -59,7 +59,6 @@ const RECOVERED_BANNERS = [
   "images/banners/helmy_rtv_04.jpg",
   "images/banners/helmy_voyeur_01.jpg",
   "images/banners/helmy_voyeur_02.jpg",
-  "images/banners/helmy_voyeur_03.jpg",
   "images/banners/hentaiflood01.gif",
   "images/banners/hentaiflood02.gif",
   "images/banners/ibogaine.jpg",
