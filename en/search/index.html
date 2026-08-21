@@ -214,7 +214,7 @@
 							<span class="navtop">register</span> |
 							<a href="../../community/index.html" class="navtop">bbs</a> |
 							<a href="../../en/search/index.html" class="navtop">search</a> |
-							<a href="../../totse.rss" class="navtop">rss</a> |
+							<span class="navtop">rss</span> |
 							<a href="../../en/_faq/totse_faq.html" class="navtop">faq</a> |
 							<a href="../../en/_about/index.html" class="navtop">about</a>
 						</span>
@@ -236,84 +236,24 @@
 				<tr valign="top">
 					<td width="13" background="../../images/t3/0cm.jpg"><img src="../../images/t3/0.gif"></td>
 					<td width="97%" height="640" background="../../images/t3/0cm.jpg" style="padding-top:6px">
-<h1>Search</h1>
-
-
-<p><font face="Verdana, Arial, Helvetica" size=2>
-
-Looking for specific information on totse.com? Use our search engine to find
-
-what you're looking for!
-
-</font></p>
-
-
-
-<form method="post" action="/bin/search/htsearch.cgi">
-
-<font face="Verdana, Arial, Helvetica" size=3>
-
-<input type="hidden" name="config" value="htdig">
-
-<input type="hidden" name="restrict" value="">
-
-<input type="hidden" name="exclude" value="">
-
-<br>
-
-Search:
-
-<input type="text" size="30" name="words" value="">
-
-</font>
-
-<font face="Verdana, Arial, Helvetica"  size=2>
-
-<input type="submit" value="Search">
-
-</font>
-
-<br>
-
-<font face="Verdana, Arial, Helvetica"  size=1>
-
-Options - Match: <select name="method">
-
-<option value="and">All
-
-<option value="or">Any
-
-<option value="boolean">Boolean
-
-</select>
-
-Format: <select name="format">
-
-<option value="builtin-long">Long
-
-<option value="builtin-short">Short
-
-</select>
-
-Sort by: <select name="sort">
-
-<option value="score">Score
-
-<option value="time">Time
-
-<option value="title">Title
-
-<option value="revscore">Reverse Score
-
-<option value="revtime">Reverse Time
-
-<option value="revtitle">Reverse Title
-
-</select>
-
-</font>
-
-</form>
+<h2 class="pagetitle">Search</h2>
+<link href="../../pagefind/threads/pagefind-ui.css" rel="stylesheet">
+<script src="../../pagefind/threads/pagefind-ui.js"></script>
+<div id="search"></div>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    new PagefindUI({
+        element: "#search",
+        bundlePath: "/pagefind/threads/",
+        mergeIndex: [
+            { bundlePath: "/pagefind/forums/" },
+            { bundlePath: "/pagefind/members/" },
+            { bundlePath: "/pagefind/en/" }
+        ],
+        showSubResults: true
+    });
+});
+</script>
 					</td>
 					<td width="13" background="../../images/t3/0rm.jpg"><img src="../../images/t3/0.gif"></td>
 				</tr>
