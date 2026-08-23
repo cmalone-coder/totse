@@ -550,9 +550,19 @@ I am sorry.  My electronics skillz are teh phail.</div>
 	<td class="alt1" style="padding:6px">
 		<div class="smallfont"><img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" /> <strong>Re: Nonvolatile relay memory schematic</strong></div>
 		<hr size="1" style="color:#E8EFF4" />
-		<div>Okay, I see lots of switches and capacitors.  Now, erm...what does it do?  <br />
+		<div><div style="margin:20px; margin-top:5px; ">
+	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
+	<table cellpadding="6" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td class="alt2" style="border:1px inset">
+				<div>Originally Posted by <strong>Sentinel</strong></div>
+				<div style="font-style:italic">Okay, I see lots of switches and capacitors.  Now, erm...what does it do?  <br />
 <br />
-I am sorry.  My electronics skillz are teh phail.<br />
+I am sorry.  My electronics skillz are teh phail.</div>
+		</td>
+	</tr>
+	</table>
+</div><br />
 <br />
 It's a method of data storage. The basis of RAM, in other words. Solid-state RAM uses solid-state flip-flops to keep the data state, and all of the data storage schemes I've seen for relay logic work on a similar basis. I thought this was an extremely wasteful method of data storage so I devised a method of semi-permanent memory using capacitors that will not lose their state when the memory bank is powered down.<br />
 <br />
@@ -626,13 +636,23 @@ If none of this makes sense, let me know and I'll try to draw something up.</div
 	<td class="alt1" style="padding:6px">
 		<div class="smallfont"><img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" /> <strong>Re: Nonvolatile relay memory schematic</strong></div>
 		<hr size="1" style="color:#E8EFF4" />
-		<div>Your schematic is rather confusing, but I think I can help.  First, you want it to be non-volatile.  This is simply impossible with regular relays.  A big capacitor can keep the coil energized for a fer seconds, or even minutes, but once it drains you lose data.  What you need are latching relays.<br />
+		<div><div style="margin:20px; margin-top:5px; ">
+	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
+	<table cellpadding="6" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td class="alt2" style="border:1px inset">
+				<div>Originally Posted by <strong>Spatula Tzar</strong></div>
+				<div style="font-style:italic">Your schematic is rather confusing, but I think I can help.  First, you want it to be non-volatile.  This is simply impossible with regular relays.  A big capacitor can keep the coil energized for a fer seconds, or even minutes, but once it drains you lose data.  What you need are latching relays.<br />
 <br />
 I'm not really sure how your arrays are set up either.  Why not use a regular matrix of address and data lines?  It's very efficient, requiring as few as n+2sqrt(n) relays.<br />
 <br />
 I suggest you model the whole thing like an array of toggle flip flops.  It's probably not easiest to have every bit toggle instead of set either high or low, so you can use an extra SPDT contact on the relay to act as a polarity switch, causing it to only toggle if the current state differs from the desired.<br />
 <br />
-If none of this makes sense, let me know and I'll try to draw something up.<br />
+If none of this makes sense, let me know and I'll try to draw something up.</div>
+		</td>
+	</tr>
+	</table>
+</div><br />
 <br />
 Toggle flip flips take two relays per bit. I'm already looking at the PC counter and it uses toggle flip flops.<br />
 <br />
@@ -739,9 +759,19 @@ Still looks neat though.  It might be easiest to model it directly from a DRAM s
 	<td class="alt1" style="padding:6px">
 		<div class="smallfont"><img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" /> <strong>Re: Nonvolatile relay memory schematic</strong></div>
 		<hr size="1" style="color:#E8EFF4" />
-		<div>So you're using capacitors for the data storage, not relays.  It looks like DRAM to me.  Not a bad thing, except it's definitely volatile.  And refreshing will be annoying.  And once you read a bit, you lose it.<br />
+		<div><div style="margin:20px; margin-top:5px; ">
+	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
+	<table cellpadding="6" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td class="alt2" style="border:1px inset">
+				<div>Originally Posted by <strong>Spatula Tzar</strong></div>
+				<div style="font-style:italic">So you're using capacitors for the data storage, not relays.  It looks like DRAM to me.  Not a bad thing, except it's definitely volatile.  And refreshing will be annoying.  And once you read a bit, you lose it.<br />
 <br />
-Still looks neat though.  It might be easiest to model it directly from a DRAM schematic.  It would be fun to build a big board full of tiny SMD capacitors, and have it plug directly into a EEPROM DIP socket.  You could add extra memory to your 8086.<br />
+Still looks neat though.  It might be easiest to model it directly from a DRAM schematic.  It would be fun to build a big board full of tiny SMD capacitors, and have it plug directly into a EEPROM DIP socket.  You could add extra memory to your 8086.</div>
+		</td>
+	</tr>
+	</table>
+</div><br />
 <br />
 It's not any more volatile than a capacitor discharging into the open air. The grounds are the only thing that gets switched. Like I said, the design will call for a capacitor than when shorted through a relay coil, it will be able to pull the contact in far enough so that it can conduct. When the contacts meet, 12V will then be sent into the relay coil which will keep the relay in its closed position until the read cycle is terminate. Meanwhile, since the capacitor contained a logic 1 value (12V), the 12 source keeping the relay going will also recharge the capacitor.<br />
 <br />
@@ -811,11 +841,21 @@ Using memristors instead of capacitors would be far more efficient.</div>
 	<td class="alt1" style="padding:6px">
 		<div class="smallfont"><img class="inlineimg" src="../../images/icons/icon1.gif" alt="Default" border="0" /> <strong>Re: Nonvolatile relay memory schematic</strong></div>
 		<hr size="1" style="color:#E8EFF4" />
-		<div>The first thing that comes to my mind is that physical process are too slow and too unreliable for practical memory use. Also size would be an issue, for 1 GB of memory you would need to hold 10 billion of these individual cap/relay circuits on a chip. I don't even know if relay's can be integrated on a chip that small, plus external magnetic forces would wreak havoc on them since the force of the magnetic field used to control those tiny relays would be incredibly small.<br />
+		<div><div style="margin:20px; margin-top:5px; ">
+	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
+	<table cellpadding="6" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td class="alt2" style="border:1px inset">
+				<div>Originally Posted by <strong>Quageschi</strong></div>
+				<div style="font-style:italic">The first thing that comes to my mind is that physical process are too slow and too unreliable for practical memory use. Also size would be an issue, for 1 GB of memory you would need to hold 10 billion of these individual cap/relay circuits on a chip. I don't even know if relay's can be integrated on a chip that small, plus external magnetic forces would wreak havoc on them since the force of the magnetic field used to control those tiny relays would be incredibly small.<br />
 <br />
 As for choosing a capacitance, you would be very limited. Maybe a few picofarads at most. Also capacitors don't produce square waves, rather they make waves that look closer to smooth triangles. Not to mention that they would most likely discharge within a few minutes of having no power.<br />
 <br />
-Using memristors instead of capacitors would be far more efficient.<br />
+Using memristors instead of capacitors would be far more efficient.</div>
+		</td>
+	</tr>
+	</table>
+</div><br />
 <br />
 Tiny relays you say?<br />
 http://www.elektrotech.hu/images/hjr1-2c-1.jpg<br />
